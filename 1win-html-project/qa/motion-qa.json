@@ -1,0 +1,34 @@
+{
+  "date": "2026-10-13",
+  "implementation": {
+    "modal": 250,
+    "drawer": 250,
+    "accordion": 200,
+    "press": 160,
+    "toast": 200,
+    "reduced_opacity": 125
+  },
+  "browser_verified": [
+    "login entry and exit",
+    "profile and settings",
+    "430px settings sheet",
+    "resize retains settings",
+    "mobile drawer open and close",
+    "Escape closes modal and drawer immediately",
+    "Enter closes dialog while keeping open menu scroll locked",
+    "mobile footer Information expands",
+    "zero horizontal overflow in recorded checks"
+  ],
+  "browser_preference": "prefers-reduced-motion=true",
+  "isolated_checks": [
+    "desktop scale .96 with 250ms",
+    "mobile translateY 100% with 250ms",
+    "drawer cancellation on interruption",
+    "reduced frames have opacity only, 125ms",
+    "keyboard cancels in-progress animation"
+  ],
+  "limitations": [
+    "Full movement visual browser verification remains pending when browser allows full motion.",
+    "Ordinary game launches, account edits and finance actions are local preview notices."
+  ]
+}

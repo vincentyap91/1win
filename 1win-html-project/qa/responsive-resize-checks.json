@@ -1,0 +1,113 @@
+{
+  "sameHtmlForAllViewports": true,
+  "checks": [
+    {
+      "broken": 0,
+      "height": 2502,
+      "scrollWidth": 1440,
+      "state": "home-1440x900",
+      "url": "http://127.0.0.1:4173/index.html?qa=1",
+      "width": 1440
+    },
+    {
+      "broken": 0,
+      "height": 2635,
+      "scrollWidth": 768,
+      "state": "home-768x1024",
+      "url": "http://127.0.0.1:4173/index.html?qa=1",
+      "width": 768
+    },
+    {
+      "broken": 0,
+      "height": 2571,
+      "scrollWidth": 430,
+      "state": "home-430x932",
+      "url": "http://127.0.0.1:4173/index.html?qa=1",
+      "width": 430
+    },
+    {
+      "broken": 0,
+      "height": 2479,
+      "scrollWidth": 390,
+      "state": "home-390x844",
+      "url": "http://127.0.0.1:4173/index.html?qa=1",
+      "width": 390
+    },
+    {
+      "broken": 0,
+      "height": 2834,
+      "scrollWidth": 1920,
+      "state": "home-1920x1080",
+      "url": "http://127.0.0.1:4173/index.html?qa=1",
+      "width": 1920
+    },
+    {
+      "broken": 0,
+      "height": 2502,
+      "scrollWidth": 1440,
+      "state": "home-1440x900",
+      "url": "http://127.0.0.1:4173/index.html?qa=1",
+      "width": 1440
+    },
+    {
+      "check": "registration-open-during-resize",
+      "dialogs": 1,
+      "scrollWidth": 390,
+      "state": "home-390x844",
+      "url": "http://127.0.0.1:4173/index.html?qa=1",
+      "width": 390,
+      "fieldValueCheck": "DOM input values are redacted by the inspection tool; retention verified separately using screenshots"
+    },
+    {
+      "check": "registration-open-during-resize",
+      "dialogs": 1,
+      "scrollWidth": 768,
+      "state": "home-768x1024",
+      "url": "http://127.0.0.1:4173/index.html?qa=1",
+      "width": 768,
+      "fieldValueCheck": "DOM input values are redacted by the inspection tool; retention verified separately using screenshots"
+    },
+    {
+      "check": "registration-open-during-resize",
+      "dialogs": 1,
+      "scrollWidth": 1440,
+      "state": "home-1440x900",
+      "url": "http://127.0.0.1:4173/index.html?qa=1",
+      "width": 1440,
+      "fieldValueCheck": "DOM input values are redacted by the inspection tool; retention verified separately using screenshots"
+    },
+    {
+      "check": "casino-same-page-resize",
+      "scrollWidth": 390,
+      "state": "casino-390x844",
+      "url": "http://127.0.0.1:4173/casino.html",
+      "width": 390
+    },
+    {
+      "check": "casino-same-page-resize",
+      "scrollWidth": 1440,
+      "state": "casino-1440x900",
+      "url": "http://127.0.0.1:4173/casino.html",
+      "width": 1440
+    },
+    {
+      "check": "registration-field-after-resize",
+      "width": 390,
+      "url": "http://127.0.0.1:4173/index.html?qa=1",
+      "filledStyle": true,
+      "dialogs": 1
+    },
+    {
+      "check": "registration-field-after-resize",
+      "width": 1440,
+      "url": "http://127.0.0.1:4173/index.html?qa=1",
+      "filledStyle": true,
+      "dialogs": 1
+    }
+  ],
+  "fieldRetentionVisualEvidence": [
+    "responsive-register-390.png",
+    "responsive-register-1440.png"
+  ],
+  "fieldRetention": "Test email visually remains after shrinking and enlarging; labels no longer overlap"
+}

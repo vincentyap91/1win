@@ -1,0 +1,23 @@
+{
+  "html_pages": [
+    "index.html",
+    "casino.html",
+    "freemoney.html",
+    "bonuses.html",
+    "loyalty-program.html",
+    "vip-club.html",
+    "promotions.html",
+    "blog.html",
+    "tournaments.html",
+    "betwave.html",
+    "casino-search.html",
+    "casino-search-results.html",
+    "casino-providers.html",
+    "login.html",
+    "register.html",
+    "recovery.html"
+  ],
+  "navigation": "relative HTML files",
+  "hash_routes": false,
+  "remote_requests": false
+}

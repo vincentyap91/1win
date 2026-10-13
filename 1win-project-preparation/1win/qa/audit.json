@@ -1,0 +1,26 @@
+{
+  "reference_url": "https://one-vv3591.com/",
+  "target_windows_directory": "C:\\Users\\Vincent\\OneDrive\\Desktop\\1win",
+  "checked_date_local": "2026-10-13",
+  "timezone": "Asia/Singapore",
+  "browser_result": "Site Unavailable: Unable to access this site.",
+  "recovery_attempts": 1,
+  "cause": "unknown",
+  "windows_target_accessible_from_work": false,
+  "inspection_status": "blocked",
+  "verified_routes": [],
+  "verified_design_tokens": [],
+  "verified_assets": [],
+  "implemented_pages": [],
+  "visual_comparison_status": "not_started",
+  "functional_test_status": "not_started",
+  "script_validation": "syntax_only",
+  "capture_script_execution": "not_run",
+  "viewports": [
+    {"width":1920,"height":1080},
+    {"width":1440,"height":900},
+    {"width":768,"height":1024},
+    {"width":390,"height":844},
+    {"width":430,"height":932}
+  ]
+}

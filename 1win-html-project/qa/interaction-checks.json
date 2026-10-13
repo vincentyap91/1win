@@ -1,0 +1,27 @@
+{
+  "browser_verified": [
+    "mobile menu open/close and unchanged main width",
+    "mobile registration dialog and checked agreement",
+    "desktop Login open/close",
+    "Phone to Email login switch",
+    "Phone recovery dialog",
+    "Casino search dialog open/close",
+    "hero next changes active slide"
+  ],
+  "implemented_not_reference_compared": [
+    "promo-code expansion",
+    "form local validation",
+    "game-card horizontal scroll",
+    "footer accordions",
+    "desktop compact sidebar"
+  ],
+  "unverified": [
+    "social auth",
+    "country and currency selectors",
+    "Email recovery",
+    "error/success/captcha states",
+    "all language translations",
+    "all page states"
+  ],
+  "browser_js_errors_observed": []
+}

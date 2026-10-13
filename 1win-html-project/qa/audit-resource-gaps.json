@@ -1,0 +1,928 @@
+{
+  "missing_urls": [
+    "https://cdn.betwave.live/avatars/453581/av_6acd2ff0bced27.68799308.webp",
+    "https://cdn.betwave.live/static/bw/TopAuthorsBannerHorizontal.webp",
+    "https://cdn.betwave.live/static/bw/TopAuthorsBannerHorizontal2x.webp",
+    "https://cdn.betwave.live/static/bw/TopAuthorsBannerVertical2x.webp",
+    "https://cdn.betwave.live/static/bw/sports/52/all@2x.webp",
+    "https://cdn.betwave.live/static/bw/sports/52/basketball@2x.webp",
+    "https://cdn.betwave.live/static/bw/sports/52/boxing@2x.webp",
+    "https://cdn.betwave.live/static/bw/sports/52/cricket@2x.webp",
+    "https://cdn.betwave.live/static/bw/sports/52/cs2@2x.webp",
+    "https://cdn.betwave.live/static/bw/sports/52/express@2x.webp",
+    "https://cdn.betwave.live/static/bw/sports/52/ice-hockey@2x.webp",
+    "https://cdn.betwave.live/static/bw/sports/52/soccer@2x.webp",
+    "https://cdn.betwave.live/static/bw/top-forecasters/top-place-fifth-2x.png",
+    "https://cdn.betwave.live/static/bw/top-forecasters/top-place-first-2x.png",
+    "https://cdn.betwave.live/static/bw/top-forecasters/top-place-fourth-2x.png",
+    "https://cdn.betwave.live/static/bw/top-forecasters/top-place-second-2x.png",
+    "https://cdn.betwave.live/static/bw/top-forecasters/top-place-third-2x.png",
+    "https://cdn.betwave.live/teams/lens-10-830/upload_69381a58a42554.79521971.png",
+    "https://cdn.betwave.live/teams/psv-eindhoven-10-52020053/upload_6938823dd213b8.48717503.png",
+    "https://cdn.betwave.live/teams/rb-leipzig-10-228813/upload_69388246d36b94.52310558.png",
+    "https://cdn.betwave.live/teams/sporting-cp-10-53795006/upload_69388274acc014.93054569.png",
+    "https://one-vv3591.com/%23a",
+    "https://one-vv3591.com/resources/v1/app/assets/icon-circle-dashed-DIwSFCSO.svg",
+    "https://one-vv3591.com/resources/v1/app/assets/lottery-icon-ball-gold-ClpM5kRC.png",
+    "https://one-vv3591.com/resources/v1/app/assets/lottery-icon-ball-grey-61NgVNXa.png",
+    "https://one-vv3591.com/resources/v1/app/assets/step-card-done-E-QK7FNH.svg",
+    "https://one-vv3591.com/resources/v1/app/static/betting/bn/showcase/gift.webp",
+    "https://one-vv3591.com/resources/v1/app/static/betting/bn/showcase/temporary-gift.webp",
+    "https://one-vv3591.com/resources/v1/app/static/betting/ui/fire-3d.webp",
+    "https://one-vv3591.com/resources/v1/shared/fonts/bebasNeue/BebasNeue-Regular-cyrillic-ext.woff2",
+    "https://one-vv3591.com/resources/v1/shared/fonts/bebasNeue/BebasNeue-Regular-cyrillic.woff2",
+    "https://one-vv3591.com/resources/v1/shared/fonts/bebasNeue/BebasNeue-Regular-greek-ext.woff2",
+    "https://one-vv3591.com/resources/v1/shared/fonts/bebasNeue/BebasNeue-Regular-greek.woff2",
+    "https://one-vv3591.com/resources/v1/shared/fonts/bebasNeue/BebasNeue-Regular-latin-ext.woff2",
+    "https://one-vv3591.com/resources/v1/shared/fonts/bebasNeue/BebasNeue-Regular-latin.woff2",
+    "https://one-vv3591.com/resources/v1/shared/fonts/bebasNeue/BebasNeue-Regular-vietnamese.woff2",
+    "https://one-vv3591.com/resources/v1/shared/fonts/coolvetica/coolvetica-cyrillic-ext.woff2",
+    "https://one-vv3591.com/resources/v1/shared/fonts/coolvetica/coolvetica-cyrillic.woff2",
+    "https://one-vv3591.com/resources/v1/shared/fonts/coolvetica/coolvetica-greek-ext.woff2",
+    "https://one-vv3591.com/resources/v1/shared/fonts/coolvetica/coolvetica-greek.woff2",
+    "https://one-vv3591.com/resources/v1/shared/fonts/coolvetica/coolvetica-vietnamese.woff2",
+    "https://one-vv3591.com/resources/v1/shared/fonts/druk/druktextwidecyr-bold-cyrillic-ext.woff2",
+    "https://one-vv3591.com/resources/v1/shared/fonts/druk/druktextwidecyr-bold-cyrillic.woff2",
+    "https://one-vv3591.com/resources/v1/shared/fonts/druk/druktextwidecyr-bold-greek-ext.woff2",
+    "https://one-vv3591.com/resources/v1/shared/fonts/druk/druktextwidecyr-bold-greek.woff2",
+    "https://one-vv3591.com/resources/v1/shared/fonts/druk/druktextwidecyr-bold-latin-ext.woff2",
+    "https://one-vv3591.com/resources/v1/shared/fonts/druk/druktextwidecyr-bold-latin.woff2",
+    "https://one-vv3591.com/resources/v1/shared/fonts/druk/druktextwidecyr-bold-vietnamese.woff2",
+    "https://one-vv3591.com/resources/v1/shared/fonts/druk/druktextwidecyr-medium-cyrillic-ext.woff2",
+    "https://one-vv3591.com/resources/v1/shared/fonts/druk/druktextwidecyr-medium-cyrillic.woff2",
+    "https://one-vv3591.com/resources/v1/shared/fonts/druk/druktextwidecyr-medium-greek-ext.woff2",
+    "https://one-vv3591.com/resources/v1/shared/fonts/druk/druktextwidecyr-medium-greek.woff2",
+    "https://one-vv3591.com/resources/v1/shared/fonts/druk/druktextwidecyr-medium-latin-ext.woff2",
+    "https://one-vv3591.com/resources/v1/shared/fonts/druk/druktextwidecyr-medium-latin.woff2",
+    "https://one-vv3591.com/resources/v1/shared/fonts/druk/druktextwidecyr-medium-vietnamese.woff2",
+    "https://one-vv3591.com/resources/v1/shared/fonts/geologica/Geologica-Variable-cyrillic-ext.woff2",
+    "https://one-vv3591.com/resources/v1/shared/fonts/geologica/Geologica-Variable-cyrillic.woff2",
+    "https://one-vv3591.com/resources/v1/shared/fonts/geologica/Geologica-Variable-greek-ext.woff2",
+    "https://one-vv3591.com/resources/v1/shared/fonts/geologica/Geologica-Variable-greek.woff2",
+    "https://one-vv3591.com/resources/v1/shared/fonts/geologica/Geologica-Variable-latin-ext.woff2",
+    "https://one-vv3591.com/resources/v1/shared/fonts/geologica/Geologica-Variable-latin.woff2",
+    "https://one-vv3591.com/resources/v1/shared/fonts/geologica/Geologica-Variable-vietnamese.woff2",
+    "https://one-vv3591.com/resources/v1/shared/fonts/halvarBreit/halvar-breit-800-cyrillic-ext.woff2",
+    "https://one-vv3591.com/resources/v1/shared/fonts/halvarBreit/halvar-breit-800-cyrillic.woff2",
+    "https://one-vv3591.com/resources/v1/shared/fonts/halvarBreit/halvar-breit-800-greek-ext.woff2",
+    "https://one-vv3591.com/resources/v1/shared/fonts/halvarBreit/halvar-breit-800-greek.woff2",
+    "https://one-vv3591.com/resources/v1/shared/fonts/halvarBreit/halvar-breit-800-latin-ext.woff2",
+    "https://one-vv3591.com/resources/v1/shared/fonts/halvarBreit/halvar-breit-800-latin.woff2",
+    "https://one-vv3591.com/resources/v1/shared/fonts/halvarBreit/halvar-breit-800-vietnamese.woff2",
+    "https://one-vv3591.com/resources/v1/shared/fonts/inter/InterVariable-cyrillic-ext.woff2",
+    "https://one-vv3591.com/resources/v1/shared/fonts/inter/InterVariable-greek-ext.woff2",
+    "https://one-vv3591.com/resources/v1/shared/fonts/inter/InterVariable-greek.woff2",
+    "https://one-vv3591.com/resources/v1/shared/fonts/inter/InterVariable-vietnamese.woff2",
+    "https://one-vv3591.com/resources/v1/shared/fonts/jost/Jost-SemiBold-cyrillic-ext.woff2",
+    "https://one-vv3591.com/resources/v1/shared/fonts/jost/Jost-SemiBold-cyrillic.woff2",
+    "https://one-vv3591.com/resources/v1/shared/fonts/jost/Jost-SemiBold-greek-ext.woff2",
+    "https://one-vv3591.com/resources/v1/shared/fonts/jost/Jost-SemiBold-greek.woff2",
+    "https://one-vv3591.com/resources/v1/shared/fonts/jost/Jost-SemiBold-latin-ext.woff2",
+    "https://one-vv3591.com/resources/v1/shared/fonts/jost/Jost-SemiBold-latin.woff2",
+    "https://one-vv3591.com/resources/v1/shared/fonts/jost/Jost-SemiBold-vietnamese.woff2",
+    "https://one-vv3591.com/resources/v1/shared/fonts/openSans/OpenSans-Regular-cyrillic-ext.woff2",
+    "https://one-vv3591.com/resources/v1/shared/fonts/openSans/OpenSans-Regular-cyrillic.woff2",
+    "https://one-vv3591.com/resources/v1/shared/fonts/openSans/OpenSans-Regular-greek-ext.woff2",
+    "https://one-vv3591.com/resources/v1/shared/fonts/openSans/OpenSans-Regular-greek.woff2",
+    "https://one-vv3591.com/resources/v1/shared/fonts/openSans/OpenSans-Regular-latin-ext.woff2",
+    "https://one-vv3591.com/resources/v1/shared/fonts/openSans/OpenSans-Regular-latin.woff2",
+    "https://one-vv3591.com/resources/v1/shared/fonts/openSans/OpenSans-Regular-vietnamese.woff2",
+    "https://one-vv3591.com/resources/v1/shared/fonts/openSans/OpenSans-SemiBold-cyrillic-ext.woff2",
+    "https://one-vv3591.com/resources/v1/shared/fonts/openSans/OpenSans-SemiBold-cyrillic.woff2",
+    "https://one-vv3591.com/resources/v1/shared/fonts/openSans/OpenSans-SemiBold-greek-ext.woff2",
+    "https://one-vv3591.com/resources/v1/shared/fonts/openSans/OpenSans-SemiBold-greek.woff2",
+    "https://one-vv3591.com/resources/v1/shared/fonts/openSans/OpenSans-SemiBold-latin-ext.woff2",
+    "https://one-vv3591.com/resources/v1/shared/fonts/openSans/OpenSans-SemiBold-latin.woff2",
+    "https://one-vv3591.com/resources/v1/shared/fonts/openSans/OpenSans-SemiBold-vietnamese.woff2",
+    "https://one-vv3591.com/resources/v1/shared/fonts/poppins/poppins-400-devanagari.woff2",
+    "https://one-vv3591.com/resources/v1/shared/fonts/poppins/poppins-500-devanagari.woff2",
+    "https://one-vv3591.com/resources/v1/shared/fonts/poppins/poppins-600-devanagari.woff2",
+    "https://one-vv3591.com/resources/v1/shared/fonts/poppins/poppins-700-devanagari.woff2",
+    "https://one-vv3591.com/resources/v1/shared/fonts/poppins/poppins-800-devanagari.woff2",
+    "https://one-vv3591.com/resources/v1/shared/fonts/poppins/poppins-900-devanagari.woff2",
+    "https://one-vv3591.com/resources/v1/shared/fonts/rozhaOne/RozhaOne-Regular-cyrillic-ext.woff2",
+    "https://one-vv3591.com/resources/v1/shared/fonts/rozhaOne/RozhaOne-Regular-cyrillic.woff2",
+    "https://one-vv3591.com/resources/v1/shared/fonts/rozhaOne/RozhaOne-Regular-greek-ext.woff2",
+    "https://one-vv3591.com/resources/v1/shared/fonts/rozhaOne/RozhaOne-Regular-greek.woff2",
+    "https://one-vv3591.com/resources/v1/shared/fonts/rozhaOne/RozhaOne-Regular-latin-ext.woff2",
+    "https://one-vv3591.com/resources/v1/shared/fonts/rozhaOne/RozhaOne-Regular-latin.woff2",
+    "https://one-vv3591.com/resources/v1/shared/fonts/rozhaOne/RozhaOne-Regular-vietnamese.woff2",
+    "https://one-vv3591.com/resources/v1/shared/fonts/rubik/Rubik-Bold-cyrillic-ext.woff2",
+    "https://one-vv3591.com/resources/v1/shared/fonts/rubik/Rubik-Bold-cyrillic.woff2",
+    "https://one-vv3591.com/resources/v1/shared/fonts/rubik/Rubik-Bold-greek-ext.woff2",
+    "https://one-vv3591.com/resources/v1/shared/fonts/rubik/Rubik-Bold-greek.woff2",
+    "https://one-vv3591.com/resources/v1/shared/fonts/rubik/Rubik-Bold-latin-ext.woff2",
+    "https://one-vv3591.com/resources/v1/shared/fonts/rubik/Rubik-Bold-latin.woff2",
+    "https://one-vv3591.com/resources/v1/shared/fonts/rubik/Rubik-Bold-vietnamese.woff2",
+    "https://one-vv3591.com/resources/v1/shared/fonts/rubik/Rubik-ExtraBold-cyrillic-ext.woff2",
+    "https://one-vv3591.com/resources/v1/shared/fonts/rubik/Rubik-ExtraBold-cyrillic.woff2",
+    "https://one-vv3591.com/resources/v1/shared/fonts/rubik/Rubik-ExtraBold-greek-ext.woff2",
+    "https://one-vv3591.com/resources/v1/shared/fonts/rubik/Rubik-ExtraBold-greek.woff2",
+    "https://one-vv3591.com/resources/v1/shared/fonts/rubik/Rubik-ExtraBold-latin-ext.woff2",
+    "https://one-vv3591.com/resources/v1/shared/fonts/rubik/Rubik-ExtraBold-latin.woff2",
+    "https://one-vv3591.com/resources/v1/shared/fonts/rubik/Rubik-ExtraBold-vietnamese.woff2",
+    "https://one-vv3591.com/resources/v1/shared/fonts/rubik/Rubik-Regular-cyrillic-ext.woff2",
+    "https://one-vv3591.com/resources/v1/shared/fonts/rubik/Rubik-Regular-cyrillic.woff2",
+    "https://one-vv3591.com/resources/v1/shared/fonts/rubik/Rubik-Regular-greek-ext.woff2",
+    "https://one-vv3591.com/resources/v1/shared/fonts/rubik/Rubik-Regular-greek.woff2",
+    "https://one-vv3591.com/resources/v1/shared/fonts/rubik/Rubik-Regular-latin-ext.woff2",
+    "https://one-vv3591.com/resources/v1/shared/fonts/rubik/Rubik-Regular-latin.woff2",
+    "https://one-vv3591.com/resources/v1/shared/fonts/rubik/Rubik-Regular-vietnamese.woff2",
+    "https://one-vv3591.com/resources/v1/shared/fonts/rubik/Rubik-SemiBold-cyrillic-ext.woff2",
+    "https://one-vv3591.com/resources/v1/shared/fonts/rubik/Rubik-SemiBold-cyrillic.woff2",
+    "https://one-vv3591.com/resources/v1/shared/fonts/rubik/Rubik-SemiBold-greek-ext.woff2",
+    "https://one-vv3591.com/resources/v1/shared/fonts/rubik/Rubik-SemiBold-greek.woff2",
+    "https://one-vv3591.com/resources/v1/shared/fonts/rubik/Rubik-SemiBold-latin-ext.woff2",
+    "https://one-vv3591.com/resources/v1/shared/fonts/rubik/Rubik-SemiBold-latin.woff2",
+    "https://one-vv3591.com/resources/v1/shared/fonts/rubik/Rubik-SemiBold-vietnamese.woff2",
+    "https://one-vv3591.com/resources/v1/shared/fonts/russoOne/RussoOne-Regular-cyrillic-ext.woff2",
+    "https://one-vv3591.com/resources/v1/shared/fonts/russoOne/RussoOne-Regular-cyrillic.woff2",
+    "https://one-vv3591.com/resources/v1/shared/fonts/russoOne/RussoOne-Regular-greek-ext.woff2",
+    "https://one-vv3591.com/resources/v1/shared/fonts/russoOne/RussoOne-Regular-greek.woff2",
+    "https://one-vv3591.com/resources/v1/shared/fonts/russoOne/RussoOne-Regular-latin-ext.woff2",
+    "https://one-vv3591.com/resources/v1/shared/fonts/russoOne/RussoOne-Regular-latin.woff2",
+    "https://one-vv3591.com/resources/v1/shared/fonts/russoOne/RussoOne-Regular-vietnamese.woff2",
+    "https://one-vv3591.com/resources/v1/shared/fonts/sfpro/sf-pro-rounded-heavy-cyrillic-ext.woff2",
+    "https://one-vv3591.com/resources/v1/shared/fonts/sfpro/sf-pro-rounded-heavy-cyrillic.woff2",
+    "https://one-vv3591.com/resources/v1/shared/fonts/sfpro/sf-pro-rounded-heavy-greek-ext.woff2",
+    "https://one-vv3591.com/resources/v1/shared/fonts/sfpro/sf-pro-rounded-heavy-greek.woff2",
+    "https://one-vv3591.com/resources/v1/shared/fonts/sfpro/sf-pro-rounded-heavy-latin-ext.woff2",
+    "https://one-vv3591.com/resources/v1/shared/fonts/sfpro/sf-pro-rounded-heavy-latin.woff2",
+    "https://one-vv3591.com/resources/v1/shared/fonts/sfpro/sf-pro-rounded-heavy-vietnamese.woff2",
+    "https://one-vv3591.com/resources/v1/shared/fonts/sfpro/sf-pro-rounded-regular-cyrillic-ext.woff2",
+    "https://one-vv3591.com/resources/v1/shared/fonts/sfpro/sf-pro-rounded-regular-cyrillic.woff2",
+    "https://one-vv3591.com/resources/v1/shared/fonts/sfpro/sf-pro-rounded-regular-greek-ext.woff2",
+    "https://one-vv3591.com/resources/v1/shared/fonts/sfpro/sf-pro-rounded-regular-greek.woff2",
+    "https://one-vv3591.com/resources/v1/shared/fonts/sfpro/sf-pro-rounded-regular-latin-ext.woff2",
+    "https://one-vv3591.com/resources/v1/shared/fonts/sfpro/sf-pro-rounded-regular-latin.woff2",
+    "https://one-vv3591.com/resources/v1/shared/fonts/sfpro/sf-pro-rounded-regular-vietnamese.woff2",
+    "https://one-vv3591.com/resources/v1/shared/fonts/sfpro/sf-pro-rounded-semibold-cyrillic-ext.woff2",
+    "https://one-vv3591.com/resources/v1/shared/fonts/sfpro/sf-pro-rounded-semibold-cyrillic.woff2",
+    "https://one-vv3591.com/resources/v1/shared/fonts/sfpro/sf-pro-rounded-semibold-greek-ext.woff2",
+    "https://one-vv3591.com/resources/v1/shared/fonts/sfpro/sf-pro-rounded-semibold-greek.woff2",
+    "https://one-vv3591.com/resources/v1/shared/fonts/sfpro/sf-pro-rounded-semibold-latin-ext.woff2",
+    "https://one-vv3591.com/resources/v1/shared/fonts/sfpro/sf-pro-rounded-semibold-latin.woff2",
+    "https://one-vv3591.com/resources/v1/shared/fonts/sfpro/sf-pro-rounded-semibold-vietnamese.woff2",
+    "https://one-vv3591.com/resources/v1/shared/fonts/sfproDisplay/SF-Pro-Display-Black-cyrillic-ext.woff2",
+    "https://one-vv3591.com/resources/v1/shared/fonts/sfproDisplay/SF-Pro-Display-Black-cyrillic.woff2",
+    "https://one-vv3591.com/resources/v1/shared/fonts/sfproDisplay/SF-Pro-Display-Black-greek-ext.woff2",
+    "https://one-vv3591.com/resources/v1/shared/fonts/sfproDisplay/SF-Pro-Display-Black-greek.woff2",
+    "https://one-vv3591.com/resources/v1/shared/fonts/sfproDisplay/SF-Pro-Display-Black-latin-ext.woff2",
+    "https://one-vv3591.com/resources/v1/shared/fonts/sfproDisplay/SF-Pro-Display-Black-latin.woff2",
+    "https://one-vv3591.com/resources/v1/shared/fonts/sfproDisplay/SF-Pro-Display-Black-vietnamese.woff2",
+    "https://one-vv3591.com/resources/v1/shared/fonts/sfproDisplay/SF-Pro-Display-Bold-cyrillic-ext.woff2",
+    "https://one-vv3591.com/resources/v1/shared/fonts/sfproDisplay/SF-Pro-Display-Bold-cyrillic.woff2",
+    "https://one-vv3591.com/resources/v1/shared/fonts/sfproDisplay/SF-Pro-Display-Bold-greek-ext.woff2",
+    "https://one-vv3591.com/resources/v1/shared/fonts/sfproDisplay/SF-Pro-Display-Bold-greek.woff2",
+    "https://one-vv3591.com/resources/v1/shared/fonts/sfproDisplay/SF-Pro-Display-Bold-latin-ext.woff2",
+    "https://one-vv3591.com/resources/v1/shared/fonts/sfproDisplay/SF-Pro-Display-Bold-latin.woff2",
+    "https://one-vv3591.com/resources/v1/shared/fonts/sfproDisplay/SF-Pro-Display-Bold-vietnamese.woff2",
+    "https://one-vv3591.com/resources/v1/shared/fonts/sfproDisplay/SF-Pro-Display-Heavy-cyrillic-ext.woff2",
+    "https://one-vv3591.com/resources/v1/shared/fonts/sfproDisplay/SF-Pro-Display-Heavy-cyrillic.woff2",
+    "https://one-vv3591.com/resources/v1/shared/fonts/sfproDisplay/SF-Pro-Display-Heavy-greek-ext.woff2",
+    "https://one-vv3591.com/resources/v1/shared/fonts/sfproDisplay/SF-Pro-Display-Heavy-greek.woff2",
+    "https://one-vv3591.com/resources/v1/shared/fonts/sfproDisplay/SF-Pro-Display-Heavy-latin-ext.woff2",
+    "https://one-vv3591.com/resources/v1/shared/fonts/sfproDisplay/SF-Pro-Display-Heavy-latin.woff2",
+    "https://one-vv3591.com/resources/v1/shared/fonts/sfproDisplay/SF-Pro-Display-Heavy-vietnamese.woff2",
+    "https://one-vv3591.com/resources/v1/shared/fonts/sfproDisplay/SF-Pro-Display-Medium-cyrillic-ext.woff2",
+    "https://one-vv3591.com/resources/v1/shared/fonts/sfproDisplay/SF-Pro-Display-Medium-cyrillic.woff2",
+    "https://one-vv3591.com/resources/v1/shared/fonts/sfproDisplay/SF-Pro-Display-Medium-greek-ext.woff2",
+    "https://one-vv3591.com/resources/v1/shared/fonts/sfproDisplay/SF-Pro-Display-Medium-greek.woff2",
+    "https://one-vv3591.com/resources/v1/shared/fonts/sfproDisplay/SF-Pro-Display-Medium-latin-ext.woff2",
+    "https://one-vv3591.com/resources/v1/shared/fonts/sfproDisplay/SF-Pro-Display-Medium-latin.woff2",
+    "https://one-vv3591.com/resources/v1/shared/fonts/sfproDisplay/SF-Pro-Display-Medium-vietnamese.woff2",
+    "https://one-vv3591.com/resources/v1/shared/fonts/sfproDisplay/SF-Pro-Display-Regular-cyrillic-ext.woff2",
+    "https://one-vv3591.com/resources/v1/shared/fonts/sfproDisplay/SF-Pro-Display-Regular-cyrillic.woff2",
+    "https://one-vv3591.com/resources/v1/shared/fonts/sfproDisplay/SF-Pro-Display-Regular-greek-ext.woff2",
+    "https://one-vv3591.com/resources/v1/shared/fonts/sfproDisplay/SF-Pro-Display-Regular-greek.woff2",
+    "https://one-vv3591.com/resources/v1/shared/fonts/sfproDisplay/SF-Pro-Display-Regular-latin-ext.woff2",
+    "https://one-vv3591.com/resources/v1/shared/fonts/sfproDisplay/SF-Pro-Display-Regular-latin.woff2",
+    "https://one-vv3591.com/resources/v1/shared/fonts/sfproDisplay/SF-Pro-Display-Regular-vietnamese.woff2",
+    "https://one-vv3591.com/resources/v1/shared/fonts/sfproDisplay/SF-Pro-Display-Semibold-cyrillic-ext.woff2",
+    "https://one-vv3591.com/resources/v1/shared/fonts/sfproDisplay/SF-Pro-Display-Semibold-cyrillic.woff2",
+    "https://one-vv3591.com/resources/v1/shared/fonts/sfproDisplay/SF-Pro-Display-Semibold-greek-ext.woff2",
+    "https://one-vv3591.com/resources/v1/shared/fonts/sfproDisplay/SF-Pro-Display-Semibold-greek.woff2",
+    "https://one-vv3591.com/resources/v1/shared/fonts/sfproDisplay/SF-Pro-Display-Semibold-latin-ext.woff2",
+    "https://one-vv3591.com/resources/v1/shared/fonts/sfproDisplay/SF-Pro-Display-Semibold-latin.woff2",
+    "https://one-vv3591.com/resources/v1/shared/fonts/sfproDisplay/SF-Pro-Display-Semibold-vietnamese.woff2",
+    "https://one-vv3591.com/resources/v1/shared/images/languages/ar-EG.svg",
+    "https://one-vv3591.com/resources/v1/shared/images/languages/az-AZ.svg",
+    "https://one-vv3591.com/resources/v1/shared/images/languages/bn-BD.svg",
+    "https://one-vv3591.com/resources/v1/shared/images/languages/de-DE.svg",
+    "https://one-vv3591.com/resources/v1/shared/images/languages/el-CY.svg",
+    "https://one-vv3591.com/resources/v1/shared/images/languages/es-ES.svg",
+    "https://one-vv3591.com/resources/v1/shared/images/languages/es-MX.svg",
+    "https://one-vv3591.com/resources/v1/shared/images/languages/fil-PH.svg",
+    "https://one-vv3591.com/resources/v1/shared/images/languages/fr-CI.svg",
+    "https://one-vv3591.com/resources/v1/shared/images/languages/id-ID.svg",
+    "https://one-vv3591.com/resources/v1/shared/images/languages/it-IT.svg",
+    "https://one-vv3591.com/resources/v1/shared/images/languages/kk-KZ.svg",
+    "https://one-vv3591.com/resources/v1/shared/images/languages/ko-KR.svg",
+    "https://one-vv3591.com/resources/v1/shared/images/languages/ky-KG.svg",
+    "https://one-vv3591.com/resources/v1/shared/images/languages/mr-IN.svg",
+    "https://one-vv3591.com/resources/v1/shared/images/languages/ms-MY.svg",
+    "https://one-vv3591.com/resources/v1/shared/images/languages/pl-PL.svg",
+    "https://one-vv3591.com/resources/v1/shared/images/languages/pt-BR.svg",
+    "https://one-vv3591.com/resources/v1/shared/images/languages/ro-MD.svg",
+    "https://one-vv3591.com/resources/v1/shared/images/languages/ro-RO.svg",
+    "https://one-vv3591.com/resources/v1/shared/images/languages/ru-RU.svg",
+    "https://one-vv3591.com/resources/v1/shared/images/languages/sw-KE.svg",
+    "https://one-vv3591.com/resources/v1/shared/images/languages/te-IN.svg",
+    "https://one-vv3591.com/resources/v1/shared/images/languages/tg-TJ.svg",
+    "https://one-vv3591.com/resources/v1/shared/images/languages/th-TH.svg",
+    "https://one-vv3591.com/resources/v1/shared/images/languages/tr-TR.svg",
+    "https://one-vv3591.com/resources/v1/shared/images/languages/uk-UA.svg",
+    "https://one-vv3591.com/resources/v1/shared/images/languages/ur-PK.svg",
+    "https://one-vv3591.com/resources/v1/shared/images/languages/uz-UZ.svg",
+    "https://one-vv3591.com/resources/v1/shared/images/languages/vi-VN.svg",
+    "https://v3.bundlecdn.com/shared/fonts/inter/InterVariable-cyrillic-ext.woff2",
+    "https://v3.bundlecdn.com/shared/fonts/inter/InterVariable-greek-ext.woff2",
+    "https://v3.bundlecdn.com/shared/fonts/inter/InterVariable-greek.woff2",
+    "https://v3.bundlecdn.com/shared/fonts/inter/InterVariable-latin-ext.woff2",
+    "https://v3.bundlecdn.com/shared/fonts/inter/InterVariable-vietnamese.woff2",
+    "https://v3.bundlecdn.com/shared/fonts/poppins/poppins-400-devanagari.woff2",
+    "https://v3.bundlecdn.com/shared/fonts/poppins/poppins-600-devanagari.woff2"
+  ],
+  "bundle_failures": [
+    {
+      "url": "https://cdn.betwave.live/avatars/453581/av_6acd2ff0bced27.68799308.webp",
+      "reason": "Loaded resource fetch failed: Asset bundling failed; page fetch failed: Browser Use encountered an error interacting with this webpage: TypeError: Failed to fetch",
+      "capture": "assets-afterlogin-betwave-35461efb-3ed5-437c-b087-90be788c68f6-0"
+    },
+    {
+      "url": "https://cdn.betwave.live/teams/lens-10-830/upload_69381a58a42554.79521971.png",
+      "reason": "Loaded resource fetch failed: Asset bundling failed; page fetch failed: Browser Use encountered an error interacting with this webpage: TypeError: Failed to fetch",
+      "capture": "assets-afterlogin-betwave-35461efb-3ed5-437c-b087-90be788c68f6-0"
+    },
+    {
+      "url": "https://cdn.betwave.live/teams/sporting-cp-10-53795006/upload_69388274acc014.93054569.png",
+      "reason": "Loaded resource fetch failed: Asset bundling failed; page fetch failed: Browser Use encountered an error interacting with this webpage: TypeError: Failed to fetch",
+      "capture": "assets-afterlogin-betwave-35461efb-3ed5-437c-b087-90be788c68f6-0"
+    },
+    {
+      "url": "https://cdn.betwave.live/teams/rb-leipzig-10-228813/upload_69388246d36b94.52310558.png",
+      "reason": "Loaded resource fetch failed: Asset bundling failed; page fetch failed: Browser Use encountered an error interacting with this webpage: TypeError: Failed to fetch",
+      "capture": "assets-afterlogin-betwave-35461efb-3ed5-437c-b087-90be788c68f6-0"
+    },
+    {
+      "url": "https://cdn.betwave.live/teams/psv-eindhoven-10-52020053/upload_6938823dd213b8.48717503.png",
+      "reason": "Loaded resource fetch failed: Asset bundling failed; page fetch failed: Browser Use encountered an error interacting with this webpage: TypeError: Failed to fetch",
+      "capture": "assets-afterlogin-betwave-35461efb-3ed5-437c-b087-90be788c68f6-0"
+    },
+    {
+      "url": "https://cdn.betwave.live/favicon.ico",
+      "reason": "Loaded resource fetch failed: Asset bundling failed; page fetch failed: Browser Use encountered an error interacting with this webpage: TypeError: Failed to fetch",
+      "capture": "assets-afterlogin-betwave-35461efb-3ed5-437c-b087-90be788c68f6-0"
+    },
+    {
+      "url": "https://cdn.betwave.live/avatars/453581/av_6acd2ff0bced27.68799308.webp",
+      "reason": "Loaded resource fetch failed: Asset bundling failed; page fetch failed: Browser Use encountered an error interacting with this webpage: TypeError: Failed to fetch",
+      "capture": "assets-afterlogin-betwave-7e67412d-b765-4d51-901e-f02adf958e20-0"
+    },
+    {
+      "url": "https://cdn.betwave.live/teams/lens-10-830/upload_69381a58a42554.79521971.png",
+      "reason": "Loaded resource fetch failed: Asset bundling failed; page fetch failed: Browser Use encountered an error interacting with this webpage: TypeError: Failed to fetch",
+      "capture": "assets-afterlogin-betwave-7e67412d-b765-4d51-901e-f02adf958e20-0"
+    },
+    {
+      "url": "https://cdn.betwave.live/teams/sporting-cp-10-53795006/upload_69388274acc014.93054569.png",
+      "reason": "Loaded resource fetch failed: Asset bundling failed; page fetch failed: Browser Use encountered an error interacting with this webpage: TypeError: Failed to fetch",
+      "capture": "assets-afterlogin-betwave-7e67412d-b765-4d51-901e-f02adf958e20-0"
+    },
+    {
+      "url": "https://cdn.betwave.live/teams/rb-leipzig-10-228813/upload_69388246d36b94.52310558.png",
+      "reason": "Loaded resource fetch failed: Asset bundling failed; page fetch failed: Browser Use encountered an error interacting with this webpage: TypeError: Failed to fetch",
+      "capture": "assets-afterlogin-betwave-7e67412d-b765-4d51-901e-f02adf958e20-0"
+    },
+    {
+      "url": "https://cdn.betwave.live/teams/psv-eindhoven-10-52020053/upload_6938823dd213b8.48717503.png",
+      "reason": "Loaded resource fetch failed: Asset bundling failed; page fetch failed: Browser Use encountered an error interacting with this webpage: TypeError: Failed to fetch",
+      "capture": "assets-afterlogin-betwave-7e67412d-b765-4d51-901e-f02adf958e20-0"
+    },
+    {
+      "url": "https://cdn.betwave.live/favicon.ico",
+      "reason": "Loaded resource fetch failed: Asset bundling failed; page fetch failed: Browser Use encountered an error interacting with this webpage: TypeError: Failed to fetch",
+      "capture": "assets-afterlogin-betwave-7e67412d-b765-4d51-901e-f02adf958e20-0"
+    },
+    {
+      "url": "https://cdn.betwave.live/avatars/453581/av_6acd2ff0bced27.68799308.webp",
+      "reason": "Loaded resource fetch failed: Asset bundling failed; page fetch failed: Browser Use encountered an error interacting with this webpage: TypeError: Failed to fetch",
+      "capture": "assets-afterlogin-betwave-beaf1af5-1279-4cbc-b6ea-471ed204f5d7-0"
+    },
+    {
+      "url": "https://cdn.betwave.live/teams/lens-10-830/upload_69381a58a42554.79521971.png",
+      "reason": "Loaded resource fetch failed: Asset bundling failed; page fetch failed: Browser Use encountered an error interacting with this webpage: TypeError: Failed to fetch",
+      "capture": "assets-afterlogin-betwave-beaf1af5-1279-4cbc-b6ea-471ed204f5d7-0"
+    },
+    {
+      "url": "https://cdn.betwave.live/teams/sporting-cp-10-53795006/upload_69388274acc014.93054569.png",
+      "reason": "Loaded resource fetch failed: Asset bundling failed; page fetch failed: Browser Use encountered an error interacting with this webpage: TypeError: Failed to fetch",
+      "capture": "assets-afterlogin-betwave-beaf1af5-1279-4cbc-b6ea-471ed204f5d7-0"
+    },
+    {
+      "url": "https://cdn.betwave.live/teams/rb-leipzig-10-228813/upload_69388246d36b94.52310558.png",
+      "reason": "Loaded resource fetch failed: Asset bundling failed; page fetch failed: Browser Use encountered an error interacting with this webpage: TypeError: Failed to fetch",
+      "capture": "assets-afterlogin-betwave-beaf1af5-1279-4cbc-b6ea-471ed204f5d7-0"
+    },
+    {
+      "url": "https://cdn.betwave.live/teams/psv-eindhoven-10-52020053/upload_6938823dd213b8.48717503.png",
+      "reason": "Loaded resource fetch failed: Asset bundling failed; page fetch failed: Browser Use encountered an error interacting with this webpage: TypeError: Failed to fetch",
+      "capture": "assets-afterlogin-betwave-beaf1af5-1279-4cbc-b6ea-471ed204f5d7-0"
+    },
+    {
+      "url": "https://cdn.betwave.live/favicon.ico",
+      "reason": "Loaded resource fetch failed: Asset bundling failed; page fetch failed: Browser Use encountered an error interacting with this webpage: TypeError: Failed to fetch",
+      "capture": "assets-afterlogin-betwave-beaf1af5-1279-4cbc-b6ea-471ed204f5d7-0"
+    },
+    {
+      "url": "https://cdn.betwave.live/avatars/453581/av_6acd2ff0bced27.68799308.webp",
+      "reason": "Loaded resource fetch failed: Asset bundling failed; page fetch failed: Browser Use encountered an error interacting with this webpage: TypeError: Failed to fetch",
+      "capture": "assets-afterlogin-betwave-ed16f287-b8cc-43a6-bdac-64b82d5d53f3-0"
+    },
+    {
+      "url": "https://cdn.betwave.live/teams/lens-10-830/upload_69381a58a42554.79521971.png",
+      "reason": "Loaded resource fetch failed: Asset bundling failed; page fetch failed: Browser Use encountered an error interacting with this webpage: TypeError: Failed to fetch",
+      "capture": "assets-afterlogin-betwave-ed16f287-b8cc-43a6-bdac-64b82d5d53f3-0"
+    },
+    {
+      "url": "https://cdn.betwave.live/teams/sporting-cp-10-53795006/upload_69388274acc014.93054569.png",
+      "reason": "Loaded resource fetch failed: Asset bundling failed; page fetch failed: Browser Use encountered an error interacting with this webpage: TypeError: Failed to fetch",
+      "capture": "assets-afterlogin-betwave-ed16f287-b8cc-43a6-bdac-64b82d5d53f3-0"
+    },
+    {
+      "url": "https://cdn.betwave.live/teams/rb-leipzig-10-228813/upload_69388246d36b94.52310558.png",
+      "reason": "Loaded resource fetch failed: Asset bundling failed; page fetch failed: Browser Use encountered an error interacting with this webpage: TypeError: Failed to fetch",
+      "capture": "assets-afterlogin-betwave-ed16f287-b8cc-43a6-bdac-64b82d5d53f3-0"
+    },
+    {
+      "url": "https://cdn.betwave.live/teams/psv-eindhoven-10-52020053/upload_6938823dd213b8.48717503.png",
+      "reason": "Loaded resource fetch failed: Asset bundling failed; page fetch failed: Browser Use encountered an error interacting with this webpage: TypeError: Failed to fetch",
+      "capture": "assets-afterlogin-betwave-ed16f287-b8cc-43a6-bdac-64b82d5d53f3-0"
+    },
+    {
+      "url": "https://cdn.betwave.live/favicon.ico",
+      "reason": "Loaded resource fetch failed: Asset bundling failed; page fetch failed: Browser Use encountered an error interacting with this webpage: TypeError: Failed to fetch",
+      "capture": "assets-afterlogin-betwave-ed16f287-b8cc-43a6-bdac-64b82d5d53f3-0"
+    },
+    {
+      "url": "https://cdn.betwave.live/avatars/453581/av_6acd2ff0bced27.68799308.webp",
+      "reason": "Loaded resource fetch failed: Asset bundling failed; page fetch failed: Browser Use encountered an error interacting with this webpage: TypeError: Failed to fetch",
+      "capture": "assets-afterlogin-betwave-f78f8a3c-7e31-426e-adb0-2112bc3c69b0-0"
+    },
+    {
+      "url": "https://cdn.betwave.live/teams/lens-10-830/upload_69381a58a42554.79521971.png",
+      "reason": "Loaded resource fetch failed: Asset bundling failed; page fetch failed: Browser Use encountered an error interacting with this webpage: TypeError: Failed to fetch",
+      "capture": "assets-afterlogin-betwave-f78f8a3c-7e31-426e-adb0-2112bc3c69b0-0"
+    },
+    {
+      "url": "https://cdn.betwave.live/teams/sporting-cp-10-53795006/upload_69388274acc014.93054569.png",
+      "reason": "Loaded resource fetch failed: Asset bundling failed; page fetch failed: Browser Use encountered an error interacting with this webpage: TypeError: Failed to fetch",
+      "capture": "assets-afterlogin-betwave-f78f8a3c-7e31-426e-adb0-2112bc3c69b0-0"
+    },
+    {
+      "url": "https://cdn.betwave.live/teams/rb-leipzig-10-228813/upload_69388246d36b94.52310558.png",
+      "reason": "Loaded resource fetch failed: Asset bundling failed; page fetch failed: Browser Use encountered an error interacting with this webpage: TypeError: Failed to fetch",
+      "capture": "assets-afterlogin-betwave-f78f8a3c-7e31-426e-adb0-2112bc3c69b0-0"
+    },
+    {
+      "url": "https://cdn.betwave.live/teams/psv-eindhoven-10-52020053/upload_6938823dd213b8.48717503.png",
+      "reason": "Loaded resource fetch failed: Asset bundling failed; page fetch failed: Browser Use encountered an error interacting with this webpage: TypeError: Failed to fetch",
+      "capture": "assets-afterlogin-betwave-f78f8a3c-7e31-426e-adb0-2112bc3c69b0-0"
+    },
+    {
+      "url": "https://cdn.betwave.live/favicon.ico",
+      "reason": "Loaded resource fetch failed: Asset bundling failed; page fetch failed: Browser Use encountered an error interacting with this webpage: TypeError: Failed to fetch",
+      "capture": "assets-afterlogin-betwave-f78f8a3c-7e31-426e-adb0-2112bc3c69b0-0"
+    },
+    {
+      "url": "https://one-vv3591.com/resources/v1/app/static/betting/bn/showcase/gift.webp",
+      "reason": "Asset response type binary/octet-stream is not valid for image",
+      "capture": "assets-afterlogin-sports-31b6101e-4605-4d5e-b4a8-86407360eec4-0"
+    },
+    {
+      "url": "https://one-vv3591.com/resources/v1/app/static/betting/bn/showcase/gift.webp",
+      "reason": "Asset response type binary/octet-stream is not valid for image",
+      "capture": "assets-afterlogin-sports-8976a5b9-ed9e-4195-95ea-059b36cfdfc2-0"
+    },
+    {
+      "url": "https://one-vv3591.com/resources/v1/app/static/betting/bn/showcase/gift.webp",
+      "reason": "Asset response type binary/octet-stream is not valid for image",
+      "capture": "assets-afterlogin-sports-d53f80f8-681d-43c5-96bc-f53a4a7599d8-0"
+    },
+    {
+      "url": "https://one-vv3591.com/resources/v1/app/static/betting/ui/fire-3d.webp",
+      "reason": "Asset response type binary/octet-stream is not valid for image",
+      "capture": "assets-afterlogin-sports-esports-125cf22d-27c7-4d1e-8ec8-b653b732726a-0"
+    },
+    {
+      "url": "https://one-vv3591.com/resources/v1/app/static/betting/bn/showcase/gift.webp",
+      "reason": "Asset response type binary/octet-stream is not valid for image",
+      "capture": "assets-afterlogin-sports-esports-125cf22d-27c7-4d1e-8ec8-b653b732726a-0"
+    },
+    {
+      "url": "https://one-vv3591.com/resources/v1/app/static/betting/ui/fire-3d.webp",
+      "reason": "Asset response type binary/octet-stream is not valid for image",
+      "capture": "assets-afterlogin-sports-esports-334e1d99-649e-40ec-b895-bcfa9a121891-0"
+    },
+    {
+      "url": "https://one-vv3591.com/resources/v1/app/static/betting/ui/fire-3d.webp",
+      "reason": "Asset response type binary/octet-stream is not valid for image",
+      "capture": "assets-afterlogin-sports-esports-6ff0020d-342e-4434-b6f7-bf41012277cc-0"
+    },
+    {
+      "url": "https://one-vv3591.com/resources/v1/app/static/betting/bn/showcase/gift.webp",
+      "reason": "Asset response type binary/octet-stream is not valid for image",
+      "capture": "assets-afterlogin-sports-esports-6ff0020d-342e-4434-b6f7-bf41012277cc-0"
+    },
+    {
+      "url": "https://one-vv3591.com/resources/v1/app/static/betting/ui/fire-3d.webp",
+      "reason": "Asset response type binary/octet-stream is not valid for image",
+      "capture": "assets-afterlogin-sports-esports-cfb04cde-9556-42d5-852c-2a0a86ec4141-0"
+    },
+    {
+      "url": "https://one-vv3591.com/resources/v1/app/static/betting/bn/showcase/gift.webp",
+      "reason": "Asset response type binary/octet-stream is not valid for image",
+      "capture": "assets-afterlogin-sports-esports-cfb04cde-9556-42d5-852c-2a0a86ec4141-0"
+    },
+    {
+      "url": "https://one-vv3591.com/resources/v1/app/static/betting/ui/fire-3d.webp",
+      "reason": "Asset response type binary/octet-stream is not valid for image",
+      "capture": "assets-afterlogin-sports-esports-de49103c-ffb6-4738-935e-7de2b57fdebb-0"
+    },
+    {
+      "url": "https://one-vv3591.com/resources/v1/app/static/betting/bn/showcase/gift.webp",
+      "reason": "Asset response type binary/octet-stream is not valid for image",
+      "capture": "assets-afterlogin-sports-esports-de49103c-ffb6-4738-935e-7de2b57fdebb-0"
+    },
+    {
+      "url": "https://one-vv3591.com/resources/v1/app/static/betting/bn/showcase/gift.webp",
+      "reason": "Asset response type binary/octet-stream is not valid for image",
+      "capture": "assets-afterlogin-sports-f6df4a15-9cb5-4cbc-bfd9-b42b1aacfd78-0"
+    },
+    {
+      "url": "https://one-vv3591.com/resources/v1/app/static/betting/ui/fire-3d.webp",
+      "reason": "Asset response type binary/octet-stream is not valid for image",
+      "capture": "assets-afterlogin-sports-live-5ac8d90b-d00b-4f71-90c3-8cab67d02f63-0"
+    },
+    {
+      "url": "https://one-vv3591.com/resources/v1/app/static/betting/bn/showcase/gift.webp",
+      "reason": "Asset response type binary/octet-stream is not valid for image",
+      "capture": "assets-afterlogin-sports-live-5ac8d90b-d00b-4f71-90c3-8cab67d02f63-0"
+    },
+    {
+      "url": "https://one-vv3591.com/resources/v1/app/static/betting/ui/fire-3d.webp",
+      "reason": "Asset response type binary/octet-stream is not valid for image",
+      "capture": "assets-afterlogin-sports-live-5c026b3f-6568-4c07-a981-e167cfada625-0"
+    },
+    {
+      "url": "https://one-vv3591.com/resources/v1/app/static/betting/bn/showcase/gift.webp",
+      "reason": "Asset response type binary/octet-stream is not valid for image",
+      "capture": "assets-afterlogin-sports-live-5c026b3f-6568-4c07-a981-e167cfada625-0"
+    },
+    {
+      "url": "https://one-vv3591.com/resources/v1/app/static/betting/ui/fire-3d.webp",
+      "reason": "Asset response type binary/octet-stream is not valid for image",
+      "capture": "assets-afterlogin-sports-live-61102b87-b59b-4642-bb31-bc3950c5c28e-0"
+    },
+    {
+      "url": "https://one-vv3591.com/resources/v1/app/static/betting/bn/showcase/gift.webp",
+      "reason": "Asset response type binary/octet-stream is not valid for image",
+      "capture": "assets-afterlogin-sports-live-61102b87-b59b-4642-bb31-bc3950c5c28e-0"
+    },
+    {
+      "url": "https://one-vv3591.com/resources/v1/app/static/betting/ui/fire-3d.webp",
+      "reason": "Asset response type binary/octet-stream is not valid for image",
+      "capture": "assets-afterlogin-sports-live-719b0aa5-751c-4992-afb1-a865d3e4185c-0"
+    },
+    {
+      "url": "https://one-vv3591.com/resources/v1/app/static/betting/ui/fire-3d.webp",
+      "reason": "Asset response type binary/octet-stream is not valid for image",
+      "capture": "assets-afterlogin-sports-live-d081ee67-8b2b-4fb2-886a-996771739290-0"
+    },
+    {
+      "url": "https://one-vv3591.com/resources/v1/app/static/betting/bn/showcase/gift.webp",
+      "reason": "Asset response type binary/octet-stream is not valid for image",
+      "capture": "assets-afterlogin-sports-live-d081ee67-8b2b-4fb2-886a-996771739290-0"
+    },
+    {
+      "url": "https://one-vv3591.com/resources/v1/app/static/betting/ui/fire-3d.webp",
+      "reason": "Asset response type binary/octet-stream is not valid for image",
+      "capture": "assets-afterlogin-sports-upcoming-557bcb9c-141b-41cf-b837-463e7e8278e3-0"
+    },
+    {
+      "url": "https://one-vv3591.com/resources/v1/app/static/betting/bn/showcase/gift.webp",
+      "reason": "Asset response type binary/octet-stream is not valid for image",
+      "capture": "assets-afterlogin-sports-upcoming-557bcb9c-141b-41cf-b837-463e7e8278e3-0"
+    },
+    {
+      "url": "https://one-vv3591.com/resources/v1/app/static/betting/ui/fire-3d.webp",
+      "reason": "Asset response type binary/octet-stream is not valid for image",
+      "capture": "assets-afterlogin-sports-upcoming-77f0c2e3-23f3-4f80-b549-c28d3dce3253-0"
+    },
+    {
+      "url": "https://one-vv3591.com/resources/v1/app/static/betting/bn/showcase/gift.webp",
+      "reason": "Asset response type binary/octet-stream is not valid for image",
+      "capture": "assets-afterlogin-sports-upcoming-77f0c2e3-23f3-4f80-b549-c28d3dce3253-0"
+    },
+    {
+      "url": "https://one-vv3591.com/resources/v1/app/static/betting/ui/fire-3d.webp",
+      "reason": "Asset response type binary/octet-stream is not valid for image",
+      "capture": "assets-afterlogin-sports-upcoming-8f5443da-bca6-456a-8aa5-2577c2c33933-0"
+    },
+    {
+      "url": "https://one-vv3591.com/resources/v1/app/static/betting/ui/fire-3d.webp",
+      "reason": "Asset response type binary/octet-stream is not valid for image",
+      "capture": "assets-afterlogin-sports-upcoming-ad9251e8-1fd5-4476-8720-1b27abbfbebf-0"
+    },
+    {
+      "url": "https://one-vv3591.com/resources/v1/app/static/betting/bn/showcase/gift.webp",
+      "reason": "Asset response type binary/octet-stream is not valid for image",
+      "capture": "assets-afterlogin-sports-upcoming-ad9251e8-1fd5-4476-8720-1b27abbfbebf-0"
+    },
+    {
+      "url": "https://one-vv3591.com/resources/v1/app/static/betting/ui/fire-3d.webp",
+      "reason": "Asset response type binary/octet-stream is not valid for image",
+      "capture": "assets-afterlogin-sports-upcoming-d30a384c-94ac-467f-a2de-3b67804c1cff-0"
+    },
+    {
+      "url": "https://one-vv3591.com/resources/v1/app/static/betting/bn/showcase/gift.webp",
+      "reason": "Asset response type binary/octet-stream is not valid for image",
+      "capture": "assets-afterlogin-sports-upcoming-d30a384c-94ac-467f-a2de-3b67804c1cff-0"
+    },
+    {
+      "url": "https://v3.bundlecdn.com/shared/fonts/inter/InterVariable-latin.woff2",
+      "reason": "Loaded resource fetch failed: Asset bundling failed; page fetch failed: Browser Use encountered an error interacting with this webpage: TypeError: Failed to fetch",
+      "capture": "assets-betwave-1440"
+    },
+    {
+      "url": "https://v3.bundlecdn.com/shared/fonts/inter/InterVariable-cyrillic.woff2",
+      "reason": "Loaded resource fetch failed: Asset bundling failed; page fetch failed: Browser Use encountered an error interacting with this webpage: TypeError: Failed to fetch",
+      "capture": "assets-betwave-1440"
+    },
+    {
+      "url": "https://cdn.betwave.live/favicon.ico",
+      "reason": "Loaded resource fetch failed: Asset bundling failed; page fetch failed: Browser Use encountered an error interacting with this webpage: TypeError: Failed to fetch",
+      "capture": "assets-betwave-1440"
+    },
+    {
+      "url": "https://v3.bundlecdn.com/shared/fonts/inter/InterVariable-latin.woff2",
+      "reason": "Loaded resource fetch failed: Asset bundling failed; page fetch failed: Browser Use encountered an error interacting with this webpage: TypeError: Failed to fetch",
+      "capture": "assets-betwave-430"
+    },
+    {
+      "url": "https://v3.bundlecdn.com/shared/fonts/inter/InterVariable-cyrillic.woff2",
+      "reason": "Loaded resource fetch failed: Asset bundling failed; page fetch failed: Browser Use encountered an error interacting with this webpage: TypeError: Failed to fetch",
+      "capture": "assets-betwave-430"
+    },
+    {
+      "url": "https://cdn.betwave.live/favicon.ico",
+      "reason": "Loaded resource fetch failed: Asset bundling failed; page fetch failed: Browser Use encountered an error interacting with this webpage: TypeError: Failed to fetch",
+      "capture": "assets-betwave-430"
+    },
+    {
+      "url": "https://v3.bundlecdn.com/shared/fonts/inter/InterVariable-latin.woff2",
+      "reason": "Loaded resource fetch failed: Asset bundling failed; page fetch failed: Browser Use encountered an error interacting with this webpage: TypeError: Failed to fetch",
+      "capture": "assets-betwave-auth-1440"
+    },
+    {
+      "url": "https://v3.bundlecdn.com/shared/fonts/inter/InterVariable-cyrillic.woff2",
+      "reason": "Loaded resource fetch failed: Asset bundling failed; page fetch failed: Browser Use encountered an error interacting with this webpage: TypeError: Failed to fetch",
+      "capture": "assets-betwave-auth-1440"
+    },
+    {
+      "url": "https://v3.bundlecdn.com/shared/fonts/inter/InterVariable-latin.woff2",
+      "reason": "Loaded resource fetch failed: Asset bundling failed; page fetch failed: Browser Use encountered an error interacting with this webpage: TypeError: Failed to fetch",
+      "capture": "assets-betwave-auth-430"
+    },
+    {
+      "url": "https://v3.bundlecdn.com/shared/fonts/inter/InterVariable-cyrillic.woff2",
+      "reason": "Loaded resource fetch failed: Asset bundling failed; page fetch failed: Browser Use encountered an error interacting with this webpage: TypeError: Failed to fetch",
+      "capture": "assets-betwave-auth-430"
+    },
+    {
+      "url": "https://blog-cdn-01.com/production/1/Forum%20-%20%D0%94%D0%B8%D0%B7%D0%B0%D0%B8%CC%86%D0%BD%20%D0%B1%D0%B0%D0%BD%D0%BD%D0%B5%D1%80%D0%B0%20%D0%B4%D0%BB%D1%8F%20%D1%84%D0%BE%D1%80%D1%83%D0%BC%D0%B0%20EWC%2C%20x1%2C%20DL%2001.07-284_1781964953208",
+      "reason": "Loaded resource fetch failed: Asset bundling failed; page fetch failed: Browser Use encountered an error interacting with this webpage: TypeError: Failed to fetch",
+      "capture": "assets-blog-auth-1440"
+    },
+    {
+      "url": "https://blog-cdn-01.com/production/1/Forum%20-%20%D0%94%D0%B8%D0%B7%D0%B0%D0%B8%CC%86%D0%BD%20%D0%B1%D0%B0%D0%BD%D0%BD%D0%B5%D1%80%D0%B0%20%D0%B4%D0%BB%D1%8F%20%D1%84%D0%BE%D1%80%D1%83%D0%BC%D0%B0%20EWC%2C%20x1%2C%20DL%2001.07-283_1781105848107",
+      "reason": "Loaded resource fetch failed: Asset bundling failed; page fetch failed: Browser Use encountered an error interacting with this webpage: TypeError: Failed to fetch",
+      "capture": "assets-blog-auth-1440"
+    },
+    {
+      "url": "https://blog-cdn-01.com/production/1/Forum%20-%20%D0%94%D0%B8%D0%B7%D0%B0%D0%B8%CC%86%D0%BD%20%D0%B1%D0%B0%D0%BD%D0%BD%D0%B5%D1%80%D0%B0%20%D0%B4%D0%BB%D1%8F%20%D1%84%D0%BE%D1%80%D1%83%D0%BC%D0%B0%20EWC%2C%20x1%2C%20DL%2001.07-270-2_1780325484408",
+      "reason": "Loaded resource fetch failed: Asset bundling failed; page fetch failed: Browser Use encountered an error interacting with this webpage: TypeError: Failed to fetch",
+      "capture": "assets-blog-auth-1440"
+    },
+    {
+      "url": "https://blog-cdn-01.com/production/1/Forum%20-%20%D0%94%D0%B8%D0%B7%D0%B0%D0%B8%CC%86%D0%BD%20%D0%B1%D0%B0%D0%BD%D0%BD%D0%B5%D1%80%D0%B0%20%D0%B4%D0%BB%D1%8F%20%D1%84%D0%BE%D1%80%D1%83%D0%BC%D0%B0%20EWC%2C%20x1%2C%20DL%2001.07-275_1778857839310",
+      "reason": "Loaded resource fetch failed: Asset bundling failed; page fetch failed: Browser Use encountered an error interacting with this webpage: TypeError: Failed to fetch",
+      "capture": "assets-blog-auth-1440"
+    },
+    {
+      "url": "https://blog-cdn-01.com/production/1/Forum%20-%20%D0%94%D0%B8%D0%B7%D0%B0%D0%B8%CC%86%D0%BD%20%D0%B1%D0%B0%D0%BD%D0%BD%D0%B5%D1%80%D0%B0%20%D0%B4%D0%BB%D1%8F%20%D1%84%D0%BE%D1%80%D1%83%D0%BC%D0%B0%20EWC%2C%20x1%2C%20DL%2001.07-291_1782381797408",
+      "reason": "Loaded resource fetch failed: Asset bundling failed; page fetch failed: Browser Use encountered an error interacting with this webpage: TypeError: Failed to fetch",
+      "capture": "assets-blog-auth-1440"
+    },
+    {
+      "url": "https://blog-cdn-01.com/production/1/Forum%20-%20%D0%94%D0%B8%D0%B7%D0%B0%D0%B8%CC%86%D0%BD%20%D0%B1%D0%B0%D0%BD%D0%BD%D0%B5%D1%80%D0%B0%20%D0%B4%D0%BB%D1%8F%20%D1%84%D0%BE%D1%80%D1%83%D0%BC%D0%B0%20EWC%2C%20x1%2C%20DL%2001.07-1-8_1781010088190",
+      "reason": "Loaded resource fetch failed: Asset bundling failed; page fetch failed: Browser Use encountered an error interacting with this webpage: TypeError: Failed to fetch",
+      "capture": "assets-blog-auth-1440"
+    },
+    {
+      "url": "https://blog-cdn-01.com/production/1/Forum%20-%20%D0%94%D0%B8%D0%B7%D0%B0%D0%B8%CC%86%D0%BD%20%D0%B1%D0%B0%D0%BD%D0%BD%D0%B5%D1%80%D0%B0%20%D0%B4%D0%BB%D1%8F%20%D1%84%D0%BE%D1%80%D1%83%D0%BC%D0%B0%20EWC%2C%20x1%2C%20DL%2001.07-285_1780579263705",
+      "reason": "Loaded resource fetch failed: Asset bundling failed; page fetch failed: Browser Use encountered an error interacting with this webpage: TypeError: Failed to fetch",
+      "capture": "assets-blog-auth-1440"
+    },
+    {
+      "url": "https://blog-cdn-01.com/production/1/Forum%20-%20%D0%94%D0%B8%D0%B7%D0%B0%D0%B8%CC%86%D0%BD%20%D0%B1%D0%B0%D0%BD%D0%BD%D0%B5%D1%80%D0%B0%20%D0%B4%D0%BB%D1%8F%20%D1%84%D0%BE%D1%80%D1%83%D0%BC%D0%B0%20EWC%2C%20x1%2C%20DL%2001.07-284_1781964953208",
+      "reason": "Loaded resource fetch failed: Asset bundling failed; page fetch failed: Browser Use encountered an error interacting with this webpage: TypeError: Failed to fetch",
+      "capture": "assets-blog-auth-430"
+    },
+    {
+      "url": "https://blog-cdn-01.com/production/1/Forum%20-%20%D0%94%D0%B8%D0%B7%D0%B0%D0%B8%CC%86%D0%BD%20%D0%B1%D0%B0%D0%BD%D0%BD%D0%B5%D1%80%D0%B0%20%D0%B4%D0%BB%D1%8F%20%D1%84%D0%BE%D1%80%D1%83%D0%BC%D0%B0%20EWC%2C%20x1%2C%20DL%2001.07-283_1781105848107",
+      "reason": "Loaded resource fetch failed: Asset bundling failed; page fetch failed: Browser Use encountered an error interacting with this webpage: TypeError: Failed to fetch",
+      "capture": "assets-blog-auth-430"
+    },
+    {
+      "url": "https://blog-cdn-01.com/production/1/Forum%20-%20%D0%94%D0%B8%D0%B7%D0%B0%D0%B8%CC%86%D0%BD%20%D0%B1%D0%B0%D0%BD%D0%BD%D0%B5%D1%80%D0%B0%20%D0%B4%D0%BB%D1%8F%20%D1%84%D0%BE%D1%80%D1%83%D0%BC%D0%B0%20EWC%2C%20x1%2C%20DL%2001.07-270-2_1780325484408",
+      "reason": "Loaded resource fetch failed: Asset bundling failed; page fetch failed: Browser Use encountered an error interacting with this webpage: TypeError: Failed to fetch",
+      "capture": "assets-blog-auth-430"
+    },
+    {
+      "url": "https://blog-cdn-01.com/production/1/Forum%20-%20%D0%94%D0%B8%D0%B7%D0%B0%D0%B8%CC%86%D0%BD%20%D0%B1%D0%B0%D0%BD%D0%BD%D0%B5%D1%80%D0%B0%20%D0%B4%D0%BB%D1%8F%20%D1%84%D0%BE%D1%80%D1%83%D0%BC%D0%B0%20EWC%2C%20x1%2C%20DL%2001.07-275_1778857839310",
+      "reason": "Loaded resource fetch failed: Asset bundling failed; page fetch failed: Browser Use encountered an error interacting with this webpage: TypeError: Failed to fetch",
+      "capture": "assets-blog-auth-430"
+    },
+    {
+      "url": "https://blog-cdn-01.com/production/1/Forum%20-%20%D0%94%D0%B8%D0%B7%D0%B0%D0%B8%CC%86%D0%BD%20%D0%B1%D0%B0%D0%BD%D0%BD%D0%B5%D1%80%D0%B0%20%D0%B4%D0%BB%D1%8F%20%D1%84%D0%BE%D1%80%D1%83%D0%BC%D0%B0%20EWC%2C%20x1%2C%20DL%2001.07-291_1782381797408",
+      "reason": "Loaded resource fetch failed: Asset bundling failed; page fetch failed: Browser Use encountered an error interacting with this webpage: TypeError: Failed to fetch",
+      "capture": "assets-blog-auth-430"
+    },
+    {
+      "url": "https://blog-cdn-01.com/production/1/Forum%20-%20%D0%94%D0%B8%D0%B7%D0%B0%D0%B8%CC%86%D0%BD%20%D0%B1%D0%B0%D0%BD%D0%BD%D0%B5%D1%80%D0%B0%20%D0%B4%D0%BB%D1%8F%20%D1%84%D0%BE%D1%80%D1%83%D0%BC%D0%B0%20EWC%2C%20x1%2C%20DL%2001.07-1-8_1781010088190",
+      "reason": "Loaded resource fetch failed: Asset bundling failed; page fetch failed: Browser Use encountered an error interacting with this webpage: TypeError: Failed to fetch",
+      "capture": "assets-blog-auth-430"
+    },
+    {
+      "url": "https://blog-cdn-01.com/production/1/Forum%20-%20%D0%94%D0%B8%D0%B7%D0%B0%D0%B8%CC%86%D0%BD%20%D0%B1%D0%B0%D0%BD%D0%BD%D0%B5%D1%80%D0%B0%20%D0%B4%D0%BB%D1%8F%20%D1%84%D0%BE%D1%80%D1%83%D0%BC%D0%B0%20EWC%2C%20x1%2C%20DL%2001.07-285_1780579263705",
+      "reason": "Loaded resource fetch failed: Asset bundling failed; page fetch failed: Browser Use encountered an error interacting with this webpage: TypeError: Failed to fetch",
+      "capture": "assets-blog-auth-430"
+    },
+    {
+      "url": "https://optimize.v3.bundlecdn.com/unsafe/banner_mobile_2x/plain/https://d1x0nzb6t1pnx3.cloudfront.net/banner-files/YrelPYC8EeMVmRXaV23LYPTz_Qo-t7i3pgt4q6v9N5Eg3SlQXH0ngKNnfSVkJQJX7V-pzHq3Ajo0hnyu0lEXFoCmA7rRDkfj9c5n.jpg",
+      "reason": "Loaded resource fetch failed: Asset bundling failed; page fetch failed: Browser Use encountered an error interacting with this webpage: TypeError: Failed to fetch",
+      "capture": "assets-casino-auth-1440"
+    },
+    {
+      "url": "https://optimize.v3.bundlecdn.com/unsafe/banner_mobile_2x/plain/https://d1x0nzb6t1pnx3.cloudfront.net/banner-files/o75wIwIJK2VQEdnTfxliBphhAlVQMap2XgK0HxmWzbsOSiABPh3kaTXkKY1zllA4hDk34INeTpkvfFn2wQuuYk5S84ej_MBERCTG.jpg",
+      "reason": "Loaded resource fetch failed: Asset bundling failed; page fetch failed: Browser Use encountered an error interacting with this webpage: TypeError: Failed to fetch",
+      "capture": "assets-casino-auth-1440"
+    },
+    {
+      "url": "https://optimize.v3.bundlecdn.com/unsafe/banner_mobile_2x/plain/https://d1x0nzb6t1pnx3.cloudfront.net/banner-files/YrelPYC8EeMVmRXaV23LYPTz_Qo-t7i3pgt4q6v9N5Eg3SlQXH0ngKNnfSVkJQJX7V-pzHq3Ajo0hnyu0lEXFoCmA7rRDkfj9c5n.jpg",
+      "reason": "Loaded resource fetch failed: Asset bundling failed; page fetch failed: Browser Use encountered an error interacting with this webpage: TypeError: Failed to fetch",
+      "capture": "assets-casino-auth-430"
+    },
+    {
+      "url": "https://optimize.v3.bundlecdn.com/unsafe/banner_mobile_2x/plain/https://d1x0nzb6t1pnx3.cloudfront.net/banner-files/o75wIwIJK2VQEdnTfxliBphhAlVQMap2XgK0HxmWzbsOSiABPh3kaTXkKY1zllA4hDk34INeTpkvfFn2wQuuYk5S84ej_MBERCTG.jpg",
+      "reason": "Loaded resource fetch failed: Asset bundling failed; page fetch failed: Browser Use encountered an error interacting with this webpage: TypeError: Failed to fetch",
+      "capture": "assets-casino-auth-430"
+    },
+    {
+      "url": "https://optimize.v3.bundlecdn.com/unsafe/banner_mobile_2x/plain/https://d1x0nzb6t1pnx3.cloudfront.net/banner-files/SMmItUmlOyJ3eptxS9t5TnFkTcOu2TrXbS6IIx19T3UKtdfTm16neByp2oPP3ECF4r5z-C-JbgS1AEH2z0IfYDDvHbIM9aYL_umX.jpg",
+      "reason": "Loaded resource fetch failed: Asset bundling failed; page fetch failed: Browser Use encountered an error interacting with this webpage: TypeError: Failed to fetch",
+      "capture": "assets-casino-live-full-1440"
+    },
+    {
+      "url": "https://optimize.v3.bundlecdn.com/unsafe/banner_mobile_2x/plain/https://d1x0nzb6t1pnx3.cloudfront.net/banner-files/SMmItUmlOyJ3eptxS9t5TnFkTcOu2TrXbS6IIx19T3UKtdfTm16neByp2oPP3ECF4r5z-C-JbgS1AEH2z0IfYDDvHbIM9aYL_umX.jpg",
+      "reason": "Loaded resource fetch failed: Asset bundling failed; page fetch failed: Browser Use encountered an error interacting with this webpage: TypeError: Failed to fetch",
+      "capture": "assets-casino-live-full-1920"
+    },
+    {
+      "url": "https://optimize.v3.bundlecdn.com/unsafe/banner_mobile_2x/plain/https://d1x0nzb6t1pnx3.cloudfront.net/banner-files/SMmItUmlOyJ3eptxS9t5TnFkTcOu2TrXbS6IIx19T3UKtdfTm16neByp2oPP3ECF4r5z-C-JbgS1AEH2z0IfYDDvHbIM9aYL_umX.jpg",
+      "reason": "Loaded resource fetch failed: Asset bundling failed; page fetch failed: Browser Use encountered an error interacting with this webpage: TypeError: Failed to fetch",
+      "capture": "assets-casino-live-full-390"
+    },
+    {
+      "url": "https://optimize.v3.bundlecdn.com/unsafe/banner_mobile_2x/plain/https://d1x0nzb6t1pnx3.cloudfront.net/banner-files/SMmItUmlOyJ3eptxS9t5TnFkTcOu2TrXbS6IIx19T3UKtdfTm16neByp2oPP3ECF4r5z-C-JbgS1AEH2z0IfYDDvHbIM9aYL_umX.jpg",
+      "reason": "Loaded resource fetch failed: Asset bundling failed; page fetch failed: Browser Use encountered an error interacting with this webpage: TypeError: Failed to fetch",
+      "capture": "assets-casino-live-full-430"
+    },
+    {
+      "url": "https://one-vv3591.com/resources/v1/app/static/betting/bn/showcase/gift.webp",
+      "reason": "Asset response type binary/octet-stream is not valid for image",
+      "capture": "assets-expanded-sports-desktop-0"
+    },
+    {
+      "url": "https://one-vv3591.com/resources/v1/app/static/betting/bn/showcase/gift.webp",
+      "reason": "Asset response type binary/octet-stream is not valid for image",
+      "capture": "assets-expanded-sports-loaded-0"
+    },
+    {
+      "url": "https://optimize.v3.bundlecdn.com/unsafe/banner_mobile_5x/plain/https://d1x0nzb6t1pnx3.cloudfront.net/banner-files/VgLqL3FyoIbEyQzsvs376cINbOuj2KrrPRrwRk2AzJN_BpDL9xurYufDWRjd2Y5J-GwDl-YYLEDlsrNSoLgD5ZLOUI-NuoKVyKt6.jpg",
+      "reason": "Loaded resource fetch failed: Asset bundling failed; page fetch failed: Browser Use encountered an error interacting with this webpage: TypeError: Failed to fetch",
+      "capture": "assets-home-auth"
+    },
+    {
+      "url": "https://optimize.v3.bundlecdn.com/unsafe/banner_mobile_5x/plain/https://d1x0nzb6t1pnx3.cloudfront.net/banner-files/36nFLCoL8qAGfQy7KBFoiNuzVfukwB4dSnjPzqSpZAvbP8YMH5AfEQIOjLxIzP_IdAomD7R6TpaK_lRswd6YrSkhsnjBKOfD74V2.jpg",
+      "reason": "Loaded resource fetch failed: Asset bundling failed; page fetch failed: Browser Use encountered an error interacting with this webpage: TypeError: Failed to fetch",
+      "capture": "assets-home-auth"
+    },
+    {
+      "url": "https://optimize.v3.bundlecdn.com/unsafe/banner_mobile_5x/plain/https://d1x0nzb6t1pnx3.cloudfront.net/banner-files/zk-xcdn-5MBb-h98_hAYXDD2IrmiiWiRG2C6XSlxd3sPLab3A5eQ1rT_Cnt0P7jU-sSKLsiluo9tg4eieFXemNIo7d4JzIuupJnE.jpg",
+      "reason": "Loaded resource fetch failed: Asset bundling failed; page fetch failed: Browser Use encountered an error interacting with this webpage: TypeError: Failed to fetch",
+      "capture": "assets-home-auth"
+    },
+    {
+      "url": "https://optimize.v3.bundlecdn.com/unsafe/banner_mobile_5x/plain/https://d1x0nzb6t1pnx3.cloudfront.net/banner-files/YPDbkjAwBviOOmnqw97XMYCibS1fGIpr7wIHS5Yw4ZSVEZPd5_dOWKMEoUc_uvQsYgI_KGMVEUx1Rfp_uFXxkJLk06BHxAB4b7Ta.jpg",
+      "reason": "Loaded resource fetch failed: Asset bundling failed; page fetch failed: Browser Use encountered an error interacting with this webpage: TypeError: Failed to fetch",
+      "capture": "assets-home-auth"
+    },
+    {
+      "url": "https://v3.bundlecdn.com/shared/fonts/inter/InterVariable-latin.woff2",
+      "reason": "Loaded resource fetch failed: Asset bundling failed; page fetch failed: Browser Use encountered an error interacting with this webpage: TypeError: Failed to fetch",
+      "capture": "assets-pageaudit-betwave-902f50c6-90e9-4632-bdfb-d19bebf71fcb-0"
+    },
+    {
+      "url": "https://v3.bundlecdn.com/shared/fonts/inter/InterVariable-cyrillic.woff2",
+      "reason": "Loaded resource fetch failed: Asset bundling failed; page fetch failed: Browser Use encountered an error interacting with this webpage: TypeError: Failed to fetch",
+      "capture": "assets-pageaudit-betwave-902f50c6-90e9-4632-bdfb-d19bebf71fcb-0"
+    },
+    {
+      "url": "https://one-vv3591.com/resources/v1/app/static/betting/bn/showcase/gift.webp",
+      "reason": "Asset response type binary/octet-stream is not valid for image",
+      "capture": "assets-pageaudit-sports-d235ac88-c026-4ca4-97a8-0e45739fde2e-0"
+    },
+    {
+      "url": "https://one-vv3591.com/resources/v1/app/static/betting/bn/showcase/gift.webp",
+      "reason": "Asset response type binary/octet-stream is not valid for image",
+      "capture": "assets-pageaudit-sports-esports-0ba1b18b-9a3b-4321-8a8c-988302a5c34b-0"
+    },
+    {
+      "url": "https://one-vv3591.com/resources/v1/app/static/betting/ui/fire-3d.webp",
+      "reason": "Asset response type binary/octet-stream is not valid for image",
+      "capture": "assets-pageaudit-sports-esports-0ba1b18b-9a3b-4321-8a8c-988302a5c34b-0"
+    },
+    {
+      "url": "https://one-vv3591.com/resources/v1/app/static/betting/bn/showcase/gift.webp",
+      "reason": "Asset response type binary/octet-stream is not valid for image",
+      "capture": "assets-pageaudit-sports-esports-46d64d52-8f2b-45f7-a5fd-8c856362fbee-0"
+    },
+    {
+      "url": "https://one-vv3591.com/resources/v1/app/static/betting/ui/fire-3d.webp",
+      "reason": "Asset response type binary/octet-stream is not valid for image",
+      "capture": "assets-pageaudit-sports-esports-46d64d52-8f2b-45f7-a5fd-8c856362fbee-0"
+    },
+    {
+      "url": "https://one-vv3591.com/resources/v1/app/static/betting/bn/showcase/gift.webp",
+      "reason": "Asset response type binary/octet-stream is not valid for image",
+      "capture": "assets-pageaudit-sports-esports-7a7f613c-8c67-4478-a5ff-d90092eac40f-0"
+    },
+    {
+      "url": "https://one-vv3591.com/resources/v1/app/static/betting/ui/fire-3d.webp",
+      "reason": "Asset response type binary/octet-stream is not valid for image",
+      "capture": "assets-pageaudit-sports-esports-7a7f613c-8c67-4478-a5ff-d90092eac40f-0"
+    },
+    {
+      "url": "https://one-vv3591.com/resources/v1/app/static/betting/bn/showcase/gift.webp",
+      "reason": "Asset response type binary/octet-stream is not valid for image",
+      "capture": "assets-pageaudit-sports-esports-f3c67558-ec59-415e-a83c-1610d4b6f942-0"
+    },
+    {
+      "url": "https://one-vv3591.com/resources/v1/app/static/betting/ui/fire-3d.webp",
+      "reason": "Asset response type binary/octet-stream is not valid for image",
+      "capture": "assets-pageaudit-sports-esports-f3c67558-ec59-415e-a83c-1610d4b6f942-0"
+    },
+    {
+      "url": "https://one-vv3591.com/resources/v1/app/static/betting/bn/showcase/gift.webp",
+      "reason": "Asset response type binary/octet-stream is not valid for image",
+      "capture": "assets-pageaudit-sports-leagues-horizontal-9781d2bb-c90c-46ee-b38b-247503b0f9c9-0"
+    },
+    {
+      "url": "https://one-vv3591.com/resources/v1/app/static/betting/ui/fire-3d.webp",
+      "reason": "Asset response type binary/octet-stream is not valid for image",
+      "capture": "assets-pageaudit-sports-live-current-439437e5-58cb-4c4a-a430-dbd8258b0d4b-0"
+    },
+    {
+      "url": "https://one-vv3591.com/resources/v1/app/static/betting/bn/showcase/gift.webp",
+      "reason": "Asset response type binary/octet-stream is not valid for image",
+      "capture": "assets-pageaudit-sports-live-current-439437e5-58cb-4c4a-a430-dbd8258b0d4b-0"
+    },
+    {
+      "url": "https://one-vv3591.com/resources/v1/app/static/betting/ui/fire-3d.webp",
+      "reason": "Asset response type binary/octet-stream is not valid for image",
+      "capture": "assets-pageaudit-sports-live-e5ae77c9-b2cd-4164-bc98-792354f542dc-0"
+    },
+    {
+      "url": "https://one-vv3591.com/resources/v1/app/static/betting/bn/showcase/gift.webp",
+      "reason": "Asset response type binary/octet-stream is not valid for image",
+      "capture": "assets-pageaudit-sports-live-e5ae77c9-b2cd-4164-bc98-792354f542dc-0"
+    },
+    {
+      "url": "https://one-vv3591.com/resources/v1/app/static/betting/ui/fire-3d.webp",
+      "reason": "Asset response type binary/octet-stream is not valid for image",
+      "capture": "assets-pageaudit-sports-upcoming-df74f095-81fa-44d0-8e31-28c9a9ef14ba-0"
+    },
+    {
+      "url": "https://one-vv3591.com/resources/v1/app/static/betting/bn/showcase/gift.webp",
+      "reason": "Asset response type binary/octet-stream is not valid for image",
+      "capture": "assets-pageaudit-sports-upcoming-df74f095-81fa-44d0-8e31-28c9a9ef14ba-0"
+    },
+    {
+      "url": "https://one-vv3591.com/resources/v1/app/static/betting/bn/showcase/gift.webp",
+      "reason": "Asset response type binary/octet-stream is not valid for image",
+      "capture": "assets-sports-1440"
+    },
+    {
+      "url": "https://one-vv3591.com/resources/v1/app/static/betting/bn/showcase/gift.webp",
+      "reason": "Asset response type binary/octet-stream is not valid for image",
+      "capture": "assets-sports-430"
+    },
+    {
+      "url": "https://one-vv3591.com/resources/v1/app/static/betting/bn/showcase/gift.webp",
+      "reason": "Asset response type binary/octet-stream is not valid for image",
+      "capture": "assets-sports-auth-1440"
+    },
+    {
+      "url": "https://one-vv3591.com/resources/v1/app/static/betting/bn/showcase/gift.webp",
+      "reason": "Asset response type binary/octet-stream is not valid for image",
+      "capture": "assets-sports-auth-430"
+    },
+    {
+      "url": "https://one-vv3591.com/resources/v1/app/static/betting/ui/fire-3d.webp",
+      "reason": "Asset response type binary/octet-stream is not valid for image",
+      "capture": "assets-sports-esports-1440"
+    },
+    {
+      "url": "https://one-vv3591.com/resources/v1/app/static/betting/bn/showcase/gift.webp",
+      "reason": "Asset response type binary/octet-stream is not valid for image",
+      "capture": "assets-sports-esports-1440"
+    },
+    {
+      "url": "https://one-vv3591.com/resources/v1/app/static/betting/ui/fire-3d.webp",
+      "reason": "Asset response type binary/octet-stream is not valid for image",
+      "capture": "assets-sports-esports-430"
+    },
+    {
+      "url": "https://one-vv3591.com/resources/v1/app/static/betting/bn/showcase/gift.webp",
+      "reason": "Asset response type binary/octet-stream is not valid for image",
+      "capture": "assets-sports-esports-430"
+    },
+    {
+      "url": "https://one-vv3591.com/resources/v1/app/static/betting/bn/showcase/gift.webp",
+      "reason": "Asset response type binary/octet-stream is not valid for image",
+      "capture": "assets-sports-expanded"
+    },
+    {
+      "url": "https://one-vv3591.com/resources/v1/app/static/betting/bn/showcase/gift.webp",
+      "reason": "Asset response type binary/octet-stream is not valid for image",
+      "capture": "assets-sports-live-1440"
+    },
+    {
+      "url": "https://one-vv3591.com/resources/v1/app/static/betting/ui/fire-3d.webp",
+      "reason": "Asset response type binary/octet-stream is not valid for image",
+      "capture": "assets-sports-live-1440"
+    },
+    {
+      "url": "https://one-vv3591.com/resources/v1/app/static/betting/bn/showcase/gift.webp",
+      "reason": "Asset response type binary/octet-stream is not valid for image",
+      "capture": "assets-sports-live-430"
+    },
+    {
+      "url": "https://one-vv3591.com/resources/v1/app/static/betting/ui/fire-3d.webp",
+      "reason": "Asset response type binary/octet-stream is not valid for image",
+      "capture": "assets-sports-live-430"
+    },
+    {
+      "url": "https://one-vv3591.com/resources/v1/app/static/betting/ui/fire-3d.webp",
+      "reason": "Asset response type binary/octet-stream is not valid for image",
+      "capture": "assets-sports-upcoming-1440"
+    },
+    {
+      "url": "https://one-vv3591.com/resources/v1/app/static/betting/bn/showcase/gift.webp",
+      "reason": "Asset response type binary/octet-stream is not valid for image",
+      "capture": "assets-sports-upcoming-1440"
+    },
+    {
+      "url": "https://one-vv3591.com/resources/v1/app/static/betting/ui/fire-3d.webp",
+      "reason": "Asset response type binary/octet-stream is not valid for image",
+      "capture": "assets-sports-upcoming-430"
+    },
+    {
+      "url": "https://one-vv3591.com/resources/v1/app/static/betting/bn/showcase/gift.webp",
+      "reason": "Asset response type binary/octet-stream is not valid for image",
+      "capture": "assets-sports-upcoming-430"
+    },
+    {
+      "url": "https://optimize.v3.bundlecdn.com/unsafe/freemoney_banner_desktop_2x/plain/https://d16q5vvir3f28d.cloudfront.net/raffles/47/home-page-banner/desktop-small/picture.png@webp",
+      "reason": "Loaded resource fetch failed: Asset bundling failed; page fetch failed: Browser Use encountered an error interacting with this webpage: TypeError: Failed to fetch",
+      "capture": "assets-sports"
+    },
+    {
+      "url": "https://one-vv3591.com/resources/v1/app/static/betting/bn/showcase/gift.webp",
+      "reason": "Asset response type binary/octet-stream is not valid for image",
+      "capture": "assets-sports"
+    }
+  ]
+}

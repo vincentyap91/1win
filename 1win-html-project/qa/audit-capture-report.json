@@ -1,0 +1,3477 @@
+[
+  {
+    "capture": "betwave-1440x900",
+    "page": "betwave",
+    "auth": false,
+    "metrics": {
+      "fullHeight": 4160,
+      "height": 900,
+      "scrollWidth": 1440,
+      "scrollY": 0,
+      "width": 1440
+    },
+    "missing_images": []
+  },
+  {
+    "capture": "betwave-1920x1080",
+    "page": "betwave",
+    "auth": false,
+    "metrics": {
+      "fullHeight": 3703,
+      "height": 1080,
+      "scrollWidth": 1920,
+      "scrollY": 0,
+      "width": 1920
+    },
+    "missing_images": []
+  },
+  {
+    "capture": "betwave-390x844",
+    "page": "betwave",
+    "auth": false,
+    "metrics": {
+      "fullHeight": 5781,
+      "height": 844,
+      "scrollWidth": 390,
+      "scrollY": 0,
+      "width": 390
+    },
+    "missing_images": []
+  },
+  {
+    "capture": "betwave-430x932",
+    "page": "betwave",
+    "auth": false,
+    "metrics": {
+      "fullHeight": 5727,
+      "height": 932,
+      "scrollWidth": 430,
+      "scrollY": 0,
+      "width": 430
+    },
+    "missing_images": []
+  },
+  {
+    "capture": "betwave-768x1024",
+    "page": "betwave",
+    "auth": false,
+    "metrics": {
+      "fullHeight": 4949,
+      "height": 1024,
+      "scrollWidth": 768,
+      "scrollY": 0,
+      "width": 768
+    },
+    "missing_images": []
+  },
+  {
+    "capture": "betwave-auth-1440x900",
+    "page": "betwave",
+    "auth": true,
+    "metrics": {
+      "fullHeight": 3087,
+      "height": 900,
+      "scrollWidth": 1425,
+      "scrollY": 0,
+      "width": 1440
+    },
+    "missing_images": [
+      "mikhail lazarev",
+      "Lens",
+      "Sporting CP",
+      "RB Leipzig",
+      "PSV Eindhoven"
+    ]
+  },
+  {
+    "capture": "betwave-auth-1920x1080",
+    "page": "betwave",
+    "auth": true,
+    "metrics": {
+      "fullHeight": 3069,
+      "height": 1080,
+      "scrollWidth": 1905,
+      "scrollY": 0,
+      "width": 1920
+    },
+    "missing_images": [
+      "mikhail lazarev",
+      "Lens",
+      "Sporting CP",
+      "RB Leipzig",
+      "PSV Eindhoven"
+    ]
+  },
+  {
+    "capture": "betwave-auth-390x844",
+    "page": "betwave",
+    "auth": true,
+    "metrics": {
+      "fullHeight": 4328,
+      "height": 844,
+      "scrollWidth": 551,
+      "scrollY": 0,
+      "width": 390
+    },
+    "missing_images": [
+      "mikhail lazarev",
+      "Lens",
+      "Sporting CP",
+      "RB Leipzig",
+      "PSV Eindhoven"
+    ]
+  },
+  {
+    "capture": "betwave-auth-430x932",
+    "page": "betwave",
+    "auth": true,
+    "metrics": {
+      "fullHeight": 4328,
+      "height": 932,
+      "scrollWidth": 551,
+      "scrollY": 0,
+      "width": 430
+    },
+    "missing_images": [
+      "mikhail lazarev",
+      "Lens",
+      "Sporting CP",
+      "RB Leipzig",
+      "PSV Eindhoven"
+    ]
+  },
+  {
+    "capture": "betwave-auth-768x1024",
+    "page": "betwave",
+    "auth": true,
+    "metrics": {
+      "fullHeight": 4012,
+      "height": 1024,
+      "scrollWidth": 753,
+      "scrollY": 0,
+      "width": 768
+    },
+    "missing_images": [
+      "mikhail lazarev",
+      "Lens",
+      "Sporting CP",
+      "RB Leipzig",
+      "PSV Eindhoven"
+    ]
+  },
+  {
+    "capture": "blog-1440x900",
+    "page": "blog",
+    "auth": false,
+    "metrics": {
+      "fullHeight": 4186,
+      "height": 900,
+      "scrollWidth": 1440,
+      "scrollY": 3286,
+      "width": 1440
+    },
+    "missing_images": []
+  },
+  {
+    "capture": "blog-1920x1080",
+    "page": "blog",
+    "auth": false,
+    "metrics": {
+      "fullHeight": 5026,
+      "height": 1080,
+      "scrollWidth": 1920,
+      "scrollY": 0,
+      "width": 1920
+    },
+    "missing_images": []
+  },
+  {
+    "capture": "blog-390x844",
+    "page": "blog",
+    "auth": false,
+    "metrics": {
+      "fullHeight": 8531,
+      "height": 844,
+      "scrollWidth": 390,
+      "scrollY": 0,
+      "width": 390
+    },
+    "missing_images": []
+  },
+  {
+    "capture": "blog-430x932",
+    "page": "blog",
+    "auth": false,
+    "metrics": {
+      "fullHeight": 8983,
+      "height": 932,
+      "scrollWidth": 430,
+      "scrollY": 0,
+      "width": 430
+    },
+    "missing_images": []
+  },
+  {
+    "capture": "blog-768x1024",
+    "page": "blog",
+    "auth": false,
+    "metrics": {
+      "fullHeight": 6153,
+      "height": 1024,
+      "scrollWidth": 768,
+      "scrollY": 0,
+      "width": 768
+    },
+    "missing_images": []
+  },
+  {
+    "capture": "blog-auth-1440x900",
+    "page": "blog",
+    "auth": true,
+    "metrics": {
+      "fullHeight": 4145,
+      "height": 900,
+      "scrollWidth": 1440,
+      "scrollY": 0,
+      "width": 1440
+    },
+    "missing_images": []
+  },
+  {
+    "capture": "blog-auth-1920x1080",
+    "page": "blog",
+    "auth": true,
+    "metrics": {
+      "fullHeight": 5026,
+      "height": 1080,
+      "scrollWidth": 1920,
+      "scrollY": 0,
+      "width": 1920
+    },
+    "missing_images": []
+  },
+  {
+    "capture": "blog-auth-390x844",
+    "page": "blog",
+    "auth": true,
+    "metrics": {
+      "fullHeight": 8777,
+      "height": 844,
+      "scrollWidth": 390,
+      "scrollY": 0,
+      "width": 390
+    },
+    "missing_images": []
+  },
+  {
+    "capture": "blog-auth-430x932",
+    "page": "blog",
+    "auth": true,
+    "metrics": {
+      "fullHeight": 9229,
+      "height": 932,
+      "scrollWidth": 430,
+      "scrollY": 0,
+      "width": 430
+    },
+    "missing_images": []
+  },
+  {
+    "capture": "blog-auth-768x1024",
+    "page": "blog",
+    "auth": true,
+    "metrics": {
+      "fullHeight": 6395,
+      "height": 1024,
+      "scrollWidth": 768,
+      "scrollY": 0,
+      "width": 768
+    },
+    "missing_images": []
+  },
+  {
+    "capture": "bonuses-1440x900",
+    "page": "bonuses",
+    "auth": false,
+    "metrics": {
+      "fullHeight": 1801,
+      "height": 900,
+      "scrollWidth": 1440,
+      "scrollY": 0,
+      "width": 1440
+    },
+    "missing_images": []
+  },
+  {
+    "capture": "bonuses-1920x1080",
+    "page": "bonuses",
+    "auth": false,
+    "metrics": {
+      "fullHeight": 1760,
+      "height": 1080,
+      "scrollWidth": 1920,
+      "scrollY": 0,
+      "width": 1920
+    },
+    "missing_images": []
+  },
+  {
+    "capture": "bonuses-390x844",
+    "page": "bonuses",
+    "auth": false,
+    "metrics": {
+      "fullHeight": 2088,
+      "height": 844,
+      "scrollWidth": 390,
+      "scrollY": 0,
+      "width": 390
+    },
+    "missing_images": []
+  },
+  {
+    "capture": "bonuses-430x932",
+    "page": "bonuses",
+    "auth": false,
+    "metrics": {
+      "fullHeight": 2068,
+      "height": 932,
+      "scrollWidth": 430,
+      "scrollY": 0,
+      "width": 430
+    },
+    "missing_images": []
+  },
+  {
+    "capture": "bonuses-768x1024",
+    "page": "bonuses",
+    "auth": false,
+    "metrics": {
+      "fullHeight": 2068,
+      "height": 1024,
+      "scrollWidth": 768,
+      "scrollY": 0,
+      "width": 768
+    },
+    "missing_images": []
+  },
+  {
+    "capture": "bonuses-auth-1440x900",
+    "page": "bonuses",
+    "auth": true,
+    "metrics": {
+      "fullHeight": 2028,
+      "height": 900,
+      "scrollWidth": 1440,
+      "scrollY": 0,
+      "width": 1440
+    },
+    "missing_images": []
+  },
+  {
+    "capture": "bonuses-auth-1920x1080",
+    "page": "bonuses",
+    "auth": true,
+    "metrics": {
+      "fullHeight": 2028,
+      "height": 1080,
+      "scrollWidth": 1920,
+      "scrollY": 0,
+      "width": 1920
+    },
+    "missing_images": []
+  },
+  {
+    "capture": "bonuses-auth-390x844",
+    "page": "bonuses",
+    "auth": true,
+    "metrics": {
+      "fullHeight": 3386,
+      "height": 844,
+      "scrollWidth": 390,
+      "scrollY": 0,
+      "width": 390
+    },
+    "missing_images": []
+  },
+  {
+    "capture": "bonuses-auth-430x932",
+    "page": "bonuses",
+    "auth": true,
+    "metrics": {
+      "fullHeight": 2762,
+      "height": 932,
+      "scrollWidth": 430,
+      "scrollY": 0,
+      "width": 430
+    },
+    "missing_images": []
+  },
+  {
+    "capture": "bonuses-auth-768x1024",
+    "page": "bonuses",
+    "auth": true,
+    "metrics": {
+      "fullHeight": 2702,
+      "height": 1024,
+      "scrollWidth": 768,
+      "scrollY": 0,
+      "width": 768
+    },
+    "missing_images": []
+  },
+  {
+    "capture": "casino-1440x900",
+    "page": "casino",
+    "auth": false,
+    "metrics": {
+      "fullHeight": 5440,
+      "height": 900,
+      "scrollWidth": 1440,
+      "scrollY": 0,
+      "width": 1440
+    },
+    "missing_images": []
+  },
+  {
+    "capture": "casino-1920x1080",
+    "page": "casino",
+    "auth": false,
+    "metrics": {
+      "fullHeight": 5369,
+      "height": 1080,
+      "scrollWidth": 1920,
+      "scrollY": 0,
+      "width": 1920
+    },
+    "missing_images": []
+  },
+  {
+    "capture": "casino-1win-1440x900",
+    "page": "casino-1win",
+    "auth": false,
+    "metrics": {
+      "fullHeight": 1949,
+      "height": 900,
+      "scrollWidth": 1440,
+      "scrollY": 0,
+      "width": 1440
+    },
+    "missing_images": []
+  },
+  {
+    "capture": "casino-1win-1920x1080",
+    "page": "casino-1win",
+    "auth": false,
+    "metrics": {
+      "fullHeight": 2360,
+      "height": 1080,
+      "scrollWidth": 1920,
+      "scrollY": 0,
+      "width": 1920
+    },
+    "missing_images": []
+  },
+  {
+    "capture": "casino-1win-390x844",
+    "page": "casino-1win",
+    "auth": false,
+    "metrics": {
+      "fullHeight": 2385,
+      "height": 844,
+      "scrollWidth": 390,
+      "scrollY": 0,
+      "width": 390
+    },
+    "missing_images": []
+  },
+  {
+    "capture": "casino-1win-430x932",
+    "page": "casino-1win",
+    "auth": false,
+    "metrics": {
+      "fullHeight": 2513,
+      "height": 932,
+      "scrollWidth": 430,
+      "scrollY": 0,
+      "width": 430
+    },
+    "missing_images": []
+  },
+  {
+    "capture": "casino-1win-768x1024",
+    "page": "casino-1win",
+    "auth": false,
+    "metrics": {
+      "fullHeight": 1954,
+      "height": 1024,
+      "scrollWidth": 768,
+      "scrollY": 0,
+      "width": 768
+    },
+    "missing_images": []
+  },
+  {
+    "capture": "casino-1win-auth-1440x900",
+    "page": "casino-1win",
+    "auth": true,
+    "metrics": {
+      "fullHeight": 1908,
+      "height": 900,
+      "scrollWidth": 1440,
+      "scrollY": 0,
+      "width": 1440
+    },
+    "missing_images": []
+  },
+  {
+    "capture": "casino-1win-auth-1920x1080",
+    "page": "casino-1win",
+    "auth": true,
+    "metrics": {
+      "fullHeight": 2188,
+      "height": 1080,
+      "scrollWidth": 1920,
+      "scrollY": 0,
+      "width": 1920
+    },
+    "missing_images": []
+  },
+  {
+    "capture": "casino-1win-auth-390x844",
+    "page": "casino-1win",
+    "auth": true,
+    "metrics": {
+      "fullHeight": 2816,
+      "height": 844,
+      "scrollWidth": 390,
+      "scrollY": 0,
+      "width": 390
+    },
+    "missing_images": []
+  },
+  {
+    "capture": "casino-1win-auth-430x932",
+    "page": "casino-1win",
+    "auth": true,
+    "metrics": {
+      "fullHeight": 2075,
+      "height": 932,
+      "scrollWidth": 430,
+      "scrollY": 0,
+      "width": 430
+    },
+    "missing_images": []
+  },
+  {
+    "capture": "casino-1win-auth-768x1024",
+    "page": "casino-1win",
+    "auth": true,
+    "metrics": {
+      "fullHeight": 2126,
+      "height": 1024,
+      "scrollWidth": 768,
+      "scrollY": 0,
+      "width": 768
+    },
+    "missing_images": []
+  },
+  {
+    "capture": "casino-390x844",
+    "page": "casino",
+    "auth": false,
+    "metrics": {
+      "fullHeight": 5115,
+      "height": 844,
+      "scrollWidth": 390,
+      "scrollY": 0,
+      "width": 390
+    },
+    "missing_images": []
+  },
+  {
+    "capture": "casino-430x932",
+    "page": "casino",
+    "auth": false,
+    "metrics": {
+      "fullHeight": 5321,
+      "height": 932,
+      "scrollWidth": 430,
+      "scrollY": 0,
+      "width": 430
+    },
+    "missing_images": []
+  },
+  {
+    "capture": "casino-768x1024",
+    "page": "casino",
+    "auth": false,
+    "metrics": {
+      "fullHeight": 5170,
+      "height": 1024,
+      "scrollWidth": 768,
+      "scrollY": 0,
+      "width": 768
+    },
+    "missing_images": []
+  },
+  {
+    "capture": "casino-auth-1440x900",
+    "page": "casino",
+    "auth": true,
+    "metrics": {
+      "fullHeight": 5427,
+      "height": 900,
+      "scrollWidth": 1440,
+      "scrollY": 0,
+      "width": 1440
+    },
+    "missing_images": []
+  },
+  {
+    "capture": "casino-auth-1920x1080",
+    "page": "casino",
+    "auth": true,
+    "metrics": {
+      "fullHeight": 5796,
+      "height": 1080,
+      "scrollWidth": 1920,
+      "scrollY": 0,
+      "width": 1920
+    },
+    "missing_images": []
+  },
+  {
+    "capture": "casino-auth-390x844",
+    "page": "casino",
+    "auth": true,
+    "metrics": {
+      "fullHeight": 5195,
+      "height": 844,
+      "scrollWidth": 390,
+      "scrollY": 0,
+      "width": 390
+    },
+    "missing_images": []
+  },
+  {
+    "capture": "casino-auth-430x932",
+    "page": "casino",
+    "auth": true,
+    "metrics": {
+      "fullHeight": 5403,
+      "height": 932,
+      "scrollWidth": 430,
+      "scrollY": 0,
+      "width": 430
+    },
+    "missing_images": []
+  },
+  {
+    "capture": "casino-auth-768x1024",
+    "page": "casino",
+    "auth": true,
+    "metrics": {
+      "fullHeight": 4382,
+      "height": 1024,
+      "scrollWidth": 768,
+      "scrollY": 0,
+      "width": 768
+    },
+    "missing_images": []
+  },
+  {
+    "capture": "casino-bonus-buy-1440x900",
+    "page": "casino-bonus-buy",
+    "auth": false,
+    "metrics": {
+      "fullHeight": 2626,
+      "height": 900,
+      "scrollWidth": 1440,
+      "scrollY": 0,
+      "width": 1440
+    },
+    "missing_images": []
+  },
+  {
+    "capture": "casino-bonus-buy-1920x1080",
+    "page": "casino-bonus-buy",
+    "auth": false,
+    "metrics": {
+      "fullHeight": 2360,
+      "height": 1080,
+      "scrollWidth": 1920,
+      "scrollY": 0,
+      "width": 1920
+    },
+    "missing_images": []
+  },
+  {
+    "capture": "casino-bonus-buy-390x844",
+    "page": "casino-bonus-buy",
+    "auth": false,
+    "metrics": {
+      "fullHeight": 2713,
+      "height": 844,
+      "scrollWidth": 390,
+      "scrollY": 0,
+      "width": 390
+    },
+    "missing_images": []
+  },
+  {
+    "capture": "casino-bonus-buy-430x932",
+    "page": "casino-bonus-buy",
+    "auth": false,
+    "metrics": {
+      "fullHeight": 2301,
+      "height": 932,
+      "scrollWidth": 430,
+      "scrollY": 0,
+      "width": 430
+    },
+    "missing_images": []
+  },
+  {
+    "capture": "casino-bonus-buy-768x1024",
+    "page": "casino-bonus-buy",
+    "auth": false,
+    "metrics": {
+      "fullHeight": 2776,
+      "height": 1024,
+      "scrollWidth": 768,
+      "scrollY": 0,
+      "width": 768
+    },
+    "missing_images": []
+  },
+  {
+    "capture": "casino-bonus-buy-auth-1440x900",
+    "page": "casino-bonus-buy",
+    "auth": true,
+    "metrics": {
+      "fullHeight": 2454,
+      "height": 900,
+      "scrollWidth": 1440,
+      "scrollY": 0,
+      "width": 1440
+    },
+    "missing_images": []
+  },
+  {
+    "capture": "casino-bonus-buy-auth-1920x1080",
+    "page": "casino-bonus-buy",
+    "auth": true,
+    "metrics": {
+      "fullHeight": 2892,
+      "height": 1080,
+      "scrollWidth": 1920,
+      "scrollY": 0,
+      "width": 1920
+    },
+    "missing_images": []
+  },
+  {
+    "capture": "casino-bonus-buy-auth-390x844",
+    "page": "casino-bonus-buy",
+    "auth": true,
+    "metrics": {
+      "fullHeight": 2816,
+      "height": 844,
+      "scrollWidth": 390,
+      "scrollY": 0,
+      "width": 390
+    },
+    "missing_images": []
+  },
+  {
+    "capture": "casino-bonus-buy-auth-430x932",
+    "page": "casino-bonus-buy",
+    "auth": true,
+    "metrics": {
+      "fullHeight": 2685,
+      "height": 932,
+      "scrollWidth": 430,
+      "scrollY": 0,
+      "width": 430
+    },
+    "missing_images": []
+  },
+  {
+    "capture": "casino-bonus-buy-auth-768x1024",
+    "page": "casino-bonus-buy",
+    "auth": true,
+    "metrics": {
+      "fullHeight": 2620,
+      "height": 1024,
+      "scrollWidth": 768,
+      "scrollY": 0,
+      "width": 768
+    },
+    "missing_images": []
+  },
+  {
+    "capture": "casino-bonus-wagering-1440x900",
+    "page": "casino-bonus-wagering",
+    "auth": false,
+    "metrics": {
+      "fullHeight": 2626,
+      "height": 900,
+      "scrollWidth": 1440,
+      "scrollY": 0,
+      "width": 1440
+    },
+    "missing_images": []
+  },
+  {
+    "capture": "casino-bonus-wagering-1920x1080",
+    "page": "casino-bonus-wagering",
+    "auth": false,
+    "metrics": {
+      "fullHeight": 2360,
+      "height": 1080,
+      "scrollWidth": 1920,
+      "scrollY": 0,
+      "width": 1920
+    },
+    "missing_images": []
+  },
+  {
+    "capture": "casino-bonus-wagering-390x844",
+    "page": "casino-bonus-wagering",
+    "auth": false,
+    "metrics": {
+      "fullHeight": 2713,
+      "height": 844,
+      "scrollWidth": 390,
+      "scrollY": 0,
+      "width": 390
+    },
+    "missing_images": []
+  },
+  {
+    "capture": "casino-bonus-wagering-430x932",
+    "page": "casino-bonus-wagering",
+    "auth": false,
+    "metrics": {
+      "fullHeight": 2301,
+      "height": 932,
+      "scrollWidth": 430,
+      "scrollY": 0,
+      "width": 430
+    },
+    "missing_images": []
+  },
+  {
+    "capture": "casino-bonus-wagering-768x1024",
+    "page": "casino-bonus-wagering",
+    "auth": false,
+    "metrics": {
+      "fullHeight": 2776,
+      "height": 1024,
+      "scrollWidth": 768,
+      "scrollY": 0,
+      "width": 768
+    },
+    "missing_images": []
+  },
+  {
+    "capture": "casino-bonus-wagering-auth-1440x900",
+    "page": "casino-bonus-wagering",
+    "auth": true,
+    "metrics": {
+      "fullHeight": 2846,
+      "height": 900,
+      "scrollWidth": 1440,
+      "scrollY": 0,
+      "width": 1440
+    },
+    "missing_images": []
+  },
+  {
+    "capture": "casino-bonus-wagering-auth-1920x1080",
+    "page": "casino-bonus-wagering",
+    "auth": true,
+    "metrics": {
+      "fullHeight": 2245,
+      "height": 1080,
+      "scrollWidth": 1920,
+      "scrollY": 0,
+      "width": 1920
+    },
+    "missing_images": []
+  },
+  {
+    "capture": "casino-bonus-wagering-auth-390x844",
+    "page": "casino-bonus-wagering",
+    "auth": true,
+    "metrics": {
+      "fullHeight": 2816,
+      "height": 844,
+      "scrollWidth": 390,
+      "scrollY": 0,
+      "width": 390
+    },
+    "missing_images": []
+  },
+  {
+    "capture": "casino-bonus-wagering-auth-430x932",
+    "page": "casino-bonus-wagering",
+    "auth": true,
+    "metrics": {
+      "fullHeight": 2685,
+      "height": 932,
+      "scrollWidth": 430,
+      "scrollY": 0,
+      "width": 430
+    },
+    "missing_images": []
+  },
+  {
+    "capture": "casino-bonus-wagering-auth-768x1024",
+    "page": "casino-bonus-wagering",
+    "auth": true,
+    "metrics": {
+      "fullHeight": 2620,
+      "height": 1024,
+      "scrollWidth": 768,
+      "scrollY": 0,
+      "width": 768
+    },
+    "missing_images": []
+  },
+  {
+    "capture": "casino-fishing-1440x900",
+    "page": "casino-fishing",
+    "auth": false,
+    "metrics": {
+      "fullHeight": 2080,
+      "height": 900,
+      "scrollWidth": 1440,
+      "scrollY": 0,
+      "width": 1440
+    },
+    "missing_images": []
+  },
+  {
+    "capture": "casino-fishing-1920x1080",
+    "page": "casino-fishing",
+    "auth": false,
+    "metrics": {
+      "fullHeight": 3064,
+      "height": 1080,
+      "scrollWidth": 1920,
+      "scrollY": 0,
+      "width": 1920
+    },
+    "missing_images": []
+  },
+  {
+    "capture": "casino-fishing-390x844",
+    "page": "casino-fishing",
+    "auth": false,
+    "metrics": {
+      "fullHeight": 2713,
+      "height": 844,
+      "scrollWidth": 390,
+      "scrollY": 0,
+      "width": 390
+    },
+    "missing_images": []
+  },
+  {
+    "capture": "casino-fishing-430x932",
+    "page": "casino-fishing",
+    "auth": false,
+    "metrics": {
+      "fullHeight": 2301,
+      "height": 932,
+      "scrollWidth": 430,
+      "scrollY": 0,
+      "width": 430
+    },
+    "missing_images": []
+  },
+  {
+    "capture": "casino-fishing-768x1024",
+    "page": "casino-fishing",
+    "auth": false,
+    "metrics": {
+      "fullHeight": 2776,
+      "height": 1024,
+      "scrollWidth": 768,
+      "scrollY": 0,
+      "width": 768
+    },
+    "missing_images": []
+  },
+  {
+    "capture": "casino-fishing-auth-1440x900",
+    "page": "casino-fishing",
+    "auth": true,
+    "metrics": {
+      "fullHeight": 2454,
+      "height": 900,
+      "scrollWidth": 1440,
+      "scrollY": 0,
+      "width": 1440
+    },
+    "missing_images": []
+  },
+  {
+    "capture": "casino-fishing-auth-1920x1080",
+    "page": "casino-fishing",
+    "auth": true,
+    "metrics": {
+      "fullHeight": 2892,
+      "height": 1080,
+      "scrollWidth": 1920,
+      "scrollY": 0,
+      "width": 1920
+    },
+    "missing_images": []
+  },
+  {
+    "capture": "casino-fishing-auth-390x844",
+    "page": "casino-fishing",
+    "auth": true,
+    "metrics": {
+      "fullHeight": 3955,
+      "height": 844,
+      "scrollWidth": 390,
+      "scrollY": 0,
+      "width": 390
+    },
+    "missing_images": []
+  },
+  {
+    "capture": "casino-fishing-auth-430x932",
+    "page": "casino-fishing",
+    "auth": true,
+    "metrics": {
+      "fullHeight": 2963,
+      "height": 932,
+      "scrollWidth": 430,
+      "scrollY": 0,
+      "width": 430
+    },
+    "missing_images": []
+  },
+  {
+    "capture": "casino-fishing-auth-768x1024",
+    "page": "casino-fishing",
+    "auth": true,
+    "metrics": {
+      "fullHeight": 1986,
+      "height": 1024,
+      "scrollWidth": 768,
+      "scrollY": 0,
+      "width": 768
+    },
+    "missing_images": []
+  },
+  {
+    "capture": "casino-jili-1440x900",
+    "page": "casino-jili",
+    "auth": false,
+    "metrics": {
+      "fullHeight": 2626,
+      "height": 900,
+      "scrollWidth": 1440,
+      "scrollY": 0,
+      "width": 1440
+    },
+    "missing_images": []
+  },
+  {
+    "capture": "casino-jili-1920x1080",
+    "page": "casino-jili",
+    "auth": false,
+    "metrics": {
+      "fullHeight": 2360,
+      "height": 1080,
+      "scrollWidth": 1920,
+      "scrollY": 0,
+      "width": 1920
+    },
+    "missing_images": []
+  },
+  {
+    "capture": "casino-jili-390x844",
+    "page": "casino-jili",
+    "auth": false,
+    "metrics": {
+      "fullHeight": 2713,
+      "height": 844,
+      "scrollWidth": 390,
+      "scrollY": 0,
+      "width": 390
+    },
+    "missing_images": []
+  },
+  {
+    "capture": "casino-jili-430x932",
+    "page": "casino-jili",
+    "auth": false,
+    "metrics": {
+      "fullHeight": 2301,
+      "height": 932,
+      "scrollWidth": 430,
+      "scrollY": 0,
+      "width": 430
+    },
+    "missing_images": []
+  },
+  {
+    "capture": "casino-jili-768x1024",
+    "page": "casino-jili",
+    "auth": false,
+    "metrics": {
+      "fullHeight": 2776,
+      "height": 1024,
+      "scrollWidth": 768,
+      "scrollY": 0,
+      "width": 768
+    },
+    "missing_images": []
+  },
+  {
+    "capture": "casino-jili-auth-1440x900",
+    "page": "casino-jili",
+    "auth": true,
+    "metrics": {
+      "fullHeight": 2115,
+      "height": 900,
+      "scrollWidth": 1440,
+      "scrollY": 0,
+      "width": 1440
+    },
+    "missing_images": []
+  },
+  {
+    "capture": "casino-jili-auth-1920x1080",
+    "page": "casino-jili",
+    "auth": true,
+    "metrics": {
+      "fullHeight": 2892,
+      "height": 1080,
+      "scrollWidth": 1920,
+      "scrollY": 0,
+      "width": 1920
+    },
+    "missing_images": []
+  },
+  {
+    "capture": "casino-jili-auth-390x844",
+    "page": "casino-jili",
+    "auth": true,
+    "metrics": {
+      "fullHeight": 2557,
+      "height": 844,
+      "scrollWidth": 390,
+      "scrollY": 0,
+      "width": 390
+    },
+    "missing_images": []
+  },
+  {
+    "capture": "casino-jili-auth-430x932",
+    "page": "casino-jili",
+    "auth": true,
+    "metrics": {
+      "fullHeight": 2145,
+      "height": 932,
+      "scrollWidth": 430,
+      "scrollY": 0,
+      "width": 430
+    },
+    "missing_images": []
+  },
+  {
+    "capture": "casino-jili-auth-768x1024",
+    "page": "casino-jili",
+    "auth": true,
+    "metrics": {
+      "fullHeight": 2620,
+      "height": 1024,
+      "scrollWidth": 768,
+      "scrollY": 0,
+      "width": 768
+    },
+    "missing_images": []
+  },
+  {
+    "capture": "casino-live-1440x900",
+    "page": "casino-live",
+    "auth": false,
+    "metrics": {
+      "fullHeight": 6952,
+      "height": 900,
+      "scrollWidth": 1440,
+      "scrollY": 0,
+      "width": 1440
+    },
+    "missing_images": []
+  },
+  {
+    "capture": "casino-live-1920x1080",
+    "page": "casino-live",
+    "auth": false,
+    "metrics": {
+      "fullHeight": 6735,
+      "height": 1080,
+      "scrollWidth": 1920,
+      "scrollY": 0,
+      "width": 1920
+    },
+    "missing_images": []
+  },
+  {
+    "capture": "casino-live-390x844",
+    "page": "casino-live",
+    "auth": false,
+    "metrics": {
+      "fullHeight": 6527,
+      "height": 844,
+      "scrollWidth": 390,
+      "scrollY": 0,
+      "width": 390
+    },
+    "missing_images": []
+  },
+  {
+    "capture": "casino-live-430x932",
+    "page": "casino-live",
+    "auth": false,
+    "metrics": {
+      "fullHeight": 6873,
+      "height": 932,
+      "scrollWidth": 430,
+      "scrollY": 0,
+      "width": 430
+    },
+    "missing_images": []
+  },
+  {
+    "capture": "casino-live-768x1024",
+    "page": "casino-live",
+    "auth": false,
+    "metrics": {
+      "fullHeight": 6345,
+      "height": 1024,
+      "scrollWidth": 768,
+      "scrollY": 0,
+      "width": 768
+    },
+    "missing_images": []
+  },
+  {
+    "capture": "casino-live-auth-1440x900",
+    "page": "casino-live",
+    "auth": true,
+    "metrics": {
+      "fullHeight": 5951,
+      "height": 900,
+      "scrollWidth": 1440,
+      "scrollY": 0,
+      "width": 1440
+    },
+    "missing_images": []
+  },
+  {
+    "capture": "casino-live-auth-1920x1080",
+    "page": "casino-live",
+    "auth": true,
+    "metrics": {
+      "fullHeight": 6563,
+      "height": 1080,
+      "scrollWidth": 1920,
+      "scrollY": 0,
+      "width": 1920
+    },
+    "missing_images": []
+  },
+  {
+    "capture": "casino-live-auth-390x844",
+    "page": "casino-live",
+    "auth": true,
+    "metrics": {
+      "fullHeight": 6087,
+      "height": 844,
+      "scrollWidth": 390,
+      "scrollY": 0,
+      "width": 390
+    },
+    "missing_images": []
+  },
+  {
+    "capture": "casino-live-auth-430x932",
+    "page": "casino-live",
+    "auth": true,
+    "metrics": {
+      "fullHeight": 6334,
+      "height": 932,
+      "scrollWidth": 430,
+      "scrollY": 0,
+      "width": 430
+    },
+    "missing_images": []
+  },
+  {
+    "capture": "casino-live-auth-768x1024",
+    "page": "casino-live",
+    "auth": true,
+    "metrics": {
+      "fullHeight": 5142,
+      "height": 1024,
+      "scrollWidth": 768,
+      "scrollY": 0,
+      "width": 768
+    },
+    "missing_images": []
+  },
+  {
+    "capture": "casino-new-1440x900",
+    "page": "casino-new",
+    "auth": false,
+    "metrics": {
+      "fullHeight": 2626,
+      "height": 900,
+      "scrollWidth": 1440,
+      "scrollY": 0,
+      "width": 1440
+    },
+    "missing_images": []
+  },
+  {
+    "capture": "casino-new-1920x1080",
+    "page": "casino-new",
+    "auth": false,
+    "metrics": {
+      "fullHeight": 2360,
+      "height": 1080,
+      "scrollWidth": 1920,
+      "scrollY": 0,
+      "width": 1920
+    },
+    "missing_images": []
+  },
+  {
+    "capture": "casino-new-390x844",
+    "page": "casino-new",
+    "auth": false,
+    "metrics": {
+      "fullHeight": 2713,
+      "height": 844,
+      "scrollWidth": 390,
+      "scrollY": 0,
+      "width": 390
+    },
+    "missing_images": []
+  },
+  {
+    "capture": "casino-new-430x932",
+    "page": "casino-new",
+    "auth": false,
+    "metrics": {
+      "fullHeight": 2301,
+      "height": 932,
+      "scrollWidth": 430,
+      "scrollY": 0,
+      "width": 430
+    },
+    "missing_images": []
+  },
+  {
+    "capture": "casino-new-768x1024",
+    "page": "casino-new",
+    "auth": false,
+    "metrics": {
+      "fullHeight": 2776,
+      "height": 1024,
+      "scrollWidth": 768,
+      "scrollY": 0,
+      "width": 768
+    },
+    "missing_images": []
+  },
+  {
+    "capture": "casino-new-auth-1440x900",
+    "page": "casino-new",
+    "auth": true,
+    "metrics": {
+      "fullHeight": 2846,
+      "height": 900,
+      "scrollWidth": 1440,
+      "scrollY": 0,
+      "width": 1440
+    },
+    "missing_images": []
+  },
+  {
+    "capture": "casino-new-auth-1920x1080",
+    "page": "casino-new",
+    "auth": true,
+    "metrics": {
+      "fullHeight": 2122,
+      "height": 1080,
+      "scrollWidth": 1920,
+      "scrollY": 0,
+      "width": 1920
+    },
+    "missing_images": []
+  },
+  {
+    "capture": "casino-new-auth-390x844",
+    "page": "casino-new",
+    "auth": true,
+    "metrics": {
+      "fullHeight": 2816,
+      "height": 844,
+      "scrollWidth": 390,
+      "scrollY": 0,
+      "width": 390
+    },
+    "missing_images": []
+  },
+  {
+    "capture": "casino-new-auth-430x932",
+    "page": "casino-new",
+    "auth": true,
+    "metrics": {
+      "fullHeight": 2963,
+      "height": 932,
+      "scrollWidth": 430,
+      "scrollY": 0,
+      "width": 430
+    },
+    "missing_images": []
+  },
+  {
+    "capture": "casino-new-auth-768x1024",
+    "page": "casino-new",
+    "auth": true,
+    "metrics": {
+      "fullHeight": 2620,
+      "height": 1024,
+      "scrollWidth": 768,
+      "scrollY": 0,
+      "width": 768
+    },
+    "missing_images": []
+  },
+  {
+    "capture": "casino-only-1win-1440x900",
+    "page": "casino-only-1win",
+    "auth": false,
+    "metrics": {
+      "fullHeight": 2626,
+      "height": 900,
+      "scrollWidth": 1440,
+      "scrollY": 0,
+      "width": 1440
+    },
+    "missing_images": []
+  },
+  {
+    "capture": "casino-only-1win-1920x1080",
+    "page": "casino-only-1win",
+    "auth": false,
+    "metrics": {
+      "fullHeight": 2360,
+      "height": 1080,
+      "scrollWidth": 1920,
+      "scrollY": 0,
+      "width": 1920
+    },
+    "missing_images": []
+  },
+  {
+    "capture": "casino-only-1win-390x844",
+    "page": "casino-only-1win",
+    "auth": false,
+    "metrics": {
+      "fullHeight": 2713,
+      "height": 844,
+      "scrollWidth": 390,
+      "scrollY": 0,
+      "width": 390
+    },
+    "missing_images": []
+  },
+  {
+    "capture": "casino-only-1win-430x932",
+    "page": "casino-only-1win",
+    "auth": false,
+    "metrics": {
+      "fullHeight": 2301,
+      "height": 932,
+      "scrollWidth": 430,
+      "scrollY": 0,
+      "width": 430
+    },
+    "missing_images": []
+  },
+  {
+    "capture": "casino-only-1win-768x1024",
+    "page": "casino-only-1win",
+    "auth": false,
+    "metrics": {
+      "fullHeight": 2776,
+      "height": 1024,
+      "scrollWidth": 768,
+      "scrollY": 0,
+      "width": 768
+    },
+    "missing_images": []
+  },
+  {
+    "capture": "casino-only-1win-auth-1440x900",
+    "page": "casino-only-1win",
+    "auth": true,
+    "metrics": {
+      "fullHeight": 2454,
+      "height": 900,
+      "scrollWidth": 1440,
+      "scrollY": 0,
+      "width": 1440
+    },
+    "missing_images": []
+  },
+  {
+    "capture": "casino-only-1win-auth-1920x1080",
+    "page": "casino-only-1win",
+    "auth": true,
+    "metrics": {
+      "fullHeight": 2892,
+      "height": 1080,
+      "scrollWidth": 1920,
+      "scrollY": 0,
+      "width": 1920
+    },
+    "missing_images": []
+  },
+  {
+    "capture": "casino-only-1win-auth-390x844",
+    "page": "casino-only-1win",
+    "auth": true,
+    "metrics": {
+      "fullHeight": 2816,
+      "height": 844,
+      "scrollWidth": 390,
+      "scrollY": 0,
+      "width": 390
+    },
+    "missing_images": []
+  },
+  {
+    "capture": "casino-only-1win-auth-430x932",
+    "page": "casino-only-1win",
+    "auth": true,
+    "metrics": {
+      "fullHeight": 2685,
+      "height": 932,
+      "scrollWidth": 430,
+      "scrollY": 0,
+      "width": 430
+    },
+    "missing_images": []
+  },
+  {
+    "capture": "casino-only-1win-auth-768x1024",
+    "page": "casino-only-1win",
+    "auth": true,
+    "metrics": {
+      "fullHeight": 2620,
+      "height": 1024,
+      "scrollWidth": 768,
+      "scrollY": 0,
+      "width": 768
+    },
+    "missing_images": []
+  },
+  {
+    "capture": "casino-providers-1440x900",
+    "page": "casino-providers",
+    "auth": false,
+    "metrics": {
+      "fullHeight": 5156,
+      "height": 900,
+      "scrollWidth": 1440,
+      "scrollY": 68,
+      "width": 1440
+    },
+    "missing_images": []
+  },
+  {
+    "capture": "casino-providers-1920x1080",
+    "page": "casino-providers",
+    "auth": false,
+    "metrics": {
+      "fullHeight": 5695,
+      "height": 1080,
+      "scrollWidth": 1920,
+      "scrollY": 68,
+      "width": 1920
+    },
+    "missing_images": []
+  },
+  {
+    "capture": "casino-providers-390x844",
+    "page": "casino-providers",
+    "auth": false,
+    "metrics": {
+      "fullHeight": 5128,
+      "height": 844,
+      "scrollWidth": 390,
+      "scrollY": 20,
+      "width": 390
+    },
+    "missing_images": []
+  },
+  {
+    "capture": "casino-providers-430x932",
+    "page": "casino-providers",
+    "auth": false,
+    "metrics": {
+      "fullHeight": 5326,
+      "height": 932,
+      "scrollWidth": 430,
+      "scrollY": 20,
+      "width": 430
+    },
+    "missing_images": []
+  },
+  {
+    "capture": "casino-providers-768x1024",
+    "page": "casino-providers",
+    "auth": false,
+    "metrics": {
+      "fullHeight": 5205,
+      "height": 1024,
+      "scrollWidth": 768,
+      "scrollY": 20,
+      "width": 768
+    },
+    "missing_images": []
+  },
+  {
+    "capture": "casino-quick-1440x900",
+    "page": "casino-quick",
+    "auth": false,
+    "metrics": {
+      "fullHeight": 4380,
+      "height": 900,
+      "scrollWidth": 1440,
+      "scrollY": 0,
+      "width": 1440
+    },
+    "missing_images": []
+  },
+  {
+    "capture": "casino-quick-1920x1080",
+    "page": "casino-quick",
+    "auth": false,
+    "metrics": {
+      "fullHeight": 4875,
+      "height": 1080,
+      "scrollWidth": 1920,
+      "scrollY": 0,
+      "width": 1920
+    },
+    "missing_images": []
+  },
+  {
+    "capture": "casino-quick-390x844",
+    "page": "casino-quick",
+    "auth": false,
+    "metrics": {
+      "fullHeight": 4459,
+      "height": 844,
+      "scrollWidth": 390,
+      "scrollY": 0,
+      "width": 390
+    },
+    "missing_images": []
+  },
+  {
+    "capture": "casino-quick-430x932",
+    "page": "casino-quick",
+    "auth": false,
+    "metrics": {
+      "fullHeight": 4627,
+      "height": 932,
+      "scrollWidth": 430,
+      "scrollY": 0,
+      "width": 430
+    },
+    "missing_images": []
+  },
+  {
+    "capture": "casino-quick-768x1024",
+    "page": "casino-quick",
+    "auth": false,
+    "metrics": {
+      "fullHeight": 4531,
+      "height": 1024,
+      "scrollWidth": 768,
+      "scrollY": 0,
+      "width": 768
+    },
+    "missing_images": []
+  },
+  {
+    "capture": "casino-quick-auth-1440x900",
+    "page": "casino-quick",
+    "auth": true,
+    "metrics": {
+      "fullHeight": 3882,
+      "height": 900,
+      "scrollWidth": 1440,
+      "scrollY": 0,
+      "width": 1440
+    },
+    "missing_images": []
+  },
+  {
+    "capture": "casino-quick-auth-1920x1080",
+    "page": "casino-quick",
+    "auth": true,
+    "metrics": {
+      "fullHeight": 4377,
+      "height": 1080,
+      "scrollWidth": 1920,
+      "scrollY": 0,
+      "width": 1920
+    },
+    "missing_images": []
+  },
+  {
+    "capture": "casino-quick-auth-390x844",
+    "page": "casino-quick",
+    "auth": true,
+    "metrics": {
+      "fullHeight": 4330,
+      "height": 844,
+      "scrollWidth": 390,
+      "scrollY": 0,
+      "width": 390
+    },
+    "missing_images": []
+  },
+  {
+    "capture": "casino-quick-auth-430x932",
+    "page": "casino-quick",
+    "auth": true,
+    "metrics": {
+      "fullHeight": 4506,
+      "height": 932,
+      "scrollWidth": 430,
+      "scrollY": 0,
+      "width": 430
+    },
+    "missing_images": []
+  },
+  {
+    "capture": "casino-quick-auth-768x1024",
+    "page": "casino-quick",
+    "auth": true,
+    "metrics": {
+      "fullHeight": 3918,
+      "height": 1024,
+      "scrollWidth": 768,
+      "scrollY": 0,
+      "width": 768
+    },
+    "missing_images": []
+  },
+  {
+    "capture": "casino-recommended-1440x900",
+    "page": "casino-recommended",
+    "auth": false,
+    "metrics": {
+      "fullHeight": 5440,
+      "height": 900,
+      "scrollWidth": 1440,
+      "scrollY": 0,
+      "width": 1440
+    },
+    "missing_images": []
+  },
+  {
+    "capture": "casino-recommended-1920x1080",
+    "page": "casino-recommended",
+    "auth": false,
+    "metrics": {
+      "fullHeight": 5369,
+      "height": 1080,
+      "scrollWidth": 1920,
+      "scrollY": 0,
+      "width": 1920
+    },
+    "missing_images": []
+  },
+  {
+    "capture": "casino-recommended-390x844",
+    "page": "casino-recommended",
+    "auth": false,
+    "metrics": {
+      "fullHeight": 5115,
+      "height": 844,
+      "scrollWidth": 390,
+      "scrollY": 0,
+      "width": 390
+    },
+    "missing_images": []
+  },
+  {
+    "capture": "casino-recommended-430x932",
+    "page": "casino-recommended",
+    "auth": false,
+    "metrics": {
+      "fullHeight": 5321,
+      "height": 932,
+      "scrollWidth": 430,
+      "scrollY": 0,
+      "width": 430
+    },
+    "missing_images": []
+  },
+  {
+    "capture": "casino-recommended-768x1024",
+    "page": "casino-recommended",
+    "auth": false,
+    "metrics": {
+      "fullHeight": 5170,
+      "height": 1024,
+      "scrollWidth": 768,
+      "scrollY": 0,
+      "width": 768
+    },
+    "missing_images": []
+  },
+  {
+    "capture": "casino-recommended-auth-1440x900",
+    "page": "casino-recommended",
+    "auth": true,
+    "metrics": {
+      "fullHeight": 2454,
+      "height": 900,
+      "scrollWidth": 1440,
+      "scrollY": 0,
+      "width": 1440
+    },
+    "missing_images": []
+  },
+  {
+    "capture": "casino-recommended-auth-1920x1080",
+    "page": "casino-recommended",
+    "auth": true,
+    "metrics": {
+      "fullHeight": 2015,
+      "height": 1080,
+      "scrollWidth": 1920,
+      "scrollY": 0,
+      "width": 1920
+    },
+    "missing_images": []
+  },
+  {
+    "capture": "casino-recommended-auth-390x844",
+    "page": "casino-recommended",
+    "auth": true,
+    "metrics": {
+      "fullHeight": 2071,
+      "height": 844,
+      "scrollWidth": 390,
+      "scrollY": 0,
+      "width": 390
+    },
+    "missing_images": []
+  },
+  {
+    "capture": "casino-recommended-auth-430x932",
+    "page": "casino-recommended",
+    "auth": true,
+    "metrics": {
+      "fullHeight": 2145,
+      "height": 932,
+      "scrollWidth": 430,
+      "scrollY": 0,
+      "width": 430
+    },
+    "missing_images": []
+  },
+  {
+    "capture": "casino-recommended-auth-768x1024",
+    "page": "casino-recommended",
+    "auth": true,
+    "metrics": {
+      "fullHeight": 1986,
+      "height": 1024,
+      "scrollWidth": 768,
+      "scrollY": 0,
+      "width": 768
+    },
+    "missing_images": []
+  },
+  {
+    "capture": "casino-search-1440x900",
+    "page": "casino-search",
+    "auth": false,
+    "metrics": {
+      "fullHeight": 5156,
+      "height": 900,
+      "scrollWidth": 1440,
+      "scrollY": 36,
+      "width": 1440
+    },
+    "missing_images": []
+  },
+  {
+    "capture": "casino-search-1920x1080",
+    "page": "casino-search",
+    "auth": false,
+    "metrics": {
+      "fullHeight": 5695,
+      "height": 1080,
+      "scrollWidth": 1920,
+      "scrollY": 36,
+      "width": 1920
+    },
+    "missing_images": []
+  },
+  {
+    "capture": "casino-search-390x844",
+    "page": "casino-search",
+    "auth": false,
+    "metrics": {
+      "fullHeight": 5128,
+      "height": 844,
+      "scrollWidth": 390,
+      "scrollY": 20,
+      "width": 390
+    },
+    "missing_images": []
+  },
+  {
+    "capture": "casino-search-430x932",
+    "page": "casino-search",
+    "auth": false,
+    "metrics": {
+      "fullHeight": 5326,
+      "height": 932,
+      "scrollWidth": 430,
+      "scrollY": 20,
+      "width": 430
+    },
+    "missing_images": []
+  },
+  {
+    "capture": "casino-search-768x1024",
+    "page": "casino-search",
+    "auth": false,
+    "metrics": {
+      "fullHeight": 5205,
+      "height": 1024,
+      "scrollWidth": 768,
+      "scrollY": 20,
+      "width": 768
+    },
+    "missing_images": []
+  },
+  {
+    "capture": "casino-search-results-1440x900",
+    "page": "casino-search-results",
+    "auth": false,
+    "metrics": {
+      "fullHeight": 5156,
+      "height": 900,
+      "scrollWidth": 1440,
+      "scrollY": 36,
+      "width": 1440
+    },
+    "missing_images": []
+  },
+  {
+    "capture": "casino-search-results-1920x1080",
+    "page": "casino-search-results",
+    "auth": false,
+    "metrics": {
+      "fullHeight": 5695,
+      "height": 1080,
+      "scrollWidth": 1920,
+      "scrollY": 36,
+      "width": 1920
+    },
+    "missing_images": []
+  },
+  {
+    "capture": "casino-search-results-390x844",
+    "page": "casino-search-results",
+    "auth": false,
+    "metrics": {
+      "fullHeight": 5128,
+      "height": 844,
+      "scrollWidth": 390,
+      "scrollY": 20,
+      "width": 390
+    },
+    "missing_images": []
+  },
+  {
+    "capture": "casino-search-results-430x932",
+    "page": "casino-search-results",
+    "auth": false,
+    "metrics": {
+      "fullHeight": 5326,
+      "height": 932,
+      "scrollWidth": 430,
+      "scrollY": 20,
+      "width": 430
+    },
+    "missing_images": []
+  },
+  {
+    "capture": "casino-search-results-768x1024",
+    "page": "casino-search-results",
+    "auth": false,
+    "metrics": {
+      "fullHeight": 5205,
+      "height": 1024,
+      "scrollWidth": 768,
+      "scrollY": 20,
+      "width": 768
+    },
+    "missing_images": []
+  },
+  {
+    "capture": "casino-slots-1440x900",
+    "page": "casino-slots",
+    "auth": false,
+    "metrics": {
+      "fullHeight": 3189,
+      "height": 900,
+      "scrollWidth": 1440,
+      "scrollY": 0,
+      "width": 1440
+    },
+    "missing_images": []
+  },
+  {
+    "capture": "casino-slots-1920x1080",
+    "page": "casino-slots",
+    "auth": false,
+    "metrics": {
+      "fullHeight": 2360,
+      "height": 1080,
+      "scrollWidth": 1920,
+      "scrollY": 0,
+      "width": 1920
+    },
+    "missing_images": []
+  },
+  {
+    "capture": "casino-slots-390x844",
+    "page": "casino-slots",
+    "auth": false,
+    "metrics": {
+      "fullHeight": 3426,
+      "height": 844,
+      "scrollWidth": 390,
+      "scrollY": 0,
+      "width": 390
+    },
+    "missing_images": []
+  },
+  {
+    "capture": "casino-slots-430x932",
+    "page": "casino-slots",
+    "auth": false,
+    "metrics": {
+      "fullHeight": 3734,
+      "height": 932,
+      "scrollWidth": 430,
+      "scrollY": 0,
+      "width": 430
+    },
+    "missing_images": []
+  },
+  {
+    "capture": "casino-slots-768x1024",
+    "page": "casino-slots",
+    "auth": false,
+    "metrics": {
+      "fullHeight": 13258,
+      "height": 1024,
+      "scrollWidth": 768,
+      "scrollY": 0,
+      "width": 768
+    },
+    "missing_images": []
+  },
+  {
+    "capture": "casino-slots-auth-1440x900",
+    "page": "casino-slots",
+    "auth": true,
+    "metrics": {
+      "fullHeight": 2454,
+      "height": 900,
+      "scrollWidth": 1440,
+      "scrollY": 0,
+      "width": 1440
+    },
+    "missing_images": []
+  },
+  {
+    "capture": "casino-slots-auth-1920x1080",
+    "page": "casino-slots",
+    "auth": true,
+    "metrics": {
+      "fullHeight": 2245,
+      "height": 1080,
+      "scrollWidth": 1920,
+      "scrollY": 0,
+      "width": 1920
+    },
+    "missing_images": []
+  },
+  {
+    "capture": "casino-slots-auth-390x844",
+    "page": "casino-slots",
+    "auth": true,
+    "metrics": {
+      "fullHeight": 1977,
+      "height": 844,
+      "scrollWidth": 390,
+      "scrollY": 0,
+      "width": 390
+    },
+    "missing_images": []
+  },
+  {
+    "capture": "casino-slots-auth-430x932",
+    "page": "casino-slots",
+    "auth": true,
+    "metrics": {
+      "fullHeight": 2145,
+      "height": 932,
+      "scrollWidth": 430,
+      "scrollY": 0,
+      "width": 430
+    },
+    "missing_images": []
+  },
+  {
+    "capture": "casino-slots-auth-768x1024",
+    "page": "casino-slots",
+    "auth": true,
+    "metrics": {
+      "fullHeight": 1986,
+      "height": 1024,
+      "scrollWidth": 768,
+      "scrollY": 0,
+      "width": 768
+    },
+    "missing_images": []
+  },
+  {
+    "capture": "freemoney-1440x900",
+    "page": "freemoney",
+    "auth": false,
+    "metrics": {
+      "fullHeight": 5431,
+      "height": 900,
+      "scrollWidth": 1440,
+      "scrollY": 0,
+      "width": 1440
+    },
+    "missing_images": []
+  },
+  {
+    "capture": "freemoney-1920x1080",
+    "page": "freemoney",
+    "auth": false,
+    "metrics": {
+      "fullHeight": 5390,
+      "height": 1080,
+      "scrollWidth": 1920,
+      "scrollY": 0,
+      "width": 1920
+    },
+    "missing_images": []
+  },
+  {
+    "capture": "freemoney-390x844",
+    "page": "freemoney",
+    "auth": false,
+    "metrics": {
+      "fullHeight": 5443,
+      "height": 844,
+      "scrollWidth": 390,
+      "scrollY": 0,
+      "width": 390
+    },
+    "missing_images": []
+  },
+  {
+    "capture": "freemoney-430x932",
+    "page": "freemoney",
+    "auth": false,
+    "metrics": {
+      "fullHeight": 5355,
+      "height": 932,
+      "scrollWidth": 430,
+      "scrollY": 0,
+      "width": 430
+    },
+    "missing_images": []
+  },
+  {
+    "capture": "freemoney-768x1024",
+    "page": "freemoney",
+    "auth": false,
+    "metrics": {
+      "fullHeight": 5228,
+      "height": 1024,
+      "scrollWidth": 768,
+      "scrollY": 4204,
+      "width": 768
+    },
+    "missing_images": []
+  },
+  {
+    "capture": "freemoney-auth-1440x900",
+    "page": "freemoney",
+    "auth": true,
+    "metrics": {
+      "fullHeight": 5684,
+      "height": 900,
+      "scrollWidth": 1440,
+      "scrollY": 0,
+      "width": 1440
+    },
+    "missing_images": []
+  },
+  {
+    "capture": "freemoney-auth-1920x1080",
+    "page": "freemoney",
+    "auth": true,
+    "metrics": {
+      "fullHeight": 4848,
+      "height": 1080,
+      "scrollWidth": 1920,
+      "scrollY": 0,
+      "width": 1920
+    },
+    "missing_images": []
+  },
+  {
+    "capture": "freemoney-auth-390x844",
+    "page": "freemoney",
+    "auth": true,
+    "metrics": {
+      "fullHeight": 5901,
+      "height": 844,
+      "scrollWidth": 390,
+      "scrollY": 0,
+      "width": 390
+    },
+    "missing_images": []
+  },
+  {
+    "capture": "freemoney-auth-430x932",
+    "page": "freemoney",
+    "auth": true,
+    "metrics": {
+      "fullHeight": 5837,
+      "height": 932,
+      "scrollWidth": 430,
+      "scrollY": 0,
+      "width": 430
+    },
+    "missing_images": []
+  },
+  {
+    "capture": "freemoney-auth-768x1024",
+    "page": "freemoney",
+    "auth": true,
+    "metrics": {
+      "fullHeight": 5544,
+      "height": 1024,
+      "scrollWidth": 768,
+      "scrollY": 0,
+      "width": 768
+    },
+    "missing_images": []
+  },
+  {
+    "capture": "home-1440x900",
+    "page": "home",
+    "auth": false,
+    "metrics": {
+      "fullHeight": 2502,
+      "height": 900,
+      "scrollWidth": 1440,
+      "scrollY": 0,
+      "width": 1440
+    },
+    "missing_images": []
+  },
+  {
+    "capture": "home-1920x1080",
+    "page": "home",
+    "auth": false,
+    "metrics": {
+      "fullHeight": 2965,
+      "height": 1080,
+      "scrollWidth": 1920,
+      "scrollY": 0,
+      "width": 1920
+    },
+    "missing_images": []
+  },
+  {
+    "capture": "home-390x844",
+    "page": "home",
+    "auth": false,
+    "metrics": {
+      "fullHeight": 2479,
+      "height": 844,
+      "scrollWidth": 390,
+      "scrollY": 0,
+      "width": 390
+    },
+    "missing_images": []
+  },
+  {
+    "capture": "home-430x932",
+    "page": "home",
+    "auth": false,
+    "metrics": {
+      "fullHeight": 2571,
+      "height": 932,
+      "scrollWidth": 430,
+      "scrollY": 0,
+      "width": 430
+    },
+    "missing_images": []
+  },
+  {
+    "capture": "home-768x1024",
+    "page": "home",
+    "auth": false,
+    "metrics": {
+      "fullHeight": 2635,
+      "height": 1024,
+      "scrollWidth": 768,
+      "scrollY": 0,
+      "width": 768
+    },
+    "missing_images": []
+  },
+  {
+    "capture": "home-auth-1440x900",
+    "page": "home",
+    "auth": true,
+    "metrics": {
+      "fullHeight": 2482,
+      "height": 900,
+      "scrollWidth": 1440,
+      "scrollY": 0,
+      "width": 1440
+    },
+    "missing_images": []
+  },
+  {
+    "capture": "home-auth-1920x1080",
+    "page": "home",
+    "auth": true,
+    "metrics": {
+      "fullHeight": 3334,
+      "height": 1080,
+      "scrollWidth": 1920,
+      "scrollY": 0,
+      "width": 1920
+    },
+    "missing_images": []
+  },
+  {
+    "capture": "home-auth-390x844",
+    "page": "home",
+    "auth": true,
+    "metrics": {
+      "fullHeight": 2475,
+      "height": 844,
+      "scrollWidth": 390,
+      "scrollY": 0,
+      "width": 390
+    },
+    "missing_images": []
+  },
+  {
+    "capture": "home-auth-430x932",
+    "page": "home",
+    "auth": true,
+    "metrics": {
+      "fullHeight": 2571,
+      "height": 932,
+      "scrollWidth": 430,
+      "scrollY": 0,
+      "width": 430
+    },
+    "missing_images": []
+  },
+  {
+    "capture": "home-auth-768x1024",
+    "page": "home",
+    "auth": true,
+    "metrics": {
+      "fullHeight": 2635,
+      "height": 1024,
+      "scrollWidth": 768,
+      "scrollY": 0,
+      "width": 768
+    },
+    "missing_images": []
+  },
+  {
+    "capture": "loyalty-program-1440x900",
+    "page": "loyalty-program",
+    "auth": false,
+    "metrics": {
+      "fullHeight": 2449,
+      "height": 900,
+      "scrollWidth": 1440,
+      "scrollY": 0,
+      "width": 1440
+    },
+    "missing_images": []
+  },
+  {
+    "capture": "loyalty-program-1920x1080",
+    "page": "loyalty-program",
+    "auth": false,
+    "metrics": {
+      "fullHeight": 2408,
+      "height": 1080,
+      "scrollWidth": 1920,
+      "scrollY": 0,
+      "width": 1920
+    },
+    "missing_images": []
+  },
+  {
+    "capture": "loyalty-program-390x844",
+    "page": "loyalty-program",
+    "auth": false,
+    "metrics": {
+      "fullHeight": 2834,
+      "height": 844,
+      "scrollWidth": 390,
+      "scrollY": 0,
+      "width": 390
+    },
+    "missing_images": []
+  },
+  {
+    "capture": "loyalty-program-430x932",
+    "page": "loyalty-program",
+    "auth": false,
+    "metrics": {
+      "fullHeight": 2834,
+      "height": 932,
+      "scrollWidth": 430,
+      "scrollY": 0,
+      "width": 430
+    },
+    "missing_images": []
+  },
+  {
+    "capture": "loyalty-program-768x1024",
+    "page": "loyalty-program",
+    "auth": false,
+    "metrics": {
+      "fullHeight": 2433,
+      "height": 1024,
+      "scrollWidth": 768,
+      "scrollY": 0,
+      "width": 768
+    },
+    "missing_images": []
+  },
+  {
+    "capture": "loyalty-program-auth-1440x900",
+    "page": "loyalty-program",
+    "auth": true,
+    "metrics": {
+      "fullHeight": 1924,
+      "height": 900,
+      "scrollWidth": 1440,
+      "scrollY": 0,
+      "width": 1440
+    },
+    "missing_images": []
+  },
+  {
+    "capture": "loyalty-program-auth-1920x1080",
+    "page": "loyalty-program",
+    "auth": true,
+    "metrics": {
+      "fullHeight": 1704,
+      "height": 1080,
+      "scrollWidth": 1920,
+      "scrollY": 0,
+      "width": 1920
+    },
+    "missing_images": []
+  },
+  {
+    "capture": "loyalty-program-auth-390x844",
+    "page": "loyalty-program",
+    "auth": true,
+    "metrics": {
+      "fullHeight": 2703,
+      "height": 844,
+      "scrollWidth": 390,
+      "scrollY": 0,
+      "width": 390
+    },
+    "missing_images": []
+  },
+  {
+    "capture": "loyalty-program-auth-430x932",
+    "page": "loyalty-program",
+    "auth": true,
+    "metrics": {
+      "fullHeight": 2702,
+      "height": 932,
+      "scrollWidth": 430,
+      "scrollY": 0,
+      "width": 430
+    },
+    "missing_images": []
+  },
+  {
+    "capture": "loyalty-program-auth-768x1024",
+    "page": "loyalty-program",
+    "auth": true,
+    "metrics": {
+      "fullHeight": 2352,
+      "height": 1024,
+      "scrollWidth": 768,
+      "scrollY": 0,
+      "width": 768
+    },
+    "missing_images": []
+  },
+  {
+    "capture": "promotions-1440x900",
+    "page": "promotions",
+    "auth": false,
+    "metrics": {
+      "fullHeight": 1688,
+      "height": 900,
+      "scrollWidth": 1440,
+      "scrollY": 0,
+      "width": 1440
+    },
+    "missing_images": []
+  },
+  {
+    "capture": "promotions-1920x1080",
+    "page": "promotions",
+    "auth": false,
+    "metrics": {
+      "fullHeight": 1704,
+      "height": 1080,
+      "scrollWidth": 1920,
+      "scrollY": 0,
+      "width": 1920
+    },
+    "missing_images": []
+  },
+  {
+    "capture": "promotions-390x844",
+    "page": "promotions",
+    "auth": false,
+    "metrics": {
+      "fullHeight": 3085,
+      "height": 844,
+      "scrollWidth": 390,
+      "scrollY": 0,
+      "width": 390
+    },
+    "missing_images": []
+  },
+  {
+    "capture": "promotions-430x932",
+    "page": "promotions",
+    "auth": false,
+    "metrics": {
+      "fullHeight": 3198,
+      "height": 932,
+      "scrollWidth": 430,
+      "scrollY": 0,
+      "width": 430
+    },
+    "missing_images": []
+  },
+  {
+    "capture": "promotions-768x1024",
+    "page": "promotions",
+    "auth": false,
+    "metrics": {
+      "fullHeight": 2013,
+      "height": 1024,
+      "scrollWidth": 768,
+      "scrollY": 0,
+      "width": 768
+    },
+    "missing_images": []
+  },
+  {
+    "capture": "promotions-auth-1440x900",
+    "page": "promotions",
+    "auth": true,
+    "metrics": {
+      "fullHeight": 1741,
+      "height": 900,
+      "scrollWidth": 1440,
+      "scrollY": 0,
+      "width": 1440
+    },
+    "missing_images": []
+  },
+  {
+    "capture": "promotions-auth-1920x1080",
+    "page": "promotions",
+    "auth": true,
+    "metrics": {
+      "fullHeight": 1704,
+      "height": 1080,
+      "scrollWidth": 1920,
+      "scrollY": 0,
+      "width": 1920
+    },
+    "missing_images": []
+  },
+  {
+    "capture": "promotions-auth-390x844",
+    "page": "promotions",
+    "auth": true,
+    "metrics": {
+      "fullHeight": 2956,
+      "height": 844,
+      "scrollWidth": 390,
+      "scrollY": 0,
+      "width": 390
+    },
+    "missing_images": []
+  },
+  {
+    "capture": "promotions-auth-430x932",
+    "page": "promotions",
+    "auth": true,
+    "metrics": {
+      "fullHeight": 3440,
+      "height": 932,
+      "scrollWidth": 430,
+      "scrollY": 0,
+      "width": 430
+    },
+    "missing_images": []
+  },
+  {
+    "capture": "promotions-auth-768x1024",
+    "page": "promotions",
+    "auth": true,
+    "metrics": {
+      "fullHeight": 2058,
+      "height": 1024,
+      "scrollWidth": 768,
+      "scrollY": 0,
+      "width": 768
+    },
+    "missing_images": []
+  },
+  {
+    "capture": "sports-1440x900",
+    "page": "sports",
+    "auth": false,
+    "metrics": {
+      "fullHeight": 1897,
+      "height": 900,
+      "scrollWidth": 1440,
+      "scrollY": 0,
+      "width": 1440
+    },
+    "missing_images": []
+  },
+  {
+    "capture": "sports-1920x1080",
+    "page": "sports",
+    "auth": false,
+    "metrics": {
+      "fullHeight": 1910,
+      "height": 1080,
+      "scrollWidth": 1920,
+      "scrollY": 0,
+      "width": 1920
+    },
+    "missing_images": []
+  },
+  {
+    "capture": "sports-390x844",
+    "page": "sports",
+    "auth": false,
+    "metrics": {
+      "fullHeight": 1958,
+      "height": 844,
+      "scrollWidth": 390,
+      "scrollY": 0,
+      "width": 390
+    },
+    "missing_images": []
+  },
+  {
+    "capture": "sports-430x932",
+    "page": "sports",
+    "auth": false,
+    "metrics": {
+      "fullHeight": 1958,
+      "height": 932,
+      "scrollWidth": 430,
+      "scrollY": 0,
+      "width": 430
+    },
+    "missing_images": []
+  },
+  {
+    "capture": "sports-768x1024",
+    "page": "sports",
+    "auth": false,
+    "metrics": {
+      "fullHeight": 1958,
+      "height": 1024,
+      "scrollWidth": 768,
+      "scrollY": 0,
+      "width": 768
+    },
+    "missing_images": []
+  },
+  {
+    "capture": "sports-auth-1440x900",
+    "page": "sports",
+    "auth": true,
+    "metrics": {
+      "fullHeight": 2200,
+      "height": 900,
+      "scrollWidth": 1440,
+      "scrollY": 0,
+      "width": 1440
+    },
+    "missing_images": []
+  },
+  {
+    "capture": "sports-auth-1920x1080",
+    "page": "sports",
+    "auth": true,
+    "metrics": {
+      "fullHeight": 2200,
+      "height": 1080,
+      "scrollWidth": 1920,
+      "scrollY": 0,
+      "width": 1920
+    },
+    "missing_images": []
+  },
+  {
+    "capture": "sports-auth-390x844",
+    "page": "sports",
+    "auth": true,
+    "metrics": {
+      "fullHeight": 2524,
+      "height": 844,
+      "scrollWidth": 390,
+      "scrollY": 0,
+      "width": 390
+    },
+    "missing_images": []
+  },
+  {
+    "capture": "sports-auth-430x932",
+    "page": "sports",
+    "auth": true,
+    "metrics": {
+      "fullHeight": 2388,
+      "height": 932,
+      "scrollWidth": 430,
+      "scrollY": 0,
+      "width": 430
+    },
+    "missing_images": []
+  },
+  {
+    "capture": "sports-auth-768x1024",
+    "page": "sports",
+    "auth": true,
+    "metrics": {
+      "fullHeight": 2524,
+      "height": 1024,
+      "scrollWidth": 768,
+      "scrollY": 0,
+      "width": 768
+    },
+    "missing_images": []
+  },
+  {
+    "capture": "sports-esports-1440x900",
+    "page": "sports-esports",
+    "auth": false,
+    "metrics": {
+      "fullHeight": 3359,
+      "height": 900,
+      "scrollWidth": 1440,
+      "scrollY": 0,
+      "width": 1440
+    },
+    "missing_images": []
+  },
+  {
+    "capture": "sports-esports-1920x1080",
+    "page": "sports-esports",
+    "auth": false,
+    "metrics": {
+      "fullHeight": 3290,
+      "height": 1080,
+      "scrollWidth": 1920,
+      "scrollY": 0,
+      "width": 1920
+    },
+    "missing_images": []
+  },
+  {
+    "capture": "sports-esports-390x844",
+    "page": "sports-esports",
+    "auth": false,
+    "metrics": {
+      "fullHeight": 4260,
+      "height": 844,
+      "scrollWidth": 390,
+      "scrollY": 0,
+      "width": 390
+    },
+    "missing_images": []
+  },
+  {
+    "capture": "sports-esports-430x932",
+    "page": "sports-esports",
+    "auth": false,
+    "metrics": {
+      "fullHeight": 4260,
+      "height": 932,
+      "scrollWidth": 430,
+      "scrollY": 0,
+      "width": 430
+    },
+    "missing_images": []
+  },
+  {
+    "capture": "sports-esports-768x1024",
+    "page": "sports-esports",
+    "auth": false,
+    "metrics": {
+      "fullHeight": 4268,
+      "height": 1024,
+      "scrollWidth": 768,
+      "scrollY": 0,
+      "width": 768
+    },
+    "missing_images": []
+  },
+  {
+    "capture": "sports-esports-auth-1440x900",
+    "page": "sports-esports",
+    "auth": true,
+    "metrics": {
+      "fullHeight": 3245,
+      "height": 900,
+      "scrollWidth": 1440,
+      "scrollY": 0,
+      "width": 1440
+    },
+    "missing_images": []
+  },
+  {
+    "capture": "sports-esports-auth-1920x1080",
+    "page": "sports-esports",
+    "auth": true,
+    "metrics": {
+      "fullHeight": 5989,
+      "height": 1080,
+      "scrollWidth": 1920,
+      "scrollY": 0,
+      "width": 1920
+    },
+    "missing_images": []
+  },
+  {
+    "capture": "sports-esports-auth-390x844",
+    "page": "sports-esports",
+    "auth": true,
+    "metrics": {
+      "fullHeight": 4291,
+      "height": 844,
+      "scrollWidth": 390,
+      "scrollY": 0,
+      "width": 390
+    },
+    "missing_images": []
+  },
+  {
+    "capture": "sports-esports-auth-430x932",
+    "page": "sports-esports",
+    "auth": true,
+    "metrics": {
+      "fullHeight": 4283,
+      "height": 932,
+      "scrollWidth": 430,
+      "scrollY": 0,
+      "width": 430
+    },
+    "missing_images": []
+  },
+  {
+    "capture": "sports-esports-auth-768x1024",
+    "page": "sports-esports",
+    "auth": true,
+    "metrics": {
+      "fullHeight": 4291,
+      "height": 1024,
+      "scrollWidth": 768,
+      "scrollY": 0,
+      "width": 768
+    },
+    "missing_images": []
+  },
+  {
+    "capture": "sports-live-1440x900",
+    "page": "sports-live",
+    "auth": false,
+    "metrics": {
+      "fullHeight": 4085,
+      "height": 900,
+      "scrollWidth": 1440,
+      "scrollY": 0,
+      "width": 1440
+    },
+    "missing_images": []
+  },
+  {
+    "capture": "sports-live-1920x1080",
+    "page": "sports-live",
+    "auth": false,
+    "metrics": {
+      "fullHeight": 3388,
+      "height": 1080,
+      "scrollWidth": 1920,
+      "scrollY": 0,
+      "width": 1920
+    },
+    "missing_images": []
+  },
+  {
+    "capture": "sports-live-390x844",
+    "page": "sports-live",
+    "auth": false,
+    "metrics": {
+      "fullHeight": 4998,
+      "height": 844,
+      "scrollWidth": 390,
+      "scrollY": 0,
+      "width": 390
+    },
+    "missing_images": []
+  },
+  {
+    "capture": "sports-live-430x932",
+    "page": "sports-live",
+    "auth": false,
+    "metrics": {
+      "fullHeight": 4998,
+      "height": 932,
+      "scrollWidth": 430,
+      "scrollY": 0,
+      "width": 430
+    },
+    "missing_images": []
+  },
+  {
+    "capture": "sports-live-768x1024",
+    "page": "sports-live",
+    "auth": false,
+    "metrics": {
+      "fullHeight": 4998,
+      "height": 1024,
+      "scrollWidth": 768,
+      "scrollY": 0,
+      "width": 768
+    },
+    "missing_images": []
+  },
+  {
+    "capture": "sports-live-auth-1440x900",
+    "page": "sports-live",
+    "auth": true,
+    "metrics": {
+      "fullHeight": 3463,
+      "height": 900,
+      "scrollWidth": 1440,
+      "scrollY": 0,
+      "width": 1440
+    },
+    "missing_images": []
+  },
+  {
+    "capture": "sports-live-auth-1920x1080",
+    "page": "sports-live",
+    "auth": true,
+    "metrics": {
+      "fullHeight": 6292,
+      "height": 1080,
+      "scrollWidth": 1920,
+      "scrollY": 0,
+      "width": 1920
+    },
+    "missing_images": []
+  },
+  {
+    "capture": "sports-live-auth-390x844",
+    "page": "sports-live",
+    "auth": true,
+    "metrics": {
+      "fullHeight": 4586,
+      "height": 844,
+      "scrollWidth": 390,
+      "scrollY": 0,
+      "width": 390
+    },
+    "missing_images": []
+  },
+  {
+    "capture": "sports-live-auth-430x932",
+    "page": "sports-live",
+    "auth": true,
+    "metrics": {
+      "fullHeight": 4586,
+      "height": 932,
+      "scrollWidth": 430,
+      "scrollY": 0,
+      "width": 430
+    },
+    "missing_images": []
+  },
+  {
+    "capture": "sports-live-auth-768x1024",
+    "page": "sports-live",
+    "auth": true,
+    "metrics": {
+      "fullHeight": 4586,
+      "height": 1024,
+      "scrollWidth": 768,
+      "scrollY": 0,
+      "width": 768
+    },
+    "missing_images": []
+  },
+  {
+    "capture": "sports-upcoming-1440x900",
+    "page": "sports-upcoming",
+    "auth": false,
+    "metrics": {
+      "fullHeight": 3276,
+      "height": 900,
+      "scrollWidth": 1440,
+      "scrollY": 0,
+      "width": 1440
+    },
+    "missing_images": []
+  },
+  {
+    "capture": "sports-upcoming-1920x1080",
+    "page": "sports-upcoming",
+    "auth": false,
+    "metrics": {
+      "fullHeight": 4345,
+      "height": 1080,
+      "scrollWidth": 1920,
+      "scrollY": 0,
+      "width": 1920
+    },
+    "missing_images": []
+  },
+  {
+    "capture": "sports-upcoming-390x844",
+    "page": "sports-upcoming",
+    "auth": false,
+    "metrics": {
+      "fullHeight": 4615,
+      "height": 844,
+      "scrollWidth": 390,
+      "scrollY": 0,
+      "width": 390
+    },
+    "missing_images": []
+  },
+  {
+    "capture": "sports-upcoming-430x932",
+    "page": "sports-upcoming",
+    "auth": false,
+    "metrics": {
+      "fullHeight": 4615,
+      "height": 932,
+      "scrollWidth": 430,
+      "scrollY": 0,
+      "width": 430
+    },
+    "missing_images": []
+  },
+  {
+    "capture": "sports-upcoming-768x1024",
+    "page": "sports-upcoming",
+    "auth": false,
+    "metrics": {
+      "fullHeight": 4623,
+      "height": 1024,
+      "scrollWidth": 768,
+      "scrollY": 0,
+      "width": 768
+    },
+    "missing_images": []
+  },
+  {
+    "capture": "sports-upcoming-auth-1440x900",
+    "page": "sports-upcoming",
+    "auth": true,
+    "metrics": {
+      "fullHeight": 3235,
+      "height": 900,
+      "scrollWidth": 1440,
+      "scrollY": 0,
+      "width": 1440
+    },
+    "missing_images": []
+  },
+  {
+    "capture": "sports-upcoming-auth-1920x1080",
+    "page": "sports-upcoming",
+    "auth": true,
+    "metrics": {
+      "fullHeight": 6563,
+      "height": 1080,
+      "scrollWidth": 1920,
+      "scrollY": 0,
+      "width": 1920
+    },
+    "missing_images": []
+  },
+  {
+    "capture": "sports-upcoming-auth-390x844",
+    "page": "sports-upcoming",
+    "auth": true,
+    "metrics": {
+      "fullHeight": 4857,
+      "height": 844,
+      "scrollWidth": 390,
+      "scrollY": 0,
+      "width": 390
+    },
+    "missing_images": []
+  },
+  {
+    "capture": "sports-upcoming-auth-430x932",
+    "page": "sports-upcoming",
+    "auth": true,
+    "metrics": {
+      "fullHeight": 4857,
+      "height": 932,
+      "scrollWidth": 430,
+      "scrollY": 0,
+      "width": 430
+    },
+    "missing_images": []
+  },
+  {
+    "capture": "sports-upcoming-auth-768x1024",
+    "page": "sports-upcoming",
+    "auth": true,
+    "metrics": {
+      "fullHeight": 3519,
+      "height": 1024,
+      "scrollWidth": 768,
+      "scrollY": 0,
+      "width": 768
+    },
+    "missing_images": []
+  },
+  {
+    "capture": "tournaments-1440x900",
+    "page": "tournaments",
+    "auth": false,
+    "metrics": {
+      "fullHeight": 1831,
+      "height": 900,
+      "scrollWidth": 1440,
+      "scrollY": 0,
+      "width": 1440
+    },
+    "missing_images": []
+  },
+  {
+    "capture": "tournaments-1920x1080",
+    "page": "tournaments",
+    "auth": false,
+    "metrics": {
+      "fullHeight": 1704,
+      "height": 1080,
+      "scrollWidth": 1920,
+      "scrollY": 0,
+      "width": 1920
+    },
+    "missing_images": []
+  },
+  {
+    "capture": "tournaments-390x844",
+    "page": "tournaments",
+    "auth": false,
+    "metrics": {
+      "fullHeight": 1882,
+      "height": 844,
+      "scrollWidth": 390,
+      "scrollY": 0,
+      "width": 390
+    },
+    "missing_images": []
+  },
+  {
+    "capture": "tournaments-430x932",
+    "page": "tournaments",
+    "auth": false,
+    "metrics": {
+      "fullHeight": 1882,
+      "height": 932,
+      "scrollWidth": 430,
+      "scrollY": 0,
+      "width": 430
+    },
+    "missing_images": []
+  },
+  {
+    "capture": "tournaments-768x1024",
+    "page": "tournaments",
+    "auth": false,
+    "metrics": {
+      "fullHeight": 2148,
+      "height": 1024,
+      "scrollWidth": 768,
+      "scrollY": 0,
+      "width": 768
+    },
+    "missing_images": []
+  },
+  {
+    "capture": "tournaments-auth-1440x900",
+    "page": "tournaments",
+    "auth": true,
+    "metrics": {
+      "fullHeight": 1524,
+      "height": 900,
+      "scrollWidth": 1440,
+      "scrollY": 0,
+      "width": 1440
+    },
+    "missing_images": []
+  },
+  {
+    "capture": "tournaments-auth-1920x1080",
+    "page": "tournaments",
+    "auth": true,
+    "metrics": {
+      "fullHeight": 1704,
+      "height": 1080,
+      "scrollWidth": 1920,
+      "scrollY": 0,
+      "width": 1920
+    },
+    "missing_images": []
+  },
+  {
+    "capture": "tournaments-auth-390x844",
+    "page": "tournaments",
+    "auth": true,
+    "metrics": {
+      "fullHeight": 3438,
+      "height": 844,
+      "scrollWidth": 390,
+      "scrollY": 0,
+      "width": 390
+    },
+    "missing_images": []
+  },
+  {
+    "capture": "tournaments-auth-430x932",
+    "page": "tournaments",
+    "auth": true,
+    "metrics": {
+      "fullHeight": 3438,
+      "height": 932,
+      "scrollWidth": 430,
+      "scrollY": 0,
+      "width": 430
+    },
+    "missing_images": []
+  },
+  {
+    "capture": "tournaments-auth-768x1024",
+    "page": "tournaments",
+    "auth": true,
+    "metrics": {
+      "fullHeight": 2390,
+      "height": 1024,
+      "scrollWidth": 768,
+      "scrollY": 0,
+      "width": 768
+    },
+    "missing_images": []
+  },
+  {
+    "capture": "vip-club-1440x900",
+    "page": "vip-club",
+    "auth": false,
+    "metrics": {
+      "fullHeight": 4050,
+      "height": 900,
+      "scrollWidth": 1440,
+      "scrollY": 0,
+      "width": 1440
+    },
+    "missing_images": []
+  },
+  {
+    "capture": "vip-club-1920x1080",
+    "page": "vip-club",
+    "auth": false,
+    "metrics": {
+      "fullHeight": 4009,
+      "height": 1080,
+      "scrollWidth": 1920,
+      "scrollY": 0,
+      "width": 1920
+    },
+    "missing_images": []
+  },
+  {
+    "capture": "vip-club-390x844",
+    "page": "vip-club",
+    "auth": false,
+    "metrics": {
+      "fullHeight": 4687,
+      "height": 844,
+      "scrollWidth": 390,
+      "scrollY": 0,
+      "width": 390
+    },
+    "missing_images": []
+  },
+  {
+    "capture": "vip-club-430x932",
+    "page": "vip-club",
+    "auth": false,
+    "metrics": {
+      "fullHeight": 4721,
+      "height": 932,
+      "scrollWidth": 430,
+      "scrollY": 0,
+      "width": 430
+    },
+    "missing_images": []
+  },
+  {
+    "capture": "vip-club-768x1024",
+    "page": "vip-club",
+    "auth": false,
+    "metrics": {
+      "fullHeight": 3891,
+      "height": 1024,
+      "scrollWidth": 768,
+      "scrollY": 0,
+      "width": 768
+    },
+    "missing_images": []
+  },
+  {
+    "capture": "vip-club-auth-1440x900",
+    "page": "vip-club",
+    "auth": true,
+    "metrics": {
+      "fullHeight": 4009,
+      "height": 900,
+      "scrollWidth": 1440,
+      "scrollY": 0,
+      "width": 1440
+    },
+    "missing_images": []
+  },
+  {
+    "capture": "vip-club-auth-1920x1080",
+    "page": "vip-club",
+    "auth": true,
+    "metrics": {
+      "fullHeight": 3415,
+      "height": 1080,
+      "scrollWidth": 1920,
+      "scrollY": 0,
+      "width": 1920
+    },
+    "missing_images": []
+  },
+  {
+    "capture": "vip-club-auth-390x844",
+    "page": "vip-club",
+    "auth": true,
+    "metrics": {
+      "fullHeight": 4961,
+      "height": 844,
+      "scrollWidth": 390,
+      "scrollY": 0,
+      "width": 390
+    },
+    "missing_images": []
+  },
+  {
+    "capture": "vip-club-auth-430x932",
+    "page": "vip-club",
+    "auth": true,
+    "metrics": {
+      "fullHeight": 4963,
+      "height": 932,
+      "scrollWidth": 430,
+      "scrollY": 0,
+      "width": 430
+    },
+    "missing_images": []
+  },
+  {
+    "capture": "vip-club-auth-768x1024",
+    "page": "vip-club",
+    "auth": true,
+    "metrics": {
+      "fullHeight": 4133,
+      "height": 1024,
+      "scrollWidth": 768,
+      "scrollY": 0,
+      "width": 768
+    },
+    "missing_images": []
+  }
+]

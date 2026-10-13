@@ -1,0 +1,16 @@
+{
+  "states": [
+    "profile-1440x900",
+    "profile-1920x1080",
+    "profile-390x844",
+    "profile-430x932",
+    "profile-768x1024",
+    "settings-1440x900",
+    "settings-1920x1080",
+    "settings-390x844",
+    "settings-430x932",
+    "settings-768x1024"
+  ],
+  "styles": 0,
+  "private_data": "Demo values only; no credentials or connection."
+}

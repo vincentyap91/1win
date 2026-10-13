@@ -1,0 +1,16 @@
+{
+  "runtime_ad_or_remote_resource_issues": [],
+  "copied_local_assets": 395,
+  "html_documents": 16,
+  "responsive": "same HTML document at every browser width",
+  "scripts": [
+    "js/dialogs.js",
+    "js/<current-page>.js",
+    "js/common.js"
+  ],
+  "navigation": "relative HTML files",
+  "csp_network_connections": "none",
+  "csp_forms": "none",
+  "outbound_navigation": "prevented",
+  "raw_network_inventory_included": false
+}

@@ -1,0 +1,134 @@
+{
+  "reference_domain": "one-vv3591.com",
+  "implementation": "HTML5/CSS3/Vanilla JavaScript",
+  "publication": "local only",
+  "homepage": {
+    "status": "implemented and compared; not pixel-identical",
+    "viewports": [
+      "1920x1080",
+      "1440x900",
+      "768x1024",
+      "390x844",
+      "430x932"
+    ],
+    "broken_images": 0,
+    "horizontal_overflow": false,
+    "matching_full_page_heights": true,
+    "pixel_comparison": [
+      {
+        "viewport": "1920x1080",
+        "reference_size": [
+          1920,
+          2834
+        ],
+        "local_size": [
+          1920,
+          2834
+        ],
+        "mean_channel_difference_0_255": 0.1585,
+        "pixels_difference_over_20_percent": 0.0806,
+        "dynamic_values_masked": false
+      },
+      {
+        "viewport": "1440x900",
+        "reference_size": [
+          1440,
+          2502
+        ],
+        "local_size": [
+          1440,
+          2502
+        ],
+        "mean_channel_difference_0_255": 0.4493,
+        "pixels_difference_over_20_percent": 0.3525,
+        "dynamic_values_masked": false
+      },
+      {
+        "viewport": "768x1024",
+        "reference_size": [
+          768,
+          2635
+        ],
+        "local_size": [
+          768,
+          2635
+        ],
+        "mean_channel_difference_0_255": 1.3409,
+        "pixels_difference_over_20_percent": 1.9456,
+        "dynamic_values_masked": false
+      },
+      {
+        "viewport": "390x844",
+        "reference_size": [
+          390,
+          2479
+        ],
+        "local_size": [
+          390,
+          2479
+        ],
+        "mean_channel_difference_0_255": 1.0563,
+        "pixels_difference_over_20_percent": 0.8845,
+        "dynamic_values_masked": false
+      },
+      {
+        "viewport": "430x932",
+        "reference_size": [
+          430,
+          2571
+        ],
+        "local_size": [
+          430,
+          2571
+        ],
+        "mean_channel_difference_0_255": 0.966,
+        "pixels_difference_over_20_percent": 0.8717,
+        "dynamic_values_masked": false
+      }
+    ]
+  },
+  "additional_local_pages": [
+    "casino",
+    "freemoney",
+    "bonuses",
+    "loyalty-program",
+    "vip-club",
+    "promotions",
+    "tournaments",
+    "blog",
+    "betwave"
+  ],
+  "additional_pages_validation": "desktop first-screen smoke checks only; no full five-viewport comparison",
+  "incomplete_assets": [
+    "language flags",
+    "some Free money images",
+    "Blog images",
+    "Betwave images",
+    "some provider logos"
+  ],
+  "unimplemented_pages": [
+    "Sports/Markets full content",
+    "Trading full page",
+    "Forum",
+    "Poker",
+    "Rules",
+    "tournament details",
+    "promotion details",
+    "blog article details",
+    "all game categories/details"
+  ],
+  "backend_not_in_scope": [
+    "real accounts",
+    "payment",
+    "wagering",
+    "game provider launch",
+    "captcha",
+    "recovery delivery",
+    "live sports feeds",
+    "support service"
+  ],
+  "network_runtime": "all resources local; CSP connect-src none/form-action none/frame-src none",
+  "ads_and_tracking_in_runtime": false,
+  "external_download_review": "Additional Blog/Betwave image downloads were rejected; no rejected downloads executed or bypassed",
+  "claim_100_percent": false
+}
