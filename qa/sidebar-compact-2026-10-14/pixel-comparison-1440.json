@@ -1,0 +1,15 @@
+{
+  "viewport": [
+    1440,
+    900
+  ],
+  "region": [
+    0,
+    0,
+    80,
+    900
+  ],
+  "identical": true,
+  "difference_bbox": null,
+  "mean_absolute_channel_difference": 0.0
+}

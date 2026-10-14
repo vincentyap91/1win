@@ -1,0 +1,63 @@
+{
+  "page": "casino-live",
+  "auth": true,
+  "date": "2026-10-14",
+  "replaced": {
+    "casino-live-1440x900": 2,
+    "casino-live-1920x1080": 2,
+    "casino-live-390x844": 2,
+    "casino-live-430x932": 2,
+    "casino-live-768x1024": 2
+  },
+  "unmatched": [],
+  "kept_rows": [],
+  "captures": {
+    "casino-live-1440x900": {
+      "file": "casino-live-auth-1440x900.json",
+      "sha256": "24beca1383c9",
+      "captured_at": "2026-10-14T05:02:33.835Z",
+      "viewport": [
+        1440,
+        900
+      ]
+    },
+    "casino-live-1920x1080": {
+      "file": "casino-live-auth-1920x1080.json",
+      "sha256": "3a1d0e16fef2",
+      "captured_at": "2026-10-14T05:01:44.212Z",
+      "viewport": [
+        1920,
+        1080
+      ]
+    },
+    "casino-live-390x844": {
+      "file": "casino-live-auth-390x844.json",
+      "sha256": "4fae87fc5e5a",
+      "captured_at": "2026-10-14T05:04:42.032Z",
+      "viewport": [
+        390,
+        844
+      ]
+    },
+    "casino-live-430x932": {
+      "file": "casino-live-auth-430x932.json",
+      "sha256": "469383a4729d",
+      "captured_at": "2026-10-14T05:04:05.963Z",
+      "viewport": [
+        430,
+        932
+      ]
+    },
+    "casino-live-768x1024": {
+      "file": "casino-live-auth-768x1024.json",
+      "sha256": "b589492895ae",
+      "captured_at": "2026-10-14T05:03:24.714Z",
+      "viewport": [
+        768,
+        1024
+      ]
+    }
+  },
+  "downloaded": [],
+  "missing": []
+}

@@ -1,0 +1,28 @@
+{
+  "socialOpenCheck": {
+    "expanded": "true",
+    "open": true
+  },
+  "socialCloseCheck": {
+    "closed": true,
+    "focus": "sidebar-social-buttons-with-preview"
+  },
+  "socialKeyboardOpen": true,
+  "socialEscapeClosed": true,
+  "expandedClosesPopover": true,
+  "socialScrollCheck": {
+    "discordVisible": true,
+    "scrollTop": 80
+  },
+  "outsideCloseCheck": true,
+  "outsideCloseAttempts": [
+    {
+      "closed": false,
+      "note": "The first locator targeted a heading behind the tooltip, so the pointer hit a tooltip item."
+    },
+    {
+      "closed": true,
+      "note": "Clicked the observed empty header area outside the tooltip."
+    }
+  ]
+}

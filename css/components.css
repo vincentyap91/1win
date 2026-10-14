@@ -1,0 +1,2 @@
+/* Shared templates are mounted before showing the first complete layout. */
+html[data-shared-ui="loading"] body { visibility: hidden; }

@@ -1,0 +1,63 @@
+{
+  "page": "casino-live-1win-live",
+  "auth": true,
+  "date": "2026-10-14",
+  "replaced": {
+    "casino-live-1win-live-1440x900": 2,
+    "casino-live-1win-live-1920x1080": 2,
+    "casino-live-1win-live-390x844": 2,
+    "casino-live-1win-live-430x932": 2,
+    "casino-live-1win-live-768x1024": 2
+  },
+  "unmatched": [],
+  "kept_rows": [],
+  "captures": {
+    "casino-live-1win-live-1440x900": {
+      "file": "casino-live-1win-live-auth-1440x900.json",
+      "sha256": "7226e6f9f274",
+      "captured_at": "2026-10-14T05:17:38.337Z",
+      "viewport": [
+        1440,
+        900
+      ]
+    },
+    "casino-live-1win-live-1920x1080": {
+      "file": "casino-live-1win-live-auth-1920x1080.json",
+      "sha256": "2678941b69dd",
+      "captured_at": "2026-10-14T05:23:52.483Z",
+      "viewport": [
+        1920,
+        1080
+      ]
+    },
+    "casino-live-1win-live-390x844": {
+      "file": "casino-live-1win-live-auth-390x844.json",
+      "sha256": "d867164172e0",
+      "captured_at": "2026-10-14T05:44:47.267Z",
+      "viewport": [
+        390,
+        844
+      ]
+    },
+    "casino-live-1win-live-430x932": {
+      "file": "casino-live-1win-live-auth-430x932.json",
+      "sha256": "7949f41c9581",
+      "captured_at": "2026-10-14T05:42:44.515Z",
+      "viewport": [
+        430,
+        932
+      ]
+    },
+    "casino-live-1win-live-768x1024": {
+      "file": "casino-live-1win-live-auth-768x1024.json",
+      "sha256": "5fcbdc5752e3",
+      "captured_at": "2026-10-14T05:34:15.473Z",
+      "viewport": [
+        768,
+        1024
+      ]
+    }
+  },
+  "downloaded": [],
+  "missing": []
+}

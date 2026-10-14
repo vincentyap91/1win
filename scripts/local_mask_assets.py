@@ -60,7 +60,7 @@ def repair_project(root,apply=False):
         if original==updated:return
         changed.append(str(path.relative_to(root)))
         if apply:path.write_text(updated,encoding='utf8')
-    for path in root.glob('*.html'):
+    for path in [*root.glob('*.html'), *(root/'components').glob('*.html')]:
         source=path.read_text(encoding='utf-8-sig');write(path,source,embed_html_masks(source,root))
     for path in (root/'css').glob('*.css'):
         source=path.read_text(encoding='utf-8-sig');write(path,source,embed_css_masks(source,root))

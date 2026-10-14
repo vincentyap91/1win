@@ -1,0 +1,17 @@
+<!-- icon-dashed-circle.svg (anti-normalize) -->
+<svg xmlns="http://www.w3.org/2000/svg"
+     width="44" height="44" viewBox="0 0 44 44"
+     fill="none" preserveAspectRatio="xMidYMid meet" overflow="visible">
+  <circle
+    cx="22"
+    cy="22"
+    r="21"
+    fill="none"
+    stroke="#A3ABBB"
+    stroke-opacity=".16"
+    stroke-width="1"
+    stroke-linecap="round"
+    stroke-dasharray="2 2"
+    vector-effect="non-scaling-stroke"
+  />
+</svg>

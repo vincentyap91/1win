@@ -1,0 +1,66 @@
+{
+  "page": "casino-live",
+  "auth": false,
+  "date": "2026-10-14",
+  "replaced": {
+    "casino-live-1440x900": 2,
+    "casino-live.html": 2,
+    "casino-live-1920x1080": 2,
+    "casino-live-390x844": 2,
+    "casino-live-430x932": 2,
+    "casino-live-768x1024": 2
+  },
+  "unmatched": [],
+  "kept_rows": [],
+  "captures": {
+    "casino-live-1440x900": {
+      "file": "casino-live-1440x900.json",
+      "sha256": "b52f39f9dfa6",
+      "captured_at": "2026-10-14T06:08:30.193Z",
+      "viewport": [
+        1440,
+        900
+      ]
+    },
+    "casino-live-1920x1080": {
+      "file": "casino-live-1920x1080.json",
+      "sha256": "9207ea15d41d",
+      "captured_at": "2026-10-14T06:13:18.025Z",
+      "viewport": [
+        1920,
+        1080
+      ]
+    },
+    "casino-live-390x844": {
+      "file": "casino-live-390x844.json",
+      "sha256": "f003e22dcea4",
+      "captured_at": "2026-10-14T06:54:56.955Z",
+      "viewport": [
+        390,
+        844
+      ]
+    },
+    "casino-live-430x932": {
+      "file": "casino-live-430x932.json",
+      "sha256": "88fcbc07fd06",
+      "captured_at": "2026-10-14T06:50:25.930Z",
+      "viewport": [
+        430,
+        932
+      ]
+    },
+    "casino-live-768x1024": {
+      "file": "casino-live-768x1024.json",
+      "sha256": "a5f028240dc6",
+      "captured_at": "2026-10-14T06:45:57.987Z",
+      "viewport": [
+        768,
+        1024
+      ]
+    }
+  },
+  "downloaded": [
+    "https://one-vv3591.com/resources/v1/optimizeimages/unsafe/casino_game_card_x1/plain/https://v1.bundlecdn.com/casino-images/v/c5d29443-ca34-41c8-8deb-af01aca04030_vertical.png@webp"
+  ],
+  "missing": []
+}

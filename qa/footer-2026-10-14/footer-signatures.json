@@ -1,0 +1,243 @@
+{
+  "date": "2026-10-14",
+  "method": "Reference guest session, SPA router navigation per route, scroll (behavior instant) until footer-container mounts; signature = sha256[:12] of markup normalised to tag + class + text (comments and inline <style> removed). Local templates use the same normalisation.",
+  "observed": "Every route has one footer for 1920 and 1440 (desktop) and one for 768, 430 and 390 (tablet/mobile). All 24 routes x 5 sizes matched an existing components/footer.html template.",
+  "routes": {
+    "/": {
+      "desktop": "910290bda07e",
+      "mobile": "018c8fb9eb4e"
+    },
+    "/casino": {
+      "desktop": "47ea5b84d60f",
+      "mobile": "941278659ab4"
+    },
+    "/freemoney": {
+      "desktop": "910290bda07e",
+      "mobile": "018c8fb9eb4e"
+    },
+    "/bonuses": {
+      "desktop": "bdf994542f8e",
+      "mobile": "03ee85ec9a82"
+    },
+    "/loyalty-program": {
+      "desktop": "910290bda07e",
+      "mobile": "018c8fb9eb4e"
+    },
+    "/vip-club": {
+      "desktop": "910290bda07e",
+      "mobile": "018c8fb9eb4e"
+    },
+    "/promotions": {
+      "desktop": "c3af79f2d74d",
+      "mobile": "8681319c3dfd"
+    },
+    "/tournaments": {
+      "desktop": "0d3c46c6d368",
+      "mobile": "02dea64a7fa2"
+    },
+    "/blog": {
+      "desktop": "910290bda07e",
+      "mobile": "018c8fb9eb4e"
+    },
+    "/casino/1win-games": {
+      "desktop": "577ba91bceb0",
+      "mobile": "a4a3157804c9"
+    },
+    "/casino/bonus-buy": {
+      "desktop": "577ba91bceb0",
+      "mobile": "a4a3157804c9"
+    },
+    "/casino/bonus-wagering": {
+      "desktop": "577ba91bceb0",
+      "mobile": "a4a3157804c9"
+    },
+    "/casino/fishing-games": {
+      "desktop": "577ba91bceb0",
+      "mobile": "a4a3157804c9"
+    },
+    "/casino/jili-games": {
+      "desktop": "577ba91bceb0",
+      "mobile": "a4a3157804c9"
+    },
+    "/casino/live-games": {
+      "desktop": "ab2df16e837d",
+      "mobile": "06322fe86335"
+    },
+    "/casino/new": {
+      "desktop": "577ba91bceb0",
+      "mobile": "a4a3157804c9"
+    },
+    "/casino/only-on-1win": {
+      "desktop": "577ba91bceb0",
+      "mobile": "a4a3157804c9"
+    },
+    "/casino/fast-games": {
+      "desktop": "910290bda07e",
+      "mobile": "018c8fb9eb4e"
+    },
+    "/casino/slots": {
+      "desktop": "577ba91bceb0",
+      "mobile": "a4a3157804c9"
+    },
+    "/casino/ai-recommendations": {
+      "desktop": "47ea5b84d60f",
+      "mobile": "941278659ab4"
+    },
+    "/betting": {
+      "desktop": "910290bda07e",
+      "mobile": "018c8fb9eb4e"
+    },
+    "/betting/esport": {
+      "desktop": "266e261f03ea",
+      "mobile": "dba3b24bd27d"
+    },
+    "/betting/live": {
+      "desktop": "5fbfd38c7cd8",
+      "mobile": "c9d1285d2018"
+    },
+    "/betting/prematch": {
+      "desktop": "d157697d8ce1",
+      "mobile": "87e541c1a1ac"
+    },
+    "/casino/live-games/1win-live": {
+      "desktop": "cc9b8832ec32",
+      "mobile": "dfa5fbc9b5a0"
+    },
+    "/casino/live-games/emperors-collection": {
+      "desktop": "cc9b8832ec32",
+      "mobile": "dfa5fbc9b5a0"
+    },
+    "/casino/live-games/evolution": {
+      "desktop": "cc9b8832ec32",
+      "mobile": "dfa5fbc9b5a0"
+    },
+    "/casino/live-games/pragmatic-play": {
+      "desktop": "cc9b8832ec32",
+      "mobile": "dfa5fbc9b5a0"
+    },
+    "/casino/live-games/sa-gaming": {
+      "desktop": "cc9b8832ec32",
+      "mobile": "dfa5fbc9b5a0"
+    },
+    "/casino/live-games/ae-sexy": {
+      "desktop": "cc9b8832ec32",
+      "mobile": "dfa5fbc9b5a0"
+    },
+    "/casino/live-games/playtech-live": {
+      "desktop": "cc9b8832ec32",
+      "mobile": "dfa5fbc9b5a0"
+    },
+    "/casino/live-games/game-shows": {
+      "desktop": "cc9b8832ec32",
+      "mobile": "dfa5fbc9b5a0"
+    },
+    "/casino/live-games/baccarat": {
+      "desktop": "cc9b8832ec32",
+      "mobile": "dfa5fbc9b5a0"
+    },
+    "/casino/live-games/dragon-tiger": {
+      "desktop": "cc9b8832ec32",
+      "mobile": "dfa5fbc9b5a0"
+    },
+    "/casino/live-games/sic-bo": {
+      "desktop": "cc9b8832ec32",
+      "mobile": "dfa5fbc9b5a0"
+    },
+    "/casino/live-games/new-live-games": {
+      "desktop": "cc9b8832ec32",
+      "mobile": "dfa5fbc9b5a0"
+    },
+    "/casino/live-games/roulette": {
+      "desktop": "cc9b8832ec32",
+      "mobile": "dfa5fbc9b5a0"
+    },
+    "/casino/live-games/blackjack": {
+      "desktop": "cc9b8832ec32",
+      "mobile": "dfa5fbc9b5a0"
+    },
+    "/casino/live-games/poker": {
+      "desktop": "cc9b8832ec32",
+      "mobile": "dfa5fbc9b5a0"
+    },
+    "/casino/fast-games/1win-games": {
+      "desktop": "910290bda07e",
+      "mobile": "018c8fb9eb4e"
+    },
+    "/casino/fast-games/crash-games": {
+      "desktop": "910290bda07e",
+      "mobile": "018c8fb9eb4e"
+    },
+    "/casino/fast-games/chicken-games": {
+      "desktop": "910290bda07e",
+      "mobile": "018c8fb9eb4e"
+    },
+    "/casino/fast-games/mines": {
+      "desktop": "910290bda07e",
+      "mobile": "018c8fb9eb4e"
+    },
+    "/casino/fast-games/plinko": {
+      "desktop": "910290bda07e",
+      "mobile": "018c8fb9eb4e"
+    },
+    "/casino/fast-games/sport": {
+      "desktop": "910290bda07e",
+      "mobile": "018c8fb9eb4e"
+    },
+    "/casino/fast-games/lotteries": {
+      "desktop": "910290bda07e",
+      "mobile": "018c8fb9eb4e"
+    }
+  },
+  "pages": {
+    "home": "/",
+    "casino": "/casino",
+    "freemoney": "/freemoney",
+    "bonuses": "/bonuses",
+    "loyalty-program": "/loyalty-program",
+    "vip-club": "/vip-club",
+    "promotions": "/promotions",
+    "tournaments": "/tournaments",
+    "blog": "/blog",
+    "casino-1win": "/casino/1win-games",
+    "casino-bonus-buy": "/casino/bonus-buy",
+    "casino-bonus-wagering": "/casino/bonus-wagering",
+    "casino-fishing": "/casino/fishing-games",
+    "casino-jili": "/casino/jili-games",
+    "casino-live": "/casino/live-games",
+    "casino-new": "/casino/new",
+    "casino-only-1win": "/casino/only-on-1win",
+    "casino-quick": "/casino/fast-games",
+    "casino-slots": "/casino/slots",
+    "casino-recommended": "/casino/ai-recommendations",
+    "casino-search": "/casino",
+    "casino-search-results": "/casino",
+    "casino-providers": "/casino",
+    "sports": "/betting",
+    "sports-esports": "/betting/esport",
+    "sports-live": "/betting/live",
+    "sports-upcoming": "/betting/prematch",
+    "casino-live-1win-live": "/casino/live-games/1win-live",
+    "casino-live-emperors-collection": "/casino/live-games/emperors-collection",
+    "casino-live-evolution": "/casino/live-games/evolution",
+    "casino-live-pragmatic-play": "/casino/live-games/pragmatic-play",
+    "casino-live-sa-gaming": "/casino/live-games/sa-gaming",
+    "casino-live-ae-sexy": "/casino/live-games/ae-sexy",
+    "casino-live-playtech-live": "/casino/live-games/playtech-live",
+    "casino-live-game-shows": "/casino/live-games/game-shows",
+    "casino-live-baccarat": "/casino/live-games/baccarat",
+    "casino-live-dragon-tiger": "/casino/live-games/dragon-tiger",
+    "casino-live-sic-bo": "/casino/live-games/sic-bo",
+    "casino-live-new-live-games": "/casino/live-games/new-live-games",
+    "casino-live-roulette": "/casino/live-games/roulette",
+    "casino-live-blackjack": "/casino/live-games/blackjack",
+    "casino-live-poker": "/casino/live-games/poker",
+    "casino-quick-1win-games": "/casino/fast-games/1win-games",
+    "casino-quick-crash-games": "/casino/fast-games/crash-games",
+    "casino-quick-chicken-games": "/casino/fast-games/chicken-games",
+    "casino-quick-mines": "/casino/fast-games/mines",
+    "casino-quick-plinko": "/casino/fast-games/plinko",
+    "casino-quick-sport": "/casino/fast-games/sport",
+    "casino-quick-lotteries": "/casino/fast-games/lotteries"
+  },
+  "note": "casino-search, casino-search-results and casino-providers are overlays opened on /casino, so they use the /casino footer. Betwave has its own footer family and is not part of this table. Live Casino sub-categories (/casino/live-games/<slug>) use their own footer variant; Quick games sub-categories match /casino/fast-games (measured 2026-10-14 at 1920/1440/768)."
+}

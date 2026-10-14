@@ -1,0 +1,67 @@
+{
+  "page": "casino-quick-sport",
+  "auth": false,
+  "date": "2026-10-14",
+  "replaced": {
+    "casino-quick-sport-1440x900": 2,
+    "casino-quick-sport.html": 2,
+    "casino-quick-sport-1920x1080": 2,
+    "casino-quick-sport-390x844": 2,
+    "casino-quick-sport-430x932": 2,
+    "casino-quick-sport-768x1024": 2
+  },
+  "unmatched": [],
+  "kept_rows": [],
+  "captures": {
+    "casino-quick-sport-1440x900": {
+      "file": "casino-quick-sport-1440x900.json",
+      "sha256": "c87315788eb2",
+      "captured_at": "2026-10-14T05:21:34.984Z",
+      "viewport": [
+        1440,
+        900
+      ]
+    },
+    "casino-quick-sport-1920x1080": {
+      "file": "casino-quick-sport-1920x1080.json",
+      "sha256": "ad59b8812f9e",
+      "captured_at": "2026-10-14T05:25:44.261Z",
+      "viewport": [
+        1920,
+        1080
+      ]
+    },
+    "casino-quick-sport-390x844": {
+      "file": "casino-quick-sport-390x844.json",
+      "sha256": "a3f587eda6a4",
+      "captured_at": "2026-10-14T05:46:19.809Z",
+      "viewport": [
+        390,
+        844
+      ]
+    },
+    "casino-quick-sport-430x932": {
+      "file": "casino-quick-sport-430x932.json",
+      "sha256": "1644f36cdc31",
+      "captured_at": "2026-10-14T05:44:26.416Z",
+      "viewport": [
+        430,
+        932
+      ]
+    },
+    "casino-quick-sport-768x1024": {
+      "file": "casino-quick-sport-768x1024.json",
+      "sha256": "a8f644c41f7d",
+      "captured_at": "2026-10-14T05:36:28.110Z",
+      "viewport": [
+        768,
+        1024
+      ]
+    }
+  },
+  "downloaded": [
+    "https://one-vv3591.com/resources/v1/optimizeimages/unsafe/casino_game_card_x1/plain/https://v1.bundlecdn.com/casino-images/v/0fa1313d-2c37-4a32-bd64-04d11f211eea_vertical.png@avif",
+    "https://one-vv3591.com/resources/v1/optimizeimages/unsafe/casino_game_card_x1/plain/https://v1.bundlecdn.com/casino-images/v/6b96bf71-f4b3-41a8-9e3a-a9fe16f7f5eb_vertical.png@avif"
+  ],
+  "missing": []
+}

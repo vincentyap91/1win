@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 106 98" role="presentation"
+     class="icon-base_root-F1flk steps-card_doneImage-G0LKa" width="106" height="98">
+  <style>
+    [data-icon='step-card-done']:dir(rtl) {
+    transform: scaleX(-1);
+    }
+  </style>
+  <path fill="url(#step-card-done_svg__a)" fill-rule="evenodd"
+        d="M63 126c34.794 0 63-28.206 63-63S97.794 0 63 0 0 28.206 0 63s28.206 63 63 63m31.035-84.347A4.2 4.2 0 0 0 93 40.373a4.38 4.38 0 0 0-3.126-.986 4.35 4.35 0 0 0-2.933 1.442L55.57 76.324 38.787 60.052a4.37 4.37 0 0 0-3.023-1.171 4.37 4.37 0 0 0-3.004 1.22 4.1 4.1 0 0 0-1.26 2.91 4.1 4.1 0 0 0 1.205 2.934l20.062 19.458c.419.406.92.724 1.471.934a4.42 4.42 0 0 0 3.44-.127 4.3 4.3 0 0 0 1.394-1.041l34.39-38.915c.369-.415.649-.897.825-1.418a4.05 4.05 0 0 0-.252-3.183"
+        clip-rule="evenodd"></path>
+  <defs>
+    <linearGradient id="step-card-done_svg__a" x1="119.368" x2="11.605" y1="127.658" y2="-4.974"
+                    gradientUnits="userSpaceOnUse">
+      <stop stop-color="white" stop-opacity=".3"></stop>
+      <stop offset="1" stop-color="white" stop-opacity="0"></stop>
+    </linearGradient>
+  </defs>
+</svg>

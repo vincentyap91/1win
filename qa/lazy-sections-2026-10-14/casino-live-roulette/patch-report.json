@@ -1,0 +1,124 @@
+{
+  "page": "casino-live-roulette",
+  "auth": false,
+  "date": "2026-10-14",
+  "replaced": {
+    "casino-live-roulette-1440x900": 2,
+    "casino-live-roulette.html": 2,
+    "casino-live-roulette-1920x1080": 2,
+    "casino-live-roulette-390x844": 2,
+    "casino-live-roulette-430x932": 2,
+    "casino-live-roulette-768x1024": 2
+  },
+  "unmatched": [],
+  "kept_rows": [],
+  "captures": {
+    "casino-live-roulette-1440x900": {
+      "file": "casino-live-roulette-1440x900.json",
+      "sha256": "0f726373cea0",
+      "captured_at": "2026-10-14T05:20:57.913Z",
+      "viewport": [
+        1440,
+        900
+      ]
+    },
+    "casino-live-roulette-1920x1080": {
+      "file": "casino-live-roulette-1920x1080.json",
+      "sha256": "93ea1dc183bf",
+      "captured_at": "2026-10-14T05:24:50.729Z",
+      "viewport": [
+        1920,
+        1080
+      ]
+    },
+    "casino-live-roulette-390x844": {
+      "file": "casino-live-roulette-390x844.json",
+      "sha256": "4617e178f676",
+      "captured_at": "2026-10-14T05:45:41.598Z",
+      "viewport": [
+        390,
+        844
+      ]
+    },
+    "casino-live-roulette-430x932": {
+      "file": "casino-live-roulette-430x932.json",
+      "sha256": "a55207f5f6dc",
+      "captured_at": "2026-10-14T05:43:42.559Z",
+      "viewport": [
+        430,
+        932
+      ]
+    },
+    "casino-live-roulette-768x1024": {
+      "file": "casino-live-roulette-768x1024.json",
+      "sha256": "b85e4dca2342",
+      "captured_at": "2026-10-14T05:35:49.510Z",
+      "viewport": [
+        768,
+        1024
+      ]
+    }
+  },
+  "downloaded": [
+    "https://one-vv3591.com/resources/v1/optimizeimages/unsafe/casino_game_card_x1/plain/https://v1.bundlecdn.com/casino-images/betgames/7d1d6220-963e-4005-956c-be3324b79dae_vertical.png@avif",
+    "https://one-vv3591.com/resources/v1/optimizeimages/unsafe/casino_game_card_x1/plain/https://v1.bundlecdn.com/casino-images/v/e84f3548-4c92-4bbf-a237-408fefd642b5_vertical.png@avif",
+    "https://one-vv3591.com/resources/v1/optimizeimages/unsafe/casino_game_card_x1/plain/https://v1.bundlecdn.com/casino-images/v/f6dbb4b9-2875-452c-bbd4-9b3aa790782c_vertical.png@avif",
+    "https://one-vv3591.com/resources/v1/optimizeimages/unsafe/casino_game_card_x1/plain/https://v1.bundlecdn.com/casino-images/v/4cc17162-82b9-458d-888f-3af1f35c96fc_vertical.webp@avif",
+    "https://one-vv3591.com/resources/v1/optimizeimages/unsafe/casino_game_card_x1/plain/https://v1.bundlecdn.com/casino-images/v/1806c61a-50ae-4eea-9c6e-76d3213df1f1_vertical.png@avif",
+    "https://one-vv3591.com/resources/v1/optimizeimages/unsafe/casino_game_card_x1/plain/https://v1.bundlecdn.com/casino-images/v/f3566451-c1c7-40a9-9159-797efd5d8eea_vertical.webp@avif",
+    "https://one-vv3591.com/resources/v1/optimizeimages/unsafe/casino_game_card_x1/plain/https://v1.bundlecdn.com/casino-images/v/9290f1f3-2a6f-47a9-b040-bd12f3c90197_vertical.png@avif",
+    "https://one-vv3591.com/resources/v1/optimizeimages/unsafe/casino_game_card_x1/plain/https://v1.bundlecdn.com/casino-images/v/b0777a3a-2fa1-4851-8ad6-0f841a38e26b_vertical.png@avif",
+    "https://one-vv3591.com/resources/v1/optimizeimages/unsafe/casino_game_card_x1/plain/https://v1.bundlecdn.com/casino-images/v/4d8fec19-1a94-4894-a6f5-b6ca53b7331a_vertical.png@avif",
+    "https://one-vv3591.com/resources/v1/optimizeimages/unsafe/casino_game_card_x1/plain/https://v1.bundlecdn.com/casino-images/v/1298a218-b39a-4c94-8f38-916e9e066e53_vertical.png@avif",
+    "https://one-vv3591.com/resources/v1/optimizeimages/unsafe/casino_game_card_x1/plain/https://v1.bundlecdn.com/casino-images/v/333eaa53-7bee-49bb-b61f-ab3da5bf8585_vertical.png@avif",
+    "https://one-vv3591.com/resources/v1/optimizeimages/unsafe/casino_game_card_x1/plain/https://v1.bundlecdn.com/casino-images/v/9351845d-a744-4f02-9849-273fb1966e6c_vertical.png@avif",
+    "https://one-vv3591.com/resources/v1/optimizeimages/unsafe/casino_game_card_x1/plain/https://v1.bundlecdn.com/casino-images/v/af4e4cbc-9139-4dcd-9e29-2b53724508cd_vertical.png@avif",
+    "https://one-vv3591.com/resources/v1/optimizeimages/unsafe/casino_game_card_x1/plain/https://v1.bundlecdn.com/casino-images/v/c704606c-3e3c-4265-b9ee-49eaddd12beb_vertical.png@avif",
+    "https://one-vv3591.com/resources/v1/optimizeimages/unsafe/casino_game_card_x1/plain/https://v1.bundlecdn.com/casino-images/v/e1fc912d-f34d-4a16-b2ea-668801743e67_vertical.png@avif",
+    "https://one-vv3591.com/resources/v1/optimizeimages/unsafe/casino_game_card_x1/plain/https://v1.bundlecdn.com/casino-images/v/d5be565d-5c67-4a8e-9bb9-7c388ab4503a_vertical.png@avif",
+    "https://one-vv3591.com/resources/v1/optimizeimages/unsafe/casino_game_card_x1/plain/https://v1.bundlecdn.com/casino-images/v/f14bd09c-1272-4202-8a90-52cd31c46d3c_vertical.png@avif",
+    "https://one-vv3591.com/resources/v1/optimizeimages/unsafe/casino_game_card_x1/plain/https://v1.bundlecdn.com/casino-images/orchestra/7ebc321f-3540-4ec3-b6e4-91e6f30825dc_vertical.png@avif",
+    "https://one-vv3591.com/resources/v1/optimizeimages/unsafe/casino_game_card_x1/plain/https://v1.bundlecdn.com/casino-images/v/1067e5ad-2e3f-4a62-9a1f-212ad3199903_vertical.png@avif",
+    "https://one-vv3591.com/resources/v1/optimizeimages/unsafe/casino_game_card_x1/plain/https://v1.bundlecdn.com/casino-images/mrslotty/107b9f6c-6f87-4aa6-9746-c7eb5e1016d6_vertical.png@avif",
+    "https://one-vv3591.com/resources/v1/optimizeimages/unsafe/casino_game_card_x1/plain/https://v1.bundlecdn.com/casino-images/v/958c8f76-7c44-40a1-801b-b663254b809f_vertical.png@avif",
+    "https://one-vv3591.com/resources/v1/optimizeimages/unsafe/casino_game_card_x1/plain/https://v1.bundlecdn.com/casino-images/v/b910a1c9-065b-45ff-a886-1f0cdf065051_vertical.png@avif",
+    "https://one-vv3591.com/resources/v1/optimizeimages/unsafe/casino_game_card_x1/plain/https://v1.bundlecdn.com/casino-images/v/0ca83447-c487-4fc7-af2a-491d2d03260f_vertical.png@avif",
+    "https://one-vv3591.com/resources/v1/optimizeimages/unsafe/casino_game_card_x1/plain/https://v1.bundlecdn.com/casino-images/v/c73c2e6d-8822-4069-acfe-141ca657f13d_vertical.png@avif",
+    "https://one-vv3591.com/resources/v1/optimizeimages/unsafe/casino_game_card_x1/plain/https://v1.bundlecdn.com/casino-images/v/741e09b9-3226-4b63-9d8b-865f142a9e02_vertical.png@avif",
+    "https://one-vv3591.com/resources/v1/optimizeimages/unsafe/casino_game_card_x1/plain/https://v1.bundlecdn.com/casino-images/v/ec2f7079-e5a9-469b-a436-b6cad86f866b_vertical.png@avif",
+    "https://one-vv3591.com/resources/v1/optimizeimages/unsafe/casino_game_card_x1/plain/https://v1.bundlecdn.com/casino-images/v/42c7415b-5ca8-48c9-985a-371b6437cc91_vertical.png@avif",
+    "https://one-vv3591.com/resources/v1/optimizeimages/unsafe/casino_game_card_x1/plain/https://v1.bundlecdn.com/casino-images/v/ff3983b5-20d2-4a85-9aee-7503e7c79613_vertical.png@avif",
+    "https://one-vv3591.com/resources/v1/optimizeimages/unsafe/casino_game_card_x1/plain/https://v1.bundlecdn.com/casino-images/v/2bb589b6-dc72-462e-9a52-de4eeb6be7b1_vertical.png@avif",
+    "https://one-vv3591.com/resources/v1/optimizeimages/unsafe/casino_game_card_x1/plain/https://v1.bundlecdn.com/casino-images/v/c4b9e22b-839f-42c4-8551-0da234353ee5_vertical.png@avif",
+    "https://one-vv3591.com/resources/v1/optimizeimages/unsafe/casino_game_card_x1/plain/https://v1.bundlecdn.com/casino-images/v/43cd0380-9452-4e21-a06a-7f7d562b396b_vertical.png@avif",
+    "https://one-vv3591.com/resources/v1/optimizeimages/unsafe/casino_game_card_x1/plain/https://v1.bundlecdn.com/casino-images/v/d199af52-9984-4c6b-bf66-3aefc768fda3_vertical.jpg@avif",
+    "https://one-vv3591.com/resources/v1/optimizeimages/unsafe/casino_game_card_x1/plain/https://v1.bundlecdn.com/casino-images/v/6b411ef0-b33d-49c3-bc50-5b33726ddb26_vertical.png@avif",
+    "https://one-vv3591.com/resources/v1/optimizeimages/unsafe/casino_game_card_x1/plain/https://v1.bundlecdn.com/casino-images/v/3df5fe4c-fe32-4650-bb6e-e258961495a1_vertical.jpg@avif",
+    "https://one-vv3591.com/resources/v1/optimizeimages/unsafe/casino_game_card_x1/plain/https://v1.bundlecdn.com/casino-images/v/4fb48376-f827-409b-85a6-2484d4697861_vertical.jpg@avif",
+    "https://one-vv3591.com/resources/v1/optimizeimages/unsafe/casino_game_card_x1/plain/https://v1.bundlecdn.com/casino-images/mrslotty/096cdaa6-63f9-4284-8e6e-3e3722f2fe09_vertical.png@avif",
+    "https://one-vv3591.com/resources/v1/optimizeimages/unsafe/casino_game_card_x1/plain/https://v1.bundlecdn.com/casino-images/v/a89f6a96-ac4d-4054-b4d6-daf86ee502bf_vertical.png@avif",
+    "https://one-vv3591.com/resources/v1/optimizeimages/unsafe/casino_game_card_x1/plain/https://v1.bundlecdn.com/casino-images/v/e1333036-f4b9-49a3-a45a-8134bb82d325_vertical.png@avif",
+    "https://one-vv3591.com/resources/v1/optimizeimages/unsafe/casino_game_card_x1/plain/https://v1.bundlecdn.com/casino-images/v/2a5b41f1-6719-4440-980b-1fa11c81f1f9_vertical.png@avif",
+    "https://one-vv3591.com/resources/v1/optimizeimages/unsafe/casino_game_card_x1/plain/https://v1.bundlecdn.com/casino-images/v/56f9c154-6187-40bb-82da-36c813c05414_vertical.png@avif",
+    "https://one-vv3591.com/resources/v1/optimizeimages/unsafe/casino_game_card_x1/plain/https://v1.bundlecdn.com/casino-images/v/a9cd0f26-8b35-4907-bf8c-55b2d6bc4adc_vertical.png@avif",
+    "https://one-vv3591.com/resources/v1/optimizeimages/unsafe/casino_game_card_x1/plain/https://v1.bundlecdn.com/casino-images/v/aead880c-05ce-4ef1-87bd-744d3af52a5e_vertical.png@avif",
+    "https://one-vv3591.com/resources/v1/optimizeimages/unsafe/casino_game_card_x1/plain/https://v1.bundlecdn.com/casino-images/pragmatic/08fa1212-0ecd-4194-9ed4-e3e319f97286_vertical.png@avif",
+    "https://one-vv3591.com/resources/v1/optimizeimages/unsafe/casino_game_card_x1/plain/https://v1.bundlecdn.com/casino-images/orchestra/84f7a9f2-b1d4-4a06-b573-0c151063e9f4_vertical.png@avif",
+    "https://one-vv3591.com/resources/v1/optimizeimages/unsafe/casino_game_card_x1/plain/https://v1.bundlecdn.com/casino-images/v/610eb526-07ab-4c64-8ab3-5d478347f4e7_vertical.png@avif",
+    "https://one-vv3591.com/resources/v1/optimizeimages/unsafe/casino_game_card_x1/plain/https://v1.bundlecdn.com/casino-images/v/2c14ea09-ae9a-46dc-a330-07c8335ea2f8_vertical.png@avif",
+    "https://one-vv3591.com/resources/v1/optimizeimages/unsafe/casino_game_card_x1/plain/https://v1.bundlecdn.com/casino-images/v/c7ca9cc9-e24e-41b7-b9af-731b0e8ec611_vertical.png@avif",
+    "https://one-vv3591.com/resources/v1/optimizeimages/unsafe/casino_game_card_x1/plain/https://v1.bundlecdn.com/casino-images/pragmatic/fdc2169c-e99c-4ed5-95a3-a6dd0b8205c9_vertical.jpg@avif",
+    "https://one-vv3591.com/resources/v1/optimizeimages/unsafe/casino_game_card_x1/plain/https://v1.bundlecdn.com/casino-images/mrslotty/5c4b5f31-8cee-4d87-b10b-8bccec11440d_vertical.png@avif",
+    "https://one-vv3591.com/resources/v1/optimizeimages/unsafe/casino_game_card_x1/plain/https://v1.bundlecdn.com/casino-images/v/f3479aaa-7b33-40a3-b997-d4dcfeff7598_vertical.png@avif",
+    "https://one-vv3591.com/resources/v1/optimizeimages/unsafe/casino_game_card_x1/plain/https://v1.bundlecdn.com/casino-images/v/ba86589e-486c-4083-96e7-8d5de4c5f04d_vertical.jpg@avif",
+    "https://one-vv3591.com/resources/v1/optimizeimages/unsafe/casino_game_card_x1/plain/https://v1.bundlecdn.com/casino-images/v/60136d9e-8d76-49c2-a676-f79378256edd_vertical.jpg@avif",
+    "https://one-vv3591.com/resources/v1/optimizeimages/unsafe/casino_game_card_x1/plain/https://v1.bundlecdn.com/casino-images/v/09d13d43-224c-410a-acb7-343bafbaa688_vertical.png@avif",
+    "https://one-vv3591.com/resources/v1/optimizeimages/unsafe/casino_game_card_x1/plain/https://v1.bundlecdn.com/casino-images/v/cdd3c952-8410-472b-a02a-9be3999f2ee1_vertical.png@avif",
+    "https://one-vv3591.com/resources/v1/optimizeimages/unsafe/casino_game_card_x1/plain/https://v1.bundlecdn.com/casino-images/v/7ca50fd1-b990-4deb-83cc-cd6b58d18728_vertical.png@avif",
+    "https://one-vv3591.com/resources/v1/optimizeimages/unsafe/casino_game_card_x1/plain/https://v1.bundlecdn.com/casino-images/v/afa8acd8-8686-47d6-ac4a-7f7c9c245b9b_vertical.png@avif",
+    "https://one-vv3591.com/resources/v1/optimizeimages/unsafe/casino_game_card_x1/plain/https://v1.bundlecdn.com/casino-images/v/5f737a65-0f76-4a69-afe0-9135d0696421_vertical.png@avif",
+    "https://one-vv3591.com/resources/v1/optimizeimages/unsafe/casino_game_card_x1/plain/https://v1.bundlecdn.com/casino-images/mrslotty/8935d8c4-ee3d-49d1-a0ea-b19c1cb1b015_vertical.png@avif",
+    "https://one-vv3591.com/resources/v1/optimizeimages/unsafe/casino_game_card_x1/plain/https://v1.bundlecdn.com/casino-images/v/5cfd27f3-7075-4cd6-9c3f-d5c5ccb98050_vertical.jpg@avif"
+  ],
+  "missing": []
+}

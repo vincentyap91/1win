@@ -1,0 +1,70 @@
+{
+  "page": "casino",
+  "auth": true,
+  "date": "2026-10-14",
+  "replaced": {
+    "casino-1920x1080": 2,
+    "casino-1440x900": 2,
+    "casino-768x1024": 2,
+    "casino-390x844": 2,
+    "casino-430x932": 2
+  },
+  "unmatched": [],
+  "kept_rows": [],
+  "captures": {
+    "casino-1920x1080": {
+      "file": "casino-auth-1920x1080.json",
+      "sha256": "cd131d30e595",
+      "captured_at": "2026-10-14T03:21:32.219Z",
+      "viewport": [
+        1920,
+        1080
+      ]
+    },
+    "casino-1440x900": {
+      "file": "casino-auth-1440x900.json",
+      "sha256": "c506821eca77",
+      "captured_at": "2026-10-14T03:21:01.188Z",
+      "viewport": [
+        1440,
+        900
+      ]
+    },
+    "casino-768x1024": {
+      "file": "casino-auth-768x1024.json",
+      "sha256": "0c83f6d1d1fa",
+      "captured_at": "2026-10-14T03:21:57.734Z",
+      "viewport": [
+        768,
+        1024
+      ]
+    },
+    "casino-390x844": {
+      "file": "casino-auth-390x844.json",
+      "sha256": "c89b8b815752",
+      "captured_at": "2026-10-14T03:22:47.811Z",
+      "viewport": [
+        390,
+        844
+      ]
+    },
+    "casino-430x932": {
+      "file": "casino-auth-430x932.json",
+      "sha256": "d6d025b01bc7",
+      "captured_at": "2026-10-14T03:22:23.460Z",
+      "viewport": [
+        430,
+        932
+      ]
+    }
+  },
+  "downloaded": [
+    "https://one-vv3591.com/resources/v1/optimizeimages/unsafe/quality_2to1/plain/https://v3.bundlecdn.com/b02632/plain/casino/providers-btn/preferences-v2.svg",
+    "https://one-vv3591.com/resources/v1/optimizeimages/unsafe/quality/plain/https://v3.bundlecdn.com/b02632/plain/casino/qabs.1/lobby-v3.svg",
+    "https://one-vv3591.com/resources/v1/optimizeimages/unsafe/quality/plain/https://static.smartikowheel.com/9940d4d773e89576e6b2f6-800x34480.webp",
+    "https://one-vv3591.com/resources/v1/optimizeimages/unsafe/casino_game_card_x1/plain/https://v1.bundlecdn.com/casino-images/v/980fedcd-9602-452f-a93e-e9fbfc118649_vertical.png@webp",
+    "https://one-vv3591.com/resources/v1/optimizeimages/unsafe/casino_game_card_x1/plain/https://v1.bundlecdn.com/casino-images/v/205ab6f4-467b-43d8-9fd6-cacec0376ce9_vertical.png@webp",
+    "https://one-vv3591.com/resources/v1/optimizeimages/unsafe/casino_game_card_x1/plain/https://v1.bundlecdn.com/casino-images/v/1adec641-8639-4d20-81cb-285b8ca51fc3_vertical.png@webp"
+  ],
+  "missing": []
+}

@@ -1,0 +1,2002 @@
+{
+  "betwave.html": {
+    "start": {
+      "sidebar": 300,
+      "compact": false,
+      "main": 328,
+      "toggle": true,
+      "expanded": "true",
+      "bodyCls": false,
+      "overflow": false
+    },
+    "collapsed": {
+      "sidebar": 84,
+      "compact": true,
+      "main": 112,
+      "toggle": true,
+      "expanded": "false",
+      "bodyCls": true,
+      "overflow": false
+    },
+    "persisted": {
+      "sidebar": 84,
+      "compact": true,
+      "main": 112,
+      "toggle": true,
+      "expanded": "false",
+      "bodyCls": true,
+      "overflow": false
+    },
+    "restored": {
+      "sidebar": 300,
+      "compact": false,
+      "main": 328,
+      "toggle": true,
+      "expanded": "true",
+      "bodyCls": false,
+      "overflow": false
+    },
+    "errors": [],
+    "ok": true
+  },
+  "blog.html": {
+    "start": {
+      "sidebar": 300,
+      "compact": false,
+      "main": 280,
+      "toggle": true,
+      "expanded": "true",
+      "bodyCls": false,
+      "overflow": false
+    },
+    "collapsed": {
+      "sidebar": 84,
+      "compact": true,
+      "main": 64,
+      "toggle": true,
+      "expanded": "false",
+      "bodyCls": true,
+      "overflow": false
+    },
+    "persisted": {
+      "sidebar": 84,
+      "compact": true,
+      "main": 64,
+      "toggle": true,
+      "expanded": "false",
+      "bodyCls": true,
+      "overflow": false
+    },
+    "restored": {
+      "sidebar": 300,
+      "compact": false,
+      "main": 280,
+      "toggle": true,
+      "expanded": "true",
+      "bodyCls": false,
+      "overflow": false
+    },
+    "errors": [],
+    "ok": true
+  },
+  "bonuses.html": {
+    "start": {
+      "sidebar": 300,
+      "compact": false,
+      "main": 280,
+      "toggle": true,
+      "expanded": "true",
+      "bodyCls": false,
+      "overflow": false
+    },
+    "collapsed": {
+      "sidebar": 84,
+      "compact": true,
+      "main": 64,
+      "toggle": true,
+      "expanded": "false",
+      "bodyCls": true,
+      "overflow": false
+    },
+    "persisted": {
+      "sidebar": 84,
+      "compact": true,
+      "main": 64,
+      "toggle": true,
+      "expanded": "false",
+      "bodyCls": true,
+      "overflow": false
+    },
+    "restored": {
+      "sidebar": 300,
+      "compact": false,
+      "main": 280,
+      "toggle": true,
+      "expanded": "true",
+      "bodyCls": false,
+      "overflow": false
+    },
+    "errors": [],
+    "ok": true
+  },
+  "casino-1win.html": {
+    "start": {
+      "sidebar": 300,
+      "compact": false,
+      "main": 280,
+      "toggle": true,
+      "expanded": "true",
+      "bodyCls": false,
+      "overflow": false
+    },
+    "collapsed": {
+      "sidebar": 84,
+      "compact": true,
+      "main": 64,
+      "toggle": true,
+      "expanded": "false",
+      "bodyCls": true,
+      "overflow": false
+    },
+    "persisted": {
+      "sidebar": 84,
+      "compact": true,
+      "main": 64,
+      "toggle": true,
+      "expanded": "false",
+      "bodyCls": true,
+      "overflow": false
+    },
+    "restored": {
+      "sidebar": 300,
+      "compact": false,
+      "main": 280,
+      "toggle": true,
+      "expanded": "true",
+      "bodyCls": false,
+      "overflow": false
+    },
+    "errors": [],
+    "ok": true
+  },
+  "casino-bonus-buy.html": {
+    "start": {
+      "sidebar": 300,
+      "compact": false,
+      "main": 280,
+      "toggle": true,
+      "expanded": "true",
+      "bodyCls": false,
+      "overflow": false
+    },
+    "collapsed": {
+      "sidebar": 84,
+      "compact": true,
+      "main": 64,
+      "toggle": true,
+      "expanded": "false",
+      "bodyCls": true,
+      "overflow": false
+    },
+    "persisted": {
+      "sidebar": 84,
+      "compact": true,
+      "main": 64,
+      "toggle": true,
+      "expanded": "false",
+      "bodyCls": true,
+      "overflow": false
+    },
+    "restored": {
+      "sidebar": 300,
+      "compact": false,
+      "main": 280,
+      "toggle": true,
+      "expanded": "true",
+      "bodyCls": false,
+      "overflow": false
+    },
+    "errors": [],
+    "ok": true
+  },
+  "casino-bonus-wagering.html": {
+    "start": {
+      "sidebar": 300,
+      "compact": false,
+      "main": 280,
+      "toggle": true,
+      "expanded": "true",
+      "bodyCls": false,
+      "overflow": false
+    },
+    "collapsed": {
+      "sidebar": 84,
+      "compact": true,
+      "main": 64,
+      "toggle": true,
+      "expanded": "false",
+      "bodyCls": true,
+      "overflow": false
+    },
+    "persisted": {
+      "sidebar": 84,
+      "compact": true,
+      "main": 64,
+      "toggle": true,
+      "expanded": "false",
+      "bodyCls": true,
+      "overflow": false
+    },
+    "restored": {
+      "sidebar": 300,
+      "compact": false,
+      "main": 280,
+      "toggle": true,
+      "expanded": "true",
+      "bodyCls": false,
+      "overflow": false
+    },
+    "errors": [],
+    "ok": true
+  },
+  "casino-fishing.html": {
+    "start": {
+      "sidebar": 300,
+      "compact": false,
+      "main": 280,
+      "toggle": true,
+      "expanded": "true",
+      "bodyCls": false,
+      "overflow": false
+    },
+    "collapsed": {
+      "sidebar": 84,
+      "compact": true,
+      "main": 64,
+      "toggle": true,
+      "expanded": "false",
+      "bodyCls": true,
+      "overflow": false
+    },
+    "persisted": {
+      "sidebar": 84,
+      "compact": true,
+      "main": 64,
+      "toggle": true,
+      "expanded": "false",
+      "bodyCls": true,
+      "overflow": false
+    },
+    "restored": {
+      "sidebar": 300,
+      "compact": false,
+      "main": 280,
+      "toggle": true,
+      "expanded": "true",
+      "bodyCls": false,
+      "overflow": false
+    },
+    "errors": [],
+    "ok": true
+  },
+  "casino-jili.html": {
+    "start": {
+      "sidebar": 300,
+      "compact": false,
+      "main": 280,
+      "toggle": true,
+      "expanded": "true",
+      "bodyCls": false,
+      "overflow": false
+    },
+    "collapsed": {
+      "sidebar": 84,
+      "compact": true,
+      "main": 64,
+      "toggle": true,
+      "expanded": "false",
+      "bodyCls": true,
+      "overflow": false
+    },
+    "persisted": {
+      "sidebar": 84,
+      "compact": true,
+      "main": 64,
+      "toggle": true,
+      "expanded": "false",
+      "bodyCls": true,
+      "overflow": false
+    },
+    "restored": {
+      "sidebar": 300,
+      "compact": false,
+      "main": 280,
+      "toggle": true,
+      "expanded": "true",
+      "bodyCls": false,
+      "overflow": false
+    },
+    "errors": [],
+    "ok": true
+  },
+  "casino-live-1win-live.html": {
+    "start": {
+      "sidebar": 300,
+      "compact": false,
+      "main": 280,
+      "toggle": true,
+      "expanded": "true",
+      "bodyCls": false,
+      "overflow": false
+    },
+    "collapsed": {
+      "sidebar": 84,
+      "compact": true,
+      "main": 64,
+      "toggle": true,
+      "expanded": "false",
+      "bodyCls": true,
+      "overflow": false
+    },
+    "persisted": {
+      "sidebar": 84,
+      "compact": true,
+      "main": 64,
+      "toggle": true,
+      "expanded": "false",
+      "bodyCls": true,
+      "overflow": false
+    },
+    "restored": {
+      "sidebar": 300,
+      "compact": false,
+      "main": 280,
+      "toggle": true,
+      "expanded": "true",
+      "bodyCls": false,
+      "overflow": false
+    },
+    "errors": [],
+    "ok": true
+  },
+  "casino-live-ae-sexy.html": {
+    "start": {
+      "sidebar": 300,
+      "compact": false,
+      "main": 280,
+      "toggle": true,
+      "expanded": "true",
+      "bodyCls": false,
+      "overflow": false
+    },
+    "collapsed": {
+      "sidebar": 84,
+      "compact": true,
+      "main": 64,
+      "toggle": true,
+      "expanded": "false",
+      "bodyCls": true,
+      "overflow": false
+    },
+    "persisted": {
+      "sidebar": 84,
+      "compact": true,
+      "main": 64,
+      "toggle": true,
+      "expanded": "false",
+      "bodyCls": true,
+      "overflow": false
+    },
+    "restored": {
+      "sidebar": 300,
+      "compact": false,
+      "main": 280,
+      "toggle": true,
+      "expanded": "true",
+      "bodyCls": false,
+      "overflow": false
+    },
+    "errors": [],
+    "ok": true
+  },
+  "casino-live-baccarat.html": {
+    "start": {
+      "sidebar": 300,
+      "compact": false,
+      "main": 280,
+      "toggle": true,
+      "expanded": "true",
+      "bodyCls": false,
+      "overflow": false
+    },
+    "collapsed": {
+      "sidebar": 84,
+      "compact": true,
+      "main": 64,
+      "toggle": true,
+      "expanded": "false",
+      "bodyCls": true,
+      "overflow": false
+    },
+    "persisted": {
+      "sidebar": 84,
+      "compact": true,
+      "main": 64,
+      "toggle": true,
+      "expanded": "false",
+      "bodyCls": true,
+      "overflow": false
+    },
+    "restored": {
+      "sidebar": 300,
+      "compact": false,
+      "main": 280,
+      "toggle": true,
+      "expanded": "true",
+      "bodyCls": false,
+      "overflow": false
+    },
+    "errors": [],
+    "ok": true
+  },
+  "casino-live-blackjack.html": {
+    "start": {
+      "sidebar": 300,
+      "compact": false,
+      "main": 280,
+      "toggle": true,
+      "expanded": "true",
+      "bodyCls": false,
+      "overflow": false
+    },
+    "collapsed": {
+      "sidebar": 84,
+      "compact": true,
+      "main": 64,
+      "toggle": true,
+      "expanded": "false",
+      "bodyCls": true,
+      "overflow": false
+    },
+    "persisted": {
+      "sidebar": 84,
+      "compact": true,
+      "main": 64,
+      "toggle": true,
+      "expanded": "false",
+      "bodyCls": true,
+      "overflow": false
+    },
+    "restored": {
+      "sidebar": 300,
+      "compact": false,
+      "main": 280,
+      "toggle": true,
+      "expanded": "true",
+      "bodyCls": false,
+      "overflow": false
+    },
+    "errors": [],
+    "ok": true
+  },
+  "casino-live-dragon-tiger.html": {
+    "start": {
+      "sidebar": 300,
+      "compact": false,
+      "main": 280,
+      "toggle": true,
+      "expanded": "true",
+      "bodyCls": false,
+      "overflow": false
+    },
+    "collapsed": {
+      "sidebar": 84,
+      "compact": true,
+      "main": 64,
+      "toggle": true,
+      "expanded": "false",
+      "bodyCls": true,
+      "overflow": false
+    },
+    "persisted": {
+      "sidebar": 84,
+      "compact": true,
+      "main": 64,
+      "toggle": true,
+      "expanded": "false",
+      "bodyCls": true,
+      "overflow": false
+    },
+    "restored": {
+      "sidebar": 300,
+      "compact": false,
+      "main": 280,
+      "toggle": true,
+      "expanded": "true",
+      "bodyCls": false,
+      "overflow": false
+    },
+    "errors": [],
+    "ok": true
+  },
+  "casino-live-emperors-collection.html": {
+    "start": {
+      "sidebar": 300,
+      "compact": false,
+      "main": 280,
+      "toggle": true,
+      "expanded": "true",
+      "bodyCls": false,
+      "overflow": false
+    },
+    "collapsed": {
+      "sidebar": 84,
+      "compact": true,
+      "main": 64,
+      "toggle": true,
+      "expanded": "false",
+      "bodyCls": true,
+      "overflow": false
+    },
+    "persisted": {
+      "sidebar": 84,
+      "compact": true,
+      "main": 64,
+      "toggle": true,
+      "expanded": "false",
+      "bodyCls": true,
+      "overflow": false
+    },
+    "restored": {
+      "sidebar": 300,
+      "compact": false,
+      "main": 280,
+      "toggle": true,
+      "expanded": "true",
+      "bodyCls": false,
+      "overflow": false
+    },
+    "errors": [],
+    "ok": true
+  },
+  "casino-live-evolution.html": {
+    "start": {
+      "sidebar": 300,
+      "compact": false,
+      "main": 280,
+      "toggle": true,
+      "expanded": "true",
+      "bodyCls": false,
+      "overflow": false
+    },
+    "collapsed": {
+      "sidebar": 84,
+      "compact": true,
+      "main": 64,
+      "toggle": true,
+      "expanded": "false",
+      "bodyCls": true,
+      "overflow": false
+    },
+    "persisted": {
+      "sidebar": 84,
+      "compact": true,
+      "main": 64,
+      "toggle": true,
+      "expanded": "false",
+      "bodyCls": true,
+      "overflow": false
+    },
+    "restored": {
+      "sidebar": 300,
+      "compact": false,
+      "main": 280,
+      "toggle": true,
+      "expanded": "true",
+      "bodyCls": false,
+      "overflow": false
+    },
+    "errors": [],
+    "ok": true
+  },
+  "casino-live-game-shows.html": {
+    "start": {
+      "sidebar": 300,
+      "compact": false,
+      "main": 280,
+      "toggle": true,
+      "expanded": "true",
+      "bodyCls": false,
+      "overflow": false
+    },
+    "collapsed": {
+      "sidebar": 84,
+      "compact": true,
+      "main": 64,
+      "toggle": true,
+      "expanded": "false",
+      "bodyCls": true,
+      "overflow": false
+    },
+    "persisted": {
+      "sidebar": 84,
+      "compact": true,
+      "main": 64,
+      "toggle": true,
+      "expanded": "false",
+      "bodyCls": true,
+      "overflow": false
+    },
+    "restored": {
+      "sidebar": 300,
+      "compact": false,
+      "main": 280,
+      "toggle": true,
+      "expanded": "true",
+      "bodyCls": false,
+      "overflow": false
+    },
+    "errors": [],
+    "ok": true
+  },
+  "casino-live-new-live-games.html": {
+    "start": {
+      "sidebar": 300,
+      "compact": false,
+      "main": 280,
+      "toggle": true,
+      "expanded": "true",
+      "bodyCls": false,
+      "overflow": false
+    },
+    "collapsed": {
+      "sidebar": 84,
+      "compact": true,
+      "main": 64,
+      "toggle": true,
+      "expanded": "false",
+      "bodyCls": true,
+      "overflow": false
+    },
+    "persisted": {
+      "sidebar": 84,
+      "compact": true,
+      "main": 64,
+      "toggle": true,
+      "expanded": "false",
+      "bodyCls": true,
+      "overflow": false
+    },
+    "restored": {
+      "sidebar": 300,
+      "compact": false,
+      "main": 280,
+      "toggle": true,
+      "expanded": "true",
+      "bodyCls": false,
+      "overflow": false
+    },
+    "errors": [],
+    "ok": true
+  },
+  "casino-live-playtech-live.html": {
+    "start": {
+      "sidebar": 300,
+      "compact": false,
+      "main": 280,
+      "toggle": true,
+      "expanded": "true",
+      "bodyCls": false,
+      "overflow": false
+    },
+    "collapsed": {
+      "sidebar": 84,
+      "compact": true,
+      "main": 64,
+      "toggle": true,
+      "expanded": "false",
+      "bodyCls": true,
+      "overflow": false
+    },
+    "persisted": {
+      "sidebar": 84,
+      "compact": true,
+      "main": 64,
+      "toggle": true,
+      "expanded": "false",
+      "bodyCls": true,
+      "overflow": false
+    },
+    "restored": {
+      "sidebar": 300,
+      "compact": false,
+      "main": 280,
+      "toggle": true,
+      "expanded": "true",
+      "bodyCls": false,
+      "overflow": false
+    },
+    "errors": [],
+    "ok": true
+  },
+  "casino-live-poker.html": {
+    "start": {
+      "sidebar": 300,
+      "compact": false,
+      "main": 280,
+      "toggle": true,
+      "expanded": "true",
+      "bodyCls": false,
+      "overflow": false
+    },
+    "collapsed": {
+      "sidebar": 84,
+      "compact": true,
+      "main": 64,
+      "toggle": true,
+      "expanded": "false",
+      "bodyCls": true,
+      "overflow": false
+    },
+    "persisted": {
+      "sidebar": 84,
+      "compact": true,
+      "main": 64,
+      "toggle": true,
+      "expanded": "false",
+      "bodyCls": true,
+      "overflow": false
+    },
+    "restored": {
+      "sidebar": 300,
+      "compact": false,
+      "main": 280,
+      "toggle": true,
+      "expanded": "true",
+      "bodyCls": false,
+      "overflow": false
+    },
+    "errors": [],
+    "ok": true
+  },
+  "casino-live-pragmatic-play.html": {
+    "start": {
+      "sidebar": 300,
+      "compact": false,
+      "main": 280,
+      "toggle": true,
+      "expanded": "true",
+      "bodyCls": false,
+      "overflow": false
+    },
+    "collapsed": {
+      "sidebar": 84,
+      "compact": true,
+      "main": 64,
+      "toggle": true,
+      "expanded": "false",
+      "bodyCls": true,
+      "overflow": false
+    },
+    "persisted": {
+      "sidebar": 84,
+      "compact": true,
+      "main": 64,
+      "toggle": true,
+      "expanded": "false",
+      "bodyCls": true,
+      "overflow": false
+    },
+    "restored": {
+      "sidebar": 300,
+      "compact": false,
+      "main": 280,
+      "toggle": true,
+      "expanded": "true",
+      "bodyCls": false,
+      "overflow": false
+    },
+    "errors": [],
+    "ok": true
+  },
+  "casino-live-roulette.html": {
+    "start": {
+      "sidebar": 300,
+      "compact": false,
+      "main": 280,
+      "toggle": true,
+      "expanded": "true",
+      "bodyCls": false,
+      "overflow": false
+    },
+    "collapsed": {
+      "sidebar": 84,
+      "compact": true,
+      "main": 64,
+      "toggle": true,
+      "expanded": "false",
+      "bodyCls": true,
+      "overflow": false
+    },
+    "persisted": {
+      "sidebar": 84,
+      "compact": true,
+      "main": 64,
+      "toggle": true,
+      "expanded": "false",
+      "bodyCls": true,
+      "overflow": false
+    },
+    "restored": {
+      "sidebar": 300,
+      "compact": false,
+      "main": 280,
+      "toggle": true,
+      "expanded": "true",
+      "bodyCls": false,
+      "overflow": false
+    },
+    "errors": [],
+    "ok": true
+  },
+  "casino-live-sa-gaming.html": {
+    "start": {
+      "sidebar": 300,
+      "compact": false,
+      "main": 280,
+      "toggle": true,
+      "expanded": "true",
+      "bodyCls": false,
+      "overflow": false
+    },
+    "collapsed": {
+      "sidebar": 84,
+      "compact": true,
+      "main": 64,
+      "toggle": true,
+      "expanded": "false",
+      "bodyCls": true,
+      "overflow": false
+    },
+    "persisted": {
+      "sidebar": 84,
+      "compact": true,
+      "main": 64,
+      "toggle": true,
+      "expanded": "false",
+      "bodyCls": true,
+      "overflow": false
+    },
+    "restored": {
+      "sidebar": 300,
+      "compact": false,
+      "main": 280,
+      "toggle": true,
+      "expanded": "true",
+      "bodyCls": false,
+      "overflow": false
+    },
+    "errors": [],
+    "ok": true
+  },
+  "casino-live-sic-bo.html": {
+    "start": {
+      "sidebar": 300,
+      "compact": false,
+      "main": 280,
+      "toggle": true,
+      "expanded": "true",
+      "bodyCls": false,
+      "overflow": false
+    },
+    "collapsed": {
+      "sidebar": 84,
+      "compact": true,
+      "main": 64,
+      "toggle": true,
+      "expanded": "false",
+      "bodyCls": true,
+      "overflow": false
+    },
+    "persisted": {
+      "sidebar": 84,
+      "compact": true,
+      "main": 64,
+      "toggle": true,
+      "expanded": "false",
+      "bodyCls": true,
+      "overflow": false
+    },
+    "restored": {
+      "sidebar": 300,
+      "compact": false,
+      "main": 280,
+      "toggle": true,
+      "expanded": "true",
+      "bodyCls": false,
+      "overflow": false
+    },
+    "errors": [],
+    "ok": true
+  },
+  "casino-live.html": {
+    "start": {
+      "sidebar": 300,
+      "compact": false,
+      "main": 280,
+      "toggle": true,
+      "expanded": "true",
+      "bodyCls": false,
+      "overflow": false
+    },
+    "collapsed": {
+      "sidebar": 84,
+      "compact": true,
+      "main": 64,
+      "toggle": true,
+      "expanded": "false",
+      "bodyCls": true,
+      "overflow": false
+    },
+    "persisted": {
+      "sidebar": 84,
+      "compact": true,
+      "main": 64,
+      "toggle": true,
+      "expanded": "false",
+      "bodyCls": true,
+      "overflow": false
+    },
+    "restored": {
+      "sidebar": 300,
+      "compact": false,
+      "main": 280,
+      "toggle": true,
+      "expanded": "true",
+      "bodyCls": false,
+      "overflow": false
+    },
+    "errors": [],
+    "ok": true
+  },
+  "casino-new.html": {
+    "start": {
+      "sidebar": 300,
+      "compact": false,
+      "main": 280,
+      "toggle": true,
+      "expanded": "true",
+      "bodyCls": false,
+      "overflow": false
+    },
+    "collapsed": {
+      "sidebar": 84,
+      "compact": true,
+      "main": 64,
+      "toggle": true,
+      "expanded": "false",
+      "bodyCls": true,
+      "overflow": false
+    },
+    "persisted": {
+      "sidebar": 84,
+      "compact": true,
+      "main": 64,
+      "toggle": true,
+      "expanded": "false",
+      "bodyCls": true,
+      "overflow": false
+    },
+    "restored": {
+      "sidebar": 300,
+      "compact": false,
+      "main": 280,
+      "toggle": true,
+      "expanded": "true",
+      "bodyCls": false,
+      "overflow": false
+    },
+    "errors": [],
+    "ok": true
+  },
+  "casino-only-1win.html": {
+    "start": {
+      "sidebar": 300,
+      "compact": false,
+      "main": 280,
+      "toggle": true,
+      "expanded": "true",
+      "bodyCls": false,
+      "overflow": false
+    },
+    "collapsed": {
+      "sidebar": 84,
+      "compact": true,
+      "main": 64,
+      "toggle": true,
+      "expanded": "false",
+      "bodyCls": true,
+      "overflow": false
+    },
+    "persisted": {
+      "sidebar": 84,
+      "compact": true,
+      "main": 64,
+      "toggle": true,
+      "expanded": "false",
+      "bodyCls": true,
+      "overflow": false
+    },
+    "restored": {
+      "sidebar": 300,
+      "compact": false,
+      "main": 280,
+      "toggle": true,
+      "expanded": "true",
+      "bodyCls": false,
+      "overflow": false
+    },
+    "errors": [],
+    "ok": true
+  },
+  "casino-providers.html": {
+    "start": {
+      "sidebar": 300,
+      "compact": false,
+      "main": 280,
+      "toggle": true,
+      "expanded": "true",
+      "bodyCls": false,
+      "overflow": false
+    },
+    "collapsed": {
+      "sidebar": 84,
+      "compact": true,
+      "main": 64,
+      "toggle": true,
+      "expanded": "false",
+      "bodyCls": true,
+      "overflow": false
+    },
+    "persisted": {
+      "sidebar": 84,
+      "compact": true,
+      "main": 64,
+      "toggle": true,
+      "expanded": "false",
+      "bodyCls": true,
+      "overflow": false
+    },
+    "restored": {
+      "sidebar": 300,
+      "compact": false,
+      "main": 280,
+      "toggle": true,
+      "expanded": "true",
+      "bodyCls": false,
+      "overflow": false
+    },
+    "errors": [],
+    "ok": true
+  },
+  "casino-quick-1win-games.html": {
+    "start": {
+      "sidebar": 300,
+      "compact": false,
+      "main": 280,
+      "toggle": true,
+      "expanded": "true",
+      "bodyCls": false,
+      "overflow": false
+    },
+    "collapsed": {
+      "sidebar": 84,
+      "compact": true,
+      "main": 64,
+      "toggle": true,
+      "expanded": "false",
+      "bodyCls": true,
+      "overflow": false
+    },
+    "persisted": {
+      "sidebar": 84,
+      "compact": true,
+      "main": 64,
+      "toggle": true,
+      "expanded": "false",
+      "bodyCls": true,
+      "overflow": false
+    },
+    "restored": {
+      "sidebar": 300,
+      "compact": false,
+      "main": 280,
+      "toggle": true,
+      "expanded": "true",
+      "bodyCls": false,
+      "overflow": false
+    },
+    "errors": [],
+    "ok": true
+  },
+  "casino-quick-chicken-games.html": {
+    "start": {
+      "sidebar": 300,
+      "compact": false,
+      "main": 280,
+      "toggle": true,
+      "expanded": "true",
+      "bodyCls": false,
+      "overflow": false
+    },
+    "collapsed": {
+      "sidebar": 84,
+      "compact": true,
+      "main": 64,
+      "toggle": true,
+      "expanded": "false",
+      "bodyCls": true,
+      "overflow": false
+    },
+    "persisted": {
+      "sidebar": 84,
+      "compact": true,
+      "main": 64,
+      "toggle": true,
+      "expanded": "false",
+      "bodyCls": true,
+      "overflow": false
+    },
+    "restored": {
+      "sidebar": 300,
+      "compact": false,
+      "main": 280,
+      "toggle": true,
+      "expanded": "true",
+      "bodyCls": false,
+      "overflow": false
+    },
+    "errors": [],
+    "ok": true
+  },
+  "casino-quick-crash-games.html": {
+    "start": {
+      "sidebar": 300,
+      "compact": false,
+      "main": 280,
+      "toggle": true,
+      "expanded": "true",
+      "bodyCls": false,
+      "overflow": false
+    },
+    "collapsed": {
+      "sidebar": 84,
+      "compact": true,
+      "main": 64,
+      "toggle": true,
+      "expanded": "false",
+      "bodyCls": true,
+      "overflow": false
+    },
+    "persisted": {
+      "sidebar": 84,
+      "compact": true,
+      "main": 64,
+      "toggle": true,
+      "expanded": "false",
+      "bodyCls": true,
+      "overflow": false
+    },
+    "restored": {
+      "sidebar": 300,
+      "compact": false,
+      "main": 280,
+      "toggle": true,
+      "expanded": "true",
+      "bodyCls": false,
+      "overflow": false
+    },
+    "errors": [],
+    "ok": true
+  },
+  "casino-quick-lotteries.html": {
+    "start": {
+      "sidebar": 300,
+      "compact": false,
+      "main": 280,
+      "toggle": true,
+      "expanded": "true",
+      "bodyCls": false,
+      "overflow": false
+    },
+    "collapsed": {
+      "sidebar": 84,
+      "compact": true,
+      "main": 64,
+      "toggle": true,
+      "expanded": "false",
+      "bodyCls": true,
+      "overflow": false
+    },
+    "persisted": {
+      "sidebar": 84,
+      "compact": true,
+      "main": 64,
+      "toggle": true,
+      "expanded": "false",
+      "bodyCls": true,
+      "overflow": false
+    },
+    "restored": {
+      "sidebar": 300,
+      "compact": false,
+      "main": 280,
+      "toggle": true,
+      "expanded": "true",
+      "bodyCls": false,
+      "overflow": false
+    },
+    "errors": [],
+    "ok": true
+  },
+  "casino-quick-mines.html": {
+    "start": {
+      "sidebar": 300,
+      "compact": false,
+      "main": 280,
+      "toggle": true,
+      "expanded": "true",
+      "bodyCls": false,
+      "overflow": false
+    },
+    "collapsed": {
+      "sidebar": 84,
+      "compact": true,
+      "main": 64,
+      "toggle": true,
+      "expanded": "false",
+      "bodyCls": true,
+      "overflow": false
+    },
+    "persisted": {
+      "sidebar": 84,
+      "compact": true,
+      "main": 64,
+      "toggle": true,
+      "expanded": "false",
+      "bodyCls": true,
+      "overflow": false
+    },
+    "restored": {
+      "sidebar": 300,
+      "compact": false,
+      "main": 280,
+      "toggle": true,
+      "expanded": "true",
+      "bodyCls": false,
+      "overflow": false
+    },
+    "errors": [],
+    "ok": true
+  },
+  "casino-quick-plinko.html": {
+    "start": {
+      "sidebar": 300,
+      "compact": false,
+      "main": 280,
+      "toggle": true,
+      "expanded": "true",
+      "bodyCls": false,
+      "overflow": false
+    },
+    "collapsed": {
+      "sidebar": 84,
+      "compact": true,
+      "main": 64,
+      "toggle": true,
+      "expanded": "false",
+      "bodyCls": true,
+      "overflow": false
+    },
+    "persisted": {
+      "sidebar": 84,
+      "compact": true,
+      "main": 64,
+      "toggle": true,
+      "expanded": "false",
+      "bodyCls": true,
+      "overflow": false
+    },
+    "restored": {
+      "sidebar": 300,
+      "compact": false,
+      "main": 280,
+      "toggle": true,
+      "expanded": "true",
+      "bodyCls": false,
+      "overflow": false
+    },
+    "errors": [],
+    "ok": true
+  },
+  "casino-quick-sport.html": {
+    "start": {
+      "sidebar": 300,
+      "compact": false,
+      "main": 280,
+      "toggle": true,
+      "expanded": "true",
+      "bodyCls": false,
+      "overflow": false
+    },
+    "collapsed": {
+      "sidebar": 84,
+      "compact": true,
+      "main": 64,
+      "toggle": true,
+      "expanded": "false",
+      "bodyCls": true,
+      "overflow": false
+    },
+    "persisted": {
+      "sidebar": 84,
+      "compact": true,
+      "main": 64,
+      "toggle": true,
+      "expanded": "false",
+      "bodyCls": true,
+      "overflow": false
+    },
+    "restored": {
+      "sidebar": 300,
+      "compact": false,
+      "main": 280,
+      "toggle": true,
+      "expanded": "true",
+      "bodyCls": false,
+      "overflow": false
+    },
+    "errors": [],
+    "ok": true
+  },
+  "casino-quick.html": {
+    "start": {
+      "sidebar": 300,
+      "compact": false,
+      "main": 280,
+      "toggle": true,
+      "expanded": "true",
+      "bodyCls": false,
+      "overflow": false
+    },
+    "collapsed": {
+      "sidebar": 84,
+      "compact": true,
+      "main": 64,
+      "toggle": true,
+      "expanded": "false",
+      "bodyCls": true,
+      "overflow": false
+    },
+    "persisted": {
+      "sidebar": 84,
+      "compact": true,
+      "main": 64,
+      "toggle": true,
+      "expanded": "false",
+      "bodyCls": true,
+      "overflow": false
+    },
+    "restored": {
+      "sidebar": 300,
+      "compact": false,
+      "main": 280,
+      "toggle": true,
+      "expanded": "true",
+      "bodyCls": false,
+      "overflow": false
+    },
+    "errors": [],
+    "ok": true
+  },
+  "casino-recommended.html": {
+    "start": {
+      "sidebar": 300,
+      "compact": false,
+      "main": 280,
+      "toggle": true,
+      "expanded": "true",
+      "bodyCls": false,
+      "overflow": false
+    },
+    "collapsed": {
+      "sidebar": 84,
+      "compact": true,
+      "main": 64,
+      "toggle": true,
+      "expanded": "false",
+      "bodyCls": true,
+      "overflow": false
+    },
+    "persisted": {
+      "sidebar": 84,
+      "compact": true,
+      "main": 64,
+      "toggle": true,
+      "expanded": "false",
+      "bodyCls": true,
+      "overflow": false
+    },
+    "restored": {
+      "sidebar": 300,
+      "compact": false,
+      "main": 280,
+      "toggle": true,
+      "expanded": "true",
+      "bodyCls": false,
+      "overflow": false
+    },
+    "errors": [],
+    "ok": true
+  },
+  "casino-search-results.html": {
+    "start": {
+      "sidebar": 300,
+      "compact": false,
+      "main": 280,
+      "toggle": true,
+      "expanded": "true",
+      "bodyCls": false,
+      "overflow": false
+    },
+    "collapsed": {
+      "sidebar": 84,
+      "compact": true,
+      "main": 64,
+      "toggle": true,
+      "expanded": "false",
+      "bodyCls": true,
+      "overflow": false
+    },
+    "persisted": {
+      "sidebar": 84,
+      "compact": true,
+      "main": 64,
+      "toggle": true,
+      "expanded": "false",
+      "bodyCls": true,
+      "overflow": false
+    },
+    "restored": {
+      "sidebar": 300,
+      "compact": false,
+      "main": 280,
+      "toggle": true,
+      "expanded": "true",
+      "bodyCls": false,
+      "overflow": false
+    },
+    "errors": [],
+    "ok": true
+  },
+  "casino-search.html": {
+    "start": {
+      "sidebar": 300,
+      "compact": false,
+      "main": 280,
+      "toggle": true,
+      "expanded": "true",
+      "bodyCls": false,
+      "overflow": false
+    },
+    "collapsed": {
+      "sidebar": 84,
+      "compact": true,
+      "main": 64,
+      "toggle": true,
+      "expanded": "false",
+      "bodyCls": true,
+      "overflow": false
+    },
+    "persisted": {
+      "sidebar": 84,
+      "compact": true,
+      "main": 64,
+      "toggle": true,
+      "expanded": "false",
+      "bodyCls": true,
+      "overflow": false
+    },
+    "restored": {
+      "sidebar": 300,
+      "compact": false,
+      "main": 280,
+      "toggle": true,
+      "expanded": "true",
+      "bodyCls": false,
+      "overflow": false
+    },
+    "errors": [],
+    "ok": true
+  },
+  "casino-slots.html": {
+    "start": {
+      "sidebar": 300,
+      "compact": false,
+      "main": 280,
+      "toggle": true,
+      "expanded": "true",
+      "bodyCls": false,
+      "overflow": false
+    },
+    "collapsed": {
+      "sidebar": 84,
+      "compact": true,
+      "main": 64,
+      "toggle": true,
+      "expanded": "false",
+      "bodyCls": true,
+      "overflow": false
+    },
+    "persisted": {
+      "sidebar": 84,
+      "compact": true,
+      "main": 64,
+      "toggle": true,
+      "expanded": "false",
+      "bodyCls": true,
+      "overflow": false
+    },
+    "restored": {
+      "sidebar": 300,
+      "compact": false,
+      "main": 280,
+      "toggle": true,
+      "expanded": "true",
+      "bodyCls": false,
+      "overflow": false
+    },
+    "errors": [],
+    "ok": true
+  },
+  "casino.html": {
+    "start": {
+      "sidebar": 300,
+      "compact": false,
+      "main": 280,
+      "toggle": true,
+      "expanded": "true",
+      "bodyCls": false,
+      "overflow": false
+    },
+    "collapsed": {
+      "sidebar": 84,
+      "compact": true,
+      "main": 64,
+      "toggle": true,
+      "expanded": "false",
+      "bodyCls": true,
+      "overflow": false
+    },
+    "persisted": {
+      "sidebar": 84,
+      "compact": true,
+      "main": 64,
+      "toggle": true,
+      "expanded": "false",
+      "bodyCls": true,
+      "overflow": false
+    },
+    "restored": {
+      "sidebar": 300,
+      "compact": false,
+      "main": 280,
+      "toggle": true,
+      "expanded": "true",
+      "bodyCls": false,
+      "overflow": false
+    },
+    "errors": [],
+    "ok": true
+  },
+  "freemoney.html": {
+    "start": {
+      "sidebar": 300,
+      "compact": false,
+      "main": 280,
+      "toggle": true,
+      "expanded": "true",
+      "bodyCls": false,
+      "overflow": false
+    },
+    "collapsed": {
+      "sidebar": 84,
+      "compact": true,
+      "main": 64,
+      "toggle": true,
+      "expanded": "false",
+      "bodyCls": true,
+      "overflow": false
+    },
+    "persisted": {
+      "sidebar": 84,
+      "compact": true,
+      "main": 64,
+      "toggle": true,
+      "expanded": "false",
+      "bodyCls": true,
+      "overflow": false
+    },
+    "restored": {
+      "sidebar": 300,
+      "compact": false,
+      "main": 280,
+      "toggle": true,
+      "expanded": "true",
+      "bodyCls": false,
+      "overflow": false
+    },
+    "errors": [],
+    "ok": true
+  },
+  "index.html": {
+    "start": {
+      "sidebar": 300,
+      "compact": false,
+      "main": 280,
+      "toggle": true,
+      "expanded": "true",
+      "bodyCls": false,
+      "overflow": false
+    },
+    "collapsed": {
+      "sidebar": 84,
+      "compact": true,
+      "main": 64,
+      "toggle": true,
+      "expanded": "false",
+      "bodyCls": true,
+      "overflow": false
+    },
+    "persisted": {
+      "sidebar": 84,
+      "compact": true,
+      "main": 64,
+      "toggle": true,
+      "expanded": "false",
+      "bodyCls": true,
+      "overflow": false
+    },
+    "restored": {
+      "sidebar": 300,
+      "compact": false,
+      "main": 280,
+      "toggle": true,
+      "expanded": "true",
+      "bodyCls": false,
+      "overflow": false
+    },
+    "errors": [],
+    "ok": true
+  },
+  "loyalty-program.html": {
+    "start": {
+      "sidebar": 300,
+      "compact": false,
+      "main": 280,
+      "toggle": true,
+      "expanded": "true",
+      "bodyCls": false,
+      "overflow": false
+    },
+    "collapsed": {
+      "sidebar": 84,
+      "compact": true,
+      "main": 64,
+      "toggle": true,
+      "expanded": "false",
+      "bodyCls": true,
+      "overflow": false
+    },
+    "persisted": {
+      "sidebar": 84,
+      "compact": true,
+      "main": 64,
+      "toggle": true,
+      "expanded": "false",
+      "bodyCls": true,
+      "overflow": false
+    },
+    "restored": {
+      "sidebar": 300,
+      "compact": false,
+      "main": 280,
+      "toggle": true,
+      "expanded": "true",
+      "bodyCls": false,
+      "overflow": false
+    },
+    "errors": [],
+    "ok": true
+  },
+  "promotions.html": {
+    "start": {
+      "sidebar": 300,
+      "compact": false,
+      "main": 280,
+      "toggle": true,
+      "expanded": "true",
+      "bodyCls": false,
+      "overflow": false
+    },
+    "collapsed": {
+      "sidebar": 84,
+      "compact": true,
+      "main": 64,
+      "toggle": true,
+      "expanded": "false",
+      "bodyCls": true,
+      "overflow": false
+    },
+    "persisted": {
+      "sidebar": 84,
+      "compact": true,
+      "main": 64,
+      "toggle": true,
+      "expanded": "false",
+      "bodyCls": true,
+      "overflow": false
+    },
+    "restored": {
+      "sidebar": 300,
+      "compact": false,
+      "main": 280,
+      "toggle": true,
+      "expanded": "true",
+      "bodyCls": false,
+      "overflow": false
+    },
+    "errors": [],
+    "ok": true
+  },
+  "sports-esports.html": {
+    "start": {
+      "sidebar": 300,
+      "compact": false,
+      "main": 280,
+      "toggle": true,
+      "expanded": "true",
+      "bodyCls": false,
+      "overflow": false
+    },
+    "collapsed": {
+      "sidebar": 84,
+      "compact": true,
+      "main": 64,
+      "toggle": true,
+      "expanded": "false",
+      "bodyCls": true,
+      "overflow": false
+    },
+    "persisted": {
+      "sidebar": 84,
+      "compact": true,
+      "main": 64,
+      "toggle": true,
+      "expanded": "false",
+      "bodyCls": true,
+      "overflow": false
+    },
+    "restored": {
+      "sidebar": 300,
+      "compact": false,
+      "main": 280,
+      "toggle": true,
+      "expanded": "true",
+      "bodyCls": false,
+      "overflow": false
+    },
+    "errors": [],
+    "ok": true
+  },
+  "sports-live.html": {
+    "start": {
+      "sidebar": 300,
+      "compact": false,
+      "main": 280,
+      "toggle": true,
+      "expanded": "true",
+      "bodyCls": false,
+      "overflow": false
+    },
+    "collapsed": {
+      "sidebar": 84,
+      "compact": true,
+      "main": 64,
+      "toggle": true,
+      "expanded": "false",
+      "bodyCls": true,
+      "overflow": false
+    },
+    "persisted": {
+      "sidebar": 84,
+      "compact": true,
+      "main": 64,
+      "toggle": true,
+      "expanded": "false",
+      "bodyCls": true,
+      "overflow": false
+    },
+    "restored": {
+      "sidebar": 300,
+      "compact": false,
+      "main": 280,
+      "toggle": true,
+      "expanded": "true",
+      "bodyCls": false,
+      "overflow": false
+    },
+    "errors": [],
+    "ok": true
+  },
+  "sports-upcoming.html": {
+    "start": {
+      "sidebar": 300,
+      "compact": false,
+      "main": 280,
+      "toggle": true,
+      "expanded": "true",
+      "bodyCls": false,
+      "overflow": false
+    },
+    "collapsed": {
+      "sidebar": 84,
+      "compact": true,
+      "main": 64,
+      "toggle": true,
+      "expanded": "false",
+      "bodyCls": true,
+      "overflow": false
+    },
+    "persisted": {
+      "sidebar": 84,
+      "compact": true,
+      "main": 64,
+      "toggle": true,
+      "expanded": "false",
+      "bodyCls": true,
+      "overflow": false
+    },
+    "restored": {
+      "sidebar": 300,
+      "compact": false,
+      "main": 280,
+      "toggle": true,
+      "expanded": "true",
+      "bodyCls": false,
+      "overflow": false
+    },
+    "errors": [],
+    "ok": true
+  },
+  "sports.html": {
+    "start": {
+      "sidebar": 300,
+      "compact": false,
+      "main": 280,
+      "toggle": true,
+      "expanded": "true",
+      "bodyCls": false,
+      "overflow": false
+    },
+    "collapsed": {
+      "sidebar": 84,
+      "compact": true,
+      "main": 64,
+      "toggle": true,
+      "expanded": "false",
+      "bodyCls": true,
+      "overflow": false
+    },
+    "persisted": {
+      "sidebar": 84,
+      "compact": true,
+      "main": 64,
+      "toggle": true,
+      "expanded": "false",
+      "bodyCls": true,
+      "overflow": false
+    },
+    "restored": {
+      "sidebar": 300,
+      "compact": false,
+      "main": 280,
+      "toggle": true,
+      "expanded": "true",
+      "bodyCls": false,
+      "overflow": false
+    },
+    "errors": [],
+    "ok": true
+  },
+  "tournaments.html": {
+    "start": {
+      "sidebar": 300,
+      "compact": false,
+      "main": 280,
+      "toggle": true,
+      "expanded": "true",
+      "bodyCls": false,
+      "overflow": false
+    },
+    "collapsed": {
+      "sidebar": 84,
+      "compact": true,
+      "main": 64,
+      "toggle": true,
+      "expanded": "false",
+      "bodyCls": true,
+      "overflow": false
+    },
+    "persisted": {
+      "sidebar": 84,
+      "compact": true,
+      "main": 64,
+      "toggle": true,
+      "expanded": "false",
+      "bodyCls": true,
+      "overflow": false
+    },
+    "restored": {
+      "sidebar": 300,
+      "compact": false,
+      "main": 280,
+      "toggle": true,
+      "expanded": "true",
+      "bodyCls": false,
+      "overflow": false
+    },
+    "errors": [],
+    "ok": true
+  },
+  "vip-club.html": {
+    "start": {
+      "sidebar": 300,
+      "compact": false,
+      "main": 280,
+      "toggle": true,
+      "expanded": "true",
+      "bodyCls": false,
+      "overflow": false
+    },
+    "collapsed": {
+      "sidebar": 84,
+      "compact": true,
+      "main": 64,
+      "toggle": true,
+      "expanded": "false",
+      "bodyCls": true,
+      "overflow": false
+    },
+    "persisted": {
+      "sidebar": 84,
+      "compact": true,
+      "main": 64,
+      "toggle": true,
+      "expanded": "false",
+      "bodyCls": true,
+      "overflow": false
+    },
+    "restored": {
+      "sidebar": 300,
+      "compact": false,
+      "main": 280,
+      "toggle": true,
+      "expanded": "true",
+      "bodyCls": false,
+      "overflow": false
+    },
+    "errors": [],
+    "ok": true
+  }
+}

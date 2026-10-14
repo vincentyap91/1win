@@ -1,0 +1,35 @@
+{
+  "date": "2026-10-14",
+  "reference": "https://one-vv3591.com/casino",
+  "local": "casino.html (preview http://127.0.0.1:4174)",
+  "finding": "Old captures were taken before lazy sections mounted: guest data-index 4-9 were empty_card placeholders, Last wins was a skeleton (about 1,500px blank band at 1440). 1920 also lacked data-index 3, All games list, SEO and footer; 390/430/768 kept a Game of the week skeleton; 768 Last wins online count was a placeholder; auth states lacked rows, Last wins and footer.",
+  "fix": {
+    "tool": "scripts/patch-lazy-sections.py + scripts/capture_clean.py (same cleaning rules as audit-update.py)",
+    "guest": "data-index 0-9 and Last wins replaced from same-time captures at 1920/1440/768/430/390 (patch-report.json)",
+    "auth": "whole lobby container (data-index 0-10 incl. AI recommendations, Last wins, All games) and footer replaced at 5 sizes from the user's own signed-in session; profile name/ID/balance never inside captured blocks (checked in page); footers matched existing templates byte-for-byte (patch-report-auth.json)",
+    "assets": "17 new images downloaded into assets/ and recorded in qa/asset-provenance.json; 0 missing",
+    "last_wins_motion": "js/common.js initLastWins: every 3s new card enters translateX(-100%) -> 0, others move, transform 1s, last card removed after 1s; measured on the reference; local rotates captured cards; off with ?qa=1, no motion when reduced"
+  },
+  "verification": {
+    "guest_1440_rows": {
+      "reference": "rows 604/882/1161/tournaments 1440/1766/2045/2323/2602/2881/3160/3438, last wins 3717+147, all games 3904+784, seo 4721+141",
+      "local": "identical positions and heights"
+    },
+    "auth_1440_heights": {
+      "reference": "36,272,108,247,247,247,294,247x8,147,0,784",
+      "local": "identical"
+    },
+    "auth_header_signature": "8a0b58be6b76 both (after name/ID/balance anonymisation)",
+    "auth_sidebar": "same except Casino submenu expanded locally (interactive state) and Tournaments badge 10 vs 11 (live count)",
+    "last_wins_positions_1440": "328/556/784/1012/1240 both",
+    "states_without_placeholders": "guest 1440 all 10 rows + Last wins; 5 sizes have titled rows with game cards; no data:, images",
+    "checks": "build-components ok (142 components, 0 missing); verify-local-references 0 missing / 0 external; motion-check passed; console no errors"
+  },
+  "reference_files_note": "reference/*.json had other players' masked identifiers neutralised (first letter -> u) after the sha256 in patch-report*.json was recorded, so those hashes describe the pre-scrub capture",
+  "remaining": [
+    "guest 1920: All games list placeholder, SEO skeleton, footer missing",
+    "guest 390/430/768: Game of the week skeleton; 768 Last wins online-count placeholder",
+    "needs a guest (signed-out) session on the reference for a same-state capture",
+    "dynamic content (banner order, tournaments, online counts, last wins feed) differs by capture time"
+  ]
+}

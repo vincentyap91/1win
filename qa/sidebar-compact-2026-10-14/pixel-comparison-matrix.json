@@ -1,0 +1,50 @@
+[
+  {
+    "viewport": [
+      1920,
+      1080
+    ],
+    "region": [
+      0,
+      0,
+      80,
+      1080
+    ],
+    "pixel_identical": true,
+    "difference_bbox": null,
+    "mean_absolute_channel_difference": 0.0,
+    "metric_differences": []
+  },
+  {
+    "viewport": [
+      1440,
+      680
+    ],
+    "region": [
+      0,
+      0,
+      80,
+      680
+    ],
+    "pixel_identical": true,
+    "difference_bbox": null,
+    "mean_absolute_channel_difference": 0.0,
+    "metric_differences": []
+  },
+  {
+    "viewport": [
+      1024,
+      768
+    ],
+    "region": [
+      0,
+      0,
+      80,
+      768
+    ],
+    "pixel_identical": true,
+    "difference_bbox": null,
+    "mean_absolute_channel_difference": 0.0,
+    "metric_differences": []
+  }
+]

@@ -1,0 +1,24 @@
+{
+  "region": [
+    64,
+    350,
+    308,
+    426
+  ],
+  "pixel_identical": false,
+  "difference_bbox": [
+    47,
+    0,
+    308,
+    82
+  ],
+  "mean_absolute_channel_difference": 0.04790866410584721,
+  "opaque_interior_pixel_identical": true,
+  "opaque_interior_region": [
+    20,
+    20,
+    268,
+    386
+  ],
+  "note": "Outer rounded corners/borders blend with the different homepage banner underneath; the opaque panel content is compared separately."
+}

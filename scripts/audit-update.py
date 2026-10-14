@@ -44,7 +44,7 @@ STAGING=pathlib.Path(sys.argv[1])
 OLD=pathlib.Path(sys.argv[2])
 ORIGIN='https://one-vv3591.com/'
 DENY=re.compile(r'doubleclick|googletag|analytics|adservice|facebook\.net|google\.|googlesyndication',re.I)
-ROUTES={'/':'index.html','/casino':'casino.html','/freemoney':'freemoney.html','/about-token':'freemoney.html','/bonuses':'bonuses.html','/loyalty-program':'loyalty-program.html','/vip-club':'vip-club.html','/promotions':'promotions.html','/tournaments':'tournaments.html','/blog':'blog.html','/betwave':'betwave.html','/en/betwave':'betwave.html'}
+ROUTES=json.loads((ROOT/'js/routes.js').read_text(encoding='utf-8-sig').split('=',1)[1].strip().removesuffix(';'))['pages']
 records=json.loads((ROOT/'qa/asset-provenance.json').read_text(encoding='utf8')) if (ROOT/'qa/asset-provenance.json').exists() else json.loads((OLD/'assets/manifest.json').read_text(encoding='utf8'))
 known={a['url']:a for a in records if not DENY.search(a['url']) and (ROOT/a['file']).is_file()}
 exts={'image/avif':'.avif','image/webp':'.webp','image/png':'.png','image/jpeg':'.jpg','image/svg+xml':'.svg','image/vnd.microsoft.icon':'.ico','font/woff2':'.woff2','font/woff':'.woff'}
@@ -96,7 +96,7 @@ def clean(n):
     mapped=media(parts[0])
     if mapped!='data:,':candidates.append(mapped+(' '+parts[1] if len(parts)>1 else ''))
    n.attrs.pop('srcset',None)
-   if candidates:n.attrs['srcset']=','.join(candidates);n.attrs['src']=candidates[0].split()[0] if n.attrs.get('src') in [None,'data:,'] else n.attrs['src']
+   if candidates:n.attrs['srcset']=', '.join(candidates);n.attrs['src']=candidates[0].split()[0] if n.attrs.get('src') in [None,'data:,'] else n.attrs['src']
   n.attrs.pop('loading',None)
  if 'style' in n.attrs:n.attrs['style']=rewrite_css(n.attrs['style']).replace('../assets/','assets/')
  if n.tag in ['image','use']:
@@ -223,6 +223,9 @@ for name in ['login','register','recovery']:
 (ROOT/'qa/audit-capture-report.json').write_text(json.dumps(report,ensure_ascii=False,indent=2),encoding='utf8')
 (ROOT/'qa/audit-resource-gaps.json').write_text(json.dumps({'missing_urls':sorted(missing),'bundle_failures':failures},ensure_ascii=False,indent=2),encoding='utf8')
 print(json.dumps({'pages':len(pages),'captures':len(report),'css_blocks':len(css),'assets':len(known),'missing_urls':len(missing)},ensure_ascii=False))
+from shared_components import main as migrate_shared_ui
+migrate_shared_ui()
+# The preview server builds the browser bundles at startup; for file previews run build-components.mjs first.
 
 
 

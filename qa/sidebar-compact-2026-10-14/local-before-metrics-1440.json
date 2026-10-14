@@ -1,0 +1,250 @@
+{
+  "items": [
+    {
+      "background": "rgba(0, 0, 0, 0)",
+      "classes": "horizontal_root-jtaPb horizontal_compact-jtaPb horizontal_interactive-jtaPb",
+      "display": "flex",
+      "height": 44,
+      "id": "sidebar-profile-button",
+      "width": 44,
+      "x": 10,
+      "y": 16
+    },
+    {
+      "background": "rgba(0, 0, 0, 0)",
+      "classes": "freemoney-sidebar-banner_root-RctBb freemoney-sidebar-banner_compact-RctBb",
+      "display": "flex",
+      "height": 76,
+      "id": "sidebar-freemoney-banner",
+      "width": 48,
+      "x": 8,
+      "y": 76
+    },
+    {
+      "background": "rgb(240, 240, 240)",
+      "classes": "expand-button_root-EPOB8 sidebar-expand-button_toggle-Gj4Wt",
+      "display": "flex",
+      "height": 32,
+      "id": "sidebar-expand-button",
+      "width": 32,
+      "x": 48,
+      "y": 152.5
+    },
+    {
+      "background": "rgba(20, 20, 21, 0)",
+      "classes": "base_root-ht1p8 base_compact-ht1p8",
+      "display": "flex",
+      "height": 36,
+      "id": "sidebar-navigation-crypto-token-about",
+      "width": 48,
+      "x": 8,
+      "y": 185
+    },
+    {
+      "background": "rgba(179, 182, 189, 0.16)",
+      "classes": "base_root-ht1p8 base_selected-ht1p8 base_compact-ht1p8",
+      "display": "flex",
+      "height": 36,
+      "id": "sidebar-navigation-casino-group",
+      "width": 48,
+      "x": 8,
+      "y": 242
+    },
+    {
+      "background": "rgba(20, 20, 21, 0)",
+      "classes": "base_root-ht1p8 base_compact-ht1p8",
+      "display": "flex",
+      "height": 36,
+      "id": "sidebar-navigation-betting-group",
+      "width": 48,
+      "x": 8,
+      "y": 282
+    },
+    {
+      "background": "rgba(20, 20, 21, 0)",
+      "classes": "base_root-ht1p8 base_compact-ht1p8",
+      "display": "flex",
+      "height": 36,
+      "id": "sidebar-navigation-markets",
+      "width": 48,
+      "x": 8,
+      "y": 322
+    },
+    {
+      "background": "rgba(20, 20, 21, 0)",
+      "classes": "base_root-ht1p8 base_compact-ht1p8",
+      "display": "flex",
+      "height": 36,
+      "id": "sidebar-navigation-betwave",
+      "width": 48,
+      "x": 8,
+      "y": 362
+    },
+    {
+      "background": "rgba(20, 20, 21, 0)",
+      "classes": "base_root-ht1p8 base_compact-ht1p8",
+      "display": "flex",
+      "height": 36,
+      "id": "sidebar-navigation-bonuses",
+      "width": 48,
+      "x": 8,
+      "y": 402
+    },
+    {
+      "background": "rgba(20, 20, 21, 0)",
+      "classes": "base_root-ht1p8 base_compact-ht1p8",
+      "display": "flex",
+      "height": 36,
+      "id": "sidebar-navigation-loyalty-program",
+      "width": 48,
+      "x": 8,
+      "y": 442
+    },
+    {
+      "background": "rgba(20, 20, 21, 0)",
+      "classes": "base_root-ht1p8 base_compact-ht1p8",
+      "display": "flex",
+      "height": 36,
+      "id": "sidebar-navigation-vip-landing",
+      "width": 48,
+      "x": 8,
+      "y": 482
+    },
+    {
+      "background": "rgba(20, 20, 21, 0)",
+      "classes": "base_root-ht1p8 base_compact-ht1p8",
+      "display": "flex",
+      "height": 36,
+      "id": "sidebar-navigation-promotions",
+      "width": 48,
+      "x": 8,
+      "y": 551
+    },
+    {
+      "background": "rgba(20, 20, 21, 0)",
+      "classes": "base_root-ht1p8 base_compact-ht1p8",
+      "display": "flex",
+      "height": 36,
+      "id": "sidebar-navigation-tournaments",
+      "width": 48,
+      "x": 8,
+      "y": 591
+    },
+    {
+      "background": "rgba(20, 20, 21, 0)",
+      "classes": "base_root-ht1p8 base_compact-ht1p8",
+      "display": "flex",
+      "height": 36,
+      "id": "sidebar-navigation-blog",
+      "width": 48,
+      "x": 8,
+      "y": 631
+    },
+    {
+      "background": "rgba(20, 20, 21, 0)",
+      "classes": "base_root-ht1p8 base_compact-ht1p8",
+      "display": "flex",
+      "height": 36,
+      "id": "sidebar-navigation-forum",
+      "width": 48,
+      "x": 8,
+      "y": 671
+    },
+    {
+      "background": "rgba(20, 20, 21, 0)",
+      "classes": "base_root-ht1p8 base_compact-ht1p8",
+      "display": "flex",
+      "height": 36,
+      "id": "sidebar-navigation-cockfight",
+      "width": 48,
+      "x": 8,
+      "y": 711
+    },
+    {
+      "background": "rgba(20, 20, 21, 0)",
+      "classes": "base_root-ht1p8 base_compact-ht1p8",
+      "display": "flex",
+      "height": 36,
+      "id": "sidebar-navigation-trading",
+      "width": 48,
+      "x": 8,
+      "y": 751
+    },
+    {
+      "background": "rgba(20, 20, 21, 0)",
+      "classes": "base_root-ht1p8 base_compact-ht1p8",
+      "display": "flex",
+      "height": 36,
+      "id": "sidebar-navigation-poker",
+      "width": 48,
+      "x": 8,
+      "y": 791
+    },
+    {
+      "background": "rgba(0, 0, 0, 0)",
+      "classes": "banner-app_root-RquZr banner-app_compact-RquZr",
+      "display": "flex",
+      "height": 48,
+      "id": "sidebar-app-banner-button",
+      "width": 48,
+      "x": 8,
+      "y": 679
+    },
+    {
+      "background": "rgba(0, 0, 0, 0)",
+      "classes": "base_root-HuD6g base_size-m-HuD6g base_rootInteractive-HuD6g",
+      "display": "block",
+      "height": 36,
+      "id": "sidebar-social-button-whatsapp",
+      "width": 36,
+      "x": 8,
+      "y": 735
+    },
+    {
+      "background": "rgba(0, 0, 0, 0)",
+      "classes": "base_root-HuD6g base_size-m-HuD6g base_rootInteractive-HuD6g",
+      "display": "block",
+      "height": 36,
+      "id": "sidebar-social-button-telegram",
+      "width": 36,
+      "x": 48,
+      "y": 735
+    },
+    {
+      "background": "rgba(0, 0, 0, 0)",
+      "classes": "base_root-HuD6g base_size-m-HuD6g base_rootInteractive-HuD6g",
+      "display": "block",
+      "height": 36,
+      "id": "sidebar-social-button-instagram",
+      "width": 36,
+      "x": 88,
+      "y": 735
+    },
+    {
+      "background": "rgba(179, 182, 189, 0.12)",
+      "classes": "language-picker_root-p6ZZU language-picker_compact-p6ZZU",
+      "display": "flex",
+      "height": 36,
+      "id": "language-picker-button",
+      "width": 48,
+      "x": 8,
+      "y": 779
+    },
+    {
+      "background": "rgba(0, 0, 0, 0)",
+      "classes": "base_root-ZOkD4 base_size-m-ZOkD4 base_variant-neutral-ZOkD4 base_isIcon-ZOkD4",
+      "display": "inline-block",
+      "height": 36,
+      "id": "sidebar-support-button-chat",
+      "width": 36,
+      "x": 14,
+      "y": 848
+    }
+  ],
+  "sidebarWidth": 64,
+  "social": "<div class=\"sidebar-social-and-lang_root-27UXT sidebar-social-and-lang_compact-27UXT\"><div class=\"expanded-view_root-yHhad sidebar-social-and-lang_socialButtons-27UXT v-leave-from social-buttons_fadeLeaveActive-YBQfW sidebar-social-and-lang_itemMove-27UXT\" style=\"\"><div class=\"buttons-list_root-dH0Tc\"><a class=\"base_root-HuD6g base_size-m-HuD6g base_rootInteractive-HuD6g\" data-testid=\"sidebar-social-button-whatsapp\" href=\"#\" data-local-unavailable=\"external-link\"><div class=\"base_view-HuD6g\"><svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 36 36\" role=\"presentation\" class=\"icon-base_root-F1flk base_icon-HuD6g base_theme-monochrome-HuD6g base_default-HuD6g\" width=\"36\" height=\"36\" data-icon=\"whatsapp\"><g class=\"whatsapp_e005d8__color\"><path fill=\"#25d366\" d=\"M0 16c0-5.6 0-8.4 1.09-10.54a10 10 0 0 1 4.37-4.37C7.6 0 10.4 0 16 0h4c5.6 0 8.4 0 10.54 1.09a10 10 0 0 1 4.37 4.37C36 7.6 36 10.4 36 16v4c0 5.6 0 8.4-1.09 10.54a10 10 0 0 1-4.37 4.37C28.4 36 25.6 36 20 36h-4c-5.6 0-8.4 0-10.54-1.09a10 10 0 0 1-4.37-4.37C0 28.4 0 25.6 0 20z\"></path><path fill=\"#fff\" d=\"M25.012 10.91A9.82 9.82 0 0 0 18.002 8c-5.46 0-9.91 4.45-9.91 9.91 0 1.75.46 3.45 1.32 4.95L8.012 28l5.25-1.38c1.45.79 3.08 1.21 4.74 1.21 5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.9-7.01m-7.01 15.24c-1.48 0-2.93-.4-4.2-1.15l-.3-.18-3.12.82.83-3.04-.2-.31a8.26 8.26 0 0 1-1.26-4.38c0-4.54 3.7-8.24 8.24-8.24 2.2 0 4.27.86 5.82 2.42a8.18 8.18 0 0 1 2.41 5.83c.02 4.54-3.68 8.23-8.22 8.23m4.52-6.16c-.25-.12-1.47-.72-1.69-.81-.23-.08-.39-.12-.56.12-.17.25-.64.81-.78.97-.14.17-.29.19-.54.06-.25-.12-1.05-.39-1.99-1.23-.74-.66-1.23-1.47-1.38-1.72-.14-.25-.02-.38.11-.51.11-.11.25-.29.37-.43s.17-.25.25-.41c.08-.17.04-.31-.02-.43s-.56-1.34-.76-1.84c-.2-.48-.41-.42-.56-.43h-.48c-.17 0-.43.06-.66.31-.22.25-.86.85-.86 2.07s.89 2.4 1.01 2.56c.12.17 1.75 2.67 4.23 3.74.59.26 1.05.41 1.41.52.59.19 1.13.16 1.56.1.48-.07 1.47-.6 1.67-1.18.21-.58.21-1.07.14-1.18s-.22-.16-.47-.28\"></path></g><g class=\"whatsapp_e005d8__monochrome\"><path d=\"M0 16c0-5.6 0-8.4 1.09-10.54a10 10 0 0 1 4.37-4.37C7.6 0 10.4 0 16 0h4c5.6 0 8.4 0 10.54 1.09a10 10 0 0 1 4.37 4.37C36 7.6 36 10.4 36 16v4c0 5.6 0 8.4-1.09 10.54a10 10 0 0 1-4.37 4.37C28.4 36 25.6 36 20 36h-4c-5.6 0-8.4 0-10.54-1.09a10 10 0 0 1-4.37-4.37C0 28.4 0 25.6 0 20z\"></path><g clip-path=\"url(#whatsapp_e005d8__a)\"><path fill=\"currentColor\" d=\"M25.012 10.91A9.82 9.82 0 0 0 18.002 8c-5.46 0-9.91 4.45-9.91 9.91 0 1.75.46 3.45 1.32 4.95L8.012 28l5.25-1.38c1.45.79 3.08 1.21 4.74 1.21 5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.9-7.01m-7.01 15.24c-1.48 0-2.93-.4-4.2-1.15l-.3-.18-3.12.82.83-3.04-.2-.31a8.26 8.26 0 0 1-1.26-4.38c0-4.54 3.7-8.24 8.24-8.24 2.2 0 4.27.86 5.82 2.42a8.18 8.18 0 0 1 2.41 5.83c.02 4.54-3.68 8.23-8.22 8.23m4.52-6.16c-.25-.12-1.47-.72-1.69-.81-.23-.08-.39-.12-.56.12-.17.25-.64.81-.78.97-.14.17-.29.19-.54.06-.25-.12-1.05-.39-1.99-1.23-.74-.66-1.23-1.47-1.38-1.72-.14-.25-.02-.38.11-.51.11-.11.25-.29.37-.43s.17-.25.25-.41c.08-.17.04-.31-.02-.43s-.56-1.34-.76-1.84c-.2-.48-.41-.42-.56-.43h-.48c-.17 0-.43.06-.66.31-.22.25-.86.85-.86 2.07s.89 2.4 1.01 2.56c.12.17 1.75 2.67 4.23 3.74.59.26 1.05.41 1.41.52.59.19 1.13.16 1.56.1.48-.07 1.47-.6 1.67-1.18.21-.58.21-1.07.14-1.18s-.22-.16-.47-.28\"></path></g><defs><clipPath id=\"whatsapp_e005d8__a\"><path d=\"M8 8h20v20H8z\"></path></clipPath></defs></g></svg></div></a><a class=\"base_root-HuD6g base_size-m-HuD6g base_rootInteractive-HuD6g\" data-testid=\"sidebar-social-button-telegram\" href=\"#\" data-local-unavailable=\"external-link\"><div class=\"base_view-HuD6g\"><svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 36 36\" role=\"presentation\" class=\"icon-base_root-F1flk base_icon-HuD6g base_theme-monochrome-HuD6g base_default-HuD6g\" width=\"36\" height=\"36\" data-icon=\"telegram\"><g class=\"telegram_af7561__color\"><path fill=\"#279ddb\" d=\"M0 16c0-5.6 0-8.4 1.09-10.54a10 10 0 0 1 4.37-4.37C7.6 0 10.4 0 16 0h4c5.6 0 8.4 0 10.54 1.09a10 10 0 0 1 4.37 4.37C36 7.6 36 10.4 36 16v4c0 5.6 0 8.4-1.09 10.54a10 10 0 0 1-4.37 4.37C28.4 36 25.6 36 20 36h-4c-5.6 0-8.4 0-10.54-1.09a10 10 0 0 1-4.37-4.37C0 28.4 0 25.6 0 20z\" style=\"fill:#279ddb;fill:color(display-p3 .1529 .6157 .8588);fill-opacity:1\"></path><path fill=\"#fff\" d=\"M9.226 17.45s8.846-3.63 11.914-4.909c1.175-.511 5.164-2.147 5.164-2.147s1.84-.716 1.687 1.022c-.051.716-.46 3.221-.87 5.931-.613 3.835-1.278 8.028-1.278 8.028s-.102 1.176-.971 1.38c-.87.205-2.3-.715-2.556-.92-.205-.153-3.835-2.454-5.165-3.58-.358-.306-.767-.92.051-1.635 1.841-1.688 4.04-3.784 5.37-5.113.613-.614 1.226-2.046-1.33-.307a437 437 0 0 1-7.21 4.857s-.818.512-2.352.051c-1.533-.46-3.323-1.073-3.323-1.073s-1.227-.767.87-1.585\" style=\"fill:#fff;fill-opacity:1\"></path></g><g class=\"telegram_af7561__monochrome\"><path d=\"M0 16c0-5.6 0-8.4 1.09-10.54a10 10 0 0 1 4.37-4.37C7.6 0 10.4 0 16 0h4c5.6 0 8.4 0 10.54 1.09a10 10 0 0 1 4.37 4.37C36 7.6 36 10.4 36 16v4c0 5.6 0 8.4-1.09 10.54a10 10 0 0 1-4.37 4.37C28.4 36 25.6 36 20 36h-4c-5.6 0-8.4 0-10.54-1.09a10 10 0 0 1-4.37-4.37C0 28.4 0 25.6 0 20z\"></path><g clip-path=\"url(#telegram_af7561__a)\"><path fill=\"currentColor\" d=\"M9.226 17.45s8.846-3.63 11.914-4.909c1.175-.511 5.164-2.147 5.164-2.147s1.84-.716 1.687 1.022c-.051.716-.46 3.221-.87 5.931-.613 3.835-1.278 8.028-1.278 8.028s-.102 1.176-.971 1.38c-.87.205-2.3-.715-2.556-.92-.205-.153-3.835-2.454-5.165-3.58-.358-.306-.767-.92.051-1.635 1.841-1.688 4.04-3.784 5.37-5.113.613-.614 1.226-2.046-1.33-.307a437 437 0 0 1-7.21 4.857s-.818.512-2.352.051c-1.533-.46-3.323-1.073-3.323-1.073s-1.227-.767.87-1.585\"></path></g><defs><clipPath id=\"telegram_af7561__a\"><path d=\"M8 8h20v20H8z\"></path></clipPath></defs></g></svg></div></a><a class=\"base_root-HuD6g base_size-m-HuD6g base_rootInteractive-HuD6g\" data-testid=\"sidebar-social-button-instagram\" href=\"#\" data-local-unavailable=\"external-link\"><div class=\"base_view-HuD6g\"><svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 36 36\" role=\"presentation\" class=\"icon-base_root-F1flk base_icon-HuD6g base_theme-monochrome-HuD6g base_default-HuD6g\" width=\"36\" height=\"36\" data-icon=\"instagram\"><g class=\"instagram_e08ec2__color\"><path fill=\"url(#instagram_e08ec2__a)\" d=\"M0 16c0-5.6 0-8.4 1.09-10.54a10 10 0 0 1 4.37-4.37C7.6 0 10.4 0 16 0h4c5.6 0 8.4 0 10.54 1.09a10 10 0 0 1 4.37 4.37C36 7.6 36 10.4 36 16v4c0 5.6 0 8.4-1.09 10.54a10 10 0 0 1-4.37 4.37C28.4 36 25.6 36 20 36h-4c-5.6 0-8.4 0-10.54-1.09a10 10 0 0 1-4.37-4.37C0 28.4 0 25.6 0 20z\"></path><path fill=\"url(#instagram_e08ec2__b)\" d=\"M0 16c0-5.6 0-8.4 1.09-10.54a10 10 0 0 1 4.37-4.37C7.6 0 10.4 0 16 0h4c5.6 0 8.4 0 10.54 1.09a10 10 0 0 1 4.37 4.37C36 7.6 36 10.4 36 16v4c0 5.6 0 8.4-1.09 10.54a10 10 0 0 1-4.37 4.37C28.4 36 25.6 36 20 36h-4c-5.6 0-8.4 0-10.54-1.09a10 10 0 0 1-4.37-4.37C0 28.4 0 25.6 0 20z\"></path><g fill=\"#fff\" clip-path=\"url(#instagram_e08ec2__c)\"><path fill-rule=\"evenodd\" d=\"M12.867 18.002a5.135 5.135 0 1 0 10.27 0 5.135 5.135 0 0 0-10.27 0m8.469 0a3.333 3.333 0 1 1-6.668 0 3.333 3.333 0 1 1 6.668 0\" clip-rule=\"evenodd\" style=\"fill:#fff;fill-opacity:1\"></path><path d=\"M24.544 12.664a1.2 1.2 0 1 1-2.399 0 1.2 1.2 0 0 1 2.399 0\" style=\"fill:#fff;fill-opacity:1\"></path><path fill-rule=\"evenodd\" d=\"M11.452 8.525a4.9 4.9 0 0 0-1.773 1.154 4.9 4.9 0 0 0-1.155 1.769c-.248.634-.414 1.362-.463 2.427S8 15.282 8 17.998s.012 3.057.061 4.123c.049 1.065.22 1.793.463 2.427a4.9 4.9 0 0 0 1.155 1.773 4.9 4.9 0 0 0 1.773 1.154c.634.248 1.362.415 2.427.464 1.066.049 1.407.061 4.123.061s3.058-.012 4.123-.061 1.793-.22 2.427-.463a4.9 4.9 0 0 0 1.773-1.155 4.9 4.9 0 0 0 1.155-1.773c.248-.634.414-1.362.463-2.427s.061-1.407.061-4.123-.012-3.058-.06-4.123c-.05-1.065-.22-1.793-.464-2.427a4.9 4.9 0 0 0-1.151-1.769 4.9 4.9 0 0 0-1.773-1.155c-.634-.248-1.362-.414-2.427-.463S20.722 8 18.006 8s-3.057.012-4.123.061c-1.069.045-1.797.215-2.431.463m10.592 1.333c.975.045 1.504.207 1.858.346.467.183.8.398 1.15.748s.565.683.748 1.15c.139.354.301.883.346 1.859.049 1.053.057 1.37.057 4.041s-.012 2.988-.057 4.042c-.045.975-.207 1.504-.346 1.858a3.1 3.1 0 0 1-.748 1.15c-.35.35-.683.565-1.15.748-.354.139-.883.301-1.858.346-1.054.049-1.37.057-4.042.057s-2.988-.012-4.041-.057c-.976-.045-1.505-.207-1.859-.346a3.1 3.1 0 0 1-1.15-.748 3.1 3.1 0 0 1-.748-1.15c-.139-.354-.301-.883-.346-1.858-.049-1.054-.057-1.37-.057-4.042s.012-2.988.057-4.041c.045-.976.207-1.505.346-1.859.183-.467.398-.8.748-1.15s.683-.565 1.15-.748c.354-.139.883-.301 1.859-.346 1.053-.049 1.37-.057 4.041-.057s2.988.008 4.042.057\" clip-rule=\"evenodd\" style=\"fill:#fff;fill-opacity:1\"></path></g><defs><radialGradient id=\"instagram_e08ec2__a\" cx=\"0\" cy=\"0\" r=\"1\" gradientTransform=\"matrix(0 -35.6787 33.184 0 9.563 38.773)\" gradientUnits=\"userSpaceOnUse\"><stop stop-color=\"#fd5\" style=\"stop-color:#fd5;stop-color:color(display-p3 1 .8667 .3333);stop-opacity:1\"></stop><stop offset=\".1\" stop-color=\"#fd5\" style=\"stop-color:#fd5;stop-color:color(display-p3 1 .8667 .3333);stop-opacity:1\"></stop><stop offset=\".5\" stop-color=\"#ff4830\" style=\"stop-color:#ff4830;stop-color:color(display-p3 1 .2804 .1879);stop-opacity:1\"></stop><stop offset=\"1\" stop-color=\"#cb1fa8\" style=\"stop-color:#cb1fa8;stop-color:color(display-p3 .7956 .121 .6607);stop-opacity:1\"></stop></radialGradient><radialGradient id=\"instagram_e08ec2__b\" cx=\"0\" cy=\"0\" r=\"1\" gradientTransform=\"rotate(78.68 -4.597 -2.382)scale(15.9485 65.7404)\" gradientUnits=\"userSpaceOnUse\"><stop stop-color=\"#60f\" style=\"stop-color:#60f;stop-color:color(display-p3 .4 0 1);stop-opacity:1\"></stop><stop offset=\".128\" stop-color=\"#60f\" style=\"stop-color:#60f;stop-color:color(display-p3 .4 0 1);stop-opacity:1\"></stop><stop offset=\"1\" stop-color=\"#60f\" stop-opacity=\"0\" style=\"stop-color:none;stop-opacity:0\"></stop></radialGradient><clipPath id=\"instagram_e08ec2__c\"><path fill=\"#fff\" d=\"M0 0h20v20H0z\" style=\"fill:#fff;fill-opacity:1\" transform=\"translate(8 8)\"></path></clipPath></defs></g><g class=\"instagram_e08ec2__monochrome\"><path d=\"M0 16c0-5.6 0-8.4 1.09-10.54a10 10 0 0 1 4.37-4.37C7.6 0 10.4 0 16 0h4c5.6 0 8.4 0 10.54 1.09a10 10 0 0 1 4.37 4.37C36 7.6 36 10.4 36 16v4c0 5.6 0 8.4-1.09 10.54a10 10 0 0 1-4.37 4.37C28.4 36 25.6 36 20 36h-4c-5.6 0-8.4 0-10.54-1.09a10 10 0 0 1-4.37-4.37C0 28.4 0 25.6 0 20z\"></path><g fill=\"currentColor\" clip-path=\"url(#instagram_e08ec2__d)\"><path d=\"M18.002 21.336a3.333 3.333 0 1 0 0-6.668 3.333 3.333 0 1 0 0 6.668\"></path><path fill-rule=\"evenodd\" d=\"M11.452 8.525a4.9 4.9 0 0 0-1.773 1.154 4.9 4.9 0 0 0-1.155 1.769c-.248.634-.414 1.362-.463 2.427S8 15.282 8 17.998s.012 3.057.061 4.123c.049 1.065.22 1.793.463 2.427a4.9 4.9 0 0 0 1.155 1.773 4.9 4.9 0 0 0 1.773 1.154c.634.248 1.362.415 2.427.464 1.066.049 1.407.061 4.123.061s3.058-.012 4.123-.061 1.793-.22 2.427-.463a4.9 4.9 0 0 0 1.773-1.155 4.9 4.9 0 0 0 1.155-1.773c.248-.634.414-1.362.463-2.427s.061-1.407.061-4.123-.012-3.058-.06-4.123c-.05-1.065-.22-1.793-.464-2.427a4.9 4.9 0 0 0-1.151-1.769 4.9 4.9 0 0 0-1.773-1.155c-.634-.248-1.362-.414-2.427-.463S20.722 8 18.006 8s-3.057.012-4.123.061c-1.069.045-1.797.215-2.431.463m6.55 14.612a5.135 5.135 0 1 1 0-10.27 5.135 5.135 0 0 1 0 10.27m3.334-5.135a3.333 3.333 0 1 1-6.668 0 3.333 3.333 0 1 1 6.668 0m3.208-5.338a1.2 1.2 0 1 1-2.399 0 1.2 1.2 0 0 1 2.399 0\" clip-rule=\"evenodd\"></path></g><defs><clipPath id=\"instagram_e08ec2__d\"><path d=\"M8 8h20v20H8z\"></path></clipPath></defs></g></svg></div></a></div><div class=\"tooltip_root-2Fdac\"><div class=\"tooltip_trigger-2Fdac\"><button class=\"base_root-ZOkD4 base_size-m-ZOkD4 base_variant-neutral-ZOkD4 base_isIcon-ZOkD4\" type=\"button\"><div class=\"base_view-ZOkD4\"><div class=\"base_content-ZOkD4\"><div style=\"display: contents;\"><svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 16 16\" role=\"presentation\" class=\"icon-base_root-F1flk\" width=\"16\" height=\"16\" data-icon=\"more-vertical\"><path fill-rule=\"evenodd\" d=\"M8 11.153c.746 0 1.35.604 1.35 1.35v.006a1.35 1.35 0 1 1-2.7 0v-.006c0-.746.605-1.35 1.35-1.35M8 6.647c.746 0 1.35.604 1.35 1.35v.006a1.35 1.35 0 1 1-2.7 0v-.006c0-.746.605-1.35 1.35-1.35M8 2.141c.746 0 1.35.604 1.35 1.35v.006a1.35 1.35 0 1 1-2.7 0v-.006c0-.746.605-1.35 1.35-1.35\" clip-rule=\"evenodd\"></path></svg></div></div></div></button></div></div></div><div class=\"tooltip_root-2Fdac sidebar-social-and-lang_langPicker-27UXT sidebar-social-and-lang_itemMove-27UXT\" style=\"\"><div class=\"tooltip_trigger-2Fdac\"><button class=\"language-picker_root-p6ZZU language-picker_compact-p6ZZU\" data-testid=\"language-picker-button\" type=\"button\"><picture class=\"picture-v2_root-uw4G6\" style=\"--v11659776: none;\"><img class=\"language-icon_root-Oz8xe language-icon_size-m-Oz8xe\" src=\"assets/audit-0c9593376b290cf36d46.svg\"></picture></button></div></div></div>",
+  "viewport": {
+    "height": 900,
+    "width": 1440
+  }
+}

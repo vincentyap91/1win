@@ -1,0 +1,64 @@
+{
+  "page": "casino-live-ae-sexy",
+  "auth": false,
+  "date": "2026-10-14",
+  "replaced": {
+    "casino-live-ae-sexy-1440x900": 2,
+    "casino-live-ae-sexy.html": 2,
+    "casino-live-ae-sexy-1920x1080": 2,
+    "casino-live-ae-sexy-390x844": 2,
+    "casino-live-ae-sexy-430x932": 2,
+    "casino-live-ae-sexy-768x1024": 2
+  },
+  "unmatched": [],
+  "kept_rows": [],
+  "captures": {
+    "casino-live-ae-sexy-1440x900": {
+      "file": "casino-live-ae-sexy-1440x900.json",
+      "sha256": "44c15051da05",
+      "captured_at": "2026-10-14T05:20:24.168Z",
+      "viewport": [
+        1440,
+        900
+      ]
+    },
+    "casino-live-ae-sexy-1920x1080": {
+      "file": "casino-live-ae-sexy-1920x1080.json",
+      "sha256": "1efcb35212fa",
+      "captured_at": "2026-10-14T05:24:14.475Z",
+      "viewport": [
+        1920,
+        1080
+      ]
+    },
+    "casino-live-ae-sexy-390x844": {
+      "file": "casino-live-ae-sexy-390x844.json",
+      "sha256": "6a070f1b38bf",
+      "captured_at": "2026-10-14T05:45:09.112Z",
+      "viewport": [
+        390,
+        844
+      ]
+    },
+    "casino-live-ae-sexy-430x932": {
+      "file": "casino-live-ae-sexy-430x932.json",
+      "sha256": "4e685d10222e",
+      "captured_at": "2026-10-14T05:43:06.693Z",
+      "viewport": [
+        430,
+        932
+      ]
+    },
+    "casino-live-ae-sexy-768x1024": {
+      "file": "casino-live-ae-sexy-768x1024.json",
+      "sha256": "04509c16fd9d",
+      "captured_at": "2026-10-14T05:34:52.156Z",
+      "viewport": [
+        768,
+        1024
+      ]
+    }
+  },
+  "downloaded": [],
+  "missing": []
+}

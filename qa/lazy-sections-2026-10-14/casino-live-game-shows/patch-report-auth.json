@@ -1,0 +1,63 @@
+{
+  "page": "casino-live-game-shows",
+  "auth": true,
+  "date": "2026-10-14",
+  "replaced": {
+    "casino-live-game-shows-1440x900": 2,
+    "casino-live-game-shows-1920x1080": 2,
+    "casino-live-game-shows-390x844": 2,
+    "casino-live-game-shows-430x932": 2,
+    "casino-live-game-shows-768x1024": 2
+  },
+  "unmatched": [],
+  "kept_rows": [],
+  "captures": {
+    "casino-live-game-shows-1440x900": {
+      "file": "casino-live-game-shows-auth-1440x900.json",
+      "sha256": "d93ce9e991b7",
+      "captured_at": "2026-10-14T05:20:32.941Z",
+      "viewport": [
+        1440,
+        900
+      ]
+    },
+    "casino-live-game-shows-1920x1080": {
+      "file": "casino-live-game-shows-auth-1920x1080.json",
+      "sha256": "202a6f141bc2",
+      "captured_at": "2026-10-14T05:24:24.552Z",
+      "viewport": [
+        1920,
+        1080
+      ]
+    },
+    "casino-live-game-shows-390x844": {
+      "file": "casino-live-game-shows-auth-390x844.json",
+      "sha256": "2ffb1dceb509",
+      "captured_at": "2026-10-14T05:45:18.541Z",
+      "viewport": [
+        390,
+        844
+      ]
+    },
+    "casino-live-game-shows-430x932": {
+      "file": "casino-live-game-shows-auth-430x932.json",
+      "sha256": "4e357a97ea13",
+      "captured_at": "2026-10-14T05:43:16.781Z",
+      "viewport": [
+        430,
+        932
+      ]
+    },
+    "casino-live-game-shows-768x1024": {
+      "file": "casino-live-game-shows-auth-768x1024.json",
+      "sha256": "67268e322adc",
+      "captured_at": "2026-10-14T05:35:14.682Z",
+      "viewport": [
+        768,
+        1024
+      ]
+    }
+  },
+  "downloaded": [],
+  "missing": []
+}

@@ -1,0 +1,63 @@
+{
+  "page": "casino-quick-mines",
+  "auth": true,
+  "date": "2026-10-14",
+  "replaced": {
+    "casino-quick-mines-1440x900": 2,
+    "casino-quick-mines-1920x1080": 2,
+    "casino-quick-mines-390x844": 2,
+    "casino-quick-mines-430x932": 2,
+    "casino-quick-mines-768x1024": 2
+  },
+  "unmatched": [],
+  "kept_rows": [],
+  "captures": {
+    "casino-quick-mines-1440x900": {
+      "file": "casino-quick-mines-auth-1440x900.json",
+      "sha256": "0f3762d755c0",
+      "captured_at": "2026-10-14T05:21:26.275Z",
+      "viewport": [
+        1440,
+        900
+      ]
+    },
+    "casino-quick-mines-1920x1080": {
+      "file": "casino-quick-mines-auth-1920x1080.json",
+      "sha256": "6e58492b0b7b",
+      "captured_at": "2026-10-14T05:25:23.247Z",
+      "viewport": [
+        1920,
+        1080
+      ]
+    },
+    "casino-quick-mines-390x844": {
+      "file": "casino-quick-mines-auth-390x844.json",
+      "sha256": "bc08c00fa762",
+      "captured_at": "2026-10-14T05:46:10.428Z",
+      "viewport": [
+        390,
+        844
+      ]
+    },
+    "casino-quick-mines-430x932": {
+      "file": "casino-quick-mines-auth-430x932.json",
+      "sha256": "6a9c53a13ff3",
+      "captured_at": "2026-10-14T05:44:15.907Z",
+      "viewport": [
+        430,
+        932
+      ]
+    },
+    "casino-quick-mines-768x1024": {
+      "file": "casino-quick-mines-auth-768x1024.json",
+      "sha256": "9e030962ee39",
+      "captured_at": "2026-10-14T05:36:18.976Z",
+      "viewport": [
+        768,
+        1024
+      ]
+    }
+  },
+  "downloaded": [],
+  "missing": []
+}

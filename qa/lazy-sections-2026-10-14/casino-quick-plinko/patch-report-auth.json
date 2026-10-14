@@ -1,0 +1,63 @@
+{
+  "page": "casino-quick-plinko",
+  "auth": true,
+  "date": "2026-10-14",
+  "replaced": {
+    "casino-quick-plinko-1440x900": 2,
+    "casino-quick-plinko-1920x1080": 2,
+    "casino-quick-plinko-390x844": 2,
+    "casino-quick-plinko-430x932": 2,
+    "casino-quick-plinko-768x1024": 2
+  },
+  "unmatched": [],
+  "kept_rows": [],
+  "captures": {
+    "casino-quick-plinko-1440x900": {
+      "file": "casino-quick-plinko-auth-1440x900.json",
+      "sha256": "f5df863cf659",
+      "captured_at": "2026-10-14T05:21:30.642Z",
+      "viewport": [
+        1440,
+        900
+      ]
+    },
+    "casino-quick-plinko-1920x1080": {
+      "file": "casino-quick-plinko-auth-1920x1080.json",
+      "sha256": "128efaa93933",
+      "captured_at": "2026-10-14T05:25:35.565Z",
+      "viewport": [
+        1920,
+        1080
+      ]
+    },
+    "casino-quick-plinko-390x844": {
+      "file": "casino-quick-plinko-auth-390x844.json",
+      "sha256": "fa0d469e4657",
+      "captured_at": "2026-10-14T05:46:15.443Z",
+      "viewport": [
+        390,
+        844
+      ]
+    },
+    "casino-quick-plinko-430x932": {
+      "file": "casino-quick-plinko-auth-430x932.json",
+      "sha256": "e05dc7e21d6a",
+      "captured_at": "2026-10-14T05:44:21.152Z",
+      "viewport": [
+        430,
+        932
+      ]
+    },
+    "casino-quick-plinko-768x1024": {
+      "file": "casino-quick-plinko-auth-768x1024.json",
+      "sha256": "c424fb0e443c",
+      "captured_at": "2026-10-14T05:36:23.772Z",
+      "viewport": [
+        768,
+        1024
+      ]
+    }
+  },
+  "downloaded": [],
+  "missing": []
+}

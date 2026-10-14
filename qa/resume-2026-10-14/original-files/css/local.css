@@ -1,0 +1,17 @@
+/* Original styles are in reference.css; only local behavior lives here. */
+[hidden] { display: none !important; }
+[class*="common-layout_root"][class*="common-layout_hidden"], [class*="common-layout_root"][class*="common-layout_hidden"] * { pointer-events:none !important; }
+.local-feedback { position:fixed; z-index:9999; bottom:24px; left:50%; transform:translateX(-50%); max-width:calc(100vw - 32px); padding:12px 18px; border-radius:12px; background:#292c31; color:#fff; box-shadow:0 8px 28px #0005; font:500 13px/1.4 Inter,Arial,sans-serif; text-align:center; }
+.local-language-mobile { position:fixed !important; inset:24px 12px 80px !important; width:auto !important; max-height:calc(100dvh - 104px) !important; overflow:auto !important; }
+@media(max-width:639px) {
+ .local-feedback { bottom:88px; }
+ [data-local-modal] [data-testid="desktop-modal"] [class*="desktop-modal_holder"] { align-items:flex-end; padding:24px 0 0; }
+ [data-local-modal] [data-testid="desktop-modal"] [class*="desktop-modal_card"] { width:100%; max-width:100%; max-height:calc(100dvh - 24px); border-radius:16px 16px 0 0; }
+}
+@media(prefers-reduced-motion:reduce) { *,*::before,*::after { scroll-behavior:auto !important; animation-duration:0.01ms !important; animation-iteration-count:1 !important; } }
+
+/* Local-only preview controls sit after the original footer. Alt+P also switches. */
+.local-preview-controls{display:flex;align-items:center;justify-content:center;gap:12px;flex-wrap:wrap;padding:16px 12px;color:#969da5;font:12px/1.4 Inter,Arial,sans-serif}
+.local-preview-controls button{border:1px solid #3d4249;border-radius:8px;padding:7px 12px;background:#292d33;color:white;cursor:pointer;font:inherit}
+body[data-page="freemoney"] [class*="chips-section-floating_root"]{position:sticky;top:0;z-index:20}
+@media(min-width:1024px){body[data-page="freemoney"] [class*="chips-section-floating_root"]{top:16px}}

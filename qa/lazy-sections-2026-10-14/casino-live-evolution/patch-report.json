@@ -1,0 +1,64 @@
+{
+  "page": "casino-live-evolution",
+  "auth": false,
+  "date": "2026-10-14",
+  "replaced": {
+    "casino-live-evolution-1440x900": 2,
+    "casino-live-evolution.html": 2,
+    "casino-live-evolution-1920x1080": 2,
+    "casino-live-evolution-390x844": 2,
+    "casino-live-evolution-430x932": 2,
+    "casino-live-evolution-768x1024": 2
+  },
+  "unmatched": [],
+  "kept_rows": [],
+  "captures": {
+    "casino-live-evolution-1440x900": {
+      "file": "casino-live-evolution-1440x900.json",
+      "sha256": "e127d03b5165",
+      "captured_at": "2026-10-14T05:22:15.078Z",
+      "viewport": [
+        1440,
+        900
+      ]
+    },
+    "casino-live-evolution-1920x1080": {
+      "file": "casino-live-evolution-1920x1080.json",
+      "sha256": "2e7014bfdb3a",
+      "captured_at": "2026-10-14T05:24:01.411Z",
+      "viewport": [
+        1920,
+        1080
+      ]
+    },
+    "casino-live-evolution-390x844": {
+      "file": "casino-live-evolution-390x844.json",
+      "sha256": "ae25b10653fc",
+      "captured_at": "2026-10-14T05:44:56.000Z",
+      "viewport": [
+        390,
+        844
+      ]
+    },
+    "casino-live-evolution-430x932": {
+      "file": "casino-live-evolution-430x932.json",
+      "sha256": "957447f94fb1",
+      "captured_at": "2026-10-14T05:42:53.691Z",
+      "viewport": [
+        430,
+        932
+      ]
+    },
+    "casino-live-evolution-768x1024": {
+      "file": "casino-live-evolution-768x1024.json",
+      "sha256": "8ec3d10ad78d",
+      "captured_at": "2026-10-14T05:34:28.882Z",
+      "viewport": [
+        768,
+        1024
+      ]
+    }
+  },
+  "downloaded": [],
+  "missing": []
+}

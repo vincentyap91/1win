@@ -1,0 +1,2718 @@
+{
+  "components": [
+    {
+      "id": "header.betwave.betwave-1440x900.2de49e42",
+      "source": "components/header.html",
+      "uses": 5,
+      "owners": [
+        "js\\betwave-auth.js:betwave-1440x900",
+        "js\\betwave-auth.js:betwave-1920x1080",
+        "js\\betwave-auth.js:betwave-390x844",
+        "js\\betwave-auth.js:betwave-430x932",
+        "js\\betwave-auth.js:betwave-768x1024"
+      ]
+    },
+    {
+      "id": "header.betwave.betwave-1440x900.cb5753bf",
+      "source": "components/header.html",
+      "uses": 2,
+      "owners": [
+        "js\\betwave.js:betwave-1440x900",
+        "betwave.html"
+      ]
+    },
+    {
+      "id": "header.betwave.betwave-1920x1080.1717419e",
+      "source": "components/header.html",
+      "uses": 1,
+      "owners": [
+        "js\\betwave.js:betwave-1920x1080"
+      ]
+    },
+    {
+      "id": "header.betwave.betwave-390x844.b69190ee",
+      "source": "components/header.html",
+      "uses": 3,
+      "owners": [
+        "js\\betwave.js:betwave-390x844",
+        "js\\betwave.js:betwave-430x932",
+        "js\\betwave.js:betwave-768x1024"
+      ]
+    },
+    {
+      "id": "header.standard.blog-1440x900.0a436624",
+      "source": "components/header.html",
+      "uses": 11,
+      "owners": [
+        "js\\blog-auth.js:blog-1440x900",
+        "js\\blog-auth.js:blog-1920x1080",
+        "js\\bonuses-auth.js:bonuses-1440x900",
+        "js\\bonuses-auth.js:bonuses-1920x1080",
+        "js\\bonuses-auth.js:bonuses-390x844",
+        "js\\bonuses-auth.js:bonuses-768x1024",
+        "js\\loyalty-program-auth.js:loyalty-program-1440x900",
+        "js\\loyalty-program-auth.js:loyalty-program-768x1024",
+        "js\\promotions-auth.js:promotions-390x844",
+        "js\\promotions-auth.js:promotions-768x1024",
+        "js\\vip-club-auth.js:vip-club-1440x900"
+      ]
+    },
+    {
+      "id": "header.standard.blog-390x844.fc0e8612",
+      "source": "components/header.html",
+      "uses": 123,
+      "owners": [
+        "js\\blog-auth.js:blog-390x844",
+        "js\\blog-auth.js:blog-430x932",
+        "js\\blog-auth.js:blog-768x1024",
+        "js\\bonuses-auth.js:bonuses-430x932",
+        "js\\casino-1win-auth.js:casino-1win-390x844",
+        "js\\casino-1win-auth.js:casino-1win-430x932",
+        "js\\casino-1win-auth.js:casino-1win-768x1024",
+        "js\\casino-auth.js:casino-768x1024",
+        "js\\casino-auth.js:casino-390x844",
+        "js\\casino-auth.js:casino-430x932",
+        "js\\casino-bonus-buy-auth.js:casino-bonus-buy-390x844",
+        "js\\casino-bonus-buy-auth.js:casino-bonus-buy-430x932",
+        "js\\casino-bonus-buy-auth.js:casino-bonus-buy-768x1024",
+        "js\\casino-bonus-wagering-auth.js:casino-bonus-wagering-1920x1080",
+        "js\\casino-bonus-wagering-auth.js:casino-bonus-wagering-390x844",
+        "js\\casino-bonus-wagering-auth.js:casino-bonus-wagering-430x932",
+        "js\\casino-bonus-wagering-auth.js:casino-bonus-wagering-768x1024",
+        "js\\casino-fishing-auth.js:casino-fishing-390x844",
+        "js\\casino-fishing-auth.js:casino-fishing-430x932",
+        "js\\casino-jili-auth.js:casino-jili-390x844",
+        "js\\casino-jili-auth.js:casino-jili-430x932",
+        "js\\casino-jili-auth.js:casino-jili-768x1024",
+        "js\\casino-live-1win-live-auth.js:casino-live-1win-live-390x844",
+        "js\\casino-live-1win-live-auth.js:casino-live-1win-live-430x932",
+        "js\\casino-live-ae-sexy-auth.js:casino-live-ae-sexy-390x844",
+        "js\\casino-live-ae-sexy-auth.js:casino-live-ae-sexy-430x932",
+        "js\\casino-live-auth.js:casino-live-390x844",
+        "js\\casino-live-auth.js:casino-live-430x932",
+        "js\\casino-live-baccarat-auth.js:casino-live-baccarat-390x844",
+        "js\\casino-live-baccarat-auth.js:casino-live-baccarat-430x932",
+        "js\\casino-live-blackjack-auth.js:casino-live-blackjack-390x844",
+        "js\\casino-live-blackjack-auth.js:casino-live-blackjack-430x932",
+        "js\\casino-live-dragon-tiger-auth.js:casino-live-dragon-tiger-390x844",
+        "js\\casino-live-dragon-tiger-auth.js:casino-live-dragon-tiger-430x932",
+        "js\\casino-live-emperors-collection-auth.js:casino-live-emperors-collection-390x844",
+        "js\\casino-live-emperors-collection-auth.js:casino-live-emperors-collection-430x932",
+        "js\\casino-live-evolution-auth.js:casino-live-evolution-390x844",
+        "js\\casino-live-evolution-auth.js:casino-live-evolution-430x932",
+        "js\\casino-live-game-shows-auth.js:casino-live-game-shows-390x844",
+        "js\\casino-live-game-shows-auth.js:casino-live-game-shows-430x932",
+        "js\\casino-live-new-live-games-auth.js:casino-live-new-live-games-390x844",
+        "js\\casino-live-new-live-games-auth.js:casino-live-new-live-games-430x932",
+        "js\\casino-live-playtech-live-auth.js:casino-live-playtech-live-390x844",
+        "js\\casino-live-playtech-live-auth.js:casino-live-playtech-live-430x932",
+        "js\\casino-live-poker-auth.js:casino-live-poker-390x844",
+        "js\\casino-live-poker-auth.js:casino-live-poker-430x932",
+        "js\\casino-live-pragmatic-play-auth.js:casino-live-pragmatic-play-390x844",
+        "js\\casino-live-pragmatic-play-auth.js:casino-live-pragmatic-play-430x932",
+        "js\\casino-live-roulette-auth.js:casino-live-roulette-390x844",
+        "js\\casino-live-roulette-auth.js:casino-live-roulette-430x932",
+        "js\\casino-live-sa-gaming-auth.js:casino-live-sa-gaming-390x844",
+        "js\\casino-live-sa-gaming-auth.js:casino-live-sa-gaming-430x932",
+        "js\\casino-live-sic-bo-auth.js:casino-live-sic-bo-390x844",
+        "js\\casino-live-sic-bo-auth.js:casino-live-sic-bo-430x932",
+        "js\\casino-new-auth.js:casino-new-390x844",
+        "js\\casino-new-auth.js:casino-new-430x932",
+        "js\\casino-new-auth.js:casino-new-768x1024",
+        "js\\casino-only-1win-auth.js:casino-only-1win-390x844",
+        "js\\casino-only-1win-auth.js:casino-only-1win-430x932",
+        "js\\casino-only-1win-auth.js:casino-only-1win-768x1024",
+        "js\\casino-providers-auth.js:casino-providers-390x844",
+        "js\\casino-providers-auth.js:casino-providers-430x932",
+        "js\\casino-quick-1win-games-auth.js:casino-quick-1win-games-390x844",
+        "js\\casino-quick-1win-games-auth.js:casino-quick-1win-games-430x932",
+        "js\\casino-quick-1win-games-auth.js:casino-quick-1win-games-768x1024",
+        "js\\casino-quick-auth.js:casino-quick-390x844",
+        "js\\casino-quick-auth.js:casino-quick-430x932",
+        "js\\casino-quick-auth.js:casino-quick-768x1024",
+        "js\\casino-quick-chicken-games-auth.js:casino-quick-chicken-games-390x844",
+        "js\\casino-quick-chicken-games-auth.js:casino-quick-chicken-games-430x932",
+        "js\\casino-quick-chicken-games-auth.js:casino-quick-chicken-games-768x1024",
+        "js\\casino-quick-crash-games-auth.js:casino-quick-crash-games-390x844",
+        "js\\casino-quick-crash-games-auth.js:casino-quick-crash-games-430x932",
+        "js\\casino-quick-crash-games-auth.js:casino-quick-crash-games-768x1024",
+        "js\\casino-quick-lotteries-auth.js:casino-quick-lotteries-390x844",
+        "js\\casino-quick-lotteries-auth.js:casino-quick-lotteries-430x932",
+        "js\\casino-quick-lotteries-auth.js:casino-quick-lotteries-768x1024",
+        "js\\casino-quick-mines-auth.js:casino-quick-mines-390x844",
+        "js\\casino-quick-mines-auth.js:casino-quick-mines-430x932",
+        "js\\casino-quick-mines-auth.js:casino-quick-mines-768x1024",
+        "js\\casino-quick-plinko-auth.js:casino-quick-plinko-390x844",
+        "js\\casino-quick-plinko-auth.js:casino-quick-plinko-430x932",
+        "js\\casino-quick-plinko-auth.js:casino-quick-plinko-768x1024",
+        "js\\casino-quick-sport-auth.js:casino-quick-sport-390x844",
+        "js\\casino-quick-sport-auth.js:casino-quick-sport-430x932",
+        "js\\casino-quick-sport-auth.js:casino-quick-sport-768x1024",
+        "js\\casino-recommended-auth.js:casino-recommended-1920x1080",
+        "js\\casino-recommended-auth.js:casino-recommended-390x844",
+        "js\\casino-recommended-auth.js:casino-recommended-430x932",
+        "js\\casino-search-auth.js:casino-search-390x844",
+        "js\\casino-search-auth.js:casino-search-430x932",
+        "js\\casino-search-results-auth.js:casino-search-results-390x844",
+        "js\\casino-search-results-auth.js:casino-search-results-430x932",
+        "js\\casino-slots-auth.js:casino-slots-1920x1080",
+        "js\\casino-slots-auth.js:casino-slots-430x932",
+        "js\\freemoney-auth.js:freemoney-390x844",
+        "js\\freemoney-auth.js:freemoney-430x932",
+        "js\\loyalty-program-auth.js:loyalty-program-390x844",
+        "js\\loyalty-program-auth.js:loyalty-program-430x932",
+        "js\\promotions-auth.js:promotions-1440x900",
+        "js\\promotions-auth.js:promotions-430x932",
+        "js\\sports-auth.js:sports-390x844",
+        "js\\sports-auth.js:sports-430x932",
+        "js\\sports-auth.js:sports-768x1024",
+        "js\\sports-esports-auth.js:sports-esports-1920x1080",
+        "js\\sports-esports-auth.js:sports-esports-390x844",
+        "js\\sports-esports-auth.js:sports-esports-430x932",
+        "js\\sports-esports-auth.js:sports-esports-768x1024",
+        "js\\sports-live-auth.js:sports-live-1920x1080",
+        "js\\sports-live-auth.js:sports-live-390x844",
+        "js\\sports-live-auth.js:sports-live-430x932",
+        "js\\sports-live-auth.js:sports-live-768x1024",
+        "js\\sports-upcoming-auth.js:sports-upcoming-1920x1080",
+        "js\\sports-upcoming-auth.js:sports-upcoming-390x844",
+        "js\\sports-upcoming-auth.js:sports-upcoming-430x932",
+        "js\\tournaments-auth.js:tournaments-1440x900",
+        "js\\tournaments-auth.js:tournaments-1920x1080",
+        "js\\tournaments-auth.js:tournaments-390x844",
+        "js\\tournaments-auth.js:tournaments-430x932",
+        "js\\tournaments-auth.js:tournaments-768x1024",
+        "js\\vip-club-auth.js:vip-club-390x844",
+        "js\\vip-club-auth.js:vip-club-430x932",
+        "js\\vip-club-auth.js:vip-club-768x1024"
+      ]
+    },
+    {
+      "id": "header.standard.blog-1440x900.10583ea4",
+      "source": "components/header.html",
+      "uses": 18,
+      "owners": [
+        "js\\blog.js:blog-1440x900",
+        "js\\blog.js:blog-1920x1080",
+        "js\\bonuses.js:bonuses-1440x900",
+        "js\\bonuses.js:bonuses-1920x1080",
+        "js\\loyalty-program.js:loyalty-program-1440x900",
+        "js\\loyalty-program.js:loyalty-program-1920x1080",
+        "js\\promotions.js:promotions-1440x900",
+        "js\\promotions.js:promotions-1920x1080",
+        "js\\tournaments.js:tournaments-1440x900",
+        "js\\tournaments.js:tournaments-1920x1080",
+        "js\\vip-club.js:vip-club-1440x900",
+        "js\\vip-club.js:vip-club-1920x1080",
+        "blog.html",
+        "bonuses.html",
+        "loyalty-program.html",
+        "promotions.html",
+        "tournaments.html",
+        "vip-club.html"
+      ]
+    },
+    {
+      "id": "header.standard.blog-390x844.a5332806",
+      "source": "components/header.html",
+      "uses": 144,
+      "owners": [
+        "js\\blog.js:blog-390x844",
+        "js\\blog.js:blog-430x932",
+        "js\\blog.js:blog-768x1024",
+        "js\\bonuses.js:bonuses-390x844",
+        "js\\bonuses.js:bonuses-430x932",
+        "js\\bonuses.js:bonuses-768x1024",
+        "js\\casino-1win.js:casino-1win-390x844",
+        "js\\casino-1win.js:casino-1win-430x932",
+        "js\\casino-1win.js:casino-1win-768x1024",
+        "js\\casino-bonus-buy.js:casino-bonus-buy-390x844",
+        "js\\casino-bonus-buy.js:casino-bonus-buy-430x932",
+        "js\\casino-bonus-buy.js:casino-bonus-buy-768x1024",
+        "js\\casino-bonus-wagering.js:casino-bonus-wagering-390x844",
+        "js\\casino-bonus-wagering.js:casino-bonus-wagering-430x932",
+        "js\\casino-bonus-wagering.js:casino-bonus-wagering-768x1024",
+        "js\\casino-fishing.js:casino-fishing-390x844",
+        "js\\casino-fishing.js:casino-fishing-430x932",
+        "js\\casino-fishing.js:casino-fishing-768x1024",
+        "js\\casino-jili.js:casino-jili-390x844",
+        "js\\casino-jili.js:casino-jili-430x932",
+        "js\\casino-jili.js:casino-jili-768x1024",
+        "js\\casino-live-1win-live.js:casino-live-1win-live-390x844",
+        "js\\casino-live-1win-live.js:casino-live-1win-live-430x932",
+        "js\\casino-live-1win-live.js:casino-live-1win-live-768x1024",
+        "js\\casino-live-ae-sexy.js:casino-live-ae-sexy-390x844",
+        "js\\casino-live-ae-sexy.js:casino-live-ae-sexy-430x932",
+        "js\\casino-live-ae-sexy.js:casino-live-ae-sexy-768x1024",
+        "js\\casino-live-baccarat.js:casino-live-baccarat-390x844",
+        "js\\casino-live-baccarat.js:casino-live-baccarat-430x932",
+        "js\\casino-live-baccarat.js:casino-live-baccarat-768x1024",
+        "js\\casino-live-blackjack.js:casino-live-blackjack-390x844",
+        "js\\casino-live-blackjack.js:casino-live-blackjack-430x932",
+        "js\\casino-live-blackjack.js:casino-live-blackjack-768x1024",
+        "js\\casino-live-dragon-tiger.js:casino-live-dragon-tiger-390x844",
+        "js\\casino-live-dragon-tiger.js:casino-live-dragon-tiger-430x932",
+        "js\\casino-live-dragon-tiger.js:casino-live-dragon-tiger-768x1024",
+        "js\\casino-live-emperors-collection.js:casino-live-emperors-collection-390x844",
+        "js\\casino-live-emperors-collection.js:casino-live-emperors-collection-430x932",
+        "js\\casino-live-emperors-collection.js:casino-live-emperors-collection-768x1024",
+        "js\\casino-live-evolution.js:casino-live-evolution-390x844",
+        "js\\casino-live-evolution.js:casino-live-evolution-430x932",
+        "js\\casino-live-evolution.js:casino-live-evolution-768x1024",
+        "js\\casino-live-game-shows.js:casino-live-game-shows-390x844",
+        "js\\casino-live-game-shows.js:casino-live-game-shows-430x932",
+        "js\\casino-live-game-shows.js:casino-live-game-shows-768x1024",
+        "js\\casino-live-new-live-games.js:casino-live-new-live-games-390x844",
+        "js\\casino-live-new-live-games.js:casino-live-new-live-games-430x932",
+        "js\\casino-live-new-live-games.js:casino-live-new-live-games-768x1024",
+        "js\\casino-live-playtech-live.js:casino-live-playtech-live-390x844",
+        "js\\casino-live-playtech-live.js:casino-live-playtech-live-430x932",
+        "js\\casino-live-playtech-live.js:casino-live-playtech-live-768x1024",
+        "js\\casino-live-poker.js:casino-live-poker-390x844",
+        "js\\casino-live-poker.js:casino-live-poker-430x932",
+        "js\\casino-live-poker.js:casino-live-poker-768x1024",
+        "js\\casino-live-pragmatic-play.js:casino-live-pragmatic-play-390x844",
+        "js\\casino-live-pragmatic-play.js:casino-live-pragmatic-play-430x932",
+        "js\\casino-live-pragmatic-play.js:casino-live-pragmatic-play-768x1024",
+        "js\\casino-live-roulette.js:casino-live-roulette-390x844",
+        "js\\casino-live-roulette.js:casino-live-roulette-430x932",
+        "js\\casino-live-roulette.js:casino-live-roulette-768x1024",
+        "js\\casino-live-sa-gaming.js:casino-live-sa-gaming-390x844",
+        "js\\casino-live-sa-gaming.js:casino-live-sa-gaming-430x932",
+        "js\\casino-live-sa-gaming.js:casino-live-sa-gaming-768x1024",
+        "js\\casino-live-sic-bo.js:casino-live-sic-bo-390x844",
+        "js\\casino-live-sic-bo.js:casino-live-sic-bo-430x932",
+        "js\\casino-live-sic-bo.js:casino-live-sic-bo-768x1024",
+        "js\\casino-live.js:casino-live-390x844",
+        "js\\casino-live.js:casino-live-430x932",
+        "js\\casino-live.js:casino-live-768x1024",
+        "js\\casino-new.js:casino-new-390x844",
+        "js\\casino-new.js:casino-new-430x932",
+        "js\\casino-new.js:casino-new-768x1024",
+        "js\\casino-only-1win.js:casino-only-1win-390x844",
+        "js\\casino-only-1win.js:casino-only-1win-430x932",
+        "js\\casino-only-1win.js:casino-only-1win-768x1024",
+        "js\\casino-providers.js:casino-providers-390x844",
+        "js\\casino-providers.js:casino-providers-430x932",
+        "js\\casino-providers.js:casino-providers-768x1024",
+        "js\\casino-quick-1win-games.js:casino-quick-1win-games-390x844",
+        "js\\casino-quick-1win-games.js:casino-quick-1win-games-430x932",
+        "js\\casino-quick-1win-games.js:casino-quick-1win-games-768x1024",
+        "js\\casino-quick-chicken-games.js:casino-quick-chicken-games-390x844",
+        "js\\casino-quick-chicken-games.js:casino-quick-chicken-games-430x932",
+        "js\\casino-quick-chicken-games.js:casino-quick-chicken-games-768x1024",
+        "js\\casino-quick-crash-games.js:casino-quick-crash-games-390x844",
+        "js\\casino-quick-crash-games.js:casino-quick-crash-games-430x932",
+        "js\\casino-quick-crash-games.js:casino-quick-crash-games-768x1024",
+        "js\\casino-quick-lotteries.js:casino-quick-lotteries-390x844",
+        "js\\casino-quick-lotteries.js:casino-quick-lotteries-430x932",
+        "js\\casino-quick-lotteries.js:casino-quick-lotteries-768x1024",
+        "js\\casino-quick-mines.js:casino-quick-mines-390x844",
+        "js\\casino-quick-mines.js:casino-quick-mines-430x932",
+        "js\\casino-quick-mines.js:casino-quick-mines-768x1024",
+        "js\\casino-quick-plinko.js:casino-quick-plinko-390x844",
+        "js\\casino-quick-plinko.js:casino-quick-plinko-430x932",
+        "js\\casino-quick-plinko.js:casino-quick-plinko-768x1024",
+        "js\\casino-quick-sport.js:casino-quick-sport-390x844",
+        "js\\casino-quick-sport.js:casino-quick-sport-430x932",
+        "js\\casino-quick-sport.js:casino-quick-sport-768x1024",
+        "js\\casino-quick.js:casino-quick-390x844",
+        "js\\casino-quick.js:casino-quick-430x932",
+        "js\\casino-quick.js:casino-quick-768x1024",
+        "js\\casino-recommended.js:casino-recommended-390x844",
+        "js\\casino-recommended.js:casino-recommended-430x932",
+        "js\\casino-recommended.js:casino-recommended-768x1024",
+        "js\\casino-search-results.js:casino-search-results-390x844",
+        "js\\casino-search-results.js:casino-search-results-430x932",
+        "js\\casino-search-results.js:casino-search-results-768x1024",
+        "js\\casino-search.js:casino-search-390x844",
+        "js\\casino-search.js:casino-search-430x932",
+        "js\\casino-search.js:casino-search-768x1024",
+        "js\\casino-slots.js:casino-slots-390x844",
+        "js\\casino-slots.js:casino-slots-430x932",
+        "js\\casino-slots.js:casino-slots-768x1024",
+        "js\\casino.js:casino-390x844",
+        "js\\casino.js:casino-430x932",
+        "js\\casino.js:casino-768x1024",
+        "js\\freemoney.js:freemoney-390x844",
+        "js\\freemoney.js:freemoney-430x932",
+        "js\\freemoney.js:freemoney-768x1024",
+        "js\\loyalty-program.js:loyalty-program-390x844",
+        "js\\loyalty-program.js:loyalty-program-430x932",
+        "js\\loyalty-program.js:loyalty-program-768x1024",
+        "js\\promotions.js:promotions-390x844",
+        "js\\promotions.js:promotions-430x932",
+        "js\\promotions.js:promotions-768x1024",
+        "js\\sports-esports.js:sports-esports-390x844",
+        "js\\sports-esports.js:sports-esports-430x932",
+        "js\\sports-esports.js:sports-esports-768x1024",
+        "js\\sports-live.js:sports-live-390x844",
+        "js\\sports-live.js:sports-live-430x932",
+        "js\\sports-live.js:sports-live-768x1024",
+        "js\\sports-upcoming.js:sports-upcoming-390x844",
+        "js\\sports-upcoming.js:sports-upcoming-430x932",
+        "js\\sports-upcoming.js:sports-upcoming-768x1024",
+        "js\\sports.js:sports-390x844",
+        "js\\sports.js:sports-430x932",
+        "js\\sports.js:sports-768x1024",
+        "js\\tournaments.js:tournaments-390x844",
+        "js\\tournaments.js:tournaments-430x932",
+        "js\\tournaments.js:tournaments-768x1024",
+        "js\\vip-club.js:vip-club-390x844",
+        "js\\vip-club.js:vip-club-430x932",
+        "js\\vip-club.js:vip-club-768x1024"
+      ]
+    },
+    {
+      "id": "header.standard.casino-1win-1440x900.f3e7165e",
+      "source": "components/header.html",
+      "uses": 19,
+      "owners": [
+        "js\\casino-1win-auth.js:casino-1win-1440x900",
+        "js\\casino-1win-auth.js:casino-1win-1920x1080",
+        "js\\casino-bonus-buy-auth.js:casino-bonus-buy-1440x900",
+        "js\\casino-bonus-buy-auth.js:casino-bonus-buy-1920x1080",
+        "js\\casino-bonus-wagering-auth.js:casino-bonus-wagering-1440x900",
+        "js\\casino-fishing-auth.js:casino-fishing-1440x900",
+        "js\\casino-fishing-auth.js:casino-fishing-1920x1080",
+        "js\\casino-fishing-auth.js:casino-fishing-768x1024",
+        "js\\casino-jili-auth.js:casino-jili-1440x900",
+        "js\\casino-jili-auth.js:casino-jili-1920x1080",
+        "js\\casino-new-auth.js:casino-new-1440x900",
+        "js\\casino-new-auth.js:casino-new-1920x1080",
+        "js\\casino-only-1win-auth.js:casino-only-1win-1440x900",
+        "js\\casino-only-1win-auth.js:casino-only-1win-1920x1080",
+        "js\\casino-recommended-auth.js:casino-recommended-1440x900",
+        "js\\casino-recommended-auth.js:casino-recommended-768x1024",
+        "js\\casino-slots-auth.js:casino-slots-1440x900",
+        "js\\casino-slots-auth.js:casino-slots-390x844",
+        "js\\casino-slots-auth.js:casino-slots-768x1024"
+      ]
+    },
+    {
+      "id": "header.standard.casino-1win-1440x900.87b6a1df",
+      "source": "components/header.html",
+      "uses": 24,
+      "owners": [
+        "js\\casino-1win.js:casino-1win-1440x900",
+        "js\\casino-1win.js:casino-1win-1920x1080",
+        "js\\casino-bonus-buy.js:casino-bonus-buy-1440x900",
+        "js\\casino-bonus-buy.js:casino-bonus-buy-1920x1080",
+        "js\\casino-bonus-wagering.js:casino-bonus-wagering-1440x900",
+        "js\\casino-bonus-wagering.js:casino-bonus-wagering-1920x1080",
+        "js\\casino-fishing.js:casino-fishing-1440x900",
+        "js\\casino-fishing.js:casino-fishing-1920x1080",
+        "js\\casino-jili.js:casino-jili-1440x900",
+        "js\\casino-jili.js:casino-jili-1920x1080",
+        "js\\casino-new.js:casino-new-1440x900",
+        "js\\casino-new.js:casino-new-1920x1080",
+        "js\\casino-only-1win.js:casino-only-1win-1440x900",
+        "js\\casino-only-1win.js:casino-only-1win-1920x1080",
+        "js\\casino-slots.js:casino-slots-1440x900",
+        "js\\casino-slots.js:casino-slots-1920x1080",
+        "casino-1win.html",
+        "casino-bonus-buy.html",
+        "casino-bonus-wagering.html",
+        "casino-fishing.html",
+        "casino-jili.html",
+        "casino-new.html",
+        "casino-only-1win.html",
+        "casino-slots.html"
+      ]
+    },
+    {
+      "id": "header.standard.casino-1920x1080.b3c0fd46",
+      "source": "components/header.html",
+      "uses": 2,
+      "owners": [
+        "js\\casino-auth.js:casino-1920x1080",
+        "js\\casino-auth.js:casino-1440x900"
+      ]
+    },
+    {
+      "id": "header.standard.casino-live-1440x900.a9757533",
+      "source": "components/header.html",
+      "uses": 64,
+      "owners": [
+        "js\\casino-live-1win-live-auth.js:casino-live-1win-live-1440x900",
+        "js\\casino-live-1win-live-auth.js:casino-live-1win-live-1920x1080",
+        "js\\casino-live-1win-live-auth.js:casino-live-1win-live-768x1024",
+        "js\\casino-live-ae-sexy-auth.js:casino-live-ae-sexy-1440x900",
+        "js\\casino-live-ae-sexy-auth.js:casino-live-ae-sexy-1920x1080",
+        "js\\casino-live-ae-sexy-auth.js:casino-live-ae-sexy-768x1024",
+        "js\\casino-live-auth.js:casino-live-1440x900",
+        "js\\casino-live-auth.js:casino-live-1920x1080",
+        "js\\casino-live-auth.js:casino-live-768x1024",
+        "js\\casino-live-baccarat-auth.js:casino-live-baccarat-1440x900",
+        "js\\casino-live-baccarat-auth.js:casino-live-baccarat-1920x1080",
+        "js\\casino-live-baccarat-auth.js:casino-live-baccarat-768x1024",
+        "js\\casino-live-blackjack-auth.js:casino-live-blackjack-1440x900",
+        "js\\casino-live-blackjack-auth.js:casino-live-blackjack-1920x1080",
+        "js\\casino-live-blackjack-auth.js:casino-live-blackjack-768x1024",
+        "js\\casino-live-dragon-tiger-auth.js:casino-live-dragon-tiger-1440x900",
+        "js\\casino-live-dragon-tiger-auth.js:casino-live-dragon-tiger-1920x1080",
+        "js\\casino-live-dragon-tiger-auth.js:casino-live-dragon-tiger-768x1024",
+        "js\\casino-live-emperors-collection-auth.js:casino-live-emperors-collection-1440x900",
+        "js\\casino-live-emperors-collection-auth.js:casino-live-emperors-collection-1920x1080",
+        "js\\casino-live-emperors-collection-auth.js:casino-live-emperors-collection-768x1024",
+        "js\\casino-live-evolution-auth.js:casino-live-evolution-1440x900",
+        "js\\casino-live-evolution-auth.js:casino-live-evolution-1920x1080",
+        "js\\casino-live-evolution-auth.js:casino-live-evolution-768x1024",
+        "js\\casino-live-game-shows-auth.js:casino-live-game-shows-1440x900",
+        "js\\casino-live-game-shows-auth.js:casino-live-game-shows-1920x1080",
+        "js\\casino-live-game-shows-auth.js:casino-live-game-shows-768x1024",
+        "js\\casino-live-new-live-games-auth.js:casino-live-new-live-games-1440x900",
+        "js\\casino-live-new-live-games-auth.js:casino-live-new-live-games-1920x1080",
+        "js\\casino-live-new-live-games-auth.js:casino-live-new-live-games-768x1024",
+        "js\\casino-live-playtech-live-auth.js:casino-live-playtech-live-1440x900",
+        "js\\casino-live-playtech-live-auth.js:casino-live-playtech-live-1920x1080",
+        "js\\casino-live-playtech-live-auth.js:casino-live-playtech-live-768x1024",
+        "js\\casino-live-poker-auth.js:casino-live-poker-1440x900",
+        "js\\casino-live-poker-auth.js:casino-live-poker-1920x1080",
+        "js\\casino-live-poker-auth.js:casino-live-poker-768x1024",
+        "js\\casino-live-pragmatic-play-auth.js:casino-live-pragmatic-play-1440x900",
+        "js\\casino-live-pragmatic-play-auth.js:casino-live-pragmatic-play-1920x1080",
+        "js\\casino-live-pragmatic-play-auth.js:casino-live-pragmatic-play-768x1024",
+        "js\\casino-live-roulette-auth.js:casino-live-roulette-1440x900",
+        "js\\casino-live-roulette-auth.js:casino-live-roulette-1920x1080",
+        "js\\casino-live-roulette-auth.js:casino-live-roulette-768x1024",
+        "js\\casino-live-sa-gaming-auth.js:casino-live-sa-gaming-1440x900",
+        "js\\casino-live-sa-gaming-auth.js:casino-live-sa-gaming-1920x1080",
+        "js\\casino-live-sa-gaming-auth.js:casino-live-sa-gaming-768x1024",
+        "js\\casino-live-sic-bo-auth.js:casino-live-sic-bo-1440x900",
+        "js\\casino-live-sic-bo-auth.js:casino-live-sic-bo-1920x1080",
+        "js\\casino-live-sic-bo-auth.js:casino-live-sic-bo-768x1024",
+        "js\\casino-quick-1win-games-auth.js:casino-quick-1win-games-1440x900",
+        "js\\casino-quick-1win-games-auth.js:casino-quick-1win-games-1920x1080",
+        "js\\casino-quick-auth.js:casino-quick-1440x900",
+        "js\\casino-quick-auth.js:casino-quick-1920x1080",
+        "js\\casino-quick-chicken-games-auth.js:casino-quick-chicken-games-1440x900",
+        "js\\casino-quick-chicken-games-auth.js:casino-quick-chicken-games-1920x1080",
+        "js\\casino-quick-crash-games-auth.js:casino-quick-crash-games-1440x900",
+        "js\\casino-quick-crash-games-auth.js:casino-quick-crash-games-1920x1080",
+        "js\\casino-quick-lotteries-auth.js:casino-quick-lotteries-1440x900",
+        "js\\casino-quick-lotteries-auth.js:casino-quick-lotteries-1920x1080",
+        "js\\casino-quick-mines-auth.js:casino-quick-mines-1440x900",
+        "js\\casino-quick-mines-auth.js:casino-quick-mines-1920x1080",
+        "js\\casino-quick-plinko-auth.js:casino-quick-plinko-1440x900",
+        "js\\casino-quick-plinko-auth.js:casino-quick-plinko-1920x1080",
+        "js\\casino-quick-sport-auth.js:casino-quick-sport-1440x900",
+        "js\\casino-quick-sport-auth.js:casino-quick-sport-1920x1080"
+      ]
+    },
+    {
+      "id": "header.standard.casino-live-1440x900.a31f54e7",
+      "source": "components/header.html",
+      "uses": 72,
+      "owners": [
+        "js\\casino-live-1win-live.js:casino-live-1win-live-1440x900",
+        "js\\casino-live-1win-live.js:casino-live-1win-live-1920x1080",
+        "js\\casino-live-ae-sexy.js:casino-live-ae-sexy-1440x900",
+        "js\\casino-live-ae-sexy.js:casino-live-ae-sexy-1920x1080",
+        "js\\casino-live-baccarat.js:casino-live-baccarat-1440x900",
+        "js\\casino-live-baccarat.js:casino-live-baccarat-1920x1080",
+        "js\\casino-live-blackjack.js:casino-live-blackjack-1440x900",
+        "js\\casino-live-blackjack.js:casino-live-blackjack-1920x1080",
+        "js\\casino-live-dragon-tiger.js:casino-live-dragon-tiger-1440x900",
+        "js\\casino-live-dragon-tiger.js:casino-live-dragon-tiger-1920x1080",
+        "js\\casino-live-emperors-collection.js:casino-live-emperors-collection-1440x900",
+        "js\\casino-live-emperors-collection.js:casino-live-emperors-collection-1920x1080",
+        "js\\casino-live-evolution.js:casino-live-evolution-1440x900",
+        "js\\casino-live-evolution.js:casino-live-evolution-1920x1080",
+        "js\\casino-live-game-shows.js:casino-live-game-shows-1440x900",
+        "js\\casino-live-game-shows.js:casino-live-game-shows-1920x1080",
+        "js\\casino-live-new-live-games.js:casino-live-new-live-games-1440x900",
+        "js\\casino-live-new-live-games.js:casino-live-new-live-games-1920x1080",
+        "js\\casino-live-playtech-live.js:casino-live-playtech-live-1440x900",
+        "js\\casino-live-playtech-live.js:casino-live-playtech-live-1920x1080",
+        "js\\casino-live-poker.js:casino-live-poker-1440x900",
+        "js\\casino-live-poker.js:casino-live-poker-1920x1080",
+        "js\\casino-live-pragmatic-play.js:casino-live-pragmatic-play-1440x900",
+        "js\\casino-live-pragmatic-play.js:casino-live-pragmatic-play-1920x1080",
+        "js\\casino-live-roulette.js:casino-live-roulette-1440x900",
+        "js\\casino-live-roulette.js:casino-live-roulette-1920x1080",
+        "js\\casino-live-sa-gaming.js:casino-live-sa-gaming-1440x900",
+        "js\\casino-live-sa-gaming.js:casino-live-sa-gaming-1920x1080",
+        "js\\casino-live-sic-bo.js:casino-live-sic-bo-1440x900",
+        "js\\casino-live-sic-bo.js:casino-live-sic-bo-1920x1080",
+        "js\\casino-live.js:casino-live-1440x900",
+        "js\\casino-live.js:casino-live-1920x1080",
+        "js\\casino-quick-1win-games.js:casino-quick-1win-games-1440x900",
+        "js\\casino-quick-1win-games.js:casino-quick-1win-games-1920x1080",
+        "js\\casino-quick-chicken-games.js:casino-quick-chicken-games-1440x900",
+        "js\\casino-quick-chicken-games.js:casino-quick-chicken-games-1920x1080",
+        "js\\casino-quick-crash-games.js:casino-quick-crash-games-1440x900",
+        "js\\casino-quick-crash-games.js:casino-quick-crash-games-1920x1080",
+        "js\\casino-quick-lotteries.js:casino-quick-lotteries-1440x900",
+        "js\\casino-quick-lotteries.js:casino-quick-lotteries-1920x1080",
+        "js\\casino-quick-mines.js:casino-quick-mines-1440x900",
+        "js\\casino-quick-mines.js:casino-quick-mines-1920x1080",
+        "js\\casino-quick-plinko.js:casino-quick-plinko-1440x900",
+        "js\\casino-quick-plinko.js:casino-quick-plinko-1920x1080",
+        "js\\casino-quick-sport.js:casino-quick-sport-1440x900",
+        "js\\casino-quick-sport.js:casino-quick-sport-1920x1080",
+        "js\\casino-quick.js:casino-quick-1440x900",
+        "js\\casino-quick.js:casino-quick-1920x1080",
+        "casino-live-1win-live.html",
+        "casino-live-ae-sexy.html",
+        "casino-live-baccarat.html",
+        "casino-live-blackjack.html",
+        "casino-live-dragon-tiger.html",
+        "casino-live-emperors-collection.html",
+        "casino-live-evolution.html",
+        "casino-live-game-shows.html",
+        "casino-live-new-live-games.html",
+        "casino-live-playtech-live.html",
+        "casino-live-poker.html",
+        "casino-live-pragmatic-play.html",
+        "casino-live-roulette.html",
+        "casino-live-sa-gaming.html",
+        "casino-live-sic-bo.html",
+        "casino-live.html",
+        "casino-quick-1win-games.html",
+        "casino-quick-chicken-games.html",
+        "casino-quick-crash-games.html",
+        "casino-quick-lotteries.html",
+        "casino-quick-mines.html",
+        "casino-quick-plinko.html",
+        "casino-quick-sport.html",
+        "casino-quick.html"
+      ]
+    },
+    {
+      "id": "header.standard.casino-providers-1440x900.b60d5b65",
+      "source": "components/header.html",
+      "uses": 9,
+      "owners": [
+        "js\\casino-providers-auth.js:casino-providers-1440x900",
+        "js\\casino-providers-auth.js:casino-providers-1920x1080",
+        "js\\casino-providers-auth.js:casino-providers-768x1024",
+        "js\\casino-search-auth.js:casino-search-1440x900",
+        "js\\casino-search-auth.js:casino-search-1920x1080",
+        "js\\casino-search-auth.js:casino-search-768x1024",
+        "js\\casino-search-results-auth.js:casino-search-results-1440x900",
+        "js\\casino-search-results-auth.js:casino-search-results-1920x1080",
+        "js\\casino-search-results-auth.js:casino-search-results-768x1024"
+      ]
+    },
+    {
+      "id": "header.standard.casino-providers-1440x900.00054416",
+      "source": "components/header.html",
+      "uses": 15,
+      "owners": [
+        "js\\casino-providers.js:casino-providers-1440x900",
+        "js\\casino-providers.js:casino-providers-1920x1080",
+        "js\\casino-recommended.js:casino-recommended-1440x900",
+        "js\\casino-recommended.js:casino-recommended-1920x1080",
+        "js\\casino-search-results.js:casino-search-results-1440x900",
+        "js\\casino-search-results.js:casino-search-results-1920x1080",
+        "js\\casino-search.js:casino-search-1440x900",
+        "js\\casino-search.js:casino-search-1920x1080",
+        "js\\casino.js:casino-1440x900",
+        "js\\casino.js:casino-1920x1080",
+        "casino-providers.html",
+        "casino-recommended.html",
+        "casino-search-results.html",
+        "casino-search.html",
+        "casino.html"
+      ]
+    },
+    {
+      "id": "header.standard.freemoney-1440x900.78a2132c",
+      "source": "components/header.html",
+      "uses": 3,
+      "owners": [
+        "js\\freemoney-auth.js:freemoney-1440x900",
+        "js\\freemoney-auth.js:freemoney-1920x1080",
+        "js\\freemoney-auth.js:freemoney-768x1024"
+      ]
+    },
+    {
+      "id": "header.standard.freemoney-1440x900.a2987383",
+      "source": "components/header.html",
+      "uses": 3,
+      "owners": [
+        "js\\freemoney.js:freemoney-1440x900",
+        "js\\freemoney.js:freemoney-1920x1080",
+        "freemoney.html"
+      ]
+    },
+    {
+      "id": "header.standard.home-1440x900.8299c65e",
+      "source": "components/header.html",
+      "uses": 1,
+      "owners": [
+        "js\\home-auth.js:home-1440x900"
+      ]
+    },
+    {
+      "id": "header.standard.home-1920x1080.4a7eadf7",
+      "source": "components/header.html",
+      "uses": 4,
+      "owners": [
+        "js\\home-auth.js:home-1920x1080",
+        "js\\home-auth.js:home-390x844",
+        "js\\home-auth.js:home-430x932",
+        "js\\home-auth.js:home-768x1024"
+      ]
+    },
+    {
+      "id": "header.standard.home-1440x900.0cb216c5",
+      "source": "components/header.html",
+      "uses": 6,
+      "owners": [
+        "js\\home.js:home-1440x900",
+        "js\\home.js:home-1920x1080",
+        "index.html",
+        "login.html",
+        "recovery.html",
+        "register.html"
+      ]
+    },
+    {
+      "id": "header.standard.home-390x844.a3529b0e",
+      "source": "components/header.html",
+      "uses": 3,
+      "owners": [
+        "js\\home.js:home-390x844",
+        "js\\home.js:home-430x932",
+        "js\\home.js:home-768x1024"
+      ]
+    },
+    {
+      "id": "header.standard.loyalty-program-1920x1080.520e4b2e",
+      "source": "components/header.html",
+      "uses": 1,
+      "owners": [
+        "js\\loyalty-program-auth.js:loyalty-program-1920x1080"
+      ]
+    },
+    {
+      "id": "header.standard.promotions-1920x1080.e4b414f1",
+      "source": "components/header.html",
+      "uses": 2,
+      "owners": [
+        "js\\promotions-auth.js:promotions-1920x1080",
+        "js\\vip-club-auth.js:vip-club-1920x1080"
+      ]
+    },
+    {
+      "id": "header.standard.sports-1440x900.357f7dc3",
+      "source": "components/header.html",
+      "uses": 2,
+      "owners": [
+        "js\\sports-auth.js:sports-1440x900",
+        "js\\sports-auth.js:sports-1920x1080"
+      ]
+    },
+    {
+      "id": "header.standard.sports-esports-1440x900.fc5d0436",
+      "source": "components/header.html",
+      "uses": 4,
+      "owners": [
+        "js\\sports-esports-auth.js:sports-esports-1440x900",
+        "js\\sports-live-auth.js:sports-live-1440x900",
+        "js\\sports-upcoming-auth.js:sports-upcoming-1440x900",
+        "js\\sports-upcoming-auth.js:sports-upcoming-768x1024"
+      ]
+    },
+    {
+      "id": "header.standard.sports-esports-1440x900.2d16a3b3",
+      "source": "components/header.html",
+      "uses": 9,
+      "owners": [
+        "js\\sports-esports.js:sports-esports-1440x900",
+        "js\\sports-esports.js:sports-esports-1920x1080",
+        "js\\sports-live.js:sports-live-1440x900",
+        "js\\sports-live.js:sports-live-1920x1080",
+        "js\\sports-upcoming.js:sports-upcoming-1440x900",
+        "js\\sports-upcoming.js:sports-upcoming-1920x1080",
+        "sports-esports.html",
+        "sports-live.html",
+        "sports-upcoming.html"
+      ]
+    },
+    {
+      "id": "header.standard.sports-1440x900.7ffaa4a9",
+      "source": "components/header.html",
+      "uses": 3,
+      "owners": [
+        "js\\sports.js:sports-1440x900",
+        "js\\sports.js:sports-1920x1080",
+        "sports.html"
+      ]
+    },
+    {
+      "id": "sidebar.betwave.betwave-1440x900.11023acb",
+      "source": "components/sidebar.html",
+      "uses": 5,
+      "owners": [
+        "js\\betwave-auth.js:betwave-1440x900",
+        "js\\betwave-auth.js:betwave-1920x1080",
+        "js\\betwave-auth.js:betwave-390x844",
+        "js\\betwave-auth.js:betwave-430x932",
+        "js\\betwave-auth.js:betwave-768x1024"
+      ]
+    },
+    {
+      "id": "sidebar.betwave.betwave-1440x900.4609077b",
+      "source": "components/sidebar.html",
+      "uses": 2,
+      "owners": [
+        "js\\betwave.js:betwave-1440x900",
+        "betwave.html"
+      ]
+    },
+    {
+      "id": "sidebar.betwave.betwave-1920x1080.677164a4",
+      "source": "components/sidebar.html",
+      "uses": 1,
+      "owners": [
+        "js\\betwave.js:betwave-1920x1080"
+      ]
+    },
+    {
+      "id": "sidebar.standard.blog-1440x900.8071a9f1",
+      "source": "components/sidebar.html",
+      "uses": 2,
+      "owners": [
+        "js\\blog-auth.js:blog-1440x900",
+        "js\\blog-auth.js:blog-1920x1080"
+      ]
+    },
+    {
+      "id": "sidebar.standard.blog-390x844.3fe4e735",
+      "source": "components/sidebar.html",
+      "uses": 2,
+      "owners": [
+        "js\\blog-auth.js:blog-390x844",
+        "js\\blog-auth.js:blog-430x932"
+      ]
+    },
+    {
+      "id": "sidebar.standard.blog-768x1024.877012a0",
+      "source": "components/sidebar.html",
+      "uses": 1,
+      "owners": [
+        "js\\blog-auth.js:blog-768x1024"
+      ]
+    },
+    {
+      "id": "sidebar.standard.blog-1440x900.48a16338",
+      "source": "components/sidebar.html",
+      "uses": 3,
+      "owners": [
+        "js\\blog.js:blog-1440x900",
+        "js\\blog.js:blog-1920x1080",
+        "blog.html"
+      ]
+    },
+    {
+      "id": "sidebar.standard.blog-390x844.2d44e693",
+      "source": "components/sidebar.html",
+      "uses": 3,
+      "owners": [
+        "js\\blog.js:blog-390x844",
+        "js\\blog.js:blog-430x932",
+        "js\\blog.js:blog-768x1024"
+      ]
+    },
+    {
+      "id": "sidebar.standard.bonuses-1440x900.9acd13b1",
+      "source": "components/sidebar.html",
+      "uses": 4,
+      "owners": [
+        "js\\bonuses-auth.js:bonuses-1440x900",
+        "js\\bonuses-auth.js:bonuses-1920x1080",
+        "js\\bonuses-auth.js:bonuses-390x844",
+        "js\\bonuses-auth.js:bonuses-768x1024"
+      ]
+    },
+    {
+      "id": "sidebar.standard.bonuses-430x932.e6720007",
+      "source": "components/sidebar.html",
+      "uses": 1,
+      "owners": [
+        "js\\bonuses-auth.js:bonuses-430x932"
+      ]
+    },
+    {
+      "id": "sidebar.standard.bonuses-1440x900.be23d66d",
+      "source": "components/sidebar.html",
+      "uses": 3,
+      "owners": [
+        "js\\bonuses.js:bonuses-1440x900",
+        "js\\bonuses.js:bonuses-1920x1080",
+        "bonuses.html"
+      ]
+    },
+    {
+      "id": "sidebar.standard.bonuses-390x844.358d63f1",
+      "source": "components/sidebar.html",
+      "uses": 3,
+      "owners": [
+        "js\\bonuses.js:bonuses-390x844",
+        "js\\bonuses.js:bonuses-430x932",
+        "js\\bonuses.js:bonuses-768x1024"
+      ]
+    },
+    {
+      "id": "sidebar.standard.casino-1win-1440x900.7445e905",
+      "source": "components/sidebar.html",
+      "uses": 10,
+      "owners": [
+        "js\\casino-1win-auth.js:casino-1win-1440x900",
+        "js\\casino-bonus-buy-auth.js:casino-bonus-buy-1440x900",
+        "js\\casino-fishing-auth.js:casino-fishing-1440x900",
+        "js\\casino-fishing-auth.js:casino-fishing-768x1024",
+        "js\\casino-only-1win-auth.js:casino-only-1win-1440x900",
+        "js\\casino-recommended-auth.js:casino-recommended-1440x900",
+        "js\\casino-recommended-auth.js:casino-recommended-768x1024",
+        "js\\casino-slots-auth.js:casino-slots-1440x900",
+        "js\\casino-slots-auth.js:casino-slots-390x844",
+        "js\\casino-slots-auth.js:casino-slots-768x1024"
+      ]
+    },
+    {
+      "id": "sidebar.standard.casino-1win-1920x1080.b3acd0dc",
+      "source": "components/sidebar.html",
+      "uses": 6,
+      "owners": [
+        "js\\casino-1win-auth.js:casino-1win-1920x1080",
+        "js\\casino-bonus-buy-auth.js:casino-bonus-buy-1920x1080",
+        "js\\casino-bonus-wagering-auth.js:casino-bonus-wagering-1440x900",
+        "js\\casino-jili-auth.js:casino-jili-1920x1080",
+        "js\\casino-new-auth.js:casino-new-1440x900",
+        "js\\casino-new-auth.js:casino-new-1920x1080"
+      ]
+    },
+    {
+      "id": "sidebar.standard.casino-1win-390x844.b4240c0c",
+      "source": "components/sidebar.html",
+      "uses": 12,
+      "owners": [
+        "js\\casino-1win-auth.js:casino-1win-390x844",
+        "js\\casino-1win-auth.js:casino-1win-768x1024",
+        "js\\casino-bonus-buy-auth.js:casino-bonus-buy-390x844",
+        "js\\casino-bonus-buy-auth.js:casino-bonus-buy-768x1024",
+        "js\\casino-fishing-auth.js:casino-fishing-390x844",
+        "js\\casino-fishing-auth.js:casino-fishing-430x932",
+        "js\\casino-jili-auth.js:casino-jili-768x1024",
+        "js\\casino-only-1win-auth.js:casino-only-1win-390x844",
+        "js\\casino-only-1win-auth.js:casino-only-1win-768x1024",
+        "js\\casino-recommended-auth.js:casino-recommended-390x844",
+        "js\\casino-recommended-auth.js:casino-recommended-430x932",
+        "js\\casino-slots-auth.js:casino-slots-430x932"
+      ]
+    },
+    {
+      "id": "sidebar.standard.casino-1win-430x932.d4c29d1f",
+      "source": "components/sidebar.html",
+      "uses": 10,
+      "owners": [
+        "js\\casino-1win-auth.js:casino-1win-430x932",
+        "js\\casino-bonus-buy-auth.js:casino-bonus-buy-430x932",
+        "js\\casino-bonus-wagering-auth.js:casino-bonus-wagering-390x844",
+        "js\\casino-bonus-wagering-auth.js:casino-bonus-wagering-430x932",
+        "js\\casino-jili-auth.js:casino-jili-390x844",
+        "js\\casino-jili-auth.js:casino-jili-430x932",
+        "js\\casino-new-auth.js:casino-new-390x844",
+        "js\\casino-new-auth.js:casino-new-430x932",
+        "js\\casino-new-auth.js:casino-new-768x1024",
+        "js\\casino-only-1win-auth.js:casino-only-1win-430x932"
+      ]
+    },
+    {
+      "id": "sidebar.standard.casino-1win-1440x900.47ae3c8e",
+      "source": "components/sidebar.html",
+      "uses": 24,
+      "owners": [
+        "js\\casino-1win.js:casino-1win-1440x900",
+        "js\\casino-1win.js:casino-1win-1920x1080",
+        "js\\casino-bonus-buy.js:casino-bonus-buy-1440x900",
+        "js\\casino-bonus-buy.js:casino-bonus-buy-1920x1080",
+        "js\\casino-bonus-wagering.js:casino-bonus-wagering-1440x900",
+        "js\\casino-bonus-wagering.js:casino-bonus-wagering-1920x1080",
+        "js\\casino-fishing.js:casino-fishing-1440x900",
+        "js\\casino-fishing.js:casino-fishing-1920x1080",
+        "js\\casino-jili.js:casino-jili-1440x900",
+        "js\\casino-jili.js:casino-jili-1920x1080",
+        "js\\casino-new.js:casino-new-1440x900",
+        "js\\casino-new.js:casino-new-1920x1080",
+        "js\\casino-only-1win.js:casino-only-1win-1440x900",
+        "js\\casino-only-1win.js:casino-only-1win-1920x1080",
+        "js\\casino-slots.js:casino-slots-1440x900",
+        "js\\casino-slots.js:casino-slots-1920x1080",
+        "casino-1win.html",
+        "casino-bonus-buy.html",
+        "casino-bonus-wagering.html",
+        "casino-fishing.html",
+        "casino-jili.html",
+        "casino-new.html",
+        "casino-only-1win.html",
+        "casino-slots.html"
+      ]
+    },
+    {
+      "id": "sidebar.standard.casino-1win-390x844.fd176b9c",
+      "source": "components/sidebar.html",
+      "uses": 23,
+      "owners": [
+        "js\\casino-1win.js:casino-1win-390x844",
+        "js\\casino-1win.js:casino-1win-430x932",
+        "js\\casino-1win.js:casino-1win-768x1024",
+        "js\\casino-bonus-buy.js:casino-bonus-buy-390x844",
+        "js\\casino-bonus-buy.js:casino-bonus-buy-430x932",
+        "js\\casino-bonus-buy.js:casino-bonus-buy-768x1024",
+        "js\\casino-bonus-wagering.js:casino-bonus-wagering-390x844",
+        "js\\casino-bonus-wagering.js:casino-bonus-wagering-430x932",
+        "js\\casino-bonus-wagering.js:casino-bonus-wagering-768x1024",
+        "js\\casino-fishing.js:casino-fishing-390x844",
+        "js\\casino-fishing.js:casino-fishing-430x932",
+        "js\\casino-fishing.js:casino-fishing-768x1024",
+        "js\\casino-jili.js:casino-jili-390x844",
+        "js\\casino-jili.js:casino-jili-430x932",
+        "js\\casino-jili.js:casino-jili-768x1024",
+        "js\\casino-new.js:casino-new-390x844",
+        "js\\casino-new.js:casino-new-430x932",
+        "js\\casino-new.js:casino-new-768x1024",
+        "js\\casino-only-1win.js:casino-only-1win-390x844",
+        "js\\casino-only-1win.js:casino-only-1win-430x932",
+        "js\\casino-only-1win.js:casino-only-1win-768x1024",
+        "js\\casino-slots.js:casino-slots-390x844",
+        "js\\casino-slots.js:casino-slots-430x932"
+      ]
+    },
+    {
+      "id": "sidebar.standard.casino-1920x1080.f1117c71",
+      "source": "components/sidebar.html",
+      "uses": 3,
+      "owners": [
+        "js\\casino-auth.js:casino-1920x1080",
+        "js\\casino-auth.js:casino-1440x900",
+        "js\\sidebar.js:expanded-casino"
+      ]
+    },
+    {
+      "id": "sidebar.standard.casino-768x1024.c815cd79",
+      "source": "components/sidebar.html",
+      "uses": 3,
+      "owners": [
+        "js\\casino-auth.js:casino-768x1024",
+        "js\\casino-auth.js:casino-390x844",
+        "js\\casino-auth.js:casino-430x932"
+      ]
+    },
+    {
+      "id": "sidebar.standard.casino-bonus-wagering-1920x1080.f8a371b5",
+      "source": "components/sidebar.html",
+      "uses": 2,
+      "owners": [
+        "js\\casino-bonus-wagering-auth.js:casino-bonus-wagering-1920x1080",
+        "js\\casino-slots-auth.js:casino-slots-1920x1080"
+      ]
+    },
+    {
+      "id": "sidebar.standard.casino-bonus-wagering-768x1024.093066db",
+      "source": "components/sidebar.html",
+      "uses": 1,
+      "owners": [
+        "js\\casino-bonus-wagering-auth.js:casino-bonus-wagering-768x1024"
+      ]
+    },
+    {
+      "id": "sidebar.standard.casino-fishing-1920x1080.3e7fce43",
+      "source": "components/sidebar.html",
+      "uses": 1,
+      "owners": [
+        "js\\casino-fishing-auth.js:casino-fishing-1920x1080"
+      ]
+    },
+    {
+      "id": "sidebar.standard.casino-jili-1440x900.24804817",
+      "source": "components/sidebar.html",
+      "uses": 2,
+      "owners": [
+        "js\\casino-jili-auth.js:casino-jili-1440x900",
+        "js\\casino-only-1win-auth.js:casino-only-1win-1920x1080"
+      ]
+    },
+    {
+      "id": "sidebar.standard.casino-live-1440x900.c0dc2d74",
+      "source": "components/sidebar.html",
+      "uses": 32,
+      "owners": [
+        "js\\casino-live-1win-live-auth.js:casino-live-1win-live-1440x900",
+        "js\\casino-live-1win-live-auth.js:casino-live-1win-live-768x1024",
+        "js\\casino-live-ae-sexy-auth.js:casino-live-ae-sexy-1440x900",
+        "js\\casino-live-ae-sexy-auth.js:casino-live-ae-sexy-768x1024",
+        "js\\casino-live-auth.js:casino-live-1440x900",
+        "js\\casino-live-auth.js:casino-live-768x1024",
+        "js\\casino-live-baccarat-auth.js:casino-live-baccarat-1440x900",
+        "js\\casino-live-baccarat-auth.js:casino-live-baccarat-768x1024",
+        "js\\casino-live-blackjack-auth.js:casino-live-blackjack-1440x900",
+        "js\\casino-live-blackjack-auth.js:casino-live-blackjack-768x1024",
+        "js\\casino-live-dragon-tiger-auth.js:casino-live-dragon-tiger-1440x900",
+        "js\\casino-live-dragon-tiger-auth.js:casino-live-dragon-tiger-768x1024",
+        "js\\casino-live-emperors-collection-auth.js:casino-live-emperors-collection-1440x900",
+        "js\\casino-live-emperors-collection-auth.js:casino-live-emperors-collection-768x1024",
+        "js\\casino-live-evolution-auth.js:casino-live-evolution-1440x900",
+        "js\\casino-live-evolution-auth.js:casino-live-evolution-768x1024",
+        "js\\casino-live-game-shows-auth.js:casino-live-game-shows-1440x900",
+        "js\\casino-live-game-shows-auth.js:casino-live-game-shows-768x1024",
+        "js\\casino-live-new-live-games-auth.js:casino-live-new-live-games-1440x900",
+        "js\\casino-live-new-live-games-auth.js:casino-live-new-live-games-768x1024",
+        "js\\casino-live-playtech-live-auth.js:casino-live-playtech-live-1440x900",
+        "js\\casino-live-playtech-live-auth.js:casino-live-playtech-live-768x1024",
+        "js\\casino-live-poker-auth.js:casino-live-poker-1440x900",
+        "js\\casino-live-poker-auth.js:casino-live-poker-768x1024",
+        "js\\casino-live-pragmatic-play-auth.js:casino-live-pragmatic-play-1440x900",
+        "js\\casino-live-pragmatic-play-auth.js:casino-live-pragmatic-play-768x1024",
+        "js\\casino-live-roulette-auth.js:casino-live-roulette-1440x900",
+        "js\\casino-live-roulette-auth.js:casino-live-roulette-768x1024",
+        "js\\casino-live-sa-gaming-auth.js:casino-live-sa-gaming-1440x900",
+        "js\\casino-live-sa-gaming-auth.js:casino-live-sa-gaming-768x1024",
+        "js\\casino-live-sic-bo-auth.js:casino-live-sic-bo-1440x900",
+        "js\\casino-live-sic-bo-auth.js:casino-live-sic-bo-768x1024"
+      ]
+    },
+    {
+      "id": "sidebar.standard.casino-live-1920x1080.feab8b90",
+      "source": "components/sidebar.html",
+      "uses": 24,
+      "owners": [
+        "js\\casino-live-1win-live-auth.js:casino-live-1win-live-1920x1080",
+        "js\\casino-live-ae-sexy-auth.js:casino-live-ae-sexy-1920x1080",
+        "js\\casino-live-auth.js:casino-live-1920x1080",
+        "js\\casino-live-baccarat-auth.js:casino-live-baccarat-1920x1080",
+        "js\\casino-live-blackjack-auth.js:casino-live-blackjack-1920x1080",
+        "js\\casino-live-dragon-tiger-auth.js:casino-live-dragon-tiger-1920x1080",
+        "js\\casino-live-emperors-collection-auth.js:casino-live-emperors-collection-1920x1080",
+        "js\\casino-live-evolution-auth.js:casino-live-evolution-1920x1080",
+        "js\\casino-live-game-shows-auth.js:casino-live-game-shows-1920x1080",
+        "js\\casino-live-new-live-games-auth.js:casino-live-new-live-games-1920x1080",
+        "js\\casino-live-playtech-live-auth.js:casino-live-playtech-live-1920x1080",
+        "js\\casino-live-poker-auth.js:casino-live-poker-1920x1080",
+        "js\\casino-live-pragmatic-play-auth.js:casino-live-pragmatic-play-1920x1080",
+        "js\\casino-live-roulette-auth.js:casino-live-roulette-1920x1080",
+        "js\\casino-live-sa-gaming-auth.js:casino-live-sa-gaming-1920x1080",
+        "js\\casino-live-sic-bo-auth.js:casino-live-sic-bo-1920x1080",
+        "js\\casino-quick-1win-games-auth.js:casino-quick-1win-games-1920x1080",
+        "js\\casino-quick-auth.js:casino-quick-1920x1080",
+        "js\\casino-quick-chicken-games-auth.js:casino-quick-chicken-games-1920x1080",
+        "js\\casino-quick-crash-games-auth.js:casino-quick-crash-games-1920x1080",
+        "js\\casino-quick-lotteries-auth.js:casino-quick-lotteries-1920x1080",
+        "js\\casino-quick-mines-auth.js:casino-quick-mines-1920x1080",
+        "js\\casino-quick-plinko-auth.js:casino-quick-plinko-1920x1080",
+        "js\\casino-quick-sport-auth.js:casino-quick-sport-1920x1080"
+      ]
+    },
+    {
+      "id": "sidebar.standard.casino-live-390x844.93334d21",
+      "source": "components/sidebar.html",
+      "uses": 32,
+      "owners": [
+        "js\\casino-live-1win-live-auth.js:casino-live-1win-live-390x844",
+        "js\\casino-live-1win-live-auth.js:casino-live-1win-live-430x932",
+        "js\\casino-live-ae-sexy-auth.js:casino-live-ae-sexy-390x844",
+        "js\\casino-live-ae-sexy-auth.js:casino-live-ae-sexy-430x932",
+        "js\\casino-live-auth.js:casino-live-390x844",
+        "js\\casino-live-auth.js:casino-live-430x932",
+        "js\\casino-live-baccarat-auth.js:casino-live-baccarat-390x844",
+        "js\\casino-live-baccarat-auth.js:casino-live-baccarat-430x932",
+        "js\\casino-live-blackjack-auth.js:casino-live-blackjack-390x844",
+        "js\\casino-live-blackjack-auth.js:casino-live-blackjack-430x932",
+        "js\\casino-live-dragon-tiger-auth.js:casino-live-dragon-tiger-390x844",
+        "js\\casino-live-dragon-tiger-auth.js:casino-live-dragon-tiger-430x932",
+        "js\\casino-live-emperors-collection-auth.js:casino-live-emperors-collection-390x844",
+        "js\\casino-live-emperors-collection-auth.js:casino-live-emperors-collection-430x932",
+        "js\\casino-live-evolution-auth.js:casino-live-evolution-390x844",
+        "js\\casino-live-evolution-auth.js:casino-live-evolution-430x932",
+        "js\\casino-live-game-shows-auth.js:casino-live-game-shows-390x844",
+        "js\\casino-live-game-shows-auth.js:casino-live-game-shows-430x932",
+        "js\\casino-live-new-live-games-auth.js:casino-live-new-live-games-390x844",
+        "js\\casino-live-new-live-games-auth.js:casino-live-new-live-games-430x932",
+        "js\\casino-live-playtech-live-auth.js:casino-live-playtech-live-390x844",
+        "js\\casino-live-playtech-live-auth.js:casino-live-playtech-live-430x932",
+        "js\\casino-live-poker-auth.js:casino-live-poker-390x844",
+        "js\\casino-live-poker-auth.js:casino-live-poker-430x932",
+        "js\\casino-live-pragmatic-play-auth.js:casino-live-pragmatic-play-390x844",
+        "js\\casino-live-pragmatic-play-auth.js:casino-live-pragmatic-play-430x932",
+        "js\\casino-live-roulette-auth.js:casino-live-roulette-390x844",
+        "js\\casino-live-roulette-auth.js:casino-live-roulette-430x932",
+        "js\\casino-live-sa-gaming-auth.js:casino-live-sa-gaming-390x844",
+        "js\\casino-live-sa-gaming-auth.js:casino-live-sa-gaming-430x932",
+        "js\\casino-live-sic-bo-auth.js:casino-live-sic-bo-390x844",
+        "js\\casino-live-sic-bo-auth.js:casino-live-sic-bo-430x932"
+      ]
+    },
+    {
+      "id": "sidebar.standard.casino-live-1440x900.fd82742b",
+      "source": "components/sidebar.html",
+      "uses": 61,
+      "owners": [
+        "js\\casino-live-1win-live.js:casino-live-1win-live-1440x900",
+        "js\\casino-live-ae-sexy.js:casino-live-ae-sexy-1440x900",
+        "js\\casino-live-baccarat.js:casino-live-baccarat-1440x900",
+        "js\\casino-live-blackjack.js:casino-live-blackjack-1440x900",
+        "js\\casino-live-dragon-tiger.js:casino-live-dragon-tiger-1440x900",
+        "js\\casino-live-emperors-collection.js:casino-live-emperors-collection-1440x900",
+        "js\\casino-live-evolution.js:casino-live-evolution-1440x900",
+        "js\\casino-live-game-shows.js:casino-live-game-shows-1440x900",
+        "js\\casino-live-new-live-games.js:casino-live-new-live-games-1440x900",
+        "js\\casino-live-playtech-live.js:casino-live-playtech-live-1440x900",
+        "js\\casino-live-poker.js:casino-live-poker-1440x900",
+        "js\\casino-live-pragmatic-play.js:casino-live-pragmatic-play-1440x900",
+        "js\\casino-live-roulette.js:casino-live-roulette-1440x900",
+        "js\\casino-live-sa-gaming.js:casino-live-sa-gaming-1440x900",
+        "js\\casino-live-sic-bo.js:casino-live-sic-bo-1440x900",
+        "js\\casino-live.js:casino-live-1440x900",
+        "js\\casino-quick-1win-games.js:casino-quick-1win-games-1440x900",
+        "js\\casino-quick-1win-games.js:casino-quick-1win-games-1920x1080",
+        "js\\casino-quick-chicken-games.js:casino-quick-chicken-games-1440x900",
+        "js\\casino-quick-chicken-games.js:casino-quick-chicken-games-1920x1080",
+        "js\\casino-quick-crash-games.js:casino-quick-crash-games-1440x900",
+        "js\\casino-quick-crash-games.js:casino-quick-crash-games-1920x1080",
+        "js\\casino-quick-lotteries.js:casino-quick-lotteries-1440x900",
+        "js\\casino-quick-lotteries.js:casino-quick-lotteries-1920x1080",
+        "js\\casino-quick-mines.js:casino-quick-mines-1440x900",
+        "js\\casino-quick-mines.js:casino-quick-mines-1920x1080",
+        "js\\casino-quick-plinko.js:casino-quick-plinko-1440x900",
+        "js\\casino-quick-plinko.js:casino-quick-plinko-1920x1080",
+        "js\\casino-quick-sport.js:casino-quick-sport-1440x900",
+        "js\\casino-quick-sport.js:casino-quick-sport-1920x1080",
+        "js\\casino-quick.js:casino-quick-1440x900",
+        "js\\casino-quick.js:casino-quick-1920x1080",
+        "js\\home.js:home-1440x900",
+        "casino-live-1win-live.html",
+        "casino-live-ae-sexy.html",
+        "casino-live-baccarat.html",
+        "casino-live-blackjack.html",
+        "casino-live-dragon-tiger.html",
+        "casino-live-emperors-collection.html",
+        "casino-live-evolution.html",
+        "casino-live-game-shows.html",
+        "casino-live-new-live-games.html",
+        "casino-live-playtech-live.html",
+        "casino-live-poker.html",
+        "casino-live-pragmatic-play.html",
+        "casino-live-roulette.html",
+        "casino-live-sa-gaming.html",
+        "casino-live-sic-bo.html",
+        "casino-live.html",
+        "casino-quick-1win-games.html",
+        "casino-quick-chicken-games.html",
+        "casino-quick-crash-games.html",
+        "casino-quick-lotteries.html",
+        "casino-quick-mines.html",
+        "casino-quick-plinko.html",
+        "casino-quick-sport.html",
+        "casino-quick.html",
+        "index.html",
+        "login.html",
+        "recovery.html",
+        "register.html"
+      ]
+    },
+    {
+      "id": "sidebar.standard.casino-live-1920x1080.4371af28",
+      "source": "components/sidebar.html",
+      "uses": 16,
+      "owners": [
+        "js\\casino-live-1win-live.js:casino-live-1win-live-1920x1080",
+        "js\\casino-live-ae-sexy.js:casino-live-ae-sexy-1920x1080",
+        "js\\casino-live-baccarat.js:casino-live-baccarat-1920x1080",
+        "js\\casino-live-blackjack.js:casino-live-blackjack-1920x1080",
+        "js\\casino-live-dragon-tiger.js:casino-live-dragon-tiger-1920x1080",
+        "js\\casino-live-emperors-collection.js:casino-live-emperors-collection-1920x1080",
+        "js\\casino-live-evolution.js:casino-live-evolution-1920x1080",
+        "js\\casino-live-game-shows.js:casino-live-game-shows-1920x1080",
+        "js\\casino-live-new-live-games.js:casino-live-new-live-games-1920x1080",
+        "js\\casino-live-playtech-live.js:casino-live-playtech-live-1920x1080",
+        "js\\casino-live-poker.js:casino-live-poker-1920x1080",
+        "js\\casino-live-pragmatic-play.js:casino-live-pragmatic-play-1920x1080",
+        "js\\casino-live-roulette.js:casino-live-roulette-1920x1080",
+        "js\\casino-live-sa-gaming.js:casino-live-sa-gaming-1920x1080",
+        "js\\casino-live-sic-bo.js:casino-live-sic-bo-1920x1080",
+        "js\\casino-live.js:casino-live-1920x1080"
+      ]
+    },
+    {
+      "id": "sidebar.standard.casino-live-390x844.06bd6cff",
+      "source": "components/sidebar.html",
+      "uses": 59,
+      "owners": [
+        "js\\casino-live-1win-live.js:casino-live-1win-live-390x844",
+        "js\\casino-live-1win-live.js:casino-live-1win-live-430x932",
+        "js\\casino-live-ae-sexy.js:casino-live-ae-sexy-390x844",
+        "js\\casino-live-ae-sexy.js:casino-live-ae-sexy-430x932",
+        "js\\casino-live-baccarat.js:casino-live-baccarat-390x844",
+        "js\\casino-live-baccarat.js:casino-live-baccarat-430x932",
+        "js\\casino-live-blackjack.js:casino-live-blackjack-390x844",
+        "js\\casino-live-blackjack.js:casino-live-blackjack-430x932",
+        "js\\casino-live-dragon-tiger.js:casino-live-dragon-tiger-390x844",
+        "js\\casino-live-dragon-tiger.js:casino-live-dragon-tiger-430x932",
+        "js\\casino-live-emperors-collection.js:casino-live-emperors-collection-390x844",
+        "js\\casino-live-emperors-collection.js:casino-live-emperors-collection-430x932",
+        "js\\casino-live-evolution.js:casino-live-evolution-390x844",
+        "js\\casino-live-evolution.js:casino-live-evolution-430x932",
+        "js\\casino-live-game-shows.js:casino-live-game-shows-390x844",
+        "js\\casino-live-game-shows.js:casino-live-game-shows-430x932",
+        "js\\casino-live-new-live-games.js:casino-live-new-live-games-390x844",
+        "js\\casino-live-new-live-games.js:casino-live-new-live-games-430x932",
+        "js\\casino-live-playtech-live.js:casino-live-playtech-live-390x844",
+        "js\\casino-live-playtech-live.js:casino-live-playtech-live-430x932",
+        "js\\casino-live-poker.js:casino-live-poker-390x844",
+        "js\\casino-live-poker.js:casino-live-poker-430x932",
+        "js\\casino-live-pragmatic-play.js:casino-live-pragmatic-play-390x844",
+        "js\\casino-live-pragmatic-play.js:casino-live-pragmatic-play-430x932",
+        "js\\casino-live-roulette.js:casino-live-roulette-390x844",
+        "js\\casino-live-roulette.js:casino-live-roulette-430x932",
+        "js\\casino-live-sa-gaming.js:casino-live-sa-gaming-390x844",
+        "js\\casino-live-sa-gaming.js:casino-live-sa-gaming-430x932",
+        "js\\casino-live-sic-bo.js:casino-live-sic-bo-390x844",
+        "js\\casino-live-sic-bo.js:casino-live-sic-bo-430x932",
+        "js\\casino-live.js:casino-live-390x844",
+        "js\\casino-live.js:casino-live-430x932",
+        "js\\casino-quick-1win-games.js:casino-quick-1win-games-390x844",
+        "js\\casino-quick-1win-games.js:casino-quick-1win-games-430x932",
+        "js\\casino-quick-1win-games.js:casino-quick-1win-games-768x1024",
+        "js\\casino-quick-chicken-games.js:casino-quick-chicken-games-390x844",
+        "js\\casino-quick-chicken-games.js:casino-quick-chicken-games-430x932",
+        "js\\casino-quick-chicken-games.js:casino-quick-chicken-games-768x1024",
+        "js\\casino-quick-crash-games.js:casino-quick-crash-games-390x844",
+        "js\\casino-quick-crash-games.js:casino-quick-crash-games-430x932",
+        "js\\casino-quick-crash-games.js:casino-quick-crash-games-768x1024",
+        "js\\casino-quick-lotteries.js:casino-quick-lotteries-390x844",
+        "js\\casino-quick-lotteries.js:casino-quick-lotteries-430x932",
+        "js\\casino-quick-lotteries.js:casino-quick-lotteries-768x1024",
+        "js\\casino-quick-mines.js:casino-quick-mines-390x844",
+        "js\\casino-quick-mines.js:casino-quick-mines-430x932",
+        "js\\casino-quick-mines.js:casino-quick-mines-768x1024",
+        "js\\casino-quick-plinko.js:casino-quick-plinko-390x844",
+        "js\\casino-quick-plinko.js:casino-quick-plinko-430x932",
+        "js\\casino-quick-plinko.js:casino-quick-plinko-768x1024",
+        "js\\casino-quick-sport.js:casino-quick-sport-390x844",
+        "js\\casino-quick-sport.js:casino-quick-sport-430x932",
+        "js\\casino-quick-sport.js:casino-quick-sport-768x1024",
+        "js\\casino-quick.js:casino-quick-390x844",
+        "js\\casino-quick.js:casino-quick-430x932",
+        "js\\casino-quick.js:casino-quick-768x1024",
+        "js\\home.js:home-390x844",
+        "js\\home.js:home-430x932",
+        "js\\home.js:home-768x1024"
+      ]
+    },
+    {
+      "id": "sidebar.standard.casino-live-768x1024.d2e4573d",
+      "source": "components/sidebar.html",
+      "uses": 16,
+      "owners": [
+        "js\\casino-live-1win-live.js:casino-live-1win-live-768x1024",
+        "js\\casino-live-ae-sexy.js:casino-live-ae-sexy-768x1024",
+        "js\\casino-live-baccarat.js:casino-live-baccarat-768x1024",
+        "js\\casino-live-blackjack.js:casino-live-blackjack-768x1024",
+        "js\\casino-live-dragon-tiger.js:casino-live-dragon-tiger-768x1024",
+        "js\\casino-live-emperors-collection.js:casino-live-emperors-collection-768x1024",
+        "js\\casino-live-evolution.js:casino-live-evolution-768x1024",
+        "js\\casino-live-game-shows.js:casino-live-game-shows-768x1024",
+        "js\\casino-live-new-live-games.js:casino-live-new-live-games-768x1024",
+        "js\\casino-live-playtech-live.js:casino-live-playtech-live-768x1024",
+        "js\\casino-live-poker.js:casino-live-poker-768x1024",
+        "js\\casino-live-pragmatic-play.js:casino-live-pragmatic-play-768x1024",
+        "js\\casino-live-roulette.js:casino-live-roulette-768x1024",
+        "js\\casino-live-sa-gaming.js:casino-live-sa-gaming-768x1024",
+        "js\\casino-live-sic-bo.js:casino-live-sic-bo-768x1024",
+        "js\\casino-live.js:casino-live-768x1024"
+      ]
+    },
+    {
+      "id": "sidebar.standard.casino-providers-1440x900.72eab7b5",
+      "source": "components/sidebar.html",
+      "uses": 6,
+      "owners": [
+        "js\\casino-providers-auth.js:casino-providers-1440x900",
+        "js\\casino-providers-auth.js:casino-providers-1920x1080",
+        "js\\casino-search-auth.js:casino-search-1440x900",
+        "js\\casino-search-auth.js:casino-search-1920x1080",
+        "js\\casino-search-results-auth.js:casino-search-results-1440x900",
+        "js\\casino-search-results-auth.js:casino-search-results-1920x1080"
+      ]
+    },
+    {
+      "id": "sidebar.standard.casino-providers-390x844.7ce3f32f",
+      "source": "components/sidebar.html",
+      "uses": 9,
+      "owners": [
+        "js\\casino-providers-auth.js:casino-providers-390x844",
+        "js\\casino-providers-auth.js:casino-providers-430x932",
+        "js\\casino-providers-auth.js:casino-providers-768x1024",
+        "js\\casino-search-auth.js:casino-search-390x844",
+        "js\\casino-search-auth.js:casino-search-430x932",
+        "js\\casino-search-auth.js:casino-search-768x1024",
+        "js\\casino-search-results-auth.js:casino-search-results-390x844",
+        "js\\casino-search-results-auth.js:casino-search-results-430x932",
+        "js\\casino-search-results-auth.js:casino-search-results-768x1024"
+      ]
+    },
+    {
+      "id": "sidebar.standard.casino-providers-1440x900.9bd0f890",
+      "source": "components/sidebar.html",
+      "uses": 13,
+      "owners": [
+        "js\\casino-providers.js:casino-providers-1440x900",
+        "js\\casino-providers.js:casino-providers-1920x1080",
+        "js\\casino-recommended.js:casino-recommended-1440x900",
+        "js\\casino-search-results.js:casino-search-results-1440x900",
+        "js\\casino-search-results.js:casino-search-results-1920x1080",
+        "js\\casino-search.js:casino-search-1440x900",
+        "js\\casino-search.js:casino-search-1920x1080",
+        "js\\casino.js:casino-1440x900",
+        "casino-providers.html",
+        "casino-recommended.html",
+        "casino-search-results.html",
+        "casino-search.html",
+        "casino.html"
+      ]
+    },
+    {
+      "id": "sidebar.standard.casino-providers-390x844.907d6800",
+      "source": "components/sidebar.html",
+      "uses": 15,
+      "owners": [
+        "js\\casino-providers.js:casino-providers-390x844",
+        "js\\casino-providers.js:casino-providers-430x932",
+        "js\\casino-providers.js:casino-providers-768x1024",
+        "js\\casino-recommended.js:casino-recommended-390x844",
+        "js\\casino-recommended.js:casino-recommended-430x932",
+        "js\\casino-recommended.js:casino-recommended-768x1024",
+        "js\\casino-search-results.js:casino-search-results-390x844",
+        "js\\casino-search-results.js:casino-search-results-430x932",
+        "js\\casino-search-results.js:casino-search-results-768x1024",
+        "js\\casino-search.js:casino-search-390x844",
+        "js\\casino-search.js:casino-search-430x932",
+        "js\\casino-search.js:casino-search-768x1024",
+        "js\\casino.js:casino-390x844",
+        "js\\casino.js:casino-430x932",
+        "js\\casino.js:casino-768x1024"
+      ]
+    },
+    {
+      "id": "sidebar.standard.casino-quick-1440x900.aa24bda3",
+      "source": "components/sidebar.html",
+      "uses": 8,
+      "owners": [
+        "js\\casino-quick-1win-games-auth.js:casino-quick-1win-games-1440x900",
+        "js\\casino-quick-auth.js:casino-quick-1440x900",
+        "js\\casino-quick-chicken-games-auth.js:casino-quick-chicken-games-1440x900",
+        "js\\casino-quick-crash-games-auth.js:casino-quick-crash-games-1440x900",
+        "js\\casino-quick-lotteries-auth.js:casino-quick-lotteries-1440x900",
+        "js\\casino-quick-mines-auth.js:casino-quick-mines-1440x900",
+        "js\\casino-quick-plinko-auth.js:casino-quick-plinko-1440x900",
+        "js\\casino-quick-sport-auth.js:casino-quick-sport-1440x900"
+      ]
+    },
+    {
+      "id": "sidebar.standard.casino-quick-390x844.9867b38e",
+      "source": "components/sidebar.html",
+      "uses": 20,
+      "owners": [
+        "js\\casino-quick-1win-games-auth.js:casino-quick-1win-games-390x844",
+        "js\\casino-quick-1win-games-auth.js:casino-quick-1win-games-430x932",
+        "js\\casino-quick-auth.js:casino-quick-390x844",
+        "js\\casino-quick-auth.js:casino-quick-430x932",
+        "js\\casino-quick-chicken-games-auth.js:casino-quick-chicken-games-390x844",
+        "js\\casino-quick-chicken-games-auth.js:casino-quick-chicken-games-430x932",
+        "js\\casino-quick-crash-games-auth.js:casino-quick-crash-games-390x844",
+        "js\\casino-quick-crash-games-auth.js:casino-quick-crash-games-430x932",
+        "js\\casino-quick-lotteries-auth.js:casino-quick-lotteries-390x844",
+        "js\\casino-quick-lotteries-auth.js:casino-quick-lotteries-430x932",
+        "js\\casino-quick-mines-auth.js:casino-quick-mines-390x844",
+        "js\\casino-quick-mines-auth.js:casino-quick-mines-430x932",
+        "js\\casino-quick-plinko-auth.js:casino-quick-plinko-390x844",
+        "js\\casino-quick-plinko-auth.js:casino-quick-plinko-430x932",
+        "js\\casino-quick-sport-auth.js:casino-quick-sport-390x844",
+        "js\\casino-quick-sport-auth.js:casino-quick-sport-430x932",
+        "js\\home-auth.js:home-1920x1080",
+        "js\\home-auth.js:home-390x844",
+        "js\\home-auth.js:home-430x932",
+        "js\\home-auth.js:home-768x1024"
+      ]
+    },
+    {
+      "id": "sidebar.standard.casino-quick-768x1024.572e2635",
+      "source": "components/sidebar.html",
+      "uses": 8,
+      "owners": [
+        "js\\casino-quick-1win-games-auth.js:casino-quick-1win-games-768x1024",
+        "js\\casino-quick-auth.js:casino-quick-768x1024",
+        "js\\casino-quick-chicken-games-auth.js:casino-quick-chicken-games-768x1024",
+        "js\\casino-quick-crash-games-auth.js:casino-quick-crash-games-768x1024",
+        "js\\casino-quick-lotteries-auth.js:casino-quick-lotteries-768x1024",
+        "js\\casino-quick-mines-auth.js:casino-quick-mines-768x1024",
+        "js\\casino-quick-plinko-auth.js:casino-quick-plinko-768x1024",
+        "js\\casino-quick-sport-auth.js:casino-quick-sport-768x1024"
+      ]
+    },
+    {
+      "id": "sidebar.standard.casino-recommended-1920x1080.50424f5e",
+      "source": "components/sidebar.html",
+      "uses": 1,
+      "owners": [
+        "js\\casino-recommended-auth.js:casino-recommended-1920x1080"
+      ]
+    },
+    {
+      "id": "sidebar.standard.casino-recommended-1920x1080.a1d8235e",
+      "source": "components/sidebar.html",
+      "uses": 2,
+      "owners": [
+        "js\\casino-recommended.js:casino-recommended-1920x1080",
+        "js\\casino.js:casino-1920x1080"
+      ]
+    },
+    {
+      "id": "sidebar.standard.casino-slots-768x1024.5eb7dd34",
+      "source": "components/sidebar.html",
+      "uses": 1,
+      "owners": [
+        "js\\casino-slots.js:casino-slots-768x1024"
+      ]
+    },
+    {
+      "id": "sidebar.standard.freemoney-1440x900.2b50304c",
+      "source": "components/sidebar.html",
+      "uses": 3,
+      "owners": [
+        "js\\freemoney-auth.js:freemoney-1440x900",
+        "js\\freemoney-auth.js:freemoney-1920x1080",
+        "js\\freemoney-auth.js:freemoney-768x1024"
+      ]
+    },
+    {
+      "id": "sidebar.standard.freemoney-390x844.196ecf87",
+      "source": "components/sidebar.html",
+      "uses": 2,
+      "owners": [
+        "js\\freemoney-auth.js:freemoney-390x844",
+        "js\\freemoney-auth.js:freemoney-430x932"
+      ]
+    },
+    {
+      "id": "sidebar.standard.freemoney-1440x900.b92cd705",
+      "source": "components/sidebar.html",
+      "uses": 2,
+      "owners": [
+        "js\\freemoney.js:freemoney-1440x900",
+        "freemoney.html"
+      ]
+    },
+    {
+      "id": "sidebar.standard.freemoney-1920x1080.f0551135",
+      "source": "components/sidebar.html",
+      "uses": 1,
+      "owners": [
+        "js\\freemoney.js:freemoney-1920x1080"
+      ]
+    },
+    {
+      "id": "sidebar.standard.freemoney-390x844.edaefa99",
+      "source": "components/sidebar.html",
+      "uses": 3,
+      "owners": [
+        "js\\freemoney.js:freemoney-390x844",
+        "js\\freemoney.js:freemoney-430x932",
+        "js\\freemoney.js:freemoney-768x1024"
+      ]
+    },
+    {
+      "id": "sidebar.standard.home-1440x900.6f3796a7",
+      "source": "components/sidebar.html",
+      "uses": 1,
+      "owners": [
+        "js\\home-auth.js:home-1440x900"
+      ]
+    },
+    {
+      "id": "sidebar.standard.home-1920x1080.3cdb8c30",
+      "source": "components/sidebar.html",
+      "uses": 1,
+      "owners": [
+        "js\\home.js:home-1920x1080"
+      ]
+    },
+    {
+      "id": "sidebar.standard.loyalty-program-1440x900.9469f8c4",
+      "source": "components/sidebar.html",
+      "uses": 2,
+      "owners": [
+        "js\\loyalty-program-auth.js:loyalty-program-1440x900",
+        "js\\loyalty-program-auth.js:loyalty-program-768x1024"
+      ]
+    },
+    {
+      "id": "sidebar.standard.loyalty-program-1920x1080.5cb9c01c",
+      "source": "components/sidebar.html",
+      "uses": 1,
+      "owners": [
+        "js\\loyalty-program-auth.js:loyalty-program-1920x1080"
+      ]
+    },
+    {
+      "id": "sidebar.standard.loyalty-program-390x844.8b722822",
+      "source": "components/sidebar.html",
+      "uses": 2,
+      "owners": [
+        "js\\loyalty-program-auth.js:loyalty-program-390x844",
+        "js\\loyalty-program-auth.js:loyalty-program-430x932"
+      ]
+    },
+    {
+      "id": "sidebar.standard.loyalty-program-1440x900.e9579fd6",
+      "source": "components/sidebar.html",
+      "uses": 3,
+      "owners": [
+        "js\\loyalty-program.js:loyalty-program-1440x900",
+        "js\\loyalty-program.js:loyalty-program-1920x1080",
+        "loyalty-program.html"
+      ]
+    },
+    {
+      "id": "sidebar.standard.loyalty-program-390x844.80a81c52",
+      "source": "components/sidebar.html",
+      "uses": 3,
+      "owners": [
+        "js\\loyalty-program.js:loyalty-program-390x844",
+        "js\\loyalty-program.js:loyalty-program-430x932",
+        "js\\loyalty-program.js:loyalty-program-768x1024"
+      ]
+    },
+    {
+      "id": "sidebar.standard.promotions-1440x900.7f181496",
+      "source": "components/sidebar.html",
+      "uses": 2,
+      "owners": [
+        "js\\promotions-auth.js:promotions-1440x900",
+        "js\\promotions-auth.js:promotions-1920x1080"
+      ]
+    },
+    {
+      "id": "sidebar.standard.promotions-390x844.cc145349",
+      "source": "components/sidebar.html",
+      "uses": 2,
+      "owners": [
+        "js\\promotions-auth.js:promotions-390x844",
+        "js\\promotions-auth.js:promotions-768x1024"
+      ]
+    },
+    {
+      "id": "sidebar.standard.promotions-430x932.c94fd988",
+      "source": "components/sidebar.html",
+      "uses": 1,
+      "owners": [
+        "js\\promotions-auth.js:promotions-430x932"
+      ]
+    },
+    {
+      "id": "sidebar.standard.promotions-1440x900.b3b54c36",
+      "source": "components/sidebar.html",
+      "uses": 2,
+      "owners": [
+        "js\\promotions.js:promotions-1440x900",
+        "promotions.html"
+      ]
+    },
+    {
+      "id": "sidebar.standard.promotions-1920x1080.6c940422",
+      "source": "components/sidebar.html",
+      "uses": 1,
+      "owners": [
+        "js\\promotions.js:promotions-1920x1080"
+      ]
+    },
+    {
+      "id": "sidebar.standard.promotions-390x844.7d0b4f88",
+      "source": "components/sidebar.html",
+      "uses": 3,
+      "owners": [
+        "js\\promotions.js:promotions-390x844",
+        "js\\promotions.js:promotions-430x932",
+        "js\\promotions.js:promotions-768x1024"
+      ]
+    },
+    {
+      "id": "sidebar.standard.compact.6d0374a4",
+      "source": "components/sidebar.html",
+      "uses": 1,
+      "owners": [
+        "js\\sidebar.js:compact"
+      ]
+    },
+    {
+      "id": "sidebar.standard.compact-social.bce513f4",
+      "source": "components/sidebar.html",
+      "uses": 1,
+      "owners": [
+        "js\\sidebar.js:compact-social"
+      ]
+    },
+    {
+      "id": "sidebar.standard.sports-1440x900.81fc446d",
+      "source": "components/sidebar.html",
+      "uses": 1,
+      "owners": [
+        "js\\sports-auth.js:sports-1440x900"
+      ]
+    },
+    {
+      "id": "sidebar.standard.sports-1920x1080.984c66b2",
+      "source": "components/sidebar.html",
+      "uses": 1,
+      "owners": [
+        "js\\sports-auth.js:sports-1920x1080"
+      ]
+    },
+    {
+      "id": "sidebar.standard.sports-390x844.7e0bc27e",
+      "source": "components/sidebar.html",
+      "uses": 2,
+      "owners": [
+        "js\\sports-auth.js:sports-390x844",
+        "js\\sports-auth.js:sports-768x1024"
+      ]
+    },
+    {
+      "id": "sidebar.standard.sports-430x932.24ad1cc0",
+      "source": "components/sidebar.html",
+      "uses": 1,
+      "owners": [
+        "js\\sports-auth.js:sports-430x932"
+      ]
+    },
+    {
+      "id": "sidebar.standard.sports-esports-1440x900.d15528b8",
+      "source": "components/sidebar.html",
+      "uses": 3,
+      "owners": [
+        "js\\sports-esports-auth.js:sports-esports-1440x900",
+        "js\\sports-live-auth.js:sports-live-1440x900",
+        "js\\sports-upcoming-auth.js:sports-upcoming-1440x900"
+      ]
+    },
+    {
+      "id": "sidebar.standard.sports-esports-1920x1080.99eabaec",
+      "source": "components/sidebar.html",
+      "uses": 3,
+      "owners": [
+        "js\\sports-esports-auth.js:sports-esports-1920x1080",
+        "js\\sports-live-auth.js:sports-live-1920x1080",
+        "js\\sports-upcoming-auth.js:sports-upcoming-1920x1080"
+      ]
+    },
+    {
+      "id": "sidebar.standard.sports-esports-390x844.b17b44ea",
+      "source": "components/sidebar.html",
+      "uses": 8,
+      "owners": [
+        "js\\sports-esports-auth.js:sports-esports-390x844",
+        "js\\sports-esports-auth.js:sports-esports-430x932",
+        "js\\sports-esports-auth.js:sports-esports-768x1024",
+        "js\\sports-live-auth.js:sports-live-390x844",
+        "js\\sports-live-auth.js:sports-live-430x932",
+        "js\\sports-live-auth.js:sports-live-768x1024",
+        "js\\sports-upcoming-auth.js:sports-upcoming-390x844",
+        "js\\sports-upcoming-auth.js:sports-upcoming-430x932"
+      ]
+    },
+    {
+      "id": "sidebar.standard.sports-esports-1440x900.9e816403",
+      "source": "components/sidebar.html",
+      "uses": 8,
+      "owners": [
+        "js\\sports-esports.js:sports-esports-1440x900",
+        "js\\sports-esports.js:sports-esports-1920x1080",
+        "js\\sports-live.js:sports-live-1440x900",
+        "js\\sports-live.js:sports-live-1920x1080",
+        "js\\sports-upcoming.js:sports-upcoming-1440x900",
+        "sports-esports.html",
+        "sports-live.html",
+        "sports-upcoming.html"
+      ]
+    },
+    {
+      "id": "sidebar.standard.sports-esports-390x844.87d5b3b3",
+      "source": "components/sidebar.html",
+      "uses": 9,
+      "owners": [
+        "js\\sports-esports.js:sports-esports-390x844",
+        "js\\sports-esports.js:sports-esports-430x932",
+        "js\\sports-esports.js:sports-esports-768x1024",
+        "js\\sports-live.js:sports-live-390x844",
+        "js\\sports-live.js:sports-live-430x932",
+        "js\\sports-live.js:sports-live-768x1024",
+        "js\\sports-upcoming.js:sports-upcoming-390x844",
+        "js\\sports-upcoming.js:sports-upcoming-430x932",
+        "js\\sports-upcoming.js:sports-upcoming-768x1024"
+      ]
+    },
+    {
+      "id": "sidebar.standard.sports-upcoming-768x1024.3957d02d",
+      "source": "components/sidebar.html",
+      "uses": 1,
+      "owners": [
+        "js\\sports-upcoming-auth.js:sports-upcoming-768x1024"
+      ]
+    },
+    {
+      "id": "sidebar.standard.sports-upcoming-1920x1080.736b3205",
+      "source": "components/sidebar.html",
+      "uses": 1,
+      "owners": [
+        "js\\sports-upcoming.js:sports-upcoming-1920x1080"
+      ]
+    },
+    {
+      "id": "sidebar.standard.sports-1440x900.d414effc",
+      "source": "components/sidebar.html",
+      "uses": 3,
+      "owners": [
+        "js\\sports.js:sports-1440x900",
+        "js\\sports.js:sports-1920x1080",
+        "sports.html"
+      ]
+    },
+    {
+      "id": "sidebar.standard.sports-390x844.bb757b3d",
+      "source": "components/sidebar.html",
+      "uses": 3,
+      "owners": [
+        "js\\sports.js:sports-390x844",
+        "js\\sports.js:sports-430x932",
+        "js\\sports.js:sports-768x1024"
+      ]
+    },
+    {
+      "id": "sidebar.standard.tournaments-1440x900.9d8a4fa7",
+      "source": "components/sidebar.html",
+      "uses": 5,
+      "owners": [
+        "js\\tournaments-auth.js:tournaments-1440x900",
+        "js\\tournaments-auth.js:tournaments-1920x1080",
+        "js\\tournaments-auth.js:tournaments-390x844",
+        "js\\tournaments-auth.js:tournaments-430x932",
+        "js\\tournaments-auth.js:tournaments-768x1024"
+      ]
+    },
+    {
+      "id": "sidebar.standard.tournaments-1440x900.148dfa12",
+      "source": "components/sidebar.html",
+      "uses": 3,
+      "owners": [
+        "js\\tournaments.js:tournaments-1440x900",
+        "js\\tournaments.js:tournaments-1920x1080",
+        "tournaments.html"
+      ]
+    },
+    {
+      "id": "sidebar.standard.tournaments-390x844.179e8f7b",
+      "source": "components/sidebar.html",
+      "uses": 3,
+      "owners": [
+        "js\\tournaments.js:tournaments-390x844",
+        "js\\tournaments.js:tournaments-430x932",
+        "js\\tournaments.js:tournaments-768x1024"
+      ]
+    },
+    {
+      "id": "sidebar.standard.vip-club-1440x900.17ba34a8",
+      "source": "components/sidebar.html",
+      "uses": 1,
+      "owners": [
+        "js\\vip-club-auth.js:vip-club-1440x900"
+      ]
+    },
+    {
+      "id": "sidebar.standard.vip-club-1920x1080.5342b57c",
+      "source": "components/sidebar.html",
+      "uses": 1,
+      "owners": [
+        "js\\vip-club-auth.js:vip-club-1920x1080"
+      ]
+    },
+    {
+      "id": "sidebar.standard.vip-club-390x844.a26fb69d",
+      "source": "components/sidebar.html",
+      "uses": 3,
+      "owners": [
+        "js\\vip-club-auth.js:vip-club-390x844",
+        "js\\vip-club-auth.js:vip-club-430x932",
+        "js\\vip-club-auth.js:vip-club-768x1024"
+      ]
+    },
+    {
+      "id": "sidebar.standard.vip-club-1440x900.a183a385",
+      "source": "components/sidebar.html",
+      "uses": 3,
+      "owners": [
+        "js\\vip-club.js:vip-club-1440x900",
+        "js\\vip-club.js:vip-club-1920x1080",
+        "vip-club.html"
+      ]
+    },
+    {
+      "id": "sidebar.standard.vip-club-390x844.ee41650b",
+      "source": "components/sidebar.html",
+      "uses": 3,
+      "owners": [
+        "js\\vip-club.js:vip-club-390x844",
+        "js\\vip-club.js:vip-club-430x932",
+        "js\\vip-club.js:vip-club-768x1024"
+      ]
+    },
+    {
+      "id": "sidebar.betwave.compact-betwave.2520f32e",
+      "source": "components/sidebar.html",
+      "uses": 1,
+      "owners": [
+        "js\\sidebar.js:compact-betwave"
+      ]
+    },
+    {
+      "id": "footer.betwave.betwave-1440x900.43284f26",
+      "source": "components/footer.html",
+      "uses": 5,
+      "owners": [
+        "js\\betwave-auth.js:betwave-1440x900",
+        "js\\betwave-auth.js:betwave-1920x1080",
+        "js\\betwave-auth.js:betwave-390x844",
+        "js\\betwave-auth.js:betwave-430x932",
+        "js\\betwave-auth.js:betwave-768x1024"
+      ]
+    },
+    {
+      "id": "footer.betwave.betwave-1440x900.fe0391cf",
+      "source": "components/footer.html",
+      "uses": 2,
+      "owners": [
+        "js\\betwave.js:betwave-1440x900",
+        "betwave.html"
+      ]
+    },
+    {
+      "id": "footer.betwave.betwave-1920x1080.ed3610cf",
+      "source": "components/footer.html",
+      "uses": 1,
+      "owners": [
+        "js\\betwave.js:betwave-1920x1080"
+      ]
+    },
+    {
+      "id": "footer.betwave.betwave-390x844.4b2a2c94",
+      "source": "components/footer.html",
+      "uses": 1,
+      "owners": [
+        "js\\betwave.js:betwave-390x844"
+      ]
+    },
+    {
+      "id": "footer.betwave.betwave-430x932.76a167b8",
+      "source": "components/footer.html",
+      "uses": 1,
+      "owners": [
+        "js\\betwave.js:betwave-430x932"
+      ]
+    },
+    {
+      "id": "footer.betwave.betwave-768x1024.969bcb97",
+      "source": "components/footer.html",
+      "uses": 1,
+      "owners": [
+        "js\\betwave.js:betwave-768x1024"
+      ]
+    },
+    {
+      "id": "footer.standard.blog-1440x900.bf810bed",
+      "source": "components/footer.html",
+      "uses": 20,
+      "owners": [
+        "js\\blog-auth.js:blog-1440x900",
+        "js\\blog-auth.js:blog-1920x1080",
+        "js\\blog.js:blog-1440x900",
+        "js\\blog.js:blog-1920x1080",
+        "js\\freemoney-auth.js:freemoney-1440x900",
+        "js\\freemoney-auth.js:freemoney-1920x1080",
+        "js\\freemoney.js:freemoney-1440x900",
+        "js\\freemoney.js:freemoney-1920x1080",
+        "js\\loyalty-program-auth.js:loyalty-program-1440x900",
+        "js\\loyalty-program-auth.js:loyalty-program-1920x1080",
+        "js\\loyalty-program.js:loyalty-program-1440x900",
+        "js\\loyalty-program.js:loyalty-program-1920x1080",
+        "js\\vip-club-auth.js:vip-club-1440x900",
+        "js\\vip-club-auth.js:vip-club-1920x1080",
+        "js\\vip-club.js:vip-club-1440x900",
+        "js\\vip-club.js:vip-club-1920x1080",
+        "blog.html",
+        "freemoney.html",
+        "loyalty-program.html",
+        "vip-club.html"
+      ]
+    },
+    {
+      "id": "footer.standard.blog-390x844.7f90905b",
+      "source": "components/footer.html",
+      "uses": 24,
+      "owners": [
+        "js\\blog-auth.js:blog-390x844",
+        "js\\blog-auth.js:blog-430x932",
+        "js\\blog-auth.js:blog-768x1024",
+        "js\\blog.js:blog-390x844",
+        "js\\blog.js:blog-430x932",
+        "js\\blog.js:blog-768x1024",
+        "js\\freemoney-auth.js:freemoney-390x844",
+        "js\\freemoney-auth.js:freemoney-430x932",
+        "js\\freemoney-auth.js:freemoney-768x1024",
+        "js\\freemoney.js:freemoney-390x844",
+        "js\\freemoney.js:freemoney-430x932",
+        "js\\freemoney.js:freemoney-768x1024",
+        "js\\loyalty-program-auth.js:loyalty-program-390x844",
+        "js\\loyalty-program-auth.js:loyalty-program-430x932",
+        "js\\loyalty-program-auth.js:loyalty-program-768x1024",
+        "js\\loyalty-program.js:loyalty-program-390x844",
+        "js\\loyalty-program.js:loyalty-program-430x932",
+        "js\\loyalty-program.js:loyalty-program-768x1024",
+        "js\\vip-club-auth.js:vip-club-390x844",
+        "js\\vip-club-auth.js:vip-club-430x932",
+        "js\\vip-club-auth.js:vip-club-768x1024",
+        "js\\vip-club.js:vip-club-390x844",
+        "js\\vip-club.js:vip-club-430x932",
+        "js\\vip-club.js:vip-club-768x1024"
+      ]
+    },
+    {
+      "id": "footer.standard.bonuses-1440x900.88e0aa25",
+      "source": "components/footer.html",
+      "uses": 5,
+      "owners": [
+        "js\\bonuses-auth.js:bonuses-1440x900",
+        "js\\bonuses-auth.js:bonuses-1920x1080",
+        "js\\bonuses.js:bonuses-1440x900",
+        "js\\bonuses.js:bonuses-1920x1080",
+        "bonuses.html"
+      ]
+    },
+    {
+      "id": "footer.standard.bonuses-390x844.ee5e7e59",
+      "source": "components/footer.html",
+      "uses": 6,
+      "owners": [
+        "js\\bonuses-auth.js:bonuses-390x844",
+        "js\\bonuses-auth.js:bonuses-430x932",
+        "js\\bonuses-auth.js:bonuses-768x1024",
+        "js\\bonuses.js:bonuses-390x844",
+        "js\\bonuses.js:bonuses-430x932",
+        "js\\bonuses.js:bonuses-768x1024"
+      ]
+    },
+    {
+      "id": "footer.standard.casino-1win-1440x900.01d8dc5b",
+      "source": "components/footer.html",
+      "uses": 40,
+      "owners": [
+        "js\\casino-1win-auth.js:casino-1win-1440x900",
+        "js\\casino-1win-auth.js:casino-1win-1920x1080",
+        "js\\casino-1win.js:casino-1win-1440x900",
+        "js\\casino-1win.js:casino-1win-1920x1080",
+        "js\\casino-bonus-buy-auth.js:casino-bonus-buy-1440x900",
+        "js\\casino-bonus-buy-auth.js:casino-bonus-buy-1920x1080",
+        "js\\casino-bonus-buy.js:casino-bonus-buy-1440x900",
+        "js\\casino-bonus-buy.js:casino-bonus-buy-1920x1080",
+        "js\\casino-bonus-wagering-auth.js:casino-bonus-wagering-1440x900",
+        "js\\casino-bonus-wagering-auth.js:casino-bonus-wagering-1920x1080",
+        "js\\casino-bonus-wagering.js:casino-bonus-wagering-1440x900",
+        "js\\casino-bonus-wagering.js:casino-bonus-wagering-1920x1080",
+        "js\\casino-fishing-auth.js:casino-fishing-1440x900",
+        "js\\casino-fishing-auth.js:casino-fishing-1920x1080",
+        "js\\casino-fishing.js:casino-fishing-1440x900",
+        "js\\casino-fishing.js:casino-fishing-1920x1080",
+        "js\\casino-jili-auth.js:casino-jili-1440x900",
+        "js\\casino-jili-auth.js:casino-jili-1920x1080",
+        "js\\casino-jili.js:casino-jili-1440x900",
+        "js\\casino-jili.js:casino-jili-1920x1080",
+        "js\\casino-new-auth.js:casino-new-1440x900",
+        "js\\casino-new-auth.js:casino-new-1920x1080",
+        "js\\casino-new.js:casino-new-1440x900",
+        "js\\casino-new.js:casino-new-1920x1080",
+        "js\\casino-only-1win-auth.js:casino-only-1win-1440x900",
+        "js\\casino-only-1win-auth.js:casino-only-1win-1920x1080",
+        "js\\casino-only-1win.js:casino-only-1win-1440x900",
+        "js\\casino-only-1win.js:casino-only-1win-1920x1080",
+        "js\\casino-slots-auth.js:casino-slots-1440x900",
+        "js\\casino-slots-auth.js:casino-slots-1920x1080",
+        "js\\casino-slots.js:casino-slots-1440x900",
+        "js\\casino-slots.js:casino-slots-1920x1080",
+        "casino-1win.html",
+        "casino-bonus-buy.html",
+        "casino-bonus-wagering.html",
+        "casino-fishing.html",
+        "casino-jili.html",
+        "casino-new.html",
+        "casino-only-1win.html",
+        "casino-slots.html"
+      ]
+    },
+    {
+      "id": "footer.standard.casino-1win-390x844.ed479824",
+      "source": "components/footer.html",
+      "uses": 48,
+      "owners": [
+        "js\\casino-1win-auth.js:casino-1win-390x844",
+        "js\\casino-1win-auth.js:casino-1win-430x932",
+        "js\\casino-1win-auth.js:casino-1win-768x1024",
+        "js\\casino-1win.js:casino-1win-390x844",
+        "js\\casino-1win.js:casino-1win-430x932",
+        "js\\casino-1win.js:casino-1win-768x1024",
+        "js\\casino-bonus-buy-auth.js:casino-bonus-buy-390x844",
+        "js\\casino-bonus-buy-auth.js:casino-bonus-buy-430x932",
+        "js\\casino-bonus-buy-auth.js:casino-bonus-buy-768x1024",
+        "js\\casino-bonus-buy.js:casino-bonus-buy-390x844",
+        "js\\casino-bonus-buy.js:casino-bonus-buy-430x932",
+        "js\\casino-bonus-buy.js:casino-bonus-buy-768x1024",
+        "js\\casino-bonus-wagering-auth.js:casino-bonus-wagering-390x844",
+        "js\\casino-bonus-wagering-auth.js:casino-bonus-wagering-430x932",
+        "js\\casino-bonus-wagering-auth.js:casino-bonus-wagering-768x1024",
+        "js\\casino-bonus-wagering.js:casino-bonus-wagering-390x844",
+        "js\\casino-bonus-wagering.js:casino-bonus-wagering-430x932",
+        "js\\casino-bonus-wagering.js:casino-bonus-wagering-768x1024",
+        "js\\casino-fishing-auth.js:casino-fishing-390x844",
+        "js\\casino-fishing-auth.js:casino-fishing-430x932",
+        "js\\casino-fishing-auth.js:casino-fishing-768x1024",
+        "js\\casino-fishing.js:casino-fishing-390x844",
+        "js\\casino-fishing.js:casino-fishing-430x932",
+        "js\\casino-fishing.js:casino-fishing-768x1024",
+        "js\\casino-jili-auth.js:casino-jili-390x844",
+        "js\\casino-jili-auth.js:casino-jili-430x932",
+        "js\\casino-jili-auth.js:casino-jili-768x1024",
+        "js\\casino-jili.js:casino-jili-390x844",
+        "js\\casino-jili.js:casino-jili-430x932",
+        "js\\casino-jili.js:casino-jili-768x1024",
+        "js\\casino-new-auth.js:casino-new-390x844",
+        "js\\casino-new-auth.js:casino-new-430x932",
+        "js\\casino-new-auth.js:casino-new-768x1024",
+        "js\\casino-new.js:casino-new-390x844",
+        "js\\casino-new.js:casino-new-430x932",
+        "js\\casino-new.js:casino-new-768x1024",
+        "js\\casino-only-1win-auth.js:casino-only-1win-390x844",
+        "js\\casino-only-1win-auth.js:casino-only-1win-430x932",
+        "js\\casino-only-1win-auth.js:casino-only-1win-768x1024",
+        "js\\casino-only-1win.js:casino-only-1win-390x844",
+        "js\\casino-only-1win.js:casino-only-1win-430x932",
+        "js\\casino-only-1win.js:casino-only-1win-768x1024",
+        "js\\casino-slots-auth.js:casino-slots-390x844",
+        "js\\casino-slots-auth.js:casino-slots-430x932",
+        "js\\casino-slots-auth.js:casino-slots-768x1024",
+        "js\\casino-slots.js:casino-slots-390x844",
+        "js\\casino-slots.js:casino-slots-430x932",
+        "js\\casino-slots.js:casino-slots-768x1024"
+      ]
+    },
+    {
+      "id": "footer.standard.casino-1920x1080.2ae09d3f",
+      "source": "components/footer.html",
+      "uses": 0,
+      "owners": []
+    },
+    {
+      "id": "footer.standard.casino-768x1024.5fc24d97",
+      "source": "components/footer.html",
+      "uses": 0,
+      "owners": []
+    },
+    {
+      "id": "footer.standard.casino-live-1440x900.eb7f5e19",
+      "source": "components/footer.html",
+      "uses": 0,
+      "owners": []
+    },
+    {
+      "id": "footer.standard.casino-live-390x844.4f1cce3f",
+      "source": "components/footer.html",
+      "uses": 0,
+      "owners": []
+    },
+    {
+      "id": "footer.standard.casino-recommended-1440x900.5f149e1a",
+      "source": "components/footer.html",
+      "uses": 22,
+      "owners": [
+        "js\\casino-auth.js:casino-1920x1080",
+        "js\\casino-auth.js:casino-1440x900",
+        "js\\casino-providers-auth.js:casino-providers-1440x900",
+        "js\\casino-providers-auth.js:casino-providers-1920x1080",
+        "js\\casino-providers.js:casino-providers-1440x900",
+        "js\\casino-providers.js:casino-providers-1920x1080",
+        "js\\casino-recommended-auth.js:casino-recommended-1440x900",
+        "js\\casino-recommended-auth.js:casino-recommended-1920x1080",
+        "js\\casino-recommended.js:casino-recommended-1440x900",
+        "js\\casino-recommended.js:casino-recommended-1920x1080",
+        "js\\casino-search-auth.js:casino-search-1440x900",
+        "js\\casino-search-auth.js:casino-search-1920x1080",
+        "js\\casino-search-results-auth.js:casino-search-results-1440x900",
+        "js\\casino-search-results-auth.js:casino-search-results-1920x1080",
+        "js\\casino-search-results.js:casino-search-results-1440x900",
+        "js\\casino-search-results.js:casino-search-results-1920x1080",
+        "js\\casino-search.js:casino-search-1440x900",
+        "js\\casino-search.js:casino-search-1920x1080",
+        "casino-providers.html",
+        "casino-recommended.html",
+        "casino-search-results.html",
+        "casino-search.html"
+      ]
+    },
+    {
+      "id": "footer.standard.casino-recommended-390x844.989189be",
+      "source": "components/footer.html",
+      "uses": 27,
+      "owners": [
+        "js\\casino-auth.js:casino-768x1024",
+        "js\\casino-auth.js:casino-390x844",
+        "js\\casino-auth.js:casino-430x932",
+        "js\\casino-providers-auth.js:casino-providers-390x844",
+        "js\\casino-providers-auth.js:casino-providers-430x932",
+        "js\\casino-providers-auth.js:casino-providers-768x1024",
+        "js\\casino-providers.js:casino-providers-390x844",
+        "js\\casino-providers.js:casino-providers-430x932",
+        "js\\casino-providers.js:casino-providers-768x1024",
+        "js\\casino-recommended-auth.js:casino-recommended-390x844",
+        "js\\casino-recommended-auth.js:casino-recommended-430x932",
+        "js\\casino-recommended-auth.js:casino-recommended-768x1024",
+        "js\\casino-recommended.js:casino-recommended-390x844",
+        "js\\casino-recommended.js:casino-recommended-430x932",
+        "js\\casino-recommended.js:casino-recommended-768x1024",
+        "js\\casino-search-auth.js:casino-search-390x844",
+        "js\\casino-search-auth.js:casino-search-430x932",
+        "js\\casino-search-auth.js:casino-search-768x1024",
+        "js\\casino-search-results-auth.js:casino-search-results-390x844",
+        "js\\casino-search-results-auth.js:casino-search-results-430x932",
+        "js\\casino-search-results-auth.js:casino-search-results-768x1024",
+        "js\\casino-search-results.js:casino-search-results-390x844",
+        "js\\casino-search-results.js:casino-search-results-430x932",
+        "js\\casino-search-results.js:casino-search-results-768x1024",
+        "js\\casino-search.js:casino-search-390x844",
+        "js\\casino-search.js:casino-search-430x932",
+        "js\\casino-search.js:casino-search-768x1024"
+      ]
+    },
+    {
+      "id": "footer.standard.home-1440x900.77ebf8e0",
+      "source": "components/footer.html",
+      "uses": 3,
+      "owners": [
+        "js\\home-auth.js:home-1440x900",
+        "js\\home-auth.js:home-1920x1080",
+        "js\\home.js:home-1920x1080"
+      ]
+    },
+    {
+      "id": "footer.standard.home-1920x1080.c76a21d6",
+      "source": "components/footer.html",
+      "uses": 54,
+      "owners": [
+        "js\\casino-quick-1win-games-auth.js:casino-quick-1win-games-390x844",
+        "js\\casino-quick-1win-games-auth.js:casino-quick-1win-games-430x932",
+        "js\\casino-quick-1win-games-auth.js:casino-quick-1win-games-768x1024",
+        "js\\casino-quick-1win-games.js:casino-quick-1win-games-390x844",
+        "js\\casino-quick-1win-games.js:casino-quick-1win-games-430x932",
+        "js\\casino-quick-1win-games.js:casino-quick-1win-games-768x1024",
+        "js\\casino-quick-auth.js:casino-quick-390x844",
+        "js\\casino-quick-auth.js:casino-quick-430x932",
+        "js\\casino-quick-auth.js:casino-quick-768x1024",
+        "js\\casino-quick-chicken-games-auth.js:casino-quick-chicken-games-390x844",
+        "js\\casino-quick-chicken-games-auth.js:casino-quick-chicken-games-430x932",
+        "js\\casino-quick-chicken-games-auth.js:casino-quick-chicken-games-768x1024",
+        "js\\casino-quick-chicken-games.js:casino-quick-chicken-games-390x844",
+        "js\\casino-quick-chicken-games.js:casino-quick-chicken-games-430x932",
+        "js\\casino-quick-chicken-games.js:casino-quick-chicken-games-768x1024",
+        "js\\casino-quick-crash-games-auth.js:casino-quick-crash-games-390x844",
+        "js\\casino-quick-crash-games-auth.js:casino-quick-crash-games-430x932",
+        "js\\casino-quick-crash-games-auth.js:casino-quick-crash-games-768x1024",
+        "js\\casino-quick-crash-games.js:casino-quick-crash-games-390x844",
+        "js\\casino-quick-crash-games.js:casino-quick-crash-games-430x932",
+        "js\\casino-quick-crash-games.js:casino-quick-crash-games-768x1024",
+        "js\\casino-quick-lotteries-auth.js:casino-quick-lotteries-390x844",
+        "js\\casino-quick-lotteries-auth.js:casino-quick-lotteries-430x932",
+        "js\\casino-quick-lotteries-auth.js:casino-quick-lotteries-768x1024",
+        "js\\casino-quick-lotteries.js:casino-quick-lotteries-390x844",
+        "js\\casino-quick-lotteries.js:casino-quick-lotteries-430x932",
+        "js\\casino-quick-lotteries.js:casino-quick-lotteries-768x1024",
+        "js\\casino-quick-mines-auth.js:casino-quick-mines-390x844",
+        "js\\casino-quick-mines-auth.js:casino-quick-mines-430x932",
+        "js\\casino-quick-mines-auth.js:casino-quick-mines-768x1024",
+        "js\\casino-quick-mines.js:casino-quick-mines-390x844",
+        "js\\casino-quick-mines.js:casino-quick-mines-430x932",
+        "js\\casino-quick-mines.js:casino-quick-mines-768x1024",
+        "js\\casino-quick-plinko-auth.js:casino-quick-plinko-390x844",
+        "js\\casino-quick-plinko-auth.js:casino-quick-plinko-430x932",
+        "js\\casino-quick-plinko-auth.js:casino-quick-plinko-768x1024",
+        "js\\casino-quick-plinko.js:casino-quick-plinko-390x844",
+        "js\\casino-quick-plinko.js:casino-quick-plinko-430x932",
+        "js\\casino-quick-plinko.js:casino-quick-plinko-768x1024",
+        "js\\casino-quick-sport-auth.js:casino-quick-sport-390x844",
+        "js\\casino-quick-sport-auth.js:casino-quick-sport-430x932",
+        "js\\casino-quick-sport-auth.js:casino-quick-sport-768x1024",
+        "js\\casino-quick-sport.js:casino-quick-sport-390x844",
+        "js\\casino-quick-sport.js:casino-quick-sport-430x932",
+        "js\\casino-quick-sport.js:casino-quick-sport-768x1024",
+        "js\\casino-quick.js:casino-quick-390x844",
+        "js\\casino-quick.js:casino-quick-430x932",
+        "js\\casino-quick.js:casino-quick-768x1024",
+        "js\\home-auth.js:home-390x844",
+        "js\\home-auth.js:home-430x932",
+        "js\\home-auth.js:home-768x1024",
+        "js\\home.js:home-390x844",
+        "js\\home.js:home-430x932",
+        "js\\home.js:home-768x1024"
+      ]
+    },
+    {
+      "id": "footer.standard.home-1440x900.c3fc309e",
+      "source": "components/footer.html",
+      "uses": 42,
+      "owners": [
+        "js\\casino-quick-1win-games-auth.js:casino-quick-1win-games-1440x900",
+        "js\\casino-quick-1win-games-auth.js:casino-quick-1win-games-1920x1080",
+        "js\\casino-quick-1win-games.js:casino-quick-1win-games-1440x900",
+        "js\\casino-quick-1win-games.js:casino-quick-1win-games-1920x1080",
+        "js\\casino-quick-auth.js:casino-quick-1440x900",
+        "js\\casino-quick-auth.js:casino-quick-1920x1080",
+        "js\\casino-quick-chicken-games-auth.js:casino-quick-chicken-games-1440x900",
+        "js\\casino-quick-chicken-games-auth.js:casino-quick-chicken-games-1920x1080",
+        "js\\casino-quick-chicken-games.js:casino-quick-chicken-games-1440x900",
+        "js\\casino-quick-chicken-games.js:casino-quick-chicken-games-1920x1080",
+        "js\\casino-quick-crash-games-auth.js:casino-quick-crash-games-1440x900",
+        "js\\casino-quick-crash-games-auth.js:casino-quick-crash-games-1920x1080",
+        "js\\casino-quick-crash-games.js:casino-quick-crash-games-1440x900",
+        "js\\casino-quick-crash-games.js:casino-quick-crash-games-1920x1080",
+        "js\\casino-quick-lotteries-auth.js:casino-quick-lotteries-1440x900",
+        "js\\casino-quick-lotteries-auth.js:casino-quick-lotteries-1920x1080",
+        "js\\casino-quick-lotteries.js:casino-quick-lotteries-1440x900",
+        "js\\casino-quick-lotteries.js:casino-quick-lotteries-1920x1080",
+        "js\\casino-quick-mines-auth.js:casino-quick-mines-1440x900",
+        "js\\casino-quick-mines-auth.js:casino-quick-mines-1920x1080",
+        "js\\casino-quick-mines.js:casino-quick-mines-1440x900",
+        "js\\casino-quick-mines.js:casino-quick-mines-1920x1080",
+        "js\\casino-quick-plinko-auth.js:casino-quick-plinko-1440x900",
+        "js\\casino-quick-plinko-auth.js:casino-quick-plinko-1920x1080",
+        "js\\casino-quick-plinko.js:casino-quick-plinko-1440x900",
+        "js\\casino-quick-plinko.js:casino-quick-plinko-1920x1080",
+        "js\\casino-quick-sport-auth.js:casino-quick-sport-1440x900",
+        "js\\casino-quick-sport-auth.js:casino-quick-sport-1920x1080",
+        "js\\casino-quick-sport.js:casino-quick-sport-1440x900",
+        "js\\casino-quick-sport.js:casino-quick-sport-1920x1080",
+        "js\\home.js:home-1440x900",
+        "casino-quick-1win-games.html",
+        "casino-quick-chicken-games.html",
+        "casino-quick-crash-games.html",
+        "casino-quick-lotteries.html",
+        "casino-quick-mines.html",
+        "casino-quick-plinko.html",
+        "casino-quick-sport.html",
+        "index.html",
+        "login.html",
+        "recovery.html",
+        "register.html"
+      ]
+    },
+    {
+      "id": "footer.standard.promotions-1440x900.c458b99f",
+      "source": "components/footer.html",
+      "uses": 5,
+      "owners": [
+        "js\\promotions-auth.js:promotions-1440x900",
+        "js\\promotions-auth.js:promotions-1920x1080",
+        "js\\promotions.js:promotions-1440x900",
+        "js\\promotions.js:promotions-1920x1080",
+        "promotions.html"
+      ]
+    },
+    {
+      "id": "footer.standard.promotions-390x844.ec51b30f",
+      "source": "components/footer.html",
+      "uses": 6,
+      "owners": [
+        "js\\promotions-auth.js:promotions-390x844",
+        "js\\promotions-auth.js:promotions-430x932",
+        "js\\promotions-auth.js:promotions-768x1024",
+        "js\\promotions.js:promotions-390x844",
+        "js\\promotions.js:promotions-430x932",
+        "js\\promotions.js:promotions-768x1024"
+      ]
+    },
+    {
+      "id": "footer.standard.sports-esports-1440x900.dfa6ec7e",
+      "source": "components/footer.html",
+      "uses": 5,
+      "owners": [
+        "js\\sports-esports-auth.js:sports-esports-1440x900",
+        "js\\sports-esports-auth.js:sports-esports-1920x1080",
+        "js\\sports-esports.js:sports-esports-1440x900",
+        "js\\sports-esports.js:sports-esports-1920x1080",
+        "sports-esports.html"
+      ]
+    },
+    {
+      "id": "footer.standard.sports-esports-390x844.f6328fbc",
+      "source": "components/footer.html",
+      "uses": 6,
+      "owners": [
+        "js\\sports-esports-auth.js:sports-esports-390x844",
+        "js\\sports-esports-auth.js:sports-esports-430x932",
+        "js\\sports-esports-auth.js:sports-esports-768x1024",
+        "js\\sports-esports.js:sports-esports-390x844",
+        "js\\sports-esports.js:sports-esports-430x932",
+        "js\\sports-esports.js:sports-esports-768x1024"
+      ]
+    },
+    {
+      "id": "footer.standard.sports-live-1440x900.fa4b94d1",
+      "source": "components/footer.html",
+      "uses": 5,
+      "owners": [
+        "js\\sports-live-auth.js:sports-live-1440x900",
+        "js\\sports-live-auth.js:sports-live-1920x1080",
+        "js\\sports-live.js:sports-live-1440x900",
+        "js\\sports-live.js:sports-live-1920x1080",
+        "sports-live.html"
+      ]
+    },
+    {
+      "id": "footer.standard.sports-live-390x844.15f35937",
+      "source": "components/footer.html",
+      "uses": 6,
+      "owners": [
+        "js\\sports-live-auth.js:sports-live-390x844",
+        "js\\sports-live-auth.js:sports-live-430x932",
+        "js\\sports-live-auth.js:sports-live-768x1024",
+        "js\\sports-live.js:sports-live-390x844",
+        "js\\sports-live.js:sports-live-430x932",
+        "js\\sports-live.js:sports-live-768x1024"
+      ]
+    },
+    {
+      "id": "footer.standard.sports-upcoming-1440x900.7d231c7a",
+      "source": "components/footer.html",
+      "uses": 5,
+      "owners": [
+        "js\\sports-upcoming-auth.js:sports-upcoming-1440x900",
+        "js\\sports-upcoming-auth.js:sports-upcoming-1920x1080",
+        "js\\sports-upcoming.js:sports-upcoming-1440x900",
+        "js\\sports-upcoming.js:sports-upcoming-1920x1080",
+        "sports-upcoming.html"
+      ]
+    },
+    {
+      "id": "footer.standard.sports-upcoming-390x844.18eb93fa",
+      "source": "components/footer.html",
+      "uses": 6,
+      "owners": [
+        "js\\sports-upcoming-auth.js:sports-upcoming-390x844",
+        "js\\sports-upcoming-auth.js:sports-upcoming-430x932",
+        "js\\sports-upcoming-auth.js:sports-upcoming-768x1024",
+        "js\\sports-upcoming.js:sports-upcoming-390x844",
+        "js\\sports-upcoming.js:sports-upcoming-430x932",
+        "js\\sports-upcoming.js:sports-upcoming-768x1024"
+      ]
+    },
+    {
+      "id": "footer.standard.sports-1440x900.a8cae51e",
+      "source": "components/footer.html",
+      "uses": 5,
+      "owners": [
+        "js\\sports-auth.js:sports-1440x900",
+        "js\\sports-auth.js:sports-1920x1080",
+        "js\\sports.js:sports-1440x900",
+        "js\\sports.js:sports-1920x1080",
+        "sports.html"
+      ]
+    },
+    {
+      "id": "footer.standard.sports-390x844.c926e4f2",
+      "source": "components/footer.html",
+      "uses": 6,
+      "owners": [
+        "js\\sports-auth.js:sports-390x844",
+        "js\\sports-auth.js:sports-430x932",
+        "js\\sports-auth.js:sports-768x1024",
+        "js\\sports.js:sports-390x844",
+        "js\\sports.js:sports-430x932",
+        "js\\sports.js:sports-768x1024"
+      ]
+    },
+    {
+      "id": "footer.standard.tournaments-1440x900.364097fa",
+      "source": "components/footer.html",
+      "uses": 5,
+      "owners": [
+        "js\\tournaments-auth.js:tournaments-1440x900",
+        "js\\tournaments-auth.js:tournaments-1920x1080",
+        "js\\tournaments.js:tournaments-1440x900",
+        "js\\tournaments.js:tournaments-1920x1080",
+        "tournaments.html"
+      ]
+    },
+    {
+      "id": "footer.standard.tournaments-390x844.72e96d3c",
+      "source": "components/footer.html",
+      "uses": 6,
+      "owners": [
+        "js\\tournaments-auth.js:tournaments-390x844",
+        "js\\tournaments-auth.js:tournaments-430x932",
+        "js\\tournaments-auth.js:tournaments-768x1024",
+        "js\\tournaments.js:tournaments-390x844",
+        "js\\tournaments.js:tournaments-430x932",
+        "js\\tournaments.js:tournaments-768x1024"
+      ]
+    },
+    {
+      "id": "footer.standard.casino-live-1440x900.873e3e39",
+      "source": "components/footer.html",
+      "uses": 2,
+      "owners": [
+        "js\\casino-live-auth.js:casino-live-1440x900",
+        "js\\casino-live-auth.js:casino-live-1920x1080"
+      ]
+    },
+    {
+      "id": "footer.standard.casino-live-390x844.87768e0e",
+      "source": "components/footer.html",
+      "uses": 6,
+      "owners": [
+        "js\\casino-live-auth.js:casino-live-390x844",
+        "js\\casino-live-auth.js:casino-live-430x932",
+        "js\\casino-live-auth.js:casino-live-768x1024",
+        "js\\casino-live.js:casino-live-390x844",
+        "js\\casino-live.js:casino-live-430x932",
+        "js\\casino-live.js:casino-live-768x1024"
+      ]
+    },
+    {
+      "id": "footer.standard.casino-live-1win-live-1440x900.eea483e3",
+      "source": "components/footer.html",
+      "uses": 75,
+      "owners": [
+        "js\\casino-live-1win-live-auth.js:casino-live-1win-live-1440x900",
+        "js\\casino-live-1win-live-auth.js:casino-live-1win-live-1920x1080",
+        "js\\casino-live-1win-live.js:casino-live-1win-live-1440x900",
+        "js\\casino-live-1win-live.js:casino-live-1win-live-1920x1080",
+        "js\\casino-live-ae-sexy-auth.js:casino-live-ae-sexy-1440x900",
+        "js\\casino-live-ae-sexy-auth.js:casino-live-ae-sexy-1920x1080",
+        "js\\casino-live-ae-sexy.js:casino-live-ae-sexy-1440x900",
+        "js\\casino-live-ae-sexy.js:casino-live-ae-sexy-1920x1080",
+        "js\\casino-live-baccarat-auth.js:casino-live-baccarat-1440x900",
+        "js\\casino-live-baccarat-auth.js:casino-live-baccarat-1920x1080",
+        "js\\casino-live-baccarat.js:casino-live-baccarat-1440x900",
+        "js\\casino-live-baccarat.js:casino-live-baccarat-1920x1080",
+        "js\\casino-live-blackjack-auth.js:casino-live-blackjack-1440x900",
+        "js\\casino-live-blackjack-auth.js:casino-live-blackjack-1920x1080",
+        "js\\casino-live-blackjack.js:casino-live-blackjack-1440x900",
+        "js\\casino-live-blackjack.js:casino-live-blackjack-1920x1080",
+        "js\\casino-live-dragon-tiger-auth.js:casino-live-dragon-tiger-1440x900",
+        "js\\casino-live-dragon-tiger-auth.js:casino-live-dragon-tiger-1920x1080",
+        "js\\casino-live-dragon-tiger.js:casino-live-dragon-tiger-1440x900",
+        "js\\casino-live-dragon-tiger.js:casino-live-dragon-tiger-1920x1080",
+        "js\\casino-live-emperors-collection-auth.js:casino-live-emperors-collection-1440x900",
+        "js\\casino-live-emperors-collection-auth.js:casino-live-emperors-collection-1920x1080",
+        "js\\casino-live-emperors-collection.js:casino-live-emperors-collection-1440x900",
+        "js\\casino-live-emperors-collection.js:casino-live-emperors-collection-1920x1080",
+        "js\\casino-live-evolution-auth.js:casino-live-evolution-1440x900",
+        "js\\casino-live-evolution-auth.js:casino-live-evolution-1920x1080",
+        "js\\casino-live-evolution.js:casino-live-evolution-1440x900",
+        "js\\casino-live-evolution.js:casino-live-evolution-1920x1080",
+        "js\\casino-live-game-shows-auth.js:casino-live-game-shows-1440x900",
+        "js\\casino-live-game-shows-auth.js:casino-live-game-shows-1920x1080",
+        "js\\casino-live-game-shows.js:casino-live-game-shows-1440x900",
+        "js\\casino-live-game-shows.js:casino-live-game-shows-1920x1080",
+        "js\\casino-live-new-live-games-auth.js:casino-live-new-live-games-1440x900",
+        "js\\casino-live-new-live-games-auth.js:casino-live-new-live-games-1920x1080",
+        "js\\casino-live-new-live-games.js:casino-live-new-live-games-1440x900",
+        "js\\casino-live-new-live-games.js:casino-live-new-live-games-1920x1080",
+        "js\\casino-live-playtech-live-auth.js:casino-live-playtech-live-1440x900",
+        "js\\casino-live-playtech-live-auth.js:casino-live-playtech-live-1920x1080",
+        "js\\casino-live-playtech-live.js:casino-live-playtech-live-1440x900",
+        "js\\casino-live-playtech-live.js:casino-live-playtech-live-1920x1080",
+        "js\\casino-live-poker-auth.js:casino-live-poker-1440x900",
+        "js\\casino-live-poker-auth.js:casino-live-poker-1920x1080",
+        "js\\casino-live-poker.js:casino-live-poker-1440x900",
+        "js\\casino-live-poker.js:casino-live-poker-1920x1080",
+        "js\\casino-live-pragmatic-play-auth.js:casino-live-pragmatic-play-1440x900",
+        "js\\casino-live-pragmatic-play-auth.js:casino-live-pragmatic-play-1920x1080",
+        "js\\casino-live-pragmatic-play.js:casino-live-pragmatic-play-1440x900",
+        "js\\casino-live-pragmatic-play.js:casino-live-pragmatic-play-1920x1080",
+        "js\\casino-live-roulette-auth.js:casino-live-roulette-1440x900",
+        "js\\casino-live-roulette-auth.js:casino-live-roulette-1920x1080",
+        "js\\casino-live-roulette.js:casino-live-roulette-1440x900",
+        "js\\casino-live-roulette.js:casino-live-roulette-1920x1080",
+        "js\\casino-live-sa-gaming-auth.js:casino-live-sa-gaming-1440x900",
+        "js\\casino-live-sa-gaming-auth.js:casino-live-sa-gaming-1920x1080",
+        "js\\casino-live-sa-gaming.js:casino-live-sa-gaming-1440x900",
+        "js\\casino-live-sa-gaming.js:casino-live-sa-gaming-1920x1080",
+        "js\\casino-live-sic-bo-auth.js:casino-live-sic-bo-1440x900",
+        "js\\casino-live-sic-bo-auth.js:casino-live-sic-bo-1920x1080",
+        "js\\casino-live-sic-bo.js:casino-live-sic-bo-1440x900",
+        "js\\casino-live-sic-bo.js:casino-live-sic-bo-1920x1080",
+        "casino-live-1win-live.html",
+        "casino-live-ae-sexy.html",
+        "casino-live-baccarat.html",
+        "casino-live-blackjack.html",
+        "casino-live-dragon-tiger.html",
+        "casino-live-emperors-collection.html",
+        "casino-live-evolution.html",
+        "casino-live-game-shows.html",
+        "casino-live-new-live-games.html",
+        "casino-live-playtech-live.html",
+        "casino-live-poker.html",
+        "casino-live-pragmatic-play.html",
+        "casino-live-roulette.html",
+        "casino-live-sa-gaming.html",
+        "casino-live-sic-bo.html"
+      ]
+    },
+    {
+      "id": "footer.standard.casino-live-1win-live-390x844.65972a45",
+      "source": "components/footer.html",
+      "uses": 90,
+      "owners": [
+        "js\\casino-live-1win-live-auth.js:casino-live-1win-live-390x844",
+        "js\\casino-live-1win-live-auth.js:casino-live-1win-live-430x932",
+        "js\\casino-live-1win-live-auth.js:casino-live-1win-live-768x1024",
+        "js\\casino-live-1win-live.js:casino-live-1win-live-390x844",
+        "js\\casino-live-1win-live.js:casino-live-1win-live-430x932",
+        "js\\casino-live-1win-live.js:casino-live-1win-live-768x1024",
+        "js\\casino-live-ae-sexy-auth.js:casino-live-ae-sexy-390x844",
+        "js\\casino-live-ae-sexy-auth.js:casino-live-ae-sexy-430x932",
+        "js\\casino-live-ae-sexy-auth.js:casino-live-ae-sexy-768x1024",
+        "js\\casino-live-ae-sexy.js:casino-live-ae-sexy-390x844",
+        "js\\casino-live-ae-sexy.js:casino-live-ae-sexy-430x932",
+        "js\\casino-live-ae-sexy.js:casino-live-ae-sexy-768x1024",
+        "js\\casino-live-baccarat-auth.js:casino-live-baccarat-390x844",
+        "js\\casino-live-baccarat-auth.js:casino-live-baccarat-430x932",
+        "js\\casino-live-baccarat-auth.js:casino-live-baccarat-768x1024",
+        "js\\casino-live-baccarat.js:casino-live-baccarat-390x844",
+        "js\\casino-live-baccarat.js:casino-live-baccarat-430x932",
+        "js\\casino-live-baccarat.js:casino-live-baccarat-768x1024",
+        "js\\casino-live-blackjack-auth.js:casino-live-blackjack-390x844",
+        "js\\casino-live-blackjack-auth.js:casino-live-blackjack-430x932",
+        "js\\casino-live-blackjack-auth.js:casino-live-blackjack-768x1024",
+        "js\\casino-live-blackjack.js:casino-live-blackjack-390x844",
+        "js\\casino-live-blackjack.js:casino-live-blackjack-430x932",
+        "js\\casino-live-blackjack.js:casino-live-blackjack-768x1024",
+        "js\\casino-live-dragon-tiger-auth.js:casino-live-dragon-tiger-390x844",
+        "js\\casino-live-dragon-tiger-auth.js:casino-live-dragon-tiger-430x932",
+        "js\\casino-live-dragon-tiger-auth.js:casino-live-dragon-tiger-768x1024",
+        "js\\casino-live-dragon-tiger.js:casino-live-dragon-tiger-390x844",
+        "js\\casino-live-dragon-tiger.js:casino-live-dragon-tiger-430x932",
+        "js\\casino-live-dragon-tiger.js:casino-live-dragon-tiger-768x1024",
+        "js\\casino-live-emperors-collection-auth.js:casino-live-emperors-collection-390x844",
+        "js\\casino-live-emperors-collection-auth.js:casino-live-emperors-collection-430x932",
+        "js\\casino-live-emperors-collection-auth.js:casino-live-emperors-collection-768x1024",
+        "js\\casino-live-emperors-collection.js:casino-live-emperors-collection-390x844",
+        "js\\casino-live-emperors-collection.js:casino-live-emperors-collection-430x932",
+        "js\\casino-live-emperors-collection.js:casino-live-emperors-collection-768x1024",
+        "js\\casino-live-evolution-auth.js:casino-live-evolution-390x844",
+        "js\\casino-live-evolution-auth.js:casino-live-evolution-430x932",
+        "js\\casino-live-evolution-auth.js:casino-live-evolution-768x1024",
+        "js\\casino-live-evolution.js:casino-live-evolution-390x844",
+        "js\\casino-live-evolution.js:casino-live-evolution-430x932",
+        "js\\casino-live-evolution.js:casino-live-evolution-768x1024",
+        "js\\casino-live-game-shows-auth.js:casino-live-game-shows-390x844",
+        "js\\casino-live-game-shows-auth.js:casino-live-game-shows-430x932",
+        "js\\casino-live-game-shows-auth.js:casino-live-game-shows-768x1024",
+        "js\\casino-live-game-shows.js:casino-live-game-shows-390x844",
+        "js\\casino-live-game-shows.js:casino-live-game-shows-430x932",
+        "js\\casino-live-game-shows.js:casino-live-game-shows-768x1024",
+        "js\\casino-live-new-live-games-auth.js:casino-live-new-live-games-390x844",
+        "js\\casino-live-new-live-games-auth.js:casino-live-new-live-games-430x932",
+        "js\\casino-live-new-live-games-auth.js:casino-live-new-live-games-768x1024",
+        "js\\casino-live-new-live-games.js:casino-live-new-live-games-390x844",
+        "js\\casino-live-new-live-games.js:casino-live-new-live-games-430x932",
+        "js\\casino-live-new-live-games.js:casino-live-new-live-games-768x1024",
+        "js\\casino-live-playtech-live-auth.js:casino-live-playtech-live-390x844",
+        "js\\casino-live-playtech-live-auth.js:casino-live-playtech-live-430x932",
+        "js\\casino-live-playtech-live-auth.js:casino-live-playtech-live-768x1024",
+        "js\\casino-live-playtech-live.js:casino-live-playtech-live-390x844",
+        "js\\casino-live-playtech-live.js:casino-live-playtech-live-430x932",
+        "js\\casino-live-playtech-live.js:casino-live-playtech-live-768x1024",
+        "js\\casino-live-poker-auth.js:casino-live-poker-390x844",
+        "js\\casino-live-poker-auth.js:casino-live-poker-430x932",
+        "js\\casino-live-poker-auth.js:casino-live-poker-768x1024",
+        "js\\casino-live-poker.js:casino-live-poker-390x844",
+        "js\\casino-live-poker.js:casino-live-poker-430x932",
+        "js\\casino-live-poker.js:casino-live-poker-768x1024",
+        "js\\casino-live-pragmatic-play-auth.js:casino-live-pragmatic-play-390x844",
+        "js\\casino-live-pragmatic-play-auth.js:casino-live-pragmatic-play-430x932",
+        "js\\casino-live-pragmatic-play-auth.js:casino-live-pragmatic-play-768x1024",
+        "js\\casino-live-pragmatic-play.js:casino-live-pragmatic-play-390x844",
+        "js\\casino-live-pragmatic-play.js:casino-live-pragmatic-play-430x932",
+        "js\\casino-live-pragmatic-play.js:casino-live-pragmatic-play-768x1024",
+        "js\\casino-live-roulette-auth.js:casino-live-roulette-390x844",
+        "js\\casino-live-roulette-auth.js:casino-live-roulette-430x932",
+        "js\\casino-live-roulette-auth.js:casino-live-roulette-768x1024",
+        "js\\casino-live-roulette.js:casino-live-roulette-390x844",
+        "js\\casino-live-roulette.js:casino-live-roulette-430x932",
+        "js\\casino-live-roulette.js:casino-live-roulette-768x1024",
+        "js\\casino-live-sa-gaming-auth.js:casino-live-sa-gaming-390x844",
+        "js\\casino-live-sa-gaming-auth.js:casino-live-sa-gaming-430x932",
+        "js\\casino-live-sa-gaming-auth.js:casino-live-sa-gaming-768x1024",
+        "js\\casino-live-sa-gaming.js:casino-live-sa-gaming-390x844",
+        "js\\casino-live-sa-gaming.js:casino-live-sa-gaming-430x932",
+        "js\\casino-live-sa-gaming.js:casino-live-sa-gaming-768x1024",
+        "js\\casino-live-sic-bo-auth.js:casino-live-sic-bo-390x844",
+        "js\\casino-live-sic-bo-auth.js:casino-live-sic-bo-430x932",
+        "js\\casino-live-sic-bo-auth.js:casino-live-sic-bo-768x1024",
+        "js\\casino-live-sic-bo.js:casino-live-sic-bo-390x844",
+        "js\\casino-live-sic-bo.js:casino-live-sic-bo-430x932",
+        "js\\casino-live-sic-bo.js:casino-live-sic-bo-768x1024"
+      ]
+    },
+    {
+      "id": "footer.standard.casino-live-1440x900.0e62a7c8",
+      "source": "components/footer.html",
+      "uses": 3,
+      "owners": [
+        "js\\casino-live.js:casino-live-1440x900",
+        "js\\casino-live.js:casino-live-1920x1080",
+        "casino-live.html"
+      ]
+    },
+    {
+      "id": "footer.standard.casino-quick-1440x900.22ba0e0b",
+      "source": "components/footer.html",
+      "uses": 3,
+      "owners": [
+        "js\\casino-quick.js:casino-quick-1440x900",
+        "js\\casino-quick.js:casino-quick-1920x1080",
+        "casino-quick.html"
+      ]
+    },
+    {
+      "id": "footer.standard.casino-1440x900.caba084d",
+      "source": "components/footer.html",
+      "uses": 3,
+      "owners": [
+        "js\\casino.js:casino-1440x900",
+        "js\\casino.js:casino-1920x1080",
+        "casino.html"
+      ]
+    },
+    {
+      "id": "footer.standard.casino-390x844.9fa546e9",
+      "source": "components/footer.html",
+      "uses": 3,
+      "owners": [
+        "js\\casino.js:casino-390x844",
+        "js\\casino.js:casino-430x932",
+        "js\\casino.js:casino-768x1024"
+      ]
+    }
+  ],
+  "note": "Different markup is kept as a distinct variant. Edit a canonical template, then build the classic-script bundles; do not edit generated bundles."
+}

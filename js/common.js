@@ -6,11 +6,11 @@
   const states={...window.DIALOG_STATES,...guestStates,...(signedPreview?authStates:{})};
   const pageName = document.body.dataset.page;
   const assetPrefix = document.body.dataset.assetPrefix || '';
-  const markup = value => assetPrefix ? value.replaceAll('assets/',assetPrefix+'assets/') : value;
+  const markup = value => {const expanded=window.SHARED_UI?window.SHARED_UI.expand(value):value;return assetPrefix?expanded.replaceAll('assets/',assetPrefix+'assets/'):expanded;};
   const go = filename => { location.href = filename+(signedPreview?'?preview=auth':''); };
-  const pages = {"/": "index.html", "/casino": "casino.html", "/freemoney": "freemoney.html", "/about-token": "freemoney.html", "/bonuses": "bonuses.html", "/loyalty-program": "loyalty-program.html", "/vip-club": "vip-club.html", "/promotions": "promotions.html", "/tournaments": "tournaments.html", "/blog": "blog.html", "/betwave": "betwave.html", "/en/betwave": "betwave.html", "/casino/1win-games": "casino-1win.html", "/casino/bonus-buy": "casino-bonus-buy.html", "/casino/bonus-wagering": "casino-bonus-wagering.html", "/casino/fishing-games": "casino-fishing.html", "/casino/jili-games": "casino-jili.html", "/casino/live-games": "casino-live.html", "/casino/new": "casino-new.html", "/casino/only-on-1win": "casino-only-1win.html", "/casino/fast-games": "casino-quick.html", "/casino/slots": "casino-slots.html", "/betting": "sports.html", "/betting/esport": "sports-esports.html", "/betting/live": "sports-live.html", "/betting/prematch": "sports-upcoming.html", "/casino/ai-recommendations": "casino-recommended.html"};
+  const pages = window.PROJECT_ROUTES?.pages||{};
   let currentPage = pageName, currentKey = document.body.dataset.state, modal = null, returnFocus = null;
-  let resizeTimer, autoTimer, noticeTimer, noticeVersion=0, menuVersion=0;
+  let resizeTimer, autoTimer, lastWinsTimer, noticeTimer, noticeVersion=0, menuVersion=0;
   const motion=window.PREVIEW_MOTION;
   const scrollBehavior=()=>motion?.reduced()||motion?.instant()?'auto':'smooth';
   const $ = (s, root=document) => root.querySelector(s);
@@ -21,7 +21,7 @@
     const sizes = innerWidth < 410 ? ['390x844'] : innerWidth < 640 ? ['430x932','390x844'] : innerWidth < 1024 ? ['768x1024'] : innerWidth >= 1680 ? ['1920x1080','1440x900'] : ['1440x900'];
     return [...sizes,'1440x900','390x844'].map(v=>page+'-'+v).find(k=>states[k]);
   }
-  let sidebarCollapsed=false,expandedSidebarHTML=null;
+  let sidebarCollapsed=false,expandedSidebarHTML=null,socialReturnFocus=null;
   try{sidebarCollapsed=localStorage.getItem('1win-preview-sidebar')==='compact';}catch{}
   function sidebarLinks(root,labels={}) {
     $$('a[data-reference-href]',root).forEach(a=>{
@@ -43,15 +43,19 @@
     if(currentPage==='casino'&&!root.dataset.localSidebarTemplate&&!$('[class*="common-layout_compact"]',root)&&window.SIDEBAR_STATES?.['expanded-casino']){
       root=replaceSidebar(window.SIDEBAR_STATES['expanded-casino'].html,root);root.dataset.localSidebarTemplate='expanded-casino';
     }
-    const compact=!!$('[class*="common-layout_compact"]',root);
-    if(sidebarCollapsed&&!compact&&window.SIDEBAR_STATES?.compact){
+    const compact=!!$('[class*="common-layout_compact"]',root)||root.hasAttribute('data-local-compact');
+    // Betwave has its own sidebar family (sidebar_root-qgno1) with its own collapsed markup.
+    const compactState=window.SIDEBAR_STATES?.[root.className.includes('sidebar_root-qgno1')?'compact-betwave':'compact'];
+    if(sidebarCollapsed&&!compact&&compactState){
       expandedSidebarHTML=root.outerHTML;
       const labels={},active=new Set();
       $$('a[data-testid^="sidebar-navigation"]',root).forEach(a=>{labels[a.dataset.testid]=a.textContent.trim();if(a.matches('.router-link-active,[aria-current="page"]'))active.add(a.dataset.testid);});
-      root=replaceSidebar(window.SIDEBAR_STATES.compact.html,root);
+      root=replaceSidebar(compactState.html,root);root.setAttribute('data-local-compact','');
       $$('a[data-testid^="sidebar-navigation"]',root).forEach(a=>{
         const selected=active.has(a.dataset.testid);
         a.classList.toggle('router-link-active',selected);a.classList.toggle('router-link-exact-active',selected);
+        const base=a.className.split(' ').find(c=>c.startsWith('base_root-'));
+        if(base)a.classList.toggle(base.replace('_root-','_selected-'),selected);
         if(selected)a.setAttribute('aria-current','page');else a.removeAttribute('aria-current');
       });
       sidebarLinks(root,labels);
@@ -60,14 +64,44 @@
     sidebarLinks(root);
     const toggle=$('[data-testid="sidebar-expand-button"]',root);
     if(toggle){toggle.setAttribute('aria-expanded',String(!sidebarCollapsed));toggle.setAttribute('aria-label',sidebarCollapsed?'Expand sidebar':'Collapse sidebar');}
+    initSidebarSocial();
+  }
+  function initSidebarSocial() {
+    const trigger=test('sidebar-social-buttons-with-preview');
+    if(trigger){trigger.setAttribute('role','button');trigger.tabIndex=0;trigger.setAttribute('aria-label','Social media');trigger.setAttribute('aria-haspopup','dialog');trigger.setAttribute('aria-expanded',String(!!$('[data-sidebar-social-popover]')));}
   }
   function toggleSidebar() {
     if(innerWidth<1024)return;
+    closeSidebarSocial();
     sidebarCollapsed=!sidebarCollapsed;
     try{localStorage.setItem('1win-preview-sidebar',sidebarCollapsed?'compact':'expanded');}catch{}
     applySidebar();fitBanners();test('sidebar-expand-button')?.focus({preventScroll:true});
   }
+  function closeSidebarSocial(restoreFocus=false) {
+    $('[data-sidebar-social-popover]')?.remove();
+    test('sidebar-social-buttons-with-preview')?.setAttribute('aria-expanded','false');
+    if(restoreFocus&&socialReturnFocus?.isConnected)socialReturnFocus.focus({preventScroll:true});
+    socialReturnFocus=null;
+  }
+  function positionSidebarSocial() {
+    const popover=$('[data-sidebar-social-popover]'),trigger=test('sidebar-social-buttons-with-preview');
+    if(!popover||!trigger)return;
+    const anchor=trigger.getBoundingClientRect(),sidebar=trigger.closest('[class*="sidebar_root"]').getBoundingClientRect();
+    // The observed right-end tooltip includes a 5px vertical offset from the trigger's bottom edge.
+    popover.style.left=sidebar.right+'px';
+    popover.style.top=Math.max(8,Math.min(anchor.bottom+5-popover.offsetHeight,innerHeight-popover.offsetHeight-8))+'px';
+  }
+  function toggleSidebarSocial(trigger) {
+    if($('[data-sidebar-social-popover]'))return closeSidebarSocial(true);
+    const value=window.SIDEBAR_STATES?.['compact-social']?.html;if(!value)return;
+    const template=document.createElement('template');template.innerHTML=markup(value);
+    const popover=template.content.firstElementChild;if(!popover)return;
+    socialReturnFocus=trigger;popover.dataset.sidebarSocialPopover='';popover.setAttribute('role','dialog');popover.setAttribute('aria-label','Social media');
+    const close=$('button:has([data-icon="close"])',popover);if(close){close.dataset.testid='local-sidebar-social-close';close.setAttribute('aria-label','Close social media');}
+    document.body.append(popover);trigger.setAttribute('aria-expanded','true');positionSidebarSocial();close?.focus({preventScroll:true});
+  }
   function hydrate() {
+    window.SHARED_UI?.mount(document.body);
     applySidebar();
     // Both hrefs and media are local. Third-party destinations have no navigation handler.
     $$('a[data-reference-href]').forEach(a => {
@@ -88,6 +122,9 @@
     addPreviewControl();
     fitBanners();
     initFreeMoneyNavigation();
+    initFaqAccordions();
+    $$('[class*="seo_root-"] [class*="seo_button-"]').forEach(button=>button.setAttribute('aria-expanded',String(button.closest('[class*="seo_root-"]').className.includes('seo_expanded-'))));
+    initSidebarSocial();
     $$('[class*="games-grid_carousel"]').forEach(grid=>grid.addEventListener('scroll',()=>{
       const section=grid.closest('[class*="games-section_root"]');if(!section)return;
       const previous=$('button:has([data-icon="arrow-back"])',section),next=$('button:has([data-icon="arrow-forward"])',section);
@@ -96,6 +133,80 @@
     },{passive:true}));
     clearInterval(autoTimer);
     if (!new URLSearchParams(location.search).has('qa') && !matchMedia('(prefers-reduced-motion: reduce)').matches) autoTimer=setInterval(()=>{const banner=test('banner-main-container');if(!modal&&!document.hidden&&!motion?.reduced()&&!banner?.matches(':hover')&&!banner?.contains(document.activeElement))slide(1);},6500);
+    initLastWins();
+    initCountdowns();
+    initScrollViews();
+  }
+  // Category chips and other arrows-scroll-view rows: the back arrow hides at the start, the forward
+  // arrow at the end (reference toggles arrows-scroll-view_hidden-*), and each click pages one width.
+  function scrollViewList(root) {
+    const content=root&&$('[class*="arrows-scroll-view_content-"]',root);
+    if(!content)return null;
+    return [content.firstElementChild,content].find(n=>n&&n.scrollWidth>n.clientWidth+8)||content.firstElementChild||content;
+  }
+  function updateScrollView(root) {
+    const list=scrollViewList(root);if(!list)return;
+    const back=$('[class*="arrows-scroll-view_scrollBackButton-"]',root),forward=$('[class*="arrows-scroll-view_scrollForwardButton-"]',root);
+    const suffix=(back||forward)?.className.match(/arrows-scroll-view_scroll\w+Button(-\w+)/)?.[1];if(!suffix)return;
+    const hidden='arrows-scroll-view_hidden'+suffix,start=Math.abs(list.scrollLeft)<=1,end=Math.abs(list.scrollLeft)+list.clientWidth>=list.scrollWidth-1;
+    back?.classList.toggle(hidden,start);forward?.classList.toggle(hidden,end);
+  }
+  function initScrollViews() {
+    $$('[class*="arrows-scroll-view_root-"]').forEach(root=>{
+      const list=scrollViewList(root);if(!list)return;
+      list.addEventListener('scroll',()=>updateScrollView(root),{passive:true});
+      updateScrollView(root);
+    });
+  }
+  addEventListener('resize',()=>$$('[class*="arrows-scroll-view_root-"]').forEach(updateScrollView),{passive:true});
+  // Live Casino and Quick games pages carry their own chip set (e.g. "1win-games" means
+  // /casino/fast-games/1win-games there), so resolve within the current page's group first.
+  function categoryFile(key) {
+    const routes=window.PROJECT_ROUTES||{};
+    const group=Object.keys(routes.subcategories||{}).find(parent=>pageName===parent||pageName.startsWith(parent+'-'));
+    return (group&&routes.subcategories[group][key])||(routes.categories||{})[key];
+  }
+  // A lobby row's "View all" / title opens the category whose chip carries the same label.
+  function rowCategory(el) {
+    const title=$('[class*="title_title"]',el.closest('[class*="games-section_root"]')||document)?.textContent.trim().toLowerCase();
+    const chip=title&&$$('[data-testid^="categories-qabs-qab-"]').find(b=>b.textContent.trim().toLowerCase()===title);
+    return chip&&categoryFile(chip.dataset.testid.replace('categories-qabs-qab-',''));
+  }
+  // Tournament timers tick once a second like the reference ("D:HH:MM:SS", days unpadded).
+  let countdownTimer;
+  function initCountdowns() {
+    clearInterval(countdownTimer);
+    const timers=$$('[class*="countdown_root-"]').map(root=>({root,parts:$$('[class*="countdown_time-"]',root)})).filter(t=>t.parts.length>=3&&t.parts.every(p=>/^\d+$/.test(p.textContent.trim())));
+    if(!timers.length||new URLSearchParams(location.search).has('qa'))return;
+    const units=[86400,3600,60,1];
+    timers.forEach(t=>{const u=units.slice(-t.parts.length);t.left=t.parts.reduce((sum,p,i)=>sum+Number(p.textContent)*u[i],0);t.units=u;});
+    countdownTimer=setInterval(()=>{
+      if(!timers[0].root.isConnected){clearInterval(countdownTimer);return;}
+      timers.forEach(t=>{
+        if(t.left<=0)return;t.left--;let rest=t.left;
+        t.parts.forEach((p,i)=>{const v=Math.floor(rest/t.units[i]);rest-=v*t.units[i];p.textContent=i===0&&t.units[0]===86400?String(v):String(v).padStart(2,'0');});
+      });
+    },1000);
+  }
+  // Original Last wins feed: every 3s a card enters at the start (translateX(-100%) -> 0), the rest
+  // shift with a 1s transform move and the last one leaves. Locally the captured cards rotate.
+  function initLastWins() {
+    clearInterval(lastWinsTimer);
+    const list=$('[data-testid="casino-last-wins"] [class*="last-wins_list-"]');
+    if(!list||list.children.length<2||new URLSearchParams(location.search).has('qa'))return;
+    lastWinsTimer=setInterval(()=>{
+      if(!list.isConnected){clearInterval(lastWinsTimer);return;}
+      if(document.hidden||modal)return;
+      const items=[...list.children],last=items[items.length-1],card=last.cloneNode(true);
+      const before=items.map(n=>n.getBoundingClientRect().left);
+      list.prepend(card);
+      if(motion?.reduced()||motion?.instant()){last.remove();return;}
+      items.forEach((n,i)=>{n.style.transition='none';n.style.transform=`translateX(${before[i]-n.getBoundingClientRect().left}px)`;});
+      card.style.transition='none';card.style.transform='translateX(-100%)';
+      list.getBoundingClientRect();
+      [card,...items].forEach(n=>{n.style.transition='transform 1s';n.style.transform='';});
+      setTimeout(()=>{last.remove();[card,...items].forEach(n=>{n.style.transition='';});},1000);
+    },3000);
   }
   function render(page=currentPage, stateKey=null, keepScroll=false) {
     const key=stateKey||keyFor(page);
@@ -112,8 +223,10 @@
     scrollTo(0,keepScroll?y:0);
     return true;
   }
+  // Not part of the reference UI: it changed every footer's height, so it only renders with ?controls=1.
+  // Alt+P and ?preview=auth switch the Demo state without it.
   function addPreviewControl(){
-    if($('[data-preview-controls]'))return;
+    if($('[data-preview-controls]')||!new URLSearchParams(location.search).has('controls'))return;
     const container=$('[class*="footer-container_root"]')||test('layout-content');
     if(!container)return;
     const control=document.createElement('div');control.dataset.previewControls='';control.className='local-preview-controls';
@@ -129,6 +242,7 @@
     history.replaceState(null,'',u);render(currentPage,null,true);
   }
   function closeModal(immediate=false) {
+    closeSidebarSocial();
     const nodes=$$('[data-local-modal], [data-testid="modal-layout"], [class*="language-picker_tooltip"]');
     modal=null;
     const finish=()=>{
@@ -191,14 +305,21 @@
     $$('[class*="pagination"] [class*="bullet"]',container).forEach((s,i)=>s.classList.toggle('swiper-pagination-bullet-active',i===index));
   }
   function fitBanners(){
-    const banner=test('banner-main-container'),wrapper=banner&&$('.swiper-wrapper',banner);
-    if(wrapper){const slides=$$('.swiper-slide',wrapper),index=Math.max(0,slides.findIndex(s=>s.classList.contains('swiper-slide-active')));slides.forEach(s=>s.style.width=banner.clientWidth+'px');const gap=parseFloat(slides[0]?.style.marginRight)||0;wrapper.style.transform='translate3d('+(-(banner.clientWidth+gap)*index)+'px,0,0)';}
     $$('[class*="banners-carousel_root"]').forEach(root=>{
       const scaler=$('[class*="scaler_item"]',root);if(!scaler)return;
       const designWidth=parseFloat(scaler.style.width);if(!designWidth)return;
       const scale=root.clientWidth/designWidth,previous=parseFloat(scaler.style.transform.replace('scale(',''));
       if(Math.abs(previous-scale)>.001)scaler.style.transform='scale('+scale+')';
     });
+    const banner=test('banner-main-container'),wrapper=banner&&$('.swiper-wrapper',banner);
+    if(wrapper){
+      // Swiper positions slides inside the unscaled design canvas. Using the visible banner width here scales each slide twice.
+      const width=wrapper.clientWidth||banner.clientWidth;
+      const slides=$$('.swiper-slide',wrapper),index=Math.max(0,slides.findIndex(s=>s.classList.contains('swiper-slide-active')));
+      slides.forEach(s=>s.style.width=width+'px');
+      const gap=parseFloat(slides[0]?.style.marginRight)||0;
+      wrapper.style.transform='translate3d('+(-(width+gap)*index)+'px,0,0)';
+    }
   }
   function toggleMenu(force) {
     const root=$('[class*="common-layout_root"][class*="variant-1_root"]');if(!root)return;
@@ -244,7 +365,50 @@
       a.hidden=!label.toLowerCase().includes(query.trim().toLowerCase());
     });
   }
+  function initFaqAccordions() {
+    $$('[class*="FaqSection_accordionContainer"] [class*="accordion_root-"]').forEach((root,index)=>{
+      const heading=$('[class*="accordion-heading_root-"]',root),body=$('[class*="accordion-body_root-"]',root);
+      if(!heading||!body)return;
+      body.id='local-faq-answer-'+index;
+      heading.setAttribute('role','button');heading.tabIndex=0;
+      heading.setAttribute('aria-controls',body.id);
+      const opened=root.className.includes('accordion_isOpen-');
+      heading.setAttribute('aria-expanded',String(opened));body.setAttribute('aria-hidden',String(!opened));
+    });
+  }
+  function toggleFaq(heading) {
+    const root=heading.closest('[class*="accordion_root-"]');
+    const body=root&&$('[class*="accordion-body_root-"]',root);
+    if(!body)return;
+    const rootClass=root.className.split(' ').find(c=>c.startsWith('accordion_root-'));
+    const headingClass=heading.className.split(' ').find(c=>c.startsWith('accordion-heading_root-'));
+    const bodyClass=body.className.split(' ').find(c=>c.startsWith('accordion-body_root-'));
+    if(!rootClass||!headingClass||!bodyClass)return;
+    // These are the observed reference open-state classes; the saved CSS animates the grid and arrow.
+    const opened=root.classList.toggle(rootClass.replace('_root-','_isOpen-'));
+    heading.classList.toggle(headingClass.replace('_root-','_isOpen-'),opened);
+    body.classList.toggle(bodyClass.replace('_root-','_isOpen-'),opened);
+    heading.setAttribute('aria-expanded',String(opened));body.setAttribute('aria-hidden',String(!opened));
+  }
+  function toggleSeo(button) {
+    const root=button.closest('[class*="seo_root-"]');
+    const rootClass=root?.className.split(' ').find(c=>c.startsWith('seo_root-'));
+    const content=$('[class*="base_content-"]',button),icon=$('svg',button);
+    if(!rootClass||!content||!icon)return;
+    const opened=root.classList.toggle(rootClass.replace('_root-','_expanded-'));
+    // Label and arrow paths are from the observed reference states.
+    content.childNodes.forEach(node=>{if(node.nodeType===Node.TEXT_NODE)node.textContent='';});
+    content.prepend(document.createTextNode(opened?'Collapse ':'Read more '));
+    icon.dataset.icon=opened?'arrow-top':'arrow-bottom';
+    $('path',icon)?.setAttribute('d',opened?'M13.303 10.97a.9.9 0 0 1-1.273 0L8 6.94l-4.03 4.03a.9.9 0 1 1-1.273-1.273L7.363 5.03a.9.9 0 0 1 1.273 0l4.667 4.667a.9.9 0 0 1 0 1.273':'M2.697 5.03a.9.9 0 0 1 1.273 0L8 9.06l4.03-4.03a.9.9 0 1 1 1.273 1.273L8.637 10.97a.9.9 0 0 1-1.273 0L2.697 6.303a.9.9 0 0 1 0-1.273');
+    button.setAttribute('aria-expanded',String(opened));
+  }
   document.addEventListener('click',e=>{
+    const socialTrigger=e.target.closest('[data-testid="sidebar-social-buttons-with-preview"]');
+    if(socialTrigger){toggleSidebarSocial(socialTrigger);return;}
+    const socialPopover=$('[data-sidebar-social-popover]');
+    if(socialPopover&&!socialPopover.contains(e.target))closeSidebarSocial();
+    if(e.target.closest('[data-testid="local-sidebar-social-close"]')){closeSidebarSocial(true);return;}
     const groupToggle=e.target.closest('[data-testid="casino-group-toggle"]');
     if(groupToggle){
       e.preventDefault();
@@ -255,8 +419,14 @@
       return;
     }
     const el=e.target.closest('button,a,[data-reference-href],[class*="accordion-heading_root"],[class*="common-layout_close"],[class*="common-layout_backdrop"],[class*="desktop-modal_backdrop"],[class*="mobile-modal_backdrop"]');
+    const rowTitle=!el&&e.target.closest('[class*="game-slider_title"]');
+    if(rowTitle){const file=rowCategory(rowTitle);if(file)go(file);return;}
     if(!el)return;
     const id=el.dataset.testid||'', text=el.textContent.trim();
+    if(el.matches('[class*="seo_button-"]')&&el.closest('[class*="seo_root-"]')){toggleSeo(el);return;}
+    if(el.matches('[class*="accordion-heading_root-"]')&&el.closest('[class*="FaqSection_accordionContainer"]')){
+      toggleFaq(el);return;
+    }
     const footerSection=el.closest('[class*="navigation-section_root"]');
     if(footerSection&&el.closest('[class*="accordion-heading_root"]')){
       const content=$('[class*="navigation-section_expandable"]',footerSection);
@@ -313,19 +483,34 @@
     if(id==='casino-search-tabs-providers')return go('casino-providers.html');
     if(id==='casino-search-tabs-games')return go('casino-search.html');
     if(id==='casino-search-input-clear'){const input=test('casino-search-input');if(input){input.value='';searchResults('');input.focus();}return;}
+    const presetNav=el.closest('[class*="casino-preset-navigation_root"]');
+    if(presetNav&&el.matches('button')){
+      // Lobby / Live Casino / Quick games -> /casino, /casino/live-games, /casino/fast-games.
+      const target=['casino.html','casino-live.html','casino-quick.html'][$$('button',presetNav).indexOf(el)];
+      if(target&&target!==pageName+'.html')go(target);
+      return;
+    }
     if(id.startsWith('categories-qabs-qab-')){
-      const categories={"casino": "casino.html", "slots": "casino-slots.html", "1win-games": "casino-1win.html", "fishing-games": "casino-fishing.html", "live-casino": "casino-live.html", "bonus-buy": "casino-bonus-buy.html", "bonus-wagering": "casino-bonus-wagering.html", "jili-games": "casino-jili.html", "new": "casino-new.html", "only-on-1win": "casino-only-1win.html", "quick-games": "casino-quick.html", "ai-recommendations": "casino-recommended.html"};
-      const file=categories[id.replace('categories-qabs-qab-','')];
+      const file=categoryFile(id.replace('categories-qabs-qab-',''));
       if(file)return go(file);
       const label=text.toLowerCase(),section=$$('[class*="games-section_root"]').find(n=>n.textContent.toLowerCase().includes(label));
       if(section){section.scrollIntoView({behavior:scrollBehavior(),block:'start'});return;}
       notice('This category has not been captured yet.');return;
     }
+    const scrollArrow=el.closest('[class*="arrows-scroll-view_scrollBackButton"],[class*="arrows-scroll-view_scrollForwardButton"]');
+    if(scrollArrow){
+      const list=scrollViewList(scrollArrow.parentElement);
+      if(list)list.scrollBy({left:(scrollArrow.className.includes('scrollBackButton')?-1:1)*list.clientWidth,behavior:scrollBehavior()});
+      return;
+    }
     if(el.querySelector('[data-icon="arrow-back"],[data-icon="arrow-forward"]')){
       const section=el.closest('[class*="games-section_root"]');const grid=section&&$('[class*="games-grid_carousel"],[class*="tournaments"]',section);
-      if(grid){grid.scrollBy({left:(el.querySelector('[data-icon="arrow-back"]')?-1:1)*grid.clientWidth*.8,behavior:scrollBehavior()});return;}
+      // Reference sliders page three cards per click (401px at 1440: 3 x (129.5 card + 4 gap)).
+      const card=grid?.firstElementChild,gap=grid&&parseFloat(getComputedStyle(grid).columnGap)||0;
+      const step=card?3*(card.getBoundingClientRect().width+gap):grid?.clientWidth*.8;
+      if(grid){grid.scrollBy({left:(el.querySelector('[data-icon="arrow-back"]')?-1:1)*step,behavior:scrollBehavior()});return;}
     }
-    if(el.className.includes('game-slider-see-more')){go('casino.html');return;}
+    if(el.className.includes('game-slider-see-more')){go(rowCategory(el)||'casino.html');return;}
     if(text==='All'&&el.closest('[class*="games-section"]')){go('tournaments.html');return;}
     if(id==='footer-partners-links-commercial-copy'){const contact=$$('[class*="footer-partners"] a').find(a=>a.textContent.includes('@'))?.textContent.trim()||'business@1win.social';navigator.clipboard?.writeText(contact).then(()=>notice('Copied')).catch(()=>{});return;}
     if(id.includes('datePickerButton')){const input=$('input[type="date"]',el.closest('form'));if(input?.showPicker)input.showPicker();return;}
@@ -357,6 +542,13 @@
     notice('This local design preview does not submit account details.');
   });
   document.addEventListener('keydown',e=>{
+    if((e.key==='Enter'||e.key===' ')&&e.target.matches('[data-testid="sidebar-social-buttons-with-preview"]')){
+      e.preventDefault();toggleSidebarSocial(e.target);return;
+    }
+    if(e.key==='Escape'&&$('[data-sidebar-social-popover]')){closeSidebarSocial(true);return;}
+    if((e.key==='Enter'||e.key===' ')&&e.target.matches('[class*="FaqSection_accordionContainer"] [class*="accordion-heading_root-"]')){
+      e.preventDefault();toggleFaq(e.target);return;
+    }
     if(e.altKey&&e.key.toLowerCase()==='p'){e.preventDefault();togglePreview();return;}
     if(e.key==='Escape'){closeModal();toggleMenu(false);}
     if(e.key==='Tab'&&modal){const root=$('[data-testid="modal-layout"]');const items=root&&$$('button:not(:disabled),input:not([type="hidden"]),a',root).filter(n=>n.getClientRects().length);if(items?.length){const first=items[0],last=items.at(-1);if(e.shiftKey&&document.activeElement===first){e.preventDefault();last.focus();}else if(!e.shiftKey&&document.activeElement===last){e.preventDefault();first.focus();}}}
@@ -366,11 +558,23 @@
   document.addEventListener('touchend',e=>{if(swipeX!==null){const d=e.changedTouches[0].clientX-swipeX;if(Math.abs(d)>45)slide(d<0?1:-1);swipeX=null;}},{passive:true});
   function adaptToViewport() {
     const key=keyFor(currentPage);
-    if(key===currentKey){fitBanners();return;}
+    if(key===currentKey){fitBanners();positionSidebarSocial();return;}
     const kind=modal,dialog=$('[data-testid="modal-layout"]');
     const fields=dialog?$$('input',dialog).map((input,index)=>({id:input.dataset.testid,index,type:input.type,value:input.value,checked:input.checked})):[];
     const focusedId=document.activeElement?.dataset.testid;
+    const faqOpen=$$('[class*="FaqSection_accordionContainer"] [class*="accordion-heading_root-"][aria-expanded="true"]').map(n=>n.textContent.trim());
+    const faqFocused=document.activeElement?.closest('[class*="FaqSection_accordionContainer"]')?document.activeElement.textContent.trim():null;
+    const seoOpen=$$('[class*="seo_root-"]').map(root=>root.className.includes('seo_expanded-'));
+    const seoFocused=document.activeElement?.matches('[class*="seo_button-"]')?$$('[class*="seo_button-"]').indexOf(document.activeElement):-1;
     render(currentPage,null,true);
+    $$('[class*="seo_root-"] [class*="seo_button-"]').forEach((button,index)=>{
+      if(seoOpen[index]&&button.getAttribute('aria-expanded')!=='true')toggleSeo(button);
+      if(seoFocused===index)button.focus({preventScroll:true});
+    });
+    $$('[class*="FaqSection_accordionContainer"] [class*="accordion-heading_root-"]').forEach(heading=>{
+      if(faqOpen.includes(heading.textContent.trim())&&heading.getAttribute('aria-expanded')!=='true')toggleFaq(heading);
+      if(faqFocused===heading.textContent.trim())heading.focus({preventScroll:true});
+    });
     if(kind&&kind!=='search'){
       openModal(kind);
       const inputs=$$('input',$('[data-testid="modal-layout"]'));
@@ -386,4 +590,5 @@
   if(signedPreview||keyFor(currentPage)!==currentKey)render(currentPage);else hydrate();
   if(initialModal)openModal(initialModal);
   else if($('[data-testid="modal-layout"]')){modal='search';document.body.style.overflow='hidden';const root=$('[data-testid="modal-layout"]');root.dataset.localModal='search';motion?.modal(root);}
+  window.SHARED_UI?.ready();
 })();

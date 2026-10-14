@@ -1,0 +1,63 @@
+{
+  "page": "casino-quick",
+  "auth": true,
+  "date": "2026-10-14",
+  "replaced": {
+    "casino-quick-1440x900": 2,
+    "casino-quick-1920x1080": 2,
+    "casino-quick-390x844": 2,
+    "casino-quick-430x932": 2,
+    "casino-quick-768x1024": 2
+  },
+  "unmatched": [],
+  "kept_rows": [],
+  "captures": {
+    "casino-quick-1440x900": {
+      "file": "casino-quick-auth-1440x900.json",
+      "sha256": "44b320a4b25d",
+      "captured_at": "2026-10-14T05:02:51.414Z",
+      "viewport": [
+        1440,
+        900
+      ]
+    },
+    "casino-quick-1920x1080": {
+      "file": "casino-quick-auth-1920x1080.json",
+      "sha256": "3e2c37e7dc1a",
+      "captured_at": "2026-10-14T05:02:03.630Z",
+      "viewport": [
+        1920,
+        1080
+      ]
+    },
+    "casino-quick-390x844": {
+      "file": "casino-quick-auth-390x844.json",
+      "sha256": "4fcf7aec8bac",
+      "captured_at": "2026-10-14T05:05:03.664Z",
+      "viewport": [
+        390,
+        844
+      ]
+    },
+    "casino-quick-430x932": {
+      "file": "casino-quick-auth-430x932.json",
+      "sha256": "aed52f0cfc2c",
+      "captured_at": "2026-10-14T05:04:22.912Z",
+      "viewport": [
+        430,
+        932
+      ]
+    },
+    "casino-quick-768x1024": {
+      "file": "casino-quick-auth-768x1024.json",
+      "sha256": "bb902f251319",
+      "captured_at": "2026-10-14T05:03:46.257Z",
+      "viewport": [
+        768,
+        1024
+      ]
+    }
+  },
+  "downloaded": [],
+  "missing": []
+}

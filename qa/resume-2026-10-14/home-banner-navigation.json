@@ -1,0 +1,41 @@
+{
+  "checks": [
+    {
+      "index": 4,
+      "root": 1034.46875,
+      "slide": 1034.45166015625,
+      "aligned": true,
+      "fullWidth": true
+    },
+    {
+      "index": 0,
+      "root": 1034.46875,
+      "slide": 1034.45166015625,
+      "aligned": true,
+      "fullWidth": true
+    },
+    {
+      "index": 1,
+      "root": 1034.46875,
+      "slide": 1034.45166015625,
+      "aligned": true,
+      "fullWidth": true
+    },
+    {
+      "index": 2,
+      "root": 1034.46875,
+      "slide": 1034.45166015625,
+      "aligned": true,
+      "fullWidth": true
+    },
+    {
+      "index": 3,
+      "root": 1034.46875,
+      "slide": 1034.45166015625,
+      "aligned": true,
+      "fullWidth": true
+    }
+  ],
+  "nextWrapIndex": 4,
+  "previousWrapIndex": 3
+}

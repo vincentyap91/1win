@@ -1,0 +1,63 @@
+{
+  "page": "casino-live-blackjack",
+  "auth": true,
+  "date": "2026-10-14",
+  "replaced": {
+    "casino-live-blackjack-1440x900": 2,
+    "casino-live-blackjack-1920x1080": 2,
+    "casino-live-blackjack-390x844": 2,
+    "casino-live-blackjack-430x932": 2,
+    "casino-live-blackjack-768x1024": 2
+  },
+  "unmatched": [],
+  "kept_rows": [],
+  "captures": {
+    "casino-live-blackjack-1440x900": {
+      "file": "casino-live-blackjack-auth-1440x900.json",
+      "sha256": "d4a618526176",
+      "captured_at": "2026-10-14T05:21:03.243Z",
+      "viewport": [
+        1440,
+        900
+      ]
+    },
+    "casino-live-blackjack-1920x1080": {
+      "file": "casino-live-blackjack-auth-1920x1080.json",
+      "sha256": "0fbb260b3f60",
+      "captured_at": "2026-10-14T05:24:57.113Z",
+      "viewport": [
+        1920,
+        1080
+      ]
+    },
+    "casino-live-blackjack-390x844": {
+      "file": "casino-live-blackjack-auth-390x844.json",
+      "sha256": "45997ca24611",
+      "captured_at": "2026-10-14T05:45:46.632Z",
+      "viewport": [
+        390,
+        844
+      ]
+    },
+    "casino-live-blackjack-430x932": {
+      "file": "casino-live-blackjack-auth-430x932.json",
+      "sha256": "bd2e8786ce01",
+      "captured_at": "2026-10-14T05:43:48.591Z",
+      "viewport": [
+        430,
+        932
+      ]
+    },
+    "casino-live-blackjack-768x1024": {
+      "file": "casino-live-blackjack-auth-768x1024.json",
+      "sha256": "ac6fead88564",
+      "captured_at": "2026-10-14T05:35:55.052Z",
+      "viewport": [
+        768,
+        1024
+      ]
+    }
+  },
+  "downloaded": [],
+  "missing": []
+}

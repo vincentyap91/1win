@@ -1,0 +1,63 @@
+{
+  "page": "casino-live-emperors-collection",
+  "auth": true,
+  "date": "2026-10-14",
+  "replaced": {
+    "casino-live-emperors-collection-1440x900": 2,
+    "casino-live-emperors-collection-1920x1080": 2,
+    "casino-live-emperors-collection-390x844": 2,
+    "casino-live-emperors-collection-430x932": 2,
+    "casino-live-emperors-collection-768x1024": 2
+  },
+  "unmatched": [],
+  "kept_rows": [],
+  "captures": {
+    "casino-live-emperors-collection-1440x900": {
+      "file": "casino-live-emperors-collection-auth-1440x900.json",
+      "sha256": "1b132734f0ba",
+      "captured_at": "2026-10-14T05:17:42.742Z",
+      "viewport": [
+        1440,
+        900
+      ]
+    },
+    "casino-live-emperors-collection-1920x1080": {
+      "file": "casino-live-emperors-collection-auth-1920x1080.json",
+      "sha256": "09f67a294286",
+      "captured_at": "2026-10-14T05:23:56.836Z",
+      "viewport": [
+        1920,
+        1080
+      ]
+    },
+    "casino-live-emperors-collection-390x844": {
+      "file": "casino-live-emperors-collection-auth-390x844.json",
+      "sha256": "3f80122f864f",
+      "captured_at": "2026-10-14T05:44:51.620Z",
+      "viewport": [
+        390,
+        844
+      ]
+    },
+    "casino-live-emperors-collection-430x932": {
+      "file": "casino-live-emperors-collection-auth-430x932.json",
+      "sha256": "4d476938d751",
+      "captured_at": "2026-10-14T05:42:48.869Z",
+      "viewport": [
+        430,
+        932
+      ]
+    },
+    "casino-live-emperors-collection-768x1024": {
+      "file": "casino-live-emperors-collection-auth-768x1024.json",
+      "sha256": "b8ce9f8c687e",
+      "captured_at": "2026-10-14T05:34:24.529Z",
+      "viewport": [
+        768,
+        1024
+      ]
+    }
+  },
+  "downloaded": [],
+  "missing": []
+}

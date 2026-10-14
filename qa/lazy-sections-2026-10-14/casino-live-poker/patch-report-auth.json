@@ -1,0 +1,63 @@
+{
+  "page": "casino-live-poker",
+  "auth": true,
+  "date": "2026-10-14",
+  "replaced": {
+    "casino-live-poker-1440x900": 2,
+    "casino-live-poker-1920x1080": 2,
+    "casino-live-poker-390x844": 2,
+    "casino-live-poker-430x932": 2,
+    "casino-live-poker-768x1024": 2
+  },
+  "unmatched": [],
+  "kept_rows": [],
+  "captures": {
+    "casino-live-poker-1440x900": {
+      "file": "casino-live-poker-auth-1440x900.json",
+      "sha256": "635c137ce387",
+      "captured_at": "2026-10-14T05:21:07.658Z",
+      "viewport": [
+        1440,
+        900
+      ]
+    },
+    "casino-live-poker-1920x1080": {
+      "file": "casino-live-poker-auth-1920x1080.json",
+      "sha256": "f846b99264b9",
+      "captured_at": "2026-10-14T05:25:02.371Z",
+      "viewport": [
+        1920,
+        1080
+      ]
+    },
+    "casino-live-poker-390x844": {
+      "file": "casino-live-poker-auth-390x844.json",
+      "sha256": "f99ff9c2be2a",
+      "captured_at": "2026-10-14T05:45:51.664Z",
+      "viewport": [
+        390,
+        844
+      ]
+    },
+    "casino-live-poker-430x932": {
+      "file": "casino-live-poker-auth-430x932.json",
+      "sha256": "44b6280c7f8f",
+      "captured_at": "2026-10-14T05:43:54.322Z",
+      "viewport": [
+        430,
+        932
+      ]
+    },
+    "casino-live-poker-768x1024": {
+      "file": "casino-live-poker-auth-768x1024.json",
+      "sha256": "66d2a16e6bf2",
+      "captured_at": "2026-10-14T05:35:59.888Z",
+      "viewport": [
+        768,
+        1024
+      ]
+    }
+  },
+  "downloaded": [],
+  "missing": []
+}
