@@ -6,7 +6,7 @@
 
 唯一原站：https://one-vv3591.com/ 。目标是全页面视觉与已观察前端行为最终 100% 一致，属于精确复刻，不是重新设计。当前仍在实施和验收中；未验证的状态不能写成完全一致。
 
-沿用 HTML5、CSS3、Vanilla JavaScript，53 个独立 HTML 入口（含 22 个 Casino 子分类页），共享本地资源和组件。同一页面随窗口尺寸切换，不创建第二套 mobile 页面。页面启动不依赖生产后端，不发布到公网。
+沿用 HTML5、CSS3、Vanilla JavaScript，31 个独立 HTML 入口，共享本地资源和组件。同一页面随窗口尺寸切换，不创建第二套 mobile 页面。页面启动不依赖生产后端，不发布到公网。
 
 证据优先顺序：同状态真实浏览器测量／截图 → 已匿名化原站参考 → 已验证共享组件 → 尚待验证的历史捕获。未观察页面和缺失素材保持待办，不猜布局、不生成替代图片、不换成相似字体／图标。原素材仅在允许访问和使用的范围内复用。
 
@@ -39,12 +39,6 @@
 
 字体来源见 qa/asset-provenance.json 的 font 项。正文优先原 Inter；Rubik、Coolvetica 等仅用在已观察的对应组件。Logo、菜单 SVG 和 CSS mask 用原资源，不能手绘重做。字体和 mask 已使用原字节／data URL 处理本地兼容性。
 
-本地资源写法（直接双击 HTML 也必须显示）：
-- mask 图标（含 `mask-image: var(--x)` 引用的变量）一律内嵌为 data URL：file:// 下 mask 走 CORS 必被拦截。
-- 内联 style 中 **CSS 变量**里的图片写 `url("../assets/…")`：浏览器按读取它的样式表（css/）解析，写 `assets/…` 会变成 css/assets/… 而 404。普通 `src`、`srcset` 仍写 `assets/…`。
-- srcset 候选之间用 `, `（逗号加空格）；`a.avif,a.avif 2x` 会被当成一个 URL。
-- 原站缺失的图保持原样（例如原站本身无 src 的国旗），不补造。
-
 保留原 spacing、padding、gradient、shadow、border 与 CSS 变量；组件的权威样式仍在 css/styles.css / css/audit.css。新修复写入 css/local.css 并限定页面／组件范围。Betwave Read more 使用原 seo_expanded 类、Collapse 文案和 arrow-top 路径；响应式重建保留展开与焦点，不固定内容高度。不能随意覆写全局 #root、header、button 或滚动条，避免标准页面与 Betwave 互相污染。浅色浮层使用其原 colorScheme-light，不套深色文字变量。
 
 ## 3. 响应式与图像
@@ -62,7 +56,7 @@
 | 公共 Header HTML | components/header.html | 完全相同的标记仅保存一次 |
 | 公共侧栏／社交浮层 HTML | components/sidebar.html | 展开、收起、页面族、游客／Demo 保留实测变体 |
 | 公共 Footer HTML | components/footer.html | 未捕获的 footer 不会被自动编造 |
-| 导航和分类映射 | js/routes.js | pages（路由→入口）、categories（主分类标签）、subcategories（Live／Quick 页内的子分类标签，同名标签按当前组解析） |
+| 导航和分类映射 | js/routes.js | 页面与分类统一读取此配置 |
 | 交互、状态切换、菜单、FAQ／Read more | js/common.js | 所有入口共用 |
 | 动画／减少动态效果 | js/motion.js、css/motion.css | 功能调度和实际运动验收分开记录 |
 | 页面布局修复 | css/local.css | 必须限定作用范围 |
@@ -74,7 +68,7 @@
 
 共享加载器 js/shared-components.js 将模板还原成真实 DOM，不增加布局 wrapper。不同原站版本保留不同变体，不把 Betwave、Casino 子菜单、游客、Demo 或手机状态强行合并。当前 731 次公共引用集中到 142 个不同的原始变体中；这并不代表已验证了所有变体的原站一致性。
 
-**改组件后只构建一次，不手改各入口或生成 bundle：**
+**改组件后只构建一次，不手改 31 个入口或生成 bundle：**
 
 ```text
 node scripts/build-components.mjs
@@ -98,7 +92,7 @@ node scripts/build-components.mjs
 - Windows：双击 start-preview.cmd；访问 http://127.0.0.1:4173/。关闭预览窗口停止服务。
 - 通用：安装可运行本项目原生脚本的 Node.js，运行 `node scripts/serve.mjs`。不需要 npm 安装或框架。
 - Python 仅用于重新采集整合／迁移／静态 QA；图片差异脚本需要 Pillow，属于验收工具，不是页面运行依赖。
-- 默认游客。Alt+P 切换 Demo；`?preview=auth` 指定 Demo。本地预览开关不属于原站界面，只在 `?controls=1` 时显示（否则会改变 footer 高度）。`?qa=1` 停止 banner 轮播、Last wins 轮换和倒计时，便于截图。
+- 默认游客。Alt+P 或现有本地预览开关切换 Demo；`?preview=auth` 指定 Demo。`?qa=1` 停止自动轮播便于截图，它不等同隐藏全部开发附加界面。
 - 登录后预览只显示 Demo user、ID 00000000、余额 0.00；真实账户、支付、投注、游戏服务不连接。不能收集真实密码或支付信息。
 
 ## 6. 验收与维护约束
@@ -109,7 +103,7 @@ node scripts/build-components.mjs
 
 截图比较以原图为证据，不把截图贴成网页。检查坐标、字体、换行、间距、图片裁切、颜色、边框、阴影、overflow、加载与空状态。点击、键盘、Esc、焦点、滚动、快速反向操作与 resize 都要验证。
 
-基础检查：`node scripts/build-components.mjs`、`python scripts/verify-local-references.py --date YYYY-MM-DD`、`python scripts/apply-footers.py --date <footer 签名表日期>`（unresolved 为空）、`node --experimental-websocket scripts/file-protocol-check.mjs`（file:// 失败请求 0）。修改动画时另跑 `node scripts/motion-check.cjs js/motion.js`。检查 browser console。变更后仅重测受影响的范围，发现回归再扩大，不用重复通过的检查代替推进。
+基础检查：`node scripts/build-components.mjs`、`python scripts/verify-local-references.py --date YYYY-MM-DD`。修改动画时另跑 `node scripts/motion-check.cjs js/motion.js`。检查 browser console。变更后仅重测受影响的范围，发现回归再扩大，不用重复通过的检查代替推进。
 
 源码恢复检查和迁移前后截图只证明重构保真，不证明对原站已完成。原站百分比只有在完整页面清单和状态分母齐全、所有项有证据时才报告。具体缺口与下一步只写 Progress Workflow.md。
 
@@ -128,3 +122,13 @@ Complete and verify each implementation phase before proceeding to the next.
 If a task requires more reasoning, report the issue and recommend increasing the reasoning level when necessary.
 
 需要更深推理时说明具体问题，不声称已自行更改模型设置；不以速度或 token 为由降低质量。不可访问状态明确记录阻碍，继续处理已可观察事项。
+
+
+## Figma 页面唯一性与复用规则
+
+- 同一路由、同一响应式尺寸、同一实质页面状态只保留一个整页 Frame。桌面 1440 与手机 390 属于不同响应式版本；菜单／弹窗等实质差异使用组件变体或独立面板表达。
+- 修改已有设计必须更新原 Frame，保留原节点 ID，不创建另一份整页设计。先查询现有页面与进度账本，再决定是否真的缺少设计。
+- 捕获参考、临时导入、组件化版本、轮播图片变化或动态数字变化都不构成新页面。参考截图／原始捕获保存到本地 QA，不留第二份整页设计在 Figma 画布。
+- 相同按钮、图标、卡片、导航和页脚使用已有组件实例。只有观察到结构或状态差异时才增加组件变体，不能重复创建同一组件。
+- 迟到的捕获结果若与已有设计重复，先把必要内容更新到保留的 Frame，再移除临时 Frame；不得删除唯一设计或其共享组件依赖。
+- 每次收尾按“路由＋尺寸＋状态”检查重复，并记录保留的节点 ID、删除的重复 Frame 与当前未验收范围。
