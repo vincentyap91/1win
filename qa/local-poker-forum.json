@@ -1,0 +1,52 @@
+{
+ "1440x900": {
+  "value": {
+   "list": [
+    {
+     "text": "Forum",
+     "href": "#",
+     "ref": "/forum",
+     "where": "sidebar"
+    },
+    {
+     "text": "Poker",
+     "href": "#",
+     "ref": "/poker-app",
+     "where": "sidebar"
+    },
+    {
+     "text": "1playing",
+     "href": "#",
+     "ref": "/casino/play/v_1wingames:poker",
+     "where": "other"
+    },
+    {
+     "text": "1win Poker",
+     "href": "#",
+     "ref": "/poker",
+     "where": "seo"
+    },
+    {
+     "text": "Poker",
+     "href": "#",
+     "ref": "/poker-app",
+     "where": "footer"
+    },
+    {
+     "text": "Forum",
+     "href": "#",
+     "ref": "/forum",
+     "where": "footer"
+    }
+   ],
+   "forumClick": {
+    "navigated": false,
+    "to": "file:///C:/Users/vince/OneDrive/Desktop/website/1win/casino.html",
+    "notice": [
+     "This page has not been captured yet."
+    ]
+   }
+  },
+  "errors": []
+ }
+}

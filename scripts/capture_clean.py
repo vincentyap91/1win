@@ -11,7 +11,7 @@ import pathlib
 import re
 import urllib.request
 from html.parser import HTMLParser
-from urllib.parse import unquote, urljoin, urlparse
+from urllib.parse import quote, unquote, urljoin, urlparse
 
 ROOT = pathlib.Path(__file__).resolve().parent.parent
 ORIGIN = 'https://one-vv3591.com/'
@@ -105,7 +105,8 @@ class Media:
         self.missing = []
 
     def fetch(self, url):
-        req = urllib.request.Request(url, headers={'User-Agent': 'Mozilla/5.0', 'Referer': ORIGIN})
+        # Team logos can have non-ASCII paths (e.g. füchse-berlin); urllib only sends percent-encoded URLs.
+        req = urllib.request.Request(quote(url, safe=":/?&=%#@+,;~!$'()*[]"), headers={'User-Agent': 'Mozilla/5.0', 'Referer': ORIGIN})
         with urllib.request.urlopen(req, timeout=30) as r:
             mime = (r.headers.get('content-type') or '').split(';')[0]
             content = r.read()

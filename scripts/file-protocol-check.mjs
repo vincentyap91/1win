@@ -51,6 +51,12 @@ for (const page of pages) {
   await s.send('Emulation.setDeviceMetricsOverride', {width, height, deviceScaleFactor: 1, mobile: width < 768});
   await s.send('Page.navigate', {url: pathToFileURL(path.join(root, page)).href});
   await sleep(4000);
+  // Heavy pages under load can still be mounting header/sidebar/footer after the first wait.
+  for (let i = 0; i < 30; i++) {
+    const ui = await s.send('Runtime.evaluate', {returnByValue: true, expression: 'document.documentElement.dataset.sharedUi||""'});
+    if (ui.result?.result?.value !== 'loading') break;
+    await sleep(500);
+  }
   const probe = await s.send('Runtime.evaluate', {returnByValue: true, awaitPromise: true, expression: `(async()=>{
     for(let y=0;y<document.documentElement.scrollHeight;y+=700){scrollTo(0,y);await new Promise(r=>setTimeout(r,60));}
     scrollTo(0,0); await new Promise(r=>setTimeout(r,1500));

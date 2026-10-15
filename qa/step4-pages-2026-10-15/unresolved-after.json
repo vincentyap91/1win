@@ -1,0 +1,26 @@
+{
+ "/en/betwave/events/padel": [
+  "betwave-events-american-football",
+  "betwave-events-arena-of-valor",
+  "betwave-events-badminton",
+  "betwave-events-baseball",
+  "betwave-events-basketball",
+  "betwave-events-boxing",
+  "betwave-events-cricket",
+  "betwave-events-cs2",
+  "betwave-events-cybersports",
+  "betwave-events-darts",
+  "betwave-events-dota-2",
+  "betwave-events-floorball",
+  "betwave-events-handball",
+  "betwave-events-ice-hockey",
+  "betwave-events-lol",
+  "betwave-events-rugby",
+  "betwave-events-soccer",
+  "betwave-events-table-tennis",
+  "betwave-events-tennis",
+  "betwave-events-ufc",
+  "betwave-events-valorant",
+  "betwave-events-volleyball"
+ ]
+}

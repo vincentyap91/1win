@@ -51,7 +51,6 @@
 独立 Figma 预览处理了原 HTML `connect-src 'none'` 导致素材读取／提交失败的问题，并把 CSS mask 转为原 SVG 矢量；交付 HTML 的安全策略和源码没有因此更改。之前未完成的 HTML 审核保持停止，旧待办保留供后续追溯。
 
 # Progress Workflow — 1win
-
 最新版本：**2026-10-15**（Asia/Kuala_Lumpur）。本节是接手 agent（Cursor 等）的唯一进度依据；设计/代码规则查 **Design Rule.md**。本文件顶部的 Figma 段落属于另一条工作线，不要改它。
 
 ---
@@ -60,8 +59,8 @@
 
 - **目标**：用 HTML5 + CSS + 原生 JS 1:1 克隆 https://one-vv3591.com/（设计 + 前端行为）。游客 + Demo（已登录展示）两种状态；五个尺寸 1920×1080 / 1440×900 / 768×1024 / 430×932 / 390×844。直接双击 HTML（file://）也要显示图标和图片。
 - **用户规则**：全部自己完成，不要问用户；只做本地展示，不接真实账户/支付/投注；不输入任何凭据；Demo 数据脱敏（姓名→Demo user，ID→ID 00000000，余额→0.00）。
-- **当前阶段**：5 步缺口计划已完成 Step 1、2、3；**下一步是 Step 4**（用已有采集生成新页面，见 §4）。Step 5 的采集部分完成。
-- **规模**：146 个 HTML 入口（见 §3）。
+- **当前阶段**：5 步缺口计划已完成 Step 1、2、3、4（Step 4 按用户要求跳过剩余的 Betwave 工作）；**下一步是 Step 5**（资源、五尺寸像素对比、最终验收报告，见 §4）。
+- **规模**：271 个 HTML 入口（见 §3）。
 
 ## 1. 架构速读（改代码前必须知道）
 
@@ -94,20 +93,23 @@
 6. **本地预览**：`node scripts/serve.mjs`（或 `start-preview.cmd`）默认端口 4173；验收用 4174：PowerShell `$env:PORT='4174'; node scripts/serve.mjs`。
 7. **在本地页面跑探测脚本**：`node --experimental-websocket scripts/local-run-cdp.mjs --page a.html,b.html --script scripts/probes/<probe>.js --sizes … [--query preview=auth] [--http] [--resize WxH --then-script p.js] [--out x.json]`（默认 file://，`--http` 用 4174）。结果会附带 console 异常。
 
-## 3. 页面清单（146 个 HTML）
+## 3. 页面清单（271 个 HTML）
 
 | 组 | 数量 | 页面 | 状态 |
 |---|---|---|---|
 | 首页/账户 | 4 | index、login、register、recovery | ✅ |
-| 主栏目 | 6 | bonuses、freemoney、loyalty-program、vip-club、blog、betwave | ✅ 主页面；Blog 分类/文章、Betwave 子页 ❌ |
-| Casino | 37 | casino；slots / new / 1win / bonus-buy / bonus-wagering / fishing / jili / only-1win / recommended / providers / search / search-results；casino-live + 15 个子页；casino-quick + 7 个子页；**casino-play**（新） | ✅；无限滚动 ✅ |
+| 主栏目 | 6 | bonuses、freemoney、loyalty-program、vip-club、blog、betwave | ✅ |
+| 其它栏目（Step 4） | 3 | rules、trading、poker-app | ✅ |
+| Blog（Step 4） | 58 | 7 个分类 + 51 篇文章（`blog-<分类>-<文章>`） | ✅ |
+| Betwave 子页（Step 4） | 54 | predictions 全部/express/各运动、events 全部/各运动、predictors、create、rules、event/prediction/profile 样例 | ✅（`padel` 按用户要求跳过，见 Step 4） |
+| Casino | 47 | casino；slots / new / 1win / bonus-buy / bonus-wagering / fishing / jili / only-1win / recommended / providers / search / search-results / play；casino-live + 15 个子页；casino-quick + 8 个子页（含 popular-turbo-games）；Step 4 新增 100000-jackpot、virtual-sports、crystal-rush、crash-games、game-shows、popular、trading、tournaments-categories | ✅；无限滚动 ✅ |
 | Sports | 5 | sports、sports-live、sports-upcoming、sports-esports、sports-topbets | ✅ |
-| Sports 筛选 | 61 | sports-live-*（16）、sports-upcoming-*（34）、sports-esports-*（11） | ✅ |
+| Sports 筛选 | 62 | sports-live-*（16）、sports-upcoming-*（34）、sports-esports-*（12，含 call-of-duty） | ✅ |
 | Markets | 14 | sports-markets + 13 个分类 | ✅；Yes/No 内联下注 ✅ |
 | Bet history | 1 | sports-bets-history（游客自动弹注册，与原站相同） | ✅ |
 | Promotions | 2 | promotions（含详情弹窗）、promotion-halloween-2026 | ✅ |
 | Tournaments | 15 | tournaments；tournament-<id> × 14 | ✅ 12 个进行中的比赛已重建；788262、817472 已结束，原站也只显示 “Back”（本地一致） |
-| 尚无页面 | — | 5 个 Casino 分类、rules、trading、poker、poker-app、forum、Blog 7 个分类 + 约 21 篇文章、Betwave 12 个子页 | ❌ |
+| 不建页面（按原站行为处理） | — | `/forum`（外部论坛站提示）、`/poker`（→ 首页）、比赛联赛页 `/betting/<栏目>/<运动>/<联赛>`（实时赛程提示）、游戏 `/casino/play/*`（→ casino-play） | ✅ 见 Step 4 |
 
 ## 4. 5 步计划进度
 
@@ -143,20 +145,44 @@ Markets（+13）、TOP Bets、Bet history、61 个运动筛选页（`routes.js` 
 - `casino-live.html`、`casino-live-roulette.html` 的 file:// 检查各报 1 张 “broken” 图片：是 Greek Roulette 500x 卡上没有 `src` 的语言旗 `<img>`，原站同样没有 `src`（`captures/greek-flag.json`），属于忠实还原。
 - Casino 搜索/供应商在原站是同一 URL 上的浮层切换，本地是两个独立页（`casino-search.html`、`casino-providers.html`），标签切换会换页。
 
-### Step 4 新页面 — 采集基本完成，未生成页面
-- 采集已全部完成：`captures/cap-step4/`（38 页 × 5 尺寸 = 190 份）、`captures/cap-bw/`（Betwave 12 页 × 5 尺寸）。已核对 `path`：除下面两项外都与预期一致（`/blog/vip/1win-vip%20ENG` 只是编码差异，正常）。
-- ⚠️ `/poker` 和 `/forum` 游客访问会被重定向到首页（采集文件里 path 为 `/`）：不要用这两份采集建页面。先在原站探测点击侧栏 Forum / 页脚 1win Poker 的实际行为（可能是新窗口外链或需要登录），按实测做成外链提示或登录弹窗，并在本文记录。`/poker-app` 正常。
-- 页面和模板建议：
-  - Casino：`casino-category-100000-jackpot`、`casino-category-virtual-sports`、`casino-category-crystal-rush`、`casino-crash-games`、`casino-game-shows` → template `casino-slots`；生成后也做 more-cards。
-  - `rules`、`trading`、`poker-app` → template `bonuses`；`poker`、`forum` 见上面的 ⚠️。
-  - Blog：`blog-<分类>`、`blog-<分类>-<文章>` → template `blog`；确认 blog.html 里的链接能点进去。
-  - Betwave：`betwave-predictions-all|express|soccer|cricket|tennis`、`betwave-events-all`、`betwave-predictors`、`betwave-create`、`betwave-rules`、`betwave-event-sample`、`betwave-prediction-sample`、`betwave-profile-sample` → template `betwave`；route 用 `/en/betwave/...`，并在 `routes.js` 加 `/betwave/...` 别名。事件/预测/个人页是动态 ID，其它 ID 的链接统一指到 sample 页。
+### Step 4 新页面 — ✅ 完成（2026-10-15；剩余 Betwave 工作按用户要求跳过）
+**小结**：新增 125 个页面（146 → 271），全部五尺寸游客 + Demo 状态。站内导航可达的路由除 1 个被跳过的 Betwave 页外全部有本地页面或按原站行为处理（`node scripts/unresolved-links.mjs` 只剩 `/en/betwave/events/padel`）。收尾检查全部通过：271 页 0 缺失本地文件、0 主动远程引用；file:// 271 页 0 加载失败、0 console 错误（仅已知的 Greek Roulette 无 src 国旗 2 处）；侧栏展开/收起 268 页全部 OK（login/register/recovery 无侧栏按钮）。
+
+已完成：
+- **生成的页面**（`build-page-from-capture.py`，采集都核对过 path 与骨架数）：
+  - Casino 9 个：100000-jackpot、virtual-sports、crystal-rush、crash-games、game-shows、popular、tournaments-categories（template `casino-slots`）；casino-trading（`casino-play`，游戏布局）；casino-quick-popular-turbo-games（`casino-quick-crash-games`）。100000-jackpot 1440、game-shows 390 首次采集有骨架，已重采（`captures/cap-step4-retry/`）。
+  - rules、poker-app（`bonuses`）；trading（`casino-play`；原站游客的游戏框本来就是一个常驻骨架，`captures/skeletons-trading.json`）。
+  - Blog 58 个：7 个分类 + 51 篇文章（第二批 30 篇来自 Step 4 页面里的链接，`captures/cap-step4b-blog/`）。
+  - Betwave 54 个（`betwave`）：第一批 12 个 + 各运动的 events / predictions 筛选 42 个（`captures/cap-step4b-bw/`、`cap-step4b-bwp/`）。
+  - sports-esports-call-of-duty（`sports-esports-cs2`）。
+- **无限滚动**：原站实测（`probe-more-cards.js` → `captures/cap-more/`）后为 100000-jackpot、virtual-sports、crash-games、game-shows、popular、popular-turbo-games 生成 `-more.js`；crystal-rush（10 个）、tournaments-categories（无游戏网格）原站不分页。五尺寸本地验收：标记越线才加载、0 重复、无横向滚动（`qa/casino-more-2026-10-15/step4-local*.json`）。
+- **特殊路由（按原站实测）**：
+  - `/forum`：原站整页跳到外部 `https://forum.one-vv3591.com/`（`captures/landing-forum.json`）→ 本地显示提示 “The 1win forum is a separate website and is not part of this preview.”
+  - `/poker`：游客被重定向到首页（`captures/landing-poker.json`）→ `routes.js` `/poker` → `index.html`。侧栏/页脚 Poker 指向 `/poker-app`（已建页）。
+  - 别名（原站实测落点，`captures/route-targets*.json`）：`/casino/live-casino` → casino-live、`/casino/quick-games` → casino-quick、`/casino/level-up`、`/casino/endorphina-e-drops` → casino、`/betting/stats` → sports、`/en/betwave/events/rainbow-six` → betwave-events-all（原站重定向到 all）。
+  - 运动旧 slug：原站按数字 ID 选运动（`soccer-18` 与 `football-18`、`rugby-19` 与 `rugby-union-19` 内容相同，`captures/sport-slug-*.json`）→ `common.js` `routeFile()` 按同栏目同 ID 回退。
+  - Betwave：`/betwave/...` → `/en/betwave/...`；event / prediction / `bw-<id>` 个人页是动态 ID，其它 ID 统一打开对应 sample 页。末尾斜杠忽略（`/poker-app/`）。
+  - 比赛联赛页 `/betting/<栏目>/<运动>/<联赛>`（约 135 个，随实时赛程变化）→ 提示 “League pages follow the live schedule and are not part of this preview.”
+- **修复**：
+  - Betwave 子页内容被侧栏盖住：`css/local.css` 的 `#root` 横排补丁只对 `data-page="betwave"`，扩到 `data-page^="betwave"`（12 页侧栏检查从 FAIL 变 OK）。
+  - `build-page-from-capture.py` 会把模板的 `-more.js` 带进新页面（5 个新分类曾加载 Slots 的游戏）→ 生成时去掉；已从 5 页移除。
+  - `capture_clean.py` 下载非 ASCII 路径的图片失败（`füchse-berlin`、`gog-håndbold` 队徽）→ 请求前百分号编码；两个 handball 页重建后 0 缺图。
+  - `file-protocol-check.mjs` 在负载高时会在共享 header/sidebar/footer 挂载前测量（误报 templatesLeft 3）→ 增加等待。
+- **新工具**：`scripts/unresolved-links.mjs`（全站未落地链接，规则与 `routeFile()` 相同）、`maps-from-unresolved.mjs`（生成采集 map）、`summarize-page-basics.mjs`、`missing-shared-components.mjs`、`diff-shared-components.mjs`、`missing-capture-images.py`；本地探测 `local-page-basics.js`（状态/横向滚动/坏图/未落地链接）。
+
+验收（证据 `qa/step4-pages-2026-10-15/`）：71 个非 Betwave 新页 × 五尺寸 × 游客/Demo（710 次，HTTP）：状态与尺寸一致、无横向滚动、无坏图、无未落地链接、console 只有浏览器自动请求 `favicon.ico` 的 404；48 个第一批新页（含 Betwave 12 个）五尺寸游客同样通过；resize 1440→390（游客）与 390→1920（Demo）通过；Forum / Poker 点击 1440、390 通过（`qa/local-poker-forum.json`）。构建日志 `qa/step4-build-2026-10-15.txt`、`qa/step4b-build-2026-10-15.txt`，收尾 `qa/step4-checks-2026-10-15.txt`，`qa/file-protocol-2026-10-15-step4-final.txt`、`qa/sidebar-toggle-2026-10-15-step4-final.txt`。
+
+**Step 4 已知、有理由的差异 / 跳过项**：
+- 按用户要求跳过 Betwave 剩余工作：`/en/betwave/events/padel` 没有页面（点击显示 “This page has not been captured yet.”）；第二批 42 个 Betwave 页已生成并通过 file:// 与侧栏检查，但未做五尺寸游客/Demo 逐页探测。
+- 比赛联赛页不做快照（内容按分钟变化），显示提示。
+- `/forum` 是外部站点，不做页面，显示提示。
+- trading / casino-trading 的游戏布局 header（`variant-4_inGame`）在游客状态没有账户区，Demo 状态只换了侧栏的 Demo user 资料；原站登录后这个 header 是否显示余额需要已登录参考（见 Step 5）。
 
 ### Step 5 资源与像素 — 部分完成
 - ✅ 语言选择器 30 个国旗（原本是 `data:,` 懒加载占位）：`python scripts/fix-language-flags.py captures/language-flags.json --date …`。
-- ❌ Betwave 骨架/动态图片（mikhail lazarev、Lens、Sporting CP、RB Leipzig、PSV Eindhoven）、Promotions 占位图。
+- ❌ Betwave 骨架/动态图片（mikhail lazarev、Lens、Sporting CP、RB Leipzig、PSV Eindhoven）——用户 2026-10-15 要求跳过 Betwave，暂不做；Promotions 占位图仍待做。
 - ❌ 全站五尺寸原站/本地像素对比（逐页截图、修差异、记录）。
-- ❌ Demo（已登录）状态缺有效参考，**待用户本人登录原站后再采**（不要自己输入凭据）。`node scripts/auth-state-audit.mjs` 找出 27 页共 35 个 Demo 状态的布局与同尺寸游客状态不符（存的是别的尺寸的布局，如 casino-slots Demo 1920 是手机布局、Demo 390/768 是桌面布局）：betwave 390/430/768、blog 1440/1920、bonuses 390/768、casino-live-* 768（16 个）、casino-slots 1920/390/768、casino-recommended 1920/768、casino-bonus-wagering 1920、casino-fishing 768、freemoney 768、home 1920、loyalty-program 1920/768、vip-club 1920。用户登录后按尺寸重采这些路由，再用 `build-page-from-capture.py` 只更新 `-auth.js`；修完重跑 audit 应为 0。
+- ❌ Demo（已登录）状态缺有效参考，**待用户本人登录原站后再采**（不要自己输入凭据）。Step 4 新增一项：trading / casino-trading 的游戏布局 header 登录后的样子。`node scripts/auth-state-audit.mjs` 找出 27 页共 35 个 Demo 状态的布局与同尺寸游客状态不符（存的是别的尺寸的布局，如 casino-slots Demo 1920 是手机布局、Demo 390/768 是桌面布局）：betwave 390/430/768、blog 1440/1920、bonuses 390/768、casino-live-* 768（16 个）、casino-slots 1920/390/768、casino-recommended 1920/768、casino-bonus-wagering 1920、casino-fishing 768、freemoney 768、home 1920、loyalty-program 1920/768、vip-club 1920。用户登录后按尺寸重采这些路由，再用 `build-page-from-capture.py` 只更新 `-auth.js`；修完重跑 audit 应为 0。
 
 ## 5. 仍然有效的旧成果
 - 共享组件：header/sidebar/footer 集中到 components，重复标记 25.36MB → 6.63MB；还原逐字节一致（`qa/shared-components-2026-10-14/`）。
@@ -179,3 +205,5 @@ Markets（+13）、TOP Bets、Bet history、61 个运动筛选页（`routes.js` 
 - Step 3 收尾新增：`scripts/local-run-cdp.mjs`（本地探测）、`scripts/auth-state-audit.mjs`（Demo 状态布局核对）、`scripts/build-tournament-detail.py`、`scripts/add-leaderboard-modals.py`、`scripts/build-markets-bet-form.py`；`js/tournament-detail.js`、`js/markets-bet-form.js`；12 个 tournament 页重建；`common.js` 新增比赛弹窗/Show more、Markets 内联下注、crypto-live 提示、`focusSearch()`，重写 `initMoreCards()`；`js/dialogs.js` 恢复 `REFERENCE_SIDEBAR_ICONS` 尾部；`css/inline-masks.css` 新增 3 个 mask。
 - 证据目录：`qa/casino-more-2026-10-15/`、`qa/tournament-detail-2026-10-15/`、`qa/markets-bet-form-2026-10-15/`、`qa/casino-search-2026-10-15/`、`qa/file-protocol-2026-10-15/` + `qa/file-protocol-2026-10-15-run2.txt`（146 页）+ `-step3-final.txt`（改动的 31 页）、`qa/sidebar-toggle-2026-10-15-run.txt`（143 页）。
 - Step 3 已 commit（未 push）。
+- Step 4（详见 §4）：125 个新页面及其 `js/<page>.js` / `-auth.js` / `-more.js`；`js/common.js` 新增 `routeFile()`（Betwave 别名与样例、运动 ID 回退、末尾斜杠）、Forum 与联赛页提示；`js/routes.js` 新路由与别名；`css/local.css` Betwave `#root` 补丁；`scripts/build-page-from-capture.py`、`capture_clean.py`、`file-protocol-check.mjs` 修复；新脚本见 Step 4。Step 4 已 commit（未 push）。
+- 2026-10-15 下午本文件的工作副本被另一条工作线整体改写（HTML 进度段落被替换为 Figma / 旧 HTML 基线内容）。为不覆盖它，本节从 Step 3 提交版恢复、更新后追加在文件末尾；顶部内容未改。

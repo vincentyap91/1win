@@ -131,6 +131,8 @@ def main():
     head = re.sub(r'<title>[^<]*</title>', '<title>1win | ' + htmllib.escape(title) + '</title>', head, count=1)
     scripts = ''.join(re.findall(r'<script src="[^"]+"></script>', tpl_html))
     scripts = scripts.replace(f'js/{args.template}.js"', f'js/{args.page}.js"').replace(f'js/{args.template}-auth.js"', f'js/{args.page}-auth.js"')
+    # Infinite-scroll cards belong to the template's category; build-more-cards.py adds the page's own file.
+    scripts = scripts.replace(f'<script src="js/{args.template}-more.js"></script>', '')
     first = guest.get(f'{args.page}-1440x900') or next(iter(guest.values()))
     battrs = dict(first['attrs']); battrs.update({'data-page': args.page, 'data-state': next(k for k, v in guest.items() if v is first), 'data-asset-prefix': ''})
     body_open = '<body' + ''.join(f' {k}="{htmllib.escape(v or "", quote=True)}"' for k, v in battrs.items()) + '>'

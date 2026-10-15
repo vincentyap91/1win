@@ -558,6 +558,282 @@
     "/casino/play": {
       "desktop": "910290bda07e",
       "mobile": "018c8fb9eb4e"
+    },
+    "/casino/category/100000-jackpot": {
+      "desktop": "910290bda07e",
+      "mobile": "018c8fb9eb4e"
+    },
+    "/casino/category/virtual-sports": {
+      "desktop": "910290bda07e",
+      "mobile": "018c8fb9eb4e"
+    },
+    "/casino/category/crystal-rush": {
+      "desktop": "910290bda07e",
+      "mobile": "018c8fb9eb4e"
+    },
+    "/casino/crash-games": {
+      "desktop": "577ba91bceb0",
+      "mobile": "a4a3157804c9"
+    },
+    "/casino/game-shows": {
+      "desktop": "577ba91bceb0",
+      "mobile": "a4a3157804c9"
+    },
+    "/rules": {
+      "desktop": "a49be2be9cee",
+      "mobile": "ed63ba1448cf"
+    },
+    "/poker-app": {
+      "desktop": "20856630db74",
+      "mobile": "a3000be5128c"
+    },
+    "/blog/1win-inside": {
+      "desktop": "910290bda07e",
+      "mobile": "018c8fb9eb4e"
+    },
+    "/blog/casino": {
+      "desktop": "910290bda07e",
+      "mobile": "018c8fb9eb4e"
+    },
+    "/blog/sport": {
+      "desktop": "910290bda07e",
+      "mobile": "018c8fb9eb4e"
+    },
+    "/blog/vip": {
+      "desktop": "910290bda07e",
+      "mobile": "018c8fb9eb4e"
+    },
+    "/blog/ambassadors": {
+      "desktop": "910290bda07e",
+      "mobile": "018c8fb9eb4e"
+    },
+    "/blog/1win-charity": {
+      "desktop": "910290bda07e",
+      "mobile": "018c8fb9eb4e"
+    },
+    "/blog/crypto": {
+      "desktop": "910290bda07e",
+      "mobile": "018c8fb9eb4e"
+    },
+    "/blog/vip/lucky-drive-ferrari-sf90-vip-weekend": {
+      "desktop": "910290bda07e",
+      "mobile": "018c8fb9eb4e"
+    },
+    "/blog/sport/live-prematch": {
+      "desktop": "910290bda07e",
+      "mobile": "018c8fb9eb4e"
+    },
+    "/blog/crypto/kripto-guide": {
+      "desktop": "910290bda07e",
+      "mobile": "018c8fb9eb4e"
+    },
+    "/blog/crypto/crypto-tournamets": {
+      "desktop": "910290bda07e",
+      "mobile": "018c8fb9eb4e"
+    },
+    "/blog/crypto/bestchange": {
+      "desktop": "910290bda07e",
+      "mobile": "018c8fb9eb4e"
+    },
+    "/blog/crypto/kripta-karta-ENG": {
+      "desktop": "910290bda07e",
+      "mobile": "018c8fb9eb4e"
+    },
+    "/blog/crypto/memo-i-tag-ENG": {
+      "desktop": "910290bda07e",
+      "mobile": "018c8fb9eb4e"
+    },
+    "/blog/1win-inside/betwave-ENG": {
+      "desktop": "910290bda07e",
+      "mobile": "018c8fb9eb4e"
+    },
+    "/blog/ambassadors/suares-ENG": {
+      "desktop": "910290bda07e",
+      "mobile": "018c8fb9eb4e"
+    },
+    "/blog/ambassadors/predicti-ufc-ENG": {
+      "desktop": "910290bda07e",
+      "mobile": "018c8fb9eb4e"
+    },
+    "/blog/vip/petr-yan-vip-ENG": {
+      "desktop": "910290bda07e",
+      "mobile": "018c8fb9eb4e"
+    },
+    "/blog/sport/matematika-uspeha-ENG": {
+      "desktop": "910290bda07e",
+      "mobile": "018c8fb9eb4e"
+    },
+    "/blog/vip/topuria-vip-ENG": {
+      "desktop": "910290bda07e",
+      "mobile": "018c8fb9eb4e"
+    },
+    "/blog/1win-inside/bonus-ENG": {
+      "desktop": "910290bda07e",
+      "mobile": "018c8fb9eb4e"
+    },
+    "/blog/crypto/usdt-in-a-traffic%20ENG": {
+      "desktop": "910290bda07e",
+      "mobile": "018c8fb9eb4e"
+    },
+    "/blog/crypto/gde%20dengi%20ENG": {
+      "desktop": "910290bda07e",
+      "mobile": "018c8fb9eb4e"
+    },
+    "/blog/1win-charity/evelone-ENG": {
+      "desktop": "910290bda07e",
+      "mobile": "018c8fb9eb4e"
+    },
+    "/blog/vip/tyga-ENG": {
+      "desktop": "910290bda07e",
+      "mobile": "018c8fb9eb4e"
+    },
+    "/blog/vip/1win-vip%20ENG": {
+      "desktop": "910290bda07e",
+      "mobile": "018c8fb9eb4e"
+    },
+    "/blog/vip/jet-dubai-ENG": {
+      "desktop": "910290bda07e",
+      "mobile": "018c8fb9eb4e"
+    },
+    "/blog/crypto/usdt-vs-fiat-ENG": {
+      "desktop": "910290bda07e",
+      "mobile": "018c8fb9eb4e"
+    },
+    "/blog/1win-inside/1win-app%20ENG": {
+      "desktop": "910290bda07e",
+      "mobile": "018c8fb9eb4e"
+    },
+    "/blog/1win-inside/1win-markets%20ENG": {
+      "desktop": "910290bda07e",
+      "mobile": "018c8fb9eb4e"
+    },
+    "/blog/ambassadors/gable-stevson%20ENG": {
+      "desktop": "910290bda07e",
+      "mobile": "018c8fb9eb4e"
+    },
+    "/blog/ambassadors/jon-jones%20ENG": {
+      "desktop": "910290bda07e",
+      "mobile": "018c8fb9eb4e"
+    },
+    "/blog/casino/best-games-novichkam%20ENG": {
+      "desktop": "910290bda07e",
+      "mobile": "018c8fb9eb4e"
+    },
+    "/blog/casino/best-online-casino-bonuses%20ENG": {
+      "desktop": "910290bda07e",
+      "mobile": "018c8fb9eb4e"
+    },
+    "/blog/casino/generator%20chisel%20ENG": {
+      "desktop": "910290bda07e",
+      "mobile": "018c8fb9eb4e"
+    },
+    "/blog/casino/poker-strategies%20ENG": {
+      "desktop": "910290bda07e",
+      "mobile": "018c8fb9eb4e"
+    },
+    "/blog/casino/what-is-rtp-ENG": {
+      "desktop": "910290bda07e",
+      "mobile": "018c8fb9eb4e"
+    },
+    "/blog/crypto/1%20oshibla%20i%20deneg%20net%20ENG": {
+      "desktop": "910290bda07e",
+      "mobile": "018c8fb9eb4e"
+    },
+    "/blog/crypto/bitcoin%20ENG": {
+      "desktop": "910290bda07e",
+      "mobile": "018c8fb9eb4e"
+    },
+    "/blog/crypto/guide-to-safe-transactions%20ENG": {
+      "desktop": "910290bda07e",
+      "mobile": "018c8fb9eb4e"
+    },
+    "/blog/crypto/kastodialnie%20koshelki%20ENG": {
+      "desktop": "910290bda07e",
+      "mobile": "018c8fb9eb4e"
+    },
+    "/blog/crypto/kripta%20v-igaming-%20ENG": {
+      "desktop": "910290bda07e",
+      "mobile": "018c8fb9eb4e"
+    },
+    "/blog/crypto/scam-in-crypto%20ENG": {
+      "desktop": "910290bda07e",
+      "mobile": "018c8fb9eb4e"
+    },
+    "/blog/crypto/tether-usdt-casinos%20ENG": {
+      "desktop": "910290bda07e",
+      "mobile": "018c8fb9eb4e"
+    },
+    "/blog/crypto/tvoi-kluchi-ENG": {
+      "desktop": "910290bda07e",
+      "mobile": "018c8fb9eb4e"
+    },
+    "/blog/crypto/usdt-btc-or-altcoins%20ENG": {
+      "desktop": "910290bda07e",
+      "mobile": "018c8fb9eb4e"
+    },
+    "/blog/crypto/vibor%20seti%20ENG": {
+      "desktop": "910290bda07e",
+      "mobile": "018c8fb9eb4e"
+    },
+    "/blog/crypto/vivod%20s-1win%20ENG": {
+      "desktop": "910290bda07e",
+      "mobile": "018c8fb9eb4e"
+    },
+    "/blog/crypto/what-is-ethereum%20ENG": {
+      "desktop": "910290bda07e",
+      "mobile": "018c8fb9eb4e"
+    },
+    "/blog/crypto/what-is-tron-trx%20ENG": {
+      "desktop": "910290bda07e",
+      "mobile": "018c8fb9eb4e"
+    },
+    "/blog/sport/betting-bonuses%20ENG": {
+      "desktop": "910290bda07e",
+      "mobile": "018c8fb9eb4e"
+    },
+    "/blog/sport/combination-bets%20ENG": {
+      "desktop": "910290bda07e",
+      "mobile": "018c8fb9eb4e"
+    },
+    "/blog/sport/double-chance-betting%20ENG": {
+      "desktop": "910290bda07e",
+      "mobile": "018c8fb9eb4e"
+    },
+    "/blog/sport/live-betting-vs-pre-match%20ENG": {
+      "desktop": "910290bda07e",
+      "mobile": "018c8fb9eb4e"
+    },
+    "/blog/sport/nfl-betting-strategies%20ENG": {
+      "desktop": "910290bda07e",
+      "mobile": "018c8fb9eb4e"
+    },
+    "/blog/sport/single-bet-ENG": {
+      "desktop": "910290bda07e",
+      "mobile": "018c8fb9eb4e"
+    },
+    "/blog/sport/what-are-asian-totals-ENG": {
+      "desktop": "910290bda07e",
+      "mobile": "018c8fb9eb4e"
+    },
+    "/blog/vip/formula1-v-barce%20ENG": {
+      "desktop": "910290bda07e",
+      "mobile": "018c8fb9eb4e"
+    },
+    "/casino/popular": {
+      "desktop": "577ba91bceb0",
+      "mobile": "a4a3157804c9"
+    },
+    "/betting/esport/call-of-duty-163": {
+      "desktop": "910290bda07e",
+      "mobile": "018c8fb9eb4e"
+    },
+    "/casino/fast-games/popular-turbo-games": {
+      "desktop": "910290bda07e",
+      "mobile": "018c8fb9eb4e"
+    },
+    "/casino/tournaments-categories": {
+      "desktop": "910290bda07e",
+      "mobile": "018c8fb9eb4e"
     }
   },
   "pages": {
@@ -702,7 +978,76 @@
     "sports-esports-overwatch-2": "/betting/esport/overwatch-2-59",
     "sports-esports-pubg": "/betting/esport/pubg-161",
     "sports-esports-rainbow-six": "/betting/esport/rainbow-six-45",
-    "casino-play": "/casino/play"
+    "casino-play": "/casino/play",
+    "casino-category-100000-jackpot": "/casino/category/100000-jackpot",
+    "casino-category-virtual-sports": "/casino/category/virtual-sports",
+    "casino-category-crystal-rush": "/casino/category/crystal-rush",
+    "casino-crash-games": "/casino/crash-games",
+    "casino-game-shows": "/casino/game-shows",
+    "rules": "/rules",
+    "poker-app": "/poker-app",
+    "blog-1win-inside": "/blog/1win-inside",
+    "blog-casino": "/blog/casino",
+    "blog-sport": "/blog/sport",
+    "blog-vip": "/blog/vip",
+    "blog-ambassadors": "/blog/ambassadors",
+    "blog-1win-charity": "/blog/1win-charity",
+    "blog-crypto": "/blog/crypto",
+    "blog-vip-lucky-drive-ferrari-sf90-vip-weekend": "/blog/vip/lucky-drive-ferrari-sf90-vip-weekend",
+    "blog-sport-live-prematch": "/blog/sport/live-prematch",
+    "blog-crypto-kripto-guide": "/blog/crypto/kripto-guide",
+    "blog-crypto-crypto-tournamets": "/blog/crypto/crypto-tournamets",
+    "blog-crypto-bestchange": "/blog/crypto/bestchange",
+    "blog-crypto-kripta-karta-eng": "/blog/crypto/kripta-karta-ENG",
+    "blog-crypto-memo-i-tag-eng": "/blog/crypto/memo-i-tag-ENG",
+    "blog-1win-inside-betwave-eng": "/blog/1win-inside/betwave-ENG",
+    "blog-ambassadors-suares-eng": "/blog/ambassadors/suares-ENG",
+    "blog-ambassadors-predicti-ufc-eng": "/blog/ambassadors/predicti-ufc-ENG",
+    "blog-vip-petr-yan-vip-eng": "/blog/vip/petr-yan-vip-ENG",
+    "blog-sport-matematika-uspeha-eng": "/blog/sport/matematika-uspeha-ENG",
+    "blog-vip-topuria-vip-eng": "/blog/vip/topuria-vip-ENG",
+    "blog-1win-inside-bonus-eng": "/blog/1win-inside/bonus-ENG",
+    "blog-crypto-usdt-in-a-traffic-eng": "/blog/crypto/usdt-in-a-traffic%20ENG",
+    "blog-crypto-gde-dengi-eng": "/blog/crypto/gde%20dengi%20ENG",
+    "blog-1win-charity-evelone-eng": "/blog/1win-charity/evelone-ENG",
+    "blog-vip-tyga-eng": "/blog/vip/tyga-ENG",
+    "blog-vip-1win-vip-eng": "/blog/vip/1win-vip%20ENG",
+    "blog-vip-jet-dubai-eng": "/blog/vip/jet-dubai-ENG",
+    "blog-crypto-usdt-vs-fiat-eng": "/blog/crypto/usdt-vs-fiat-ENG",
+    "blog-1win-inside-1win-app-eng": "/blog/1win-inside/1win-app%20ENG",
+    "blog-1win-inside-1win-markets-eng": "/blog/1win-inside/1win-markets%20ENG",
+    "blog-ambassadors-gable-stevson-eng": "/blog/ambassadors/gable-stevson%20ENG",
+    "blog-ambassadors-jon-jones-eng": "/blog/ambassadors/jon-jones%20ENG",
+    "blog-casino-best-games-novichkam-eng": "/blog/casino/best-games-novichkam%20ENG",
+    "blog-casino-best-online-casino-bonuses-eng": "/blog/casino/best-online-casino-bonuses%20ENG",
+    "blog-casino-generator-chisel-eng": "/blog/casino/generator%20chisel%20ENG",
+    "blog-casino-poker-strategies-eng": "/blog/casino/poker-strategies%20ENG",
+    "blog-casino-what-is-rtp-eng": "/blog/casino/what-is-rtp-ENG",
+    "blog-crypto-1-oshibla-i-deneg-net-eng": "/blog/crypto/1%20oshibla%20i%20deneg%20net%20ENG",
+    "blog-crypto-bitcoin-eng": "/blog/crypto/bitcoin%20ENG",
+    "blog-crypto-guide-to-safe-transactions-eng": "/blog/crypto/guide-to-safe-transactions%20ENG",
+    "blog-crypto-kastodialnie-koshelki-eng": "/blog/crypto/kastodialnie%20koshelki%20ENG",
+    "blog-crypto-kripta-v-igaming-eng": "/blog/crypto/kripta%20v-igaming-%20ENG",
+    "blog-crypto-scam-in-crypto-eng": "/blog/crypto/scam-in-crypto%20ENG",
+    "blog-crypto-tether-usdt-casinos-eng": "/blog/crypto/tether-usdt-casinos%20ENG",
+    "blog-crypto-tvoi-kluchi-eng": "/blog/crypto/tvoi-kluchi-ENG",
+    "blog-crypto-usdt-btc-or-altcoins-eng": "/blog/crypto/usdt-btc-or-altcoins%20ENG",
+    "blog-crypto-vibor-seti-eng": "/blog/crypto/vibor%20seti%20ENG",
+    "blog-crypto-vivod-s-1win-eng": "/blog/crypto/vivod%20s-1win%20ENG",
+    "blog-crypto-what-is-ethereum-eng": "/blog/crypto/what-is-ethereum%20ENG",
+    "blog-crypto-what-is-tron-trx-eng": "/blog/crypto/what-is-tron-trx%20ENG",
+    "blog-sport-betting-bonuses-eng": "/blog/sport/betting-bonuses%20ENG",
+    "blog-sport-combination-bets-eng": "/blog/sport/combination-bets%20ENG",
+    "blog-sport-double-chance-betting-eng": "/blog/sport/double-chance-betting%20ENG",
+    "blog-sport-live-betting-vs-pre-match-eng": "/blog/sport/live-betting-vs-pre-match%20ENG",
+    "blog-sport-nfl-betting-strategies-eng": "/blog/sport/nfl-betting-strategies%20ENG",
+    "blog-sport-single-bet-eng": "/blog/sport/single-bet-ENG",
+    "blog-sport-what-are-asian-totals-eng": "/blog/sport/what-are-asian-totals-ENG",
+    "blog-vip-formula1-v-barce-eng": "/blog/vip/formula1-v-barce%20ENG",
+    "casino-popular": "/casino/popular",
+    "sports-esports-call-of-duty": "/betting/esport/call-of-duty-163",
+    "casino-quick-popular-turbo-games": "/casino/fast-games/popular-turbo-games",
+    "casino-tournaments-categories": "/casino/tournaments-categories"
   },
   "note": "casino-search, casino-search-results and casino-providers are overlays opened on /casino, so they use the /casino footer. Betwave has its own footer family and is not part of this table. Live Casino sub-categories (/casino/live-games/<slug>) use their own footer variant; Quick games sub-categories match /casino/fast-games (measured 2026-10-14 at 1920/1440/768)."
 }

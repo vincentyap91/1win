@@ -1,0 +1,191 @@
+{
+ "casino-popular.html@1920x1080": {
+  "value": {
+   "start": 27,
+   "loads": [
+    {
+     "from": 27,
+     "to": 54,
+     "markerBefore": 18
+    },
+    {
+     "from": 54,
+     "to": 81,
+     "markerBefore": 7
+    }
+   ],
+   "afterJump": 108,
+   "total": 135,
+   "duplicates": 0,
+   "hscroll": false
+  },
+  "errors": [
+   "Failed to load resource: the server responded with a status of 404 (Not Found) http://127.0.0.1:4174/favicon.ico"
+  ]
+ },
+ "casino-popular.html@1440x900": {
+  "value": {
+   "start": 24,
+   "loads": [
+    {
+     "from": 24,
+     "to": 48,
+     "markerBefore": 16
+    },
+    {
+     "from": 48,
+     "to": 72,
+     "markerBefore": 17
+    }
+   ],
+   "afterJump": 120,
+   "total": 120,
+   "duplicates": 0,
+   "hscroll": false
+  },
+  "errors": []
+ },
+ "casino-popular.html@768x1024": {
+  "value": {
+   "start": 42,
+   "loads": [
+    {
+     "from": 42,
+     "to": 63,
+     "markerBefore": -1
+    },
+    {
+     "from": 63,
+     "to": 84,
+     "markerBefore": 14
+    }
+   ],
+   "afterJump": 126,
+   "total": 147,
+   "duplicates": 0,
+   "hscroll": false
+  },
+  "errors": []
+ },
+ "casino-popular.html@430x932": {
+  "value": {
+   "start": 9,
+   "loads": [
+    {
+     "from": 9,
+     "to": 18,
+     "markerBefore": 20
+    },
+    {
+     "from": 18,
+     "to": 27,
+     "markerBefore": 9
+    }
+   ],
+   "afterJump": 36,
+   "total": 36,
+   "duplicates": 0,
+   "hscroll": false
+  },
+  "errors": []
+ },
+ "casino-popular.html@390x844": {
+  "value": {
+   "start": 9,
+   "loads": [
+    {
+     "from": 9,
+     "to": 18,
+     "markerBefore": 7
+    },
+    {
+     "from": 18,
+     "to": 27,
+     "markerBefore": 12
+    }
+   ],
+   "afterJump": 45,
+   "total": 81,
+   "duplicates": 0,
+   "hscroll": false
+  },
+  "errors": []
+ },
+ "casino-quick-popular-turbo-games.html@1920x1080": {
+  "value": {
+   "start": 27,
+   "loads": [],
+   "afterJump": 27,
+   "total": 27,
+   "duplicates": 0,
+   "hscroll": false
+  },
+  "errors": []
+ },
+ "casino-quick-popular-turbo-games.html@1440x900": {
+  "value": {
+   "start": 24,
+   "loads": [],
+   "afterJump": 24,
+   "total": 24,
+   "duplicates": 0,
+   "hscroll": false
+  },
+  "errors": []
+ },
+ "casino-quick-popular-turbo-games.html@768x1024": {
+  "value": {
+   "start": 21,
+   "loads": [],
+   "afterJump": 21,
+   "total": 21,
+   "duplicates": 0,
+   "hscroll": false
+  },
+  "errors": []
+ },
+ "casino-quick-popular-turbo-games.html@430x932": {
+  "value": {
+   "start": 9,
+   "loads": [
+    {
+     "from": 9,
+     "to": 18,
+     "markerBefore": 20
+    },
+    {
+     "from": 18,
+     "to": 27,
+     "markerBefore": 13
+    }
+   ],
+   "afterJump": 27,
+   "total": 27,
+   "duplicates": 0,
+   "hscroll": false
+  },
+  "errors": []
+ },
+ "casino-quick-popular-turbo-games.html@390x844": {
+  "value": {
+   "start": 9,
+   "loads": [
+    {
+     "from": 9,
+     "to": 18,
+     "markerBefore": 9
+    },
+    {
+     "from": 18,
+     "to": 27,
+     "markerBefore": 15
+    }
+   ],
+   "afterJump": 27,
+   "total": 27,
+   "duplicates": 0,
+   "hscroll": false
+  },
+  "errors": []
+ }
+}

@@ -44,7 +44,84 @@
    72
   ]
  },
+ "casino-category-100000-jackpot": {
+  "1920x1080": [
+   54,
+   54
+  ],
+  "1440x900": [
+   48,
+   96
+  ],
+  "768x1024": [
+   42,
+   126
+  ],
+  "430x932": [
+   18,
+   72
+  ],
+  "390x844": [
+   18,
+   63
+  ]
+ },
+ "casino-category-crystal-rush": "no grid",
+ "casino-category-virtual-sports": {
+  "430x932": [
+   18,
+   2
+  ],
+  "390x844": [
+   18,
+   2
+  ]
+ },
+ "casino-crash-games": {
+  "1920x1080": [
+   27,
+   81
+  ],
+  "1440x900": [
+   24,
+   96
+  ],
+  "768x1024": [
+   21,
+   105
+  ],
+  "430x932": [
+   9,
+   72
+  ],
+  "390x844": [
+   9,
+   72
+  ]
+ },
  "casino-fishing": "no grid",
+ "casino-game-shows": {
+  "1920x1080": [
+   27,
+   81
+  ],
+  "1440x900": [
+   24,
+   72
+  ],
+  "768x1024": [
+   21,
+   84
+  ],
+  "430x932": [
+   9,
+   54
+  ],
+  "390x844": [
+   9,
+   63
+  ]
+ },
  "casino-jili": {
   "1440x900": [
    24,
@@ -211,6 +288,28 @@
   ]
  },
  "casino-only-1win": "no grid",
+ "casino-popular": {
+  "1920x1080": [
+   27,
+   108
+  ],
+  "1440x900": [
+   24,
+   96
+  ],
+  "768x1024": [
+   21,
+   126
+  ],
+  "430x932": [
+   9,
+   27
+  ],
+  "390x844": [
+   9,
+   72
+  ]
+ },
  "casino-quick-1win-games": "no grid",
  "casino-quick-chicken-games": "no grid",
  "casino-quick-crash-games": {
@@ -301,6 +400,16 @@
    54
   ]
  },
+ "casino-quick-popular-turbo-games": {
+  "430x932": [
+   9,
+   18
+  ],
+  "390x844": [
+   9,
+   18
+  ]
+ },
  "casino-quick-sport": "no grid",
  "casino-quick": "no grid",
  "casino-recommended": "no grid",
@@ -325,5 +434,6 @@
    9,
    72
   ]
- }
+ },
+ "casino-tournaments-categories": "no grid"
 }

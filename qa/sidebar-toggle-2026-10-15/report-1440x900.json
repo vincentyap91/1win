@@ -1,4 +1,2164 @@
 {
+  "betwave-create.html": {
+    "start": {
+      "sidebar": 300,
+      "compact": false,
+      "main": 328,
+      "toggle": true,
+      "expanded": "true",
+      "bodyCls": false,
+      "overflow": false
+    },
+    "collapsed": {
+      "sidebar": 84,
+      "compact": true,
+      "main": 112,
+      "toggle": true,
+      "expanded": "false",
+      "bodyCls": true,
+      "overflow": false
+    },
+    "persisted": {
+      "sidebar": 84,
+      "compact": true,
+      "main": 112,
+      "toggle": true,
+      "expanded": "false",
+      "bodyCls": true,
+      "overflow": false
+    },
+    "restored": {
+      "sidebar": 300,
+      "compact": false,
+      "main": 328,
+      "toggle": true,
+      "expanded": "true",
+      "bodyCls": false,
+      "overflow": false
+    },
+    "errors": [],
+    "ok": true
+  },
+  "betwave-event-sample.html": {
+    "start": {
+      "sidebar": 300,
+      "compact": false,
+      "main": 328,
+      "toggle": true,
+      "expanded": "true",
+      "bodyCls": false,
+      "overflow": false
+    },
+    "collapsed": {
+      "sidebar": 84,
+      "compact": true,
+      "main": 112,
+      "toggle": true,
+      "expanded": "false",
+      "bodyCls": true,
+      "overflow": false
+    },
+    "persisted": {
+      "sidebar": 84,
+      "compact": true,
+      "main": 112,
+      "toggle": true,
+      "expanded": "false",
+      "bodyCls": true,
+      "overflow": false
+    },
+    "restored": {
+      "sidebar": 300,
+      "compact": false,
+      "main": 328,
+      "toggle": true,
+      "expanded": "true",
+      "bodyCls": false,
+      "overflow": false
+    },
+    "errors": [],
+    "ok": true
+  },
+  "betwave-events-all.html": {
+    "start": {
+      "sidebar": 300,
+      "compact": false,
+      "main": 328,
+      "toggle": true,
+      "expanded": "true",
+      "bodyCls": false,
+      "overflow": false
+    },
+    "collapsed": {
+      "sidebar": 84,
+      "compact": true,
+      "main": 112,
+      "toggle": true,
+      "expanded": "false",
+      "bodyCls": true,
+      "overflow": false
+    },
+    "persisted": {
+      "sidebar": 84,
+      "compact": true,
+      "main": 112,
+      "toggle": true,
+      "expanded": "false",
+      "bodyCls": true,
+      "overflow": false
+    },
+    "restored": {
+      "sidebar": 300,
+      "compact": false,
+      "main": 328,
+      "toggle": true,
+      "expanded": "true",
+      "bodyCls": false,
+      "overflow": false
+    },
+    "errors": [],
+    "ok": true
+  },
+  "betwave-events-american-football.html": {
+    "start": {
+      "sidebar": 300,
+      "compact": false,
+      "main": 328,
+      "toggle": true,
+      "expanded": "true",
+      "bodyCls": false,
+      "overflow": false
+    },
+    "collapsed": {
+      "sidebar": 84,
+      "compact": true,
+      "main": 112,
+      "toggle": true,
+      "expanded": "false",
+      "bodyCls": true,
+      "overflow": false
+    },
+    "persisted": {
+      "sidebar": 84,
+      "compact": true,
+      "main": 112,
+      "toggle": true,
+      "expanded": "false",
+      "bodyCls": true,
+      "overflow": false
+    },
+    "restored": {
+      "sidebar": 300,
+      "compact": false,
+      "main": 328,
+      "toggle": true,
+      "expanded": "true",
+      "bodyCls": false,
+      "overflow": false
+    },
+    "errors": [],
+    "ok": true
+  },
+  "betwave-events-arena-of-valor.html": {
+    "start": {
+      "sidebar": 300,
+      "compact": false,
+      "main": 328,
+      "toggle": true,
+      "expanded": "true",
+      "bodyCls": false,
+      "overflow": false
+    },
+    "collapsed": {
+      "sidebar": 84,
+      "compact": true,
+      "main": 112,
+      "toggle": true,
+      "expanded": "false",
+      "bodyCls": true,
+      "overflow": false
+    },
+    "persisted": {
+      "sidebar": 84,
+      "compact": true,
+      "main": 112,
+      "toggle": true,
+      "expanded": "false",
+      "bodyCls": true,
+      "overflow": false
+    },
+    "restored": {
+      "sidebar": 300,
+      "compact": false,
+      "main": 328,
+      "toggle": true,
+      "expanded": "true",
+      "bodyCls": false,
+      "overflow": false
+    },
+    "errors": [],
+    "ok": true
+  },
+  "betwave-events-badminton.html": {
+    "start": {
+      "sidebar": 300,
+      "compact": false,
+      "main": 328,
+      "toggle": true,
+      "expanded": "true",
+      "bodyCls": false,
+      "overflow": false
+    },
+    "collapsed": {
+      "sidebar": 84,
+      "compact": true,
+      "main": 112,
+      "toggle": true,
+      "expanded": "false",
+      "bodyCls": true,
+      "overflow": false
+    },
+    "persisted": {
+      "sidebar": 84,
+      "compact": true,
+      "main": 112,
+      "toggle": true,
+      "expanded": "false",
+      "bodyCls": true,
+      "overflow": false
+    },
+    "restored": {
+      "sidebar": 300,
+      "compact": false,
+      "main": 328,
+      "toggle": true,
+      "expanded": "true",
+      "bodyCls": false,
+      "overflow": false
+    },
+    "errors": [],
+    "ok": true
+  },
+  "betwave-events-baseball.html": {
+    "start": {
+      "sidebar": 300,
+      "compact": false,
+      "main": 328,
+      "toggle": true,
+      "expanded": "true",
+      "bodyCls": false,
+      "overflow": false
+    },
+    "collapsed": {
+      "sidebar": 84,
+      "compact": true,
+      "main": 112,
+      "toggle": true,
+      "expanded": "false",
+      "bodyCls": true,
+      "overflow": false
+    },
+    "persisted": {
+      "sidebar": 84,
+      "compact": true,
+      "main": 112,
+      "toggle": true,
+      "expanded": "false",
+      "bodyCls": true,
+      "overflow": false
+    },
+    "restored": {
+      "sidebar": 300,
+      "compact": false,
+      "main": 328,
+      "toggle": true,
+      "expanded": "true",
+      "bodyCls": false,
+      "overflow": false
+    },
+    "errors": [],
+    "ok": true
+  },
+  "betwave-events-basketball.html": {
+    "start": {
+      "sidebar": 300,
+      "compact": false,
+      "main": 328,
+      "toggle": true,
+      "expanded": "true",
+      "bodyCls": false,
+      "overflow": false
+    },
+    "collapsed": {
+      "sidebar": 84,
+      "compact": true,
+      "main": 112,
+      "toggle": true,
+      "expanded": "false",
+      "bodyCls": true,
+      "overflow": false
+    },
+    "persisted": {
+      "sidebar": 84,
+      "compact": true,
+      "main": 112,
+      "toggle": true,
+      "expanded": "false",
+      "bodyCls": true,
+      "overflow": false
+    },
+    "restored": {
+      "sidebar": 300,
+      "compact": false,
+      "main": 328,
+      "toggle": true,
+      "expanded": "true",
+      "bodyCls": false,
+      "overflow": false
+    },
+    "errors": [],
+    "ok": true
+  },
+  "betwave-events-boxing.html": {
+    "start": {
+      "sidebar": 300,
+      "compact": false,
+      "main": 328,
+      "toggle": true,
+      "expanded": "true",
+      "bodyCls": false,
+      "overflow": false
+    },
+    "collapsed": {
+      "sidebar": 84,
+      "compact": true,
+      "main": 112,
+      "toggle": true,
+      "expanded": "false",
+      "bodyCls": true,
+      "overflow": false
+    },
+    "persisted": {
+      "sidebar": 84,
+      "compact": true,
+      "main": 112,
+      "toggle": true,
+      "expanded": "false",
+      "bodyCls": true,
+      "overflow": false
+    },
+    "restored": {
+      "sidebar": 300,
+      "compact": false,
+      "main": 328,
+      "toggle": true,
+      "expanded": "true",
+      "bodyCls": false,
+      "overflow": false
+    },
+    "errors": [],
+    "ok": true
+  },
+  "betwave-events-cricket.html": {
+    "start": {
+      "sidebar": 300,
+      "compact": false,
+      "main": 328,
+      "toggle": true,
+      "expanded": "true",
+      "bodyCls": false,
+      "overflow": false
+    },
+    "collapsed": {
+      "sidebar": 84,
+      "compact": true,
+      "main": 112,
+      "toggle": true,
+      "expanded": "false",
+      "bodyCls": true,
+      "overflow": false
+    },
+    "persisted": {
+      "sidebar": 84,
+      "compact": true,
+      "main": 112,
+      "toggle": true,
+      "expanded": "false",
+      "bodyCls": true,
+      "overflow": false
+    },
+    "restored": {
+      "sidebar": 300,
+      "compact": false,
+      "main": 328,
+      "toggle": true,
+      "expanded": "true",
+      "bodyCls": false,
+      "overflow": false
+    },
+    "errors": [],
+    "ok": true
+  },
+  "betwave-events-cs2.html": {
+    "start": {
+      "sidebar": 300,
+      "compact": false,
+      "main": 328,
+      "toggle": true,
+      "expanded": "true",
+      "bodyCls": false,
+      "overflow": false
+    },
+    "collapsed": {
+      "sidebar": 84,
+      "compact": true,
+      "main": 112,
+      "toggle": true,
+      "expanded": "false",
+      "bodyCls": true,
+      "overflow": false
+    },
+    "persisted": {
+      "sidebar": 84,
+      "compact": true,
+      "main": 112,
+      "toggle": true,
+      "expanded": "false",
+      "bodyCls": true,
+      "overflow": false
+    },
+    "restored": {
+      "sidebar": 300,
+      "compact": false,
+      "main": 328,
+      "toggle": true,
+      "expanded": "true",
+      "bodyCls": false,
+      "overflow": false
+    },
+    "errors": [],
+    "ok": true
+  },
+  "betwave-events-cybersports.html": {
+    "start": {
+      "sidebar": 300,
+      "compact": false,
+      "main": 328,
+      "toggle": true,
+      "expanded": "true",
+      "bodyCls": false,
+      "overflow": false
+    },
+    "collapsed": {
+      "sidebar": 84,
+      "compact": true,
+      "main": 112,
+      "toggle": true,
+      "expanded": "false",
+      "bodyCls": true,
+      "overflow": false
+    },
+    "persisted": {
+      "sidebar": 84,
+      "compact": true,
+      "main": 112,
+      "toggle": true,
+      "expanded": "false",
+      "bodyCls": true,
+      "overflow": false
+    },
+    "restored": {
+      "sidebar": 300,
+      "compact": false,
+      "main": 328,
+      "toggle": true,
+      "expanded": "true",
+      "bodyCls": false,
+      "overflow": false
+    },
+    "errors": [],
+    "ok": true
+  },
+  "betwave-events-darts.html": {
+    "start": {
+      "sidebar": 300,
+      "compact": false,
+      "main": 328,
+      "toggle": true,
+      "expanded": "true",
+      "bodyCls": false,
+      "overflow": false
+    },
+    "collapsed": {
+      "sidebar": 84,
+      "compact": true,
+      "main": 112,
+      "toggle": true,
+      "expanded": "false",
+      "bodyCls": true,
+      "overflow": false
+    },
+    "persisted": {
+      "sidebar": 84,
+      "compact": true,
+      "main": 112,
+      "toggle": true,
+      "expanded": "false",
+      "bodyCls": true,
+      "overflow": false
+    },
+    "restored": {
+      "sidebar": 300,
+      "compact": false,
+      "main": 328,
+      "toggle": true,
+      "expanded": "true",
+      "bodyCls": false,
+      "overflow": false
+    },
+    "errors": [],
+    "ok": true
+  },
+  "betwave-events-dota-2.html": {
+    "start": {
+      "sidebar": 300,
+      "compact": false,
+      "main": 328,
+      "toggle": true,
+      "expanded": "true",
+      "bodyCls": false,
+      "overflow": false
+    },
+    "collapsed": {
+      "sidebar": 84,
+      "compact": true,
+      "main": 112,
+      "toggle": true,
+      "expanded": "false",
+      "bodyCls": true,
+      "overflow": false
+    },
+    "persisted": {
+      "sidebar": 84,
+      "compact": true,
+      "main": 112,
+      "toggle": true,
+      "expanded": "false",
+      "bodyCls": true,
+      "overflow": false
+    },
+    "restored": {
+      "sidebar": 300,
+      "compact": false,
+      "main": 328,
+      "toggle": true,
+      "expanded": "true",
+      "bodyCls": false,
+      "overflow": false
+    },
+    "errors": [],
+    "ok": true
+  },
+  "betwave-events-floorball.html": {
+    "start": {
+      "sidebar": 300,
+      "compact": false,
+      "main": 328,
+      "toggle": true,
+      "expanded": "true",
+      "bodyCls": false,
+      "overflow": false
+    },
+    "collapsed": {
+      "sidebar": 84,
+      "compact": true,
+      "main": 112,
+      "toggle": true,
+      "expanded": "false",
+      "bodyCls": true,
+      "overflow": false
+    },
+    "persisted": {
+      "sidebar": 84,
+      "compact": true,
+      "main": 112,
+      "toggle": true,
+      "expanded": "false",
+      "bodyCls": true,
+      "overflow": false
+    },
+    "restored": {
+      "sidebar": 300,
+      "compact": false,
+      "main": 328,
+      "toggle": true,
+      "expanded": "true",
+      "bodyCls": false,
+      "overflow": false
+    },
+    "errors": [],
+    "ok": true
+  },
+  "betwave-events-handball.html": {
+    "start": {
+      "sidebar": 300,
+      "compact": false,
+      "main": 328,
+      "toggle": true,
+      "expanded": "true",
+      "bodyCls": false,
+      "overflow": false
+    },
+    "collapsed": {
+      "sidebar": 84,
+      "compact": true,
+      "main": 112,
+      "toggle": true,
+      "expanded": "false",
+      "bodyCls": true,
+      "overflow": false
+    },
+    "persisted": {
+      "sidebar": 84,
+      "compact": true,
+      "main": 112,
+      "toggle": true,
+      "expanded": "false",
+      "bodyCls": true,
+      "overflow": false
+    },
+    "restored": {
+      "sidebar": 300,
+      "compact": false,
+      "main": 328,
+      "toggle": true,
+      "expanded": "true",
+      "bodyCls": false,
+      "overflow": false
+    },
+    "errors": [],
+    "ok": true
+  },
+  "betwave-events-ice-hockey.html": {
+    "start": {
+      "sidebar": 300,
+      "compact": false,
+      "main": 328,
+      "toggle": true,
+      "expanded": "true",
+      "bodyCls": false,
+      "overflow": false
+    },
+    "collapsed": {
+      "sidebar": 84,
+      "compact": true,
+      "main": 112,
+      "toggle": true,
+      "expanded": "false",
+      "bodyCls": true,
+      "overflow": false
+    },
+    "persisted": {
+      "sidebar": 84,
+      "compact": true,
+      "main": 112,
+      "toggle": true,
+      "expanded": "false",
+      "bodyCls": true,
+      "overflow": false
+    },
+    "restored": {
+      "sidebar": 300,
+      "compact": false,
+      "main": 328,
+      "toggle": true,
+      "expanded": "true",
+      "bodyCls": false,
+      "overflow": false
+    },
+    "errors": [],
+    "ok": true
+  },
+  "betwave-events-lol.html": {
+    "start": {
+      "sidebar": 300,
+      "compact": false,
+      "main": 328,
+      "toggle": true,
+      "expanded": "true",
+      "bodyCls": false,
+      "overflow": false
+    },
+    "collapsed": {
+      "sidebar": 84,
+      "compact": true,
+      "main": 112,
+      "toggle": true,
+      "expanded": "false",
+      "bodyCls": true,
+      "overflow": false
+    },
+    "persisted": {
+      "sidebar": 84,
+      "compact": true,
+      "main": 112,
+      "toggle": true,
+      "expanded": "false",
+      "bodyCls": true,
+      "overflow": false
+    },
+    "restored": {
+      "sidebar": 300,
+      "compact": false,
+      "main": 328,
+      "toggle": true,
+      "expanded": "true",
+      "bodyCls": false,
+      "overflow": false
+    },
+    "errors": [],
+    "ok": true
+  },
+  "betwave-events-rugby.html": {
+    "start": {
+      "sidebar": 300,
+      "compact": false,
+      "main": 328,
+      "toggle": true,
+      "expanded": "true",
+      "bodyCls": false,
+      "overflow": false
+    },
+    "collapsed": {
+      "sidebar": 84,
+      "compact": true,
+      "main": 112,
+      "toggle": true,
+      "expanded": "false",
+      "bodyCls": true,
+      "overflow": false
+    },
+    "persisted": {
+      "sidebar": 84,
+      "compact": true,
+      "main": 112,
+      "toggle": true,
+      "expanded": "false",
+      "bodyCls": true,
+      "overflow": false
+    },
+    "restored": {
+      "sidebar": 300,
+      "compact": false,
+      "main": 328,
+      "toggle": true,
+      "expanded": "true",
+      "bodyCls": false,
+      "overflow": false
+    },
+    "errors": [],
+    "ok": true
+  },
+  "betwave-events-soccer.html": {
+    "start": {
+      "sidebar": 300,
+      "compact": false,
+      "main": 328,
+      "toggle": true,
+      "expanded": "true",
+      "bodyCls": false,
+      "overflow": false
+    },
+    "collapsed": {
+      "sidebar": 84,
+      "compact": true,
+      "main": 112,
+      "toggle": true,
+      "expanded": "false",
+      "bodyCls": true,
+      "overflow": false
+    },
+    "persisted": {
+      "sidebar": 84,
+      "compact": true,
+      "main": 112,
+      "toggle": true,
+      "expanded": "false",
+      "bodyCls": true,
+      "overflow": false
+    },
+    "restored": {
+      "sidebar": 300,
+      "compact": false,
+      "main": 328,
+      "toggle": true,
+      "expanded": "true",
+      "bodyCls": false,
+      "overflow": false
+    },
+    "errors": [],
+    "ok": true
+  },
+  "betwave-events-table-tennis.html": {
+    "start": {
+      "sidebar": 300,
+      "compact": false,
+      "main": 328,
+      "toggle": true,
+      "expanded": "true",
+      "bodyCls": false,
+      "overflow": false
+    },
+    "collapsed": {
+      "sidebar": 84,
+      "compact": true,
+      "main": 112,
+      "toggle": true,
+      "expanded": "false",
+      "bodyCls": true,
+      "overflow": false
+    },
+    "persisted": {
+      "sidebar": 84,
+      "compact": true,
+      "main": 112,
+      "toggle": true,
+      "expanded": "false",
+      "bodyCls": true,
+      "overflow": false
+    },
+    "restored": {
+      "sidebar": 300,
+      "compact": false,
+      "main": 328,
+      "toggle": true,
+      "expanded": "true",
+      "bodyCls": false,
+      "overflow": false
+    },
+    "errors": [],
+    "ok": true
+  },
+  "betwave-events-tennis.html": {
+    "start": {
+      "sidebar": 300,
+      "compact": false,
+      "main": 328,
+      "toggle": true,
+      "expanded": "true",
+      "bodyCls": false,
+      "overflow": false
+    },
+    "collapsed": {
+      "sidebar": 84,
+      "compact": true,
+      "main": 112,
+      "toggle": true,
+      "expanded": "false",
+      "bodyCls": true,
+      "overflow": false
+    },
+    "persisted": {
+      "sidebar": 84,
+      "compact": true,
+      "main": 112,
+      "toggle": true,
+      "expanded": "false",
+      "bodyCls": true,
+      "overflow": false
+    },
+    "restored": {
+      "sidebar": 300,
+      "compact": false,
+      "main": 328,
+      "toggle": true,
+      "expanded": "true",
+      "bodyCls": false,
+      "overflow": false
+    },
+    "errors": [],
+    "ok": true
+  },
+  "betwave-events-ufc.html": {
+    "start": {
+      "sidebar": 300,
+      "compact": false,
+      "main": 328,
+      "toggle": true,
+      "expanded": "true",
+      "bodyCls": false,
+      "overflow": false
+    },
+    "collapsed": {
+      "sidebar": 84,
+      "compact": true,
+      "main": 112,
+      "toggle": true,
+      "expanded": "false",
+      "bodyCls": true,
+      "overflow": false
+    },
+    "persisted": {
+      "sidebar": 84,
+      "compact": true,
+      "main": 112,
+      "toggle": true,
+      "expanded": "false",
+      "bodyCls": true,
+      "overflow": false
+    },
+    "restored": {
+      "sidebar": 300,
+      "compact": false,
+      "main": 328,
+      "toggle": true,
+      "expanded": "true",
+      "bodyCls": false,
+      "overflow": false
+    },
+    "errors": [],
+    "ok": true
+  },
+  "betwave-events-valorant.html": {
+    "start": {
+      "sidebar": 300,
+      "compact": false,
+      "main": 328,
+      "toggle": true,
+      "expanded": "true",
+      "bodyCls": false,
+      "overflow": false
+    },
+    "collapsed": {
+      "sidebar": 84,
+      "compact": true,
+      "main": 112,
+      "toggle": true,
+      "expanded": "false",
+      "bodyCls": true,
+      "overflow": false
+    },
+    "persisted": {
+      "sidebar": 84,
+      "compact": true,
+      "main": 112,
+      "toggle": true,
+      "expanded": "false",
+      "bodyCls": true,
+      "overflow": false
+    },
+    "restored": {
+      "sidebar": 300,
+      "compact": false,
+      "main": 328,
+      "toggle": true,
+      "expanded": "true",
+      "bodyCls": false,
+      "overflow": false
+    },
+    "errors": [],
+    "ok": true
+  },
+  "betwave-events-volleyball.html": {
+    "start": {
+      "sidebar": 300,
+      "compact": false,
+      "main": 328,
+      "toggle": true,
+      "expanded": "true",
+      "bodyCls": false,
+      "overflow": false
+    },
+    "collapsed": {
+      "sidebar": 84,
+      "compact": true,
+      "main": 112,
+      "toggle": true,
+      "expanded": "false",
+      "bodyCls": true,
+      "overflow": false
+    },
+    "persisted": {
+      "sidebar": 84,
+      "compact": true,
+      "main": 112,
+      "toggle": true,
+      "expanded": "false",
+      "bodyCls": true,
+      "overflow": false
+    },
+    "restored": {
+      "sidebar": 300,
+      "compact": false,
+      "main": 328,
+      "toggle": true,
+      "expanded": "true",
+      "bodyCls": false,
+      "overflow": false
+    },
+    "errors": [],
+    "ok": true
+  },
+  "betwave-prediction-sample.html": {
+    "start": {
+      "sidebar": 300,
+      "compact": false,
+      "main": 328,
+      "toggle": true,
+      "expanded": "true",
+      "bodyCls": false,
+      "overflow": false
+    },
+    "collapsed": {
+      "sidebar": 84,
+      "compact": true,
+      "main": 112,
+      "toggle": true,
+      "expanded": "false",
+      "bodyCls": true,
+      "overflow": false
+    },
+    "persisted": {
+      "sidebar": 84,
+      "compact": true,
+      "main": 112,
+      "toggle": true,
+      "expanded": "false",
+      "bodyCls": true,
+      "overflow": false
+    },
+    "restored": {
+      "sidebar": 300,
+      "compact": false,
+      "main": 328,
+      "toggle": true,
+      "expanded": "true",
+      "bodyCls": false,
+      "overflow": false
+    },
+    "errors": [],
+    "ok": true
+  },
+  "betwave-predictions-all.html": {
+    "start": {
+      "sidebar": 300,
+      "compact": false,
+      "main": 328,
+      "toggle": true,
+      "expanded": "true",
+      "bodyCls": false,
+      "overflow": false
+    },
+    "collapsed": {
+      "sidebar": 84,
+      "compact": true,
+      "main": 112,
+      "toggle": true,
+      "expanded": "false",
+      "bodyCls": true,
+      "overflow": false
+    },
+    "persisted": {
+      "sidebar": 84,
+      "compact": true,
+      "main": 112,
+      "toggle": true,
+      "expanded": "false",
+      "bodyCls": true,
+      "overflow": false
+    },
+    "restored": {
+      "sidebar": 300,
+      "compact": false,
+      "main": 328,
+      "toggle": true,
+      "expanded": "true",
+      "bodyCls": false,
+      "overflow": false
+    },
+    "errors": [],
+    "ok": true
+  },
+  "betwave-predictions-american-football.html": {
+    "start": {
+      "sidebar": 300,
+      "compact": false,
+      "main": 328,
+      "toggle": true,
+      "expanded": "true",
+      "bodyCls": false,
+      "overflow": false
+    },
+    "collapsed": {
+      "sidebar": 84,
+      "compact": true,
+      "main": 112,
+      "toggle": true,
+      "expanded": "false",
+      "bodyCls": true,
+      "overflow": false
+    },
+    "persisted": {
+      "sidebar": 84,
+      "compact": true,
+      "main": 112,
+      "toggle": true,
+      "expanded": "false",
+      "bodyCls": true,
+      "overflow": false
+    },
+    "restored": {
+      "sidebar": 300,
+      "compact": false,
+      "main": 328,
+      "toggle": true,
+      "expanded": "true",
+      "bodyCls": false,
+      "overflow": false
+    },
+    "errors": [],
+    "ok": true
+  },
+  "betwave-predictions-badminton.html": {
+    "start": {
+      "sidebar": 300,
+      "compact": false,
+      "main": 328,
+      "toggle": true,
+      "expanded": "true",
+      "bodyCls": false,
+      "overflow": false
+    },
+    "collapsed": {
+      "sidebar": 84,
+      "compact": true,
+      "main": 112,
+      "toggle": true,
+      "expanded": "false",
+      "bodyCls": true,
+      "overflow": false
+    },
+    "persisted": {
+      "sidebar": 84,
+      "compact": true,
+      "main": 112,
+      "toggle": true,
+      "expanded": "false",
+      "bodyCls": true,
+      "overflow": false
+    },
+    "restored": {
+      "sidebar": 300,
+      "compact": false,
+      "main": 328,
+      "toggle": true,
+      "expanded": "true",
+      "bodyCls": false,
+      "overflow": false
+    },
+    "errors": [],
+    "ok": true
+  },
+  "betwave-predictions-basketball.html": {
+    "start": {
+      "sidebar": 300,
+      "compact": false,
+      "main": 328,
+      "toggle": true,
+      "expanded": "true",
+      "bodyCls": false,
+      "overflow": false
+    },
+    "collapsed": {
+      "sidebar": 84,
+      "compact": true,
+      "main": 112,
+      "toggle": true,
+      "expanded": "false",
+      "bodyCls": true,
+      "overflow": false
+    },
+    "persisted": {
+      "sidebar": 84,
+      "compact": true,
+      "main": 112,
+      "toggle": true,
+      "expanded": "false",
+      "bodyCls": true,
+      "overflow": false
+    },
+    "restored": {
+      "sidebar": 300,
+      "compact": false,
+      "main": 328,
+      "toggle": true,
+      "expanded": "true",
+      "bodyCls": false,
+      "overflow": false
+    },
+    "errors": [],
+    "ok": true
+  },
+  "betwave-predictions-boxing.html": {
+    "start": {
+      "sidebar": 300,
+      "compact": false,
+      "main": 328,
+      "toggle": true,
+      "expanded": "true",
+      "bodyCls": false,
+      "overflow": false
+    },
+    "collapsed": {
+      "sidebar": 84,
+      "compact": true,
+      "main": 112,
+      "toggle": true,
+      "expanded": "false",
+      "bodyCls": true,
+      "overflow": false
+    },
+    "persisted": {
+      "sidebar": 84,
+      "compact": true,
+      "main": 112,
+      "toggle": true,
+      "expanded": "false",
+      "bodyCls": true,
+      "overflow": false
+    },
+    "restored": {
+      "sidebar": 300,
+      "compact": false,
+      "main": 328,
+      "toggle": true,
+      "expanded": "true",
+      "bodyCls": false,
+      "overflow": false
+    },
+    "errors": [],
+    "ok": true
+  },
+  "betwave-predictions-cricket.html": {
+    "start": {
+      "sidebar": 300,
+      "compact": false,
+      "main": 328,
+      "toggle": true,
+      "expanded": "true",
+      "bodyCls": false,
+      "overflow": false
+    },
+    "collapsed": {
+      "sidebar": 84,
+      "compact": true,
+      "main": 112,
+      "toggle": true,
+      "expanded": "false",
+      "bodyCls": true,
+      "overflow": false
+    },
+    "persisted": {
+      "sidebar": 84,
+      "compact": true,
+      "main": 112,
+      "toggle": true,
+      "expanded": "false",
+      "bodyCls": true,
+      "overflow": false
+    },
+    "restored": {
+      "sidebar": 300,
+      "compact": false,
+      "main": 328,
+      "toggle": true,
+      "expanded": "true",
+      "bodyCls": false,
+      "overflow": false
+    },
+    "errors": [],
+    "ok": true
+  },
+  "betwave-predictions-cs2.html": {
+    "start": {
+      "sidebar": 300,
+      "compact": false,
+      "main": 328,
+      "toggle": true,
+      "expanded": "true",
+      "bodyCls": false,
+      "overflow": false
+    },
+    "collapsed": {
+      "sidebar": 84,
+      "compact": true,
+      "main": 112,
+      "toggle": true,
+      "expanded": "false",
+      "bodyCls": true,
+      "overflow": false
+    },
+    "persisted": {
+      "sidebar": 84,
+      "compact": true,
+      "main": 112,
+      "toggle": true,
+      "expanded": "false",
+      "bodyCls": true,
+      "overflow": false
+    },
+    "restored": {
+      "sidebar": 300,
+      "compact": false,
+      "main": 328,
+      "toggle": true,
+      "expanded": "true",
+      "bodyCls": false,
+      "overflow": false
+    },
+    "errors": [],
+    "ok": true
+  },
+  "betwave-predictions-cybersports.html": {
+    "start": {
+      "sidebar": 300,
+      "compact": false,
+      "main": 328,
+      "toggle": true,
+      "expanded": "true",
+      "bodyCls": false,
+      "overflow": false
+    },
+    "collapsed": {
+      "sidebar": 84,
+      "compact": true,
+      "main": 112,
+      "toggle": true,
+      "expanded": "false",
+      "bodyCls": true,
+      "overflow": false
+    },
+    "persisted": {
+      "sidebar": 84,
+      "compact": true,
+      "main": 112,
+      "toggle": true,
+      "expanded": "false",
+      "bodyCls": true,
+      "overflow": false
+    },
+    "restored": {
+      "sidebar": 300,
+      "compact": false,
+      "main": 328,
+      "toggle": true,
+      "expanded": "true",
+      "bodyCls": false,
+      "overflow": false
+    },
+    "errors": [],
+    "ok": true
+  },
+  "betwave-predictions-dota-2.html": {
+    "start": {
+      "sidebar": 300,
+      "compact": false,
+      "main": 328,
+      "toggle": true,
+      "expanded": "true",
+      "bodyCls": false,
+      "overflow": false
+    },
+    "collapsed": {
+      "sidebar": 84,
+      "compact": true,
+      "main": 112,
+      "toggle": true,
+      "expanded": "false",
+      "bodyCls": true,
+      "overflow": false
+    },
+    "persisted": {
+      "sidebar": 84,
+      "compact": true,
+      "main": 112,
+      "toggle": true,
+      "expanded": "false",
+      "bodyCls": true,
+      "overflow": false
+    },
+    "restored": {
+      "sidebar": 300,
+      "compact": false,
+      "main": 328,
+      "toggle": true,
+      "expanded": "true",
+      "bodyCls": false,
+      "overflow": false
+    },
+    "errors": [],
+    "ok": true
+  },
+  "betwave-predictions-express.html": {
+    "start": {
+      "sidebar": 300,
+      "compact": false,
+      "main": 328,
+      "toggle": true,
+      "expanded": "true",
+      "bodyCls": false,
+      "overflow": false
+    },
+    "collapsed": {
+      "sidebar": 84,
+      "compact": true,
+      "main": 112,
+      "toggle": true,
+      "expanded": "false",
+      "bodyCls": true,
+      "overflow": false
+    },
+    "persisted": {
+      "sidebar": 84,
+      "compact": true,
+      "main": 112,
+      "toggle": true,
+      "expanded": "false",
+      "bodyCls": true,
+      "overflow": false
+    },
+    "restored": {
+      "sidebar": 300,
+      "compact": false,
+      "main": 328,
+      "toggle": true,
+      "expanded": "true",
+      "bodyCls": false,
+      "overflow": false
+    },
+    "errors": [],
+    "ok": true
+  },
+  "betwave-predictions-floorball.html": {
+    "start": {
+      "sidebar": 300,
+      "compact": false,
+      "main": 328,
+      "toggle": true,
+      "expanded": "true",
+      "bodyCls": false,
+      "overflow": false
+    },
+    "collapsed": {
+      "sidebar": 84,
+      "compact": true,
+      "main": 112,
+      "toggle": true,
+      "expanded": "false",
+      "bodyCls": true,
+      "overflow": false
+    },
+    "persisted": {
+      "sidebar": 84,
+      "compact": true,
+      "main": 112,
+      "toggle": true,
+      "expanded": "false",
+      "bodyCls": true,
+      "overflow": false
+    },
+    "restored": {
+      "sidebar": 300,
+      "compact": false,
+      "main": 328,
+      "toggle": true,
+      "expanded": "true",
+      "bodyCls": false,
+      "overflow": false
+    },
+    "errors": [],
+    "ok": true
+  },
+  "betwave-predictions-handball.html": {
+    "start": {
+      "sidebar": 300,
+      "compact": false,
+      "main": 328,
+      "toggle": true,
+      "expanded": "true",
+      "bodyCls": false,
+      "overflow": false
+    },
+    "collapsed": {
+      "sidebar": 84,
+      "compact": true,
+      "main": 112,
+      "toggle": true,
+      "expanded": "false",
+      "bodyCls": true,
+      "overflow": false
+    },
+    "persisted": {
+      "sidebar": 84,
+      "compact": true,
+      "main": 112,
+      "toggle": true,
+      "expanded": "false",
+      "bodyCls": true,
+      "overflow": false
+    },
+    "restored": {
+      "sidebar": 300,
+      "compact": false,
+      "main": 328,
+      "toggle": true,
+      "expanded": "true",
+      "bodyCls": false,
+      "overflow": false
+    },
+    "errors": [],
+    "ok": true
+  },
+  "betwave-predictions-ice-hockey.html": {
+    "start": {
+      "sidebar": 300,
+      "compact": false,
+      "main": 328,
+      "toggle": true,
+      "expanded": "true",
+      "bodyCls": false,
+      "overflow": false
+    },
+    "collapsed": {
+      "sidebar": 84,
+      "compact": true,
+      "main": 112,
+      "toggle": true,
+      "expanded": "false",
+      "bodyCls": true,
+      "overflow": false
+    },
+    "persisted": {
+      "sidebar": 84,
+      "compact": true,
+      "main": 112,
+      "toggle": true,
+      "expanded": "false",
+      "bodyCls": true,
+      "overflow": false
+    },
+    "restored": {
+      "sidebar": 300,
+      "compact": false,
+      "main": 328,
+      "toggle": true,
+      "expanded": "true",
+      "bodyCls": false,
+      "overflow": false
+    },
+    "errors": [],
+    "ok": true
+  },
+  "betwave-predictions-lol.html": {
+    "start": {
+      "sidebar": 300,
+      "compact": false,
+      "main": 328,
+      "toggle": true,
+      "expanded": "true",
+      "bodyCls": false,
+      "overflow": false
+    },
+    "collapsed": {
+      "sidebar": 84,
+      "compact": true,
+      "main": 112,
+      "toggle": true,
+      "expanded": "false",
+      "bodyCls": true,
+      "overflow": false
+    },
+    "persisted": {
+      "sidebar": 84,
+      "compact": true,
+      "main": 112,
+      "toggle": true,
+      "expanded": "false",
+      "bodyCls": true,
+      "overflow": false
+    },
+    "restored": {
+      "sidebar": 300,
+      "compact": false,
+      "main": 328,
+      "toggle": true,
+      "expanded": "true",
+      "bodyCls": false,
+      "overflow": false
+    },
+    "errors": [],
+    "ok": true
+  },
+  "betwave-predictions-rainbow-six.html": {
+    "start": {
+      "sidebar": 300,
+      "compact": false,
+      "main": 328,
+      "toggle": true,
+      "expanded": "true",
+      "bodyCls": false,
+      "overflow": false
+    },
+    "collapsed": {
+      "sidebar": 84,
+      "compact": true,
+      "main": 112,
+      "toggle": true,
+      "expanded": "false",
+      "bodyCls": true,
+      "overflow": false
+    },
+    "persisted": {
+      "sidebar": 84,
+      "compact": true,
+      "main": 112,
+      "toggle": true,
+      "expanded": "false",
+      "bodyCls": true,
+      "overflow": false
+    },
+    "restored": {
+      "sidebar": 300,
+      "compact": false,
+      "main": 328,
+      "toggle": true,
+      "expanded": "true",
+      "bodyCls": false,
+      "overflow": false
+    },
+    "errors": [],
+    "ok": true
+  },
+  "betwave-predictions-rugby.html": {
+    "start": {
+      "sidebar": 300,
+      "compact": false,
+      "main": 328,
+      "toggle": true,
+      "expanded": "true",
+      "bodyCls": false,
+      "overflow": false
+    },
+    "collapsed": {
+      "sidebar": 84,
+      "compact": true,
+      "main": 112,
+      "toggle": true,
+      "expanded": "false",
+      "bodyCls": true,
+      "overflow": false
+    },
+    "persisted": {
+      "sidebar": 84,
+      "compact": true,
+      "main": 112,
+      "toggle": true,
+      "expanded": "false",
+      "bodyCls": true,
+      "overflow": false
+    },
+    "restored": {
+      "sidebar": 300,
+      "compact": false,
+      "main": 328,
+      "toggle": true,
+      "expanded": "true",
+      "bodyCls": false,
+      "overflow": false
+    },
+    "errors": [],
+    "ok": true
+  },
+  "betwave-predictions-soccer-england-153-premier-league-england-919.html": {
+    "start": {
+      "sidebar": 300,
+      "compact": false,
+      "main": 328,
+      "toggle": true,
+      "expanded": "true",
+      "bodyCls": false,
+      "overflow": false
+    },
+    "collapsed": {
+      "sidebar": 84,
+      "compact": true,
+      "main": 112,
+      "toggle": true,
+      "expanded": "false",
+      "bodyCls": true,
+      "overflow": false
+    },
+    "persisted": {
+      "sidebar": 84,
+      "compact": true,
+      "main": 112,
+      "toggle": true,
+      "expanded": "false",
+      "bodyCls": true,
+      "overflow": false
+    },
+    "restored": {
+      "sidebar": 300,
+      "compact": false,
+      "main": 328,
+      "toggle": true,
+      "expanded": "true",
+      "bodyCls": false,
+      "overflow": false
+    },
+    "errors": [],
+    "ok": true
+  },
+  "betwave-predictions-soccer-italy-144-serie-a-italy-1000.html": {
+    "start": {
+      "sidebar": 300,
+      "compact": false,
+      "main": 328,
+      "toggle": true,
+      "expanded": "true",
+      "bodyCls": false,
+      "overflow": false
+    },
+    "collapsed": {
+      "sidebar": 84,
+      "compact": true,
+      "main": 112,
+      "toggle": true,
+      "expanded": "false",
+      "bodyCls": true,
+      "overflow": false
+    },
+    "persisted": {
+      "sidebar": 84,
+      "compact": true,
+      "main": 112,
+      "toggle": true,
+      "expanded": "false",
+      "bodyCls": true,
+      "overflow": false
+    },
+    "restored": {
+      "sidebar": 300,
+      "compact": false,
+      "main": 328,
+      "toggle": true,
+      "expanded": "true",
+      "bodyCls": false,
+      "overflow": false
+    },
+    "errors": [],
+    "ok": true
+  },
+  "betwave-predictions-soccer-spain-139-laliga-spain-1232.html": {
+    "start": {
+      "sidebar": 300,
+      "compact": false,
+      "main": 328,
+      "toggle": true,
+      "expanded": "true",
+      "bodyCls": false,
+      "overflow": false
+    },
+    "collapsed": {
+      "sidebar": 84,
+      "compact": true,
+      "main": 112,
+      "toggle": true,
+      "expanded": "false",
+      "bodyCls": true,
+      "overflow": false
+    },
+    "persisted": {
+      "sidebar": 84,
+      "compact": true,
+      "main": 112,
+      "toggle": true,
+      "expanded": "false",
+      "bodyCls": true,
+      "overflow": false
+    },
+    "restored": {
+      "sidebar": 300,
+      "compact": false,
+      "main": 328,
+      "toggle": true,
+      "expanded": "true",
+      "bodyCls": false,
+      "overflow": false
+    },
+    "errors": [],
+    "ok": true
+  },
+  "betwave-predictions-soccer.html": {
+    "start": {
+      "sidebar": 300,
+      "compact": false,
+      "main": 328,
+      "toggle": true,
+      "expanded": "true",
+      "bodyCls": false,
+      "overflow": false
+    },
+    "collapsed": {
+      "sidebar": 84,
+      "compact": true,
+      "main": 112,
+      "toggle": true,
+      "expanded": "false",
+      "bodyCls": true,
+      "overflow": false
+    },
+    "persisted": {
+      "sidebar": 84,
+      "compact": true,
+      "main": 112,
+      "toggle": true,
+      "expanded": "false",
+      "bodyCls": true,
+      "overflow": false
+    },
+    "restored": {
+      "sidebar": 300,
+      "compact": false,
+      "main": 328,
+      "toggle": true,
+      "expanded": "true",
+      "bodyCls": false,
+      "overflow": false
+    },
+    "errors": [],
+    "ok": true
+  },
+  "betwave-predictions-table-tennis.html": {
+    "start": {
+      "sidebar": 300,
+      "compact": false,
+      "main": 328,
+      "toggle": true,
+      "expanded": "true",
+      "bodyCls": false,
+      "overflow": false
+    },
+    "collapsed": {
+      "sidebar": 84,
+      "compact": true,
+      "main": 112,
+      "toggle": true,
+      "expanded": "false",
+      "bodyCls": true,
+      "overflow": false
+    },
+    "persisted": {
+      "sidebar": 84,
+      "compact": true,
+      "main": 112,
+      "toggle": true,
+      "expanded": "false",
+      "bodyCls": true,
+      "overflow": false
+    },
+    "restored": {
+      "sidebar": 300,
+      "compact": false,
+      "main": 328,
+      "toggle": true,
+      "expanded": "true",
+      "bodyCls": false,
+      "overflow": false
+    },
+    "errors": [],
+    "ok": true
+  },
+  "betwave-predictions-tennis.html": {
+    "start": {
+      "sidebar": 300,
+      "compact": false,
+      "main": 328,
+      "toggle": true,
+      "expanded": "true",
+      "bodyCls": false,
+      "overflow": false
+    },
+    "collapsed": {
+      "sidebar": 84,
+      "compact": true,
+      "main": 112,
+      "toggle": true,
+      "expanded": "false",
+      "bodyCls": true,
+      "overflow": false
+    },
+    "persisted": {
+      "sidebar": 84,
+      "compact": true,
+      "main": 112,
+      "toggle": true,
+      "expanded": "false",
+      "bodyCls": true,
+      "overflow": false
+    },
+    "restored": {
+      "sidebar": 300,
+      "compact": false,
+      "main": 328,
+      "toggle": true,
+      "expanded": "true",
+      "bodyCls": false,
+      "overflow": false
+    },
+    "errors": [],
+    "ok": true
+  },
+  "betwave-predictions-ufc.html": {
+    "start": {
+      "sidebar": 300,
+      "compact": false,
+      "main": 328,
+      "toggle": true,
+      "expanded": "true",
+      "bodyCls": false,
+      "overflow": false
+    },
+    "collapsed": {
+      "sidebar": 84,
+      "compact": true,
+      "main": 112,
+      "toggle": true,
+      "expanded": "false",
+      "bodyCls": true,
+      "overflow": false
+    },
+    "persisted": {
+      "sidebar": 84,
+      "compact": true,
+      "main": 112,
+      "toggle": true,
+      "expanded": "false",
+      "bodyCls": true,
+      "overflow": false
+    },
+    "restored": {
+      "sidebar": 300,
+      "compact": false,
+      "main": 328,
+      "toggle": true,
+      "expanded": "true",
+      "bodyCls": false,
+      "overflow": false
+    },
+    "errors": [],
+    "ok": true
+  },
+  "betwave-predictions-valorant.html": {
+    "start": {
+      "sidebar": 300,
+      "compact": false,
+      "main": 328,
+      "toggle": true,
+      "expanded": "true",
+      "bodyCls": false,
+      "overflow": false
+    },
+    "collapsed": {
+      "sidebar": 84,
+      "compact": true,
+      "main": 112,
+      "toggle": true,
+      "expanded": "false",
+      "bodyCls": true,
+      "overflow": false
+    },
+    "persisted": {
+      "sidebar": 84,
+      "compact": true,
+      "main": 112,
+      "toggle": true,
+      "expanded": "false",
+      "bodyCls": true,
+      "overflow": false
+    },
+    "restored": {
+      "sidebar": 300,
+      "compact": false,
+      "main": 328,
+      "toggle": true,
+      "expanded": "true",
+      "bodyCls": false,
+      "overflow": false
+    },
+    "errors": [],
+    "ok": true
+  },
+  "betwave-predictions-volleyball.html": {
+    "start": {
+      "sidebar": 300,
+      "compact": false,
+      "main": 328,
+      "toggle": true,
+      "expanded": "true",
+      "bodyCls": false,
+      "overflow": false
+    },
+    "collapsed": {
+      "sidebar": 84,
+      "compact": true,
+      "main": 112,
+      "toggle": true,
+      "expanded": "false",
+      "bodyCls": true,
+      "overflow": false
+    },
+    "persisted": {
+      "sidebar": 84,
+      "compact": true,
+      "main": 112,
+      "toggle": true,
+      "expanded": "false",
+      "bodyCls": true,
+      "overflow": false
+    },
+    "restored": {
+      "sidebar": 300,
+      "compact": false,
+      "main": 328,
+      "toggle": true,
+      "expanded": "true",
+      "bodyCls": false,
+      "overflow": false
+    },
+    "errors": [],
+    "ok": true
+  },
+  "betwave-predictors.html": {
+    "start": {
+      "sidebar": 300,
+      "compact": false,
+      "main": 328,
+      "toggle": true,
+      "expanded": "true",
+      "bodyCls": false,
+      "overflow": false
+    },
+    "collapsed": {
+      "sidebar": 84,
+      "compact": true,
+      "main": 112,
+      "toggle": true,
+      "expanded": "false",
+      "bodyCls": true,
+      "overflow": false
+    },
+    "persisted": {
+      "sidebar": 84,
+      "compact": true,
+      "main": 112,
+      "toggle": true,
+      "expanded": "false",
+      "bodyCls": true,
+      "overflow": false
+    },
+    "restored": {
+      "sidebar": 300,
+      "compact": false,
+      "main": 328,
+      "toggle": true,
+      "expanded": "true",
+      "bodyCls": false,
+      "overflow": false
+    },
+    "errors": [],
+    "ok": true
+  },
+  "betwave-profile-sample.html": {
+    "start": {
+      "sidebar": 300,
+      "compact": false,
+      "main": 328,
+      "toggle": true,
+      "expanded": "true",
+      "bodyCls": false,
+      "overflow": false
+    },
+    "collapsed": {
+      "sidebar": 84,
+      "compact": true,
+      "main": 112,
+      "toggle": true,
+      "expanded": "false",
+      "bodyCls": true,
+      "overflow": false
+    },
+    "persisted": {
+      "sidebar": 84,
+      "compact": true,
+      "main": 112,
+      "toggle": true,
+      "expanded": "false",
+      "bodyCls": true,
+      "overflow": false
+    },
+    "restored": {
+      "sidebar": 300,
+      "compact": false,
+      "main": 328,
+      "toggle": true,
+      "expanded": "true",
+      "bodyCls": false,
+      "overflow": false
+    },
+    "errors": [],
+    "ok": true
+  },
+  "betwave-rules.html": {
+    "start": {
+      "sidebar": 300,
+      "compact": false,
+      "main": 328,
+      "toggle": true,
+      "expanded": "true",
+      "bodyCls": false,
+      "overflow": false
+    },
+    "collapsed": {
+      "sidebar": 84,
+      "compact": true,
+      "main": 112,
+      "toggle": true,
+      "expanded": "false",
+      "bodyCls": true,
+      "overflow": false
+    },
+    "persisted": {
+      "sidebar": 84,
+      "compact": true,
+      "main": 112,
+      "toggle": true,
+      "expanded": "false",
+      "bodyCls": true,
+      "overflow": false
+    },
+    "restored": {
+      "sidebar": 300,
+      "compact": false,
+      "main": 328,
+      "toggle": true,
+      "expanded": "true",
+      "bodyCls": false,
+      "overflow": false
+    },
+    "errors": [],
+    "ok": true
+  },
   "betwave.html": {
     "start": {
       "sidebar": 300,
@@ -31,6 +2191,2326 @@
       "sidebar": 300,
       "compact": false,
       "main": 328,
+      "toggle": true,
+      "expanded": "true",
+      "bodyCls": false,
+      "overflow": false
+    },
+    "errors": [],
+    "ok": true
+  },
+  "blog-1win-charity-evelone-eng.html": {
+    "start": {
+      "sidebar": 300,
+      "compact": false,
+      "main": 280,
+      "toggle": true,
+      "expanded": "true",
+      "bodyCls": false,
+      "overflow": false
+    },
+    "collapsed": {
+      "sidebar": 84,
+      "compact": true,
+      "main": 64,
+      "toggle": true,
+      "expanded": "false",
+      "bodyCls": true,
+      "overflow": false
+    },
+    "persisted": {
+      "sidebar": 84,
+      "compact": true,
+      "main": 64,
+      "toggle": true,
+      "expanded": "false",
+      "bodyCls": true,
+      "overflow": false
+    },
+    "restored": {
+      "sidebar": 300,
+      "compact": false,
+      "main": 280,
+      "toggle": true,
+      "expanded": "true",
+      "bodyCls": false,
+      "overflow": false
+    },
+    "errors": [],
+    "ok": true
+  },
+  "blog-1win-charity.html": {
+    "start": {
+      "sidebar": 300,
+      "compact": false,
+      "main": 280,
+      "toggle": true,
+      "expanded": "true",
+      "bodyCls": false,
+      "overflow": false
+    },
+    "collapsed": {
+      "sidebar": 84,
+      "compact": true,
+      "main": 64,
+      "toggle": true,
+      "expanded": "false",
+      "bodyCls": true,
+      "overflow": false
+    },
+    "persisted": {
+      "sidebar": 84,
+      "compact": true,
+      "main": 64,
+      "toggle": true,
+      "expanded": "false",
+      "bodyCls": true,
+      "overflow": false
+    },
+    "restored": {
+      "sidebar": 300,
+      "compact": false,
+      "main": 280,
+      "toggle": true,
+      "expanded": "true",
+      "bodyCls": false,
+      "overflow": false
+    },
+    "errors": [],
+    "ok": true
+  },
+  "blog-1win-inside-1win-app-eng.html": {
+    "start": {
+      "sidebar": 300,
+      "compact": false,
+      "main": 280,
+      "toggle": true,
+      "expanded": "true",
+      "bodyCls": false,
+      "overflow": false
+    },
+    "collapsed": {
+      "sidebar": 84,
+      "compact": true,
+      "main": 64,
+      "toggle": true,
+      "expanded": "false",
+      "bodyCls": true,
+      "overflow": false
+    },
+    "persisted": {
+      "sidebar": 84,
+      "compact": true,
+      "main": 64,
+      "toggle": true,
+      "expanded": "false",
+      "bodyCls": true,
+      "overflow": false
+    },
+    "restored": {
+      "sidebar": 300,
+      "compact": false,
+      "main": 280,
+      "toggle": true,
+      "expanded": "true",
+      "bodyCls": false,
+      "overflow": false
+    },
+    "errors": [],
+    "ok": true
+  },
+  "blog-1win-inside-1win-markets-eng.html": {
+    "start": {
+      "sidebar": 300,
+      "compact": false,
+      "main": 280,
+      "toggle": true,
+      "expanded": "true",
+      "bodyCls": false,
+      "overflow": false
+    },
+    "collapsed": {
+      "sidebar": 84,
+      "compact": true,
+      "main": 64,
+      "toggle": true,
+      "expanded": "false",
+      "bodyCls": true,
+      "overflow": false
+    },
+    "persisted": {
+      "sidebar": 84,
+      "compact": true,
+      "main": 64,
+      "toggle": true,
+      "expanded": "false",
+      "bodyCls": true,
+      "overflow": false
+    },
+    "restored": {
+      "sidebar": 300,
+      "compact": false,
+      "main": 280,
+      "toggle": true,
+      "expanded": "true",
+      "bodyCls": false,
+      "overflow": false
+    },
+    "errors": [],
+    "ok": true
+  },
+  "blog-1win-inside-betwave-eng.html": {
+    "start": {
+      "sidebar": 300,
+      "compact": false,
+      "main": 280,
+      "toggle": true,
+      "expanded": "true",
+      "bodyCls": false,
+      "overflow": false
+    },
+    "collapsed": {
+      "sidebar": 84,
+      "compact": true,
+      "main": 64,
+      "toggle": true,
+      "expanded": "false",
+      "bodyCls": true,
+      "overflow": false
+    },
+    "persisted": {
+      "sidebar": 84,
+      "compact": true,
+      "main": 64,
+      "toggle": true,
+      "expanded": "false",
+      "bodyCls": true,
+      "overflow": false
+    },
+    "restored": {
+      "sidebar": 300,
+      "compact": false,
+      "main": 280,
+      "toggle": true,
+      "expanded": "true",
+      "bodyCls": false,
+      "overflow": false
+    },
+    "errors": [],
+    "ok": true
+  },
+  "blog-1win-inside-bonus-eng.html": {
+    "start": {
+      "sidebar": 300,
+      "compact": false,
+      "main": 280,
+      "toggle": true,
+      "expanded": "true",
+      "bodyCls": false,
+      "overflow": false
+    },
+    "collapsed": {
+      "sidebar": 84,
+      "compact": true,
+      "main": 64,
+      "toggle": true,
+      "expanded": "false",
+      "bodyCls": true,
+      "overflow": false
+    },
+    "persisted": {
+      "sidebar": 84,
+      "compact": true,
+      "main": 64,
+      "toggle": true,
+      "expanded": "false",
+      "bodyCls": true,
+      "overflow": false
+    },
+    "restored": {
+      "sidebar": 300,
+      "compact": false,
+      "main": 280,
+      "toggle": true,
+      "expanded": "true",
+      "bodyCls": false,
+      "overflow": false
+    },
+    "errors": [],
+    "ok": true
+  },
+  "blog-1win-inside.html": {
+    "start": {
+      "sidebar": 300,
+      "compact": false,
+      "main": 280,
+      "toggle": true,
+      "expanded": "true",
+      "bodyCls": false,
+      "overflow": false
+    },
+    "collapsed": {
+      "sidebar": 84,
+      "compact": true,
+      "main": 64,
+      "toggle": true,
+      "expanded": "false",
+      "bodyCls": true,
+      "overflow": false
+    },
+    "persisted": {
+      "sidebar": 84,
+      "compact": true,
+      "main": 64,
+      "toggle": true,
+      "expanded": "false",
+      "bodyCls": true,
+      "overflow": false
+    },
+    "restored": {
+      "sidebar": 300,
+      "compact": false,
+      "main": 280,
+      "toggle": true,
+      "expanded": "true",
+      "bodyCls": false,
+      "overflow": false
+    },
+    "errors": [],
+    "ok": true
+  },
+  "blog-ambassadors-gable-stevson-eng.html": {
+    "start": {
+      "sidebar": 300,
+      "compact": false,
+      "main": 280,
+      "toggle": true,
+      "expanded": "true",
+      "bodyCls": false,
+      "overflow": false
+    },
+    "collapsed": {
+      "sidebar": 84,
+      "compact": true,
+      "main": 64,
+      "toggle": true,
+      "expanded": "false",
+      "bodyCls": true,
+      "overflow": false
+    },
+    "persisted": {
+      "sidebar": 84,
+      "compact": true,
+      "main": 64,
+      "toggle": true,
+      "expanded": "false",
+      "bodyCls": true,
+      "overflow": false
+    },
+    "restored": {
+      "sidebar": 300,
+      "compact": false,
+      "main": 280,
+      "toggle": true,
+      "expanded": "true",
+      "bodyCls": false,
+      "overflow": false
+    },
+    "errors": [],
+    "ok": true
+  },
+  "blog-ambassadors-jon-jones-eng.html": {
+    "start": {
+      "sidebar": 300,
+      "compact": false,
+      "main": 280,
+      "toggle": true,
+      "expanded": "true",
+      "bodyCls": false,
+      "overflow": false
+    },
+    "collapsed": {
+      "sidebar": 84,
+      "compact": true,
+      "main": 64,
+      "toggle": true,
+      "expanded": "false",
+      "bodyCls": true,
+      "overflow": false
+    },
+    "persisted": {
+      "sidebar": 84,
+      "compact": true,
+      "main": 64,
+      "toggle": true,
+      "expanded": "false",
+      "bodyCls": true,
+      "overflow": false
+    },
+    "restored": {
+      "sidebar": 300,
+      "compact": false,
+      "main": 280,
+      "toggle": true,
+      "expanded": "true",
+      "bodyCls": false,
+      "overflow": false
+    },
+    "errors": [],
+    "ok": true
+  },
+  "blog-ambassadors-predicti-ufc-eng.html": {
+    "start": {
+      "sidebar": 300,
+      "compact": false,
+      "main": 280,
+      "toggle": true,
+      "expanded": "true",
+      "bodyCls": false,
+      "overflow": false
+    },
+    "collapsed": {
+      "sidebar": 84,
+      "compact": true,
+      "main": 64,
+      "toggle": true,
+      "expanded": "false",
+      "bodyCls": true,
+      "overflow": false
+    },
+    "persisted": {
+      "sidebar": 84,
+      "compact": true,
+      "main": 64,
+      "toggle": true,
+      "expanded": "false",
+      "bodyCls": true,
+      "overflow": false
+    },
+    "restored": {
+      "sidebar": 300,
+      "compact": false,
+      "main": 280,
+      "toggle": true,
+      "expanded": "true",
+      "bodyCls": false,
+      "overflow": false
+    },
+    "errors": [],
+    "ok": true
+  },
+  "blog-ambassadors-suares-eng.html": {
+    "start": {
+      "sidebar": 300,
+      "compact": false,
+      "main": 280,
+      "toggle": true,
+      "expanded": "true",
+      "bodyCls": false,
+      "overflow": false
+    },
+    "collapsed": {
+      "sidebar": 84,
+      "compact": true,
+      "main": 64,
+      "toggle": true,
+      "expanded": "false",
+      "bodyCls": true,
+      "overflow": false
+    },
+    "persisted": {
+      "sidebar": 84,
+      "compact": true,
+      "main": 64,
+      "toggle": true,
+      "expanded": "false",
+      "bodyCls": true,
+      "overflow": false
+    },
+    "restored": {
+      "sidebar": 300,
+      "compact": false,
+      "main": 280,
+      "toggle": true,
+      "expanded": "true",
+      "bodyCls": false,
+      "overflow": false
+    },
+    "errors": [],
+    "ok": true
+  },
+  "blog-ambassadors.html": {
+    "start": {
+      "sidebar": 300,
+      "compact": false,
+      "main": 280,
+      "toggle": true,
+      "expanded": "true",
+      "bodyCls": false,
+      "overflow": false
+    },
+    "collapsed": {
+      "sidebar": 84,
+      "compact": true,
+      "main": 64,
+      "toggle": true,
+      "expanded": "false",
+      "bodyCls": true,
+      "overflow": false
+    },
+    "persisted": {
+      "sidebar": 84,
+      "compact": true,
+      "main": 64,
+      "toggle": true,
+      "expanded": "false",
+      "bodyCls": true,
+      "overflow": false
+    },
+    "restored": {
+      "sidebar": 300,
+      "compact": false,
+      "main": 280,
+      "toggle": true,
+      "expanded": "true",
+      "bodyCls": false,
+      "overflow": false
+    },
+    "errors": [],
+    "ok": true
+  },
+  "blog-casino-best-games-novichkam-eng.html": {
+    "start": {
+      "sidebar": 300,
+      "compact": false,
+      "main": 280,
+      "toggle": true,
+      "expanded": "true",
+      "bodyCls": false,
+      "overflow": false
+    },
+    "collapsed": {
+      "sidebar": 84,
+      "compact": true,
+      "main": 64,
+      "toggle": true,
+      "expanded": "false",
+      "bodyCls": true,
+      "overflow": false
+    },
+    "persisted": {
+      "sidebar": 84,
+      "compact": true,
+      "main": 64,
+      "toggle": true,
+      "expanded": "false",
+      "bodyCls": true,
+      "overflow": false
+    },
+    "restored": {
+      "sidebar": 300,
+      "compact": false,
+      "main": 280,
+      "toggle": true,
+      "expanded": "true",
+      "bodyCls": false,
+      "overflow": false
+    },
+    "errors": [],
+    "ok": true
+  },
+  "blog-casino-best-online-casino-bonuses-eng.html": {
+    "start": {
+      "sidebar": 300,
+      "compact": false,
+      "main": 280,
+      "toggle": true,
+      "expanded": "true",
+      "bodyCls": false,
+      "overflow": false
+    },
+    "collapsed": {
+      "sidebar": 84,
+      "compact": true,
+      "main": 64,
+      "toggle": true,
+      "expanded": "false",
+      "bodyCls": true,
+      "overflow": false
+    },
+    "persisted": {
+      "sidebar": 84,
+      "compact": true,
+      "main": 64,
+      "toggle": true,
+      "expanded": "false",
+      "bodyCls": true,
+      "overflow": false
+    },
+    "restored": {
+      "sidebar": 300,
+      "compact": false,
+      "main": 280,
+      "toggle": true,
+      "expanded": "true",
+      "bodyCls": false,
+      "overflow": false
+    },
+    "errors": [],
+    "ok": true
+  },
+  "blog-casino-generator-chisel-eng.html": {
+    "start": {
+      "sidebar": 300,
+      "compact": false,
+      "main": 280,
+      "toggle": true,
+      "expanded": "true",
+      "bodyCls": false,
+      "overflow": false
+    },
+    "collapsed": {
+      "sidebar": 84,
+      "compact": true,
+      "main": 64,
+      "toggle": true,
+      "expanded": "false",
+      "bodyCls": true,
+      "overflow": false
+    },
+    "persisted": {
+      "sidebar": 84,
+      "compact": true,
+      "main": 64,
+      "toggle": true,
+      "expanded": "false",
+      "bodyCls": true,
+      "overflow": false
+    },
+    "restored": {
+      "sidebar": 300,
+      "compact": false,
+      "main": 280,
+      "toggle": true,
+      "expanded": "true",
+      "bodyCls": false,
+      "overflow": false
+    },
+    "errors": [],
+    "ok": true
+  },
+  "blog-casino-poker-strategies-eng.html": {
+    "start": {
+      "sidebar": 300,
+      "compact": false,
+      "main": 280,
+      "toggle": true,
+      "expanded": "true",
+      "bodyCls": false,
+      "overflow": false
+    },
+    "collapsed": {
+      "sidebar": 84,
+      "compact": true,
+      "main": 64,
+      "toggle": true,
+      "expanded": "false",
+      "bodyCls": true,
+      "overflow": false
+    },
+    "persisted": {
+      "sidebar": 84,
+      "compact": true,
+      "main": 64,
+      "toggle": true,
+      "expanded": "false",
+      "bodyCls": true,
+      "overflow": false
+    },
+    "restored": {
+      "sidebar": 300,
+      "compact": false,
+      "main": 280,
+      "toggle": true,
+      "expanded": "true",
+      "bodyCls": false,
+      "overflow": false
+    },
+    "errors": [],
+    "ok": true
+  },
+  "blog-casino-what-is-rtp-eng.html": {
+    "start": {
+      "sidebar": 300,
+      "compact": false,
+      "main": 280,
+      "toggle": true,
+      "expanded": "true",
+      "bodyCls": false,
+      "overflow": false
+    },
+    "collapsed": {
+      "sidebar": 84,
+      "compact": true,
+      "main": 64,
+      "toggle": true,
+      "expanded": "false",
+      "bodyCls": true,
+      "overflow": false
+    },
+    "persisted": {
+      "sidebar": 84,
+      "compact": true,
+      "main": 64,
+      "toggle": true,
+      "expanded": "false",
+      "bodyCls": true,
+      "overflow": false
+    },
+    "restored": {
+      "sidebar": 300,
+      "compact": false,
+      "main": 280,
+      "toggle": true,
+      "expanded": "true",
+      "bodyCls": false,
+      "overflow": false
+    },
+    "errors": [],
+    "ok": true
+  },
+  "blog-casino.html": {
+    "start": {
+      "sidebar": 300,
+      "compact": false,
+      "main": 280,
+      "toggle": true,
+      "expanded": "true",
+      "bodyCls": false,
+      "overflow": false
+    },
+    "collapsed": {
+      "sidebar": 84,
+      "compact": true,
+      "main": 64,
+      "toggle": true,
+      "expanded": "false",
+      "bodyCls": true,
+      "overflow": false
+    },
+    "persisted": {
+      "sidebar": 84,
+      "compact": true,
+      "main": 64,
+      "toggle": true,
+      "expanded": "false",
+      "bodyCls": true,
+      "overflow": false
+    },
+    "restored": {
+      "sidebar": 300,
+      "compact": false,
+      "main": 280,
+      "toggle": true,
+      "expanded": "true",
+      "bodyCls": false,
+      "overflow": false
+    },
+    "errors": [],
+    "ok": true
+  },
+  "blog-crypto-1-oshibla-i-deneg-net-eng.html": {
+    "start": {
+      "sidebar": 300,
+      "compact": false,
+      "main": 280,
+      "toggle": true,
+      "expanded": "true",
+      "bodyCls": false,
+      "overflow": false
+    },
+    "collapsed": {
+      "sidebar": 84,
+      "compact": true,
+      "main": 64,
+      "toggle": true,
+      "expanded": "false",
+      "bodyCls": true,
+      "overflow": false
+    },
+    "persisted": {
+      "sidebar": 84,
+      "compact": true,
+      "main": 64,
+      "toggle": true,
+      "expanded": "false",
+      "bodyCls": true,
+      "overflow": false
+    },
+    "restored": {
+      "sidebar": 300,
+      "compact": false,
+      "main": 280,
+      "toggle": true,
+      "expanded": "true",
+      "bodyCls": false,
+      "overflow": false
+    },
+    "errors": [],
+    "ok": true
+  },
+  "blog-crypto-bestchange.html": {
+    "start": {
+      "sidebar": 300,
+      "compact": false,
+      "main": 280,
+      "toggle": true,
+      "expanded": "true",
+      "bodyCls": false,
+      "overflow": false
+    },
+    "collapsed": {
+      "sidebar": 84,
+      "compact": true,
+      "main": 64,
+      "toggle": true,
+      "expanded": "false",
+      "bodyCls": true,
+      "overflow": false
+    },
+    "persisted": {
+      "sidebar": 84,
+      "compact": true,
+      "main": 64,
+      "toggle": true,
+      "expanded": "false",
+      "bodyCls": true,
+      "overflow": false
+    },
+    "restored": {
+      "sidebar": 300,
+      "compact": false,
+      "main": 280,
+      "toggle": true,
+      "expanded": "true",
+      "bodyCls": false,
+      "overflow": false
+    },
+    "errors": [],
+    "ok": true
+  },
+  "blog-crypto-bitcoin-eng.html": {
+    "start": {
+      "sidebar": 300,
+      "compact": false,
+      "main": 280,
+      "toggle": true,
+      "expanded": "true",
+      "bodyCls": false,
+      "overflow": false
+    },
+    "collapsed": {
+      "sidebar": 84,
+      "compact": true,
+      "main": 64,
+      "toggle": true,
+      "expanded": "false",
+      "bodyCls": true,
+      "overflow": false
+    },
+    "persisted": {
+      "sidebar": 84,
+      "compact": true,
+      "main": 64,
+      "toggle": true,
+      "expanded": "false",
+      "bodyCls": true,
+      "overflow": false
+    },
+    "restored": {
+      "sidebar": 300,
+      "compact": false,
+      "main": 280,
+      "toggle": true,
+      "expanded": "true",
+      "bodyCls": false,
+      "overflow": false
+    },
+    "errors": [],
+    "ok": true
+  },
+  "blog-crypto-crypto-tournamets.html": {
+    "start": {
+      "sidebar": 300,
+      "compact": false,
+      "main": 280,
+      "toggle": true,
+      "expanded": "true",
+      "bodyCls": false,
+      "overflow": false
+    },
+    "collapsed": {
+      "sidebar": 84,
+      "compact": true,
+      "main": 64,
+      "toggle": true,
+      "expanded": "false",
+      "bodyCls": true,
+      "overflow": false
+    },
+    "persisted": {
+      "sidebar": 84,
+      "compact": true,
+      "main": 64,
+      "toggle": true,
+      "expanded": "false",
+      "bodyCls": true,
+      "overflow": false
+    },
+    "restored": {
+      "sidebar": 300,
+      "compact": false,
+      "main": 280,
+      "toggle": true,
+      "expanded": "true",
+      "bodyCls": false,
+      "overflow": false
+    },
+    "errors": [],
+    "ok": true
+  },
+  "blog-crypto-gde-dengi-eng.html": {
+    "start": {
+      "sidebar": 300,
+      "compact": false,
+      "main": 280,
+      "toggle": true,
+      "expanded": "true",
+      "bodyCls": false,
+      "overflow": false
+    },
+    "collapsed": {
+      "sidebar": 84,
+      "compact": true,
+      "main": 64,
+      "toggle": true,
+      "expanded": "false",
+      "bodyCls": true,
+      "overflow": false
+    },
+    "persisted": {
+      "sidebar": 84,
+      "compact": true,
+      "main": 64,
+      "toggle": true,
+      "expanded": "false",
+      "bodyCls": true,
+      "overflow": false
+    },
+    "restored": {
+      "sidebar": 300,
+      "compact": false,
+      "main": 280,
+      "toggle": true,
+      "expanded": "true",
+      "bodyCls": false,
+      "overflow": false
+    },
+    "errors": [],
+    "ok": true
+  },
+  "blog-crypto-guide-to-safe-transactions-eng.html": {
+    "start": {
+      "sidebar": 300,
+      "compact": false,
+      "main": 280,
+      "toggle": true,
+      "expanded": "true",
+      "bodyCls": false,
+      "overflow": false
+    },
+    "collapsed": {
+      "sidebar": 84,
+      "compact": true,
+      "main": 64,
+      "toggle": true,
+      "expanded": "false",
+      "bodyCls": true,
+      "overflow": false
+    },
+    "persisted": {
+      "sidebar": 84,
+      "compact": true,
+      "main": 64,
+      "toggle": true,
+      "expanded": "false",
+      "bodyCls": true,
+      "overflow": false
+    },
+    "restored": {
+      "sidebar": 300,
+      "compact": false,
+      "main": 280,
+      "toggle": true,
+      "expanded": "true",
+      "bodyCls": false,
+      "overflow": false
+    },
+    "errors": [],
+    "ok": true
+  },
+  "blog-crypto-kastodialnie-koshelki-eng.html": {
+    "start": {
+      "sidebar": 300,
+      "compact": false,
+      "main": 280,
+      "toggle": true,
+      "expanded": "true",
+      "bodyCls": false,
+      "overflow": false
+    },
+    "collapsed": {
+      "sidebar": 84,
+      "compact": true,
+      "main": 64,
+      "toggle": true,
+      "expanded": "false",
+      "bodyCls": true,
+      "overflow": false
+    },
+    "persisted": {
+      "sidebar": 84,
+      "compact": true,
+      "main": 64,
+      "toggle": true,
+      "expanded": "false",
+      "bodyCls": true,
+      "overflow": false
+    },
+    "restored": {
+      "sidebar": 300,
+      "compact": false,
+      "main": 280,
+      "toggle": true,
+      "expanded": "true",
+      "bodyCls": false,
+      "overflow": false
+    },
+    "errors": [],
+    "ok": true
+  },
+  "blog-crypto-kripta-karta-eng.html": {
+    "start": {
+      "sidebar": 300,
+      "compact": false,
+      "main": 280,
+      "toggle": true,
+      "expanded": "true",
+      "bodyCls": false,
+      "overflow": false
+    },
+    "collapsed": {
+      "sidebar": 84,
+      "compact": true,
+      "main": 64,
+      "toggle": true,
+      "expanded": "false",
+      "bodyCls": true,
+      "overflow": false
+    },
+    "persisted": {
+      "sidebar": 84,
+      "compact": true,
+      "main": 64,
+      "toggle": true,
+      "expanded": "false",
+      "bodyCls": true,
+      "overflow": false
+    },
+    "restored": {
+      "sidebar": 300,
+      "compact": false,
+      "main": 280,
+      "toggle": true,
+      "expanded": "true",
+      "bodyCls": false,
+      "overflow": false
+    },
+    "errors": [],
+    "ok": true
+  },
+  "blog-crypto-kripta-v-igaming-eng.html": {
+    "start": {
+      "sidebar": 300,
+      "compact": false,
+      "main": 280,
+      "toggle": true,
+      "expanded": "true",
+      "bodyCls": false,
+      "overflow": false
+    },
+    "collapsed": {
+      "sidebar": 84,
+      "compact": true,
+      "main": 64,
+      "toggle": true,
+      "expanded": "false",
+      "bodyCls": true,
+      "overflow": false
+    },
+    "persisted": {
+      "sidebar": 84,
+      "compact": true,
+      "main": 64,
+      "toggle": true,
+      "expanded": "false",
+      "bodyCls": true,
+      "overflow": false
+    },
+    "restored": {
+      "sidebar": 300,
+      "compact": false,
+      "main": 280,
+      "toggle": true,
+      "expanded": "true",
+      "bodyCls": false,
+      "overflow": false
+    },
+    "errors": [],
+    "ok": true
+  },
+  "blog-crypto-kripto-guide.html": {
+    "start": {
+      "sidebar": 300,
+      "compact": false,
+      "main": 280,
+      "toggle": true,
+      "expanded": "true",
+      "bodyCls": false,
+      "overflow": false
+    },
+    "collapsed": {
+      "sidebar": 84,
+      "compact": true,
+      "main": 64,
+      "toggle": true,
+      "expanded": "false",
+      "bodyCls": true,
+      "overflow": false
+    },
+    "persisted": {
+      "sidebar": 84,
+      "compact": true,
+      "main": 64,
+      "toggle": true,
+      "expanded": "false",
+      "bodyCls": true,
+      "overflow": false
+    },
+    "restored": {
+      "sidebar": 300,
+      "compact": false,
+      "main": 280,
+      "toggle": true,
+      "expanded": "true",
+      "bodyCls": false,
+      "overflow": false
+    },
+    "errors": [],
+    "ok": true
+  },
+  "blog-crypto-memo-i-tag-eng.html": {
+    "start": {
+      "sidebar": 300,
+      "compact": false,
+      "main": 280,
+      "toggle": true,
+      "expanded": "true",
+      "bodyCls": false,
+      "overflow": false
+    },
+    "collapsed": {
+      "sidebar": 84,
+      "compact": true,
+      "main": 64,
+      "toggle": true,
+      "expanded": "false",
+      "bodyCls": true,
+      "overflow": false
+    },
+    "persisted": {
+      "sidebar": 84,
+      "compact": true,
+      "main": 64,
+      "toggle": true,
+      "expanded": "false",
+      "bodyCls": true,
+      "overflow": false
+    },
+    "restored": {
+      "sidebar": 300,
+      "compact": false,
+      "main": 280,
+      "toggle": true,
+      "expanded": "true",
+      "bodyCls": false,
+      "overflow": false
+    },
+    "errors": [],
+    "ok": true
+  },
+  "blog-crypto-scam-in-crypto-eng.html": {
+    "start": {
+      "sidebar": 300,
+      "compact": false,
+      "main": 280,
+      "toggle": true,
+      "expanded": "true",
+      "bodyCls": false,
+      "overflow": false
+    },
+    "collapsed": {
+      "sidebar": 84,
+      "compact": true,
+      "main": 64,
+      "toggle": true,
+      "expanded": "false",
+      "bodyCls": true,
+      "overflow": false
+    },
+    "persisted": {
+      "sidebar": 84,
+      "compact": true,
+      "main": 64,
+      "toggle": true,
+      "expanded": "false",
+      "bodyCls": true,
+      "overflow": false
+    },
+    "restored": {
+      "sidebar": 300,
+      "compact": false,
+      "main": 280,
+      "toggle": true,
+      "expanded": "true",
+      "bodyCls": false,
+      "overflow": false
+    },
+    "errors": [],
+    "ok": true
+  },
+  "blog-crypto-tether-usdt-casinos-eng.html": {
+    "start": {
+      "sidebar": 300,
+      "compact": false,
+      "main": 280,
+      "toggle": true,
+      "expanded": "true",
+      "bodyCls": false,
+      "overflow": false
+    },
+    "collapsed": {
+      "sidebar": 84,
+      "compact": true,
+      "main": 64,
+      "toggle": true,
+      "expanded": "false",
+      "bodyCls": true,
+      "overflow": false
+    },
+    "persisted": {
+      "sidebar": 84,
+      "compact": true,
+      "main": 64,
+      "toggle": true,
+      "expanded": "false",
+      "bodyCls": true,
+      "overflow": false
+    },
+    "restored": {
+      "sidebar": 300,
+      "compact": false,
+      "main": 280,
+      "toggle": true,
+      "expanded": "true",
+      "bodyCls": false,
+      "overflow": false
+    },
+    "errors": [],
+    "ok": true
+  },
+  "blog-crypto-tvoi-kluchi-eng.html": {
+    "start": {
+      "sidebar": 300,
+      "compact": false,
+      "main": 280,
+      "toggle": true,
+      "expanded": "true",
+      "bodyCls": false,
+      "overflow": false
+    },
+    "collapsed": {
+      "sidebar": 84,
+      "compact": true,
+      "main": 64,
+      "toggle": true,
+      "expanded": "false",
+      "bodyCls": true,
+      "overflow": false
+    },
+    "persisted": {
+      "sidebar": 84,
+      "compact": true,
+      "main": 64,
+      "toggle": true,
+      "expanded": "false",
+      "bodyCls": true,
+      "overflow": false
+    },
+    "restored": {
+      "sidebar": 300,
+      "compact": false,
+      "main": 280,
+      "toggle": true,
+      "expanded": "true",
+      "bodyCls": false,
+      "overflow": false
+    },
+    "errors": [],
+    "ok": true
+  },
+  "blog-crypto-usdt-btc-or-altcoins-eng.html": {
+    "start": {
+      "sidebar": 300,
+      "compact": false,
+      "main": 280,
+      "toggle": true,
+      "expanded": "true",
+      "bodyCls": false,
+      "overflow": false
+    },
+    "collapsed": {
+      "sidebar": 84,
+      "compact": true,
+      "main": 64,
+      "toggle": true,
+      "expanded": "false",
+      "bodyCls": true,
+      "overflow": false
+    },
+    "persisted": {
+      "sidebar": 84,
+      "compact": true,
+      "main": 64,
+      "toggle": true,
+      "expanded": "false",
+      "bodyCls": true,
+      "overflow": false
+    },
+    "restored": {
+      "sidebar": 300,
+      "compact": false,
+      "main": 280,
+      "toggle": true,
+      "expanded": "true",
+      "bodyCls": false,
+      "overflow": false
+    },
+    "errors": [],
+    "ok": true
+  },
+  "blog-crypto-usdt-in-a-traffic-eng.html": {
+    "start": {
+      "sidebar": 300,
+      "compact": false,
+      "main": 280,
+      "toggle": true,
+      "expanded": "true",
+      "bodyCls": false,
+      "overflow": false
+    },
+    "collapsed": {
+      "sidebar": 84,
+      "compact": true,
+      "main": 64,
+      "toggle": true,
+      "expanded": "false",
+      "bodyCls": true,
+      "overflow": false
+    },
+    "persisted": {
+      "sidebar": 84,
+      "compact": true,
+      "main": 64,
+      "toggle": true,
+      "expanded": "false",
+      "bodyCls": true,
+      "overflow": false
+    },
+    "restored": {
+      "sidebar": 300,
+      "compact": false,
+      "main": 280,
+      "toggle": true,
+      "expanded": "true",
+      "bodyCls": false,
+      "overflow": false
+    },
+    "errors": [],
+    "ok": true
+  },
+  "blog-crypto-usdt-vs-fiat-eng.html": {
+    "start": {
+      "sidebar": 300,
+      "compact": false,
+      "main": 280,
+      "toggle": true,
+      "expanded": "true",
+      "bodyCls": false,
+      "overflow": false
+    },
+    "collapsed": {
+      "sidebar": 84,
+      "compact": true,
+      "main": 64,
+      "toggle": true,
+      "expanded": "false",
+      "bodyCls": true,
+      "overflow": false
+    },
+    "persisted": {
+      "sidebar": 84,
+      "compact": true,
+      "main": 64,
+      "toggle": true,
+      "expanded": "false",
+      "bodyCls": true,
+      "overflow": false
+    },
+    "restored": {
+      "sidebar": 300,
+      "compact": false,
+      "main": 280,
+      "toggle": true,
+      "expanded": "true",
+      "bodyCls": false,
+      "overflow": false
+    },
+    "errors": [],
+    "ok": true
+  },
+  "blog-crypto-vibor-seti-eng.html": {
+    "start": {
+      "sidebar": 300,
+      "compact": false,
+      "main": 280,
+      "toggle": true,
+      "expanded": "true",
+      "bodyCls": false,
+      "overflow": false
+    },
+    "collapsed": {
+      "sidebar": 84,
+      "compact": true,
+      "main": 64,
+      "toggle": true,
+      "expanded": "false",
+      "bodyCls": true,
+      "overflow": false
+    },
+    "persisted": {
+      "sidebar": 84,
+      "compact": true,
+      "main": 64,
+      "toggle": true,
+      "expanded": "false",
+      "bodyCls": true,
+      "overflow": false
+    },
+    "restored": {
+      "sidebar": 300,
+      "compact": false,
+      "main": 280,
+      "toggle": true,
+      "expanded": "true",
+      "bodyCls": false,
+      "overflow": false
+    },
+    "errors": [],
+    "ok": true
+  },
+  "blog-crypto-vivod-s-1win-eng.html": {
+    "start": {
+      "sidebar": 300,
+      "compact": false,
+      "main": 280,
+      "toggle": true,
+      "expanded": "true",
+      "bodyCls": false,
+      "overflow": false
+    },
+    "collapsed": {
+      "sidebar": 84,
+      "compact": true,
+      "main": 64,
+      "toggle": true,
+      "expanded": "false",
+      "bodyCls": true,
+      "overflow": false
+    },
+    "persisted": {
+      "sidebar": 84,
+      "compact": true,
+      "main": 64,
+      "toggle": true,
+      "expanded": "false",
+      "bodyCls": true,
+      "overflow": false
+    },
+    "restored": {
+      "sidebar": 300,
+      "compact": false,
+      "main": 280,
+      "toggle": true,
+      "expanded": "true",
+      "bodyCls": false,
+      "overflow": false
+    },
+    "errors": [],
+    "ok": true
+  },
+  "blog-crypto-what-is-ethereum-eng.html": {
+    "start": {
+      "sidebar": 300,
+      "compact": false,
+      "main": 280,
+      "toggle": true,
+      "expanded": "true",
+      "bodyCls": false,
+      "overflow": false
+    },
+    "collapsed": {
+      "sidebar": 84,
+      "compact": true,
+      "main": 64,
+      "toggle": true,
+      "expanded": "false",
+      "bodyCls": true,
+      "overflow": false
+    },
+    "persisted": {
+      "sidebar": 84,
+      "compact": true,
+      "main": 64,
+      "toggle": true,
+      "expanded": "false",
+      "bodyCls": true,
+      "overflow": false
+    },
+    "restored": {
+      "sidebar": 300,
+      "compact": false,
+      "main": 280,
+      "toggle": true,
+      "expanded": "true",
+      "bodyCls": false,
+      "overflow": false
+    },
+    "errors": [],
+    "ok": true
+  },
+  "blog-crypto-what-is-tron-trx-eng.html": {
+    "start": {
+      "sidebar": 300,
+      "compact": false,
+      "main": 280,
+      "toggle": true,
+      "expanded": "true",
+      "bodyCls": false,
+      "overflow": false
+    },
+    "collapsed": {
+      "sidebar": 84,
+      "compact": true,
+      "main": 64,
+      "toggle": true,
+      "expanded": "false",
+      "bodyCls": true,
+      "overflow": false
+    },
+    "persisted": {
+      "sidebar": 84,
+      "compact": true,
+      "main": 64,
+      "toggle": true,
+      "expanded": "false",
+      "bodyCls": true,
+      "overflow": false
+    },
+    "restored": {
+      "sidebar": 300,
+      "compact": false,
+      "main": 280,
+      "toggle": true,
+      "expanded": "true",
+      "bodyCls": false,
+      "overflow": false
+    },
+    "errors": [],
+    "ok": true
+  },
+  "blog-crypto.html": {
+    "start": {
+      "sidebar": 300,
+      "compact": false,
+      "main": 280,
+      "toggle": true,
+      "expanded": "true",
+      "bodyCls": false,
+      "overflow": false
+    },
+    "collapsed": {
+      "sidebar": 84,
+      "compact": true,
+      "main": 64,
+      "toggle": true,
+      "expanded": "false",
+      "bodyCls": true,
+      "overflow": false
+    },
+    "persisted": {
+      "sidebar": 84,
+      "compact": true,
+      "main": 64,
+      "toggle": true,
+      "expanded": "false",
+      "bodyCls": true,
+      "overflow": false
+    },
+    "restored": {
+      "sidebar": 300,
+      "compact": false,
+      "main": 280,
+      "toggle": true,
+      "expanded": "true",
+      "bodyCls": false,
+      "overflow": false
+    },
+    "errors": [],
+    "ok": true
+  },
+  "blog-sport-betting-bonuses-eng.html": {
+    "start": {
+      "sidebar": 300,
+      "compact": false,
+      "main": 280,
+      "toggle": true,
+      "expanded": "true",
+      "bodyCls": false,
+      "overflow": false
+    },
+    "collapsed": {
+      "sidebar": 84,
+      "compact": true,
+      "main": 64,
+      "toggle": true,
+      "expanded": "false",
+      "bodyCls": true,
+      "overflow": false
+    },
+    "persisted": {
+      "sidebar": 84,
+      "compact": true,
+      "main": 64,
+      "toggle": true,
+      "expanded": "false",
+      "bodyCls": true,
+      "overflow": false
+    },
+    "restored": {
+      "sidebar": 300,
+      "compact": false,
+      "main": 280,
+      "toggle": true,
+      "expanded": "true",
+      "bodyCls": false,
+      "overflow": false
+    },
+    "errors": [],
+    "ok": true
+  },
+  "blog-sport-combination-bets-eng.html": {
+    "start": {
+      "sidebar": 300,
+      "compact": false,
+      "main": 280,
+      "toggle": true,
+      "expanded": "true",
+      "bodyCls": false,
+      "overflow": false
+    },
+    "collapsed": {
+      "sidebar": 84,
+      "compact": true,
+      "main": 64,
+      "toggle": true,
+      "expanded": "false",
+      "bodyCls": true,
+      "overflow": false
+    },
+    "persisted": {
+      "sidebar": 84,
+      "compact": true,
+      "main": 64,
+      "toggle": true,
+      "expanded": "false",
+      "bodyCls": true,
+      "overflow": false
+    },
+    "restored": {
+      "sidebar": 300,
+      "compact": false,
+      "main": 280,
+      "toggle": true,
+      "expanded": "true",
+      "bodyCls": false,
+      "overflow": false
+    },
+    "errors": [],
+    "ok": true
+  },
+  "blog-sport-double-chance-betting-eng.html": {
+    "start": {
+      "sidebar": 300,
+      "compact": false,
+      "main": 280,
+      "toggle": true,
+      "expanded": "true",
+      "bodyCls": false,
+      "overflow": false
+    },
+    "collapsed": {
+      "sidebar": 84,
+      "compact": true,
+      "main": 64,
+      "toggle": true,
+      "expanded": "false",
+      "bodyCls": true,
+      "overflow": false
+    },
+    "persisted": {
+      "sidebar": 84,
+      "compact": true,
+      "main": 64,
+      "toggle": true,
+      "expanded": "false",
+      "bodyCls": true,
+      "overflow": false
+    },
+    "restored": {
+      "sidebar": 300,
+      "compact": false,
+      "main": 280,
+      "toggle": true,
+      "expanded": "true",
+      "bodyCls": false,
+      "overflow": false
+    },
+    "errors": [],
+    "ok": true
+  },
+  "blog-sport-live-betting-vs-pre-match-eng.html": {
+    "start": {
+      "sidebar": 300,
+      "compact": false,
+      "main": 280,
+      "toggle": true,
+      "expanded": "true",
+      "bodyCls": false,
+      "overflow": false
+    },
+    "collapsed": {
+      "sidebar": 84,
+      "compact": true,
+      "main": 64,
+      "toggle": true,
+      "expanded": "false",
+      "bodyCls": true,
+      "overflow": false
+    },
+    "persisted": {
+      "sidebar": 84,
+      "compact": true,
+      "main": 64,
+      "toggle": true,
+      "expanded": "false",
+      "bodyCls": true,
+      "overflow": false
+    },
+    "restored": {
+      "sidebar": 300,
+      "compact": false,
+      "main": 280,
+      "toggle": true,
+      "expanded": "true",
+      "bodyCls": false,
+      "overflow": false
+    },
+    "errors": [],
+    "ok": true
+  },
+  "blog-sport-live-prematch.html": {
+    "start": {
+      "sidebar": 300,
+      "compact": false,
+      "main": 280,
+      "toggle": true,
+      "expanded": "true",
+      "bodyCls": false,
+      "overflow": false
+    },
+    "collapsed": {
+      "sidebar": 84,
+      "compact": true,
+      "main": 64,
+      "toggle": true,
+      "expanded": "false",
+      "bodyCls": true,
+      "overflow": false
+    },
+    "persisted": {
+      "sidebar": 84,
+      "compact": true,
+      "main": 64,
+      "toggle": true,
+      "expanded": "false",
+      "bodyCls": true,
+      "overflow": false
+    },
+    "restored": {
+      "sidebar": 300,
+      "compact": false,
+      "main": 280,
+      "toggle": true,
+      "expanded": "true",
+      "bodyCls": false,
+      "overflow": false
+    },
+    "errors": [],
+    "ok": true
+  },
+  "blog-sport-matematika-uspeha-eng.html": {
+    "start": {
+      "sidebar": 300,
+      "compact": false,
+      "main": 280,
+      "toggle": true,
+      "expanded": "true",
+      "bodyCls": false,
+      "overflow": false
+    },
+    "collapsed": {
+      "sidebar": 84,
+      "compact": true,
+      "main": 64,
+      "toggle": true,
+      "expanded": "false",
+      "bodyCls": true,
+      "overflow": false
+    },
+    "persisted": {
+      "sidebar": 84,
+      "compact": true,
+      "main": 64,
+      "toggle": true,
+      "expanded": "false",
+      "bodyCls": true,
+      "overflow": false
+    },
+    "restored": {
+      "sidebar": 300,
+      "compact": false,
+      "main": 280,
+      "toggle": true,
+      "expanded": "true",
+      "bodyCls": false,
+      "overflow": false
+    },
+    "errors": [],
+    "ok": true
+  },
+  "blog-sport-nfl-betting-strategies-eng.html": {
+    "start": {
+      "sidebar": 300,
+      "compact": false,
+      "main": 280,
+      "toggle": true,
+      "expanded": "true",
+      "bodyCls": false,
+      "overflow": false
+    },
+    "collapsed": {
+      "sidebar": 84,
+      "compact": true,
+      "main": 64,
+      "toggle": true,
+      "expanded": "false",
+      "bodyCls": true,
+      "overflow": false
+    },
+    "persisted": {
+      "sidebar": 84,
+      "compact": true,
+      "main": 64,
+      "toggle": true,
+      "expanded": "false",
+      "bodyCls": true,
+      "overflow": false
+    },
+    "restored": {
+      "sidebar": 300,
+      "compact": false,
+      "main": 280,
+      "toggle": true,
+      "expanded": "true",
+      "bodyCls": false,
+      "overflow": false
+    },
+    "errors": [],
+    "ok": true
+  },
+  "blog-sport-single-bet-eng.html": {
+    "start": {
+      "sidebar": 300,
+      "compact": false,
+      "main": 280,
+      "toggle": true,
+      "expanded": "true",
+      "bodyCls": false,
+      "overflow": false
+    },
+    "collapsed": {
+      "sidebar": 84,
+      "compact": true,
+      "main": 64,
+      "toggle": true,
+      "expanded": "false",
+      "bodyCls": true,
+      "overflow": false
+    },
+    "persisted": {
+      "sidebar": 84,
+      "compact": true,
+      "main": 64,
+      "toggle": true,
+      "expanded": "false",
+      "bodyCls": true,
+      "overflow": false
+    },
+    "restored": {
+      "sidebar": 300,
+      "compact": false,
+      "main": 280,
+      "toggle": true,
+      "expanded": "true",
+      "bodyCls": false,
+      "overflow": false
+    },
+    "errors": [],
+    "ok": true
+  },
+  "blog-sport-what-are-asian-totals-eng.html": {
+    "start": {
+      "sidebar": 300,
+      "compact": false,
+      "main": 280,
+      "toggle": true,
+      "expanded": "true",
+      "bodyCls": false,
+      "overflow": false
+    },
+    "collapsed": {
+      "sidebar": 84,
+      "compact": true,
+      "main": 64,
+      "toggle": true,
+      "expanded": "false",
+      "bodyCls": true,
+      "overflow": false
+    },
+    "persisted": {
+      "sidebar": 84,
+      "compact": true,
+      "main": 64,
+      "toggle": true,
+      "expanded": "false",
+      "bodyCls": true,
+      "overflow": false
+    },
+    "restored": {
+      "sidebar": 300,
+      "compact": false,
+      "main": 280,
+      "toggle": true,
+      "expanded": "true",
+      "bodyCls": false,
+      "overflow": false
+    },
+    "errors": [],
+    "ok": true
+  },
+  "blog-sport.html": {
+    "start": {
+      "sidebar": 300,
+      "compact": false,
+      "main": 280,
+      "toggle": true,
+      "expanded": "true",
+      "bodyCls": false,
+      "overflow": false
+    },
+    "collapsed": {
+      "sidebar": 84,
+      "compact": true,
+      "main": 64,
+      "toggle": true,
+      "expanded": "false",
+      "bodyCls": true,
+      "overflow": false
+    },
+    "persisted": {
+      "sidebar": 84,
+      "compact": true,
+      "main": 64,
+      "toggle": true,
+      "expanded": "false",
+      "bodyCls": true,
+      "overflow": false
+    },
+    "restored": {
+      "sidebar": 300,
+      "compact": false,
+      "main": 280,
+      "toggle": true,
+      "expanded": "true",
+      "bodyCls": false,
+      "overflow": false
+    },
+    "errors": [],
+    "ok": true
+  },
+  "blog-vip-1win-vip-eng.html": {
+    "start": {
+      "sidebar": 300,
+      "compact": false,
+      "main": 280,
+      "toggle": true,
+      "expanded": "true",
+      "bodyCls": false,
+      "overflow": false
+    },
+    "collapsed": {
+      "sidebar": 84,
+      "compact": true,
+      "main": 64,
+      "toggle": true,
+      "expanded": "false",
+      "bodyCls": true,
+      "overflow": false
+    },
+    "persisted": {
+      "sidebar": 84,
+      "compact": true,
+      "main": 64,
+      "toggle": true,
+      "expanded": "false",
+      "bodyCls": true,
+      "overflow": false
+    },
+    "restored": {
+      "sidebar": 300,
+      "compact": false,
+      "main": 280,
+      "toggle": true,
+      "expanded": "true",
+      "bodyCls": false,
+      "overflow": false
+    },
+    "errors": [],
+    "ok": true
+  },
+  "blog-vip-formula1-v-barce-eng.html": {
+    "start": {
+      "sidebar": 300,
+      "compact": false,
+      "main": 280,
+      "toggle": true,
+      "expanded": "true",
+      "bodyCls": false,
+      "overflow": false
+    },
+    "collapsed": {
+      "sidebar": 84,
+      "compact": true,
+      "main": 64,
+      "toggle": true,
+      "expanded": "false",
+      "bodyCls": true,
+      "overflow": false
+    },
+    "persisted": {
+      "sidebar": 84,
+      "compact": true,
+      "main": 64,
+      "toggle": true,
+      "expanded": "false",
+      "bodyCls": true,
+      "overflow": false
+    },
+    "restored": {
+      "sidebar": 300,
+      "compact": false,
+      "main": 280,
+      "toggle": true,
+      "expanded": "true",
+      "bodyCls": false,
+      "overflow": false
+    },
+    "errors": [],
+    "ok": true
+  },
+  "blog-vip-jet-dubai-eng.html": {
+    "start": {
+      "sidebar": 300,
+      "compact": false,
+      "main": 280,
+      "toggle": true,
+      "expanded": "true",
+      "bodyCls": false,
+      "overflow": false
+    },
+    "collapsed": {
+      "sidebar": 84,
+      "compact": true,
+      "main": 64,
+      "toggle": true,
+      "expanded": "false",
+      "bodyCls": true,
+      "overflow": false
+    },
+    "persisted": {
+      "sidebar": 84,
+      "compact": true,
+      "main": 64,
+      "toggle": true,
+      "expanded": "false",
+      "bodyCls": true,
+      "overflow": false
+    },
+    "restored": {
+      "sidebar": 300,
+      "compact": false,
+      "main": 280,
+      "toggle": true,
+      "expanded": "true",
+      "bodyCls": false,
+      "overflow": false
+    },
+    "errors": [],
+    "ok": true
+  },
+  "blog-vip-lucky-drive-ferrari-sf90-vip-weekend.html": {
+    "start": {
+      "sidebar": 300,
+      "compact": false,
+      "main": 280,
+      "toggle": true,
+      "expanded": "true",
+      "bodyCls": false,
+      "overflow": false
+    },
+    "collapsed": {
+      "sidebar": 84,
+      "compact": true,
+      "main": 64,
+      "toggle": true,
+      "expanded": "false",
+      "bodyCls": true,
+      "overflow": false
+    },
+    "persisted": {
+      "sidebar": 84,
+      "compact": true,
+      "main": 64,
+      "toggle": true,
+      "expanded": "false",
+      "bodyCls": true,
+      "overflow": false
+    },
+    "restored": {
+      "sidebar": 300,
+      "compact": false,
+      "main": 280,
+      "toggle": true,
+      "expanded": "true",
+      "bodyCls": false,
+      "overflow": false
+    },
+    "errors": [],
+    "ok": true
+  },
+  "blog-vip-petr-yan-vip-eng.html": {
+    "start": {
+      "sidebar": 300,
+      "compact": false,
+      "main": 280,
+      "toggle": true,
+      "expanded": "true",
+      "bodyCls": false,
+      "overflow": false
+    },
+    "collapsed": {
+      "sidebar": 84,
+      "compact": true,
+      "main": 64,
+      "toggle": true,
+      "expanded": "false",
+      "bodyCls": true,
+      "overflow": false
+    },
+    "persisted": {
+      "sidebar": 84,
+      "compact": true,
+      "main": 64,
+      "toggle": true,
+      "expanded": "false",
+      "bodyCls": true,
+      "overflow": false
+    },
+    "restored": {
+      "sidebar": 300,
+      "compact": false,
+      "main": 280,
+      "toggle": true,
+      "expanded": "true",
+      "bodyCls": false,
+      "overflow": false
+    },
+    "errors": [],
+    "ok": true
+  },
+  "blog-vip-topuria-vip-eng.html": {
+    "start": {
+      "sidebar": 300,
+      "compact": false,
+      "main": 280,
+      "toggle": true,
+      "expanded": "true",
+      "bodyCls": false,
+      "overflow": false
+    },
+    "collapsed": {
+      "sidebar": 84,
+      "compact": true,
+      "main": 64,
+      "toggle": true,
+      "expanded": "false",
+      "bodyCls": true,
+      "overflow": false
+    },
+    "persisted": {
+      "sidebar": 84,
+      "compact": true,
+      "main": 64,
+      "toggle": true,
+      "expanded": "false",
+      "bodyCls": true,
+      "overflow": false
+    },
+    "restored": {
+      "sidebar": 300,
+      "compact": false,
+      "main": 280,
+      "toggle": true,
+      "expanded": "true",
+      "bodyCls": false,
+      "overflow": false
+    },
+    "errors": [],
+    "ok": true
+  },
+  "blog-vip-tyga-eng.html": {
+    "start": {
+      "sidebar": 300,
+      "compact": false,
+      "main": 280,
+      "toggle": true,
+      "expanded": "true",
+      "bodyCls": false,
+      "overflow": false
+    },
+    "collapsed": {
+      "sidebar": 84,
+      "compact": true,
+      "main": 64,
+      "toggle": true,
+      "expanded": "false",
+      "bodyCls": true,
+      "overflow": false
+    },
+    "persisted": {
+      "sidebar": 84,
+      "compact": true,
+      "main": 64,
+      "toggle": true,
+      "expanded": "false",
+      "bodyCls": true,
+      "overflow": false
+    },
+    "restored": {
+      "sidebar": 300,
+      "compact": false,
+      "main": 280,
+      "toggle": true,
+      "expanded": "true",
+      "bodyCls": false,
+      "overflow": false
+    },
+    "errors": [],
+    "ok": true
+  },
+  "blog-vip.html": {
+    "start": {
+      "sidebar": 300,
+      "compact": false,
+      "main": 280,
+      "toggle": true,
+      "expanded": "true",
+      "bodyCls": false,
+      "overflow": false
+    },
+    "collapsed": {
+      "sidebar": 84,
+      "compact": true,
+      "main": 64,
+      "toggle": true,
+      "expanded": "false",
+      "bodyCls": true,
+      "overflow": false
+    },
+    "persisted": {
+      "sidebar": 84,
+      "compact": true,
+      "main": 64,
+      "toggle": true,
+      "expanded": "false",
+      "bodyCls": true,
+      "overflow": false
+    },
+    "restored": {
+      "sidebar": 300,
+      "compact": false,
+      "main": 280,
       "toggle": true,
       "expanded": "true",
       "bodyCls": false,
@@ -239,7 +4719,207 @@
     "errors": [],
     "ok": true
   },
+  "casino-category-100000-jackpot.html": {
+    "start": {
+      "sidebar": 300,
+      "compact": false,
+      "main": 280,
+      "toggle": true,
+      "expanded": "true",
+      "bodyCls": false,
+      "overflow": false
+    },
+    "collapsed": {
+      "sidebar": 84,
+      "compact": true,
+      "main": 64,
+      "toggle": true,
+      "expanded": "false",
+      "bodyCls": true,
+      "overflow": false
+    },
+    "persisted": {
+      "sidebar": 84,
+      "compact": true,
+      "main": 64,
+      "toggle": true,
+      "expanded": "false",
+      "bodyCls": true,
+      "overflow": false
+    },
+    "restored": {
+      "sidebar": 300,
+      "compact": false,
+      "main": 280,
+      "toggle": true,
+      "expanded": "true",
+      "bodyCls": false,
+      "overflow": false
+    },
+    "errors": [],
+    "ok": true
+  },
+  "casino-category-crystal-rush.html": {
+    "start": {
+      "sidebar": 300,
+      "compact": false,
+      "main": 280,
+      "toggle": true,
+      "expanded": "true",
+      "bodyCls": false,
+      "overflow": false
+    },
+    "collapsed": {
+      "sidebar": 84,
+      "compact": true,
+      "main": 64,
+      "toggle": true,
+      "expanded": "false",
+      "bodyCls": true,
+      "overflow": false
+    },
+    "persisted": {
+      "sidebar": 84,
+      "compact": true,
+      "main": 64,
+      "toggle": true,
+      "expanded": "false",
+      "bodyCls": true,
+      "overflow": false
+    },
+    "restored": {
+      "sidebar": 300,
+      "compact": false,
+      "main": 280,
+      "toggle": true,
+      "expanded": "true",
+      "bodyCls": false,
+      "overflow": false
+    },
+    "errors": [],
+    "ok": true
+  },
+  "casino-category-virtual-sports.html": {
+    "start": {
+      "sidebar": 300,
+      "compact": false,
+      "main": 280,
+      "toggle": true,
+      "expanded": "true",
+      "bodyCls": false,
+      "overflow": false
+    },
+    "collapsed": {
+      "sidebar": 84,
+      "compact": true,
+      "main": 64,
+      "toggle": true,
+      "expanded": "false",
+      "bodyCls": true,
+      "overflow": false
+    },
+    "persisted": {
+      "sidebar": 84,
+      "compact": true,
+      "main": 64,
+      "toggle": true,
+      "expanded": "false",
+      "bodyCls": true,
+      "overflow": false
+    },
+    "restored": {
+      "sidebar": 300,
+      "compact": false,
+      "main": 280,
+      "toggle": true,
+      "expanded": "true",
+      "bodyCls": false,
+      "overflow": false
+    },
+    "errors": [],
+    "ok": true
+  },
+  "casino-crash-games.html": {
+    "start": {
+      "sidebar": 300,
+      "compact": false,
+      "main": 280,
+      "toggle": true,
+      "expanded": "true",
+      "bodyCls": false,
+      "overflow": false
+    },
+    "collapsed": {
+      "sidebar": 84,
+      "compact": true,
+      "main": 64,
+      "toggle": true,
+      "expanded": "false",
+      "bodyCls": true,
+      "overflow": false
+    },
+    "persisted": {
+      "sidebar": 84,
+      "compact": true,
+      "main": 64,
+      "toggle": true,
+      "expanded": "false",
+      "bodyCls": true,
+      "overflow": false
+    },
+    "restored": {
+      "sidebar": 300,
+      "compact": false,
+      "main": 280,
+      "toggle": true,
+      "expanded": "true",
+      "bodyCls": false,
+      "overflow": false
+    },
+    "errors": [],
+    "ok": true
+  },
   "casino-fishing.html": {
+    "start": {
+      "sidebar": 300,
+      "compact": false,
+      "main": 280,
+      "toggle": true,
+      "expanded": "true",
+      "bodyCls": false,
+      "overflow": false
+    },
+    "collapsed": {
+      "sidebar": 84,
+      "compact": true,
+      "main": 64,
+      "toggle": true,
+      "expanded": "false",
+      "bodyCls": true,
+      "overflow": false
+    },
+    "persisted": {
+      "sidebar": 84,
+      "compact": true,
+      "main": 64,
+      "toggle": true,
+      "expanded": "false",
+      "bodyCls": true,
+      "overflow": false
+    },
+    "restored": {
+      "sidebar": 300,
+      "compact": false,
+      "main": 280,
+      "toggle": true,
+      "expanded": "true",
+      "bodyCls": false,
+      "overflow": false
+    },
+    "errors": [],
+    "ok": true
+  },
+  "casino-game-shows.html": {
     "start": {
       "sidebar": 300,
       "compact": false,
@@ -1079,6 +5759,46 @@
     "errors": [],
     "ok": true
   },
+  "casino-popular.html": {
+    "start": {
+      "sidebar": 300,
+      "compact": false,
+      "main": 280,
+      "toggle": true,
+      "expanded": "true",
+      "bodyCls": false,
+      "overflow": false
+    },
+    "collapsed": {
+      "sidebar": 84,
+      "compact": true,
+      "main": 64,
+      "toggle": true,
+      "expanded": "false",
+      "bodyCls": true,
+      "overflow": false
+    },
+    "persisted": {
+      "sidebar": 84,
+      "compact": true,
+      "main": 64,
+      "toggle": true,
+      "expanded": "false",
+      "bodyCls": true,
+      "overflow": false
+    },
+    "restored": {
+      "sidebar": 300,
+      "compact": false,
+      "main": 280,
+      "toggle": true,
+      "expanded": "true",
+      "bodyCls": false,
+      "overflow": false
+    },
+    "errors": [],
+    "ok": true
+  },
   "casino-providers.html": {
     "start": {
       "sidebar": 300,
@@ -1359,6 +6079,46 @@
     "errors": [],
     "ok": true
   },
+  "casino-quick-popular-turbo-games.html": {
+    "start": {
+      "sidebar": 300,
+      "compact": false,
+      "main": 280,
+      "toggle": true,
+      "expanded": "true",
+      "bodyCls": false,
+      "overflow": false
+    },
+    "collapsed": {
+      "sidebar": 84,
+      "compact": true,
+      "main": 64,
+      "toggle": true,
+      "expanded": "false",
+      "bodyCls": true,
+      "overflow": false
+    },
+    "persisted": {
+      "sidebar": 84,
+      "compact": true,
+      "main": 64,
+      "toggle": true,
+      "expanded": "false",
+      "bodyCls": true,
+      "overflow": false
+    },
+    "restored": {
+      "sidebar": 300,
+      "compact": false,
+      "main": 280,
+      "toggle": true,
+      "expanded": "true",
+      "bodyCls": false,
+      "overflow": false
+    },
+    "errors": [],
+    "ok": true
+  },
   "casino-quick-sport.html": {
     "start": {
       "sidebar": 300,
@@ -1599,6 +6359,86 @@
     "errors": [],
     "ok": true
   },
+  "casino-tournaments-categories.html": {
+    "start": {
+      "sidebar": 300,
+      "compact": false,
+      "main": 280,
+      "toggle": true,
+      "expanded": "true",
+      "bodyCls": false,
+      "overflow": false
+    },
+    "collapsed": {
+      "sidebar": 84,
+      "compact": true,
+      "main": 64,
+      "toggle": true,
+      "expanded": "false",
+      "bodyCls": true,
+      "overflow": false
+    },
+    "persisted": {
+      "sidebar": 84,
+      "compact": true,
+      "main": 64,
+      "toggle": true,
+      "expanded": "false",
+      "bodyCls": true,
+      "overflow": false
+    },
+    "restored": {
+      "sidebar": 300,
+      "compact": false,
+      "main": 280,
+      "toggle": true,
+      "expanded": "true",
+      "bodyCls": false,
+      "overflow": false
+    },
+    "errors": [],
+    "ok": true
+  },
+  "casino-trading.html": {
+    "start": {
+      "sidebar": 300,
+      "compact": false,
+      "main": 280,
+      "toggle": true,
+      "expanded": "true",
+      "bodyCls": false,
+      "overflow": false
+    },
+    "collapsed": {
+      "sidebar": 84,
+      "compact": true,
+      "main": 64,
+      "toggle": true,
+      "expanded": "false",
+      "bodyCls": true,
+      "overflow": false
+    },
+    "persisted": {
+      "sidebar": 84,
+      "compact": true,
+      "main": 64,
+      "toggle": true,
+      "expanded": "false",
+      "bodyCls": true,
+      "overflow": false
+    },
+    "restored": {
+      "sidebar": 300,
+      "compact": false,
+      "main": 280,
+      "toggle": true,
+      "expanded": "true",
+      "bodyCls": false,
+      "overflow": false
+    },
+    "errors": [],
+    "ok": true
+  },
   "casino.html": {
     "start": {
       "sidebar": 300,
@@ -1759,6 +6599,46 @@
     "errors": [],
     "ok": true
   },
+  "poker-app.html": {
+    "start": {
+      "sidebar": 300,
+      "compact": false,
+      "main": 280,
+      "toggle": true,
+      "expanded": "true",
+      "bodyCls": false,
+      "overflow": false
+    },
+    "collapsed": {
+      "sidebar": 84,
+      "compact": true,
+      "main": 64,
+      "toggle": true,
+      "expanded": "false",
+      "bodyCls": true,
+      "overflow": false
+    },
+    "persisted": {
+      "sidebar": 84,
+      "compact": true,
+      "main": 64,
+      "toggle": true,
+      "expanded": "false",
+      "bodyCls": true,
+      "overflow": false
+    },
+    "restored": {
+      "sidebar": 300,
+      "compact": false,
+      "main": 280,
+      "toggle": true,
+      "expanded": "true",
+      "bodyCls": false,
+      "overflow": false
+    },
+    "errors": [],
+    "ok": true
+  },
   "promotion-halloween-2026.html": {
     "start": {
       "sidebar": 300,
@@ -1839,6 +6719,46 @@
     "errors": [],
     "ok": true
   },
+  "rules.html": {
+    "start": {
+      "sidebar": 300,
+      "compact": false,
+      "main": 280,
+      "toggle": true,
+      "expanded": "true",
+      "bodyCls": false,
+      "overflow": false
+    },
+    "collapsed": {
+      "sidebar": 84,
+      "compact": true,
+      "main": 64,
+      "toggle": true,
+      "expanded": "false",
+      "bodyCls": true,
+      "overflow": false
+    },
+    "persisted": {
+      "sidebar": 84,
+      "compact": true,
+      "main": 64,
+      "toggle": true,
+      "expanded": "false",
+      "bodyCls": true,
+      "overflow": false
+    },
+    "restored": {
+      "sidebar": 300,
+      "compact": false,
+      "main": 280,
+      "toggle": true,
+      "expanded": "true",
+      "bodyCls": false,
+      "overflow": false
+    },
+    "errors": [],
+    "ok": true
+  },
   "sports-bets-history.html": {
     "start": {
       "sidebar": 300,
@@ -1880,6 +6800,46 @@
     "ok": true
   },
   "sports-esports-arena-of-valor.html": {
+    "start": {
+      "sidebar": 300,
+      "compact": false,
+      "main": 280,
+      "toggle": true,
+      "expanded": "true",
+      "bodyCls": false,
+      "overflow": false
+    },
+    "collapsed": {
+      "sidebar": 84,
+      "compact": true,
+      "main": 64,
+      "toggle": true,
+      "expanded": "false",
+      "bodyCls": true,
+      "overflow": false
+    },
+    "persisted": {
+      "sidebar": 84,
+      "compact": true,
+      "main": 64,
+      "toggle": true,
+      "expanded": "false",
+      "bodyCls": true,
+      "overflow": false
+    },
+    "restored": {
+      "sidebar": 300,
+      "compact": false,
+      "main": 280,
+      "toggle": true,
+      "expanded": "true",
+      "bodyCls": false,
+      "overflow": false
+    },
+    "errors": [],
+    "ok": true
+  },
+  "sports-esports-call-of-duty.html": {
     "start": {
       "sidebar": 300,
       "compact": false,
@@ -5640,6 +10600,46 @@
     "ok": true
   },
   "tournaments.html": {
+    "start": {
+      "sidebar": 300,
+      "compact": false,
+      "main": 280,
+      "toggle": true,
+      "expanded": "true",
+      "bodyCls": false,
+      "overflow": false
+    },
+    "collapsed": {
+      "sidebar": 84,
+      "compact": true,
+      "main": 64,
+      "toggle": true,
+      "expanded": "false",
+      "bodyCls": true,
+      "overflow": false
+    },
+    "persisted": {
+      "sidebar": 84,
+      "compact": true,
+      "main": 64,
+      "toggle": true,
+      "expanded": "false",
+      "bodyCls": true,
+      "overflow": false
+    },
+    "restored": {
+      "sidebar": 300,
+      "compact": false,
+      "main": 280,
+      "toggle": true,
+      "expanded": "true",
+      "bodyCls": false,
+      "overflow": false
+    },
+    "errors": [],
+    "ok": true
+  },
+  "trading.html": {
     "start": {
       "sidebar": 300,
       "compact": false,

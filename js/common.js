@@ -6,9 +6,24 @@
   const states={...window.DIALOG_STATES,...guestStates,...(signedPreview?authStates:{})};
   const pageName = document.body.dataset.page;
   const assetPrefix = document.body.dataset.assetPrefix || '';
-  const markup = value => {const expanded=window.SHARED_UI?window.SHARED_UI.expand(value):value;return assetPrefix?expanded.replaceAll('assets/',assetPrefix+'assets/'):expanded;};
+  // Inline-style custom properties hold url("../assets/…") for css/audit.css. Chrome resolves those against the stylesheet,
+  // Firefox/Safari against the page (one folder too high on file://), so they are made absolute before use.
+  const assetBase=new URL(assetPrefix+'assets/',document.baseURI).href;
+  const absoluteAssets = html => html.replace(/url\((&quot;|"|')?\.\.\/assets\//g,(m,q)=>'url('+(q||'')+assetBase);
+  const markup = value => {const expanded=window.SHARED_UI?window.SHARED_UI.expand(value):value;return absoluteAssets(assetPrefix?expanded.replaceAll('assets/',assetPrefix+'assets/'):expanded);};
+  function absoluteAssetVars(root=document){root.querySelectorAll('[style*="../assets/"]').forEach(n=>n.setAttribute('style',absoluteAssets(n.getAttribute('style'))));}
   const go = filename => { location.href = filename+(signedPreview?'?preview=auth':''); };
   const pages = window.PROJECT_ROUTES?.pages||{};
+  // Betwave events, predictions and profiles have per-record IDs; one of each was captured, the rest open that sample.
+  const routeFile = path => {
+    path=path.replace(/(.)\/$/,'$1').replace(/^\/betwave(?=\/|$)/,'/en/betwave');
+    if(pages[path])return pages[path];
+    // The sports app picks the sport by its numeric ID; older links use other slugs (soccer-18 shows football-18).
+    const sport=path.match(/^(\/betting\/[^/]+\/)[^/]+-(\d+)$/);
+    if(sport){const key=Object.keys(pages).find(k=>k.startsWith(sport[1])&&k.endsWith('-'+sport[2])&&!k.slice(sport[1].length).includes('/'));if(key)return pages[key];}
+    const bw=path.match(/^\/en\/betwave\/(?:(event|prediction)\/[^/]+|bw-\d+(?:\/[^/]*)?)$/);
+    return bw?pages[{event:'/en/betwave/event/real-betis-vs-barcelona-fc-40343761',prediction:'/en/betwave/prediction/express-88928408-48a3'}[bw[1]]||'/en/betwave/bw-2099184/finance']:undefined;
+  };
   let currentPage = pageName, currentKey = document.body.dataset.state, modal = null, returnFocus = null;
   let resizeTimer, autoTimer, lastWinsTimer, noticeTimer, noticeVersion=0, menuVersion=0;
   const motion=window.PREVIEW_MOTION;
@@ -25,7 +40,7 @@
   try{sidebarCollapsed=localStorage.getItem('1win-preview-sidebar')==='compact';}catch{}
   function sidebarLinks(root,labels={}) {
     $$('a[data-reference-href]',root).forEach(a=>{
-      const route=new URL(a.dataset.referenceHref,'https://one-vv3591.com/').pathname,file=pages[route];
+      const route=new URL(a.dataset.referenceHref,'https://one-vv3591.com/').pathname,file=routeFile(route);
       if(file)a.href=file+(signedPreview?'?preview=auth':'');
       const label=labels[a.dataset.testid];if(label){a.setAttribute('aria-label',label);a.title=label;}
     });
@@ -101,12 +116,13 @@
     document.body.append(popover);trigger.setAttribute('aria-expanded','true');positionSidebarSocial();close?.focus({preventScroll:true});
   }
   function hydrate() {
+    absoluteAssetVars();
     window.SHARED_UI?.mount(document.body);
     applySidebar();
     // Both hrefs and media are local. Third-party destinations have no navigation handler.
     $$('a[data-reference-href]').forEach(a => {
       const u = new URL(a.dataset.referenceHref,'https://one-vv3591.com/');
-      const file=u.searchParams.get('x')?.includes('sign-up')?'register.html':pages[u.pathname];
+      const file=u.searchParams.get('x')?.includes('sign-up')?'register.html':routeFile(u.pathname);
       if(file)a.setAttribute('href',file+(signedPreview?'?preview=auth':''));
     });
     $$('input[type="password"]').forEach(i=>{ i.setAttribute('autocomplete','new-password'); });
@@ -429,7 +445,11 @@
     if(u.hostname!=='one-vv3591.com')return;
     if(u.searchParams.get('x')?.includes('sign-up')){openModal('registration');return;}
     if(u.pathname.startsWith('/casino/play/')){if(JSON.parse(sessionStorage.getItem(GAME_KEY)||'{}').href!==u.pathname)rememberGame(null,u.pathname);go('casino-play.html');return;}
-    const file=pages[u.pathname];
+    // /forum leaves the app for forum.one-vv3591.com (user posts), which is not part of this preview.
+    if(u.pathname==='/forum'){notice('The 1win forum is a separate website and is not part of this preview.');return;}
+    // League listings (/betting/<section>/<sport>/<league>) change with the live schedule; only sport filters were captured.
+    if(/^\/betting\/[^/]+\/[^/]+\/[^/]+$/.test(u.pathname)&&!routeFile(u.pathname)){notice('League pages follow the live schedule and are not part of this preview.');return;}
+    const file=routeFile(u.pathname);
     if(file){go(file);return;}
     notice('This page has not been captured yet.');
   }

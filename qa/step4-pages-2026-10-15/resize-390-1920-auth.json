@@ -1,0 +1,90 @@
+{
+ "poker-app.html@390x844": {
+  "value": {
+   "state": "poker-app-390x844",
+   "w": 390,
+   "hscroll": false,
+   "brokenImages": [],
+   "links": 41,
+   "unresolved": [
+    "/forum",
+    "/casino/play/v_ws168:ws168",
+    "/casino/play/poker"
+   ],
+   "unresolvedCount": 7,
+   "signed": true
+  },
+  "errors": [
+   "Failed to load resource: the server responded with a status of 404 (Not Found) http://127.0.0.1:4174/favicon.ico"
+  ],
+  "after": {
+   "size": "1920x1080",
+   "value": {
+    "state": "poker-app-1920x1080",
+    "w": 1920,
+    "hscroll": false,
+    "brokenImages": [],
+    "links": 37,
+    "unresolved": [
+     "/forum",
+     "/casino/play/v_ws168:ws168",
+     "/casino/play/poker"
+    ],
+    "unresolvedCount": 7,
+    "signed": true
+   }
+  }
+ },
+ "casino-tournaments-categories.html@390x844": {
+  "value": {
+   "state": "casino-tournaments-categories-390x844",
+   "w": 390,
+   "hscroll": false,
+   "brokenImages": [],
+   "links": 92,
+   "unresolved": [
+    "/forum",
+    "/casino/play/v_ws168:ws168",
+    "/casino/play/v_spinomenal:babayagatales-mysticfortune",
+    "/casino/play/v_spinomenal:babayagatales",
+    "/casino/play/v_spinomenal:bookoftribes",
+    "/casino/play/v_spinomenal:demigodsii",
+    "/casino/play/v_bgmng:burn1win",
+    "/casino/play/v_bgmng:1winbillionbonanza",
+    "/casino/play/v_bgmng:1winmergeup",
+    "/casino/play/v_bgmng:1winmillion",
+    "/casino/play/v_pragmatic:gatesofolympus1000",
+    "/casino/play/v_pragmatic:gatesofolympus"
+   ],
+   "unresolvedCount": 41,
+   "signed": true
+  },
+  "errors": [],
+  "after": {
+   "size": "1920x1080",
+   "value": {
+    "state": "casino-tournaments-categories-1920x1080",
+    "w": 1920,
+    "hscroll": false,
+    "brokenImages": [],
+    "links": 147,
+    "unresolved": [
+     "/forum",
+     "/casino/play/v_ws168:ws168",
+     "/casino/play/v_100hp:astronaut",
+     "/casino/play/v_spinomenal:babayagatales-mysticfortune",
+     "/casino/play/v_spinomenal:babayagatales",
+     "/casino/play/v_spinomenal:bookoftribes",
+     "/casino/play/v_spinomenal:demigodsii",
+     "/casino/play/v_spinomenal:4horsemeniii",
+     "/casino/play/v_spinomenal:goldenpiggybank",
+     "/casino/play/v_spinomenal:poseidonsrising",
+     "/casino/play/v_spinomenal:megawildfruits",
+     "/casino/play/v_spinomenal:bookofrebirth"
+    ],
+    "unresolvedCount": 104,
+    "signed": true
+   }
+  }
+ }
+}
