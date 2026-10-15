@@ -1,0 +1,624 @@
+{
+ "casino-new.html@1920x1080": {
+  "value": {
+   "start": 27,
+   "loads": [
+    {
+     "from": 27,
+     "to": 47,
+     "markerBefore": 21
+    }
+   ],
+   "afterJump": 47,
+   "total": 47,
+   "duplicates": 0,
+   "hscroll": false
+  },
+  "errors": [
+   "Failed to load resource: the server responded with a status of 404 (Not Found) http://127.0.0.1:4174/favicon.ico"
+  ]
+ },
+ "casino-new.html@1440x900": {
+  "value": {
+   "start": 24,
+   "loads": [
+    {
+     "from": 24,
+     "to": 48,
+     "markerBefore": 15
+    },
+    {
+     "from": 48,
+     "to": 66,
+     "markerBefore": 13
+    }
+   ],
+   "afterJump": 66,
+   "total": 66,
+   "duplicates": 0,
+   "hscroll": false
+  },
+  "errors": []
+ },
+ "casino-new.html@768x1024": {
+  "value": {
+   "start": 21,
+   "loads": [
+    {
+     "from": 21,
+     "to": 42,
+     "markerBefore": 6
+    },
+    {
+     "from": 42,
+     "to": 57,
+     "markerBefore": 22
+    }
+   ],
+   "afterJump": 57,
+   "total": 57,
+   "duplicates": 0,
+   "hscroll": false
+  },
+  "errors": []
+ },
+ "casino-new.html@430x932": {
+  "value": {
+   "start": 9,
+   "loads": [
+    {
+     "from": 9,
+     "to": 18,
+     "markerBefore": 23
+    },
+    {
+     "from": 18,
+     "to": 27,
+     "markerBefore": 12
+    }
+   ],
+   "afterJump": 45,
+   "total": 69,
+   "duplicates": 0,
+   "hscroll": false
+  },
+  "errors": []
+ },
+ "casino-new.html@390x844": {
+  "value": {
+   "start": 9,
+   "loads": [
+    {
+     "from": 9,
+     "to": 18,
+     "markerBefore": 13
+    },
+    {
+     "from": 18,
+     "to": 27,
+     "markerBefore": 17
+    }
+   ],
+   "afterJump": 45,
+   "total": 69,
+   "duplicates": 0,
+   "hscroll": false
+  },
+  "errors": []
+ },
+ "casino-quick-crash-games.html@1920x1080": {
+  "value": {
+   "start": 27,
+   "loads": [
+    {
+     "from": 27,
+     "to": 54,
+     "markerBefore": 20
+    },
+    {
+     "from": 54,
+     "to": 81,
+     "markerBefore": 8
+    }
+   ],
+   "afterJump": 108,
+   "total": 189,
+   "duplicates": 0,
+   "hscroll": false
+  },
+  "errors": []
+ },
+ "casino-quick-crash-games.html@1440x900": {
+  "value": {
+   "start": 24,
+   "loads": [
+    {
+     "from": 24,
+     "to": 48,
+     "markerBefore": 17
+    },
+    {
+     "from": 48,
+     "to": 72,
+     "markerBefore": 19
+    }
+   ],
+   "afterJump": 120,
+   "total": 120,
+   "duplicates": 0,
+   "hscroll": false
+  },
+  "errors": []
+ },
+ "casino-quick-crash-games.html@768x1024": {
+  "value": {
+   "start": 21,
+   "loads": [
+    {
+     "from": 21,
+     "to": 42,
+     "markerBefore": 6
+    },
+    {
+     "from": 42,
+     "to": 63,
+     "markerBefore": 8
+    }
+   ],
+   "afterJump": 105,
+   "total": 126,
+   "duplicates": 0,
+   "hscroll": false
+  },
+  "errors": []
+ },
+ "casino-quick-crash-games.html@430x932": {
+  "value": {
+   "start": 9,
+   "loads": [
+    {
+     "from": 9,
+     "to": 18,
+     "markerBefore": 23
+    },
+    {
+     "from": 18,
+     "to": 27,
+     "markerBefore": 10
+    }
+   ],
+   "afterJump": 45,
+   "total": 81,
+   "duplicates": 0,
+   "hscroll": false
+  },
+  "errors": []
+ },
+ "casino-quick-crash-games.html@390x844": {
+  "value": {
+   "start": 9,
+   "loads": [
+    {
+     "from": 9,
+     "to": 18,
+     "markerBefore": 13
+    },
+    {
+     "from": 18,
+     "to": 27,
+     "markerBefore": 17
+    }
+   ],
+   "afterJump": 45,
+   "total": 81,
+   "duplicates": 0,
+   "hscroll": false
+  },
+  "errors": []
+ },
+ "casino-quick-lotteries.html@1920x1080": {
+  "value": {
+   "start": 27,
+   "loads": [
+    {
+     "from": 27,
+     "to": 54,
+     "markerBefore": 20
+    }
+   ],
+   "afterJump": 54,
+   "total": 54,
+   "duplicates": 0,
+   "hscroll": false
+  },
+  "errors": []
+ },
+ "casino-quick-lotteries.html@1440x900": {
+  "value": {
+   "start": 24,
+   "loads": [
+    {
+     "from": 24,
+     "to": 48,
+     "markerBefore": 18
+    }
+   ],
+   "afterJump": 48,
+   "total": 48,
+   "duplicates": 0,
+   "hscroll": false
+  },
+  "errors": []
+ },
+ "casino-quick-lotteries.html@768x1024": {
+  "value": {
+   "start": 21,
+   "loads": [
+    {
+     "from": 21,
+     "to": 42,
+     "markerBefore": 5
+    }
+   ],
+   "afterJump": 42,
+   "total": 42,
+   "duplicates": 0,
+   "hscroll": false
+  },
+  "errors": []
+ },
+ "casino-quick-lotteries.html@430x932": {
+  "value": {
+   "start": 9,
+   "loads": [
+    {
+     "from": 9,
+     "to": 18,
+     "markerBefore": 23
+    },
+    {
+     "from": 18,
+     "to": 27,
+     "markerBefore": 11
+    }
+   ],
+   "afterJump": 45,
+   "total": 54,
+   "duplicates": 0,
+   "hscroll": false
+  },
+  "errors": []
+ },
+ "casino-quick-lotteries.html@390x844": {
+  "value": {
+   "start": 9,
+   "loads": [
+    {
+     "from": 9,
+     "to": 18,
+     "markerBefore": 14
+    },
+    {
+     "from": 18,
+     "to": 27,
+     "markerBefore": 18
+    }
+   ],
+   "afterJump": 45,
+   "total": 54,
+   "duplicates": 0,
+   "hscroll": false
+  },
+  "errors": []
+ },
+ "casino-quick-mines.html@1920x1080": {
+  "value": {
+   "start": 27,
+   "loads": [
+    {
+     "from": 27,
+     "to": 54,
+     "markerBefore": 20
+    }
+   ],
+   "afterJump": 54,
+   "total": 54,
+   "duplicates": 0,
+   "hscroll": false
+  },
+  "errors": []
+ },
+ "casino-quick-mines.html@1440x900": {
+  "value": {
+   "start": 24,
+   "loads": [
+    {
+     "from": 24,
+     "to": 48,
+     "markerBefore": 16
+    }
+   ],
+   "afterJump": 48,
+   "total": 48,
+   "duplicates": 0,
+   "hscroll": false
+  },
+  "errors": []
+ },
+ "casino-quick-mines.html@768x1024": {
+  "value": {
+   "start": 21,
+   "loads": [
+    {
+     "from": 21,
+     "to": 42,
+     "markerBefore": 7
+    },
+    {
+     "from": 42,
+     "to": 63,
+     "markerBefore": 21
+    }
+   ],
+   "afterJump": 63,
+   "total": 63,
+   "duplicates": 0,
+   "hscroll": false
+  },
+  "errors": []
+ },
+ "casino-quick-mines.html@430x932": {
+  "value": {
+   "start": 9,
+   "loads": [
+    {
+     "from": 9,
+     "to": 18,
+     "markerBefore": 23
+    },
+    {
+     "from": 18,
+     "to": 27,
+     "markerBefore": 9
+    }
+   ],
+   "afterJump": 45,
+   "total": 63,
+   "duplicates": 0,
+   "hscroll": false
+  },
+  "errors": []
+ },
+ "casino-quick-mines.html@390x844": {
+  "value": {
+   "start": 9,
+   "loads": [
+    {
+     "from": 9,
+     "to": 18,
+     "markerBefore": 13
+    },
+    {
+     "from": 18,
+     "to": 27,
+     "markerBefore": 17
+    }
+   ],
+   "afterJump": 45,
+   "total": 63,
+   "duplicates": 0,
+   "hscroll": false
+  },
+  "errors": []
+ },
+ "casino-quick-plinko.html@1920x1080": {
+  "value": {
+   "start": 27,
+   "loads": [
+    {
+     "from": 27,
+     "to": 54,
+     "markerBefore": 21
+    }
+   ],
+   "afterJump": 54,
+   "total": 54,
+   "duplicates": 0,
+   "hscroll": false
+  },
+  "errors": []
+ },
+ "casino-quick-plinko.html@1440x900": {
+  "value": {
+   "start": 24,
+   "loads": [
+    {
+     "from": 24,
+     "to": 48,
+     "markerBefore": 17
+    }
+   ],
+   "afterJump": 48,
+   "total": 48,
+   "duplicates": 0,
+   "hscroll": false
+  },
+  "errors": []
+ },
+ "casino-quick-plinko.html@768x1024": {
+  "value": {
+   "start": 21,
+   "loads": [
+    {
+     "from": 21,
+     "to": 42,
+     "markerBefore": 7
+    },
+    {
+     "from": 42,
+     "to": 63,
+     "markerBefore": -1
+    }
+   ],
+   "afterJump": 63,
+   "total": 63,
+   "duplicates": 0,
+   "hscroll": false
+  },
+  "errors": []
+ },
+ "casino-quick-plinko.html@430x932": {
+  "value": {
+   "start": 9,
+   "loads": [
+    {
+     "from": 9,
+     "to": 18,
+     "markerBefore": 22
+    },
+    {
+     "from": 18,
+     "to": 27,
+     "markerBefore": 13
+    }
+   ],
+   "afterJump": 45,
+   "total": 63,
+   "duplicates": 0,
+   "hscroll": false
+  },
+  "errors": []
+ },
+ "casino-quick-plinko.html@390x844": {
+  "value": {
+   "start": 9,
+   "loads": [
+    {
+     "from": 9,
+     "to": 18,
+     "markerBefore": 13
+    },
+    {
+     "from": 18,
+     "to": 27,
+     "markerBefore": 20
+    }
+   ],
+   "afterJump": 45,
+   "total": 63,
+   "duplicates": 0,
+   "hscroll": false
+  },
+  "errors": []
+ },
+ "casino-slots.html@1920x1080": {
+  "value": {
+   "start": 27,
+   "loads": [
+    {
+     "from": 27,
+     "to": 54,
+     "markerBefore": 20
+    },
+    {
+     "from": 54,
+     "to": 81,
+     "markerBefore": 9
+    }
+   ],
+   "afterJump": 106,
+   "total": 106,
+   "duplicates": 0,
+   "hscroll": false
+  },
+  "errors": []
+ },
+ "casino-slots.html@1440x900": {
+  "value": {
+   "start": 24,
+   "loads": [
+    {
+     "from": 24,
+     "to": 48,
+     "markerBefore": 16
+    },
+    {
+     "from": 48,
+     "to": 72,
+     "markerBefore": 17
+    }
+   ],
+   "afterJump": 120,
+   "total": 143,
+   "duplicates": 0,
+   "hscroll": false
+  },
+  "errors": []
+ },
+ "casino-slots.html@768x1024": {
+  "value": {
+   "start": 21,
+   "loads": [
+    {
+     "from": 21,
+     "to": 42,
+     "markerBefore": 6
+    },
+    {
+     "from": 42,
+     "to": 63,
+     "markerBefore": 21
+    }
+   ],
+   "afterJump": 105,
+   "total": 501,
+   "duplicates": 0,
+   "hscroll": false
+  },
+  "errors": []
+ },
+ "casino-slots.html@430x932": {
+  "value": {
+   "start": 9,
+   "loads": [
+    {
+     "from": 9,
+     "to": 18,
+     "markerBefore": 23
+    },
+    {
+     "from": 18,
+     "to": 27,
+     "markerBefore": 9
+    }
+   ],
+   "afterJump": 45,
+   "total": 81,
+   "duplicates": 0,
+   "hscroll": false
+  },
+  "errors": []
+ },
+ "casino-slots.html@390x844": {
+  "value": {
+   "start": 9,
+   "loads": [
+    {
+     "from": 9,
+     "to": 18,
+     "markerBefore": 13
+    },
+    {
+     "from": 18,
+     "to": 27,
+     "markerBefore": 17
+    }
+   ],
+   "afterJump": 45,
+   "total": 81,
+   "duplicates": 0,
+   "hscroll": false
+  },
+  "errors": []
+ }
+}

@@ -1,0 +1,30 @@
+{
+ "1440x900": {
+  "value": {
+   "state": "sports-markets-1440x900",
+   "open": true,
+   "forms": 1,
+   "question": "Will the Strait of Hormuz be open to all shipping by December 31, 2026?",
+   "side": "Yes",
+   "value": "MYR 3.00",
+   "win": "MYR 20.00",
+   "hiddenCards": 1,
+   "hscroll": false
+  },
+  "errors": [],
+  "after": {
+   "size": "390x844",
+   "value": {
+    "state": "sports-markets-390x844",
+    "open": true,
+    "forms": 1,
+    "question": "Will the Strait of Hormuz be open to all shipping by December 31, 2026?",
+    "side": "Yes",
+    "value": "MYR 3.00",
+    "win": "MYR 20.00",
+    "hiddenCards": 1,
+    "hscroll": false
+   }
+  }
+ }
+}

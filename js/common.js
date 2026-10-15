@@ -136,6 +136,8 @@
     initLastWins();
     initCountdowns();
     initScrollViews();
+    initMoreCards();
+    if(window.BETSLIP_TEMPLATES&&$('[class*="_odd_ro0me_"]'))renderBetslip();
   }
   // Category chips and other arrows-scroll-view rows: the back arrow hides at the start, the forward
   // arrow at the end (reference toggles arrows-scroll-view_hidden-*), and each click pages one width.
@@ -159,6 +161,83 @@
     });
   }
   addEventListener('resize',()=>$$('[class*="arrows-scroll-view_root-"]').forEach(updateScrollView),{passive:true});
+  // ---- Betslip (local display only; no bet is ever placed) ----------------------------------------
+  // Reference behaviour (guest, 2026-10-15): clicking an odd toggles _selected_ on it and adds/removes the
+  // selection; desktop shows it in the right-column [data-scope="Betslip"], phones update the floating coupon
+  // counter and open a bottom sheet; 2+ selections switch to "Multiple" with Final odds and the express-bonus
+  // hint ("Add N more events to get a 7% win bonus"). Selections persist like the reference's localStorage.
+  const BETSLIP_KEY='1win-preview-betslip';
+  let betslip=[];
+  try{betslip=JSON.parse(localStorage.getItem(BETSLIP_KEY)||'[]');}catch{}
+  const saveBetslip=()=>{try{localStorage.setItem(BETSLIP_KEY,JSON.stringify(betslip));}catch{}};
+  function oddInfo(odd) {
+    let card=odd.closest('[data-qa="match-card"]');
+    if(!card||!$('[data-scope="TeamNames"]',card)){card=odd;while(card&&!$('[data-scope="TeamNames"]',card))card=card.parentElement;}
+    const teams=card?$$('[class*="_name_1q73p_"]',card).map(n=>n.textContent.trim()):[];
+    const scores=card?$$('[class*="_score_wqc75_"]',card).map(n=>n.textContent.trim()):[];
+    const market=odd.closest('[data-scope="BaseOdds"]')?.querySelector('[class*="_name_lwfci_"]')?.textContent.trim()||'';
+    const name=$('[class*="_name_1wfym_"]',odd)?.textContent.trim()||'';
+    const label=name==='1'?teams[0]:name==='2'?teams[1]:/^x$/i.test(name)?'Draw':name;
+    const value=$('[class*="_cf_17if8_"]',odd)?.textContent.trim()||'';
+    return {key:[teams.join('|'),market,name].join('#'),teams,score:scores.length===2?scores.join(' : '):'',live:!!card?.querySelector('[class*="_liveIcon_"]'),market,label,value};
+  }
+  function fillCoupon(node,s) {
+    const set=(sel,text)=>{const n=$(sel,node);if(n)n.textContent=text;};
+    const score=$('[class*="_score_126cr_"]',node);
+    if(score){if(s.score){[...score.childNodes].filter(c=>c.nodeType===3).forEach(c=>c.remove());score.append(' '+s.score);}else score.remove();}
+    set('[class*="_competitors_1ijea_"]',s.teams.join(' - '));
+    set('[class*="_outcome_1ijea_"]',[s.market,s.label].filter(Boolean).join(', '));
+    set('[data-scope="SelectionCfBadge"] span',s.value);
+    node.dataset.betslipKey=s.key;
+  }
+  function betslipMarkup() {
+    const t=window.BETSLIP_TEMPLATES;if(!t)return null;
+    const tpl=document.createElement('template');
+    tpl.innerHTML=markup(betslip.length===0?t.empty:betslip.length===1?t.single:t.multi);
+    const root=tpl.content.firstElementChild;if(!betslip.length)return root;
+    const items=$$('[data-scope="SelectionInfo"]',root);const proto=items[0];
+    items.slice(1).forEach(c=>c.remove());
+    let last=proto;
+    betslip.forEach((s,i)=>{const node=i?proto.cloneNode(true):proto;fillCoupon(node,s);if(i){last.after(node);last=node;}});
+    // One selection opens on "Single", two or more switch to "Multiple" (reference behaviour).
+    const tabs=$$('button',root).filter(b=>/^(Single|Multiple|Series)$/.test(b.textContent.trim()));
+    const selected=[...new Set(tabs.flatMap(b=>[...b.classList].filter(c=>c.includes('_selected_'))))];
+    tabs.forEach(b=>{const on=b.textContent.trim()===(betslip.length===1?'Single':'Multiple');selected.forEach(c=>b.classList.toggle(c,on));});
+    const total=betslip.reduce((p,s)=>p*(parseFloat(s.value)||1),1);
+    const final=$('[class*="_totalCf_h0m60_"] [data-scope="SelectionCfBadge"] span',root);if(final)final.textContent=total.toFixed(2);
+    const left=Math.max(0,5-betslip.length),hint=$('[class*="_nextMilestoneHint_"]',root);
+    if(hint)hint.textContent=left?`Add ${left} more event${left>1?'s':''} to get a 7% win bonus`:hint.textContent;
+    $$('[class*="_segmentBar_1fw5j_"]',root).forEach((bar,i)=>{bar.style.backgroundColor=i<betslip.length?'rgb(2, 203, 208)':'var(--neutral-primary)';});
+    return root;
+  }
+  function renderBetslip(openSheet=false) {
+    const keys=new Set(betslip.map(s=>s.key));
+    $$('[class*="_odd_ro0me_"]').forEach(odd=>{const sel=[...odd.classList].find(c=>c.startsWith('_root_1hyjt_'))?.replace('_root_','_selected_');if(sel)odd.classList.toggle(sel,keys.has(oddInfo(odd).key));});
+    const inline=$('[data-scope="Betslip"]:not([data-local-sheet] *)');
+    if(inline){const next=betslipMarkup();if(next)inline.replaceWith(next);}
+    const count=$('[class*="_count_c60tj_"]');if(count)count.textContent=String(betslip.length);
+    const sheet=$('[data-local-sheet]');
+    if(sheet&&!betslip.length){sheet.remove();return;}
+    if(sheet){const body=$('[data-scope="Betslip"]',sheet),next=betslipMarkup();if(body&&next)body.replaceWith(next);}
+    else if(openSheet&&!inline)openBetslipSheet();
+  }
+  // The sheet lives in the sports module's own ModalLayout wrapper so it inherits the light theme variables.
+  function openBetslipSheet() {
+    if($('[data-local-sheet]')||!window.BETSLIP_TEMPLATES)return;
+    const tpl=document.createElement('template');tpl.innerHTML=markup(window.BETSLIP_TEMPLATES.sheet);
+    const wrapper=tpl.content.firstElementChild,target=$('[class*="_wrapper_lvq60_"]');
+    const node=target?wrapper.firstElementChild:wrapper;node.dataset.localSheet='';
+    const body=$('[data-scope="Betslip"]',node),next=betslipMarkup();if(body&&next)body.replaceWith(next);
+    (target||document.body).append(node);
+  }
+  function toggleOdd(odd) {
+    const info=oddInfo(odd);const i=betslip.findIndex(s=>s.key===info.key);
+    if(i>=0)betslip.splice(i,1);else betslip.push(info);
+    saveBetslip();renderBetslip(i<0);
+  }
+  function sportSection() {
+    return [['sports-live','/betting/live'],['sports-upcoming','/betting/prematch'],['sports-esports','/betting/esport']].find(([p])=>pageName===p||pageName.startsWith(p+'-'))?.[1];
+  }
   // Live Casino and Quick games pages carry their own chip set (e.g. "1win-games" means
   // /casino/fast-games/1win-games there), so resolve within the current page's group first.
   function categoryFile(key) {
@@ -190,6 +269,47 @@
   }
   // Original Last wins feed: every 3s a card enters at the start (translateX(-100%) -> 0), the rest
   // shift with a 1s transform move and the last one leaves. Locally the captured cards rotate.
+  // Casino category grids show the reference's first page of cards and load one more page of the same size each time
+  // the empty marker right after the grid reaches the viewport bottom, repeating while it stays visible (probed
+  // 2026-10-15, captures/more-steps-slots.json). Pages come from js/<page>-more.js; cards already in the captured grid
+  // are hidden first and revealed in order, captured extras are appended without duplicates.
+  let moreObserver=null,moreShown={page:null,count:0};
+  function initMoreCards(){
+    moreObserver?.disconnect();moreObserver=null;
+    const data=window.CASINO_MORE_CARDS?.[(currentKey||'').split('-').pop()];
+    const grid=$$('[class*="games-grid_list"]').find(g=>!g.closest('[data-index]')&&$('[data-testid^="game-card-"]',g));
+    if(!data||!grid||grid.dataset.localMore)return;
+    // Tables from different providers can share a name (and so a testid); the game link is the unique key.
+    const cardKey=c=>(c.matches('[data-reference-href]')?c:$('[data-reference-href]',c))?.dataset.referenceHref||$('[data-testid^="game-card-"]',c)?.dataset.testid||c.dataset.testid;
+    const have=new Set([...grid.children].map(cardKey));
+    [...grid.children].slice(data.start).forEach(c=>{c.hidden=true;c.dataset.localMoreCard='';});
+    const t=document.createElement('template');t.innerHTML=markup(data.batches.join(''));
+    [...t.content.children].forEach(c=>{const id=cardKey(c);if(id&&have.has(id))return;have.add(id);c.hidden=true;c.dataset.localMoreCard='';grid.append(c);});
+    const step=data.step||data.start;
+    const reveal=n=>$$('[data-local-more-card][hidden]',grid).slice(0,n).forEach(c=>c.hidden=false);
+    // A resize re-renders the page from its state; keep the cards the visitor already loaded, like the reference.
+    if(moreShown.page===currentPage&&moreShown.count>data.start)reveal(moreShown.count-data.start);
+    moreShown={page:currentPage,count:Math.max(data.start,grid.children.length-$$('[data-local-more-card][hidden]',grid).length)};
+    grid.dataset.localMore=String(Math.max(0,Math.ceil((moreShown.count-data.start)/step)));
+    if(!$('[data-local-more-card][hidden]',grid))return;
+    // The reference marker is a 0px element after the grid (some captures hold its empty loading grid inside it).
+    let marker=grid.nextElementSibling;
+    if(!marker||marker.getBoundingClientRect().height>1){marker=document.createElement('div');marker.dataset.localMoreMarker='';grid.after(marker);}
+    const visible=()=>marker.getBoundingClientRect().top<=innerHeight;
+    let frame=0;
+    const load=()=>{
+      cancelAnimationFrame(frame);
+      if(!grid.isConnected||!$('[data-local-more-card][hidden]',grid)){moreObserver?.disconnect();return;}
+      if(!visible())return;
+      reveal(step);
+      moreShown.count=grid.children.length-$$('[data-local-more-card][hidden]',grid).length;
+      grid.dataset.localMore=String(+grid.dataset.localMore+1);
+      frame=requestAnimationFrame(load);
+    };
+    const io=new IntersectionObserver(entries=>{if(entries.some(e=>e.isIntersecting))load();});
+    io.observe(marker);
+    moreObserver={disconnect:()=>{io.disconnect();cancelAnimationFrame(frame);}};
+  }
   function initLastWins() {
     clearInterval(lastWinsTimer);
     const list=$('[data-testid="casino-last-wins"] [class*="last-wins_list-"]');
@@ -218,8 +338,8 @@
     document.body.removeAttribute('inert');
     document.body.dataset.page=pageName;document.body.dataset.assetPrefix=assetPrefix;document.body.dataset.state=key;
     currentPage=page;currentKey=key;modal=null;expandedSidebarHTML=null;
-    hydrate();
-    if ($('[data-testid="modal-layout"]')) {modal='search';document.body.style.overflow='hidden';const root=$('[data-testid="modal-layout"]');root.dataset.localModal='search';motion?.modal(root);}
+    hydrate();fillGamePage();
+    if (openLayout()) {modal='search';document.body.style.overflow='hidden';const root=openLayout();root.dataset.localModal='search';motion?.modal(root);focusSearch();}
     scrollTo(0,keepScroll?y:0);
     return true;
   }
@@ -241,12 +361,18 @@
     const u=new URL(location.href);signedPreview?u.searchParams.set('preview','auth'):u.searchParams.delete('preview');
     history.replaceState(null,'',u);render(currentPage,null,true);
   }
+  // The app shell always holds an empty modal-layout wrapper; only a wrapper with content is an open dialog.
+  function openLayout(){return $$('[data-testid="modal-layout"]').find(n=>n.firstElementChild)||null;}
+  // The reference focuses the Casino search field when the layer opens from 768px up, not on phones.
+  function focusSearch(){if(innerWidth>=768)test('casino-search-input')?.focus({preventScroll:true});}
   function closeModal(immediate=false) {
     closeSidebarSocial();
-    const nodes=$$('[data-local-modal], [data-testid="modal-layout"], [class*="language-picker_tooltip"]');
+    const nodes=$$('[data-local-modal], [data-testid="modal-layout"], [class*="language-picker_tooltip"]').filter(n=>n.dataset.localModal||n.firstElementChild||!n.matches('[data-testid="modal-layout"]'));
     modal=null;
     const finish=()=>{
       nodes.forEach(n=>n.remove());
+      // Pages captured with a dialog already open (e.g. guest Bet history -> Registration) keep the app inert.
+      if(!openLayout())$$('[inert]').forEach(n=>n.removeAttribute('inert'));
       if(!modal){document.body.style.overflow=$('[class*="common-layout_root"][data-local-open="true"]')?'hidden':'';if(returnFocus?.isConnected)returnFocus.focus({preventScroll:true});}
     };
     nodes.forEach(n=>n.style.pointerEvents='none');
@@ -269,7 +395,7 @@
     const fragment=document.createElement('template');fragment.innerHTML=markup(value);
     document.body.append(fragment.content.cloneNode(true));
     modal=kind; document.body.style.overflow='hidden';
-    const root=$('[data-testid="modal-layout"]');
+    const root=openLayout();
     if(root){root.dataset.localModal=kind;root.setAttribute('role','dialog');root.setAttribute('aria-modal','true');}
     hydrate();motion?.modal(root);
     ($('input[type="tel"],input[type="email"]',root)||$('button',root))?.focus({preventScroll:true});
@@ -281,11 +407,28 @@
     n.textContent=text;motion?.toast(n);
     noticeTimer=setTimeout(()=>{motion?.toast(n,true).then(()=>{if(version===noticeVersion)n.remove();});},3500);
   }
+  const PROMO_TARGETS={'Halloween & 500K USDT':'/tournaments/817472','Welcome Bonus up to 600% and 500 FS':'/bonuses','Lucky Drive':'/freemoney','Multiple bet bonus':'/betting','Popular bets in TOP Bets':'/betting/topbets','1:0 Early Payout':'/betting/prematch/football-18/uefa-champions-league-39437','Up to 200,000 USDT in crypto tournaments':'/tournaments','Evoplay: Crystal Rush':'/casino/category/crystal-rush','Rakeback up to 50% in poker':'/casino/play/poker'};
+  // Casino game page: one captured guest page (Majestic King) shows whichever card was clicked.
+  const GAME_KEY='1win-preview-game';
+  function rememberGame(card,href){
+    const img=card&&$('img',card);
+    const data={href:href||card.dataset.referenceHref,name:card?.dataset.testid?.replace(/^game-card-/,'')||card?.textContent.trim()||'',img:img?img.src:''};
+    try{sessionStorage.setItem(GAME_KEY,JSON.stringify(data));}catch{}
+  }
+  function fillGamePage(){
+    if(pageName!=='casino-play')return;
+    let game={};try{game=JSON.parse(sessionStorage.getItem(GAME_KEY)||'{}');}catch{}
+    if(!game.href||game.href==='/casino/play/v_spinomenal:majesticking')return;
+    if(game.img)$$('img[class*="play-game_gameCoverImage"],img[class*="play-game_image"]').forEach(img=>{img.closest('picture')?.querySelectorAll('source').forEach(n=>n.remove());img.src=game.img;});
+    const name=test('game-info-card-game-name');if(name)name.textContent=game.name||'';
+    // The card does not say which provider it belongs to, so the provider row is hidden for other games.
+    $$('[data-testid="game-info-card-provider-icon"],[data-testid="game-info-card-provider-name"]').forEach(n=>n.hidden=true);
+  }
   function navigate(raw) {
     const u=new URL(raw,'https://one-vv3591.com/');
     if(u.hostname!=='one-vv3591.com')return;
     if(u.searchParams.get('x')?.includes('sign-up')){openModal('registration');return;}
-    if(u.pathname.startsWith('/casino/play/')){notice('Game launch requires the original service.');return;}
+    if(u.pathname.startsWith('/casino/play/')){if(JSON.parse(sessionStorage.getItem(GAME_KEY)||'{}').href!==u.pathname)rememberGame(null,u.pathname);go('casino-play.html');return;}
     const file=pages[u.pathname];
     if(file){go(file);return;}
     notice('This page has not been captured yet.');
@@ -359,7 +502,7 @@
   }
   function searchResults(query) {
     // Filter observed game cards. No replacement data or remote search endpoint.
-    const root=$('[data-testid="modal-layout"]')||document;
+    const root=openLayout()||document;
     $$('a[data-reference-href*="/casino/play/"]',root).forEach(a=>{
       const label=$('img',a)?.alt||a.textContent;
       a.hidden=!label.toLowerCase().includes(query.trim().toLowerCase());
@@ -403,6 +546,65 @@
     $('path',icon)?.setAttribute('d',opened?'M13.303 10.97a.9.9 0 0 1-1.273 0L8 6.94l-4.03 4.03a.9.9 0 1 1-1.273-1.273L7.363 5.03a.9.9 0 0 1 1.273 0l4.667 4.667a.9.9 0 0 1 0 1.273':'M2.697 5.03a.9.9 0 0 1 1.273 0L8 9.06l4.03-4.03a.9.9 0 1 1 1.273 1.273L8.637 10.97a.9.9 0 0 1-1.273 0L2.697 6.303a.9.9 0 0 1 0-1.273');
     button.setAttribute('aria-expanded',String(opened));
   }
+  // Tournament detail (probed 2026-10-15, captures/tour-actions.json, captures/tour-collect.json): "Rules" opens the
+  // tournament-rules dialog; the leaderboard "Show all" reveals the remaining rows once and stays; each games
+  // "Show more" reveals one more page of the size the grid started with, then the progress block goes away.
+  function tournamentData(){return pageName.startsWith('tournament-')?window.TOURNAMENT_DETAIL?.[pageName.slice(11)]:null;}
+  function tournamentNodes(html){const t=document.createElement('template');t.innerHTML=markup(html||'');return [...t.content.children];}
+  function openTournamentDialog(html,kind){
+    if(!html)return;
+    closeModal(true);
+    const node=tournamentNodes(html)[0];if(!node)return;
+    node.dataset.localModal=kind;node.setAttribute('role','dialog');node.setAttribute('aria-modal','true');
+    document.body.append(node);modal=kind;document.body.style.overflow='hidden';motion?.modal(node);
+    ($('[data-testid="modal-header-button-close"]',node)||$('button',node))?.focus({preventScroll:true});
+  }
+  function tournamentDialog(group){
+    const data=tournamentData();if(!data?.[group])return'';
+    const wide=Number((currentKey||'').match(/(\d+)x\d+$/)?.[1])>=1024;
+    return data[group][wide?'1440x900':'390x844']||data[group]['1440x900']||'';
+  }
+  function openTournamentRules(){openTournamentDialog(tournamentDialog('rules'),'tournament-rules');}
+  // Markets: Yes / No puts an inline bet form at the top of the card and keeps the card in a display:none wrapper.
+  const money=n=>'MYR\u00a0'+n.toLocaleString('en-US',{minimumFractionDigits:2,maximumFractionDigits:2});
+  const escapeText=s=>String(s).replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
+  function closeBetForm(){
+    const form=$('[data-local-bet-form]');if(!form)return;
+    const wrapper=form.nextElementSibling;
+    if(wrapper?.hasAttribute('data-local-bet-card'))wrapper.replaceWith(...wrapper.childNodes);
+    form.remove();
+  }
+  function setBetAmount(form,amount,typed){
+    amount=Math.max(0,Math.round(amount*100)/100);form.dataset.amount=String(amount);
+    const input=$('input',form),[minus]=$$('[class*="_field_ruqaw_"] button',form);
+    if(typed===undefined)input.value=money(amount);
+    input.classList.toggle(form.dataset.emptyClass,!amount);
+    minus.disabled=!amount;
+    // The reference prices with live coefficients; the snapshot only keeps the rounded percentage.
+    const percent=+form.dataset.percent;
+    $('[class*="_profitAmount_"]',form).textContent=money(percent?amount/(percent/100):0);
+  }
+  function openBetForm(button,amount=0){
+    const card=button.closest('[class*="_root_saz1a_"]');if(!card||!window.MARKETS_BET_FORM)return null;
+    closeBetForm();
+    const side=$('[class*="_name_5xqiy_"]',button)?.textContent.trim()||'',cf=$('[class*="_cf_17if8_"]',button)?.textContent.trim()||'';
+    const question=$('[class*="_clamp_ftmva_"]',button.closest('[class*="_root_ftmva_"]')||card)?.textContent.trim()||'';
+    const fill={logo:$('img[class*="_logo_1ih13_"]',card)?.getAttribute('src')||'',title:$('[class*="_title_1cufa_"]',card)?.textContent||'',question,outcome:`${side} ${cf}`};
+    const t=document.createElement('template');
+    t.innerHTML=window.MARKETS_BET_FORM.replace(/\{\{(logo|title|question|outcome)\}\}/g,(_,k)=>escapeText(fill[k]));
+    const form=t.content.firstElementChild,wrapper=document.createElement('div');
+    form.dataset.localBetForm='';form.dataset.question=question;form.dataset.side=side;form.dataset.percent=String(parseFloat(cf)||0);
+    form.dataset.emptyClass=[...$('input',form).classList].find(c=>c.startsWith('_inputEmpty_'))||'';
+    wrapper.style.display='none';wrapper.dataset.localBetCard='';
+    card.before(form,wrapper);wrapper.append(card);
+    setBetAmount(form,amount);
+    return form;
+  }
+  function typeBetAmount(input){
+    const form=input.closest('[data-local-bet-form]'),raw=input.value.replace(/^\s*MYR/i,'').replace(/[\s,\u00a0]/g,'');
+    if(raw==='')setBetAmount(form,0,raw);
+    else if(/^\d+(\.\d{0,2})?$/.test(raw))setBetAmount(form,+raw,raw);
+  }
   document.addEventListener('click',e=>{
     const socialTrigger=e.target.closest('[data-testid="sidebar-social-buttons-with-preview"]');
     if(socialTrigger){toggleSidebarSocial(socialTrigger);return;}
@@ -419,6 +621,28 @@
       return;
     }
     const el=e.target.closest('button,a,[data-reference-href],[class*="accordion-heading_root"],[class*="common-layout_close"],[class*="common-layout_backdrop"],[class*="desktop-modal_backdrop"],[class*="mobile-modal_backdrop"]');
+    const removeSel=e.target.closest('[class*="_removeSelection_1ijea_"]');
+    if(removeSel){const key=removeSel.closest('[data-betslip-key]')?.dataset.betslipKey;betslip=betslip.filter(s=>s.key!==key);saveBetslip();renderBetslip();return;}
+    const sheet=e.target.closest('[data-local-sheet]');
+    if(sheet&&(e.target.closest('[class*="_backdrop_1cqdp_"]')||e.target.closest('[data-scope="ContentButton"]'))){sheet.remove();return;}
+    if(e.target.closest('[class*="_trigger_1b67u_"] [role="button"]')){openBetslipSheet();return;}
+    if(e.target.closest('[data-local-bet-form] [class*="_icon_1cufa_"]')){closeBetForm();return;}
+    // Promotion dialog: header buttons are share / close; the CTA goes where the reference sends a guest (probed 2026-10-15).
+    const promo=e.target.closest('[data-local-modal="promo"]');
+    if(promo){
+      const header=e.target.closest('[class*="modal-header_button-9Ka9l"]'),cta=e.target.closest('[class*="hero_button-"],[class*="base_variant-staticPrimary-AENvm"]');
+      if(header){const all=$$('[class*="modal-header_button-9Ka9l"]',promo);if(header===all.at(-1))closeModal();else{navigator.clipboard?.writeText(location.href).catch(()=>{});notice('Link copied.');}return;}
+      if(cta){const to=PROMO_TARGETS[promo.dataset.localTitle];closeModal(true);if(to)navigate(to);return;}
+    }
+    // Promotions: a card title/picture opens the promotion dialog on the same page (reference keeps the URL).
+    const promoCard=e.target.closest('[class*="variant-1_titleBlock-i8wf0"],[class*="variant-1_picture-i8wf0"]');
+    if(promoCard&&!e.target.closest('button')){
+      const title=$('[class*="variant-1_title-i8wf0"]',promoCard.closest('[class*="variant-1_root-i8wf0"]'))?.textContent.replace(/ /g,' ').trim();
+      const size=(currentKey||'').split('-').pop(),html=window.PROMO_MODALS?.[size]?.[title]||window.PROMO_MODALS?.['1440x900']?.[title];
+      if(html){const t=document.createElement('template');t.innerHTML=markup(html);const node=t.content.firstElementChild;node.dataset.localModal='promo';node.dataset.localTitle=title;document.body.append(node);modal='promo';returnFocus=promoCard;document.body.style.overflow='hidden';motion?.modal(node);}
+      return;
+    }
+    if(e.target.closest('[class*="modal-promo-desktop_backdrop"]'))return closeModal();
     const rowTitle=!el&&e.target.closest('[class*="game-slider_title"]');
     if(rowTitle){const file=rowCategory(rowTitle);if(file)go(file);return;}
     if(!el)return;
@@ -437,6 +661,7 @@
     if(el.matches('a,[data-reference-href]')){
       if(el.tagName==='A'&&el.getAttribute('href')?.split('?')[0].endsWith('.html'))return;
       e.preventDefault();
+      if(el.dataset.referenceHref?.startsWith('/casino/play/'))rememberGame(el);
       if(el.dataset.localPage)go(el.dataset.localPage);
       else if(el.dataset.referenceHref)navigate(el.dataset.referenceHref);
       return;
@@ -449,7 +674,7 @@
     if(id.startsWith('profile-')||id.startsWith('userSettings-'))return notice('Local account design preview. This action has no account connection.');
     if(id==='header-balance-deposit-button'||id==='header-notification-button')return notice('Local design preview. No account connection.');
     if(id==='local-preview-toggle')return togglePreview();
-    if(id==='header-auth-button'||id==='sidebar-profile-button'||id.endsWith('form-signInButton'))return openModal('login',el);
+    if(id==='header-auth-button'||id==='sidebar-profile-button'||id==='game-play-card-auth-button'||id.endsWith('form-signInButton'))return openModal('login',el);
     if(id==='header-registration-button'||id.endsWith('form-signUpButton'))return openModal('registration',el);
     if(id==='modal-header-button-close'||el.className.includes('modal_backdrop'))return closeModal();
     if(id==='modal-back-button')return openModal('login',el);
@@ -478,11 +703,82 @@
       if(section){const offset=(innerWidth>=1024?16:0)+(nav?.offsetHeight||60)+16;scrollTo({top:scrollY+section.getBoundingClientRect().top-offset,behavior:scrollBehavior()});}
       return;
     }
+    if(id==='play-game-header-back-button'){if(history.length>1)history.back();else go('casino.html');return;}
+    if(id==='play-game-header-share-button'){navigator.clipboard?.writeText(location.href).catch(()=>{});return notice('Link copied.');}
+    if(id==='play-game-header-fullscreen-button'){const box=$('[class*="play-game_game"]')||document.documentElement;box.requestFullscreen?.().catch(()=>{});return;}
+    if(id==='game-play-card-demo-button')return notice('Demo games are served by the game provider and are not part of this preview.');
     if(id==='casino-search-input-button')return go('casino-search.html');
     if(id==='casino-search-providers-button')return go('casino-providers.html');
     if(id==='casino-search-tabs-providers')return go('casino-providers.html');
     if(id==='casino-search-tabs-games')return go('casino-search.html');
     if(id==='casino-search-input-clear'){const input=test('casino-search-input');if(input){input.value='';searchResults('');input.focus();}return;}
+    if(el.matches('button[class*="_odd_ro0me_"]')){toggleOdd(el);return;}
+    const betForm=el.closest('[data-local-bet-form]');
+    if(betForm){
+      const [minus,plus,max]=$$('[class*="_field_ruqaw_"] button',betForm),amount=+betForm.dataset.amount||0;
+      if(el===minus)return setBetAmount(betForm,amount-1);
+      if(el===plus)return setBetAmount(betForm,amount+1);
+      // MAX stakes the balance; guest and Demo balances are 0.00, so the stake stays as it is (as on the reference).
+      if(el===max)return;
+      if(text==='Place a bet'){e.preventDefault();return openModal('login',el);}
+      return;
+    }
+    if(el.matches('button[class*="_root_5xqiy_"]')&&el.closest('[class*="_root_saz1a_"]')){openBetForm(el);return;}
+    // Crypto-live Up / Down open the event page of a 5-minute market, which rotates and is not captured.
+    if(el.matches('button[class*="_root_14bu9_"]')){notice('This page has not been captured yet.');return;}
+    // "Show more" on list pages: reveal the cards the reference loads next, then drop the progress block.
+    const more=el.closest('[data-local-show-more]');
+    if(more&&id==='progress-button'){$$('[data-local-more]').forEach(n=>n.removeAttribute('hidden'));more.remove();document.body.dataset.localExpanded='';return;}
+    if(pageName.startsWith('tournament-')&&tournamentData()){
+      if(text==='Rules'){openTournamentRules();return;}
+      if(text.startsWith('Show all')&&el.closest('[class*="leaderboard"]')){openTournamentDialog(tournamentDialog('leaderboard'),'tournament-leaderboard');return;}
+      if(id==='progress-button'&&el.closest('[class*="games-list_root"]')){
+        const grid=$('[class*="games-list_games"]',el.closest('[class*="games-list_root"]'));
+        if(grid){
+          const step=Number(grid.dataset.localGameStep||grid.querySelectorAll(':scope > a').length)||1;
+          grid.dataset.localGameStep=String(step);
+          const have=new Set([...grid.querySelectorAll(':scope > a')].map(a=>a.dataset.referenceHref));
+          const fresh=tournamentNodes(tournamentData().games).filter(a=>a.dataset.referenceHref&&!have.has(a.dataset.referenceHref));
+          fresh.slice(0,step).forEach(a=>grid.append(a));
+          const progress=el.closest('[class*="games-list_progress"]');
+          if(fresh.length<=step)progress?.remove();
+          else{const label=$('[data-testid="progress-text"]',progress);if(label)label.textContent='Games shown: '+grid.querySelectorAll(':scope > a').length+' out of '+(have.size+fresh.length);}
+        }
+        return;
+      }
+    }
+    // Tournaments: All / Exclusive / From providers filter the cards in place (URL unchanged on the reference).
+    if(pageName==='tournaments'&&/^(All|Exclusive|From providers)$/.test(text)&&$('[data-local-group]')){
+      const tabs=$$('button[class*="tab_root-"]').filter(b=>/^(All|Exclusive|From providers)$/.test(b.textContent.trim()));
+      const selected=[...new Set(tabs.flatMap(b=>[...b.classList].filter(c=>c.includes('_selected'))))];
+      tabs.forEach(b=>selected.forEach(c=>b.classList.toggle(c,b===el)));
+      const group=text==='Exclusive'?'exclusive':text==='From providers'?'providers':'';
+      const expanded=document.body.hasAttribute('data-local-expanded');
+      $$('[data-local-group]').forEach(card=>{const show=group?card.dataset.localGroup.split(' ').includes(group):(expanded||!card.hasAttribute('data-local-more'));card.hidden=!show;});
+      const block=$('[data-local-show-more]');if(block)block.hidden=!!group;
+      return;
+    }
+    const slip=el.closest('[data-scope="Betslip"]');
+    if(slip){
+      const label=el.textContent.trim();
+      if(/^(Single|Multiple|Series)$/.test(label)){
+        const tabs=$$('button',el.parentElement),current=tabs.find(b=>[...b.classList].some(c=>c.includes('_selected_')));
+        const selected=[...(current?.classList||[])].filter(c=>c.includes('_selected_'));
+        tabs.forEach(b=>selected.forEach(c=>b.classList.remove(c)));selected.forEach(c=>el.classList.add(c));
+        return;
+      }
+      if(!label&&el.closest('[class*="_header_103u2_"]')){betslip=[];saveBetslip();renderBetslip();return;}
+      if(label==='Place a bet'||label==='View bet'){e.preventDefault();return openModal('login',el);}
+      if(label==='MAX')return;
+    }
+    // Sports filter chips (Top, Football, CS2 …) are routes on the reference: /betting/live/football-18 etc.
+    if(el.matches('button[class*="_button_1xp0b_"]')){
+      const routes=window.PROJECT_ROUTES||{},section=sportSection();
+      const label=$('[class*="_text_1xp0b_"]',el)?.textContent.trim();
+      const route=section&&label&&routes.sportFilters?.[section]?.[label];
+      if(route){const file=pages[route];if(file&&file!==pageName+'.html')go(file);else if(!file)notice('This filter has not been captured yet.');}
+      return;
+    }
     const presetNav=el.closest('[class*="casino-preset-navigation_root"]');
     if(presetNav&&el.matches('button')){
       // Lobby / Live Casino / Quick games -> /casino, /casino/live-games, /casino/fast-games.
@@ -530,10 +826,11 @@
     const valid=(!email||/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email.value))&&(!phone||phone.value.replace(/\D/g,'').length>=8)&&(!password||password.value.length>=8)&&(!agree||agree.checked);
     submit.disabled=!valid;
   }
-  document.addEventListener('input',e=>{if(e.target.dataset.testid==='casino-search-input')searchResults(e.target.value);updateForm(e.target);});
+  const betInput=n=>n.matches?.('[data-local-bet-form] input');
+  document.addEventListener('input',e=>{if(e.target.dataset.testid==='casino-search-input')searchResults(e.target.value);if(betInput(e.target))typeBetAmount(e.target);updateForm(e.target);});
   document.addEventListener('change',e=>updateForm(e.target));
-  document.addEventListener('focusin',e=>{if(e.target.matches('input'))updateFieldAppearance(e.target,true);});
-  document.addEventListener('focusout',e=>{if(e.target.matches('input'))updateFieldAppearance(e.target,false);});
+  document.addEventListener('focusin',e=>{if(betInput(e.target)&&!+e.target.closest('[data-local-bet-form]').dataset.amount)e.target.value='';if(e.target.matches('input'))updateFieldAppearance(e.target,true);});
+  document.addEventListener('focusout',e=>{if(betInput(e.target)){const form=e.target.closest('[data-local-bet-form]');setBetAmount(form,+form.dataset.amount||0);}if(e.target.matches('input'))updateFieldAppearance(e.target,false);});
   document.addEventListener('submit',e=>{
     e.preventDefault();
     const inputs=$$('input',e.target).filter(n=>!['checkbox','radio','hidden','date'].includes(n.type));
@@ -551,7 +848,7 @@
     }
     if(e.altKey&&e.key.toLowerCase()==='p'){e.preventDefault();togglePreview();return;}
     if(e.key==='Escape'){closeModal();toggleMenu(false);}
-    if(e.key==='Tab'&&modal){const root=$('[data-testid="modal-layout"]');const items=root&&$$('button:not(:disabled),input:not([type="hidden"]),a',root).filter(n=>n.getClientRects().length);if(items?.length){const first=items[0],last=items.at(-1);if(e.shiftKey&&document.activeElement===first){e.preventDefault();last.focus();}else if(!e.shiftKey&&document.activeElement===last){e.preventDefault();first.focus();}}}
+    if(e.key==='Tab'&&modal){const root=openLayout();const items=root&&$$('button:not(:disabled),input:not([type="hidden"]),a',root).filter(n=>n.getClientRects().length);if(items?.length){const first=items[0],last=items.at(-1);if(e.shiftKey&&document.activeElement===first){e.preventDefault();last.focus();}else if(!e.shiftKey&&document.activeElement===last){e.preventDefault();first.focus();}}}
   });
   let swipeX=null;
   document.addEventListener('touchstart',e=>{if(e.target.closest('[data-testid="banner-main-container"]'))swipeX=e.touches[0].clientX;},{passive:true});
@@ -559,14 +856,19 @@
   function adaptToViewport() {
     const key=keyFor(currentPage);
     if(key===currentKey){fitBanners();positionSidebarSocial();return;}
-    const kind=modal,dialog=$('[data-testid="modal-layout"]');
+    const kind=modal,dialog=openLayout();
     const fields=dialog?$$('input',dialog).map((input,index)=>({id:input.dataset.testid,index,type:input.type,value:input.value,checked:input.checked})):[];
     const focusedId=document.activeElement?.dataset.testid;
     const faqOpen=$$('[class*="FaqSection_accordionContainer"] [class*="accordion-heading_root-"][aria-expanded="true"]').map(n=>n.textContent.trim());
     const faqFocused=document.activeElement?.closest('[class*="FaqSection_accordionContainer"]')?document.activeElement.textContent.trim():null;
     const seoOpen=$$('[class*="seo_root-"]').map(root=>root.className.includes('seo_expanded-'));
     const seoFocused=document.activeElement?.matches('[class*="seo_button-"]')?$$('[class*="seo_button-"]').indexOf(document.activeElement):-1;
+    const bet=$('[data-local-bet-form]'),betOpen=bet&&{question:bet.dataset.question,side:bet.dataset.side,amount:+bet.dataset.amount||0};
     render(currentPage,null,true);
+    if(betOpen){
+      const button=$$('[class*="_root_saz1a_"] button[class*="_root_5xqiy_"]').find(b=>$('[class*="_name_5xqiy_"]',b)?.textContent.trim()===betOpen.side&&$('[class*="_clamp_ftmva_"]',b.closest('[class*="_root_ftmva_"]')||b)?.textContent.trim()===betOpen.question);
+      if(button)openBetForm(button,betOpen.amount);
+    }
     $$('[class*="seo_root-"] [class*="seo_button-"]').forEach((button,index)=>{
       if(seoOpen[index]&&button.getAttribute('aria-expanded')!=='true')toggleSeo(button);
       if(seoFocused===index)button.focus({preventScroll:true});
@@ -575,9 +877,10 @@
       if(faqOpen.includes(heading.textContent.trim())&&heading.getAttribute('aria-expanded')!=='true')toggleFaq(heading);
       if(faqFocused===heading.textContent.trim())heading.focus({preventScroll:true});
     });
+    if(kind==='tournament-rules'||kind==='tournament-leaderboard'){openTournamentDialog(tournamentDialog(kind==='tournament-rules'?'rules':'leaderboard'),kind);return;}
     if(kind&&kind!=='search'){
       openModal(kind);
-      const inputs=$$('input',$('[data-testid="modal-layout"]'));
+      const inputs=$$('input',openLayout());
       fields.forEach(field=>{
         const input=inputs.find(i=>field.id&&i.dataset.testid===field.id)||(inputs[field.index]?.type===field.type?inputs[field.index]:null);
         if(input){input.value=field.value;input.checked=field.checked;updateForm(input);}
@@ -587,8 +890,9 @@
   }
   addEventListener('resize',()=>{clearTimeout(resizeTimer);resizeTimer=setTimeout(adaptToViewport,150);});
   const initialModal=document.body.dataset.initialModal;
-  if(signedPreview||keyFor(currentPage)!==currentKey)render(currentPage);else hydrate();
+  if(signedPreview||keyFor(currentPage)!==currentKey)render(currentPage);else{hydrate();fillGamePage();}
   if(initialModal)openModal(initialModal);
-  else if($('[data-testid="modal-layout"]')){modal='search';document.body.style.overflow='hidden';const root=$('[data-testid="modal-layout"]');root.dataset.localModal='search';motion?.modal(root);}
+  else if(openLayout()){modal='search';document.body.style.overflow='hidden';const root=openLayout();root.dataset.localModal='search';motion?.modal(root);}
   window.SHARED_UI?.ready();
+  if(modal==='search')focusSearch();
 })();

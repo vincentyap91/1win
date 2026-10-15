@@ -1,0 +1,926 @@
+{
+ "casino-search.html@1920x1080": {
+  "value": {
+   "state": "casino-search-1920x1080",
+   "modal": null,
+   "tabs": {
+    "games": {
+     "text": "Games",
+     "selected": true
+    },
+    "providers": {
+     "text": "Providers",
+     "selected": false
+    }
+   },
+   "input": {
+    "focused": false,
+    "placeholder": "Search"
+   },
+   "rows": [
+    {
+     "title": "Slots",
+     "cards": 10
+    },
+    {
+     "title": "1win games",
+     "cards": 10
+    },
+    {
+     "title": "Fishing games",
+     "cards": 10
+    },
+    {
+     "title": "Tournaments",
+     "cards": 0
+    },
+    {
+     "title": "Live casino",
+     "cards": 10
+    },
+    {
+     "title": "Bonus buy",
+     "cards": 10
+    },
+    {
+     "title": "Bonus wagering",
+     "cards": 10
+    },
+    {
+     "title": "Jili Games",
+     "cards": 10
+    },
+    {
+     "title": "New",
+     "cards": 10
+    },
+    {
+     "title": "Only on 1win",
+     "cards": 10
+    },
+    {
+     "title": "Quick games",
+     "cards": 10
+    },
+    {
+     "title": "Last wins",
+     "cards": 0
+    },
+    {
+     "title": "All games",
+     "cards": 27
+    },
+    {
+     "title": "1win games",
+     "cards": 6
+    },
+    {
+     "title": "Live casino",
+     "cards": 6
+    },
+    {
+     "title": "Quick games",
+     "cards": 6
+    }
+   ],
+   "providers": 0,
+   "hscroll": false,
+   "typed": {
+    "cards": 127,
+    "sample": [
+     "game-card-Majestic King",
+     "game-card-Legacy Of Kong",
+     "game-card-Royal Katt",
+     "game-card-Roma"
+    ]
+   }
+  },
+  "errors": []
+ },
+ "casino-search.html@1440x900": {
+  "value": {
+   "state": "casino-search-1440x900",
+   "modal": null,
+   "tabs": {
+    "games": {
+     "text": "Games",
+     "selected": true
+    },
+    "providers": {
+     "text": "Providers",
+     "selected": false
+    }
+   },
+   "input": {
+    "focused": false,
+    "placeholder": "Search"
+   },
+   "rows": [
+    {
+     "title": "Slots",
+     "cards": 9
+    },
+    {
+     "title": "1win games",
+     "cards": 9
+    },
+    {
+     "title": "Fishing games",
+     "cards": 9
+    },
+    {
+     "title": "Tournaments",
+     "cards": 0
+    },
+    {
+     "title": "Live casino",
+     "cards": 9
+    },
+    {
+     "title": "Bonus buy",
+     "cards": 9
+    },
+    {
+     "title": "Bonus wagering",
+     "cards": 9
+    },
+    {
+     "title": "Jili Games",
+     "cards": 9
+    },
+    {
+     "title": "New",
+     "cards": 9
+    },
+    {
+     "title": "Only on 1win",
+     "cards": 9
+    },
+    {
+     "title": "Quick games",
+     "cards": 9
+    },
+    {
+     "title": "Last wins",
+     "cards": 0
+    },
+    {
+     "title": "All games",
+     "cards": 24
+    },
+    {
+     "title": "1win games",
+     "cards": 6
+    },
+    {
+     "title": "Live casino",
+     "cards": 6
+    },
+    {
+     "title": "Quick games",
+     "cards": 6
+    }
+   ],
+   "providers": 0,
+   "hscroll": false,
+   "typed": {
+    "cards": 114,
+    "sample": [
+     "game-card-Majestic King",
+     "game-card-Legacy Of Kong",
+     "game-card-Royal Katt",
+     "game-card-Roma"
+    ]
+   }
+  },
+  "errors": []
+ },
+ "casino-search.html@768x1024": {
+  "value": {
+   "state": "casino-search-768x1024",
+   "modal": null,
+   "tabs": {
+    "games": {
+     "text": "Games",
+     "selected": true
+    },
+    "providers": {
+     "text": "Providers",
+     "selected": false
+    }
+   },
+   "input": {
+    "focused": false,
+    "placeholder": "Search"
+   },
+   "rows": [
+    {
+     "title": "Slots",
+     "cards": 8
+    },
+    {
+     "title": "1win games",
+     "cards": 8
+    },
+    {
+     "title": "Fishing games",
+     "cards": 8
+    },
+    {
+     "title": "Tournaments",
+     "cards": 0
+    },
+    {
+     "title": "Live casino",
+     "cards": 8
+    },
+    {
+     "title": "Bonus buy",
+     "cards": 8
+    },
+    {
+     "title": "Bonus wagering",
+     "cards": 8
+    },
+    {
+     "title": "Jili Games",
+     "cards": 8
+    },
+    {
+     "title": "New",
+     "cards": 8
+    },
+    {
+     "title": "Only on 1win",
+     "cards": 8
+    },
+    {
+     "title": "Quick games",
+     "cards": 8
+    },
+    {
+     "title": "Last wins",
+     "cards": 0
+    },
+    {
+     "title": "All games",
+     "cards": 21
+    },
+    {
+     "title": "1win games",
+     "cards": 7
+    },
+    {
+     "title": "Live casino",
+     "cards": 7
+    },
+    {
+     "title": "Quick games",
+     "cards": 7
+    },
+    {
+     "title": "Only on 1win",
+     "cards": 7
+    }
+   ],
+   "providers": 0,
+   "hscroll": false,
+   "typed": {
+    "cards": 101,
+    "sample": [
+     "game-card-Majestic King",
+     "game-card-Legacy Of Kong",
+     "game-card-Royal Katt",
+     "game-card-Roma"
+    ]
+   }
+  },
+  "errors": []
+ },
+ "casino-search.html@430x932": {
+  "value": {
+   "state": "casino-search-430x932",
+   "modal": null,
+   "tabs": {
+    "games": {
+     "text": "Games",
+     "selected": true
+    },
+    "providers": {
+     "text": "Providers",
+     "selected": false
+    }
+   },
+   "input": {
+    "focused": false,
+    "placeholder": "Search"
+   },
+   "rows": [
+    {
+     "title": "Slots",
+     "cards": 4
+    },
+    {
+     "title": "1win games",
+     "cards": 4
+    },
+    {
+     "title": "Fishing games",
+     "cards": 4
+    },
+    {
+     "title": "Tournaments",
+     "cards": 0
+    },
+    {
+     "title": "Live casino",
+     "cards": 4
+    },
+    {
+     "title": "Bonus buy",
+     "cards": 4
+    },
+    {
+     "title": "Bonus wagering",
+     "cards": 4
+    },
+    {
+     "title": "Jili Games",
+     "cards": 4
+    },
+    {
+     "title": "New",
+     "cards": 4
+    },
+    {
+     "title": "Only on 1win",
+     "cards": 4
+    },
+    {
+     "title": "Quick games",
+     "cards": 4
+    },
+    {
+     "title": "Last wins",
+     "cards": 0
+    },
+    {
+     "title": "All games",
+     "cards": 9
+    },
+    {
+     "title": "1win games",
+     "cards": 4
+    },
+    {
+     "title": "Live casino",
+     "cards": 4
+    },
+    {
+     "title": "Quick games",
+     "cards": 4
+    }
+   ],
+   "providers": 0,
+   "hscroll": false,
+   "typed": {
+    "cards": 49,
+    "sample": [
+     "game-card-Majestic King",
+     "game-card-Legacy Of Kong",
+     "game-card-Royal Katt",
+     "game-card-Roma"
+    ]
+   }
+  },
+  "errors": []
+ },
+ "casino-search.html@390x844": {
+  "value": {
+   "state": "casino-search-390x844",
+   "modal": null,
+   "tabs": {
+    "games": {
+     "text": "Games",
+     "selected": true
+    },
+    "providers": {
+     "text": "Providers",
+     "selected": false
+    }
+   },
+   "input": {
+    "focused": false,
+    "placeholder": "Search"
+   },
+   "rows": [
+    {
+     "title": "Slots",
+     "cards": 4
+    },
+    {
+     "title": "1win games",
+     "cards": 4
+    },
+    {
+     "title": "Fishing games",
+     "cards": 4
+    },
+    {
+     "title": "Tournaments",
+     "cards": 0
+    },
+    {
+     "title": "Live casino",
+     "cards": 4
+    },
+    {
+     "title": "Bonus buy",
+     "cards": 4
+    },
+    {
+     "title": "Bonus wagering",
+     "cards": 4
+    },
+    {
+     "title": "Jili Games",
+     "cards": 4
+    },
+    {
+     "title": "New",
+     "cards": 4
+    },
+    {
+     "title": "Only on 1win",
+     "cards": 4
+    },
+    {
+     "title": "Quick games",
+     "cards": 4
+    },
+    {
+     "title": "Last wins",
+     "cards": 0
+    },
+    {
+     "title": "All games",
+     "cards": 9
+    },
+    {
+     "title": "1win games",
+     "cards": 4
+    },
+    {
+     "title": "Live casino",
+     "cards": 4
+    },
+    {
+     "title": "Quick games",
+     "cards": 4
+    }
+   ],
+   "providers": 0,
+   "hscroll": false,
+   "typed": {
+    "cards": 49,
+    "sample": [
+     "game-card-Majestic King",
+     "game-card-Legacy Of Kong",
+     "game-card-Royal Katt",
+     "game-card-Roma"
+    ]
+   }
+  },
+  "errors": []
+ },
+ "casino-providers.html@1920x1080": {
+  "value": {
+   "state": "casino-providers-1920x1080",
+   "modal": null,
+   "tabs": {
+    "games": {
+     "text": "Games",
+     "selected": false
+    },
+    "providers": {
+     "text": "Providers",
+     "selected": true
+    }
+   },
+   "input": {
+    "focused": false,
+    "placeholder": "Search"
+   },
+   "rows": [
+    {
+     "title": "Slots",
+     "cards": 10
+    },
+    {
+     "title": "1win games",
+     "cards": 10
+    },
+    {
+     "title": "Fishing games",
+     "cards": 10
+    },
+    {
+     "title": "Tournaments",
+     "cards": 0
+    },
+    {
+     "title": "Live casino",
+     "cards": 10
+    },
+    {
+     "title": "Bonus buy",
+     "cards": 10
+    },
+    {
+     "title": "Bonus wagering",
+     "cards": 10
+    },
+    {
+     "title": "Jili Games",
+     "cards": 10
+    },
+    {
+     "title": "New",
+     "cards": 10
+    },
+    {
+     "title": "Only on 1win",
+     "cards": 10
+    },
+    {
+     "title": "Quick games",
+     "cards": 10
+    },
+    {
+     "title": "Last wins",
+     "cards": 0
+    },
+    {
+     "title": "All games",
+     "cards": 27
+    }
+   ],
+   "providers": 0,
+   "hscroll": false,
+   "typed": {
+    "cards": 127,
+    "sample": [
+     "game-card-Majestic King",
+     "game-card-Legacy Of Kong",
+     "game-card-Royal Katt",
+     "game-card-Roma"
+    ]
+   }
+  },
+  "errors": []
+ },
+ "casino-providers.html@1440x900": {
+  "value": {
+   "state": "casino-providers-1440x900",
+   "modal": null,
+   "tabs": {
+    "games": {
+     "text": "Games",
+     "selected": false
+    },
+    "providers": {
+     "text": "Providers",
+     "selected": true
+    }
+   },
+   "input": {
+    "focused": false,
+    "placeholder": "Search"
+   },
+   "rows": [
+    {
+     "title": "Slots",
+     "cards": 9
+    },
+    {
+     "title": "1win games",
+     "cards": 9
+    },
+    {
+     "title": "Fishing games",
+     "cards": 9
+    },
+    {
+     "title": "Tournaments",
+     "cards": 0
+    },
+    {
+     "title": "Live casino",
+     "cards": 9
+    },
+    {
+     "title": "Bonus buy",
+     "cards": 9
+    },
+    {
+     "title": "Bonus wagering",
+     "cards": 9
+    },
+    {
+     "title": "Jili Games",
+     "cards": 9
+    },
+    {
+     "title": "New",
+     "cards": 9
+    },
+    {
+     "title": "Only on 1win",
+     "cards": 9
+    },
+    {
+     "title": "Quick games",
+     "cards": 9
+    },
+    {
+     "title": "Last wins",
+     "cards": 0
+    },
+    {
+     "title": "All games",
+     "cards": 24
+    }
+   ],
+   "providers": 0,
+   "hscroll": false,
+   "typed": {
+    "cards": 114,
+    "sample": [
+     "game-card-Majestic King",
+     "game-card-Legacy Of Kong",
+     "game-card-Royal Katt",
+     "game-card-Roma"
+    ]
+   }
+  },
+  "errors": []
+ },
+ "casino-providers.html@768x1024": {
+  "value": {
+   "state": "casino-providers-768x1024",
+   "modal": null,
+   "tabs": {
+    "games": {
+     "text": "Games",
+     "selected": false
+    },
+    "providers": {
+     "text": "Providers",
+     "selected": true
+    }
+   },
+   "input": {
+    "focused": false,
+    "placeholder": "Search"
+   },
+   "rows": [
+    {
+     "title": "Slots",
+     "cards": 8
+    },
+    {
+     "title": "1win games",
+     "cards": 8
+    },
+    {
+     "title": "Fishing games",
+     "cards": 8
+    },
+    {
+     "title": "Tournaments",
+     "cards": 0
+    },
+    {
+     "title": "Live casino",
+     "cards": 8
+    },
+    {
+     "title": "Bonus buy",
+     "cards": 8
+    },
+    {
+     "title": "Bonus wagering",
+     "cards": 8
+    },
+    {
+     "title": "Jili Games",
+     "cards": 8
+    },
+    {
+     "title": "New",
+     "cards": 8
+    },
+    {
+     "title": "Only on 1win",
+     "cards": 8
+    },
+    {
+     "title": "Quick games",
+     "cards": 8
+    },
+    {
+     "title": "Last wins",
+     "cards": 0
+    },
+    {
+     "title": "All games",
+     "cards": 21
+    }
+   ],
+   "providers": 0,
+   "hscroll": false,
+   "typed": {
+    "cards": 101,
+    "sample": [
+     "game-card-Majestic King",
+     "game-card-Legacy Of Kong",
+     "game-card-Royal Katt",
+     "game-card-Roma"
+    ]
+   }
+  },
+  "errors": []
+ },
+ "casino-providers.html@430x932": {
+  "value": {
+   "state": "casino-providers-430x932",
+   "modal": null,
+   "tabs": {
+    "games": {
+     "text": "Games",
+     "selected": false
+    },
+    "providers": {
+     "text": "Providers",
+     "selected": true
+    }
+   },
+   "input": {
+    "focused": false,
+    "placeholder": "Search"
+   },
+   "rows": [
+    {
+     "title": "Slots",
+     "cards": 4
+    },
+    {
+     "title": "1win games",
+     "cards": 4
+    },
+    {
+     "title": "Fishing games",
+     "cards": 4
+    },
+    {
+     "title": "Tournaments",
+     "cards": 0
+    },
+    {
+     "title": "Live casino",
+     "cards": 4
+    },
+    {
+     "title": "Bonus buy",
+     "cards": 4
+    },
+    {
+     "title": "Bonus wagering",
+     "cards": 4
+    },
+    {
+     "title": "Jili Games",
+     "cards": 4
+    },
+    {
+     "title": "New",
+     "cards": 4
+    },
+    {
+     "title": "Only on 1win",
+     "cards": 4
+    },
+    {
+     "title": "Quick games",
+     "cards": 4
+    },
+    {
+     "title": "Last wins",
+     "cards": 0
+    },
+    {
+     "title": "All games",
+     "cards": 9
+    }
+   ],
+   "providers": 0,
+   "hscroll": false,
+   "typed": {
+    "cards": 49,
+    "sample": [
+     "game-card-Majestic King",
+     "game-card-Legacy Of Kong",
+     "game-card-Royal Katt",
+     "game-card-Roma"
+    ]
+   }
+  },
+  "errors": []
+ },
+ "casino-providers.html@390x844": {
+  "value": {
+   "state": "casino-providers-390x844",
+   "modal": null,
+   "tabs": {
+    "games": {
+     "text": "Games",
+     "selected": false
+    },
+    "providers": {
+     "text": "Providers",
+     "selected": true
+    }
+   },
+   "input": {
+    "focused": false,
+    "placeholder": "Search"
+   },
+   "rows": [
+    {
+     "title": "Slots",
+     "cards": 4
+    },
+    {
+     "title": "1win games",
+     "cards": 4
+    },
+    {
+     "title": "Fishing games",
+     "cards": 4
+    },
+    {
+     "title": "Tournaments",
+     "cards": 0
+    },
+    {
+     "title": "Live casino",
+     "cards": 4
+    },
+    {
+     "title": "Bonus buy",
+     "cards": 4
+    },
+    {
+     "title": "Bonus wagering",
+     "cards": 4
+    },
+    {
+     "title": "Jili Games",
+     "cards": 4
+    },
+    {
+     "title": "New",
+     "cards": 4
+    },
+    {
+     "title": "Only on 1win",
+     "cards": 4
+    },
+    {
+     "title": "Quick games",
+     "cards": 4
+    },
+    {
+     "title": "Last wins",
+     "cards": 0
+    },
+    {
+     "title": "All games",
+     "cards": 9
+    }
+   ],
+   "providers": 0,
+   "hscroll": false,
+   "typed": {
+    "cards": 49,
+    "sample": [
+     "game-card-Majestic King",
+     "game-card-Legacy Of Kong",
+     "game-card-Royal Katt",
+     "game-card-Roma"
+    ]
+   }
+  },
+  "errors": []
+ }
+}

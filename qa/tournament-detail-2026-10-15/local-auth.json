@@ -1,0 +1,40 @@
+{
+ "1440x900": {
+  "value": {
+   "key": "tournament-814264-1440x900",
+   "before": {
+    "rows": 10,
+    "games": 21
+   },
+   "rulesOpened": true,
+   "rulesClosed": true,
+   "rowsAfter": 10,
+   "showAllStays": true,
+   "gamesAfter": 40,
+   "progressBefore": "Games shown: 21 out of 40",
+   "progressAfter": null,
+   "broken": [],
+   "hscroll": false
+  },
+  "errors": []
+ },
+ "390x844": {
+  "value": {
+   "key": "tournament-814264-390x844",
+   "before": {
+    "rows": 5,
+    "games": 9
+   },
+   "rulesOpened": true,
+   "rulesClosed": true,
+   "rowsAfter": 15,
+   "showAllStays": true,
+   "gamesAfter": 18,
+   "progressBefore": "Games shown: 9 out of 40",
+   "progressAfter": "Games shown: 18 out of 40",
+   "broken": [],
+   "hscroll": false
+  },
+  "errors": []
+ }
+}

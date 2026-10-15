@@ -1,0 +1,173 @@
+{
+ "tournament-814264.html@1440x900": {
+  "value": {
+   "key": "tournament-814264-1440x900",
+   "before": {
+    "rows": 10,
+    "games": 21
+   },
+   "rulesOpened": true,
+   "rulesClosed": true,
+   "rowsAfter": 10,
+   "showAllStays": true,
+   "gamesAfter": 40,
+   "progressBefore": "Games shown: 21 out of 40",
+   "progressAfter": null,
+   "broken": [],
+   "hscroll": false
+  },
+  "errors": []
+ },
+ "tournament-814264.html@768x1024": {
+  "value": {
+   "key": "tournament-814264-768x1024",
+   "before": {
+    "rows": 10,
+    "games": 12
+   },
+   "rulesOpened": true,
+   "rulesClosed": true,
+   "rowsAfter": 10,
+   "showAllStays": true,
+   "gamesAfter": 24,
+   "progressBefore": "Games shown: 12 out of 40",
+   "progressAfter": "Games shown: 24 out of 40",
+   "broken": [],
+   "hscroll": false
+  },
+  "errors": []
+ },
+ "tournament-814264.html@390x844": {
+  "value": {
+   "key": "tournament-814264-390x844",
+   "before": {
+    "rows": 5,
+    "games": 9
+   },
+   "rulesOpened": true,
+   "rulesClosed": true,
+   "rowsAfter": 15,
+   "showAllStays": true,
+   "gamesAfter": 18,
+   "progressBefore": "Games shown: 9 out of 40",
+   "progressAfter": "Games shown: 18 out of 40",
+   "broken": [],
+   "hscroll": false
+  },
+  "errors": []
+ },
+ "tournament-788264.html@1440x900": {
+  "value": {
+   "key": "tournament-788264-1440x900",
+   "before": {
+    "rows": 0,
+    "games": 21
+   },
+   "rulesOpened": true,
+   "rulesClosed": true,
+   "rowsAfter": 0,
+   "showAllStays": false,
+   "gamesAfter": 42,
+   "progressBefore": "Games shown: 21 out of 442",
+   "progressAfter": "Games shown: 42 out of 442",
+   "broken": [],
+   "hscroll": false
+  },
+  "errors": []
+ },
+ "tournament-788264.html@768x1024": {
+  "value": {
+   "key": "tournament-788264-768x1024",
+   "before": {
+    "rows": 0,
+    "games": 12
+   },
+   "rulesOpened": true,
+   "rulesClosed": true,
+   "rowsAfter": 0,
+   "showAllStays": false,
+   "gamesAfter": 24,
+   "progressBefore": "Games shown: 12 out of 442",
+   "progressAfter": "Games shown: 24 out of 442",
+   "broken": [],
+   "hscroll": false
+  },
+  "errors": []
+ },
+ "tournament-788264.html@390x844": {
+  "value": {
+   "key": "tournament-788264-390x844",
+   "before": {
+    "rows": 0,
+    "games": 9
+   },
+   "rulesOpened": true,
+   "rulesClosed": true,
+   "rowsAfter": 0,
+   "showAllStays": false,
+   "gamesAfter": 18,
+   "progressBefore": "Games shown: 9 out of 442",
+   "progressAfter": "Games shown: 18 out of 442",
+   "broken": [],
+   "hscroll": false
+  },
+  "errors": []
+ },
+ "tournament-819462.html@1440x900": {
+  "value": {
+   "key": "tournament-819462-1440x900",
+   "before": {
+    "rows": 10,
+    "games": 21
+   },
+   "rulesOpened": true,
+   "rulesClosed": true,
+   "rowsAfter": 10,
+   "showAllStays": false,
+   "gamesAfter": 37,
+   "progressBefore": "Games shown: 21 out of 37",
+   "progressAfter": null,
+   "broken": [],
+   "hscroll": false
+  },
+  "errors": []
+ },
+ "tournament-819462.html@768x1024": {
+  "value": {
+   "key": "tournament-819462-768x1024",
+   "before": {
+    "rows": 10,
+    "games": 12
+   },
+   "rulesOpened": true,
+   "rulesClosed": true,
+   "rowsAfter": 10,
+   "showAllStays": false,
+   "gamesAfter": 24,
+   "progressBefore": "Games shown: 12 out of 37",
+   "progressAfter": "Games shown: 24 out of 37",
+   "broken": [],
+   "hscroll": false
+  },
+  "errors": []
+ },
+ "tournament-819462.html@390x844": {
+  "value": {
+   "key": "tournament-819462-390x844",
+   "before": {
+    "rows": 5,
+    "games": 9
+   },
+   "rulesOpened": true,
+   "rulesClosed": true,
+   "rowsAfter": 5,
+   "showAllStays": false,
+   "gamesAfter": 18,
+   "progressBefore": "Games shown: 9 out of 37",
+   "progressAfter": "Games shown: 18 out of 37",
+   "broken": [],
+   "hscroll": false
+  },
+  "errors": []
+ }
+}

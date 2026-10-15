@@ -72,6 +72,23 @@ def parse(s):
     p = Parser(); p.feed(s); return p.root
 
 
+def sniff(content):
+    head = content[:64]
+    if head[:4] == b'RIFF' and head[8:12] == b'WEBP':
+        return 'image/webp'
+    if head[:8] == b'\x89PNG\r\n\x1a\n':
+        return 'image/png'
+    if head[:3] == b'\xff\xd8\xff':
+        return 'image/jpeg'
+    if head[:4] == b'GIF8':
+        return 'image/gif'
+    if head[4:12] in (b'ftypavif', b'ftypavis'):
+        return 'image/avif'
+    if b'<svg' in content[:512].lower():
+        return 'image/svg+xml'
+    return None
+
+
 def source_key(u):
     m = re.search(r'/plain/(https?://.+)', u)
     return unquote(re.sub(r'@(webp|avif|png|jpeg)$', '', m[1] if m else u))
@@ -92,6 +109,9 @@ class Media:
         with urllib.request.urlopen(req, timeout=30) as r:
             mime = (r.headers.get('content-type') or '').split(';')[0]
             content = r.read()
+        if mime not in EXTS:
+            # Some static files are served as binary/octet-stream; trust the file signature instead.
+            mime = sniff(content) or mime
         if mime not in EXTS:
             raise ValueError('unexpected type ' + mime)
         name = 'audit-' + hashlib.sha256(content).hexdigest()[:20] + EXTS[mime]

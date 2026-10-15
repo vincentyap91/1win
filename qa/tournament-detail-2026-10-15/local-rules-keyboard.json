@@ -1,0 +1,331 @@
+{
+ "1440x900": {
+  "value": {
+   "list": [
+    {
+     "tag": "DIV",
+     "cls": "tournament-card-bottom_actions-kt2HI",
+     "ownerCls": null
+    },
+    {
+     "tag": "BUTTON",
+     "cls": "base_root-ZOkD4 base_size-xl-ZOkD4 base_variant-staticSecondary-ZOkD4 tournament",
+     "owner": "BUTTON",
+     "ownerCls": "base_root-ZOkD4 base_size-xl-ZOkD4 base_variant-staticSecondary-ZOkD4 tournament"
+    },
+    {
+     "tag": "DIV",
+     "cls": "base_view-ZOkD4",
+     "owner": "BUTTON",
+     "ownerCls": "base_root-ZOkD4 base_size-xl-ZOkD4 base_variant-staticSecondary-ZOkD4 tournament"
+    },
+    {
+     "tag": "DIV",
+     "cls": "base_content-ZOkD4",
+     "owner": "BUTTON",
+     "ownerCls": "base_root-ZOkD4 base_size-xl-ZOkD4 base_variant-staticSecondary-ZOkD4 tournament"
+    },
+    {
+     "tag": "A",
+     "cls": "base_root-AENvm base_size-m-regular-AENvm base_variant-secondary-AENvm",
+     "owner": "A",
+     "ownerCls": "base_root-AENvm base_size-m-regular-AENvm base_variant-secondary-AENvm"
+    }
+   ],
+   "focused": true,
+   "opened": true
+  },
+  "errors": []
+ },
+ "390x844": {
+  "value": {
+   "list": [
+    {
+     "tag": "DIV",
+     "cls": "tournament-card-bottom_actions-kt2HI",
+     "ownerCls": null
+    },
+    {
+     "tag": "BUTTON",
+     "cls": "base_root-ZOkD4 base_size-xl-ZOkD4 base_variant-staticSecondary-ZOkD4 tournament",
+     "owner": "BUTTON",
+     "ownerCls": "base_root-ZOkD4 base_size-xl-ZOkD4 base_variant-staticSecondary-ZOkD4 tournament"
+    },
+    {
+     "tag": "DIV",
+     "cls": "base_view-ZOkD4",
+     "owner": "BUTTON",
+     "ownerCls": "base_root-ZOkD4 base_size-xl-ZOkD4 base_variant-staticSecondary-ZOkD4 tournament"
+    },
+    {
+     "tag": "DIV",
+     "cls": "base_content-ZOkD4",
+     "owner": "BUTTON",
+     "ownerCls": "base_root-ZOkD4 base_size-xl-ZOkD4 base_variant-staticSecondary-ZOkD4 tournament"
+    },
+    {
+     "tag": "DIV",
+     "cls": "tournament-card-bottom_actions-kt2HI",
+     "ownerCls": null
+    },
+    {
+     "tag": "BUTTON",
+     "cls": "base_root-ZOkD4 base_size-xl-ZOkD4 base_variant-staticSecondary-ZOkD4 tournament",
+     "owner": "BUTTON",
+     "ownerCls": "base_root-ZOkD4 base_size-xl-ZOkD4 base_variant-staticSecondary-ZOkD4 tournament"
+    },
+    {
+     "tag": "DIV",
+     "cls": "base_view-ZOkD4",
+     "owner": "BUTTON",
+     "ownerCls": "base_root-ZOkD4 base_size-xl-ZOkD4 base_variant-staticSecondary-ZOkD4 tournament"
+    },
+    {
+     "tag": "DIV",
+     "cls": "base_content-ZOkD4",
+     "owner": "BUTTON",
+     "ownerCls": "base_root-ZOkD4 base_size-xl-ZOkD4 base_variant-staticSecondary-ZOkD4 tournament"
+    },
+    {
+     "tag": "DIV",
+     "cls": "tournament-card-bottom_actions-kt2HI",
+     "ownerCls": null
+    },
+    {
+     "tag": "BUTTON",
+     "cls": "base_root-ZOkD4 base_size-xl-ZOkD4 base_variant-staticSecondary-ZOkD4 tournament",
+     "owner": "BUTTON",
+     "ownerCls": "base_root-ZOkD4 base_size-xl-ZOkD4 base_variant-staticSecondary-ZOkD4 tournament"
+    },
+    {
+     "tag": "DIV",
+     "cls": "base_view-ZOkD4",
+     "owner": "BUTTON",
+     "ownerCls": "base_root-ZOkD4 base_size-xl-ZOkD4 base_variant-staticSecondary-ZOkD4 tournament"
+    },
+    {
+     "tag": "DIV",
+     "cls": "base_content-ZOkD4",
+     "owner": "BUTTON",
+     "ownerCls": "base_root-ZOkD4 base_size-xl-ZOkD4 base_variant-staticSecondary-ZOkD4 tournament"
+    },
+    {
+     "tag": "DIV",
+     "cls": "tournament-card-bottom_actions-kt2HI",
+     "ownerCls": null
+    },
+    {
+     "tag": "BUTTON",
+     "cls": "base_root-ZOkD4 base_size-xl-ZOkD4 base_variant-staticSecondary-ZOkD4 tournament",
+     "owner": "BUTTON",
+     "ownerCls": "base_root-ZOkD4 base_size-xl-ZOkD4 base_variant-staticSecondary-ZOkD4 tournament"
+    },
+    {
+     "tag": "DIV",
+     "cls": "base_view-ZOkD4",
+     "owner": "BUTTON",
+     "ownerCls": "base_root-ZOkD4 base_size-xl-ZOkD4 base_variant-staticSecondary-ZOkD4 tournament"
+    },
+    {
+     "tag": "DIV",
+     "cls": "base_content-ZOkD4",
+     "owner": "BUTTON",
+     "ownerCls": "base_root-ZOkD4 base_size-xl-ZOkD4 base_variant-staticSecondary-ZOkD4 tournament"
+    },
+    {
+     "tag": "DIV",
+     "cls": "tournament-card-bottom_actions-kt2HI",
+     "ownerCls": null
+    },
+    {
+     "tag": "BUTTON",
+     "cls": "base_root-ZOkD4 base_size-xl-ZOkD4 base_variant-staticSecondary-ZOkD4 tournament",
+     "owner": "BUTTON",
+     "ownerCls": "base_root-ZOkD4 base_size-xl-ZOkD4 base_variant-staticSecondary-ZOkD4 tournament"
+    },
+    {
+     "tag": "DIV",
+     "cls": "base_view-ZOkD4",
+     "owner": "BUTTON",
+     "ownerCls": "base_root-ZOkD4 base_size-xl-ZOkD4 base_variant-staticSecondary-ZOkD4 tournament"
+    },
+    {
+     "tag": "DIV",
+     "cls": "base_content-ZOkD4",
+     "owner": "BUTTON",
+     "ownerCls": "base_root-ZOkD4 base_size-xl-ZOkD4 base_variant-staticSecondary-ZOkD4 tournament"
+    },
+    {
+     "tag": "DIV",
+     "cls": "tournament-card-bottom_actions-kt2HI",
+     "ownerCls": null
+    },
+    {
+     "tag": "BUTTON",
+     "cls": "base_root-ZOkD4 base_size-xl-ZOkD4 base_variant-staticSecondary-ZOkD4 tournament",
+     "owner": "BUTTON",
+     "ownerCls": "base_root-ZOkD4 base_size-xl-ZOkD4 base_variant-staticSecondary-ZOkD4 tournament"
+    },
+    {
+     "tag": "DIV",
+     "cls": "base_view-ZOkD4",
+     "owner": "BUTTON",
+     "ownerCls": "base_root-ZOkD4 base_size-xl-ZOkD4 base_variant-staticSecondary-ZOkD4 tournament"
+    },
+    {
+     "tag": "DIV",
+     "cls": "base_content-ZOkD4",
+     "owner": "BUTTON",
+     "ownerCls": "base_root-ZOkD4 base_size-xl-ZOkD4 base_variant-staticSecondary-ZOkD4 tournament"
+    },
+    {
+     "tag": "DIV",
+     "cls": "tournament-card-bottom_actions-kt2HI",
+     "ownerCls": null
+    },
+    {
+     "tag": "BUTTON",
+     "cls": "base_root-ZOkD4 base_size-xl-ZOkD4 base_variant-staticSecondary-ZOkD4 tournament",
+     "owner": "BUTTON",
+     "ownerCls": "base_root-ZOkD4 base_size-xl-ZOkD4 base_variant-staticSecondary-ZOkD4 tournament"
+    },
+    {
+     "tag": "DIV",
+     "cls": "base_view-ZOkD4",
+     "owner": "BUTTON",
+     "ownerCls": "base_root-ZOkD4 base_size-xl-ZOkD4 base_variant-staticSecondary-ZOkD4 tournament"
+    },
+    {
+     "tag": "DIV",
+     "cls": "base_content-ZOkD4",
+     "owner": "BUTTON",
+     "ownerCls": "base_root-ZOkD4 base_size-xl-ZOkD4 base_variant-staticSecondary-ZOkD4 tournament"
+    },
+    {
+     "tag": "DIV",
+     "cls": "tournament-card-bottom_actions-kt2HI",
+     "ownerCls": null
+    },
+    {
+     "tag": "BUTTON",
+     "cls": "base_root-ZOkD4 base_size-xl-ZOkD4 base_variant-staticSecondary-ZOkD4 tournament",
+     "owner": "BUTTON",
+     "ownerCls": "base_root-ZOkD4 base_size-xl-ZOkD4 base_variant-staticSecondary-ZOkD4 tournament"
+    },
+    {
+     "tag": "DIV",
+     "cls": "base_view-ZOkD4",
+     "owner": "BUTTON",
+     "ownerCls": "base_root-ZOkD4 base_size-xl-ZOkD4 base_variant-staticSecondary-ZOkD4 tournament"
+    },
+    {
+     "tag": "DIV",
+     "cls": "base_content-ZOkD4",
+     "owner": "BUTTON",
+     "ownerCls": "base_root-ZOkD4 base_size-xl-ZOkD4 base_variant-staticSecondary-ZOkD4 tournament"
+    },
+    {
+     "tag": "DIV",
+     "cls": "tournament-card-bottom_actions-kt2HI",
+     "ownerCls": null
+    },
+    {
+     "tag": "BUTTON",
+     "cls": "base_root-ZOkD4 base_size-xl-ZOkD4 base_variant-staticSecondary-ZOkD4 tournament",
+     "owner": "BUTTON",
+     "ownerCls": "base_root-ZOkD4 base_size-xl-ZOkD4 base_variant-staticSecondary-ZOkD4 tournament"
+    },
+    {
+     "tag": "DIV",
+     "cls": "base_view-ZOkD4",
+     "owner": "BUTTON",
+     "ownerCls": "base_root-ZOkD4 base_size-xl-ZOkD4 base_variant-staticSecondary-ZOkD4 tournament"
+    },
+    {
+     "tag": "DIV",
+     "cls": "base_content-ZOkD4",
+     "owner": "BUTTON",
+     "ownerCls": "base_root-ZOkD4 base_size-xl-ZOkD4 base_variant-staticSecondary-ZOkD4 tournament"
+    },
+    {
+     "tag": "DIV",
+     "cls": "tournament-card-bottom_actions-kt2HI",
+     "ownerCls": null
+    },
+    {
+     "tag": "BUTTON",
+     "cls": "base_root-ZOkD4 base_size-xl-ZOkD4 base_variant-staticSecondary-ZOkD4 tournament",
+     "owner": "BUTTON",
+     "ownerCls": "base_root-ZOkD4 base_size-xl-ZOkD4 base_variant-staticSecondary-ZOkD4 tournament"
+    },
+    {
+     "tag": "DIV",
+     "cls": "base_view-ZOkD4",
+     "owner": "BUTTON",
+     "ownerCls": "base_root-ZOkD4 base_size-xl-ZOkD4 base_variant-staticSecondary-ZOkD4 tournament"
+    },
+    {
+     "tag": "DIV",
+     "cls": "base_content-ZOkD4",
+     "owner": "BUTTON",
+     "ownerCls": "base_root-ZOkD4 base_size-xl-ZOkD4 base_variant-staticSecondary-ZOkD4 tournament"
+    },
+    {
+     "tag": "DIV",
+     "cls": "tournament-card-bottom_actions-kt2HI",
+     "ownerCls": null
+    },
+    {
+     "tag": "BUTTON",
+     "cls": "base_root-ZOkD4 base_size-xl-ZOkD4 base_variant-staticSecondary-ZOkD4 tournament",
+     "owner": "BUTTON",
+     "ownerCls": "base_root-ZOkD4 base_size-xl-ZOkD4 base_variant-staticSecondary-ZOkD4 tournament"
+    },
+    {
+     "tag": "DIV",
+     "cls": "base_view-ZOkD4",
+     "owner": "BUTTON",
+     "ownerCls": "base_root-ZOkD4 base_size-xl-ZOkD4 base_variant-staticSecondary-ZOkD4 tournament"
+    },
+    {
+     "tag": "DIV",
+     "cls": "base_content-ZOkD4",
+     "owner": "BUTTON",
+     "ownerCls": "base_root-ZOkD4 base_size-xl-ZOkD4 base_variant-staticSecondary-ZOkD4 tournament"
+    },
+    {
+     "tag": "DIV",
+     "cls": "tournament-card-bottom_actions-kt2HI",
+     "ownerCls": null
+    },
+    {
+     "tag": "BUTTON",
+     "cls": "base_root-ZOkD4 base_size-xl-ZOkD4 base_variant-staticSecondary-ZOkD4 tournament",
+     "owner": "BUTTON",
+     "ownerCls": "base_root-ZOkD4 base_size-xl-ZOkD4 base_variant-staticSecondary-ZOkD4 tournament"
+    },
+    {
+     "tag": "DIV",
+     "cls": "base_view-ZOkD4",
+     "owner": "BUTTON",
+     "ownerCls": "base_root-ZOkD4 base_size-xl-ZOkD4 base_variant-staticSecondary-ZOkD4 tournament"
+    },
+    {
+     "tag": "DIV",
+     "cls": "base_content-ZOkD4",
+     "owner": "BUTTON",
+     "ownerCls": "base_root-ZOkD4 base_size-xl-ZOkD4 base_variant-staticSecondary-ZOkD4 tournament"
+    },
+    {
+     "tag": "A",
+     "cls": "base_root-AENvm base_size-m-regular-AENvm base_variant-secondary-AENvm",
+     "owner": "A",
+     "ownerCls": "base_root-AENvm base_size-m-regular-AENvm base_variant-secondary-AENvm"
+    }
+   ],
+   "focused": true,
+   "opened": true
+  },
+  "errors": []
+ }
+}

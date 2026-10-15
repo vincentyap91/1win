@@ -1,0 +1,5722 @@
+{
+  "betwave.html": {
+    "start": {
+      "sidebar": 300,
+      "compact": false,
+      "main": 328,
+      "toggle": true,
+      "expanded": "true",
+      "bodyCls": false,
+      "overflow": false
+    },
+    "collapsed": {
+      "sidebar": 84,
+      "compact": true,
+      "main": 112,
+      "toggle": true,
+      "expanded": "false",
+      "bodyCls": true,
+      "overflow": false
+    },
+    "persisted": {
+      "sidebar": 84,
+      "compact": true,
+      "main": 112,
+      "toggle": true,
+      "expanded": "false",
+      "bodyCls": true,
+      "overflow": false
+    },
+    "restored": {
+      "sidebar": 300,
+      "compact": false,
+      "main": 328,
+      "toggle": true,
+      "expanded": "true",
+      "bodyCls": false,
+      "overflow": false
+    },
+    "errors": [],
+    "ok": true
+  },
+  "blog.html": {
+    "start": {
+      "sidebar": 300,
+      "compact": false,
+      "main": 280,
+      "toggle": true,
+      "expanded": "true",
+      "bodyCls": false,
+      "overflow": false
+    },
+    "collapsed": {
+      "sidebar": 84,
+      "compact": true,
+      "main": 64,
+      "toggle": true,
+      "expanded": "false",
+      "bodyCls": true,
+      "overflow": false
+    },
+    "persisted": {
+      "sidebar": 84,
+      "compact": true,
+      "main": 64,
+      "toggle": true,
+      "expanded": "false",
+      "bodyCls": true,
+      "overflow": false
+    },
+    "restored": {
+      "sidebar": 300,
+      "compact": false,
+      "main": 280,
+      "toggle": true,
+      "expanded": "true",
+      "bodyCls": false,
+      "overflow": false
+    },
+    "errors": [],
+    "ok": true
+  },
+  "bonuses.html": {
+    "start": {
+      "sidebar": 300,
+      "compact": false,
+      "main": 280,
+      "toggle": true,
+      "expanded": "true",
+      "bodyCls": false,
+      "overflow": false
+    },
+    "collapsed": {
+      "sidebar": 84,
+      "compact": true,
+      "main": 64,
+      "toggle": true,
+      "expanded": "false",
+      "bodyCls": true,
+      "overflow": false
+    },
+    "persisted": {
+      "sidebar": 84,
+      "compact": true,
+      "main": 64,
+      "toggle": true,
+      "expanded": "false",
+      "bodyCls": true,
+      "overflow": false
+    },
+    "restored": {
+      "sidebar": 300,
+      "compact": false,
+      "main": 280,
+      "toggle": true,
+      "expanded": "true",
+      "bodyCls": false,
+      "overflow": false
+    },
+    "errors": [],
+    "ok": true
+  },
+  "casino-1win.html": {
+    "start": {
+      "sidebar": 300,
+      "compact": false,
+      "main": 280,
+      "toggle": true,
+      "expanded": "true",
+      "bodyCls": false,
+      "overflow": false
+    },
+    "collapsed": {
+      "sidebar": 84,
+      "compact": true,
+      "main": 64,
+      "toggle": true,
+      "expanded": "false",
+      "bodyCls": true,
+      "overflow": false
+    },
+    "persisted": {
+      "sidebar": 84,
+      "compact": true,
+      "main": 64,
+      "toggle": true,
+      "expanded": "false",
+      "bodyCls": true,
+      "overflow": false
+    },
+    "restored": {
+      "sidebar": 300,
+      "compact": false,
+      "main": 280,
+      "toggle": true,
+      "expanded": "true",
+      "bodyCls": false,
+      "overflow": false
+    },
+    "errors": [],
+    "ok": true
+  },
+  "casino-bonus-buy.html": {
+    "start": {
+      "sidebar": 300,
+      "compact": false,
+      "main": 280,
+      "toggle": true,
+      "expanded": "true",
+      "bodyCls": false,
+      "overflow": false
+    },
+    "collapsed": {
+      "sidebar": 84,
+      "compact": true,
+      "main": 64,
+      "toggle": true,
+      "expanded": "false",
+      "bodyCls": true,
+      "overflow": false
+    },
+    "persisted": {
+      "sidebar": 84,
+      "compact": true,
+      "main": 64,
+      "toggle": true,
+      "expanded": "false",
+      "bodyCls": true,
+      "overflow": false
+    },
+    "restored": {
+      "sidebar": 300,
+      "compact": false,
+      "main": 280,
+      "toggle": true,
+      "expanded": "true",
+      "bodyCls": false,
+      "overflow": false
+    },
+    "errors": [],
+    "ok": true
+  },
+  "casino-bonus-wagering.html": {
+    "start": {
+      "sidebar": 300,
+      "compact": false,
+      "main": 280,
+      "toggle": true,
+      "expanded": "true",
+      "bodyCls": false,
+      "overflow": false
+    },
+    "collapsed": {
+      "sidebar": 84,
+      "compact": true,
+      "main": 64,
+      "toggle": true,
+      "expanded": "false",
+      "bodyCls": true,
+      "overflow": false
+    },
+    "persisted": {
+      "sidebar": 84,
+      "compact": true,
+      "main": 64,
+      "toggle": true,
+      "expanded": "false",
+      "bodyCls": true,
+      "overflow": false
+    },
+    "restored": {
+      "sidebar": 300,
+      "compact": false,
+      "main": 280,
+      "toggle": true,
+      "expanded": "true",
+      "bodyCls": false,
+      "overflow": false
+    },
+    "errors": [],
+    "ok": true
+  },
+  "casino-fishing.html": {
+    "start": {
+      "sidebar": 300,
+      "compact": false,
+      "main": 280,
+      "toggle": true,
+      "expanded": "true",
+      "bodyCls": false,
+      "overflow": false
+    },
+    "collapsed": {
+      "sidebar": 84,
+      "compact": true,
+      "main": 64,
+      "toggle": true,
+      "expanded": "false",
+      "bodyCls": true,
+      "overflow": false
+    },
+    "persisted": {
+      "sidebar": 84,
+      "compact": true,
+      "main": 64,
+      "toggle": true,
+      "expanded": "false",
+      "bodyCls": true,
+      "overflow": false
+    },
+    "restored": {
+      "sidebar": 300,
+      "compact": false,
+      "main": 280,
+      "toggle": true,
+      "expanded": "true",
+      "bodyCls": false,
+      "overflow": false
+    },
+    "errors": [],
+    "ok": true
+  },
+  "casino-jili.html": {
+    "start": {
+      "sidebar": 300,
+      "compact": false,
+      "main": 280,
+      "toggle": true,
+      "expanded": "true",
+      "bodyCls": false,
+      "overflow": false
+    },
+    "collapsed": {
+      "sidebar": 84,
+      "compact": true,
+      "main": 64,
+      "toggle": true,
+      "expanded": "false",
+      "bodyCls": true,
+      "overflow": false
+    },
+    "persisted": {
+      "sidebar": 84,
+      "compact": true,
+      "main": 64,
+      "toggle": true,
+      "expanded": "false",
+      "bodyCls": true,
+      "overflow": false
+    },
+    "restored": {
+      "sidebar": 300,
+      "compact": false,
+      "main": 280,
+      "toggle": true,
+      "expanded": "true",
+      "bodyCls": false,
+      "overflow": false
+    },
+    "errors": [],
+    "ok": true
+  },
+  "casino-live-1win-live.html": {
+    "start": {
+      "sidebar": 300,
+      "compact": false,
+      "main": 280,
+      "toggle": true,
+      "expanded": "true",
+      "bodyCls": false,
+      "overflow": false
+    },
+    "collapsed": {
+      "sidebar": 84,
+      "compact": true,
+      "main": 64,
+      "toggle": true,
+      "expanded": "false",
+      "bodyCls": true,
+      "overflow": false
+    },
+    "persisted": {
+      "sidebar": 84,
+      "compact": true,
+      "main": 64,
+      "toggle": true,
+      "expanded": "false",
+      "bodyCls": true,
+      "overflow": false
+    },
+    "restored": {
+      "sidebar": 300,
+      "compact": false,
+      "main": 280,
+      "toggle": true,
+      "expanded": "true",
+      "bodyCls": false,
+      "overflow": false
+    },
+    "errors": [],
+    "ok": true
+  },
+  "casino-live-ae-sexy.html": {
+    "start": {
+      "sidebar": 300,
+      "compact": false,
+      "main": 280,
+      "toggle": true,
+      "expanded": "true",
+      "bodyCls": false,
+      "overflow": false
+    },
+    "collapsed": {
+      "sidebar": 84,
+      "compact": true,
+      "main": 64,
+      "toggle": true,
+      "expanded": "false",
+      "bodyCls": true,
+      "overflow": false
+    },
+    "persisted": {
+      "sidebar": 84,
+      "compact": true,
+      "main": 64,
+      "toggle": true,
+      "expanded": "false",
+      "bodyCls": true,
+      "overflow": false
+    },
+    "restored": {
+      "sidebar": 300,
+      "compact": false,
+      "main": 280,
+      "toggle": true,
+      "expanded": "true",
+      "bodyCls": false,
+      "overflow": false
+    },
+    "errors": [],
+    "ok": true
+  },
+  "casino-live-baccarat.html": {
+    "start": {
+      "sidebar": 300,
+      "compact": false,
+      "main": 280,
+      "toggle": true,
+      "expanded": "true",
+      "bodyCls": false,
+      "overflow": false
+    },
+    "collapsed": {
+      "sidebar": 84,
+      "compact": true,
+      "main": 64,
+      "toggle": true,
+      "expanded": "false",
+      "bodyCls": true,
+      "overflow": false
+    },
+    "persisted": {
+      "sidebar": 84,
+      "compact": true,
+      "main": 64,
+      "toggle": true,
+      "expanded": "false",
+      "bodyCls": true,
+      "overflow": false
+    },
+    "restored": {
+      "sidebar": 300,
+      "compact": false,
+      "main": 280,
+      "toggle": true,
+      "expanded": "true",
+      "bodyCls": false,
+      "overflow": false
+    },
+    "errors": [],
+    "ok": true
+  },
+  "casino-live-blackjack.html": {
+    "start": {
+      "sidebar": 300,
+      "compact": false,
+      "main": 280,
+      "toggle": true,
+      "expanded": "true",
+      "bodyCls": false,
+      "overflow": false
+    },
+    "collapsed": {
+      "sidebar": 84,
+      "compact": true,
+      "main": 64,
+      "toggle": true,
+      "expanded": "false",
+      "bodyCls": true,
+      "overflow": false
+    },
+    "persisted": {
+      "sidebar": 84,
+      "compact": true,
+      "main": 64,
+      "toggle": true,
+      "expanded": "false",
+      "bodyCls": true,
+      "overflow": false
+    },
+    "restored": {
+      "sidebar": 300,
+      "compact": false,
+      "main": 280,
+      "toggle": true,
+      "expanded": "true",
+      "bodyCls": false,
+      "overflow": false
+    },
+    "errors": [],
+    "ok": true
+  },
+  "casino-live-dragon-tiger.html": {
+    "start": {
+      "sidebar": 300,
+      "compact": false,
+      "main": 280,
+      "toggle": true,
+      "expanded": "true",
+      "bodyCls": false,
+      "overflow": false
+    },
+    "collapsed": {
+      "sidebar": 84,
+      "compact": true,
+      "main": 64,
+      "toggle": true,
+      "expanded": "false",
+      "bodyCls": true,
+      "overflow": false
+    },
+    "persisted": {
+      "sidebar": 84,
+      "compact": true,
+      "main": 64,
+      "toggle": true,
+      "expanded": "false",
+      "bodyCls": true,
+      "overflow": false
+    },
+    "restored": {
+      "sidebar": 300,
+      "compact": false,
+      "main": 280,
+      "toggle": true,
+      "expanded": "true",
+      "bodyCls": false,
+      "overflow": false
+    },
+    "errors": [],
+    "ok": true
+  },
+  "casino-live-emperors-collection.html": {
+    "start": {
+      "sidebar": 300,
+      "compact": false,
+      "main": 280,
+      "toggle": true,
+      "expanded": "true",
+      "bodyCls": false,
+      "overflow": false
+    },
+    "collapsed": {
+      "sidebar": 84,
+      "compact": true,
+      "main": 64,
+      "toggle": true,
+      "expanded": "false",
+      "bodyCls": true,
+      "overflow": false
+    },
+    "persisted": {
+      "sidebar": 84,
+      "compact": true,
+      "main": 64,
+      "toggle": true,
+      "expanded": "false",
+      "bodyCls": true,
+      "overflow": false
+    },
+    "restored": {
+      "sidebar": 300,
+      "compact": false,
+      "main": 280,
+      "toggle": true,
+      "expanded": "true",
+      "bodyCls": false,
+      "overflow": false
+    },
+    "errors": [],
+    "ok": true
+  },
+  "casino-live-evolution.html": {
+    "start": {
+      "sidebar": 300,
+      "compact": false,
+      "main": 280,
+      "toggle": true,
+      "expanded": "true",
+      "bodyCls": false,
+      "overflow": false
+    },
+    "collapsed": {
+      "sidebar": 84,
+      "compact": true,
+      "main": 64,
+      "toggle": true,
+      "expanded": "false",
+      "bodyCls": true,
+      "overflow": false
+    },
+    "persisted": {
+      "sidebar": 84,
+      "compact": true,
+      "main": 64,
+      "toggle": true,
+      "expanded": "false",
+      "bodyCls": true,
+      "overflow": false
+    },
+    "restored": {
+      "sidebar": 300,
+      "compact": false,
+      "main": 280,
+      "toggle": true,
+      "expanded": "true",
+      "bodyCls": false,
+      "overflow": false
+    },
+    "errors": [],
+    "ok": true
+  },
+  "casino-live-game-shows.html": {
+    "start": {
+      "sidebar": 300,
+      "compact": false,
+      "main": 280,
+      "toggle": true,
+      "expanded": "true",
+      "bodyCls": false,
+      "overflow": false
+    },
+    "collapsed": {
+      "sidebar": 84,
+      "compact": true,
+      "main": 64,
+      "toggle": true,
+      "expanded": "false",
+      "bodyCls": true,
+      "overflow": false
+    },
+    "persisted": {
+      "sidebar": 84,
+      "compact": true,
+      "main": 64,
+      "toggle": true,
+      "expanded": "false",
+      "bodyCls": true,
+      "overflow": false
+    },
+    "restored": {
+      "sidebar": 300,
+      "compact": false,
+      "main": 280,
+      "toggle": true,
+      "expanded": "true",
+      "bodyCls": false,
+      "overflow": false
+    },
+    "errors": [],
+    "ok": true
+  },
+  "casino-live-new-live-games.html": {
+    "start": {
+      "sidebar": 300,
+      "compact": false,
+      "main": 280,
+      "toggle": true,
+      "expanded": "true",
+      "bodyCls": false,
+      "overflow": false
+    },
+    "collapsed": {
+      "sidebar": 84,
+      "compact": true,
+      "main": 64,
+      "toggle": true,
+      "expanded": "false",
+      "bodyCls": true,
+      "overflow": false
+    },
+    "persisted": {
+      "sidebar": 84,
+      "compact": true,
+      "main": 64,
+      "toggle": true,
+      "expanded": "false",
+      "bodyCls": true,
+      "overflow": false
+    },
+    "restored": {
+      "sidebar": 300,
+      "compact": false,
+      "main": 280,
+      "toggle": true,
+      "expanded": "true",
+      "bodyCls": false,
+      "overflow": false
+    },
+    "errors": [],
+    "ok": true
+  },
+  "casino-live-playtech-live.html": {
+    "start": {
+      "sidebar": 300,
+      "compact": false,
+      "main": 280,
+      "toggle": true,
+      "expanded": "true",
+      "bodyCls": false,
+      "overflow": false
+    },
+    "collapsed": {
+      "sidebar": 84,
+      "compact": true,
+      "main": 64,
+      "toggle": true,
+      "expanded": "false",
+      "bodyCls": true,
+      "overflow": false
+    },
+    "persisted": {
+      "sidebar": 84,
+      "compact": true,
+      "main": 64,
+      "toggle": true,
+      "expanded": "false",
+      "bodyCls": true,
+      "overflow": false
+    },
+    "restored": {
+      "sidebar": 300,
+      "compact": false,
+      "main": 280,
+      "toggle": true,
+      "expanded": "true",
+      "bodyCls": false,
+      "overflow": false
+    },
+    "errors": [],
+    "ok": true
+  },
+  "casino-live-poker.html": {
+    "start": {
+      "sidebar": 300,
+      "compact": false,
+      "main": 280,
+      "toggle": true,
+      "expanded": "true",
+      "bodyCls": false,
+      "overflow": false
+    },
+    "collapsed": {
+      "sidebar": 84,
+      "compact": true,
+      "main": 64,
+      "toggle": true,
+      "expanded": "false",
+      "bodyCls": true,
+      "overflow": false
+    },
+    "persisted": {
+      "sidebar": 84,
+      "compact": true,
+      "main": 64,
+      "toggle": true,
+      "expanded": "false",
+      "bodyCls": true,
+      "overflow": false
+    },
+    "restored": {
+      "sidebar": 300,
+      "compact": false,
+      "main": 280,
+      "toggle": true,
+      "expanded": "true",
+      "bodyCls": false,
+      "overflow": false
+    },
+    "errors": [],
+    "ok": true
+  },
+  "casino-live-pragmatic-play.html": {
+    "start": {
+      "sidebar": 300,
+      "compact": false,
+      "main": 280,
+      "toggle": true,
+      "expanded": "true",
+      "bodyCls": false,
+      "overflow": false
+    },
+    "collapsed": {
+      "sidebar": 84,
+      "compact": true,
+      "main": 64,
+      "toggle": true,
+      "expanded": "false",
+      "bodyCls": true,
+      "overflow": false
+    },
+    "persisted": {
+      "sidebar": 84,
+      "compact": true,
+      "main": 64,
+      "toggle": true,
+      "expanded": "false",
+      "bodyCls": true,
+      "overflow": false
+    },
+    "restored": {
+      "sidebar": 300,
+      "compact": false,
+      "main": 280,
+      "toggle": true,
+      "expanded": "true",
+      "bodyCls": false,
+      "overflow": false
+    },
+    "errors": [],
+    "ok": true
+  },
+  "casino-live-roulette.html": {
+    "start": {
+      "sidebar": 300,
+      "compact": false,
+      "main": 280,
+      "toggle": true,
+      "expanded": "true",
+      "bodyCls": false,
+      "overflow": false
+    },
+    "collapsed": {
+      "sidebar": 84,
+      "compact": true,
+      "main": 64,
+      "toggle": true,
+      "expanded": "false",
+      "bodyCls": true,
+      "overflow": false
+    },
+    "persisted": {
+      "sidebar": 84,
+      "compact": true,
+      "main": 64,
+      "toggle": true,
+      "expanded": "false",
+      "bodyCls": true,
+      "overflow": false
+    },
+    "restored": {
+      "sidebar": 300,
+      "compact": false,
+      "main": 280,
+      "toggle": true,
+      "expanded": "true",
+      "bodyCls": false,
+      "overflow": false
+    },
+    "errors": [],
+    "ok": true
+  },
+  "casino-live-sa-gaming.html": {
+    "start": {
+      "sidebar": 300,
+      "compact": false,
+      "main": 280,
+      "toggle": true,
+      "expanded": "true",
+      "bodyCls": false,
+      "overflow": false
+    },
+    "collapsed": {
+      "sidebar": 84,
+      "compact": true,
+      "main": 64,
+      "toggle": true,
+      "expanded": "false",
+      "bodyCls": true,
+      "overflow": false
+    },
+    "persisted": {
+      "sidebar": 84,
+      "compact": true,
+      "main": 64,
+      "toggle": true,
+      "expanded": "false",
+      "bodyCls": true,
+      "overflow": false
+    },
+    "restored": {
+      "sidebar": 300,
+      "compact": false,
+      "main": 280,
+      "toggle": true,
+      "expanded": "true",
+      "bodyCls": false,
+      "overflow": false
+    },
+    "errors": [],
+    "ok": true
+  },
+  "casino-live-sic-bo.html": {
+    "start": {
+      "sidebar": 300,
+      "compact": false,
+      "main": 280,
+      "toggle": true,
+      "expanded": "true",
+      "bodyCls": false,
+      "overflow": false
+    },
+    "collapsed": {
+      "sidebar": 84,
+      "compact": true,
+      "main": 64,
+      "toggle": true,
+      "expanded": "false",
+      "bodyCls": true,
+      "overflow": false
+    },
+    "persisted": {
+      "sidebar": 84,
+      "compact": true,
+      "main": 64,
+      "toggle": true,
+      "expanded": "false",
+      "bodyCls": true,
+      "overflow": false
+    },
+    "restored": {
+      "sidebar": 300,
+      "compact": false,
+      "main": 280,
+      "toggle": true,
+      "expanded": "true",
+      "bodyCls": false,
+      "overflow": false
+    },
+    "errors": [],
+    "ok": true
+  },
+  "casino-live.html": {
+    "start": {
+      "sidebar": 300,
+      "compact": false,
+      "main": 280,
+      "toggle": true,
+      "expanded": "true",
+      "bodyCls": false,
+      "overflow": false
+    },
+    "collapsed": {
+      "sidebar": 84,
+      "compact": true,
+      "main": 64,
+      "toggle": true,
+      "expanded": "false",
+      "bodyCls": true,
+      "overflow": false
+    },
+    "persisted": {
+      "sidebar": 84,
+      "compact": true,
+      "main": 64,
+      "toggle": true,
+      "expanded": "false",
+      "bodyCls": true,
+      "overflow": false
+    },
+    "restored": {
+      "sidebar": 300,
+      "compact": false,
+      "main": 280,
+      "toggle": true,
+      "expanded": "true",
+      "bodyCls": false,
+      "overflow": false
+    },
+    "errors": [],
+    "ok": true
+  },
+  "casino-new.html": {
+    "start": {
+      "sidebar": 300,
+      "compact": false,
+      "main": 280,
+      "toggle": true,
+      "expanded": "true",
+      "bodyCls": false,
+      "overflow": false
+    },
+    "collapsed": {
+      "sidebar": 84,
+      "compact": true,
+      "main": 64,
+      "toggle": true,
+      "expanded": "false",
+      "bodyCls": true,
+      "overflow": false
+    },
+    "persisted": {
+      "sidebar": 84,
+      "compact": true,
+      "main": 64,
+      "toggle": true,
+      "expanded": "false",
+      "bodyCls": true,
+      "overflow": false
+    },
+    "restored": {
+      "sidebar": 300,
+      "compact": false,
+      "main": 280,
+      "toggle": true,
+      "expanded": "true",
+      "bodyCls": false,
+      "overflow": false
+    },
+    "errors": [],
+    "ok": true
+  },
+  "casino-only-1win.html": {
+    "start": {
+      "sidebar": 300,
+      "compact": false,
+      "main": 280,
+      "toggle": true,
+      "expanded": "true",
+      "bodyCls": false,
+      "overflow": false
+    },
+    "collapsed": {
+      "sidebar": 84,
+      "compact": true,
+      "main": 64,
+      "toggle": true,
+      "expanded": "false",
+      "bodyCls": true,
+      "overflow": false
+    },
+    "persisted": {
+      "sidebar": 84,
+      "compact": true,
+      "main": 64,
+      "toggle": true,
+      "expanded": "false",
+      "bodyCls": true,
+      "overflow": false
+    },
+    "restored": {
+      "sidebar": 300,
+      "compact": false,
+      "main": 280,
+      "toggle": true,
+      "expanded": "true",
+      "bodyCls": false,
+      "overflow": false
+    },
+    "errors": [],
+    "ok": true
+  },
+  "casino-play.html": {
+    "start": {
+      "sidebar": 300,
+      "compact": false,
+      "main": 280,
+      "toggle": true,
+      "expanded": "true",
+      "bodyCls": false,
+      "overflow": false
+    },
+    "collapsed": {
+      "sidebar": 84,
+      "compact": true,
+      "main": 64,
+      "toggle": true,
+      "expanded": "false",
+      "bodyCls": true,
+      "overflow": false
+    },
+    "persisted": {
+      "sidebar": 84,
+      "compact": true,
+      "main": 64,
+      "toggle": true,
+      "expanded": "false",
+      "bodyCls": true,
+      "overflow": false
+    },
+    "restored": {
+      "sidebar": 300,
+      "compact": false,
+      "main": 280,
+      "toggle": true,
+      "expanded": "true",
+      "bodyCls": false,
+      "overflow": false
+    },
+    "errors": [],
+    "ok": true
+  },
+  "casino-providers.html": {
+    "start": {
+      "sidebar": 300,
+      "compact": false,
+      "main": 280,
+      "toggle": true,
+      "expanded": "true",
+      "bodyCls": false,
+      "overflow": false
+    },
+    "collapsed": {
+      "sidebar": 84,
+      "compact": true,
+      "main": 64,
+      "toggle": true,
+      "expanded": "false",
+      "bodyCls": true,
+      "overflow": false
+    },
+    "persisted": {
+      "sidebar": 84,
+      "compact": true,
+      "main": 64,
+      "toggle": true,
+      "expanded": "false",
+      "bodyCls": true,
+      "overflow": false
+    },
+    "restored": {
+      "sidebar": 300,
+      "compact": false,
+      "main": 280,
+      "toggle": true,
+      "expanded": "true",
+      "bodyCls": false,
+      "overflow": false
+    },
+    "errors": [],
+    "ok": true
+  },
+  "casino-quick-1win-games.html": {
+    "start": {
+      "sidebar": 300,
+      "compact": false,
+      "main": 280,
+      "toggle": true,
+      "expanded": "true",
+      "bodyCls": false,
+      "overflow": false
+    },
+    "collapsed": {
+      "sidebar": 84,
+      "compact": true,
+      "main": 64,
+      "toggle": true,
+      "expanded": "false",
+      "bodyCls": true,
+      "overflow": false
+    },
+    "persisted": {
+      "sidebar": 84,
+      "compact": true,
+      "main": 64,
+      "toggle": true,
+      "expanded": "false",
+      "bodyCls": true,
+      "overflow": false
+    },
+    "restored": {
+      "sidebar": 300,
+      "compact": false,
+      "main": 280,
+      "toggle": true,
+      "expanded": "true",
+      "bodyCls": false,
+      "overflow": false
+    },
+    "errors": [],
+    "ok": true
+  },
+  "casino-quick-chicken-games.html": {
+    "start": {
+      "sidebar": 300,
+      "compact": false,
+      "main": 280,
+      "toggle": true,
+      "expanded": "true",
+      "bodyCls": false,
+      "overflow": false
+    },
+    "collapsed": {
+      "sidebar": 84,
+      "compact": true,
+      "main": 64,
+      "toggle": true,
+      "expanded": "false",
+      "bodyCls": true,
+      "overflow": false
+    },
+    "persisted": {
+      "sidebar": 84,
+      "compact": true,
+      "main": 64,
+      "toggle": true,
+      "expanded": "false",
+      "bodyCls": true,
+      "overflow": false
+    },
+    "restored": {
+      "sidebar": 300,
+      "compact": false,
+      "main": 280,
+      "toggle": true,
+      "expanded": "true",
+      "bodyCls": false,
+      "overflow": false
+    },
+    "errors": [],
+    "ok": true
+  },
+  "casino-quick-crash-games.html": {
+    "start": {
+      "sidebar": 300,
+      "compact": false,
+      "main": 280,
+      "toggle": true,
+      "expanded": "true",
+      "bodyCls": false,
+      "overflow": false
+    },
+    "collapsed": {
+      "sidebar": 84,
+      "compact": true,
+      "main": 64,
+      "toggle": true,
+      "expanded": "false",
+      "bodyCls": true,
+      "overflow": false
+    },
+    "persisted": {
+      "sidebar": 84,
+      "compact": true,
+      "main": 64,
+      "toggle": true,
+      "expanded": "false",
+      "bodyCls": true,
+      "overflow": false
+    },
+    "restored": {
+      "sidebar": 300,
+      "compact": false,
+      "main": 280,
+      "toggle": true,
+      "expanded": "true",
+      "bodyCls": false,
+      "overflow": false
+    },
+    "errors": [],
+    "ok": true
+  },
+  "casino-quick-lotteries.html": {
+    "start": {
+      "sidebar": 300,
+      "compact": false,
+      "main": 280,
+      "toggle": true,
+      "expanded": "true",
+      "bodyCls": false,
+      "overflow": false
+    },
+    "collapsed": {
+      "sidebar": 84,
+      "compact": true,
+      "main": 64,
+      "toggle": true,
+      "expanded": "false",
+      "bodyCls": true,
+      "overflow": false
+    },
+    "persisted": {
+      "sidebar": 84,
+      "compact": true,
+      "main": 64,
+      "toggle": true,
+      "expanded": "false",
+      "bodyCls": true,
+      "overflow": false
+    },
+    "restored": {
+      "sidebar": 300,
+      "compact": false,
+      "main": 280,
+      "toggle": true,
+      "expanded": "true",
+      "bodyCls": false,
+      "overflow": false
+    },
+    "errors": [],
+    "ok": true
+  },
+  "casino-quick-mines.html": {
+    "start": {
+      "sidebar": 300,
+      "compact": false,
+      "main": 280,
+      "toggle": true,
+      "expanded": "true",
+      "bodyCls": false,
+      "overflow": false
+    },
+    "collapsed": {
+      "sidebar": 84,
+      "compact": true,
+      "main": 64,
+      "toggle": true,
+      "expanded": "false",
+      "bodyCls": true,
+      "overflow": false
+    },
+    "persisted": {
+      "sidebar": 84,
+      "compact": true,
+      "main": 64,
+      "toggle": true,
+      "expanded": "false",
+      "bodyCls": true,
+      "overflow": false
+    },
+    "restored": {
+      "sidebar": 300,
+      "compact": false,
+      "main": 280,
+      "toggle": true,
+      "expanded": "true",
+      "bodyCls": false,
+      "overflow": false
+    },
+    "errors": [],
+    "ok": true
+  },
+  "casino-quick-plinko.html": {
+    "start": {
+      "sidebar": 300,
+      "compact": false,
+      "main": 280,
+      "toggle": true,
+      "expanded": "true",
+      "bodyCls": false,
+      "overflow": false
+    },
+    "collapsed": {
+      "sidebar": 84,
+      "compact": true,
+      "main": 64,
+      "toggle": true,
+      "expanded": "false",
+      "bodyCls": true,
+      "overflow": false
+    },
+    "persisted": {
+      "sidebar": 84,
+      "compact": true,
+      "main": 64,
+      "toggle": true,
+      "expanded": "false",
+      "bodyCls": true,
+      "overflow": false
+    },
+    "restored": {
+      "sidebar": 300,
+      "compact": false,
+      "main": 280,
+      "toggle": true,
+      "expanded": "true",
+      "bodyCls": false,
+      "overflow": false
+    },
+    "errors": [],
+    "ok": true
+  },
+  "casino-quick-sport.html": {
+    "start": {
+      "sidebar": 300,
+      "compact": false,
+      "main": 280,
+      "toggle": true,
+      "expanded": "true",
+      "bodyCls": false,
+      "overflow": false
+    },
+    "collapsed": {
+      "sidebar": 84,
+      "compact": true,
+      "main": 64,
+      "toggle": true,
+      "expanded": "false",
+      "bodyCls": true,
+      "overflow": false
+    },
+    "persisted": {
+      "sidebar": 84,
+      "compact": true,
+      "main": 64,
+      "toggle": true,
+      "expanded": "false",
+      "bodyCls": true,
+      "overflow": false
+    },
+    "restored": {
+      "sidebar": 300,
+      "compact": false,
+      "main": 280,
+      "toggle": true,
+      "expanded": "true",
+      "bodyCls": false,
+      "overflow": false
+    },
+    "errors": [],
+    "ok": true
+  },
+  "casino-quick.html": {
+    "start": {
+      "sidebar": 300,
+      "compact": false,
+      "main": 280,
+      "toggle": true,
+      "expanded": "true",
+      "bodyCls": false,
+      "overflow": false
+    },
+    "collapsed": {
+      "sidebar": 84,
+      "compact": true,
+      "main": 64,
+      "toggle": true,
+      "expanded": "false",
+      "bodyCls": true,
+      "overflow": false
+    },
+    "persisted": {
+      "sidebar": 84,
+      "compact": true,
+      "main": 64,
+      "toggle": true,
+      "expanded": "false",
+      "bodyCls": true,
+      "overflow": false
+    },
+    "restored": {
+      "sidebar": 300,
+      "compact": false,
+      "main": 280,
+      "toggle": true,
+      "expanded": "true",
+      "bodyCls": false,
+      "overflow": false
+    },
+    "errors": [],
+    "ok": true
+  },
+  "casino-recommended.html": {
+    "start": {
+      "sidebar": 300,
+      "compact": false,
+      "main": 280,
+      "toggle": true,
+      "expanded": "true",
+      "bodyCls": false,
+      "overflow": false
+    },
+    "collapsed": {
+      "sidebar": 84,
+      "compact": true,
+      "main": 64,
+      "toggle": true,
+      "expanded": "false",
+      "bodyCls": true,
+      "overflow": false
+    },
+    "persisted": {
+      "sidebar": 84,
+      "compact": true,
+      "main": 64,
+      "toggle": true,
+      "expanded": "false",
+      "bodyCls": true,
+      "overflow": false
+    },
+    "restored": {
+      "sidebar": 300,
+      "compact": false,
+      "main": 280,
+      "toggle": true,
+      "expanded": "true",
+      "bodyCls": false,
+      "overflow": false
+    },
+    "errors": [],
+    "ok": true
+  },
+  "casino-search-results.html": {
+    "start": {
+      "sidebar": 300,
+      "compact": false,
+      "main": 280,
+      "toggle": true,
+      "expanded": "true",
+      "bodyCls": false,
+      "overflow": false
+    },
+    "collapsed": {
+      "sidebar": 84,
+      "compact": true,
+      "main": 64,
+      "toggle": true,
+      "expanded": "false",
+      "bodyCls": true,
+      "overflow": false
+    },
+    "persisted": {
+      "sidebar": 84,
+      "compact": true,
+      "main": 64,
+      "toggle": true,
+      "expanded": "false",
+      "bodyCls": true,
+      "overflow": false
+    },
+    "restored": {
+      "sidebar": 300,
+      "compact": false,
+      "main": 280,
+      "toggle": true,
+      "expanded": "true",
+      "bodyCls": false,
+      "overflow": false
+    },
+    "errors": [],
+    "ok": true
+  },
+  "casino-search.html": {
+    "start": {
+      "sidebar": 300,
+      "compact": false,
+      "main": 280,
+      "toggle": true,
+      "expanded": "true",
+      "bodyCls": false,
+      "overflow": false
+    },
+    "collapsed": {
+      "sidebar": 84,
+      "compact": true,
+      "main": 64,
+      "toggle": true,
+      "expanded": "false",
+      "bodyCls": true,
+      "overflow": false
+    },
+    "persisted": {
+      "sidebar": 84,
+      "compact": true,
+      "main": 64,
+      "toggle": true,
+      "expanded": "false",
+      "bodyCls": true,
+      "overflow": false
+    },
+    "restored": {
+      "sidebar": 300,
+      "compact": false,
+      "main": 280,
+      "toggle": true,
+      "expanded": "true",
+      "bodyCls": false,
+      "overflow": false
+    },
+    "errors": [],
+    "ok": true
+  },
+  "casino-slots.html": {
+    "start": {
+      "sidebar": 300,
+      "compact": false,
+      "main": 280,
+      "toggle": true,
+      "expanded": "true",
+      "bodyCls": false,
+      "overflow": false
+    },
+    "collapsed": {
+      "sidebar": 84,
+      "compact": true,
+      "main": 64,
+      "toggle": true,
+      "expanded": "false",
+      "bodyCls": true,
+      "overflow": false
+    },
+    "persisted": {
+      "sidebar": 84,
+      "compact": true,
+      "main": 64,
+      "toggle": true,
+      "expanded": "false",
+      "bodyCls": true,
+      "overflow": false
+    },
+    "restored": {
+      "sidebar": 300,
+      "compact": false,
+      "main": 280,
+      "toggle": true,
+      "expanded": "true",
+      "bodyCls": false,
+      "overflow": false
+    },
+    "errors": [],
+    "ok": true
+  },
+  "casino.html": {
+    "start": {
+      "sidebar": 300,
+      "compact": false,
+      "main": 280,
+      "toggle": true,
+      "expanded": "true",
+      "bodyCls": false,
+      "overflow": false
+    },
+    "collapsed": {
+      "sidebar": 84,
+      "compact": true,
+      "main": 64,
+      "toggle": true,
+      "expanded": "false",
+      "bodyCls": true,
+      "overflow": false
+    },
+    "persisted": {
+      "sidebar": 84,
+      "compact": true,
+      "main": 64,
+      "toggle": true,
+      "expanded": "false",
+      "bodyCls": true,
+      "overflow": false
+    },
+    "restored": {
+      "sidebar": 300,
+      "compact": false,
+      "main": 280,
+      "toggle": true,
+      "expanded": "true",
+      "bodyCls": false,
+      "overflow": false
+    },
+    "errors": [],
+    "ok": true
+  },
+  "freemoney.html": {
+    "start": {
+      "sidebar": 300,
+      "compact": false,
+      "main": 280,
+      "toggle": true,
+      "expanded": "true",
+      "bodyCls": false,
+      "overflow": false
+    },
+    "collapsed": {
+      "sidebar": 84,
+      "compact": true,
+      "main": 64,
+      "toggle": true,
+      "expanded": "false",
+      "bodyCls": true,
+      "overflow": false
+    },
+    "persisted": {
+      "sidebar": 84,
+      "compact": true,
+      "main": 64,
+      "toggle": true,
+      "expanded": "false",
+      "bodyCls": true,
+      "overflow": false
+    },
+    "restored": {
+      "sidebar": 300,
+      "compact": false,
+      "main": 280,
+      "toggle": true,
+      "expanded": "true",
+      "bodyCls": false,
+      "overflow": false
+    },
+    "errors": [],
+    "ok": true
+  },
+  "index.html": {
+    "start": {
+      "sidebar": 300,
+      "compact": false,
+      "main": 280,
+      "toggle": true,
+      "expanded": "true",
+      "bodyCls": false,
+      "overflow": false
+    },
+    "collapsed": {
+      "sidebar": 84,
+      "compact": true,
+      "main": 64,
+      "toggle": true,
+      "expanded": "false",
+      "bodyCls": true,
+      "overflow": false
+    },
+    "persisted": {
+      "sidebar": 84,
+      "compact": true,
+      "main": 64,
+      "toggle": true,
+      "expanded": "false",
+      "bodyCls": true,
+      "overflow": false
+    },
+    "restored": {
+      "sidebar": 300,
+      "compact": false,
+      "main": 280,
+      "toggle": true,
+      "expanded": "true",
+      "bodyCls": false,
+      "overflow": false
+    },
+    "errors": [],
+    "ok": true
+  },
+  "loyalty-program.html": {
+    "start": {
+      "sidebar": 300,
+      "compact": false,
+      "main": 280,
+      "toggle": true,
+      "expanded": "true",
+      "bodyCls": false,
+      "overflow": false
+    },
+    "collapsed": {
+      "sidebar": 84,
+      "compact": true,
+      "main": 64,
+      "toggle": true,
+      "expanded": "false",
+      "bodyCls": true,
+      "overflow": false
+    },
+    "persisted": {
+      "sidebar": 84,
+      "compact": true,
+      "main": 64,
+      "toggle": true,
+      "expanded": "false",
+      "bodyCls": true,
+      "overflow": false
+    },
+    "restored": {
+      "sidebar": 300,
+      "compact": false,
+      "main": 280,
+      "toggle": true,
+      "expanded": "true",
+      "bodyCls": false,
+      "overflow": false
+    },
+    "errors": [],
+    "ok": true
+  },
+  "promotion-halloween-2026.html": {
+    "start": {
+      "sidebar": 300,
+      "compact": false,
+      "main": 280,
+      "toggle": true,
+      "expanded": "true",
+      "bodyCls": false,
+      "overflow": false
+    },
+    "collapsed": {
+      "sidebar": 84,
+      "compact": true,
+      "main": 64,
+      "toggle": true,
+      "expanded": "false",
+      "bodyCls": true,
+      "overflow": false
+    },
+    "persisted": {
+      "sidebar": 84,
+      "compact": true,
+      "main": 64,
+      "toggle": true,
+      "expanded": "false",
+      "bodyCls": true,
+      "overflow": false
+    },
+    "restored": {
+      "sidebar": 300,
+      "compact": false,
+      "main": 280,
+      "toggle": true,
+      "expanded": "true",
+      "bodyCls": false,
+      "overflow": false
+    },
+    "errors": [],
+    "ok": true
+  },
+  "promotions.html": {
+    "start": {
+      "sidebar": 300,
+      "compact": false,
+      "main": 280,
+      "toggle": true,
+      "expanded": "true",
+      "bodyCls": false,
+      "overflow": false
+    },
+    "collapsed": {
+      "sidebar": 84,
+      "compact": true,
+      "main": 64,
+      "toggle": true,
+      "expanded": "false",
+      "bodyCls": true,
+      "overflow": false
+    },
+    "persisted": {
+      "sidebar": 84,
+      "compact": true,
+      "main": 64,
+      "toggle": true,
+      "expanded": "false",
+      "bodyCls": true,
+      "overflow": false
+    },
+    "restored": {
+      "sidebar": 300,
+      "compact": false,
+      "main": 280,
+      "toggle": true,
+      "expanded": "true",
+      "bodyCls": false,
+      "overflow": false
+    },
+    "errors": [],
+    "ok": true
+  },
+  "sports-bets-history.html": {
+    "start": {
+      "sidebar": 300,
+      "compact": false,
+      "main": 280,
+      "toggle": true,
+      "expanded": "true",
+      "bodyCls": false,
+      "overflow": false
+    },
+    "collapsed": {
+      "sidebar": 84,
+      "compact": true,
+      "main": 64,
+      "toggle": true,
+      "expanded": "false",
+      "bodyCls": true,
+      "overflow": false
+    },
+    "persisted": {
+      "sidebar": 84,
+      "compact": true,
+      "main": 64,
+      "toggle": true,
+      "expanded": "false",
+      "bodyCls": true,
+      "overflow": false
+    },
+    "restored": {
+      "sidebar": 300,
+      "compact": false,
+      "main": 280,
+      "toggle": true,
+      "expanded": "true",
+      "bodyCls": false,
+      "overflow": false
+    },
+    "errors": [],
+    "ok": true
+  },
+  "sports-esports-arena-of-valor.html": {
+    "start": {
+      "sidebar": 300,
+      "compact": false,
+      "main": 280,
+      "toggle": true,
+      "expanded": "true",
+      "bodyCls": false,
+      "overflow": false
+    },
+    "collapsed": {
+      "sidebar": 84,
+      "compact": true,
+      "main": 64,
+      "toggle": true,
+      "expanded": "false",
+      "bodyCls": true,
+      "overflow": false
+    },
+    "persisted": {
+      "sidebar": 84,
+      "compact": true,
+      "main": 64,
+      "toggle": true,
+      "expanded": "false",
+      "bodyCls": true,
+      "overflow": false
+    },
+    "restored": {
+      "sidebar": 300,
+      "compact": false,
+      "main": 280,
+      "toggle": true,
+      "expanded": "true",
+      "bodyCls": false,
+      "overflow": false
+    },
+    "errors": [],
+    "ok": true
+  },
+  "sports-esports-crossfire.html": {
+    "start": {
+      "sidebar": 300,
+      "compact": false,
+      "main": 280,
+      "toggle": true,
+      "expanded": "true",
+      "bodyCls": false,
+      "overflow": false
+    },
+    "collapsed": {
+      "sidebar": 84,
+      "compact": true,
+      "main": 64,
+      "toggle": true,
+      "expanded": "false",
+      "bodyCls": true,
+      "overflow": false
+    },
+    "persisted": {
+      "sidebar": 84,
+      "compact": true,
+      "main": 64,
+      "toggle": true,
+      "expanded": "false",
+      "bodyCls": true,
+      "overflow": false
+    },
+    "restored": {
+      "sidebar": 300,
+      "compact": false,
+      "main": 280,
+      "toggle": true,
+      "expanded": "true",
+      "bodyCls": false,
+      "overflow": false
+    },
+    "errors": [],
+    "ok": true
+  },
+  "sports-esports-cs2.html": {
+    "start": {
+      "sidebar": 300,
+      "compact": false,
+      "main": 280,
+      "toggle": true,
+      "expanded": "true",
+      "bodyCls": false,
+      "overflow": false
+    },
+    "collapsed": {
+      "sidebar": 84,
+      "compact": true,
+      "main": 64,
+      "toggle": true,
+      "expanded": "false",
+      "bodyCls": true,
+      "overflow": false
+    },
+    "persisted": {
+      "sidebar": 84,
+      "compact": true,
+      "main": 64,
+      "toggle": true,
+      "expanded": "false",
+      "bodyCls": true,
+      "overflow": false
+    },
+    "restored": {
+      "sidebar": 300,
+      "compact": false,
+      "main": 280,
+      "toggle": true,
+      "expanded": "true",
+      "bodyCls": false,
+      "overflow": false
+    },
+    "errors": [],
+    "ok": true
+  },
+  "sports-esports-dota-2.html": {
+    "start": {
+      "sidebar": 300,
+      "compact": false,
+      "main": 280,
+      "toggle": true,
+      "expanded": "true",
+      "bodyCls": false,
+      "overflow": false
+    },
+    "collapsed": {
+      "sidebar": 84,
+      "compact": true,
+      "main": 64,
+      "toggle": true,
+      "expanded": "false",
+      "bodyCls": true,
+      "overflow": false
+    },
+    "persisted": {
+      "sidebar": 84,
+      "compact": true,
+      "main": 64,
+      "toggle": true,
+      "expanded": "false",
+      "bodyCls": true,
+      "overflow": false
+    },
+    "restored": {
+      "sidebar": 300,
+      "compact": false,
+      "main": 280,
+      "toggle": true,
+      "expanded": "true",
+      "bodyCls": false,
+      "overflow": false
+    },
+    "errors": [],
+    "ok": true
+  },
+  "sports-esports-honor-of-kings.html": {
+    "start": {
+      "sidebar": 300,
+      "compact": false,
+      "main": 280,
+      "toggle": true,
+      "expanded": "true",
+      "bodyCls": false,
+      "overflow": false
+    },
+    "collapsed": {
+      "sidebar": 84,
+      "compact": true,
+      "main": 64,
+      "toggle": true,
+      "expanded": "false",
+      "bodyCls": true,
+      "overflow": false
+    },
+    "persisted": {
+      "sidebar": 84,
+      "compact": true,
+      "main": 64,
+      "toggle": true,
+      "expanded": "false",
+      "bodyCls": true,
+      "overflow": false
+    },
+    "restored": {
+      "sidebar": 300,
+      "compact": false,
+      "main": 280,
+      "toggle": true,
+      "expanded": "true",
+      "bodyCls": false,
+      "overflow": false
+    },
+    "errors": [],
+    "ok": true
+  },
+  "sports-esports-lol.html": {
+    "start": {
+      "sidebar": 300,
+      "compact": false,
+      "main": 280,
+      "toggle": true,
+      "expanded": "true",
+      "bodyCls": false,
+      "overflow": false
+    },
+    "collapsed": {
+      "sidebar": 84,
+      "compact": true,
+      "main": 64,
+      "toggle": true,
+      "expanded": "false",
+      "bodyCls": true,
+      "overflow": false
+    },
+    "persisted": {
+      "sidebar": 84,
+      "compact": true,
+      "main": 64,
+      "toggle": true,
+      "expanded": "false",
+      "bodyCls": true,
+      "overflow": false
+    },
+    "restored": {
+      "sidebar": 300,
+      "compact": false,
+      "main": 280,
+      "toggle": true,
+      "expanded": "true",
+      "bodyCls": false,
+      "overflow": false
+    },
+    "errors": [],
+    "ok": true
+  },
+  "sports-esports-mobile-legends.html": {
+    "start": {
+      "sidebar": 300,
+      "compact": false,
+      "main": 280,
+      "toggle": true,
+      "expanded": "true",
+      "bodyCls": false,
+      "overflow": false
+    },
+    "collapsed": {
+      "sidebar": 84,
+      "compact": true,
+      "main": 64,
+      "toggle": true,
+      "expanded": "false",
+      "bodyCls": true,
+      "overflow": false
+    },
+    "persisted": {
+      "sidebar": 84,
+      "compact": true,
+      "main": 64,
+      "toggle": true,
+      "expanded": "false",
+      "bodyCls": true,
+      "overflow": false
+    },
+    "restored": {
+      "sidebar": 300,
+      "compact": false,
+      "main": 280,
+      "toggle": true,
+      "expanded": "true",
+      "bodyCls": false,
+      "overflow": false
+    },
+    "errors": [],
+    "ok": true
+  },
+  "sports-esports-overwatch-2.html": {
+    "start": {
+      "sidebar": 300,
+      "compact": false,
+      "main": 280,
+      "toggle": true,
+      "expanded": "true",
+      "bodyCls": false,
+      "overflow": false
+    },
+    "collapsed": {
+      "sidebar": 84,
+      "compact": true,
+      "main": 64,
+      "toggle": true,
+      "expanded": "false",
+      "bodyCls": true,
+      "overflow": false
+    },
+    "persisted": {
+      "sidebar": 84,
+      "compact": true,
+      "main": 64,
+      "toggle": true,
+      "expanded": "false",
+      "bodyCls": true,
+      "overflow": false
+    },
+    "restored": {
+      "sidebar": 300,
+      "compact": false,
+      "main": 280,
+      "toggle": true,
+      "expanded": "true",
+      "bodyCls": false,
+      "overflow": false
+    },
+    "errors": [],
+    "ok": true
+  },
+  "sports-esports-pubg.html": {
+    "start": {
+      "sidebar": 300,
+      "compact": false,
+      "main": 280,
+      "toggle": true,
+      "expanded": "true",
+      "bodyCls": false,
+      "overflow": false
+    },
+    "collapsed": {
+      "sidebar": 84,
+      "compact": true,
+      "main": 64,
+      "toggle": true,
+      "expanded": "false",
+      "bodyCls": true,
+      "overflow": false
+    },
+    "persisted": {
+      "sidebar": 84,
+      "compact": true,
+      "main": 64,
+      "toggle": true,
+      "expanded": "false",
+      "bodyCls": true,
+      "overflow": false
+    },
+    "restored": {
+      "sidebar": 300,
+      "compact": false,
+      "main": 280,
+      "toggle": true,
+      "expanded": "true",
+      "bodyCls": false,
+      "overflow": false
+    },
+    "errors": [],
+    "ok": true
+  },
+  "sports-esports-rainbow-six.html": {
+    "start": {
+      "sidebar": 300,
+      "compact": false,
+      "main": 280,
+      "toggle": true,
+      "expanded": "true",
+      "bodyCls": false,
+      "overflow": false
+    },
+    "collapsed": {
+      "sidebar": 84,
+      "compact": true,
+      "main": 64,
+      "toggle": true,
+      "expanded": "false",
+      "bodyCls": true,
+      "overflow": false
+    },
+    "persisted": {
+      "sidebar": 84,
+      "compact": true,
+      "main": 64,
+      "toggle": true,
+      "expanded": "false",
+      "bodyCls": true,
+      "overflow": false
+    },
+    "restored": {
+      "sidebar": 300,
+      "compact": false,
+      "main": 280,
+      "toggle": true,
+      "expanded": "true",
+      "bodyCls": false,
+      "overflow": false
+    },
+    "errors": [],
+    "ok": true
+  },
+  "sports-esports-valorant.html": {
+    "start": {
+      "sidebar": 300,
+      "compact": false,
+      "main": 280,
+      "toggle": true,
+      "expanded": "true",
+      "bodyCls": false,
+      "overflow": false
+    },
+    "collapsed": {
+      "sidebar": 84,
+      "compact": true,
+      "main": 64,
+      "toggle": true,
+      "expanded": "false",
+      "bodyCls": true,
+      "overflow": false
+    },
+    "persisted": {
+      "sidebar": 84,
+      "compact": true,
+      "main": 64,
+      "toggle": true,
+      "expanded": "false",
+      "bodyCls": true,
+      "overflow": false
+    },
+    "restored": {
+      "sidebar": 300,
+      "compact": false,
+      "main": 280,
+      "toggle": true,
+      "expanded": "true",
+      "bodyCls": false,
+      "overflow": false
+    },
+    "errors": [],
+    "ok": true
+  },
+  "sports-esports.html": {
+    "start": {
+      "sidebar": 300,
+      "compact": false,
+      "main": 280,
+      "toggle": true,
+      "expanded": "true",
+      "bodyCls": false,
+      "overflow": false
+    },
+    "collapsed": {
+      "sidebar": 84,
+      "compact": true,
+      "main": 64,
+      "toggle": true,
+      "expanded": "false",
+      "bodyCls": true,
+      "overflow": false
+    },
+    "persisted": {
+      "sidebar": 84,
+      "compact": true,
+      "main": 64,
+      "toggle": true,
+      "expanded": "false",
+      "bodyCls": true,
+      "overflow": false
+    },
+    "restored": {
+      "sidebar": 300,
+      "compact": false,
+      "main": 280,
+      "toggle": true,
+      "expanded": "true",
+      "bodyCls": false,
+      "overflow": false
+    },
+    "errors": [],
+    "ok": true
+  },
+  "sports-live-american-football.html": {
+    "start": {
+      "sidebar": 300,
+      "compact": false,
+      "main": 280,
+      "toggle": true,
+      "expanded": "true",
+      "bodyCls": false,
+      "overflow": false
+    },
+    "collapsed": {
+      "sidebar": 84,
+      "compact": true,
+      "main": 64,
+      "toggle": true,
+      "expanded": "false",
+      "bodyCls": true,
+      "overflow": false
+    },
+    "persisted": {
+      "sidebar": 84,
+      "compact": true,
+      "main": 64,
+      "toggle": true,
+      "expanded": "false",
+      "bodyCls": true,
+      "overflow": false
+    },
+    "restored": {
+      "sidebar": 300,
+      "compact": false,
+      "main": 280,
+      "toggle": true,
+      "expanded": "true",
+      "bodyCls": false,
+      "overflow": false
+    },
+    "errors": [],
+    "ok": true
+  },
+  "sports-live-baseball.html": {
+    "start": {
+      "sidebar": 300,
+      "compact": false,
+      "main": 280,
+      "toggle": true,
+      "expanded": "true",
+      "bodyCls": false,
+      "overflow": false
+    },
+    "collapsed": {
+      "sidebar": 84,
+      "compact": true,
+      "main": 64,
+      "toggle": true,
+      "expanded": "false",
+      "bodyCls": true,
+      "overflow": false
+    },
+    "persisted": {
+      "sidebar": 84,
+      "compact": true,
+      "main": 64,
+      "toggle": true,
+      "expanded": "false",
+      "bodyCls": true,
+      "overflow": false
+    },
+    "restored": {
+      "sidebar": 300,
+      "compact": false,
+      "main": 280,
+      "toggle": true,
+      "expanded": "true",
+      "bodyCls": false,
+      "overflow": false
+    },
+    "errors": [],
+    "ok": true
+  },
+  "sports-live-basketball.html": {
+    "start": {
+      "sidebar": 300,
+      "compact": false,
+      "main": 280,
+      "toggle": true,
+      "expanded": "true",
+      "bodyCls": false,
+      "overflow": false
+    },
+    "collapsed": {
+      "sidebar": 84,
+      "compact": true,
+      "main": 64,
+      "toggle": true,
+      "expanded": "false",
+      "bodyCls": true,
+      "overflow": false
+    },
+    "persisted": {
+      "sidebar": 84,
+      "compact": true,
+      "main": 64,
+      "toggle": true,
+      "expanded": "false",
+      "bodyCls": true,
+      "overflow": false
+    },
+    "restored": {
+      "sidebar": 300,
+      "compact": false,
+      "main": 280,
+      "toggle": true,
+      "expanded": "true",
+      "bodyCls": false,
+      "overflow": false
+    },
+    "errors": [],
+    "ok": true
+  },
+  "sports-live-chess.html": {
+    "start": {
+      "sidebar": 300,
+      "compact": false,
+      "main": 280,
+      "toggle": true,
+      "expanded": "true",
+      "bodyCls": false,
+      "overflow": false
+    },
+    "collapsed": {
+      "sidebar": 84,
+      "compact": true,
+      "main": 64,
+      "toggle": true,
+      "expanded": "false",
+      "bodyCls": true,
+      "overflow": false
+    },
+    "persisted": {
+      "sidebar": 84,
+      "compact": true,
+      "main": 64,
+      "toggle": true,
+      "expanded": "false",
+      "bodyCls": true,
+      "overflow": false
+    },
+    "restored": {
+      "sidebar": 300,
+      "compact": false,
+      "main": 280,
+      "toggle": true,
+      "expanded": "true",
+      "bodyCls": false,
+      "overflow": false
+    },
+    "errors": [],
+    "ok": true
+  },
+  "sports-live-cricket.html": {
+    "start": {
+      "sidebar": 300,
+      "compact": false,
+      "main": 280,
+      "toggle": true,
+      "expanded": "true",
+      "bodyCls": false,
+      "overflow": false
+    },
+    "collapsed": {
+      "sidebar": 84,
+      "compact": true,
+      "main": 64,
+      "toggle": true,
+      "expanded": "false",
+      "bodyCls": true,
+      "overflow": false
+    },
+    "persisted": {
+      "sidebar": 84,
+      "compact": true,
+      "main": 64,
+      "toggle": true,
+      "expanded": "false",
+      "bodyCls": true,
+      "overflow": false
+    },
+    "restored": {
+      "sidebar": 300,
+      "compact": false,
+      "main": 280,
+      "toggle": true,
+      "expanded": "true",
+      "bodyCls": false,
+      "overflow": false
+    },
+    "errors": [],
+    "ok": true
+  },
+  "sports-live-cs2.html": {
+    "start": {
+      "sidebar": 300,
+      "compact": false,
+      "main": 280,
+      "toggle": true,
+      "expanded": "true",
+      "bodyCls": false,
+      "overflow": false
+    },
+    "collapsed": {
+      "sidebar": 84,
+      "compact": true,
+      "main": 64,
+      "toggle": true,
+      "expanded": "false",
+      "bodyCls": true,
+      "overflow": false
+    },
+    "persisted": {
+      "sidebar": 84,
+      "compact": true,
+      "main": 64,
+      "toggle": true,
+      "expanded": "false",
+      "bodyCls": true,
+      "overflow": false
+    },
+    "restored": {
+      "sidebar": 300,
+      "compact": false,
+      "main": 280,
+      "toggle": true,
+      "expanded": "true",
+      "bodyCls": false,
+      "overflow": false
+    },
+    "errors": [],
+    "ok": true
+  },
+  "sports-live-dota-2.html": {
+    "start": {
+      "sidebar": 300,
+      "compact": false,
+      "main": 280,
+      "toggle": true,
+      "expanded": "true",
+      "bodyCls": false,
+      "overflow": false
+    },
+    "collapsed": {
+      "sidebar": 84,
+      "compact": true,
+      "main": 64,
+      "toggle": true,
+      "expanded": "false",
+      "bodyCls": true,
+      "overflow": false
+    },
+    "persisted": {
+      "sidebar": 84,
+      "compact": true,
+      "main": 64,
+      "toggle": true,
+      "expanded": "false",
+      "bodyCls": true,
+      "overflow": false
+    },
+    "restored": {
+      "sidebar": 300,
+      "compact": false,
+      "main": 280,
+      "toggle": true,
+      "expanded": "true",
+      "bodyCls": false,
+      "overflow": false
+    },
+    "errors": [],
+    "ok": true
+  },
+  "sports-live-football.html": {
+    "start": {
+      "sidebar": 300,
+      "compact": false,
+      "main": 280,
+      "toggle": true,
+      "expanded": "true",
+      "bodyCls": false,
+      "overflow": false
+    },
+    "collapsed": {
+      "sidebar": 84,
+      "compact": true,
+      "main": 64,
+      "toggle": true,
+      "expanded": "false",
+      "bodyCls": true,
+      "overflow": false
+    },
+    "persisted": {
+      "sidebar": 84,
+      "compact": true,
+      "main": 64,
+      "toggle": true,
+      "expanded": "false",
+      "bodyCls": true,
+      "overflow": false
+    },
+    "restored": {
+      "sidebar": 300,
+      "compact": false,
+      "main": 280,
+      "toggle": true,
+      "expanded": "true",
+      "bodyCls": false,
+      "overflow": false
+    },
+    "errors": [],
+    "ok": true
+  },
+  "sports-live-futsal.html": {
+    "start": {
+      "sidebar": 300,
+      "compact": false,
+      "main": 280,
+      "toggle": true,
+      "expanded": "true",
+      "bodyCls": false,
+      "overflow": false
+    },
+    "collapsed": {
+      "sidebar": 84,
+      "compact": true,
+      "main": 64,
+      "toggle": true,
+      "expanded": "false",
+      "bodyCls": true,
+      "overflow": false
+    },
+    "persisted": {
+      "sidebar": 84,
+      "compact": true,
+      "main": 64,
+      "toggle": true,
+      "expanded": "false",
+      "bodyCls": true,
+      "overflow": false
+    },
+    "restored": {
+      "sidebar": 300,
+      "compact": false,
+      "main": 280,
+      "toggle": true,
+      "expanded": "true",
+      "bodyCls": false,
+      "overflow": false
+    },
+    "errors": [],
+    "ok": true
+  },
+  "sports-live-handball.html": {
+    "start": {
+      "sidebar": 300,
+      "compact": false,
+      "main": 280,
+      "toggle": true,
+      "expanded": "true",
+      "bodyCls": false,
+      "overflow": false
+    },
+    "collapsed": {
+      "sidebar": 84,
+      "compact": true,
+      "main": 64,
+      "toggle": true,
+      "expanded": "false",
+      "bodyCls": true,
+      "overflow": false
+    },
+    "persisted": {
+      "sidebar": 84,
+      "compact": true,
+      "main": 64,
+      "toggle": true,
+      "expanded": "false",
+      "bodyCls": true,
+      "overflow": false
+    },
+    "restored": {
+      "sidebar": 300,
+      "compact": false,
+      "main": 280,
+      "toggle": true,
+      "expanded": "true",
+      "bodyCls": false,
+      "overflow": false
+    },
+    "errors": [],
+    "ok": true
+  },
+  "sports-live-ice-hockey.html": {
+    "start": {
+      "sidebar": 300,
+      "compact": false,
+      "main": 280,
+      "toggle": true,
+      "expanded": "true",
+      "bodyCls": false,
+      "overflow": false
+    },
+    "collapsed": {
+      "sidebar": 84,
+      "compact": true,
+      "main": 64,
+      "toggle": true,
+      "expanded": "false",
+      "bodyCls": true,
+      "overflow": false
+    },
+    "persisted": {
+      "sidebar": 84,
+      "compact": true,
+      "main": 64,
+      "toggle": true,
+      "expanded": "false",
+      "bodyCls": true,
+      "overflow": false
+    },
+    "restored": {
+      "sidebar": 300,
+      "compact": false,
+      "main": 280,
+      "toggle": true,
+      "expanded": "true",
+      "bodyCls": false,
+      "overflow": false
+    },
+    "errors": [],
+    "ok": true
+  },
+  "sports-live-kabaddi.html": {
+    "start": {
+      "sidebar": 300,
+      "compact": false,
+      "main": 280,
+      "toggle": true,
+      "expanded": "true",
+      "bodyCls": false,
+      "overflow": false
+    },
+    "collapsed": {
+      "sidebar": 84,
+      "compact": true,
+      "main": 64,
+      "toggle": true,
+      "expanded": "false",
+      "bodyCls": true,
+      "overflow": false
+    },
+    "persisted": {
+      "sidebar": 84,
+      "compact": true,
+      "main": 64,
+      "toggle": true,
+      "expanded": "false",
+      "bodyCls": true,
+      "overflow": false
+    },
+    "restored": {
+      "sidebar": 300,
+      "compact": false,
+      "main": 280,
+      "toggle": true,
+      "expanded": "true",
+      "bodyCls": false,
+      "overflow": false
+    },
+    "errors": [],
+    "ok": true
+  },
+  "sports-live-table-tennis.html": {
+    "start": {
+      "sidebar": 300,
+      "compact": false,
+      "main": 280,
+      "toggle": true,
+      "expanded": "true",
+      "bodyCls": false,
+      "overflow": false
+    },
+    "collapsed": {
+      "sidebar": 84,
+      "compact": true,
+      "main": 64,
+      "toggle": true,
+      "expanded": "false",
+      "bodyCls": true,
+      "overflow": false
+    },
+    "persisted": {
+      "sidebar": 84,
+      "compact": true,
+      "main": 64,
+      "toggle": true,
+      "expanded": "false",
+      "bodyCls": true,
+      "overflow": false
+    },
+    "restored": {
+      "sidebar": 300,
+      "compact": false,
+      "main": 280,
+      "toggle": true,
+      "expanded": "true",
+      "bodyCls": false,
+      "overflow": false
+    },
+    "errors": [],
+    "ok": true
+  },
+  "sports-live-tennis.html": {
+    "start": {
+      "sidebar": 300,
+      "compact": false,
+      "main": 280,
+      "toggle": true,
+      "expanded": "true",
+      "bodyCls": false,
+      "overflow": false
+    },
+    "collapsed": {
+      "sidebar": 84,
+      "compact": true,
+      "main": 64,
+      "toggle": true,
+      "expanded": "false",
+      "bodyCls": true,
+      "overflow": false
+    },
+    "persisted": {
+      "sidebar": 84,
+      "compact": true,
+      "main": 64,
+      "toggle": true,
+      "expanded": "false",
+      "bodyCls": true,
+      "overflow": false
+    },
+    "restored": {
+      "sidebar": 300,
+      "compact": false,
+      "main": 280,
+      "toggle": true,
+      "expanded": "true",
+      "bodyCls": false,
+      "overflow": false
+    },
+    "errors": [],
+    "ok": true
+  },
+  "sports-live-valorant.html": {
+    "start": {
+      "sidebar": 300,
+      "compact": false,
+      "main": 280,
+      "toggle": true,
+      "expanded": "true",
+      "bodyCls": false,
+      "overflow": false
+    },
+    "collapsed": {
+      "sidebar": 84,
+      "compact": true,
+      "main": 64,
+      "toggle": true,
+      "expanded": "false",
+      "bodyCls": true,
+      "overflow": false
+    },
+    "persisted": {
+      "sidebar": 84,
+      "compact": true,
+      "main": 64,
+      "toggle": true,
+      "expanded": "false",
+      "bodyCls": true,
+      "overflow": false
+    },
+    "restored": {
+      "sidebar": 300,
+      "compact": false,
+      "main": 280,
+      "toggle": true,
+      "expanded": "true",
+      "bodyCls": false,
+      "overflow": false
+    },
+    "errors": [],
+    "ok": true
+  },
+  "sports-live-volleyball.html": {
+    "start": {
+      "sidebar": 300,
+      "compact": false,
+      "main": 280,
+      "toggle": true,
+      "expanded": "true",
+      "bodyCls": false,
+      "overflow": false
+    },
+    "collapsed": {
+      "sidebar": 84,
+      "compact": true,
+      "main": 64,
+      "toggle": true,
+      "expanded": "false",
+      "bodyCls": true,
+      "overflow": false
+    },
+    "persisted": {
+      "sidebar": 84,
+      "compact": true,
+      "main": 64,
+      "toggle": true,
+      "expanded": "false",
+      "bodyCls": true,
+      "overflow": false
+    },
+    "restored": {
+      "sidebar": 300,
+      "compact": false,
+      "main": 280,
+      "toggle": true,
+      "expanded": "true",
+      "bodyCls": false,
+      "overflow": false
+    },
+    "errors": [],
+    "ok": true
+  },
+  "sports-live.html": {
+    "start": {
+      "sidebar": 300,
+      "compact": false,
+      "main": 280,
+      "toggle": true,
+      "expanded": "true",
+      "bodyCls": false,
+      "overflow": false
+    },
+    "collapsed": {
+      "sidebar": 84,
+      "compact": true,
+      "main": 64,
+      "toggle": true,
+      "expanded": "false",
+      "bodyCls": true,
+      "overflow": false
+    },
+    "persisted": {
+      "sidebar": 84,
+      "compact": true,
+      "main": 64,
+      "toggle": true,
+      "expanded": "false",
+      "bodyCls": true,
+      "overflow": false
+    },
+    "restored": {
+      "sidebar": 300,
+      "compact": false,
+      "main": 280,
+      "toggle": true,
+      "expanded": "true",
+      "bodyCls": false,
+      "overflow": false
+    },
+    "errors": [],
+    "ok": true
+  },
+  "sports-markets-18.html": {
+    "start": {
+      "sidebar": 300,
+      "compact": false,
+      "main": 280,
+      "toggle": true,
+      "expanded": "true",
+      "bodyCls": false,
+      "overflow": false
+    },
+    "collapsed": {
+      "sidebar": 84,
+      "compact": true,
+      "main": 64,
+      "toggle": true,
+      "expanded": "false",
+      "bodyCls": true,
+      "overflow": false
+    },
+    "persisted": {
+      "sidebar": 84,
+      "compact": true,
+      "main": 64,
+      "toggle": true,
+      "expanded": "false",
+      "bodyCls": true,
+      "overflow": false
+    },
+    "restored": {
+      "sidebar": 300,
+      "compact": false,
+      "main": 280,
+      "toggle": true,
+      "expanded": "true",
+      "bodyCls": false,
+      "overflow": false
+    },
+    "errors": [],
+    "ok": true
+  },
+  "sports-markets-1w-specials.html": {
+    "start": {
+      "sidebar": 300,
+      "compact": false,
+      "main": 280,
+      "toggle": true,
+      "expanded": "true",
+      "bodyCls": false,
+      "overflow": false
+    },
+    "collapsed": {
+      "sidebar": 84,
+      "compact": true,
+      "main": 64,
+      "toggle": true,
+      "expanded": "false",
+      "bodyCls": true,
+      "overflow": false
+    },
+    "persisted": {
+      "sidebar": 84,
+      "compact": true,
+      "main": 64,
+      "toggle": true,
+      "expanded": "false",
+      "bodyCls": true,
+      "overflow": false
+    },
+    "restored": {
+      "sidebar": 300,
+      "compact": false,
+      "main": 280,
+      "toggle": true,
+      "expanded": "true",
+      "bodyCls": false,
+      "overflow": false
+    },
+    "errors": [],
+    "ok": true
+  },
+  "sports-markets-celebrities.html": {
+    "start": {
+      "sidebar": 300,
+      "compact": false,
+      "main": 280,
+      "toggle": true,
+      "expanded": "true",
+      "bodyCls": false,
+      "overflow": false
+    },
+    "collapsed": {
+      "sidebar": 84,
+      "compact": true,
+      "main": 64,
+      "toggle": true,
+      "expanded": "false",
+      "bodyCls": true,
+      "overflow": false
+    },
+    "persisted": {
+      "sidebar": 84,
+      "compact": true,
+      "main": 64,
+      "toggle": true,
+      "expanded": "false",
+      "bodyCls": true,
+      "overflow": false
+    },
+    "restored": {
+      "sidebar": 300,
+      "compact": false,
+      "main": 280,
+      "toggle": true,
+      "expanded": "true",
+      "bodyCls": false,
+      "overflow": false
+    },
+    "errors": [],
+    "ok": true
+  },
+  "sports-markets-crypto-live.html": {
+    "start": {
+      "sidebar": 300,
+      "compact": false,
+      "main": 280,
+      "toggle": true,
+      "expanded": "true",
+      "bodyCls": false,
+      "overflow": false
+    },
+    "collapsed": {
+      "sidebar": 84,
+      "compact": true,
+      "main": 64,
+      "toggle": true,
+      "expanded": "false",
+      "bodyCls": true,
+      "overflow": false
+    },
+    "persisted": {
+      "sidebar": 84,
+      "compact": true,
+      "main": 64,
+      "toggle": true,
+      "expanded": "false",
+      "bodyCls": true,
+      "overflow": false
+    },
+    "restored": {
+      "sidebar": 300,
+      "compact": false,
+      "main": 280,
+      "toggle": true,
+      "expanded": "true",
+      "bodyCls": false,
+      "overflow": false
+    },
+    "errors": [],
+    "ok": true
+  },
+  "sports-markets-crypto.html": {
+    "start": {
+      "sidebar": 300,
+      "compact": false,
+      "main": 280,
+      "toggle": true,
+      "expanded": "true",
+      "bodyCls": false,
+      "overflow": false
+    },
+    "collapsed": {
+      "sidebar": 84,
+      "compact": true,
+      "main": 64,
+      "toggle": true,
+      "expanded": "false",
+      "bodyCls": true,
+      "overflow": false
+    },
+    "persisted": {
+      "sidebar": 84,
+      "compact": true,
+      "main": 64,
+      "toggle": true,
+      "expanded": "false",
+      "bodyCls": true,
+      "overflow": false
+    },
+    "restored": {
+      "sidebar": 300,
+      "compact": false,
+      "main": 280,
+      "toggle": true,
+      "expanded": "true",
+      "bodyCls": false,
+      "overflow": false
+    },
+    "errors": [],
+    "ok": true
+  },
+  "sports-markets-culture.html": {
+    "start": {
+      "sidebar": 300,
+      "compact": false,
+      "main": 280,
+      "toggle": true,
+      "expanded": "true",
+      "bodyCls": false,
+      "overflow": false
+    },
+    "collapsed": {
+      "sidebar": 84,
+      "compact": true,
+      "main": 64,
+      "toggle": true,
+      "expanded": "false",
+      "bodyCls": true,
+      "overflow": false
+    },
+    "persisted": {
+      "sidebar": 84,
+      "compact": true,
+      "main": 64,
+      "toggle": true,
+      "expanded": "false",
+      "bodyCls": true,
+      "overflow": false
+    },
+    "restored": {
+      "sidebar": 300,
+      "compact": false,
+      "main": 280,
+      "toggle": true,
+      "expanded": "true",
+      "bodyCls": false,
+      "overflow": false
+    },
+    "errors": [],
+    "ok": true
+  },
+  "sports-markets-cybersport.html": {
+    "start": {
+      "sidebar": 300,
+      "compact": false,
+      "main": 280,
+      "toggle": true,
+      "expanded": "true",
+      "bodyCls": false,
+      "overflow": false
+    },
+    "collapsed": {
+      "sidebar": 84,
+      "compact": true,
+      "main": 64,
+      "toggle": true,
+      "expanded": "false",
+      "bodyCls": true,
+      "overflow": false
+    },
+    "persisted": {
+      "sidebar": 84,
+      "compact": true,
+      "main": 64,
+      "toggle": true,
+      "expanded": "false",
+      "bodyCls": true,
+      "overflow": false
+    },
+    "restored": {
+      "sidebar": 300,
+      "compact": false,
+      "main": 280,
+      "toggle": true,
+      "expanded": "true",
+      "bodyCls": false,
+      "overflow": false
+    },
+    "errors": [],
+    "ok": true
+  },
+  "sports-markets-economy.html": {
+    "start": {
+      "sidebar": 300,
+      "compact": false,
+      "main": 280,
+      "toggle": true,
+      "expanded": "true",
+      "bodyCls": false,
+      "overflow": false
+    },
+    "collapsed": {
+      "sidebar": 84,
+      "compact": true,
+      "main": 64,
+      "toggle": true,
+      "expanded": "false",
+      "bodyCls": true,
+      "overflow": false
+    },
+    "persisted": {
+      "sidebar": 84,
+      "compact": true,
+      "main": 64,
+      "toggle": true,
+      "expanded": "false",
+      "bodyCls": true,
+      "overflow": false
+    },
+    "restored": {
+      "sidebar": 300,
+      "compact": false,
+      "main": 280,
+      "toggle": true,
+      "expanded": "true",
+      "bodyCls": false,
+      "overflow": false
+    },
+    "errors": [],
+    "ok": true
+  },
+  "sports-markets-politics.html": {
+    "start": {
+      "sidebar": 300,
+      "compact": false,
+      "main": 280,
+      "toggle": true,
+      "expanded": "true",
+      "bodyCls": false,
+      "overflow": false
+    },
+    "collapsed": {
+      "sidebar": 84,
+      "compact": true,
+      "main": 64,
+      "toggle": true,
+      "expanded": "false",
+      "bodyCls": true,
+      "overflow": false
+    },
+    "persisted": {
+      "sidebar": 84,
+      "compact": true,
+      "main": 64,
+      "toggle": true,
+      "expanded": "false",
+      "bodyCls": true,
+      "overflow": false
+    },
+    "restored": {
+      "sidebar": 300,
+      "compact": false,
+      "main": 280,
+      "toggle": true,
+      "expanded": "true",
+      "bodyCls": false,
+      "overflow": false
+    },
+    "errors": [],
+    "ok": true
+  },
+  "sports-markets-space.html": {
+    "start": {
+      "sidebar": 300,
+      "compact": false,
+      "main": 280,
+      "toggle": true,
+      "expanded": "true",
+      "bodyCls": false,
+      "overflow": false
+    },
+    "collapsed": {
+      "sidebar": 84,
+      "compact": true,
+      "main": 64,
+      "toggle": true,
+      "expanded": "false",
+      "bodyCls": true,
+      "overflow": false
+    },
+    "persisted": {
+      "sidebar": 84,
+      "compact": true,
+      "main": 64,
+      "toggle": true,
+      "expanded": "false",
+      "bodyCls": true,
+      "overflow": false
+    },
+    "restored": {
+      "sidebar": 300,
+      "compact": false,
+      "main": 280,
+      "toggle": true,
+      "expanded": "true",
+      "bodyCls": false,
+      "overflow": false
+    },
+    "errors": [],
+    "ok": true
+  },
+  "sports-markets-sports.html": {
+    "start": {
+      "sidebar": 300,
+      "compact": false,
+      "main": 280,
+      "toggle": true,
+      "expanded": "true",
+      "bodyCls": false,
+      "overflow": false
+    },
+    "collapsed": {
+      "sidebar": 84,
+      "compact": true,
+      "main": 64,
+      "toggle": true,
+      "expanded": "false",
+      "bodyCls": true,
+      "overflow": false
+    },
+    "persisted": {
+      "sidebar": 84,
+      "compact": true,
+      "main": 64,
+      "toggle": true,
+      "expanded": "false",
+      "bodyCls": true,
+      "overflow": false
+    },
+    "restored": {
+      "sidebar": 300,
+      "compact": false,
+      "main": 280,
+      "toggle": true,
+      "expanded": "true",
+      "bodyCls": false,
+      "overflow": false
+    },
+    "errors": [],
+    "ok": true
+  },
+  "sports-markets-tech.html": {
+    "start": {
+      "sidebar": 300,
+      "compact": false,
+      "main": 280,
+      "toggle": true,
+      "expanded": "true",
+      "bodyCls": false,
+      "overflow": false
+    },
+    "collapsed": {
+      "sidebar": 84,
+      "compact": true,
+      "main": 64,
+      "toggle": true,
+      "expanded": "false",
+      "bodyCls": true,
+      "overflow": false
+    },
+    "persisted": {
+      "sidebar": 84,
+      "compact": true,
+      "main": 64,
+      "toggle": true,
+      "expanded": "false",
+      "bodyCls": true,
+      "overflow": false
+    },
+    "restored": {
+      "sidebar": 300,
+      "compact": false,
+      "main": 280,
+      "toggle": true,
+      "expanded": "true",
+      "bodyCls": false,
+      "overflow": false
+    },
+    "errors": [],
+    "ok": true
+  },
+  "sports-markets-world.html": {
+    "start": {
+      "sidebar": 300,
+      "compact": false,
+      "main": 280,
+      "toggle": true,
+      "expanded": "true",
+      "bodyCls": false,
+      "overflow": false
+    },
+    "collapsed": {
+      "sidebar": 84,
+      "compact": true,
+      "main": 64,
+      "toggle": true,
+      "expanded": "false",
+      "bodyCls": true,
+      "overflow": false
+    },
+    "persisted": {
+      "sidebar": 84,
+      "compact": true,
+      "main": 64,
+      "toggle": true,
+      "expanded": "false",
+      "bodyCls": true,
+      "overflow": false
+    },
+    "restored": {
+      "sidebar": 300,
+      "compact": false,
+      "main": 280,
+      "toggle": true,
+      "expanded": "true",
+      "bodyCls": false,
+      "overflow": false
+    },
+    "errors": [],
+    "ok": true
+  },
+  "sports-markets.html": {
+    "start": {
+      "sidebar": 300,
+      "compact": false,
+      "main": 280,
+      "toggle": true,
+      "expanded": "true",
+      "bodyCls": false,
+      "overflow": false
+    },
+    "collapsed": {
+      "sidebar": 84,
+      "compact": true,
+      "main": 64,
+      "toggle": true,
+      "expanded": "false",
+      "bodyCls": true,
+      "overflow": false
+    },
+    "persisted": {
+      "sidebar": 84,
+      "compact": true,
+      "main": 64,
+      "toggle": true,
+      "expanded": "false",
+      "bodyCls": true,
+      "overflow": false
+    },
+    "restored": {
+      "sidebar": 300,
+      "compact": false,
+      "main": 280,
+      "toggle": true,
+      "expanded": "true",
+      "bodyCls": false,
+      "overflow": false
+    },
+    "errors": [],
+    "ok": true
+  },
+  "sports-topbets.html": {
+    "start": {
+      "sidebar": 300,
+      "compact": false,
+      "main": 280,
+      "toggle": true,
+      "expanded": "true",
+      "bodyCls": false,
+      "overflow": false
+    },
+    "collapsed": {
+      "sidebar": 84,
+      "compact": true,
+      "main": 64,
+      "toggle": true,
+      "expanded": "false",
+      "bodyCls": true,
+      "overflow": false
+    },
+    "persisted": {
+      "sidebar": 84,
+      "compact": true,
+      "main": 64,
+      "toggle": true,
+      "expanded": "false",
+      "bodyCls": true,
+      "overflow": false
+    },
+    "restored": {
+      "sidebar": 300,
+      "compact": false,
+      "main": 280,
+      "toggle": true,
+      "expanded": "true",
+      "bodyCls": false,
+      "overflow": false
+    },
+    "errors": [],
+    "ok": true
+  },
+  "sports-upcoming-american-football.html": {
+    "start": {
+      "sidebar": 300,
+      "compact": false,
+      "main": 280,
+      "toggle": true,
+      "expanded": "true",
+      "bodyCls": false,
+      "overflow": false
+    },
+    "collapsed": {
+      "sidebar": 84,
+      "compact": true,
+      "main": 64,
+      "toggle": true,
+      "expanded": "false",
+      "bodyCls": true,
+      "overflow": false
+    },
+    "persisted": {
+      "sidebar": 84,
+      "compact": true,
+      "main": 64,
+      "toggle": true,
+      "expanded": "false",
+      "bodyCls": true,
+      "overflow": false
+    },
+    "restored": {
+      "sidebar": 300,
+      "compact": false,
+      "main": 280,
+      "toggle": true,
+      "expanded": "true",
+      "bodyCls": false,
+      "overflow": false
+    },
+    "errors": [],
+    "ok": true
+  },
+  "sports-upcoming-arena-of-valor.html": {
+    "start": {
+      "sidebar": 300,
+      "compact": false,
+      "main": 280,
+      "toggle": true,
+      "expanded": "true",
+      "bodyCls": false,
+      "overflow": false
+    },
+    "collapsed": {
+      "sidebar": 84,
+      "compact": true,
+      "main": 64,
+      "toggle": true,
+      "expanded": "false",
+      "bodyCls": true,
+      "overflow": false
+    },
+    "persisted": {
+      "sidebar": 84,
+      "compact": true,
+      "main": 64,
+      "toggle": true,
+      "expanded": "false",
+      "bodyCls": true,
+      "overflow": false
+    },
+    "restored": {
+      "sidebar": 300,
+      "compact": false,
+      "main": 280,
+      "toggle": true,
+      "expanded": "true",
+      "bodyCls": false,
+      "overflow": false
+    },
+    "errors": [],
+    "ok": true
+  },
+  "sports-upcoming-aussie-rules-football.html": {
+    "start": {
+      "sidebar": 300,
+      "compact": false,
+      "main": 280,
+      "toggle": true,
+      "expanded": "true",
+      "bodyCls": false,
+      "overflow": false
+    },
+    "collapsed": {
+      "sidebar": 84,
+      "compact": true,
+      "main": 64,
+      "toggle": true,
+      "expanded": "false",
+      "bodyCls": true,
+      "overflow": false
+    },
+    "persisted": {
+      "sidebar": 84,
+      "compact": true,
+      "main": 64,
+      "toggle": true,
+      "expanded": "false",
+      "bodyCls": true,
+      "overflow": false
+    },
+    "restored": {
+      "sidebar": 300,
+      "compact": false,
+      "main": 280,
+      "toggle": true,
+      "expanded": "true",
+      "bodyCls": false,
+      "overflow": false
+    },
+    "errors": [],
+    "ok": true
+  },
+  "sports-upcoming-badminton.html": {
+    "start": {
+      "sidebar": 300,
+      "compact": false,
+      "main": 280,
+      "toggle": true,
+      "expanded": "true",
+      "bodyCls": false,
+      "overflow": false
+    },
+    "collapsed": {
+      "sidebar": 84,
+      "compact": true,
+      "main": 64,
+      "toggle": true,
+      "expanded": "false",
+      "bodyCls": true,
+      "overflow": false
+    },
+    "persisted": {
+      "sidebar": 84,
+      "compact": true,
+      "main": 64,
+      "toggle": true,
+      "expanded": "false",
+      "bodyCls": true,
+      "overflow": false
+    },
+    "restored": {
+      "sidebar": 300,
+      "compact": false,
+      "main": 280,
+      "toggle": true,
+      "expanded": "true",
+      "bodyCls": false,
+      "overflow": false
+    },
+    "errors": [],
+    "ok": true
+  },
+  "sports-upcoming-baseball.html": {
+    "start": {
+      "sidebar": 300,
+      "compact": false,
+      "main": 280,
+      "toggle": true,
+      "expanded": "true",
+      "bodyCls": false,
+      "overflow": false
+    },
+    "collapsed": {
+      "sidebar": 84,
+      "compact": true,
+      "main": 64,
+      "toggle": true,
+      "expanded": "false",
+      "bodyCls": true,
+      "overflow": false
+    },
+    "persisted": {
+      "sidebar": 84,
+      "compact": true,
+      "main": 64,
+      "toggle": true,
+      "expanded": "false",
+      "bodyCls": true,
+      "overflow": false
+    },
+    "restored": {
+      "sidebar": 300,
+      "compact": false,
+      "main": 280,
+      "toggle": true,
+      "expanded": "true",
+      "bodyCls": false,
+      "overflow": false
+    },
+    "errors": [],
+    "ok": true
+  },
+  "sports-upcoming-basketball.html": {
+    "start": {
+      "sidebar": 300,
+      "compact": false,
+      "main": 280,
+      "toggle": true,
+      "expanded": "true",
+      "bodyCls": false,
+      "overflow": false
+    },
+    "collapsed": {
+      "sidebar": 84,
+      "compact": true,
+      "main": 64,
+      "toggle": true,
+      "expanded": "false",
+      "bodyCls": true,
+      "overflow": false
+    },
+    "persisted": {
+      "sidebar": 84,
+      "compact": true,
+      "main": 64,
+      "toggle": true,
+      "expanded": "false",
+      "bodyCls": true,
+      "overflow": false
+    },
+    "restored": {
+      "sidebar": 300,
+      "compact": false,
+      "main": 280,
+      "toggle": true,
+      "expanded": "true",
+      "bodyCls": false,
+      "overflow": false
+    },
+    "errors": [],
+    "ok": true
+  },
+  "sports-upcoming-boxing.html": {
+    "start": {
+      "sidebar": 300,
+      "compact": false,
+      "main": 280,
+      "toggle": true,
+      "expanded": "true",
+      "bodyCls": false,
+      "overflow": false
+    },
+    "collapsed": {
+      "sidebar": 84,
+      "compact": true,
+      "main": 64,
+      "toggle": true,
+      "expanded": "false",
+      "bodyCls": true,
+      "overflow": false
+    },
+    "persisted": {
+      "sidebar": 84,
+      "compact": true,
+      "main": 64,
+      "toggle": true,
+      "expanded": "false",
+      "bodyCls": true,
+      "overflow": false
+    },
+    "restored": {
+      "sidebar": 300,
+      "compact": false,
+      "main": 280,
+      "toggle": true,
+      "expanded": "true",
+      "bodyCls": false,
+      "overflow": false
+    },
+    "errors": [],
+    "ok": true
+  },
+  "sports-upcoming-chess.html": {
+    "start": {
+      "sidebar": 300,
+      "compact": false,
+      "main": 280,
+      "toggle": true,
+      "expanded": "true",
+      "bodyCls": false,
+      "overflow": false
+    },
+    "collapsed": {
+      "sidebar": 84,
+      "compact": true,
+      "main": 64,
+      "toggle": true,
+      "expanded": "false",
+      "bodyCls": true,
+      "overflow": false
+    },
+    "persisted": {
+      "sidebar": 84,
+      "compact": true,
+      "main": 64,
+      "toggle": true,
+      "expanded": "false",
+      "bodyCls": true,
+      "overflow": false
+    },
+    "restored": {
+      "sidebar": 300,
+      "compact": false,
+      "main": 280,
+      "toggle": true,
+      "expanded": "true",
+      "bodyCls": false,
+      "overflow": false
+    },
+    "errors": [],
+    "ok": true
+  },
+  "sports-upcoming-cricket.html": {
+    "start": {
+      "sidebar": 300,
+      "compact": false,
+      "main": 280,
+      "toggle": true,
+      "expanded": "true",
+      "bodyCls": false,
+      "overflow": false
+    },
+    "collapsed": {
+      "sidebar": 84,
+      "compact": true,
+      "main": 64,
+      "toggle": true,
+      "expanded": "false",
+      "bodyCls": true,
+      "overflow": false
+    },
+    "persisted": {
+      "sidebar": 84,
+      "compact": true,
+      "main": 64,
+      "toggle": true,
+      "expanded": "false",
+      "bodyCls": true,
+      "overflow": false
+    },
+    "restored": {
+      "sidebar": 300,
+      "compact": false,
+      "main": 280,
+      "toggle": true,
+      "expanded": "true",
+      "bodyCls": false,
+      "overflow": false
+    },
+    "errors": [],
+    "ok": true
+  },
+  "sports-upcoming-crossfire.html": {
+    "start": {
+      "sidebar": 300,
+      "compact": false,
+      "main": 280,
+      "toggle": true,
+      "expanded": "true",
+      "bodyCls": false,
+      "overflow": false
+    },
+    "collapsed": {
+      "sidebar": 84,
+      "compact": true,
+      "main": 64,
+      "toggle": true,
+      "expanded": "false",
+      "bodyCls": true,
+      "overflow": false
+    },
+    "persisted": {
+      "sidebar": 84,
+      "compact": true,
+      "main": 64,
+      "toggle": true,
+      "expanded": "false",
+      "bodyCls": true,
+      "overflow": false
+    },
+    "restored": {
+      "sidebar": 300,
+      "compact": false,
+      "main": 280,
+      "toggle": true,
+      "expanded": "true",
+      "bodyCls": false,
+      "overflow": false
+    },
+    "errors": [],
+    "ok": true
+  },
+  "sports-upcoming-cs2.html": {
+    "start": {
+      "sidebar": 300,
+      "compact": false,
+      "main": 280,
+      "toggle": true,
+      "expanded": "true",
+      "bodyCls": false,
+      "overflow": false
+    },
+    "collapsed": {
+      "sidebar": 84,
+      "compact": true,
+      "main": 64,
+      "toggle": true,
+      "expanded": "false",
+      "bodyCls": true,
+      "overflow": false
+    },
+    "persisted": {
+      "sidebar": 84,
+      "compact": true,
+      "main": 64,
+      "toggle": true,
+      "expanded": "false",
+      "bodyCls": true,
+      "overflow": false
+    },
+    "restored": {
+      "sidebar": 300,
+      "compact": false,
+      "main": 280,
+      "toggle": true,
+      "expanded": "true",
+      "bodyCls": false,
+      "overflow": false
+    },
+    "errors": [],
+    "ok": true
+  },
+  "sports-upcoming-darts.html": {
+    "start": {
+      "sidebar": 300,
+      "compact": false,
+      "main": 280,
+      "toggle": true,
+      "expanded": "true",
+      "bodyCls": false,
+      "overflow": false
+    },
+    "collapsed": {
+      "sidebar": 84,
+      "compact": true,
+      "main": 64,
+      "toggle": true,
+      "expanded": "false",
+      "bodyCls": true,
+      "overflow": false
+    },
+    "persisted": {
+      "sidebar": 84,
+      "compact": true,
+      "main": 64,
+      "toggle": true,
+      "expanded": "false",
+      "bodyCls": true,
+      "overflow": false
+    },
+    "restored": {
+      "sidebar": 300,
+      "compact": false,
+      "main": 280,
+      "toggle": true,
+      "expanded": "true",
+      "bodyCls": false,
+      "overflow": false
+    },
+    "errors": [],
+    "ok": true
+  },
+  "sports-upcoming-dota-2.html": {
+    "start": {
+      "sidebar": 300,
+      "compact": false,
+      "main": 280,
+      "toggle": true,
+      "expanded": "true",
+      "bodyCls": false,
+      "overflow": false
+    },
+    "collapsed": {
+      "sidebar": 84,
+      "compact": true,
+      "main": 64,
+      "toggle": true,
+      "expanded": "false",
+      "bodyCls": true,
+      "overflow": false
+    },
+    "persisted": {
+      "sidebar": 84,
+      "compact": true,
+      "main": 64,
+      "toggle": true,
+      "expanded": "false",
+      "bodyCls": true,
+      "overflow": false
+    },
+    "restored": {
+      "sidebar": 300,
+      "compact": false,
+      "main": 280,
+      "toggle": true,
+      "expanded": "true",
+      "bodyCls": false,
+      "overflow": false
+    },
+    "errors": [],
+    "ok": true
+  },
+  "sports-upcoming-floorball.html": {
+    "start": {
+      "sidebar": 300,
+      "compact": false,
+      "main": 280,
+      "toggle": true,
+      "expanded": "true",
+      "bodyCls": false,
+      "overflow": false
+    },
+    "collapsed": {
+      "sidebar": 84,
+      "compact": true,
+      "main": 64,
+      "toggle": true,
+      "expanded": "false",
+      "bodyCls": true,
+      "overflow": false
+    },
+    "persisted": {
+      "sidebar": 84,
+      "compact": true,
+      "main": 64,
+      "toggle": true,
+      "expanded": "false",
+      "bodyCls": true,
+      "overflow": false
+    },
+    "restored": {
+      "sidebar": 300,
+      "compact": false,
+      "main": 280,
+      "toggle": true,
+      "expanded": "true",
+      "bodyCls": false,
+      "overflow": false
+    },
+    "errors": [],
+    "ok": true
+  },
+  "sports-upcoming-football.html": {
+    "start": {
+      "sidebar": 300,
+      "compact": false,
+      "main": 280,
+      "toggle": true,
+      "expanded": "true",
+      "bodyCls": false,
+      "overflow": false
+    },
+    "collapsed": {
+      "sidebar": 84,
+      "compact": true,
+      "main": 64,
+      "toggle": true,
+      "expanded": "false",
+      "bodyCls": true,
+      "overflow": false
+    },
+    "persisted": {
+      "sidebar": 84,
+      "compact": true,
+      "main": 64,
+      "toggle": true,
+      "expanded": "false",
+      "bodyCls": true,
+      "overflow": false
+    },
+    "restored": {
+      "sidebar": 300,
+      "compact": false,
+      "main": 280,
+      "toggle": true,
+      "expanded": "true",
+      "bodyCls": false,
+      "overflow": false
+    },
+    "errors": [],
+    "ok": true
+  },
+  "sports-upcoming-formula-1.html": {
+    "start": {
+      "sidebar": 300,
+      "compact": false,
+      "main": 280,
+      "toggle": true,
+      "expanded": "true",
+      "bodyCls": false,
+      "overflow": false
+    },
+    "collapsed": {
+      "sidebar": 84,
+      "compact": true,
+      "main": 64,
+      "toggle": true,
+      "expanded": "false",
+      "bodyCls": true,
+      "overflow": false
+    },
+    "persisted": {
+      "sidebar": 84,
+      "compact": true,
+      "main": 64,
+      "toggle": true,
+      "expanded": "false",
+      "bodyCls": true,
+      "overflow": false
+    },
+    "restored": {
+      "sidebar": 300,
+      "compact": false,
+      "main": 280,
+      "toggle": true,
+      "expanded": "true",
+      "bodyCls": false,
+      "overflow": false
+    },
+    "errors": [],
+    "ok": true
+  },
+  "sports-upcoming-futsal.html": {
+    "start": {
+      "sidebar": 300,
+      "compact": false,
+      "main": 280,
+      "toggle": true,
+      "expanded": "true",
+      "bodyCls": false,
+      "overflow": false
+    },
+    "collapsed": {
+      "sidebar": 84,
+      "compact": true,
+      "main": 64,
+      "toggle": true,
+      "expanded": "false",
+      "bodyCls": true,
+      "overflow": false
+    },
+    "persisted": {
+      "sidebar": 84,
+      "compact": true,
+      "main": 64,
+      "toggle": true,
+      "expanded": "false",
+      "bodyCls": true,
+      "overflow": false
+    },
+    "restored": {
+      "sidebar": 300,
+      "compact": false,
+      "main": 280,
+      "toggle": true,
+      "expanded": "true",
+      "bodyCls": false,
+      "overflow": false
+    },
+    "errors": [],
+    "ok": true
+  },
+  "sports-upcoming-handball.html": {
+    "start": {
+      "sidebar": 300,
+      "compact": false,
+      "main": 280,
+      "toggle": true,
+      "expanded": "true",
+      "bodyCls": false,
+      "overflow": false
+    },
+    "collapsed": {
+      "sidebar": 84,
+      "compact": true,
+      "main": 64,
+      "toggle": true,
+      "expanded": "false",
+      "bodyCls": true,
+      "overflow": false
+    },
+    "persisted": {
+      "sidebar": 84,
+      "compact": true,
+      "main": 64,
+      "toggle": true,
+      "expanded": "false",
+      "bodyCls": true,
+      "overflow": false
+    },
+    "restored": {
+      "sidebar": 300,
+      "compact": false,
+      "main": 280,
+      "toggle": true,
+      "expanded": "true",
+      "bodyCls": false,
+      "overflow": false
+    },
+    "errors": [],
+    "ok": true
+  },
+  "sports-upcoming-honor-of-kings.html": {
+    "start": {
+      "sidebar": 300,
+      "compact": false,
+      "main": 280,
+      "toggle": true,
+      "expanded": "true",
+      "bodyCls": false,
+      "overflow": false
+    },
+    "collapsed": {
+      "sidebar": 84,
+      "compact": true,
+      "main": 64,
+      "toggle": true,
+      "expanded": "false",
+      "bodyCls": true,
+      "overflow": false
+    },
+    "persisted": {
+      "sidebar": 84,
+      "compact": true,
+      "main": 64,
+      "toggle": true,
+      "expanded": "false",
+      "bodyCls": true,
+      "overflow": false
+    },
+    "restored": {
+      "sidebar": 300,
+      "compact": false,
+      "main": 280,
+      "toggle": true,
+      "expanded": "true",
+      "bodyCls": false,
+      "overflow": false
+    },
+    "errors": [],
+    "ok": true
+  },
+  "sports-upcoming-ice-hockey.html": {
+    "start": {
+      "sidebar": 300,
+      "compact": false,
+      "main": 280,
+      "toggle": true,
+      "expanded": "true",
+      "bodyCls": false,
+      "overflow": false
+    },
+    "collapsed": {
+      "sidebar": 84,
+      "compact": true,
+      "main": 64,
+      "toggle": true,
+      "expanded": "false",
+      "bodyCls": true,
+      "overflow": false
+    },
+    "persisted": {
+      "sidebar": 84,
+      "compact": true,
+      "main": 64,
+      "toggle": true,
+      "expanded": "false",
+      "bodyCls": true,
+      "overflow": false
+    },
+    "restored": {
+      "sidebar": 300,
+      "compact": false,
+      "main": 280,
+      "toggle": true,
+      "expanded": "true",
+      "bodyCls": false,
+      "overflow": false
+    },
+    "errors": [],
+    "ok": true
+  },
+  "sports-upcoming-lol.html": {
+    "start": {
+      "sidebar": 300,
+      "compact": false,
+      "main": 280,
+      "toggle": true,
+      "expanded": "true",
+      "bodyCls": false,
+      "overflow": false
+    },
+    "collapsed": {
+      "sidebar": 84,
+      "compact": true,
+      "main": 64,
+      "toggle": true,
+      "expanded": "false",
+      "bodyCls": true,
+      "overflow": false
+    },
+    "persisted": {
+      "sidebar": 84,
+      "compact": true,
+      "main": 64,
+      "toggle": true,
+      "expanded": "false",
+      "bodyCls": true,
+      "overflow": false
+    },
+    "restored": {
+      "sidebar": 300,
+      "compact": false,
+      "main": 280,
+      "toggle": true,
+      "expanded": "true",
+      "bodyCls": false,
+      "overflow": false
+    },
+    "errors": [],
+    "ok": true
+  },
+  "sports-upcoming-martial-arts.html": {
+    "start": {
+      "sidebar": 300,
+      "compact": false,
+      "main": 280,
+      "toggle": true,
+      "expanded": "true",
+      "bodyCls": false,
+      "overflow": false
+    },
+    "collapsed": {
+      "sidebar": 84,
+      "compact": true,
+      "main": 64,
+      "toggle": true,
+      "expanded": "false",
+      "bodyCls": true,
+      "overflow": false
+    },
+    "persisted": {
+      "sidebar": 84,
+      "compact": true,
+      "main": 64,
+      "toggle": true,
+      "expanded": "false",
+      "bodyCls": true,
+      "overflow": false
+    },
+    "restored": {
+      "sidebar": 300,
+      "compact": false,
+      "main": 280,
+      "toggle": true,
+      "expanded": "true",
+      "bodyCls": false,
+      "overflow": false
+    },
+    "errors": [],
+    "ok": true
+  },
+  "sports-upcoming-mobile-legends.html": {
+    "start": {
+      "sidebar": 300,
+      "compact": false,
+      "main": 280,
+      "toggle": true,
+      "expanded": "true",
+      "bodyCls": false,
+      "overflow": false
+    },
+    "collapsed": {
+      "sidebar": 84,
+      "compact": true,
+      "main": 64,
+      "toggle": true,
+      "expanded": "false",
+      "bodyCls": true,
+      "overflow": false
+    },
+    "persisted": {
+      "sidebar": 84,
+      "compact": true,
+      "main": 64,
+      "toggle": true,
+      "expanded": "false",
+      "bodyCls": true,
+      "overflow": false
+    },
+    "restored": {
+      "sidebar": 300,
+      "compact": false,
+      "main": 280,
+      "toggle": true,
+      "expanded": "true",
+      "bodyCls": false,
+      "overflow": false
+    },
+    "errors": [],
+    "ok": true
+  },
+  "sports-upcoming-overwatch-2.html": {
+    "start": {
+      "sidebar": 300,
+      "compact": false,
+      "main": 280,
+      "toggle": true,
+      "expanded": "true",
+      "bodyCls": false,
+      "overflow": false
+    },
+    "collapsed": {
+      "sidebar": 84,
+      "compact": true,
+      "main": 64,
+      "toggle": true,
+      "expanded": "false",
+      "bodyCls": true,
+      "overflow": false
+    },
+    "persisted": {
+      "sidebar": 84,
+      "compact": true,
+      "main": 64,
+      "toggle": true,
+      "expanded": "false",
+      "bodyCls": true,
+      "overflow": false
+    },
+    "restored": {
+      "sidebar": 300,
+      "compact": false,
+      "main": 280,
+      "toggle": true,
+      "expanded": "true",
+      "bodyCls": false,
+      "overflow": false
+    },
+    "errors": [],
+    "ok": true
+  },
+  "sports-upcoming-padel.html": {
+    "start": {
+      "sidebar": 300,
+      "compact": false,
+      "main": 280,
+      "toggle": true,
+      "expanded": "true",
+      "bodyCls": false,
+      "overflow": false
+    },
+    "collapsed": {
+      "sidebar": 84,
+      "compact": true,
+      "main": 64,
+      "toggle": true,
+      "expanded": "false",
+      "bodyCls": true,
+      "overflow": false
+    },
+    "persisted": {
+      "sidebar": 84,
+      "compact": true,
+      "main": 64,
+      "toggle": true,
+      "expanded": "false",
+      "bodyCls": true,
+      "overflow": false
+    },
+    "restored": {
+      "sidebar": 300,
+      "compact": false,
+      "main": 280,
+      "toggle": true,
+      "expanded": "true",
+      "bodyCls": false,
+      "overflow": false
+    },
+    "errors": [],
+    "ok": true
+  },
+  "sports-upcoming-pubg.html": {
+    "start": {
+      "sidebar": 300,
+      "compact": false,
+      "main": 280,
+      "toggle": true,
+      "expanded": "true",
+      "bodyCls": false,
+      "overflow": false
+    },
+    "collapsed": {
+      "sidebar": 84,
+      "compact": true,
+      "main": 64,
+      "toggle": true,
+      "expanded": "false",
+      "bodyCls": true,
+      "overflow": false
+    },
+    "persisted": {
+      "sidebar": 84,
+      "compact": true,
+      "main": 64,
+      "toggle": true,
+      "expanded": "false",
+      "bodyCls": true,
+      "overflow": false
+    },
+    "restored": {
+      "sidebar": 300,
+      "compact": false,
+      "main": 280,
+      "toggle": true,
+      "expanded": "true",
+      "bodyCls": false,
+      "overflow": false
+    },
+    "errors": [],
+    "ok": true
+  },
+  "sports-upcoming-rainbow-six.html": {
+    "start": {
+      "sidebar": 300,
+      "compact": false,
+      "main": 280,
+      "toggle": true,
+      "expanded": "true",
+      "bodyCls": false,
+      "overflow": false
+    },
+    "collapsed": {
+      "sidebar": 84,
+      "compact": true,
+      "main": 64,
+      "toggle": true,
+      "expanded": "false",
+      "bodyCls": true,
+      "overflow": false
+    },
+    "persisted": {
+      "sidebar": 84,
+      "compact": true,
+      "main": 64,
+      "toggle": true,
+      "expanded": "false",
+      "bodyCls": true,
+      "overflow": false
+    },
+    "restored": {
+      "sidebar": 300,
+      "compact": false,
+      "main": 280,
+      "toggle": true,
+      "expanded": "true",
+      "bodyCls": false,
+      "overflow": false
+    },
+    "errors": [],
+    "ok": true
+  },
+  "sports-upcoming-rugby-union.html": {
+    "start": {
+      "sidebar": 300,
+      "compact": false,
+      "main": 280,
+      "toggle": true,
+      "expanded": "true",
+      "bodyCls": false,
+      "overflow": false
+    },
+    "collapsed": {
+      "sidebar": 84,
+      "compact": true,
+      "main": 64,
+      "toggle": true,
+      "expanded": "false",
+      "bodyCls": true,
+      "overflow": false
+    },
+    "persisted": {
+      "sidebar": 84,
+      "compact": true,
+      "main": 64,
+      "toggle": true,
+      "expanded": "false",
+      "bodyCls": true,
+      "overflow": false
+    },
+    "restored": {
+      "sidebar": 300,
+      "compact": false,
+      "main": 280,
+      "toggle": true,
+      "expanded": "true",
+      "bodyCls": false,
+      "overflow": false
+    },
+    "errors": [],
+    "ok": true
+  },
+  "sports-upcoming-table-tennis.html": {
+    "start": {
+      "sidebar": 300,
+      "compact": false,
+      "main": 280,
+      "toggle": true,
+      "expanded": "true",
+      "bodyCls": false,
+      "overflow": false
+    },
+    "collapsed": {
+      "sidebar": 84,
+      "compact": true,
+      "main": 64,
+      "toggle": true,
+      "expanded": "false",
+      "bodyCls": true,
+      "overflow": false
+    },
+    "persisted": {
+      "sidebar": 84,
+      "compact": true,
+      "main": 64,
+      "toggle": true,
+      "expanded": "false",
+      "bodyCls": true,
+      "overflow": false
+    },
+    "restored": {
+      "sidebar": 300,
+      "compact": false,
+      "main": 280,
+      "toggle": true,
+      "expanded": "true",
+      "bodyCls": false,
+      "overflow": false
+    },
+    "errors": [],
+    "ok": true
+  },
+  "sports-upcoming-tennis.html": {
+    "start": {
+      "sidebar": 300,
+      "compact": false,
+      "main": 280,
+      "toggle": true,
+      "expanded": "true",
+      "bodyCls": false,
+      "overflow": false
+    },
+    "collapsed": {
+      "sidebar": 84,
+      "compact": true,
+      "main": 64,
+      "toggle": true,
+      "expanded": "false",
+      "bodyCls": true,
+      "overflow": false
+    },
+    "persisted": {
+      "sidebar": 84,
+      "compact": true,
+      "main": 64,
+      "toggle": true,
+      "expanded": "false",
+      "bodyCls": true,
+      "overflow": false
+    },
+    "restored": {
+      "sidebar": 300,
+      "compact": false,
+      "main": 280,
+      "toggle": true,
+      "expanded": "true",
+      "bodyCls": false,
+      "overflow": false
+    },
+    "errors": [],
+    "ok": true
+  },
+  "sports-upcoming-ufc.html": {
+    "start": {
+      "sidebar": 300,
+      "compact": false,
+      "main": 280,
+      "toggle": true,
+      "expanded": "true",
+      "bodyCls": false,
+      "overflow": false
+    },
+    "collapsed": {
+      "sidebar": 84,
+      "compact": true,
+      "main": 64,
+      "toggle": true,
+      "expanded": "false",
+      "bodyCls": true,
+      "overflow": false
+    },
+    "persisted": {
+      "sidebar": 84,
+      "compact": true,
+      "main": 64,
+      "toggle": true,
+      "expanded": "false",
+      "bodyCls": true,
+      "overflow": false
+    },
+    "restored": {
+      "sidebar": 300,
+      "compact": false,
+      "main": 280,
+      "toggle": true,
+      "expanded": "true",
+      "bodyCls": false,
+      "overflow": false
+    },
+    "errors": [],
+    "ok": true
+  },
+  "sports-upcoming-valorant.html": {
+    "start": {
+      "sidebar": 300,
+      "compact": false,
+      "main": 280,
+      "toggle": true,
+      "expanded": "true",
+      "bodyCls": false,
+      "overflow": false
+    },
+    "collapsed": {
+      "sidebar": 84,
+      "compact": true,
+      "main": 64,
+      "toggle": true,
+      "expanded": "false",
+      "bodyCls": true,
+      "overflow": false
+    },
+    "persisted": {
+      "sidebar": 84,
+      "compact": true,
+      "main": 64,
+      "toggle": true,
+      "expanded": "false",
+      "bodyCls": true,
+      "overflow": false
+    },
+    "restored": {
+      "sidebar": 300,
+      "compact": false,
+      "main": 280,
+      "toggle": true,
+      "expanded": "true",
+      "bodyCls": false,
+      "overflow": false
+    },
+    "errors": [],
+    "ok": true
+  },
+  "sports-upcoming-volleyball.html": {
+    "start": {
+      "sidebar": 300,
+      "compact": false,
+      "main": 280,
+      "toggle": true,
+      "expanded": "true",
+      "bodyCls": false,
+      "overflow": false
+    },
+    "collapsed": {
+      "sidebar": 84,
+      "compact": true,
+      "main": 64,
+      "toggle": true,
+      "expanded": "false",
+      "bodyCls": true,
+      "overflow": false
+    },
+    "persisted": {
+      "sidebar": 84,
+      "compact": true,
+      "main": 64,
+      "toggle": true,
+      "expanded": "false",
+      "bodyCls": true,
+      "overflow": false
+    },
+    "restored": {
+      "sidebar": 300,
+      "compact": false,
+      "main": 280,
+      "toggle": true,
+      "expanded": "true",
+      "bodyCls": false,
+      "overflow": false
+    },
+    "errors": [],
+    "ok": true
+  },
+  "sports-upcoming-wrestling.html": {
+    "start": {
+      "sidebar": 300,
+      "compact": false,
+      "main": 280,
+      "toggle": true,
+      "expanded": "true",
+      "bodyCls": false,
+      "overflow": false
+    },
+    "collapsed": {
+      "sidebar": 84,
+      "compact": true,
+      "main": 64,
+      "toggle": true,
+      "expanded": "false",
+      "bodyCls": true,
+      "overflow": false
+    },
+    "persisted": {
+      "sidebar": 84,
+      "compact": true,
+      "main": 64,
+      "toggle": true,
+      "expanded": "false",
+      "bodyCls": true,
+      "overflow": false
+    },
+    "restored": {
+      "sidebar": 300,
+      "compact": false,
+      "main": 280,
+      "toggle": true,
+      "expanded": "true",
+      "bodyCls": false,
+      "overflow": false
+    },
+    "errors": [],
+    "ok": true
+  },
+  "sports-upcoming.html": {
+    "start": {
+      "sidebar": 300,
+      "compact": false,
+      "main": 280,
+      "toggle": true,
+      "expanded": "true",
+      "bodyCls": false,
+      "overflow": false
+    },
+    "collapsed": {
+      "sidebar": 84,
+      "compact": true,
+      "main": 64,
+      "toggle": true,
+      "expanded": "false",
+      "bodyCls": true,
+      "overflow": false
+    },
+    "persisted": {
+      "sidebar": 84,
+      "compact": true,
+      "main": 64,
+      "toggle": true,
+      "expanded": "false",
+      "bodyCls": true,
+      "overflow": false
+    },
+    "restored": {
+      "sidebar": 300,
+      "compact": false,
+      "main": 280,
+      "toggle": true,
+      "expanded": "true",
+      "bodyCls": false,
+      "overflow": false
+    },
+    "errors": [],
+    "ok": true
+  },
+  "sports.html": {
+    "start": {
+      "sidebar": 300,
+      "compact": false,
+      "main": 280,
+      "toggle": true,
+      "expanded": "true",
+      "bodyCls": false,
+      "overflow": false
+    },
+    "collapsed": {
+      "sidebar": 84,
+      "compact": true,
+      "main": 64,
+      "toggle": true,
+      "expanded": "false",
+      "bodyCls": true,
+      "overflow": false
+    },
+    "persisted": {
+      "sidebar": 84,
+      "compact": true,
+      "main": 64,
+      "toggle": true,
+      "expanded": "false",
+      "bodyCls": true,
+      "overflow": false
+    },
+    "restored": {
+      "sidebar": 300,
+      "compact": false,
+      "main": 280,
+      "toggle": true,
+      "expanded": "true",
+      "bodyCls": false,
+      "overflow": false
+    },
+    "errors": [],
+    "ok": true
+  },
+  "tournament-788262.html": {
+    "start": {
+      "sidebar": 300,
+      "compact": false,
+      "main": 280,
+      "toggle": true,
+      "expanded": "true",
+      "bodyCls": false,
+      "overflow": false
+    },
+    "collapsed": {
+      "sidebar": 84,
+      "compact": true,
+      "main": 64,
+      "toggle": true,
+      "expanded": "false",
+      "bodyCls": true,
+      "overflow": false
+    },
+    "persisted": {
+      "sidebar": 84,
+      "compact": true,
+      "main": 64,
+      "toggle": true,
+      "expanded": "false",
+      "bodyCls": true,
+      "overflow": false
+    },
+    "restored": {
+      "sidebar": 300,
+      "compact": false,
+      "main": 280,
+      "toggle": true,
+      "expanded": "true",
+      "bodyCls": false,
+      "overflow": false
+    },
+    "errors": [],
+    "ok": true
+  },
+  "tournament-788264.html": {
+    "start": {
+      "sidebar": 300,
+      "compact": false,
+      "main": 280,
+      "toggle": true,
+      "expanded": "true",
+      "bodyCls": false,
+      "overflow": false
+    },
+    "collapsed": {
+      "sidebar": 84,
+      "compact": true,
+      "main": 64,
+      "toggle": true,
+      "expanded": "false",
+      "bodyCls": true,
+      "overflow": false
+    },
+    "persisted": {
+      "sidebar": 84,
+      "compact": true,
+      "main": 64,
+      "toggle": true,
+      "expanded": "false",
+      "bodyCls": true,
+      "overflow": false
+    },
+    "restored": {
+      "sidebar": 300,
+      "compact": false,
+      "main": 280,
+      "toggle": true,
+      "expanded": "true",
+      "bodyCls": false,
+      "overflow": false
+    },
+    "errors": [],
+    "ok": true
+  },
+  "tournament-788267.html": {
+    "start": {
+      "sidebar": 300,
+      "compact": false,
+      "main": 280,
+      "toggle": true,
+      "expanded": "true",
+      "bodyCls": false,
+      "overflow": false
+    },
+    "collapsed": {
+      "sidebar": 84,
+      "compact": true,
+      "main": 64,
+      "toggle": true,
+      "expanded": "false",
+      "bodyCls": true,
+      "overflow": false
+    },
+    "persisted": {
+      "sidebar": 84,
+      "compact": true,
+      "main": 64,
+      "toggle": true,
+      "expanded": "false",
+      "bodyCls": true,
+      "overflow": false
+    },
+    "restored": {
+      "sidebar": 300,
+      "compact": false,
+      "main": 280,
+      "toggle": true,
+      "expanded": "true",
+      "bodyCls": false,
+      "overflow": false
+    },
+    "errors": [],
+    "ok": true
+  },
+  "tournament-813699.html": {
+    "start": {
+      "sidebar": 300,
+      "compact": false,
+      "main": 280,
+      "toggle": true,
+      "expanded": "true",
+      "bodyCls": false,
+      "overflow": false
+    },
+    "collapsed": {
+      "sidebar": 84,
+      "compact": true,
+      "main": 64,
+      "toggle": true,
+      "expanded": "false",
+      "bodyCls": true,
+      "overflow": false
+    },
+    "persisted": {
+      "sidebar": 84,
+      "compact": true,
+      "main": 64,
+      "toggle": true,
+      "expanded": "false",
+      "bodyCls": true,
+      "overflow": false
+    },
+    "restored": {
+      "sidebar": 300,
+      "compact": false,
+      "main": 280,
+      "toggle": true,
+      "expanded": "true",
+      "bodyCls": false,
+      "overflow": false
+    },
+    "errors": [],
+    "ok": true
+  },
+  "tournament-813768.html": {
+    "start": {
+      "sidebar": 300,
+      "compact": false,
+      "main": 280,
+      "toggle": true,
+      "expanded": "true",
+      "bodyCls": false,
+      "overflow": false
+    },
+    "collapsed": {
+      "sidebar": 84,
+      "compact": true,
+      "main": 64,
+      "toggle": true,
+      "expanded": "false",
+      "bodyCls": true,
+      "overflow": false
+    },
+    "persisted": {
+      "sidebar": 84,
+      "compact": true,
+      "main": 64,
+      "toggle": true,
+      "expanded": "false",
+      "bodyCls": true,
+      "overflow": false
+    },
+    "restored": {
+      "sidebar": 300,
+      "compact": false,
+      "main": 280,
+      "toggle": true,
+      "expanded": "true",
+      "bodyCls": false,
+      "overflow": false
+    },
+    "errors": [],
+    "ok": true
+  },
+  "tournament-814264.html": {
+    "start": {
+      "sidebar": 300,
+      "compact": false,
+      "main": 280,
+      "toggle": true,
+      "expanded": "true",
+      "bodyCls": false,
+      "overflow": false
+    },
+    "collapsed": {
+      "sidebar": 84,
+      "compact": true,
+      "main": 64,
+      "toggle": true,
+      "expanded": "false",
+      "bodyCls": true,
+      "overflow": false
+    },
+    "persisted": {
+      "sidebar": 84,
+      "compact": true,
+      "main": 64,
+      "toggle": true,
+      "expanded": "false",
+      "bodyCls": true,
+      "overflow": false
+    },
+    "restored": {
+      "sidebar": 300,
+      "compact": false,
+      "main": 280,
+      "toggle": true,
+      "expanded": "true",
+      "bodyCls": false,
+      "overflow": false
+    },
+    "errors": [],
+    "ok": true
+  },
+  "tournament-814607.html": {
+    "start": {
+      "sidebar": 300,
+      "compact": false,
+      "main": 280,
+      "toggle": true,
+      "expanded": "true",
+      "bodyCls": false,
+      "overflow": false
+    },
+    "collapsed": {
+      "sidebar": 84,
+      "compact": true,
+      "main": 64,
+      "toggle": true,
+      "expanded": "false",
+      "bodyCls": true,
+      "overflow": false
+    },
+    "persisted": {
+      "sidebar": 84,
+      "compact": true,
+      "main": 64,
+      "toggle": true,
+      "expanded": "false",
+      "bodyCls": true,
+      "overflow": false
+    },
+    "restored": {
+      "sidebar": 300,
+      "compact": false,
+      "main": 280,
+      "toggle": true,
+      "expanded": "true",
+      "bodyCls": false,
+      "overflow": false
+    },
+    "errors": [],
+    "ok": true
+  },
+  "tournament-816330.html": {
+    "start": {
+      "sidebar": 300,
+      "compact": false,
+      "main": 280,
+      "toggle": true,
+      "expanded": "true",
+      "bodyCls": false,
+      "overflow": false
+    },
+    "collapsed": {
+      "sidebar": 84,
+      "compact": true,
+      "main": 64,
+      "toggle": true,
+      "expanded": "false",
+      "bodyCls": true,
+      "overflow": false
+    },
+    "persisted": {
+      "sidebar": 84,
+      "compact": true,
+      "main": 64,
+      "toggle": true,
+      "expanded": "false",
+      "bodyCls": true,
+      "overflow": false
+    },
+    "restored": {
+      "sidebar": 300,
+      "compact": false,
+      "main": 280,
+      "toggle": true,
+      "expanded": "true",
+      "bodyCls": false,
+      "overflow": false
+    },
+    "errors": [],
+    "ok": true
+  },
+  "tournament-817472.html": {
+    "start": {
+      "sidebar": 300,
+      "compact": false,
+      "main": 280,
+      "toggle": true,
+      "expanded": "true",
+      "bodyCls": false,
+      "overflow": false
+    },
+    "collapsed": {
+      "sidebar": 84,
+      "compact": true,
+      "main": 64,
+      "toggle": true,
+      "expanded": "false",
+      "bodyCls": true,
+      "overflow": false
+    },
+    "persisted": {
+      "sidebar": 84,
+      "compact": true,
+      "main": 64,
+      "toggle": true,
+      "expanded": "false",
+      "bodyCls": true,
+      "overflow": false
+    },
+    "restored": {
+      "sidebar": 300,
+      "compact": false,
+      "main": 280,
+      "toggle": true,
+      "expanded": "true",
+      "bodyCls": false,
+      "overflow": false
+    },
+    "errors": [],
+    "ok": true
+  },
+  "tournament-817708.html": {
+    "start": {
+      "sidebar": 300,
+      "compact": false,
+      "main": 280,
+      "toggle": true,
+      "expanded": "true",
+      "bodyCls": false,
+      "overflow": false
+    },
+    "collapsed": {
+      "sidebar": 84,
+      "compact": true,
+      "main": 64,
+      "toggle": true,
+      "expanded": "false",
+      "bodyCls": true,
+      "overflow": false
+    },
+    "persisted": {
+      "sidebar": 84,
+      "compact": true,
+      "main": 64,
+      "toggle": true,
+      "expanded": "false",
+      "bodyCls": true,
+      "overflow": false
+    },
+    "restored": {
+      "sidebar": 300,
+      "compact": false,
+      "main": 280,
+      "toggle": true,
+      "expanded": "true",
+      "bodyCls": false,
+      "overflow": false
+    },
+    "errors": [],
+    "ok": true
+  },
+  "tournament-818243.html": {
+    "start": {
+      "sidebar": 300,
+      "compact": false,
+      "main": 280,
+      "toggle": true,
+      "expanded": "true",
+      "bodyCls": false,
+      "overflow": false
+    },
+    "collapsed": {
+      "sidebar": 84,
+      "compact": true,
+      "main": 64,
+      "toggle": true,
+      "expanded": "false",
+      "bodyCls": true,
+      "overflow": false
+    },
+    "persisted": {
+      "sidebar": 84,
+      "compact": true,
+      "main": 64,
+      "toggle": true,
+      "expanded": "false",
+      "bodyCls": true,
+      "overflow": false
+    },
+    "restored": {
+      "sidebar": 300,
+      "compact": false,
+      "main": 280,
+      "toggle": true,
+      "expanded": "true",
+      "bodyCls": false,
+      "overflow": false
+    },
+    "errors": [],
+    "ok": true
+  },
+  "tournament-819055.html": {
+    "start": {
+      "sidebar": 300,
+      "compact": false,
+      "main": 280,
+      "toggle": true,
+      "expanded": "true",
+      "bodyCls": false,
+      "overflow": false
+    },
+    "collapsed": {
+      "sidebar": 84,
+      "compact": true,
+      "main": 64,
+      "toggle": true,
+      "expanded": "false",
+      "bodyCls": true,
+      "overflow": false
+    },
+    "persisted": {
+      "sidebar": 84,
+      "compact": true,
+      "main": 64,
+      "toggle": true,
+      "expanded": "false",
+      "bodyCls": true,
+      "overflow": false
+    },
+    "restored": {
+      "sidebar": 300,
+      "compact": false,
+      "main": 280,
+      "toggle": true,
+      "expanded": "true",
+      "bodyCls": false,
+      "overflow": false
+    },
+    "errors": [],
+    "ok": true
+  },
+  "tournament-819462.html": {
+    "start": {
+      "sidebar": 300,
+      "compact": false,
+      "main": 280,
+      "toggle": true,
+      "expanded": "true",
+      "bodyCls": false,
+      "overflow": false
+    },
+    "collapsed": {
+      "sidebar": 84,
+      "compact": true,
+      "main": 64,
+      "toggle": true,
+      "expanded": "false",
+      "bodyCls": true,
+      "overflow": false
+    },
+    "persisted": {
+      "sidebar": 84,
+      "compact": true,
+      "main": 64,
+      "toggle": true,
+      "expanded": "false",
+      "bodyCls": true,
+      "overflow": false
+    },
+    "restored": {
+      "sidebar": 300,
+      "compact": false,
+      "main": 280,
+      "toggle": true,
+      "expanded": "true",
+      "bodyCls": false,
+      "overflow": false
+    },
+    "errors": [],
+    "ok": true
+  },
+  "tournament-820166.html": {
+    "start": {
+      "sidebar": 300,
+      "compact": false,
+      "main": 280,
+      "toggle": true,
+      "expanded": "true",
+      "bodyCls": false,
+      "overflow": false
+    },
+    "collapsed": {
+      "sidebar": 84,
+      "compact": true,
+      "main": 64,
+      "toggle": true,
+      "expanded": "false",
+      "bodyCls": true,
+      "overflow": false
+    },
+    "persisted": {
+      "sidebar": 84,
+      "compact": true,
+      "main": 64,
+      "toggle": true,
+      "expanded": "false",
+      "bodyCls": true,
+      "overflow": false
+    },
+    "restored": {
+      "sidebar": 300,
+      "compact": false,
+      "main": 280,
+      "toggle": true,
+      "expanded": "true",
+      "bodyCls": false,
+      "overflow": false
+    },
+    "errors": [],
+    "ok": true
+  },
+  "tournaments.html": {
+    "start": {
+      "sidebar": 300,
+      "compact": false,
+      "main": 280,
+      "toggle": true,
+      "expanded": "true",
+      "bodyCls": false,
+      "overflow": false
+    },
+    "collapsed": {
+      "sidebar": 84,
+      "compact": true,
+      "main": 64,
+      "toggle": true,
+      "expanded": "false",
+      "bodyCls": true,
+      "overflow": false
+    },
+    "persisted": {
+      "sidebar": 84,
+      "compact": true,
+      "main": 64,
+      "toggle": true,
+      "expanded": "false",
+      "bodyCls": true,
+      "overflow": false
+    },
+    "restored": {
+      "sidebar": 300,
+      "compact": false,
+      "main": 280,
+      "toggle": true,
+      "expanded": "true",
+      "bodyCls": false,
+      "overflow": false
+    },
+    "errors": [],
+    "ok": true
+  },
+  "vip-club.html": {
+    "start": {
+      "sidebar": 300,
+      "compact": false,
+      "main": 280,
+      "toggle": true,
+      "expanded": "true",
+      "bodyCls": false,
+      "overflow": false
+    },
+    "collapsed": {
+      "sidebar": 84,
+      "compact": true,
+      "main": 64,
+      "toggle": true,
+      "expanded": "false",
+      "bodyCls": true,
+      "overflow": false
+    },
+    "persisted": {
+      "sidebar": 84,
+      "compact": true,
+      "main": 64,
+      "toggle": true,
+      "expanded": "false",
+      "bodyCls": true,
+      "overflow": false
+    },
+    "restored": {
+      "sidebar": 300,
+      "compact": false,
+      "main": 280,
+      "toggle": true,
+      "expanded": "true",
+      "bodyCls": false,
+      "overflow": false
+    },
+    "errors": [],
+    "ok": true
+  }
+}

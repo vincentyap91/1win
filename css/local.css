@@ -21,3 +21,6 @@
 .local-preview-controls button{border:1px solid #3d4249;border-radius:8px;padding:7px 12px;background:#292d33;color:white;cursor:pointer;font:inherit}
 body[data-page="freemoney"] [class*="chips-section-floating_root"]{position:sticky;top:0;z-index:20}
 @media(min-width:1024px){body[data-page="freemoney"] [class*="chips-section-floating_root"]{top:16px}}
+
+/* Infinite scroll: cards waiting for the next batch (js/common.js initMoreCards). */
+[data-local-more-card][hidden]{display:none!important}

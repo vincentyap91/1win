@@ -1,0 +1,326 @@
+{
+ "1440x900": {
+  "value": {
+   "cards": 195,
+   "open": {
+    "value": "MYR 0.00",
+    "empty": true,
+    "minusDisabled": true,
+    "win": "MYR 0.00",
+    "label": "Yes 15%",
+    "question": "Will the Strait of Hormuz be open to all shipping by December 31, 2026?",
+    "logo": "assets/audit-f858f88ebf2ec183d51f.jpg",
+    "logoLoaded": true
+   },
+   "icons": [
+    "data",
+    "data",
+    "data"
+   ],
+   "position": {
+    "formFirstInParent": true,
+    "wrapperHidden": "none",
+    "cardInside": true,
+    "formWidth": 319,
+    "cardWidth": 319,
+    "formHeight": 200
+   },
+   "plus1": {
+    "value": "MYR 1.00",
+    "empty": false,
+    "minusDisabled": false,
+    "win": "MYR 6.67",
+    "label": "Yes 15%",
+    "question": "Will the Strait of Hormuz be open to all shipping by December 31, 2026?",
+    "logo": "assets/audit-f858f88ebf2ec183d51f.jpg",
+    "logoLoaded": true
+   },
+   "plus2": {
+    "value": "MYR 2.00",
+    "empty": false,
+    "minusDisabled": false,
+    "win": "MYR 13.33",
+    "label": "Yes 15%",
+    "question": "Will the Strait of Hormuz be open to all shipping by December 31, 2026?",
+    "logo": "assets/audit-f858f88ebf2ec183d51f.jpg",
+    "logoLoaded": true
+   },
+   "minus1": {
+    "value": "MYR 1.00",
+    "empty": false,
+    "minusDisabled": false,
+    "win": "MYR 6.67",
+    "label": "Yes 15%",
+    "question": "Will the Strait of Hormuz be open to all shipping by December 31, 2026?",
+    "logo": "assets/audit-f858f88ebf2ec183d51f.jpg",
+    "logoLoaded": true
+   },
+   "max": {
+    "value": "MYR 1.00",
+    "empty": false,
+    "minusDisabled": false,
+    "win": "MYR 6.67",
+    "label": "Yes 15%",
+    "question": "Will the Strait of Hormuz be open to all shipping by December 31, 2026?",
+    "logo": "assets/audit-f858f88ebf2ec183d51f.jpg",
+    "logoLoaded": true
+   },
+   "focused": {
+    "value": "MYR 1.00",
+    "empty": false,
+    "minusDisabled": false,
+    "win": "MYR 6.67",
+    "label": "Yes 15%",
+    "question": "Will the Strait of Hormuz be open to all shipping by December 31, 2026?",
+    "logo": "assets/audit-f858f88ebf2ec183d51f.jpg",
+    "logoLoaded": true
+   },
+   "typed10": {
+    "value": "10",
+    "empty": false,
+    "minusDisabled": false,
+    "win": "MYR 66.67",
+    "label": "Yes 15%",
+    "question": "Will the Strait of Hormuz be open to all shipping by December 31, 2026?",
+    "logo": "assets/audit-f858f88ebf2ec183d51f.jpg",
+    "logoLoaded": true
+   },
+   "typedDecimals": {
+    "value": "12.345",
+    "empty": false,
+    "minusDisabled": false,
+    "win": "MYR 66.67",
+    "label": "Yes 15%",
+    "question": "Will the Strait of Hormuz be open to all shipping by December 31, 2026?",
+    "logo": "assets/audit-f858f88ebf2ec183d51f.jpg",
+    "logoLoaded": true
+   },
+   "typedLetters": {
+    "value": "abc",
+    "empty": false,
+    "minusDisabled": false,
+    "win": "MYR 66.67",
+    "label": "Yes 15%",
+    "question": "Will the Strait of Hormuz be open to all shipping by December 31, 2026?",
+    "logo": "assets/audit-f858f88ebf2ec183d51f.jpg",
+    "logoLoaded": true
+   },
+   "blurred": {
+    "value": "MYR 10.00",
+    "empty": false,
+    "minusDisabled": false,
+    "win": "MYR 66.67",
+    "label": "Yes 15%",
+    "question": "Will the Strait of Hormuz be open to all shipping by December 31, 2026?",
+    "logo": "assets/audit-f858f88ebf2ec183d51f.jpg",
+    "logoLoaded": true
+   },
+   "thousands": {
+    "value": "MYR 1,600.00",
+    "empty": false,
+    "minusDisabled": false,
+    "win": "MYR 10,666.67",
+    "label": "Yes 15%",
+    "question": "Will the Strait of Hormuz be open to all shipping by December 31, 2026?",
+    "logo": "assets/audit-f858f88ebf2ec183d51f.jpg",
+    "logoLoaded": true
+   },
+   "clearedThenLeft": {
+    "value": "MYR 0.00",
+    "empty": true,
+    "minusDisabled": true,
+    "win": "MYR 0.00",
+    "label": "Yes 15%",
+    "question": "Will the Strait of Hormuz be open to all shipping by December 31, 2026?",
+    "logo": "assets/audit-f858f88ebf2ec183d51f.jpg",
+    "logoLoaded": true
+   },
+   "second": {
+    "forms": 1,
+    "firstRestored": true,
+    "read": {
+     "value": "MYR 0.00",
+     "empty": true,
+     "minusDisabled": true,
+     "win": "MYR 0.00",
+     "label": "No 89%",
+     "question": "Will the Iranian regime fall by 2027?",
+     "logo": "assets/audit-257bbdc934d718237f63.jpg",
+     "logoLoaded": true
+    }
+   },
+   "afterClose": {
+    "forms": 0,
+    "wrappers": 0
+   },
+   "placeBet": {
+    "modal": "login",
+    "formStillOpen": true
+   },
+   "hscroll": false
+  },
+  "errors": []
+ },
+ "390x844": {
+  "value": {
+   "cards": 186,
+   "open": {
+    "value": "MYR 0.00",
+    "empty": true,
+    "minusDisabled": true,
+    "win": "MYR 0.00",
+    "label": "Yes 15%",
+    "question": "Will the Strait of Hormuz be open to all shipping by December 31, 2026?",
+    "logo": "assets/audit-f858f88ebf2ec183d51f.jpg",
+    "logoLoaded": true
+   },
+   "icons": [
+    "data",
+    "data",
+    "data"
+   ],
+   "position": {
+    "formFirstInParent": true,
+    "wrapperHidden": "none",
+    "cardInside": true,
+    "formWidth": 334,
+    "cardWidth": 334,
+    "formHeight": 200
+   },
+   "plus1": {
+    "value": "MYR 1.00",
+    "empty": false,
+    "minusDisabled": false,
+    "win": "MYR 6.67",
+    "label": "Yes 15%",
+    "question": "Will the Strait of Hormuz be open to all shipping by December 31, 2026?",
+    "logo": "assets/audit-f858f88ebf2ec183d51f.jpg",
+    "logoLoaded": true
+   },
+   "plus2": {
+    "value": "MYR 2.00",
+    "empty": false,
+    "minusDisabled": false,
+    "win": "MYR 13.33",
+    "label": "Yes 15%",
+    "question": "Will the Strait of Hormuz be open to all shipping by December 31, 2026?",
+    "logo": "assets/audit-f858f88ebf2ec183d51f.jpg",
+    "logoLoaded": true
+   },
+   "minus1": {
+    "value": "MYR 1.00",
+    "empty": false,
+    "minusDisabled": false,
+    "win": "MYR 6.67",
+    "label": "Yes 15%",
+    "question": "Will the Strait of Hormuz be open to all shipping by December 31, 2026?",
+    "logo": "assets/audit-f858f88ebf2ec183d51f.jpg",
+    "logoLoaded": true
+   },
+   "max": {
+    "value": "MYR 1.00",
+    "empty": false,
+    "minusDisabled": false,
+    "win": "MYR 6.67",
+    "label": "Yes 15%",
+    "question": "Will the Strait of Hormuz be open to all shipping by December 31, 2026?",
+    "logo": "assets/audit-f858f88ebf2ec183d51f.jpg",
+    "logoLoaded": true
+   },
+   "focused": {
+    "value": "MYR 1.00",
+    "empty": false,
+    "minusDisabled": false,
+    "win": "MYR 6.67",
+    "label": "Yes 15%",
+    "question": "Will the Strait of Hormuz be open to all shipping by December 31, 2026?",
+    "logo": "assets/audit-f858f88ebf2ec183d51f.jpg",
+    "logoLoaded": true
+   },
+   "typed10": {
+    "value": "10",
+    "empty": false,
+    "minusDisabled": false,
+    "win": "MYR 66.67",
+    "label": "Yes 15%",
+    "question": "Will the Strait of Hormuz be open to all shipping by December 31, 2026?",
+    "logo": "assets/audit-f858f88ebf2ec183d51f.jpg",
+    "logoLoaded": true
+   },
+   "typedDecimals": {
+    "value": "12.345",
+    "empty": false,
+    "minusDisabled": false,
+    "win": "MYR 66.67",
+    "label": "Yes 15%",
+    "question": "Will the Strait of Hormuz be open to all shipping by December 31, 2026?",
+    "logo": "assets/audit-f858f88ebf2ec183d51f.jpg",
+    "logoLoaded": true
+   },
+   "typedLetters": {
+    "value": "abc",
+    "empty": false,
+    "minusDisabled": false,
+    "win": "MYR 66.67",
+    "label": "Yes 15%",
+    "question": "Will the Strait of Hormuz be open to all shipping by December 31, 2026?",
+    "logo": "assets/audit-f858f88ebf2ec183d51f.jpg",
+    "logoLoaded": true
+   },
+   "blurred": {
+    "value": "MYR 10.00",
+    "empty": false,
+    "minusDisabled": false,
+    "win": "MYR 66.67",
+    "label": "Yes 15%",
+    "question": "Will the Strait of Hormuz be open to all shipping by December 31, 2026?",
+    "logo": "assets/audit-f858f88ebf2ec183d51f.jpg",
+    "logoLoaded": true
+   },
+   "thousands": {
+    "value": "MYR 1,600.00",
+    "empty": false,
+    "minusDisabled": false,
+    "win": "MYR 10,666.67",
+    "label": "Yes 15%",
+    "question": "Will the Strait of Hormuz be open to all shipping by December 31, 2026?",
+    "logo": "assets/audit-f858f88ebf2ec183d51f.jpg",
+    "logoLoaded": true
+   },
+   "clearedThenLeft": {
+    "value": "MYR 0.00",
+    "empty": true,
+    "minusDisabled": true,
+    "win": "MYR 0.00",
+    "label": "Yes 15%",
+    "question": "Will the Strait of Hormuz be open to all shipping by December 31, 2026?",
+    "logo": "assets/audit-f858f88ebf2ec183d51f.jpg",
+    "logoLoaded": true
+   },
+   "second": {
+    "forms": 1,
+    "firstRestored": true,
+    "read": {
+     "value": "MYR 0.00",
+     "empty": true,
+     "minusDisabled": true,
+     "win": "MYR 0.00",
+     "label": "No 89%",
+     "question": "Will the Iranian regime fall by 2027?",
+     "logo": "assets/audit-257bbdc934d718237f63.jpg",
+     "logoLoaded": true
+    }
+   },
+   "afterClose": {
+    "forms": 0,
+    "wrappers": 0
+   },
+   "placeBet": {
+    "modal": "login",
+    "formStillOpen": true
+   },
+   "hscroll": false
+  },
+  "errors": []
+ }
+}

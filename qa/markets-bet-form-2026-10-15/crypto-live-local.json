@@ -1,0 +1,98 @@
+{
+ "1440x900": {
+  "value": {
+   "buttons": 78,
+   "labels": [
+    [
+     "(icon)",
+     6
+    ],
+    [
+     "Up 53%",
+     3
+    ],
+    [
+     "Down 47%",
+     3
+    ],
+    [
+     "Up 57%",
+     2
+    ],
+    [
+     "Down 43%",
+     2
+    ],
+    [
+     "Up 54%",
+     2
+    ],
+    [
+     "Down 46%",
+     2
+    ],
+    [
+     "Up 52%",
+     2
+    ],
+    [
+     "Down 48%",
+     2
+    ],
+    [
+     "Up 56%",
+     2
+    ],
+    [
+     "Down 44%",
+     2
+    ],
+    [
+     "Install",
+     2
+    ],
+    [
+     "Login",
+     1
+    ],
+    [
+     "Registration",
+     1
+    ],
+    [
+     "Top",
+     1
+    ],
+    [
+     "1 hour",
+     1
+    ],
+    [
+     "15 minutes",
+     1
+    ],
+    [
+     "24 hours",
+     1
+    ],
+    [
+     "4 hours",
+     1
+    ],
+    [
+     "5 minutes",
+     1
+    ]
+   ],
+   "scopes": [
+    "RootLayout",
+    "PageLayout",
+    "Card",
+    "CardContent",
+    "ModalLayout"
+   ],
+   "outcome5xqiy": 0
+  },
+  "errors": []
+ }
+}

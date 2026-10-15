@@ -1,0 +1,7 @@
+
+# Raw reference captures (large, regenerable with scripts/reference-capture-cdp.mjs)
+captures/
+
+# Pre-migration copies written by scripts/migrate-shared-components.py; the migration report proves the
+# current files plus components/ restore them byte-for-byte. (The 2026-10-14 copy was committed earlier.)
+qa/*/migration-backup/

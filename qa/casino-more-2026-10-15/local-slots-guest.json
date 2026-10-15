@@ -1,0 +1,90 @@
+{
+ "1920x1080": {
+  "value": {
+   "start": 27,
+   "loads": [
+    {
+     "from": 27,
+     "to": 54,
+     "markerBefore": 22
+    },
+    {
+     "from": 54,
+     "to": 81,
+     "markerBefore": 11
+    }
+   ],
+   "afterJump": 106,
+   "total": 106,
+   "duplicates": 0,
+   "hscroll": false
+  },
+  "errors": []
+ },
+ "1440x900": {
+  "value": {
+   "start": 24,
+   "loads": [
+    {
+     "from": 24,
+     "to": 48,
+     "markerBefore": 18
+    },
+    {
+     "from": 48,
+     "to": 72,
+     "markerBefore": 15
+    }
+   ],
+   "afterJump": 120,
+   "total": 143,
+   "duplicates": 0,
+   "hscroll": false
+  },
+  "errors": []
+ },
+ "768x1024": {
+  "value": {
+   "start": 21,
+   "loads": [],
+   "afterJump": 21,
+   "total": 501,
+   "duplicates": 0,
+   "hscroll": false
+  },
+  "errors": []
+ },
+ "430x932": {
+  "value": {
+   "start": 9,
+   "loads": [
+    {
+     "from": 9,
+     "to": 18,
+     "markerBefore": 22
+    },
+    {
+     "from": 18,
+     "to": 27,
+     "markerBefore": 12
+    }
+   ],
+   "afterJump": 45,
+   "total": 81,
+   "duplicates": 0,
+   "hscroll": false
+  },
+  "errors": []
+ },
+ "390x844": {
+  "value": {
+   "start": 9,
+   "loads": [],
+   "afterJump": 9,
+   "total": 81,
+   "duplicates": 0,
+   "hscroll": false
+  },
+  "errors": []
+ }
+}
