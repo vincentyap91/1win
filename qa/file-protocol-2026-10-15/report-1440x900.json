@@ -877,17 +877,17 @@
     },
     "betwave.html": {
       "state": "betwave-1440x900",
-      "imgs": 53,
+      "imgs": 56,
       "broken": [],
       "brokenCount": 0,
       "placeholders": 0,
-      "masks": 57,
+      "masks": 59,
       "externalMasks": [
-        "url(\"#v-0-0-1-0\")",
-        "url(\"#v-0-0-1-1\")",
-        "url(\"#v-0-0-1-2\")",
-        "url(\"#v-0-0-1-3\")",
-        "url(\"#v-0-0-1-4\")",
+        "url(\"#v-0-0-1-25\")",
+        "url(\"#v-0-0-1-26\")",
+        "url(\"#v-0-0-1-27\")",
+        "url(\"#v-0-0-1-28\")",
+        "url(\"#v-0-0-1-29\")",
         "linear-gradient(0deg, rgba(0, 0, 0, 0) 0px, rgb(0, 0, 0) 48px)"
       ],
       "externalUses": [],
@@ -2292,7 +2292,7 @@
     },
     "casino-quick.html": {
       "state": "casino-quick-1440x900",
-      "imgs": 229,
+      "imgs": 228,
       "broken": [],
       "brokenCount": 0,
       "placeholders": 0,
@@ -2396,7 +2396,7 @@
     },
     "casino.html": {
       "state": "casino-1440x900",
-      "imgs": 331,
+      "imgs": 330,
       "broken": [],
       "brokenCount": 0,
       "placeholders": 0,

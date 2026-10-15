@@ -1,0 +1,9 @@
+/* Local interaction containers only. Original visual rules are in betwave.css. */
+.bw-overlay{position:fixed;inset:0;z-index:1500;display:flex;align-items:center;justify-content:center;background:rgba(0,0,0,.6)}
+.bw-overlay> [class*="desktop-modal_card-"]{position:relative;inset:auto;margin:0}
+.bw-overlay.bw-dropdown{background:transparent;display:block}
+.bw-overlay.bw-mobile-overlay{align-items:flex-end}
+.bw-overlay.bw-mobile-overlay>[class*="mobile-modal_modal-"]{position:relative;inset:auto;width:100%;max-height:calc(100dvh - 24px);transform:none!important}
+.bw-overlay [class*="dropdown_tooltip-"]{display:block;min-width:152px}
+.bw-menu-overlay{display:block;background:transparent}
+main article[hidden]{display:none!important}

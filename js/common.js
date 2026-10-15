@@ -375,7 +375,8 @@
     if(next&&!Object.keys(authStates).length)return notice('This view does not have a signed-in capture.');
     signedPreview=next;Object.assign(states,guestStates,signedPreview?authStates:{});
     const u=new URL(location.href);signedPreview?u.searchParams.set('preview','auth'):u.searchParams.delete('preview');
-    history.replaceState(null,'',u);render(currentPage,null,true);
+    // Some browsers refuse history changes on file:// pages (SecurityError); the view still switches.
+    try{history.replaceState(null,'',u);}catch{}render(currentPage,null,true);
   }
   // The app shell always holds an empty modal-layout wrapper; only a wrapper with content is an open dialog.
   function openLayout(){return $$('[data-testid="modal-layout"]').find(n=>n.firstElementChild)||null;}
@@ -444,7 +445,7 @@
     const u=new URL(raw,'https://one-vv3591.com/');
     if(u.hostname!=='one-vv3591.com')return;
     if(u.searchParams.get('x')?.includes('sign-up')){openModal('registration');return;}
-    if(u.pathname.startsWith('/casino/play/')){if(JSON.parse(sessionStorage.getItem(GAME_KEY)||'{}').href!==u.pathname)rememberGame(null,u.pathname);go('casino-play.html');return;}
+    if(u.pathname.startsWith('/casino/play/')){let stored={};try{stored=JSON.parse(sessionStorage.getItem(GAME_KEY)||'{}');}catch{}if(stored.href!==u.pathname)rememberGame(null,u.pathname);go('casino-play.html');return;}
     // /forum leaves the app for forum.one-vv3591.com (user posts), which is not part of this preview.
     if(u.pathname==='/forum'){notice('The 1win forum is a separate website and is not part of this preview.');return;}
     // League listings (/betting/<section>/<sport>/<league>) change with the live schedule; only sport filters were captured.

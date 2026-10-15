@@ -1,0 +1,46 @@
+{
+  "versionId": "2410437507040707624",
+  "versionLabel": "2026-10-15 1:05 PM",
+  "method": "Figma native version history restore; inspected all ten desktop and five mobile designs before restore",
+  "verification": {
+    "frames": [
+      {
+        "id": "65:3586",
+        "exists": true,
+        "name": "1win games · Desktop 1440 · Editable"
+      },
+      {
+        "id": "65:5372",
+        "exists": true,
+        "name": "JILI games · Desktop 1440 · Editable"
+      },
+      {
+        "id": "65:15495",
+        "exists": true,
+        "name": "New games · Desktop 1440 · Editable"
+      },
+      {
+        "id": "82:6719",
+        "exists": true,
+        "name": "Bonus wagering · Desktop 1440 · Editable"
+      },
+      {
+        "id": "105:9103",
+        "exists": true,
+        "name": "Fishing games · Desktop 1440 · Editable"
+      },
+      {
+        "id": "94:421",
+        "exists": true,
+        "name": "Bonus wagering · Mobile 390 · Editable"
+      },
+      {
+        "id": "107:805",
+        "exists": true,
+        "name": "Fishing games · Mobile 390 · Editable"
+      }
+    ],
+    "desktop": 10,
+    "mobile": 5
+  }
+}

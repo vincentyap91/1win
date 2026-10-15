@@ -1,56 +1,251 @@
-### 2026-10-15：Casino 桌面六个分类已在原页面补入
-
-- 保留原 `65:2`，根据已保存的原站 1440 实测资料补入 Bonus buy、Bonus wagering、Jili Games、New、Only on 1win、Quick games 六区，共 54 个游戏卡片实例；分类坐标使用原站记录，图标为矢量。
-- 15 张新增封面已验证图片尺寸并可渲染；WebP 上传虽然成功但无法读取元数据，已改用保持像素的 PNG。人数与 playing 标签改为内容自适应，避免长数字截断。
-- 页面约 1440 × 5560，原站记录高度 5559；剩余小幅几何差异及全页最终对照仍待审核，不能标记为 100%。原交付 HTML 未应用旧 Casino 修补脚本。
-- 新增独立状态组件：收起侧栏 `113:2`（实例 `113:3`）；供应商面板 `127:11087`（实例 `127:11088`，原站最终样式 QA 待完成）。没有创建重复整页。Figma Overview `110:2` 已加入交接说明。
-- 证据：`casino-fill-result.json`、`casino-image-repair-result.json`、`casino-six-sections-complete.png`、`casino-quick-row-verified.png`；临时素材图层已清理。
-
-### 2026-10-15：分类页组件复用与 Fishing 首次迁移
-
-- Casino lobby、Live Casino、New 各新增复用 24 张卡片（合计 72）；卡片边界位置／尺寸最大变化 0px，未复制整页。
-- Fishing 桌面首次迁入 `105:9103`，1440 × 1948.650，24 张卡片、27 个共享实例；JILI `65:5372` 与 New `65:15495` 在原位补公共页尾，移除加载占位。
-- 当前 10 个不同桌面页面、3 个不同手机页面；Fishing 手机版 `107:805` 已完成原生迁移、公共页尾和 12 个共享实例，卡片边界变化 0px，原站最终 QA 待完成。
-- Quick games 的底部仍缺少页尾，内容也有已知缺口；原站最终逐页核对、其他手机页、菜单／筛选／弹窗仍未完成。
-- 证据：`grid-pass-lobby.json`、`grid-pass-live.json`、`grid-pass-new.json`、`fishing-desktop-result.json`、`fishing-desktop.png`。本段只报告迁移及布局检查，不表示原站 100% 相同。
-
-### 2026-10-15：Bonus wagering 页尾缺失已在原 Frame 修复
-
-- 桌面 `82:6719`：1440 × 1948.659，24 张卡片、27 个组件实例；移除加载占位，补入共享页尾。
-- 手机 `94:421`：390 × 1828.816，9 张卡片、12 个组件实例；移除加载占位，补入共享页尾。两种尺寸各保留一份，文字／图标／布局可编辑。
-- 当前 9 个不同桌面页面、2 个不同手机页面；并非全站完成。Slots 唯一旧 Frame 仍待 1440 原位更新，Bonus buy 旧导入仍在处理。
-- 网格卡片增加桌面／Live／手机三个结构变体；组件替换保留网格位置、行数和高度。1win games 转换前后截图像素差 0；其他转换的少量渲染差异见 QA JSON，不计为原站最终验收。
-- 证据：`bonus-wagering-repaired.png`、`bonus-wagering-mobile-repaired.png`、`wager-repaired-qa.json`、`wager-mobile-qa.json`、`grid-qa.json`（均在 qa/figma-editable-2026-10-14）。
-
-### 最新约束：复用已有设计，不新增重复整页 Frame（2026-10-14）
-
-用户要求先清理重复设计，并复用已有页面。已删除 11 个重复参考 Frame：Desktop 页 9 个、Mobile 页 1 个、Overview 页 1 个。当前保留 8 个不同桌面页面及 1 个手机首页；桌面 Slots 唯一参考仍为 1536，需在原 `51:943` 内更新成 1440，不能新增第二份。
-
-首页复用 `24:2` / `37:2`，接回共享组件后重新比较，迁移视觉差异仍约 0.070% / 0.067%。所有页面未完成与原站全状态验收，不能把去重算作全站完成。新规则已写入 Design Rule；自动处理脚本改为原 Frame 更新，取消整页 clone。
-
-证据：`qa/figma-editable-2026-10-14/duplicate-cleanup-result.json`、`home-reused-qa.json`、`state.json`。本次只清理明确属于本轮的重复参考；共享组件与两种响应式范围保留。
-
-下一步：检查尚在处理中的捕获是否产生迟到重复；如发生，合并到保留 Frame 后删除临时结果。然后按账本继续补齐页面、菜单／筛选／弹窗和原站设计差异，所有已存在页面原位修改。
-
-## 当前任务：可编辑 Figma 设计（2026-10-14）
-
-用户已停止之前的 Casino HTML 审核；当前工作改为把 1win 全站游客设计交给设计师编辑。范围已确认：桌面 1440px、手机 390px，包含菜单、筛选和弹窗。交付目标是原生文字、矢量、自动布局与共享组件；原始游戏封面／横幅允许作为独立图片素材，整页截图不得作为设计图层。
-
-文件：[1win Figma](https://www.figma.com/design/OmnjmGzEsH8UcsGk8uJJkk/1win)。
-
-- [x] 核查空文件、现有库与本地共享组件；不合适的其他产品导航没有用于 1win。
-- [x] 建立颜色／尺寸变量与 Inter 文字样式，并视觉核验 Design System 页。
-- [x] 首页桌面与手机完成原生图层迁移及共享组件实例：桌面 `24:2`（39 个实例）、手机 `37:2`（16 个实例）。组件化与本地原生捕获比较的变化像素比例分别约 0.070% / 0.067%，平均通道差约 0.001；这只证明迁移保真，不等同与原站全站 100% 一致。
-- [ ] 本地 31 个入口全部迁移成 1440 / 390 设计；当前 Casino 页面组捕获中。首次新标签尺寸回到浏览器默认 1536，必须按精确 1440 重采后验收，不能计入完成。
-- [ ] 菜单展开／收起、移动抽屉、供应商／搜索／筛选及游客弹窗状态补齐并组件化。
-- [ ] 根据原站证据补 Casino 已知缺口、尚未实现路由和其他设计差异；不得把现有 HTML 当作全站验收分母。
-- [ ] 清理捕获参考、确认所有页面没有整页图片、整理 Figma 内交接说明并最终视觉审核。
-
-详细节点和进度账本：`qa/figma-editable-2026-10-14/state.json`。验证截图与报告放在同目录，不新增根 Markdown 文档。
-
-独立 Figma 预览处理了原 HTML `connect-src 'none'` 导致素材读取／提交失败的问题，并把 CSS mask 转为原 SVG 矢量；交付 HTML 的安全策略和源码没有因此更改。之前未完成的 HTML 审核保持停止，旧待办保留供后续追溯。
-
 # Progress Workflow — 1win
+
+## 当前停止点：2026-10-15（用户要求停止全部工作）
+
+**现在暂停所有页面、Filters 和 Figma 实施。仅完成本次进度记录、Git commit 和 push；下次用户在本聊天发出继续指令后再恢复。不要自动继续。全站及 Betwave 最终视觉验收均未完成，不能报告 100%。**
+
+### 实际项目与同步规则
+
+- **唯一实际交付／Git 仓库：** `C:\Users\vince\OneDrive\Desktop\website\1win`；分支 `main`，远端 `origin` 为 `https://github.com/vincentyap91/1win.git`。
+- 当前 Codex 工作目录 `C:\Users\vince\OneDrive\Documents\ChatGPT\1win` 是较旧的局部工作副本，本身没有 Git。实际 Desktop 中已有 55 个 Betwave HTML 入口及更多全站页面，不能用旧副本整目录覆盖。
+- Desktop 的 `js/common.js`、`js/routes.js`、`js/dialogs.js` 和其他已完成页面存在额外更新，必须保留。恢复时先读实际仓库状态与本文，再合并指定文件。
+- 两份必读文档仍只有 `Design Rule.md` 和本文；本轮详细机器状态暂存于工作副本 `C:\Users\vince\OneDrive\Documents\ChatGPT\1win\qa\betwave-2026-10-15\current-state.json`，尚未同步到 Desktop 仓库。
+
+### 本轮已完成（包含验收边界）
+
+- [x] 按原站公开游客 UI 调查并保存 40 个 Betwave 尺寸／状态参考：首页、预测列表、赛事列表／详情、单场／串关预测、排行榜、作者财务／利润／订阅者／评论、规则、分享／排序／日期／筛选／授权／手机菜单等。公开数字为参考快照，不接生产后台。
+- [x] 新版 `betwave.html` 使用一个入口及查询参数提供内页；`js/betwave-data.js` 集中保存状态与共享片段，`js/betwave-runtime.js` 负责本地交互，`css/betwave.css` 与 `css/betwave-local.css` 分离原视觉样式和本地容器调整。旧的已完成入口全部保留。
+- [x] 修复用户打开 Desktop 版本仍为空的问题：已同步新版入口、数据、交互代码、样式和素材，并保留真正的首页初始 HTML，避免脚本延迟时出现空白 body。
+- [x] 修复 `file:///` SVG 图标问题：构建内嵌 588 处蒙版引用，缺失蒙版文件 0；共享加载器补充现有入口的 SVG 蒙版处理，不要求关闭浏览器安全设置。浏览器自动化不支持直接打开 file://，因此此项的证据为静态引用检查与实际交付目录 HTTP 预览；不能写成所有 file:// 页面已逐页视觉验收。
+- [x] 修复预测列表 Top predictors 下方 Rewarding authors 空占位：首页与预测列表复用完整桌面／手机横幅，含原图、标题、100k $、20 位作者、头像和两个按钮。原站赛事列表本身没有此横幅，不凭空添加。
+- [x] `js/betwave-components.js` 已接入实际交付目录现有 **55 个 Betwave HTML**，统一处理缺失横幅、筛选默认值与 file:// 图标；没有删除原有子页面。55 个入口同步哈希差异 0，证据 `shared-delivery-build.json`、`delivery-sync-verified.json`。
+- [x] 补回原生 input.value 未进入外层 HTML 而遗漏的默认值：赔率 `1.01 / 151`、胜率 `0 / 100`；Figma 桌面 Filters 也原位补上四个可编辑数值。原站桌面筛选容器宽 344px、外层 padding 16px、内部组间距 8px 已实测对照，仍不等于全状态视觉验收通过。
+- [x] 修复空的 modal teleport 被旧公共交互误认为已打开弹窗的问题；Betwave 手机菜单使用原站观察到的内容，未复制生产脚本。
+- [x] **资源约束：** 不引入 gtag、GTM、广告投放、统计 SDK、追踪像素、会话录制等。交付只保留视觉资源与本地交互；Figma SDK 只在隔离 QA 预览中使用，不进入交付 HTML。
+- [x] 原站 1440px 首页与同状态本地首屏截图曾比较为 0 差异像素；只证明该次 HTML 首屏参考，不证明手机、Figma、整页或全状态已通过。早期手机截图存在字体未稳定及截图被截短的问题，不能把旧手机 diff 报告当作最终通过证据。
+
+### Figma 实际状态（禁止重复捕获已有整页）
+
+文件：[1win](https://www.figma.com/design/OmnjmGzEsH8UcsGk8uJJkk/1win)。本轮新增 **15 个不同尺寸／布局的可编辑原生整页：8 个桌面、7 个手机**，所有历史已完成 Frame 与其他页面工作均保留。
+
+| 布局族 | Desktop 1440 | Mobile 390 | 停止时状态 |
+| --- | --- | --- | --- |
+| Home | `236:21506` | `238:5950` | 已整理位置并组件化主要区域；桌面 Top predictors 仍需统一组件与最终 QA |
+| Prediction feed | `239:21506` | `242:5950` | 已组件化主要区域、修复横幅与筛选默认值；Filters 最终视觉／交互 QA 未完成 |
+| Events | `243:21506` | `247:5950` | 已接共享头部、侧栏／底栏、Top predictors 与页尾；最终 QA 未完成 |
+| Event detail | `246:21506` | `250:5950` | 已导入可编辑图层；组件化与 QA 待做 |
+| Prediction detail | `251:21506` | `268:7078` | 已导入；桌面已命名排列，手机仍为原始导入名，待整理／组件化／QA |
+| Predictors | `269:22848` | `271:7078` | 原始可编辑导入；待命名排列、组件化、QA |
+| Author profile | `272:24416` | `276:7945` | 原始可编辑导入；待命名排列、组件化、QA |
+| Rules | `275:24416` | **未导入** | 桌面原始可编辑导入；手机待做，已有原站 390 参考 |
+
+- 共享组件账本当前 23 项。Rewarding authors 变体集 `263:2112`，桌面主组件 `263:1883`、手机主组件 `263:1934`；已在首页／预测列表原位使用，独立素材与文字可编辑，非整页图片。预览 `figma-reward-component.png`。
+- 首页与预测列表卡片、导航、页尾及 Events 主要区域的组件替换几何检查通过，最新记录最大位置／尺寸偏差为 0；这不是逐像素最终验收。
+- 新建桌面首页组件曾出现原生蒙版后代映射问题，已重建侧栏实例 `256:22762`、页尾实例 `256:23120`，卡片 `253:1363` 高度修正为 362px。首份 `figma-state.json` 的历史 issues 已过时；恢复时以 `current-state.json` 及最新画布为准。
+- 有六个后期导入 Frame 尚叫 `1win | Betwave`，只应在原节点命名／整理，不再重新捕获同页。未提交的捕获 ID 不保留为恢复凭据，下次仅为真正尚缺的设计申请新 ID。
+
+### 未完成与下次恢复顺序
+
+1. 用户明确发出继续指令后，先读取本节、`current-state.json`、实际 Desktop Git 状态并核实 Figma 节点；不要恢复旧 Casino 任务，不删除任何已完成 Frame。
+2. 继续 Filters 对照：桌面与手机内边距／外间距、默认值、checkbox、折叠、排序／日期弹层、Apply／Reset 及键盘状态；当前只完成默认值、部分几何和基础本地交互，不能标为全部完成。
+3. 整理既有六个原始导入 Frame，在已有 Event detail／Prediction detail／Predictors／Profile／Rules 桌面内继续组件化与视觉 QA；补唯一缺失的 Rules 手机整页。
+4. Betwave 的独立菜单／弹窗／下拉设计尚未放进 Figma Menus & Modals：已有 8 类本地面板数据，但不能把源参考或本地 HTML 当作已导入。补手机 Filters、手机菜单、分享、排序、日期、游客 Authorization；既有登录／注册／恢复继续复用。
+5. 资料页 Profit／Subscribers／Comments、首页订阅空状态、串关详情等使用独立内容状态或组件变体复用已有布局，不再新增重复背景整页；相应原站参考和本地状态已有，Figma 面板与原型连线待做。
+6. 完成 1440／390 最终原站 ↔ 实际交付目录 HTML ↔ Figma 视觉对照；再检查 1920／768／430、中间宽度及 file://。当前 768／430 主要沿用响应式结构，未完成对应精确观察与全状态验收。其他作者／赛事链接使用参考布局与样本内容，不能声称实时数据或所有记录已实现。
+7. 继续全站尚缺状态／页面及最终验收，按此前布局复用原则推进；不以历史的 31 个入口或固定百分比作为当前全站完成分母。
+
+### 维护与交付证据
+
+**停止时文件位置：以下本轮新增构建脚本和 `qa/betwave-2026-10-15/` 证据目前仅保存在 Documents 工作副本，不在本次 Desktop 仓库提交中。自动审批拒绝了超出“仅更新进度与 Git”范围的额外批量同步，未执行该同步。恢复时先核实文件位置；只有用户恢复相关工作后才审核、同步所需脚本和证据。前文所述 HTML、共享加载器、样式和素材已在此前同步至 Desktop。**
+
+- 本轮构建：`scripts/build-betwave.py`、`scripts/fetch-betwave-assets.py`、`scripts/build-betwave-shared.py`、`scripts/betwave-shared-runtime.js`。
+- 构建次序：先 `build-betwave.py`，再 `build-betwave-shared.py`；后者为实际 Desktop 现有入口生成带同一共享加载器的补丁，须审核后同步，不能用旧全局脚本覆盖真实仓库。
+- 原站资源清单已改为项目内相对路径，398 条资源引用已持久化，避免下次依赖浏览器临时导出目录。
+- 源参考、静态素材、构建报告、共享入口清单、Figma 节点、图标与截图证据集中在 `qa/betwave-2026-10-15/`。`before/` 与 `delivery-patches/` 是本机备份／可再生补丁，不是必读文档。
+- 本次 Git 提交和推送仅保存停止点；不代表页面、Filters、Figma 或原站最终视觉验收全部完成。
+
+---
+
+## 此前进度记录（保留）
+
+### 2026-10-15：Figma 补齐其余独立页面（不重复 layout）
+
+- 新增 12 个独立 layout，桌面 1440（页 `7:4`）与手机 390（页 `7:5`）各一份，共 24 个 Frame：Bonuses、Sports、Sports live、Markets、TOP Bets、Blog、Free money、Loyalty program、VIP club、Promotions、Tournaments、Casino game。头部/侧栏/页尾/手机底栏全部用现有组件实例（`28:65`、`28:403`、`28:640`、`38:280`、`38:486`、`38:543`），内容为可编辑文字（Inter 字重与字距已还原）、矢量与图片。
+- `30 · Menus & Modals`（`7:6`）新增 4 组状态（各桌面+手机）：Promotion details、Language picker、Casino search · Games、Bet slip · 2 selections。
+- 未新增重复 layout：Upcoming / Esports 与运动筛选页复用 Sports live；Bonus buy、Only on 1win、AI 推荐、Live/Quick 子类复用现有类别网格；Providers/Search 结果复用搜索面板；登录/注册/恢复复用 Auth 组件。TOP Bets、Markets 只保留首屏若干行（同一卡片不重复几百次）。Betwave 按要求跳过。原有 Frame 全部保留未改。
+- 方法：本地页面 DOM → SVG（`scripts/figma/serialize.js`、`spec-to-svg.py`）→ Figma 导入 → 组合（`scripts/figma/compose.js`）；节点账本 `qa/figma-editable-2026-10-14/state.json`。原站最终视觉验收仍待做。
+
+
+
+更新：2026-10-15，Asia/Kuala_Lumpur。只读本文确认进度；设计维护规则只查 **Design Rule.md**。详细节点／机器证据在 QA JSON，不新增必读 Markdown。
+
+**最新用户纠正：已完成设计全部保留；不再删除或合并现有 Frame，仅避免后续新增相同布局整页。中断期间生效的合并已通过 Figma 原生历史版本完整恢复：7 个分类整页与原节点 ID 全部找回，重新核实为 10 个桌面、5 个手机页面。证据：`preserve-existing-restore-audit.json`。接下来只继续独特页面／弹窗及原站最终验收。**
+
+## 当前任务与验收边界
+
+用户已停止 Casino HTML 审核，当前任务是把全站游客设计放入 [1win Figma](https://www.figma.com/design/OmnjmGzEsH8UcsGk8uJJkk/1win)，供设计师编辑。范围：桌面 1440px＋手机 390px，菜单、筛选和弹窗；不以现有 31 个 HTML 作为原站完整分母。
+
+**全站尚未完成，不能报告 100% 或可靠完成百分比。** 当前保留 10 个不同桌面页面、5 个不同手机页面；所有页面仍需按原站最终状态验收。相同路由／尺寸／实质状态只保留一个整页 Frame；此前清理的 11 个重复参考没有恢复。
+
+## 已完成的本轮设计工作
+
+- [x] 建立 Figma Design System、共享组件、Overview 和交接索引；原生文字／矢量／布局可编辑，封面和横幅保持独立素材，没有整页截图充当设计。
+- [x] 首页桌面／手机共享组件化，保留原 Frame；与迁移前本地捕获的变化像素约 0.070%／0.067%，只代表迁移保真。
+- [x] Bonus wagering 桌面 `82:6719`、手机 `94:421` 补齐公共页尾与版权；分别 24／9 张卡片，27／12 个实例，空白页尾已修复。
+- [x] Fishing 桌面／手机首次迁移；JILI、New 在原 Frame 补公共页尾。Casino、Live、New 已有网格卡片接回共享实例。
+- [x] Casino lobby 桌面／手机补上六个缺失分类：Bonus buy、Bonus wagering、Jili Games、New、Only on 1win、Quick games；分别 54／24 张新增卡片。分类位置来自保存的原站证据，图标为原 SVG 矢量。
+- [x] Casino lobby 两尺寸补上原生 Last wins；手机每周游戏补成共享组件。桌面 1440×5559、手机 390×5280；图片元数据错误 0、缺失字体 0、整页位图 0。动态公开获奖／人数数据使用参考快照，不代表实时相同。
+- [x] Slots 在原 `51:943` 内由旧 1536 布局改为 1440×3190，72 张卡片、76 个组件实例，6 张原本没有人数的卡片保留隐藏状态。卡片边界与 1440 捕获坐标最大偏差不足 0.001px；227 个文字、132 个矢量、90 个独立图片图层，图片错误／缺失字体／整页位图均为 0。
+- [x] 收起侧栏和 Providers 面板迁成独立可编辑组件；Providers 原站最终样式仍待确认，不计为状态最终验收。
+- [x] Quick games 原 `65:13437` 补齐 Mines／Plinko／Sport／Lotteries 四分类、底部 24 卡片、Last wins、加载更多及共享页尾；同时修复旧导入的 27 张空白卡片、横幅、活动图和侧栏素材。现在为 1440×4549、87 张游戏卡片、97 个组件实例；卡片边界与原站实测最大偏差 0.00087px。113 个图片图层的元数据错误 0、缺失字体 0、整页位图 0；97 个临时素材节点已清理。同名 Mines／Plinko 按素材地址区分，不按名称替换。
+- [x] 核实没有手机 Slots 后，只新增唯一 `174:463`（390×1830）；首批 9 张卡片、13 个组件实例，共享桌面／手机分类头部变体集 `174:462`，原桌面主组件 `143:615` 保留。原站实测卡片边界最大偏差约 0.00235px；20 个图片图层均可渲染，缺失字体／整页位图为 0。当前预览 `slots-mobile-current.png` 已视觉检查。
+- [x] 原站游客登录／注册／恢复弹窗新增 9 个可编辑状态，组成三个组件变体集；集中展示在 Menus & Modals 的 `202:955`，没有复制背景整页。桌面：手机／邮箱登录、手机／邮箱恢复、注册默认／优惠码展开；手机：登录、注册、恢复三个 390×820 底部弹层（390×844 窗口）。输入框复用组件并暴露 Label／Hint／Country code／Number placeholder 属性。原生检查：缺失字体 0、越出弹窗的文字 0、整页位图 0；测量几何最大偏差 1px，此项不等于逐像素验收通过。证据：`auth-state-index.json`、`auth-states-current.png`。
+- [x] 再次核实已有 10 个桌面、5 个手机整页与原节点 ID 全部保留；本轮只新增弹窗设计。
+
+## 唯一页面索引（保持节点 ID）
+
+| 页面 | Desktop 1440 | Mobile 390 | 当前边界 |
+| --- | --- | --- | --- |
+| Home | `24:2` | `37:2` | 已组件化；原站最终 QA 待完成 |
+| Casino lobby | `65:2` | `129:1189` | 已补六分类、每周游戏和 Last wins；全状态 QA 待完成 |
+| Slots | `51:943` | `174:463` | 桌面 72 卡片、手机首批 9 卡片；原站最终 QA、手机自动追加状态待完成 |
+| 1win games | `65:3586` | 待做 | 已组件化；原站最终 QA 待完成 |
+| Fishing | `105:9103` | `107:805` | 24／9 卡片与公共页尾；原站最终 QA 待完成 |
+| JILI | `65:5372` | 待做 | 已补公共页尾；原站最终 QA 待完成 |
+| New | `65:15495` | 待做 | 已补公共页尾；原站最终 QA 待完成 |
+| Live Casino | `65:6749` | 待做 | 已组件化；次分类与全页 QA 待完成 |
+| Quick games | `65:13437` | 待做 | 桌面缺失区及旧缺图已修复；87 卡片通过几何核对，动态内容／交互最终 QA 待完成 |
+| Bonus wagering | `82:6719` | `94:421` | 空白页尾已修复；原站最终 QA 待完成 |
+
+## 未完成与接续顺序
+
+1. 按布局族核对尚缺的手机 Casino 覆盖，优先 Live Casino／Quick games 的独特布局。1win games／JILI／New 等若与现有网格布局相同，记录复用映射与内容状态，不新增整页；已有完成版本仍全部保留。
+2. 调查尚缺 Casino 分类及状态；Bonus buy、Only on 1win、Recommended 等先确认结构差异，相同布局复用现有设计。Quick、Slots 的动态内容／交互和原站最终 QA 仍待完成。
+3. 继续 Sports、Betwave、Free money、Bonuses、会员／VIP、Promotions、Tournaments、Blog 等独特页面及已发现但未实现路由；先调查原站，不凭本地快照补造。
+4. 搜索、结果、Providers／筛选、移动菜单等使用独立状态组件。登录／注册／恢复已新增 9 个状态；手机邮箱登录／恢复、手机优惠码展开、国家／币种选择、错误／加载／键盘状态和原型连线仍待观察补齐。
+5. 按原站同窗口／状态逐页比较、修复、实际操作，再完成最终设计师交接。轮播、人数、倒计时、feed 的动态差异单独记录。
+
+手机 Slots 滚到底部会自动连续追加游戏行，本轮观察到从 9 追加至 306；因此使用一份首批网格基础设计，重复网格作为共享组件状态，不为每批数据再建整页。连续追加一度使原站浏览器截图／关闭请求超时；已恢复默认窗口尺寸并成功关闭三个临时研究标签。原站完整截图对照仍未通过；不要以原生图层和几何检查代替最终逐像素验收。新增整页捕获参考曾因重复风险被自动审批拒绝，已改为先核实唯一性、直接使用共享组件构建唯一手机页面，没有绕过拒绝执行捕获。
+
+共享组件入口在 Figma 的 **02 · Components**；当前模块与规则见 Design Rule。账本：`qa/figma-editable-2026-10-14/state.json`。最新验证：`casino-native-audit-desktop.json`、`casino-native-audit-mobile.json`、`slots-1440-native-audit.json`、`slots-1440-geometry-audit.json`、`quick-native-audit.json`、`slots-mobile-native-audit.json`；当前截图使用 `casino-desktop-current.png`、`casino-mobile-current.png`、`slots-1440-current.png`、`quick-desktop-current.png`、`slots-mobile-current.png`，不要使用修复前中间截图。
+
+## HTML 历史基线（已停止，不是当前执行任务）
+
+以下保留 HTML 项目交接证据与尚未验收范围。用户已改为先完成可编辑 Figma；不自动继续旧 HTML 审核或应用旧 Casino 修补脚本。
+
+## 当前结论
+
+目标仍是 https://one-vv3591.com/ 全页面视觉和已观察前端行为最终 100% 一致。**现在没有达到全站 100%，也没有可靠的完成百分比。** 当前有 31 个 HTML、28 个内容入口、游客／Demo 各五尺寸共 280 份状态；原站还存在未完整调查或实现的页面和状态。
+
+本轮公共组件迁移已完成：31 个入口 × 桌面游客／桌面 Demo／390px 游客共 93 次浏览器启动检查，全部可显示、未留下组件占位、没有新增横向溢出。8 组重构前后布局指标一致；顶部区域及 4 组桌面侧栏像素差异为 0。完整截图中 3 组完全一致，其余有少量内容区差异，未把它们计为逐像素通过。
+
+实际交付目录 C:\Users\vince\OneDrive\Desktop\website\1win 已同步 239 个变更文件并逐文件核对，哈希差异 0；已从该目录启动，自动构建 142 个模板成功，首页及 Betwave 展开正常。同步与交付启动证据见 sync-report.json、delivery-smoke.json。
+
+## 已完成并明确验证的工作
+
+| 工作 | 结果与验收边界 | 证据 |
+| --- | --- | --- |
+| 两份交接文档 | Design Rule 含实测设计系统、共享组件和运行规则；本文含完成／未完成、页面清单、接续顺序 | 本文及 Design Rule.md |
+| 公共 shell 抽取 | 731 处 header / sidebar / footer 引用集中到 142 个精确保留变体；重复标记约 25.36MB 降至 6.63MB | qa/shared-components-2026-10-14/migration-report.json |
+| 还原与可重复构建 | 314 份状态／入口片段逐字节还原一致；91 个源文件重复迁移没有改变 | migration-report.json、idempotence-check.json |
+| 公共交互回归 | 侧栏反复展开／收起、社交浮层及 Esc、登录弹窗显示、手机菜单及 Esc 均通过；手机菜单 280×844 与原站一致；修复侧栏重建后社交标签丢失 | shared-functional-qa.json |
+| Betwave Read more | 五尺寸游客展开／收起、原站文字与箭头匹配；展开内容高 100 / 120 / 160 / 300 / 320px（1920 / 1440 / 768 / 430 / 390）；跨窗口保留状态和焦点 | betwave-seo-five-viewports.json、betwave-read-more-430.png |
+| Betwave 430 FAQ | 第一项展开高度 148px、其余收起行高与原站一致；本地七项键盘展开可用。其余六项原站展开尚需重测，自动滚动点击两次误跳详情页，未计为通过 | betwave-reference-430.json、betwave-local-430.json、betwave-faq-430-partial.json |
+| 原站设计采样 | 实测颜色、字体、控件和断点已写设计规则 | reference-design-tokens.json、reference-component-specs.json |
+| 首页 banner | 修复 slide 被 scaler 二次缩放；五尺寸 guest/auth、连续缩放和五张桌面切换通过；auth 1920 原站布局仍需新参考 | qa/resume-2026-10-14/home-banner-* |
+| 首页 compact 侧栏 | 修复过渡态社交按钮、错误 Casino 高亮和底部间距；四组窗口侧栏区域像素差异 0 | qa/sidebar-compact-2026-10-14/pixel-comparison-* |
+| compact 社交浮层 | 打开／关闭、Esc、Enter、焦点、外部点击和滚动到最后一项通过；不透明主体一致，透明边缘受不同 banner 影响 | social-functional-checks.json、pixel-comparison-social.json |
+| 本地资源 | 字体、mask 及原站图片本地化；缺失本地文件和主动远程引用检查通过，data:, 缺素材另记 | qa/expanded-static-qa.json |
+| Betwave FAQ 部分范围 | 1920/1440 guest 与 Demo、768/390 guest 的内容与布局指标一致；多项开关、键盘、1440→768 焦点保持通过 | qa/resume-2026-10-14/faq-* |
+| 既有界面 | Casino 类别、搜索／供应商、Sports、活动／会员、账户展示与动画已有实现和历史检查；不视为全状态最终完成 | qa/final-page-audit.json 等历史证据，仅按最新同组合结果评估 |
+
+## 已实现但尚未完整验收／补齐
+
+| 优先级 | 项目 | 具体剩余事项 | 下一步验收条件 |
+| --- | --- | --- | --- |
+| P0 | Betwave Demo 响应式 | 768 有 16 项旧指标差异；390 保存了桌面侧栏；430 和其余 Demo 手机未验收 | 有效 auth 参考或明确标注 Demo 推导范围；修复后五尺寸及 FAQ 全验收 |
+| P0 | auth 1920 首页 | 现有状态含 343×165 设计画布，仅确认铺宽 | 重新核对原站该状态的整体布局，不沿用 guest 结论 |
+| P0 | 缺失／不完整 footer | 一些 auth 捕获没有 footer，公共组件不会补造 | 逐页滚到最后确认参考内容及加载完成，再补状态和共享模板 |
+| P1 | Betwave 5 张旧动态图片 | mikhail lazarev、Lens、Sporting CP、RB Leipzig、PSV Eindhoven | 对应人物／队伍资源，或重新捕获一致的 feed；不拿其他图片替换 |
+| P1 | Betwave 430 FAQ 余项 | 其余六项原站展开状态尚未稳定重测，自动滚动点击误跳详情 | 在实际可见位置稳定点击，按每项答案、展开高度和截图核对 |
+| P1 | Casino 次级行为 | Live Casino 16 个次级类别、供应商列表、手机搜索、筛选与详情 | 每个重要状态先观察、再实现、再截图和实际操作 |
+| P1 | Sports | 体育筛选、赛事详情、投注单本地展示、次级列表和手机交互 | 对照真实 UI；真实投注不提交 |
+| P1 | 活动与内容 | Tournaments 筛选／Show more、活动详情、FAQ／币种／地区等 | 补完整可观察状态和路由 |
+| P1 | 全高度视觉差异 | 所有入口／状态五尺寸还没有逐项像素证明 | 逐页原站／本地对齐截图，修复，再更新此表 |
+| P2 | 完整运动模式 | 系统减少动态效果下已实际测试；完整位移只有调度检查 | 不改变用户系统偏好，在允许完整运动的环境实际观察 |
+| P2 | file:// | 相对资源、字体、mask 已处理；工具拒绝该协议，真实双击视觉未证实 | 可正常访问的实际浏览器验收，不以 HTTP 代替 |
+| P2 | 可移植再采集 | 旧整合输入仍引用外部 audit-staging / 1win-clone | 整理参考与素材输入，不依赖旧 Vincent 临时路径 |
+| P2 | 打包 | 目录外旧 ZIP 不含最新修改 | 必要验收后重新打包，不把旧 ZIP 当最新版 |
+
+当前 Chrome 与内置参考均为未登录；本轮没有输入凭据、改账户、支付或投注。登录后独有布局暂缺有效新参考，保持待验收；继续推进公开页面和维护工作。
+
+## 页面清单与已发现缺口
+
+下表是本地入口清单，不是原站全站页面总数。M 表示已有实现；V 表示仍待全状态视觉验收；F 表示仍有功能／内容缺口。具体当前阻碍见上表。公开游戏启动、真实账户和生产交易接口不在本地接入。
+
+| 原站路径／状态 | 本地入口 | 当前状态 |
+| --- | --- | --- |
+| /betwave, /en/betwave | betwave.html | M；V / F 待逐状态完成 |
+| /blog | blog.html | M；V / F 待逐状态完成 |
+| /bonuses | bonuses.html | M；V / F 待逐状态完成 |
+| /casino/1win-games | casino-1win.html | M；V / F 待逐状态完成 |
+| /casino/bonus-buy | casino-bonus-buy.html | M；V / F 待逐状态完成 |
+| /casino/bonus-wagering | casino-bonus-wagering.html | M；V / F 待逐状态完成 |
+| /casino/fishing-games | casino-fishing.html | M；V / F 待逐状态完成 |
+| /casino/jili-games | casino-jili.html | M；V / F 待逐状态完成 |
+| /casino/live-games | casino-live.html | M；V / F 待逐状态完成 |
+| /casino/new | casino-new.html | M；V / F 待逐状态完成 |
+| /casino/only-on-1win | casino-only-1win.html | M；V / F 待逐状态完成 |
+| /casino 的 Providers 浮层 | casino-providers.html | M；V / F 待逐状态完成 |
+| /casino/fast-games | casino-quick.html | M；V / F 待逐状态完成 |
+| /casino/ai-recommendations | casino-recommended.html | M；V / F 待逐状态完成 |
+| /casino 的搜索结果浮层 | casino-search-results.html | M；V / F 待逐状态完成 |
+| /casino 的搜索浮层 | casino-search.html | M；V / F 待逐状态完成 |
+| /casino/slots | casino-slots.html | M；V / F 待逐状态完成 |
+| /casino | casino.html | M；V / F 待逐状态完成 |
+| /freemoney, /about-token | freemoney.html | M；V / F 待逐状态完成 |
+| / | index.html | M；V / F 待逐状态完成 |
+| 登录入口／弹窗 | login.html | M；V / F 待逐状态完成 |
+| /loyalty-program | loyalty-program.html | M；V / F 待逐状态完成 |
+| /promotions | promotions.html | M；V / F 待逐状态完成 |
+| 密码恢复入口／弹窗 | recovery.html | M；V / F 待逐状态完成 |
+| 注册入口／弹窗 | register.html | M；V / F 待逐状态完成 |
+| /betting/esport | sports-esports.html | M；V / F 待逐状态完成 |
+| /betting/live | sports-live.html | M；V / F 待逐状态完成 |
+| /betting/prematch | sports-upcoming.html | M；V / F 待逐状态完成 |
+| /betting | sports.html | M；V / F 待逐状态完成 |
+| /tournaments | tournaments.html | M；V / F 待逐状态完成 |
+| /vip-club | vip-club.html | M；V / F 待逐状态完成 |
+
+已发现但尚未完整实现的范围：Markets、Forum、Cockfights、Trading、Poker；Betwave predictions / events / predictors / rules / detail；Casino provider / game detail；Sports event detail；Promotion / Tournament detail。还有可能存在未发现路由。先扩充调查清单，再定义验收分母，不把这些静默遗漏。
+
+## 每次开工只按这个顺序
+
+1. 读本文的当前结论和最高优先项；Design Rule.md 只查本次相关规则。
+2. 启动 start-preview.cmd 或 `node scripts/serve.mjs`，确认预览可用。
+3. 为本次页面／状态明确 URL、guest/auth、窗口、滚动与交互，保存原站证据。无法访问就记录条件，不造页面。
+4. 同一组件改 components/*.html／共享 CSS／common.js；页面专属内容改相应状态。原始重新采集后迁移一次；编辑共享模板后构建一次。
+5. 先检查构建和资源引用，再做同条件截图、实际点击、键盘、滚动、resize、console。当前项通过后进入下一项。
+6. 只更新本文：完成项、证据、仍欠范围、下一个精确动作；设计规则改变才更新 Design Rule.md。旧结果被新结果取代时注明，不堆重复历史。
+7. 同步实际交付目录，保存修改前备份；停止自己的预览服务、恢复临时尺寸和关闭自建标签。
+
+## 下一项精确动作
+
+共享组件和公开 Betwave Read more 五尺寸已通过。下一次先稳定原站滚动位置后，重测 Betwave 430 的其余六项 FAQ 展开状态（此前自动滚动点击误跳详情，不能沿用该结果）。随后逐页调查缺失 footer，再做 Casino 16 个次级筛选／详情。Demo 独有布局等待有效参考，不能写成已通过。
+
+## 证据怎么读
+
+- shared-components-2026-10-14：本轮重构／原站设计采样／后续审查。迁移保真不等同原站保真。
+- sidebar-compact-2026-10-14：已通过的 desktop compact 和浮层状态。
+- resume-2026-10-14：banner 修复、部分 Betwave FAQ 和明确失败／未覆盖项。
+- final-page-audit 等旧报告：历史版本，按最新同“文件／preview／尺寸”结果读取。旧统计不能升级为全站验收。
+
+截图差异图、资产表和机器报告保持 JSON／PNG，不要求接手者把所有文件读一遍。目录外旧 ZIP 及 reference/legacy-docs 仅用于追溯；当前两份根文档和现有代码才是交接依据。
+
+---
+
+# HTML 克隆进度 — 1win（Step 1–5，接续 Step 3 提交版）
+
 最新版本：**2026-10-15**（Asia/Kuala_Lumpur）。本节是接手 agent（Cursor 等）的唯一进度依据；设计/代码规则查 **Design Rule.md**。本文件顶部的 Figma 段落属于另一条工作线，不要改它。
 
 ---
