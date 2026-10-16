@@ -688,15 +688,28 @@
     if(immediate||!nodes.length||motion?.instant())finish();
     else Promise.all(nodes.map(n=>motion?.modal(n,true))).then(finish);
   }
-  let depositRail='fiat', depositMethod='';
+  let depositRail='fiat', depositMethod='', depositAmount='', depositBonus=true, showInstructions=false;
+  let depositCoin='USDT', coinOpen=false, netOpen=false;
+  let withdrawStep='warn', withdrawKind='banks';
+  const FIAT=[
+    {id:'fpx',name:'Malaysian banks',icon:'assets/pay/fpx-clear.png',min:20,max:'5,000'},
+    {id:'tng',name:'Touch n Go',icon:'assets/pay/tng-clear.png',min:20,max:'5,000'},
+    {id:'duit',name:'DuitNow',icon:'assets/pay/duitnow.png',min:20,max:'5,000'},
+    {id:'grab',name:'GrabPay',icon:'assets/pay/grabpay.png',min:20,max:'5,000'}
+  ];
+  const COIN_CHOICES=[['USDT','USDT','assets/pay/usdt-clear.png'],['Ethereum','ETH','assets/pay/ethereum-clear.png'],['Solana','SOL','assets/pay/solana-clear.png']];
+  const WITHDRAW_BANKS=['Affin Bank','Alliance Bank','Ambank Malaysia','Bank Islam Malaysia','Bank Rakyat','Bank Simpanan Nasional','CIMB Bank','Citibank Malaysia','Hong Leong Bank','HSBC Bank Malaysia','Maybank Malaysia','OCBC Bank Malaysia','Public Bank','RHB Bank','Standard Chartered Bank','UOB Bank Malaysia'];
+  const payTabs=()=>'<div class="local-seg"><button type="button" data-testid="local-deposit-fiat"'+(depositRail==='fiat'?' class="is-on"':'')+'><i class="local-ico local-ico-fiat"></i>Fiat</button><button type="button" data-testid="local-deposit-crypto"'+(depositRail==='crypto'?' class="is-on"':'')+'><i class="local-ico local-ico-crypto"></i>Crypto</button></div>';
+  const fiatMethod=id=>FIAT.find(m=>m.id===id)||FIAT[0];
   const CLOSE_SVG='<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="16" height="16" aria-hidden="true"><path fill="currentColor" fill-rule="evenodd" d="M3.364 3.364a.9.9 0 0 1 1.272 0L8 6.727l3.364-3.363a.9.9 0 0 1 1.272 1.272L9.274 8l3.364 3.364a.9.9 0 1 1-1.273 1.272L8 9.274l-3.364 3.364a.9.9 0 1 1-1.272-1.273L6.727 8 3.364 4.636a.9.9 0 0 1 0-1.272"/></svg>';
-  const PAY_METHODS=[['FPX','Malaysian banks','#1434cb'],['Touch n Go','Touch n Go','#0057b8'],['DuitNow','DuitNow','#ed1c24'],['GrabPay','GrabPay','#00b14f']];
   const COINS=[['Bitcoin','BTC','#f7931a'],['Ethereum','ETH','#627eea'],['Litecoin','LTC','#345d9d'],['Tether USD','USDT','#26a17b'],['TRON','TRX','#ef0027'],['Toncoin','TON','#0098ea']];
   const wideBtn=(id,label,accent)=>'<button class="base_root-ZOkD4 base_size-m-ZOkD4 '+(accent?'base_variant-accent-ZOkD4':'base_variant-neutral-ZOkD4')+' local-wide" data-testid="'+id+'" type="button"><div class="base_view-ZOkD4"><div class="base_content-ZOkD4">'+label+'</div></div></button>';
-  function accountSheet(title, body, back) {
-    const backBtn=back?'<button class="base_root-AENvm base_size-m-semibold-AENvm base_variant-tertiary-AENvm modal-header_button-9Ka9l" data-testid="modal-back-button" type="button"><div class="base_view-AENvm"><div class="base_content-AENvm">‹</div></div></button>':'';
+  function accountSheet(title, body, back, headless) {
     const closeBtn='<button class="base_root-AENvm base_size-m-semibold-AENvm base_variant-tertiary-AENvm modal-header_button-9Ka9l" data-testid="modal-header-button-close" type="button"><div class="base_view-AENvm"><div class="base_content-AENvm">'+CLOSE_SVG+'</div></div></button>';
-    const header='<div class="modal-header_root-9Ka9l" style="--e18cc120: var(--modal-color-bg); --v873b5fe6: balance;"><div class="modal-header_primaryHeader-9Ka9l">'+backBtn+'<div class="modal-header_info-9Ka9l"><div class="modal-header_title-9Ka9l" data-testid="modal-header-title">'+title+'</div></div><div class="modal-header_buttons-9Ka9l">'+closeBtn+'</div></div></div>';
+    const backBtn=back&&!headless?'<button class="base_root-AENvm base_size-m-semibold-AENvm base_variant-tertiary-AENvm modal-header_button-9Ka9l" data-testid="modal-back-button" type="button"><div class="base_view-AENvm"><div class="base_content-AENvm">‹</div></div></button>':'';
+    const header=headless
+      ?'<div class="local-pay-head"><button class="local-back" data-testid="modal-back-button" type="button">‹ Back</button>'+closeBtn+'</div>'
+      :'<div class="modal-header_root-9Ka9l" style="--e18cc120: var(--modal-color-bg); --v873b5fe6: balance;"><div class="modal-header_primaryHeader-9Ka9l">'+backBtn+'<div class="modal-header_info-9Ka9l"><div class="modal-header_title-9Ka9l" data-testid="modal-header-title">'+title+'</div></div><div class="modal-header_buttons-9Ka9l">'+closeBtn+'</div></div></div>';
     const inner='<div class="profile_content-OUEX2">'+header+'<div class="local-account">'+body+'</div></div>';
     // Same stacking and card color as the captured profile sheet. Without them the page paints through the card.
     const shell=' style="z-index: var(--z-index-modal-layout);"';
@@ -705,13 +718,29 @@
   }
   function accountPanel(kind) {
     if(kind==='account-deposit'){
-      const fiat='<button type="button" class="local-currency" data-testid="local-currency"><span class="local-mark" style="background:#1a3d8f">RM</span><span>Malaysian ringgit</span><span class="local-chevron">▾</span></button><div class="local-methods">'+PAY_METHODS.map(([name,sub,color])=>'<button type="button" class="local-method" data-testid="local-pay-method" data-method="'+name+'"><span class="local-mark" style="background:'+color+'">'+name.slice(0,1)+'</span><span><b>'+name+'</b><small>'+sub+'</small></span></button>').join('')+'</div>';
-      const crypto='<div class="local-rows">'+COINS.map(([name,code,color])=>'<button type="button" class="local-row" data-testid="local-pay-method" data-method="'+name+'"><span class="local-mark" style="background:'+color+'">'+code.slice(0,1)+'</span><span><b>'+name+'</b><small>'+code+'</small></span></button>').join('')+'</div>';
-      return accountSheet('Deposit','<div class="local-seg"><button type="button" data-testid="local-deposit-fiat"'+(depositRail==='fiat'?' class="is-on"':'')+'>Fiat</button><button type="button" data-testid="local-deposit-crypto"'+(depositRail==='crypto'?' class="is-on"':'')+'>Crypto</button></div>'+(depositRail==='fiat'?fiat:crypto));
+      const fiat='<button type="button" class="local-currency" data-testid="local-currency"><span class="local-rm">RM</span><span>Malaysian ringgit</span><span class="local-chevron">▾</span></button><div class="local-methods">'+FIAT.map(m=>'<button type="button" class="local-method" data-testid="local-pay-method" data-method="'+m.id+'"><img src="'+m.icon+'" alt=""><b>'+m.name+'</b></button>').join('')+'</div>';
+      const coin=COIN_CHOICES.find(c=>c[0]===depositCoin)||COIN_CHOICES[0];
+      const net=depositCoin==='Ethereum'?'Ethereum':depositCoin==='Solana'?'Solana':'Tron (TRC-20)';
+      const coinMenu=coinOpen?'<div class="local-menu"><label class="local-search"><input data-testid="local-coin-search" placeholder="Search" aria-label="Search"></label>'+COIN_CHOICES.map(([name,code,icon])=>'<button type="button" data-testid="local-coin" data-coin="'+name+'"><img src="'+icon+'" alt=""><span><b>'+name+'</b><small>'+code+'</small></span>'+(name===depositCoin?'<i class="local-check"></i>':'')+'</button>').join('')+'</div>':'';
+      const crypto='<div class="local-pick"><button type="button" class="local-currency" data-testid="local-coin-toggle"><img src="'+coin[2]+'" alt=""><span>'+coin[1]+'</span><span class="local-chevron">'+(coinOpen?'▴':'▾')+'</span></button>'+coinMenu+'</div><button type="button" class="local-currency" data-testid="local-net-toggle"><span>'+net+'</span><span class="local-chevron">▾</span></button>'+(netOpen?'<div class="local-menu"><button type="button" data-testid="local-net" data-net="'+net+'">'+net+'</button></div>':'')+'<p class="local-min">Minimum <b>5 '+coin[1]+'</b><br>Amounts below this will not be credited.</p><div class="local-address"><div class="local-qr" aria-hidden="true"></div><div><b>Deposit address</b><p>Preview only</p><button type="button" class="local-copy" data-testid="local-copy-address">Copy</button></div></div><button type="button" class="local-wallet" data-testid="local-connect"><span>Connect wallet</span><span class="local-wallet-icons"><img src="assets/pay/MetaMask_Fox.svg" alt=""><img src="assets/pay/walletconnect.svg" alt=""><img src="assets/pay/trust.svg" alt=""></span></button>';
+      return accountSheet('Deposit',payTabs()+(depositRail==='fiat'?fiat:crypto));
     }
-    if(kind==='account-deposit-method')return accountSheet(depositMethod||'Deposit','<p class="local-hint">Amount</p><input class="local-field" data-testid="local-amount" inputmode="decimal" placeholder="0.00" aria-label="Amount">'+wideBtn('local-pay','Continue',true)+'<p class="local-hint">Local preview. No payment is sent.</p>',true);
+    if(kind==='account-deposit-method'){
+      const m=fiatMethod(depositMethod);
+      return accountSheet('','<div class="local-pay-title"><img src="'+m.icon+'" alt=""><b>'+m.name+'</b></div>'+payTabs()+'<label class="local-amount"><span>Amount</span><b>RM</b><input data-testid="local-amount" inputmode="decimal" aria-label="Amount" value="'+depositAmount+'"><button type="button" data-testid="local-bonus"'+(depositBonus?' class="is-on"':'')+'>Bonus 100</button></label><p class="local-range">from RM '+m.min+' to RM '+m.max+'</p><div class="local-chips">'+[80,150,400,600].map(n=>'<button type="button" data-testid="local-amount-chip" data-amount="'+n+'">RM '+n+'</button>').join('')+'</div>'+wideBtn('local-pay','Deposit',true)+'<button type="button" class="local-instructions" data-testid="local-instructions">Detailed instructions</button>'+(showInstructions?'<p class="local-hint">Pay the amount in your bank or wallet app. This preview does not create a payment.</p>':'')+'<h3 class="local-sub">Bonuses</h3><button type="button" class="local-bonus" data-testid="local-bonus-card"><span><b>100% casino bonus</b><small>'+(depositBonus?'Selected':'Tap to select')+'</small></span><span class="local-chevron">›</span></button>',false,true);
+    }
     if(kind==='account-balance')return accountSheet('Balance','<p class="local-hint">Account · Malaysian ringgit</p><p class="local-sum">RM 0.00</p>'+wideBtn('local-open-deposit','Deposit',true)+'<div class="local-points"><span>1win Points</span><span>0</span></div><div class="local-split"><b>Other accounts</b><button type="button" data-testid="local-add-account">Add +</button></div><div class="local-rows">'+COINS.map(([name,code,color])=>'<div class="local-row"><span class="local-mark" style="background:'+color+'">'+code.slice(0,1)+'</span><span><b>'+name+'</b><small>'+code+'</small></span><span class="local-zero">0.00000000</span></div>').join('')+'</div><label class="local-switch"><input type="checkbox" data-testid="local-balance-currency"> Balance in currency</label>');
-    if(kind==='account-withdraw')return accountSheet('Withdraw','<p class="local-hint">Account</p><p class="local-sum">RM 0.00</p><input class="local-field" data-testid="local-amount" inputmode="decimal" placeholder="0.00" aria-label="Amount">'+wideBtn('local-withdraw','Withdraw',false)+'<p class="local-hint">Balance is RM 0.00. Nothing is withdrawn.</p>',true);
+    if(kind==='account-withdraw'){
+      if(withdrawStep==='warn')return accountSheet('Withdrawal','<p class="local-forfeit">The following bonuses will be forfeited when you exchange currency:</p><ul class="local-forfeit-list"><li>all active bonuses</li><li>all available no-deposit bonuses</li></ul>'+wideBtn('local-withdraw-save','Save bonuses',true)+'<button type="button" class="local-funds" data-testid="local-withdraw-go">Withdraw funds</button>');
+      if(withdrawStep==='methods')return accountSheet('Withdrawal','<div class="local-methods"><button type="button" class="local-method" data-testid="local-withdraw-method" data-method="banks"><img src="assets/pay/malaysia.svg" alt=""><b>Malaysian banks</b></button><button type="button" class="local-method" data-testid="local-withdraw-method" data-method="tng"><img src="assets/pay/tng-clear.png" alt=""><b>Touch n Go</b></button></div>');
+      const banks=withdrawKind==='banks';
+      const title=banks?'Malaysian banks':'Touch n Go';
+      const icon=banks?'assets/pay/malaysia.svg':'assets/pay/tng-clear.png';
+      const fields=banks
+        ?'<select class="local-field" data-testid="local-bank" aria-label="Bank"><option value="">Bank</option>'+WITHDRAW_BANKS.map(n=>'<option>'+n+'</option>').join('')+'</select><input class="local-field" data-testid="local-full-name" placeholder="Full name" aria-label="Full name"><input class="local-field" data-testid="local-account-no" inputmode="numeric" placeholder="Bank account number" aria-label="Bank account number">'
+        :'<input class="local-field" data-testid="local-phone" inputmode="tel" placeholder="Phone number" aria-label="Phone number"><input class="local-field" data-testid="local-full-name" placeholder="Full name" aria-label="Full name">';
+      return accountSheet('', '<div class="local-pay-title"><img src="'+icon+'" alt=""><b>'+title+'</b></div>'+fields+'<label class="local-amount"><span>Amount</span><b>RM</b><input data-testid="local-amount" inputmode="decimal" aria-label="Amount" value="'+depositAmount+'"></label><p class="local-range">from RM 100 to RM 15,000</p><label class="local-checkline"><input type="checkbox" data-testid="local-withdraw-save" checked> Save for future withdrawals</label><button type="button" class="local-blue" data-testid="local-withdraw">Withdraw</button>', false, true);
+    }
     if(kind==='account-voucher')return accountSheet('Bonus codes','<p class="local-hint">Code activation</p><input class="local-field" data-testid="local-voucher" placeholder="Enter code" aria-label="Bonus code">'+wideBtn('local-activate','Activate',true),true);
     if(kind==='account-history-bets')return accountSheet('Bet history','<p class="local-empty">No open or settled bets.</p>'+wideBtn('local-go-sports','Go to Sports',true),true);
     if(kind==='account-history-tx')return accountSheet('Transaction history','<p class="local-empty">No deposits or withdrawals.</p>',true);
@@ -765,6 +794,13 @@
     modal=kind; document.body.style.overflow='hidden';
     const root=openLayout();
     if(root){root.dataset.localModal=kind;root.setAttribute('role','dialog');root.setAttribute('aria-modal','true');}
+    // Some wide and phone captures omit the open class, so the card stays at opacity 0.
+    root?.querySelectorAll('[class*="desktop-modal_backdrop"],[class*="desktop-modal_holder"]').forEach(node=>{
+      for(const cls of node.classList){
+        const match=cls.match(/^desktop-modal_(?:backdrop|holder)-(.+)$/);
+        if(match)node.classList.add('desktop-modal_open-'+match[1]);
+      }
+    });
     hydrate();motion?.modal(root);
     ($('input[type="tel"],input[type="email"]',root)||$('button',root))?.focus({preventScroll:true});
   }
@@ -1009,7 +1045,7 @@
       }
       return;
     }
-    const el=e.target.closest('button,a,[data-reference-href],[class*="accordion-heading_root"],[class*="common-layout_close"],[class*="common-layout_backdrop"],[class*="desktop-modal_backdrop"],[class*="mobile-modal_backdrop"]');
+    const el=e.target.closest('button,a,[data-testid="userSettings-emailButton"],[data-reference-href],[class*="accordion-heading_root"],[class*="common-layout_close"],[class*="common-layout_backdrop"],[class*="desktop-modal_backdrop"],[class*="mobile-modal_backdrop"]');
     const removeSel=e.target.closest('[class*="_removeSelection_1ijea_"]');
     if(removeSel){const key=removeSel.closest('[data-betslip-key]')?.dataset.betslipKey;betslip=betslip.filter(s=>s.key!==key);saveBetslip();renderBetslip();return;}
     const sheet=e.target.closest('[data-local-sheet]');
@@ -1065,7 +1101,7 @@
     if(id==='sidebar-profile-button'&&signedPreview)return openModal('account-profile',el);
     if(id==='profile-settingsButton')return openModal('account-settings',el);
     if(id==='profile-depositButton'||id==='local-open-deposit'){depositRail='fiat';return openModal('account-deposit',el);}
-    if(id==='profile-withdrawButton')return openModal('account-withdraw',el);
+    if(id==='profile-withdrawButton'){withdrawStep='warn';return openModal('account-withdraw',el);}
     if(id==='profile-bonusesButton'){closeModal(true);return go('bonuses.html');}
     if(id==='profile-voucherButton')return openModal('account-voucher',el);
     if(id==='profile-loyaltyProgramButton'){closeModal(true);return go('loyalty-program.html');}
@@ -1080,15 +1116,27 @@
     if(id==='userSettings-passwordButton')return openModal('account-settings-password',el);
     if(id==='userSettings-sessionButton')return openModal('account-settings-sessions',el);
     if(id==='modal-back-button'&&modal?.startsWith('account-')){
-      if(modal==='account-deposit-method')return openModal('account-deposit',el);
+      if(modal==='account-deposit-method'){depositMethod='';return openModal('account-deposit',el);}
+      if(modal==='account-withdraw'){withdrawStep=withdrawStep==='form'?'methods':'warn';return openModal('account-withdraw',el);}
       if(modal.startsWith('account-settings-'))return openModal('account-settings',el);
       return openModal('account-profile',el);
     }
     if(id==='userSettings-logoutButton'){closeModal(true);if(signedPreview)togglePreview();return;}
     if(id==='profile-copyIdButton'){navigator.clipboard?.writeText('00000000').then(()=>notice('Copied demo ID')).catch(()=>notice('Demo ID: 00000000'));return;}
-    if(id==='local-deposit-fiat'||id==='local-deposit-crypto'){depositRail=id.endsWith('crypto')?'crypto':'fiat';return openModal('account-deposit',el);}
-    if(id==='local-pay-method'){depositMethod=el.dataset.method||'Deposit';return openModal('account-deposit-method',el);}
+    if(id==='local-deposit-fiat'||id==='local-deposit-crypto'){depositRail=id.endsWith('crypto')?'crypto':'fiat';coinOpen=false;netOpen=false;depositMethod='';return openModal('account-deposit',el);}
+    if(id==='local-pay-method'){depositMethod=el.dataset.method||'fpx';depositAmount='';return openModal('account-deposit-method',el);}
+    if(id==='local-amount-chip'){depositAmount=el.dataset.amount||'';return openModal('account-deposit-method',el);}
+    if(id==='local-bonus'||id==='local-bonus-card'){const typed=$('[data-testid="local-amount"]');if(typed)depositAmount=typed.value;depositBonus=!depositBonus;return openModal(modal,el);}
+    if(id==='local-instructions'){const typed=$('[data-testid="local-amount"]');if(typed)depositAmount=typed.value;showInstructions=!showInstructions;return openModal('account-deposit-method',el);}
+    if(id==='local-coin-toggle'){coinOpen=!coinOpen;netOpen=false;return openModal('account-deposit',el);}
+    if(id==='local-coin'){depositCoin=el.dataset.coin||'USDT';coinOpen=false;return openModal('account-deposit',el);}
+    if(id==='local-net-toggle'||id==='local-net'){netOpen=!netOpen;coinOpen=false;return openModal('account-deposit',el);}
+    if(id==='local-copy-address')return notice('No deposit address in this preview.');
+    if(id==='local-connect')return notice('Wallets are not connected in this preview.');
     if(id==='local-pay')return notice('Local preview. No payment is sent.');
+    if(id==='local-withdraw-save'){closeModal(true);return openModal('account-profile',el);}
+    if(id==='local-withdraw-go'){withdrawStep='methods';return openModal('account-withdraw',el);}
+    if(id==='local-withdraw-method'){withdrawKind=el.dataset.method||'banks';withdrawStep='form';depositAmount='';return openModal('account-withdraw',el);}
     if(id==='local-withdraw')return notice('Balance is RM 0.00. Nothing is withdrawn.');
     if(id==='local-activate')return notice('This code is not part of the preview.');
     if(id==='local-save-demo')return notice('Saved for this preview only. Demo details stay in place.');
