@@ -9,10 +9,25 @@
   if (!data.views[view+'-1440'] && !data.views[view+'-390']) view = 'home';
   const expand = html => html.replace(/<!--BW:([^>]+)-->/g, (_, key) => data.parts[key] || '');
   const select = width => data.views[view+'-'+width] || data.views[view+(width<1024?'-390':'-1440')] || data.views[view+'-1440'] || data.views[view+'-390'];
+  const authPreview = query.get('preview') === 'auth';
+  const sign = html => {
+    if (!authPreview || !window.SHARED_UI) return html;
+    const signed = window.SHARED_UI.expand('<template data-shared-component="header.betwave.betwave-1440x900.2de49e42"></template>');
+    const doc = new DOMParser().parseFromString('<div id="root">'+signed+'</div>', 'text/html');
+    const src = doc.querySelector('[class*="variant-1_leading"]');
+    const page = new DOMParser().parseFromString('<div id="root">'+html+'</div>', 'text/html');
+    const dst = page.querySelector('[class*="variant-1_leading"]');
+    if (!src || !dst) return html;
+    dst.innerHTML = src.innerHTML.replace(
+      '<div class="skeleton_root-ADZg6 balance-sum-skeleton_root-qg2Ip"></div>',
+      '<div class="variant-1_sum-qboqn" data-testid="header-balance-sum">0.00</div>'
+    );
+    return page.getElementById('root').innerHTML;
+  };
   window.PAGE_STATES = {};
   for (const [width,height] of [[1440,900],[1920,1080],[390,844],[430,932],[768,1024]]) {
     const state=select(width);
-    window.PAGE_STATES['betwave-'+width+'x'+height]={html:expand(state.html),attrs:state.attrs};
+    window.PAGE_STATES['betwave-'+width+'x'+height]={html:sign(expand(state.html)),attrs:state.attrs};
   }
   const rootState=select(innerWidth);
   for (const [name,value] of Object.entries(rootState.htmlAttrs || {})) {
@@ -22,7 +37,7 @@
   document.body.dataset.state='';
   const $=(s,root=document)=>root.querySelector(s);
   const $$=(s,root=document)=>[...root.querySelectorAll(s)];
-  const go=(params={})=>{const q=new URLSearchParams(params);location.href='betwave.html'+(q.size?'?'+q:'');};
+  const go=(params={})=>{const q=new URLSearchParams(params);if(authPreview)q.set('preview','auth');location.href='betwave.html'+(q.size?'?'+q:'');};
   let returnFocus=null;
   function closePanel(){
     $('[data-bw-overlay]')?.remove();

@@ -290,7 +290,7 @@
 
 # HTML 克隆进度 — 1win（Step 1–5，接续 Step 3 提交版）
 
-最新版本：**2026-10-15**（Asia/Kuala_Lumpur）。本节是接手 agent（Cursor 等）的唯一进度依据；设计/代码规则查 **Design Rule.md**。本文件顶部的 Figma 段落属于另一条工作线，不要改它。
+最新版本：**2026-10-16**（Asia/Kuala_Lumpur）。本节是接手 agent（Cursor 等）的唯一进度依据；设计/代码规则查 **Design Rule.md**。本文件顶部的 Figma 段落属于另一条工作线，不要改它。
 
 ---
 
@@ -298,7 +298,7 @@
 
 - **目标**：用 HTML5 + CSS + 原生 JS 1:1 克隆 https://one-vv3591.com/（设计 + 前端行为）。游客 + Demo（已登录展示）两种状态；五个尺寸 1920×1080 / 1440×900 / 768×1024 / 430×932 / 390×844。直接双击 HTML（file://）也要显示图标和图片。
 - **用户规则**：全部自己完成，不要问用户；只做本地展示，不接真实账户/支付/投注；不输入任何凭据；Demo 数据脱敏（姓名→Demo user，ID→ID 00000000，余额→0.00）。
-- **当前阶段**：5 步缺口计划已完成 Step 1–4（Step 4 按用户要求跳过剩余 Betwave）；**Step 5 进行中**（见 §4）。2026-10-16 已写入并推送 `c995056`（在 `10154e5` 之上）：游客五尺寸布局对照、侧栏展开、动画、VIP Club、锦标赛详情、Trading 登录弹窗、Loyalty 奖杯、重复 srcset、倒计时。仍缺逐像素全站对比、筛选子页抽检、Demo 重采、Betwave。
+- **当前阶段**：5 步缺口计划已完成 Step 1–4（Step 4 按用户要求跳过剩余 Betwave 动态图）；**Step 5 进行中**（见 §4）。2026-10-16 已用本人登录的 Chrome 对照全部已注册页面的 Demo 顶栏：265 个页面 × 1440 / 390，余额、通知、底栏与原站一致。唯一差过的 `betwave.html` 已补上登录顶栏（余额 0.00）。35 个放错尺寸的 Demo 状态已改回同尺寸布局，`auth-state-audit` 为 0。仍缺逐像素全站对比、筛选子页抽检、Betwave 动态图。
 - **规模**：271 个 HTML 入口（见 §3）。
 
 ## 1. 架构速读（改代码前必须知道）
@@ -434,7 +434,7 @@ Markets（+13）、TOP Bets、Bet history、61 个运动筛选页（`routes.js` 
 - ✅ **2026-10-16 Loyalty Program 奖杯图过小**：Levels and Rewards 采集把同一张 ~270px 图同时标成 `1x` 与 `2x`，高分屏（deviceScaleFactor≥2 / Windows 缩放）按 2x 显示成约 135×100。`css/local.css` 给 `.level_foreground-thziT` 设 `width:100%`，图按卡片宽度铺满，复测 1440/768/390 在 DPR1 与 DPR2 均为 268×199（与原站一致）。证据 `qa/loyalty-trophy/after.json`、`card-dpr2.png`。
 - ✅ **2026-10-16 Trading 游客 Authorization 弹窗间距**：采集把 `.modal-footer_root` 的 padding-top/right/left 掏空，Register / Log in 贴着说明文字和卡片左右边。`css/local.css` 只对 `[data-testid="game-auth"]` 补回 `var(--padding)`（≥1024 为 20px，更窄为 16px）。复测与 https://one-vv3591.com/trading 一致：1440 卡片 390×172、距视口上下 364 / 左右 525，页脚 padding 20，按钮间距 12；390 底栏 390×206、贴底贴左右，页脚 padding 16，两按钮间距 12。证据 `qa/trading-auth-popup-2026-10-16/`、`qa/trading-auth-after-local.json`。同一弹窗的 casino-trading 一并对齐。
 - ❌ **筛选/子页抽检**（sports-live-*、casino-live-*、blog 文章等复用布局）尚未逐页对照。
-- ❌ Demo（已登录）状态缺有效参考，**待用户本人登录原站后再采**（不要自己输入凭据）。Step 4 新增一项：trading / casino-trading 的游戏布局 header 登录后的样子。`node scripts/auth-state-audit.mjs` 找出 27 页共 35 个 Demo 状态的布局与同尺寸游客状态不符（存的是别的尺寸的布局，如 casino-slots Demo 1920 是手机布局、Demo 390/768 是桌面布局）：betwave 390/430/768、blog 1440/1920、bonuses 390/768、casino-live-* 768（16 个）、casino-slots 1920/390/768、casino-recommended 1920/768、casino-bonus-wagering 1920、casino-fishing 768、freemoney 768、home 1920、loyalty-program 1920/768、vip-club 1920。用户登录后按尺寸重采这些路由，再用 `build-page-from-capture.py` 只更新 `-auth.js`；修完重跑 audit 应为 0。
+- ✅ **2026-10-16 Demo（已登录）对照**：用本人已登录的 Chrome（没有输入凭据，余额在本地仍是 0.00 / Demo user）对照原站与 `?preview=auth`。先查主布局族（Home、Casino、Sports、Bonuses、Free money、Loyalty、VIP Club、Promotions、Tournaments、Trading、Casino Trading、Casino Slots，1440 / 390 / 1920），再查全部已注册页面。`scripts/compare-auth-all.mjs` 对 265 个页面 × 1440×900 / 390×844 做结构对照（余额、Login、通知、底栏、顶栏高度、横向溢出），证据 `qa/auth-all-2026-10-16/report.jsonl`：529 项一次通过，原站全程保持登录。唯一失败是 `betwave.html` 1440：这个文件不加载页面状态，`?preview=auth` 仍显示 Login。`js/betwave-runtime.js` 在 Demo 下把顶栏右侧换成已有的 Betwave 登录顶栏（vUSD、余额 **0.00**、Create prediction、通知），并在站内切换时保留 `preview=auth`。复测 `betwave.html` 1440 与 390 均为余额 + 通知、无 Login。另两处设计差已修：`scripts/fix-auth-login-chrome.mjs` 把 35 个放错尺寸的 Demo 状态改成同尺寸游客正文 + 已有的登录顶栏/侧栏（`node scripts/auth-state-audit.mjs` 为 **0**）；Trading 与 Casino Trading 的游戏顶栏原来是空的 actions 格并弹出游客 Authorization，现已放入余额和存款，手机不放通知按钮（原站 390 也没有）。这是结构对照，不是逐像素通过。
 
 ## 5. 仍然有效的旧成果
 - 共享组件：header/sidebar/footer 集中到 components，重复标记 25.36MB → 6.63MB；还原逐字节一致（`qa/shared-components-2026-10-14/`）。
