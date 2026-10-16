@@ -72,3 +72,43 @@ body[data-page="freemoney"] [class*="chips-section-floating_root"]{position:stic
 @media (max-width: 1023px) {
   .variant-2_wideShell-dxo92 { --edge-offset: 0px !important; }
 }
+
+/* Logged-in account sheets. The shell is the captured profile modal; this is only the inner layout. */
+.local-account { display: flex; flex-direction: column; gap: 12px; padding: 4px 16px 20px; color: #141415; font: 500 14px/1.4 Inter, Arial, sans-serif; }
+.local-account .local-sum { margin: 0; font-size: 28px; font-weight: 700; letter-spacing: -0.03em; }
+.local-account .local-hint, .local-notes .local-hint { margin: 0; color: #6b7280; font-size: 13px; font-weight: 500; }
+.local-account .local-empty { margin: 12px 0; color: #6b7280; text-align: center; }
+.local-seg { display: flex; gap: 4px; padding: 4px; border-radius: 12px; background: #f2f3f5; }
+.local-seg button { flex: 1; border: 0; border-radius: 10px; padding: 10px 8px; background: transparent; color: #6b7280; font: 600 14px/1 Inter, Arial, sans-serif; cursor: pointer; }
+.local-seg button.is-on { background: #fff; color: #141415; box-shadow: 0 1px 2px rgba(0,0,0,.06); }
+.local-currency, .local-method, .local-row { display: flex; align-items: center; gap: 10px; width: 100%; border: 0; border-radius: 14px; background: #f3f4f6; color: inherit; text-align: left; cursor: pointer; }
+.local-currency { padding: 14px; }
+.local-currency span:nth-child(2) { flex: 1; font-weight: 600; }
+.local-chevron { color: #9aa0a6; }
+.local-methods { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; }
+.local-method, .local-row { padding: 14px; }
+.local-method span, .local-row span { display: flex; flex-direction: column; min-width: 0; }
+.local-method small, .local-row small { color: #6b7280; font-size: 12px; font-weight: 500; }
+.local-mark { display: grid; place-items: center; width: 36px; height: 36px; border-radius: 10px; color: #fff; font-size: 13px; font-weight: 700; flex: none; }
+.local-rows { display: flex; flex-direction: column; }
+.local-rows .local-row, .local-rows .local-row { border-radius: 0; background: transparent; border-bottom: 1px solid #eceef1; }
+.local-zero { margin-left: auto; color: #141415; font-variant-numeric: tabular-nums; }
+.local-points, .local-split { display: flex; align-items: center; justify-content: space-between; padding: 12px 14px; border-radius: 14px; background: #f3f4f6; }
+.local-split { background: transparent; padding: 4px 0; }
+.local-split button { border: 0; background: transparent; color: #1a73e8; font: 600 14px/1 Inter, Arial, sans-serif; cursor: pointer; }
+.local-field { width: 100%; box-sizing: border-box; border: 0; border-radius: 12px; padding: 14px; background: #f3f4f6; color: #141415; font: 500 16px/1.2 Inter, Arial, sans-serif; }
+.local-wide { width: 100%; }
+.local-switch { display: flex; align-items: center; gap: 8px; color: #1a73e8; font-weight: 600; }
+.local-notes { position: fixed; z-index: var(--z-index-modal-layout); max-height: min(560px, calc(100dvh - 88px)); overflow: auto; padding: 14px; border-radius: 16px; background: #fff; color: #141415; box-shadow: 0 12px 40px rgba(0,0,0,.28); font: 500 14px/1.4 Inter, Arial, sans-serif; }
+.local-notes-head { display: flex; align-items: center; justify-content: space-between; margin-bottom: 10px; }
+.local-notes-head b { font-size: 18px; }
+.local-notes-head button { border: 0; background: transparent; cursor: pointer; color: #141415; }
+.local-note { margin-top: 10px; padding: 12px; border-radius: 14px; background: #f3f4f6; }
+.local-note div { display: flex; justify-content: space-between; color: #6b7280; font-size: 12px; }
+.local-note em { padding: 2px 8px; border-radius: 999px; background: #ff7a00; color: #fff; font-style: normal; font-size: 11px; }
+.local-note h3 { margin: 6px 0 4px; font-size: 16px; }
+.local-note p { margin: 0 0 10px; color: #3c4043; }
+.local-note button { width: 100%; border: 0; border-radius: 10px; padding: 10px; background: #1a73e8; color: #fff; font: 700 14px/1 Inter, Arial, sans-serif; cursor: pointer; }
+@media (max-width: 639px) {
+  .local-notes { left: 8px !important; right: 8px; width: auto !important; }
+}

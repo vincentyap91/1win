@@ -688,14 +688,73 @@
     if(immediate||!nodes.length||motion?.instant())finish();
     else Promise.all(nodes.map(n=>motion?.modal(n,true))).then(finish);
   }
+  let depositRail='fiat', depositMethod='';
+  const CLOSE_SVG='<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="16" height="16" aria-hidden="true"><path fill="currentColor" fill-rule="evenodd" d="M3.364 3.364a.9.9 0 0 1 1.272 0L8 6.727l3.364-3.363a.9.9 0 0 1 1.272 1.272L9.274 8l3.364 3.364a.9.9 0 1 1-1.273 1.272L8 9.274l-3.364 3.364a.9.9 0 1 1-1.272-1.273L6.727 8 3.364 4.636a.9.9 0 0 1 0-1.272"/></svg>';
+  const PAY_METHODS=[['FPX','Malaysian banks','#1434cb'],['Touch n Go','Touch n Go','#0057b8'],['DuitNow','DuitNow','#ed1c24'],['GrabPay','GrabPay','#00b14f']];
+  const COINS=[['Bitcoin','BTC','#f7931a'],['Ethereum','ETH','#627eea'],['Litecoin','LTC','#345d9d'],['Tether USD','USDT','#26a17b'],['TRON','TRX','#ef0027'],['Toncoin','TON','#0098ea']];
+  const wideBtn=(id,label,accent)=>'<button class="base_root-ZOkD4 base_size-m-ZOkD4 '+(accent?'base_variant-accent-ZOkD4':'base_variant-neutral-ZOkD4')+' local-wide" data-testid="'+id+'" type="button"><div class="base_view-ZOkD4"><div class="base_content-ZOkD4">'+label+'</div></div></button>';
+  function accountSheet(title, body, back) {
+    const backBtn=back?'<button class="base_root-AENvm base_size-m-semibold-AENvm base_variant-tertiary-AENvm modal-header_button-9Ka9l" data-testid="modal-back-button" type="button"><div class="base_view-AENvm"><div class="base_content-AENvm">‹</div></div></button>':'';
+    const closeBtn='<button class="base_root-AENvm base_size-m-semibold-AENvm base_variant-tertiary-AENvm modal-header_button-9Ka9l" data-testid="modal-header-button-close" type="button"><div class="base_view-AENvm"><div class="base_content-AENvm">'+CLOSE_SVG+'</div></div></button>';
+    const header='<div class="modal-header_root-9Ka9l" style="--e18cc120: var(--modal-color-bg); --v873b5fe6: balance;"><div class="modal-header_primaryHeader-9Ka9l">'+backBtn+'<div class="modal-header_info-9Ka9l"><div class="modal-header_title-9Ka9l" data-testid="modal-header-title">'+title+'</div></div><div class="modal-header_buttons-9Ka9l">'+closeBtn+'</div></div></div>';
+    const inner='<div class="profile_content-OUEX2">'+header+'<div class="local-account">'+body+'</div></div>';
+    // Same stacking and card color as the captured profile sheet. Without them the page paints through the card.
+    const shell=' style="z-index: var(--z-index-modal-layout);"';
+    if(mobile())return '<div class="modal-layout_wrapper-C9j8A" data-testid="modal-layout"'+shell+'><div class="color-scheme_root-jGMem colorScheme-light"><div class="mobile-modal_root-IMcp4" data-testid="mobile-modal" size="small" style="inset:0; --v6578d6c9: var(--modal-color-bg); --v5133b3f9: 820;"><div class="mobile-modal_backdrop-IMcp4" style="opacity:1"></div><div class="mobile-modal_holder-IMcp4" style="inset:auto 0 0 0;"><div class="mobile-modal_modal-IMcp4 mobile-modal_detent-expanded-IMcp4 mobile-modal_scrollable-IMcp4">'+inner+'</div></div></div></div></div>';
+    return '<div class="modal-layout_wrapper-C9j8A" data-testid="modal-layout"'+shell+'><div class="color-scheme_root-jGMem colorScheme-light"><div class="desktop-modal_root-CaHFb" data-testid="desktop-modal" style="--v547cda05: 300; --v6edd6d02: 200; --v378956dc: var(--modal-color-bg);"><div class="desktop-modal_backdrop-CaHFb desktop-modal_open-CaHFb"></div><div class="desktop-modal_holder-CaHFb desktop-modal_open-CaHFb"><div class="desktop-modal_card-CaHFb desktop-modal_detent-expanded-CaHFb desktop-modal_size-small-CaHFb desktop-modal_scrollable-CaHFb">'+inner+'</div></div></div></div></div>';
+  }
+  function accountPanel(kind) {
+    if(kind==='account-deposit'){
+      const fiat='<button type="button" class="local-currency" data-testid="local-currency"><span class="local-mark" style="background:#1a3d8f">RM</span><span>Malaysian ringgit</span><span class="local-chevron">▾</span></button><div class="local-methods">'+PAY_METHODS.map(([name,sub,color])=>'<button type="button" class="local-method" data-testid="local-pay-method" data-method="'+name+'"><span class="local-mark" style="background:'+color+'">'+name.slice(0,1)+'</span><span><b>'+name+'</b><small>'+sub+'</small></span></button>').join('')+'</div>';
+      const crypto='<div class="local-rows">'+COINS.map(([name,code,color])=>'<button type="button" class="local-row" data-testid="local-pay-method" data-method="'+name+'"><span class="local-mark" style="background:'+color+'">'+code.slice(0,1)+'</span><span><b>'+name+'</b><small>'+code+'</small></span></button>').join('')+'</div>';
+      return accountSheet('Deposit','<div class="local-seg"><button type="button" data-testid="local-deposit-fiat"'+(depositRail==='fiat'?' class="is-on"':'')+'>Fiat</button><button type="button" data-testid="local-deposit-crypto"'+(depositRail==='crypto'?' class="is-on"':'')+'>Crypto</button></div>'+(depositRail==='fiat'?fiat:crypto));
+    }
+    if(kind==='account-deposit-method')return accountSheet(depositMethod||'Deposit','<p class="local-hint">Amount</p><input class="local-field" data-testid="local-amount" inputmode="decimal" placeholder="0.00" aria-label="Amount">'+wideBtn('local-pay','Continue',true)+'<p class="local-hint">Local preview. No payment is sent.</p>',true);
+    if(kind==='account-balance')return accountSheet('Balance','<p class="local-hint">Account · Malaysian ringgit</p><p class="local-sum">RM 0.00</p>'+wideBtn('local-open-deposit','Deposit',true)+'<div class="local-points"><span>1win Points</span><span>0</span></div><div class="local-split"><b>Other accounts</b><button type="button" data-testid="local-add-account">Add +</button></div><div class="local-rows">'+COINS.map(([name,code,color])=>'<div class="local-row"><span class="local-mark" style="background:'+color+'">'+code.slice(0,1)+'</span><span><b>'+name+'</b><small>'+code+'</small></span><span class="local-zero">0.00000000</span></div>').join('')+'</div><label class="local-switch"><input type="checkbox" data-testid="local-balance-currency"> Balance in currency</label>');
+    if(kind==='account-withdraw')return accountSheet('Withdraw','<p class="local-hint">Account</p><p class="local-sum">RM 0.00</p><input class="local-field" data-testid="local-amount" inputmode="decimal" placeholder="0.00" aria-label="Amount">'+wideBtn('local-withdraw','Withdraw',false)+'<p class="local-hint">Balance is RM 0.00. Nothing is withdrawn.</p>',true);
+    if(kind==='account-voucher')return accountSheet('Bonus codes','<p class="local-hint">Code activation</p><input class="local-field" data-testid="local-voucher" placeholder="Enter code" aria-label="Bonus code">'+wideBtn('local-activate','Activate',true),true);
+    if(kind==='account-history-bets')return accountSheet('Bet history','<p class="local-empty">No open or settled bets.</p>'+wideBtn('local-go-sports','Go to Sports',true),true);
+    if(kind==='account-history-tx')return accountSheet('Transaction history','<p class="local-empty">No deposits or withdrawals.</p>',true);
+    if(kind==='account-support')return accountSheet('24/7 support','<p class="local-hint">All contact info</p>'+wideBtn('local-chat','Chat',true)+'<p class="local-hint">Live chat is not connected in this preview.</p>',true);
+    if(kind==='account-app')return accountSheet('1win for Windows','<p class="local-hint">Instant access to the platform with our app</p>'+wideBtn('local-download','Download',true)+'<p class="local-hint">The installer is not part of this preview.</p>');
+    if(kind==='account-settings-name')return accountSheet('Name','<input class="local-field" value="Demo user" aria-label="Name">'+wideBtn('local-save-demo','Save',true),true);
+    if(kind==='account-settings-birthday')return accountSheet('Date of birth','<input class="local-field" type="date" aria-label="Date of birth">'+wideBtn('local-save-demo','Save',true),true);
+    if(kind==='account-settings-phone')return accountSheet('Phone number','<p class="local-hint">Verification required</p><input class="local-field" inputmode="tel" placeholder="+60" aria-label="Phone">'+wideBtn('local-save-demo','Save',true),true);
+    if(kind==='account-settings-email')return accountSheet('Email','<input class="local-field" value="demo@example.com" aria-label="Email">'+wideBtn('local-save-demo','Save',true),true);
+    if(kind==='account-settings-password')return accountSheet('Password','<input class="local-field" type="password" placeholder="Current password" aria-label="Current password"><input class="local-field" type="password" placeholder="New password" aria-label="New password">'+wideBtn('local-save-demo','Save',true)+'<p class="local-hint">Password is not changed in this preview.</p>',true);
+    if(kind==='account-settings-sessions')return accountSheet('Active sessions','<p class="local-empty">No other devices are signed in.</p>',true);
+    return '';
+  }
+  function openNotes(anchor) {
+    $('[data-local-notes]')?.remove();
+    const items=[
+      ['16/10/2026','1win Token Sale','You can now buy 1win’s cryptocurrency—and grow with us','View token','freemoney.html'],
+      ['15/10/2026','High-level poker','Ryan Garcia, Jon Jones, Nina Drama, Gable Steveson and Diplo—that’s poker with 1win, baby','See how it went','poker-app.html'],
+      ['14/10/2026','Scarily exciting','Who will share the 500k usdt prize pool in the Halloween tournament?','Participate','tournament-817472.html']
+    ];
+    const pop=document.createElement('div');
+    pop.dataset.localNotes='all';
+    pop.className='local-notes colorScheme-light';
+    pop.setAttribute('role','dialog');
+    pop.innerHTML='<div class="local-notes-head"><b>Notifications</b><button type="button" data-testid="modal-header-button-close">'+CLOSE_SVG+'</button></div><div class="local-seg"><button type="button" class="is-on" data-testid="local-note-tab" data-tab="all">All</button><button type="button" data-testid="local-note-tab" data-tab="personal">Personal</button><button type="button" data-testid="local-note-tab" data-tab="general">General</button></div><div data-note-list="all">'+items.map(([date,title,text,cta,file])=>'<article class="local-note"><div><span>'+date+'</span><em>New</em></div><h3>'+title+'</h3><p>'+text+'</p><button type="button" data-testid="local-note-go" data-file="'+file+'">'+cta+'</button></article>').join('')+'</div><p class="local-empty" data-note-list="personal" hidden>No personal notifications.</p><div data-note-list="general" hidden>'+items.map(([date,title,text,cta,file])=>'<article class="local-note"><div><span>'+date+'</span></div><h3>'+title+'</h3><p>'+text+'</p><button type="button" data-testid="local-note-go" data-file="'+file+'">'+cta+'</button></article>').join('')+'</div>';
+    document.body.append(pop);
+    const r=anchor.getBoundingClientRect();
+    const width=Math.min(360, innerWidth-16);
+    pop.style.width=width+'px';
+    pop.style.top=Math.round(r.bottom+8)+'px';
+    pop.style.left=Math.max(8, Math.min(r.right-width, innerWidth-width-8))+'px';
+  }
   function openModal(kind, source=null) {
     const focus=source||document.activeElement;
-    closeModal(true);returnFocus=focus;
+    closeModal(true);$('[data-local-notes]')?.remove();returnFocus=focus;
     let value;
     if(kind.startsWith('account-')) {
-      const page=kind.replace('account-',''),set=window.ACCOUNT_DIALOG_STATES||{};
-      const size=innerWidth<410?'390x844':innerWidth<640?'430x932':innerWidth<1024?'768x1024':innerWidth>=1680?'1920x1080':'1440x900';
-      value=set[page+'-'+size]?.html;
+      value=accountPanel(kind);
+      if(!value){
+        const page=kind.replace('account-',''),set=window.ACCOUNT_DIALOG_STATES||{};
+        const size=innerWidth<410?'390x844':innerWidth<640?'430x932':innerWidth<1024?'768x1024':innerWidth>=1680?'1920x1080':'1440x900';
+        value=set[page+'-'+size]?.html;
+      }
     } else {
       const key=kind==='registration'? (mobile()?'registration-390x844':'registration-1440x900') : kind==='promo'?'registration-promo-1440x900':kind==='email'?'login-email-1440x900':kind==='recovery'?'recovery-1440x900':'login-1440x900';
       value=states[key]?.html;
@@ -926,6 +985,8 @@
     else if(/^\d+(\.\d{0,2})?$/.test(raw))setBetAmount(form,+raw,raw);
   }
   document.addEventListener('click',e=>{
+    const notes=$('[data-local-notes]');
+    if(notes&&!notes.contains(e.target)&&!e.target.closest('[data-testid="header-notification-button"]'))notes.remove();
     const socialTrigger=e.target.closest('[data-testid="sidebar-social-buttons-with-preview"]');
     if(socialTrigger){toggleSidebarSocial(socialTrigger);return;}
     const socialPopover=$('[data-sidebar-social-popover]');
@@ -973,6 +1034,10 @@
     if(e.target.closest('[class*="modal-promo-desktop_backdrop"]'))return closeModal();
     const rowTitle=!el&&e.target.closest('[class*="game-slider_title"]');
     if(rowTitle){const file=rowCategory(rowTitle);if(file)go(file);return;}
+    if(signedPreview){
+      const balance=e.target.closest('[data-testid="header-balance-button"]');
+      if(balance&&!e.target.closest('[data-testid="header-balance-deposit-button"]'))return openModal('account-balance',balance);
+    }
     if(!el)return;
     const id=el.dataset.testid||'', text=el.textContent.trim();
     if(el.matches('[class*="seo_button-"]')&&el.closest('[class*="seo_root-"]')){toggleSeo(el);return;}
@@ -987,7 +1052,10 @@
       return;
     }
     if(el.matches('a,[data-reference-href]')){
-      if(el.tagName==='A'&&el.getAttribute('href')?.split('?')[0].endsWith('.html'))return;
+      if(el.dataset.localUnavailable){e.preventDefault();return notice('This external link is not part of the preview.');}
+      const href=el.getAttribute('href')||'';
+      if(href.split('?')[0].endsWith('sports-bets-history.html')){e.preventDefault();return openModal('account-history-bets',el);}
+      if(el.tagName==='A'&&href.split('?')[0].endsWith('.html'))return;
       e.preventDefault();
       if(el.dataset.referenceHref?.startsWith('/casino/play/'))rememberGame(el);
       if(el.dataset.localPage)go(el.dataset.localPage);
@@ -996,15 +1064,59 @@
     }
     if(id==='sidebar-profile-button'&&signedPreview)return openModal('account-profile',el);
     if(id==='profile-settingsButton')return openModal('account-settings',el);
-    if(id==='modal-back-button'&&modal?.startsWith('account-'))return openModal('account-profile',el);
+    if(id==='profile-depositButton'||id==='local-open-deposit'){depositRail='fiat';return openModal('account-deposit',el);}
+    if(id==='profile-withdrawButton')return openModal('account-withdraw',el);
+    if(id==='profile-bonusesButton'){closeModal(true);return go('bonuses.html');}
+    if(id==='profile-voucherButton')return openModal('account-voucher',el);
+    if(id==='profile-loyaltyProgramButton'){closeModal(true);return go('loyalty-program.html');}
+    if(id==='profile-betsHistoryButton')return openModal('account-history-bets',el);
+    if(id==='profile-transactionHistoryButton')return openModal('account-history-tx',el);
+    if(id==='profile-supportButton'||id==='sidebar-support-button-chat')return openModal('account-support',el);
+    if(id==='sidebar-app-banner-button')return openModal('account-app',el);
+    if(id==='userSettings-nameButton')return openModal('account-settings-name',el);
+    if(id==='userSettings-birthdayButton')return openModal('account-settings-birthday',el);
+    if(id==='userSettings-phoneButton')return openModal('account-settings-phone',el);
+    if(id==='userSettings-emailButton')return openModal('account-settings-email',el);
+    if(id==='userSettings-passwordButton')return openModal('account-settings-password',el);
+    if(id==='userSettings-sessionButton')return openModal('account-settings-sessions',el);
+    if(id==='modal-back-button'&&modal?.startsWith('account-')){
+      if(modal==='account-deposit-method')return openModal('account-deposit',el);
+      if(modal.startsWith('account-settings-'))return openModal('account-settings',el);
+      return openModal('account-profile',el);
+    }
     if(id==='userSettings-logoutButton'){closeModal(true);if(signedPreview)togglePreview();return;}
     if(id==='profile-copyIdButton'){navigator.clipboard?.writeText('00000000').then(()=>notice('Copied demo ID')).catch(()=>notice('Demo ID: 00000000'));return;}
+    if(id==='local-deposit-fiat'||id==='local-deposit-crypto'){depositRail=id.endsWith('crypto')?'crypto':'fiat';return openModal('account-deposit',el);}
+    if(id==='local-pay-method'){depositMethod=el.dataset.method||'Deposit';return openModal('account-deposit-method',el);}
+    if(id==='local-pay')return notice('Local preview. No payment is sent.');
+    if(id==='local-withdraw')return notice('Balance is RM 0.00. Nothing is withdrawn.');
+    if(id==='local-activate')return notice('This code is not part of the preview.');
+    if(id==='local-save-demo')return notice('Saved for this preview only. Demo details stay in place.');
+    if(id==='local-currency')return notice('Malaysian ringgit is the account currency in this preview.');
+    if(id==='local-add-account'){depositRail='crypto';return openModal('account-deposit',el);}
+    if(id==='local-chat')return notice('Live chat is not connected in this preview.');
+    if(id==='local-download')return notice('The installer is not part of this preview.');
+    if(id==='local-go-sports'){closeModal(true);return go('sports.html');}
+    if(id==='local-note-tab'){
+      const pop=el.closest('[data-local-notes]');if(!pop)return;
+      pop.dataset.localNotes=el.dataset.tab;
+      $$('[data-testid="local-note-tab"]',pop).forEach(b=>b.classList.toggle('is-on',b===el));
+      $$('[data-note-list]',pop).forEach(n=>n.hidden=n.dataset.noteList!==el.dataset.tab);
+      return;
+    }
+    if(id==='local-note-go'){$('[data-local-notes]')?.remove();return go(el.dataset.file);}
     if(id.startsWith('profile-')||id.startsWith('userSettings-'))return notice('Local account design preview. This action has no account connection.');
-    if(id==='header-balance-deposit-button'||id==='header-notification-button')return notice('Local design preview. No account connection.');
+    if(signedPreview&&(id==='header-balance-button'||id==='header-balance-currency-text'))return openModal('account-balance',el);
+    if(signedPreview&&id==='header-balance-deposit-button'){depositRail='fiat';return openModal('account-deposit',el);}
+    if(signedPreview&&id==='header-notification-button')return openNotes(el);
     if(id==='local-preview-toggle')return togglePreview();
     if(id==='header-auth-button'||id==='sidebar-profile-button'||id==='game-play-card-auth-button'||id.endsWith('form-signInButton'))return openModal('login',el);
     if(id==='header-registration-button'||id.endsWith('form-signUpButton'))return openModal('registration',el);
-    if(id==='modal-header-button-close'||el.className.includes('modal_backdrop'))return closeModal();
+    if(id==='modal-header-button-close'||el.className.includes('modal_backdrop')){
+      const note=el.closest('[data-local-notes]');
+      if(note){note.remove();return;}
+      return closeModal();
+    }
     if(id==='modal-back-button')return openModal('login',el);
     if(id.endsWith('form-tab-email')&&id.startsWith('signIn'))return openModal('email',el);
     if(id.endsWith('form-tab-phone')&&id.startsWith('signIn'))return openModal('login',el);
