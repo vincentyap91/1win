@@ -25,10 +25,38 @@ body[data-page="freemoney"] [class*="chips-section-floating_root"]{position:stic
 /* Infinite scroll: cards waiting for the next batch (js/common.js initMoreCards). */
 [data-local-more-card][hidden]{display:none!important}
 
-/* Loyalty level cards: the captured srcset lists the same 270px file as 1x and 2x, so on 2x screens its intrinsic
-   width halves (135px). The reference shows it card-wide (268x199 at -9px) on every size. */
-.level_foreground-thziT{inset-inline-end:0}
+/* Some mobile/tablet captures set --v773ad2f8 while styles.css only reads --v3bb7e4d4 (desktop hash).
+   Without a fallback the banner loses aspect-ratio and collapses (~165px tall at 768). */
+.banners-carousel_root-pijlK{aspect-ratio:var(--v3bb7e4d4,var(--v773ad2f8))}
 
-/* Tournament detail: the reference loads .players-leaderboard_root{position:relative} before the detail page rule, so the
-   leaderboard column is sticky (top 20px) on >=768px. Our audit.css has them in the opposite order. */
-@media (min-width: 768px){.detail_leaderboard-aqIuT.players-leaderboard_root-wvVW4{position:sticky;top:20px}}
+/* VIP Club statistics titles: capture emptied background-image; clip-text needs the gradient. */
+[class*="variant-2_title-DZfmV"]{
+  background-image:var(--title-gradient,linear-gradient(76.89deg,#000 19.76%,#7b8792 90.86%));
+}
+
+/* Tournament detail: the capture left grid-template-areas and grid-template-rows empty,
+   so the banner, games, and leaderboard all land in one column. */
+@media (min-width: 768px) {
+  .detail_root-aqIuT {
+    grid-template-areas: "card leaderboard" "games leaderboard";
+    grid-template-rows: var(--tournament-card-height) auto;
+    grid-template-columns: minmax(0, 1fr) var(--tournament-leaderboard-width);
+  }
+  .detail_card-aqIuT { height: 100%; min-height: var(--tournament-card-height); }
+  /* audit.css sets .players-leaderboard_root{position:relative} after the sticky rule. */
+  .detail_leaderboard-aqIuT.players-leaderboard_root-wvVW4 { position: sticky; top: 20px; }
+}
+
+/* Guest Authorization card on Trading: the capture left padding-top/right/left empty
+   on .modal-footer_root, so the buttons sat flush with the text and the card edges.
+   --padding is already 16px below 1024px and 20px from 1024px up. */
+[data-testid="game-auth"] [class*="modal-footer_root"] {
+  padding-top: var(--padding);
+  padding-right: var(--padding);
+  padding-left: var(--padding);
+}
+
+/* Loyalty level trophies: the captured srcset lists the same file as 1x and 2x, so on 2x screens
+   the slot shrinks to ~135px. Keep it card-wide. */
+.level_foreground-thziT { width: 100%; inset-inline-end: 0; }
+.level_foreground-thziT img { width: 100%; height: auto; }

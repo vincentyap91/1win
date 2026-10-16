@@ -1,4 +1,9 @@
 /* Small interaction feedback, preserving the source site's resting layout. */
+:root {
+  --ease-out: cubic-bezier(0.23, 1, 0.32, 1);
+  --ease-in-out: cubic-bezier(0.77, 0, 0.175, 1);
+  --ease-drawer: cubic-bezier(0.32, 0.72, 0, 1);
+}
 [data-local-modal] [class*="desktop-modal_card"],
 [data-local-modal] [class*="mobile-modal_card"] { transform-origin:center; }
 
@@ -28,6 +33,9 @@ html:not([data-input-mode="keyboard"]) [data-local-modal] button:active {
 .local-feedback[data-notice-state="preparing"],
 .local-feedback[data-notice-state="closing"] {opacity:0;transform:translate(-50%,100%);}
 @media(prefers-reduced-motion:reduce) {
+  /* Soften local-only press/toast feedback. Keep original sidebar, accordion,
+     banner, and layout CSS transitions (grid-template-rows, width, swiper)
+     so the twin still matches one-vv3591.com when Windows MinAnimate is off. */
   [data-local-modal] button,
   [data-testid="header-auth-button"],
   [data-testid="header-registration-button"],
@@ -41,8 +49,6 @@ html:not([data-input-mode="keyboard"]) [data-local-modal] button:active {
   .local-feedback {transition:opacity 125ms var(--ease-out,cubic-bezier(0.23,1,0.32,1));}
   .local-feedback[data-notice-state="preparing"],
   .local-feedback[data-notice-state="closing"] {transform:translate(-50%,0);}
-  [class*="common-layout_sleave"], [class*="common-layout_root"] {transition:none;}
-  .swiper-wrapper {transition-duration:0ms!important;}
 }
 html[data-input-mode="keyboard"] [data-local-modal] button,
 html[data-input-mode="keyboard"] [data-testid="header-auth-button"],

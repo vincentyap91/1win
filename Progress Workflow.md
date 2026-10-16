@@ -291,7 +291,7 @@
 
 - **目标**：用 HTML5 + CSS + 原生 JS 1:1 克隆 https://one-vv3591.com/（设计 + 前端行为）。游客 + Demo（已登录展示）两种状态；五个尺寸 1920×1080 / 1440×900 / 768×1024 / 430×932 / 390×844。直接双击 HTML（file://）也要显示图标和图片。
 - **用户规则**：全部自己完成，不要问用户；只做本地展示，不接真实账户/支付/投注；不输入任何凭据；Demo 数据脱敏（姓名→Demo user，ID→ID 00000000，余额→0.00）。
-- **当前阶段**：5 步缺口计划已完成 Step 1、2、3、4（Step 4 按用户要求跳过剩余的 Betwave 工作）；**下一步是 Step 5**（资源、五尺寸像素对比、最终验收报告，见 §4）。
+- **当前阶段**：5 步缺口计划已完成 Step 1–4（Step 4 按用户要求跳过剩余 Betwave）；**Step 5 进行中**（见 §4）：19 个独特布局族 × 五尺寸游客布局对照已通过；仍缺逐像素全站对比、筛选子页抽检、Demo 重采、Betwave。
 - **规模**：271 个 HTML 入口（见 §3）。
 
 ## 1. 架构速读（改代码前必须知道）
@@ -410,10 +410,20 @@ Markets（+13）、TOP Bets、Bet history、61 个运动筛选页（`routes.js` 
 - `/forum` 是外部站点，不做页面，显示提示。
 - trading / casino-trading 的游戏布局 header（`variant-4_inGame`）在游客状态没有账户区，Demo 状态只换了侧栏的 Demo user 资料；原站登录后这个 header 是否显示余额需要已登录参考（见 Step 5）。
 
-### Step 5 资源与像素 — 部分完成
+### Step 5 资源与像素 — 部分完成（2026-10-16 更新）
 - ✅ 语言选择器 30 个国旗（原本是 `data:,` 懒加载占位）：`python scripts/fix-language-flags.py captures/language-flags.json --date …`。
-- ❌ Betwave 骨架/动态图片（mikhail lazarev、Lens、Sporting CP、RB Leipzig、PSV Eindhoven）——用户 2026-10-15 要求跳过 Betwave，暂不做；Promotions 占位图仍待做。
-- ❌ 全站五尺寸原站/本地像素对比（逐页截图、修差异、记录）。
+- ✅ **2026-10-16 动画恢复**：本机 Windows `MinAnimate=0` → `prefers-reduced-motion: reduce`。本地 `css/motion.css` 曾在 reduce 下把 `common-layout_*` / `.swiper-wrapper` 的 transition 清零，`js/motion.js` 把 modal 收成仅 125ms 淡入，且 `motion.accordion` 的 height WAAPI 与原站 `grid-template-rows` 冲突。已改：保留原站 CSS 过渡；modal/drawer 在 reduce 下仍带 transform、时长 ≤160ms；侧栏/页脚展开只靠 CSS grid。验收：`scripts/motion-check.cjs` 通过；`qa/verify-motion-expand.json`（Casino 展开高度 52→160、modal duration 160、`spaceTransition` 0.3s）。
+- ✅ **2026-10-16 侧栏展开菜单**：Casino / Sports / Markets / Betwave 四组已填入（`components/sidebar.html` → `js/components/sidebar.js`）；预览服曾缓存旧 9.5MB `sidebar.js`（展开为空），重启 `PORT=4174 node scripts/serve.mjs` 后 HTTP 与磁盘一致（11.8MB）。验收：`qa/verify-all-expands.json`（四组有链接与高度动画）。
+- ✅ Promotions 占位图：`js/promotions*.js` / `promotions-modals.js` 无 `data:,`；`qa/promo-images-check.json` 1440/390 共 0 bad / 0 placeholders。
+- ✅ **2026-10-16 游客布局对照（原站 ↔ 本地，首批）**：对照 https://one-vv3591.com/ 与本地 `http://127.0.0.1:4174`。19 个独特布局族 × 1440×900 / 390×844 = **38/38 通过**（侧栏顶栏导航数、首屏卡片、header/sidebar/banner 几何、横向溢出、坏图、展开菜单条目）。页面：Home、Casino、Slots、Live、Quick、Sports、Sports live、Markets、TOP Bets、Bonuses、Free money、Loyalty、VIP Club、Promotions、Tournaments、Blog、Rules、Poker app、Trading。工具：`scripts/compare-guest-layouts.mjs`、`scripts/probes/layout-metrics.js`；证据 `qa/step5-layout-2026-10-16/report.json`（含首屏 PNG）。说明：原站 footer 懒加载，探测在滚动后单独记 `ref-footer-unloaded`，不记为本地缺陷；首屏卡片在滚动前统计，避免触发本地 infinite-scroll。
+- ✅ **2026-10-16 VIP Club 滚动可见 + 横向拖拽**：本地 HTML 内容齐全，但采集态保留 `block-wrapper_hidden-*`（opacity:0）与 `cardHidden`；原站 IntersectionObserver 会去掉 hidden 并加上 `cardReveal`，本地此前没有。已在 `js/common.js` 增加 `initVipLanding()`：滚动揭示区块/卡片、`cardsSection` 鼠标拖拽滚动 + prev/next、Exclusive gifts 卡片堆叠 swiper、Statistics magnetic 滑块（桌面横向 / 窄屏纵向）。`css/local.css` 补 statistics 标题 `--title-gradient`（采集 CSS 把 `background-image` 掏空导致字透明）。Concierge service 拖拽时卡片 `scrollLeft` 跟手，底部指示条 `inset-inline-start` 同步（拖动中 `noTransition`，触摸走原生 pan-x）。验收：`qa/vip-club-verify.json`（1440 pass）、`qa/vip-club-mobile-drag.json`（390 pass）、`qa/vip-concierge-drag.json`（1440/390 拖 160px，指示条约 24px）。
+- ❌ Betwave 骨架/动态图片（mikhail lazarev、Lens、Sporting CP、RB Leipzig、PSV Eindhoven）——用户 2026-10-15 要求跳过 Betwave，暂不做。
+- ✅ **其余三尺寸**游客布局对照（1920 / 768 / 430）：`qa/step5-layout-2026-10-16-3sizes/`。768/430 上 Casino、Live、Quick、Poker app 的 banner 高度差是 `aspect-ratio` 只读 `--v3bb7e4d4`、采集写的是 `--v773ad2f8`；`css/local.css` 已加 fallback。复测 Casino / Poker app @ 768/430：`qa/step5-layout-banner-recheck/` **4/4 OK**。768 上原站卡片仍在骨架加载时的数量差记为 `ref-cards-still-loading`，不算本地缺陷。
+- ❌ **逐像素**全站对比（截图 diff / 修差异）尚未做；当前是结构与首屏布局指标，不等于像素验收通过。
+- ✅ **2026-10-16 Tournament 详情排版**（`/tournaments/816330`）：采集 CSS 把 `grid-template-areas` / `grid-template-rows` 掏空，桌面端横幅、参与游戏、排行榜叠在右列。`css/local.css` 恢复 `"card leaderboard" / "games leaderboard"`，并让排行榜在 ≥768 重新 `position: sticky`（后写的 `players-leaderboard_root` 把 sticky 盖成 relative，`top: 20px` 会把它下移）。1440 横幅 720×244、排行榜 328，1920 与原站同为 1108×244 + 420。证据 `qa/tour-816330/`。
+- ✅ **2026-10-16 Loyalty Program 奖杯图过小**：Levels and Rewards 采集把同一张 ~270px 图同时标成 `1x` 与 `2x`，高分屏（deviceScaleFactor≥2 / Windows 缩放）按 2x 显示成约 135×100。`css/local.css` 给 `.level_foreground-thziT` 设 `width:100%`，图按卡片宽度铺满，复测 1440/768/390 在 DPR1 与 DPR2 均为 268×199（与原站一致）。证据 `qa/loyalty-trophy/after.json`、`card-dpr2.png`。
+- ✅ **2026-10-16 Trading 游客 Authorization 弹窗间距**：采集把 `.modal-footer_root` 的 padding-top/right/left 掏空，Register / Log in 贴着说明文字和卡片左右边。`css/local.css` 只对 `[data-testid="game-auth"]` 补回 `var(--padding)`（≥1024 为 20px，更窄为 16px）。复测与 https://one-vv3591.com/trading 一致：1440 卡片 390×172、距视口上下 364 / 左右 525，页脚 padding 20，按钮间距 12；390 底栏 390×206、贴底贴左右，页脚 padding 16，两按钮间距 12。证据 `qa/trading-auth-popup-2026-10-16/`、`qa/trading-auth-after-local.json`。同一弹窗的 casino-trading 一并对齐。
+- ❌ **筛选/子页抽检**（sports-live-*、casino-live-*、blog 文章等复用布局）尚未逐页对照。
 - ❌ Demo（已登录）状态缺有效参考，**待用户本人登录原站后再采**（不要自己输入凭据）。Step 4 新增一项：trading / casino-trading 的游戏布局 header 登录后的样子。`node scripts/auth-state-audit.mjs` 找出 27 页共 35 个 Demo 状态的布局与同尺寸游客状态不符（存的是别的尺寸的布局，如 casino-slots Demo 1920 是手机布局、Demo 390/768 是桌面布局）：betwave 390/430/768、blog 1440/1920、bonuses 390/768、casino-live-* 768（16 个）、casino-slots 1920/390/768、casino-recommended 1920/768、casino-bonus-wagering 1920、casino-fishing 768、freemoney 768、home 1920、loyalty-program 1920/768、vip-club 1920。用户登录后按尺寸重采这些路由，再用 `build-page-from-capture.py` 只更新 `-auth.js`；修完重跑 audit 应为 0。
 
 ## 5. 仍然有效的旧成果
@@ -439,3 +449,4 @@ Markets（+13）、TOP Bets、Bet history、61 个运动筛选页（`routes.js` 
 - Step 3 已 commit（未 push）。
 - Step 4（详见 §4）：125 个新页面及其 `js/<page>.js` / `-auth.js` / `-more.js`；`js/common.js` 新增 `routeFile()`（Betwave 别名与样例、运动 ID 回退、末尾斜杠）、Forum 与联赛页提示；`js/routes.js` 新路由与别名；`css/local.css` Betwave `#root` 补丁；`scripts/build-page-from-capture.py`、`capture_clean.py`、`file-protocol-check.mjs` 修复；新脚本见 Step 4。Step 4 已 commit（未 push）。
 - 2026-10-15 下午本文件的工作副本被另一条工作线整体改写（HTML 进度段落被替换为 Figma / 旧 HTML 基线内容）。为不覆盖它，本节从 Step 3 提交版恢复、更新后追加在文件末尾；顶部内容未改。
+- **2026-10-16 Step 5 布局对照**：新增 `scripts/compare-guest-layouts.mjs`、`scripts/probes/layout-metrics.js`；证据 `qa/step5-layout-2026-10-16/`（`report.json` + 各页 `*-ref.png` / `*-local.png` / `*.json`）。重跑：`node scripts/compare-guest-layouts.mjs`（需 `PORT=4174` 预览；可用 `--only casino,sports --sizes 1440x900,390x844 --out DIR`）。

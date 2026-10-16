@@ -79,6 +79,15 @@
     sidebarLinks(root);
     const toggle=$('[data-testid="sidebar-expand-button"]',root);
     if(toggle){toggle.setAttribute('aria-expanded',String(!sidebarCollapsed));toggle.setAttribute('aria-label',sidebarCollapsed?'Expand sidebar':'Collapse sidebar');}
+    $$('[data-testid="casino-group-toggle"],[data-testid="betting-group-toggle"],[data-testid="markets-toggle"],[data-testid="betwave-toggle"],[data-testid="casino-lobby-toggle"],[data-testid="casino-live-toggle"],[data-testid="casino-fast-toggle"],[data-testid="casino-brand-toggle"]',root).forEach(btn=>{
+      const parent=btn.closest('[class*="tooltip_root"]')?.parentElement;
+      const content=parent&&$('[class*="expanded-view_expandable"]',parent);
+      const opened=!!content&&[...content.classList].some(c=>c.includes('expanded-view_isOpened'));
+      btn.setAttribute('role','button');
+      btn.setAttribute('tabindex','0');
+      btn.setAttribute('aria-expanded',String(opened));
+      const icon=$('svg',btn);if(icon)icon.style.transform=opened?'rotate(180deg)':'';
+    });
     initSidebarSocial();
   }
   function initSidebarSocial() {
@@ -152,11 +161,209 @@
     initLastWins();
     initCountdowns();
     initScrollViews();
+    initVipLanding();
     initMoreCards();
     initReveal();
     initMagneticSliders();
     initCardStacks();
     if(window.BETSLIP_TEMPLATES&&$('[class*="_odd_ro0me_"]'))renderBetslip();
+  }
+  // VIP Club: captured blocks keep block-wrapper_hidden / cardHidden until the reference's
+  // IntersectionObserver reveals them; horizontal card rows use grab-drag + prev/next.
+  let vipRevealObserver=null;
+  function initVipLanding() {
+    vipRevealObserver?.disconnect();vipRevealObserver=null;
+    const hiddenBlocks=$$('[class*="block-wrapper_hidden-"]');
+    const revealBlock=block=>{
+      const hidden=[...block.classList].find(c=>c.includes('block-wrapper_hidden-'));
+      if(hidden)block.classList.remove(hidden);
+      $$('[class*="cardHidden"]',block).forEach(card=>{
+        const ch=[...card.classList].find(c=>c.includes('cardHidden'));
+        if(!ch)return;
+        card.classList.remove(ch);
+        card.classList.add(ch.replace('cardHidden','cardReveal'));
+      });
+    };
+    if(hiddenBlocks.length){
+      vipRevealObserver=new IntersectionObserver(entries=>{
+        entries.forEach(e=>{if(!e.isIntersecting)return;revealBlock(e.target);vipRevealObserver.unobserve(e.target);});
+      },{threshold:.12,rootMargin:'0px 0px -8% 0px'});
+      hiddenBlocks.forEach(b=>vipRevealObserver.observe(b));
+    }
+    $$('[class*="cardsSection-"]').forEach(initGrabScroll);
+    $$('[class*="cards-swiper-mobile_root-"]').forEach(initVipGiftsSwiper);
+    $$('[class*="magnetic-slider_root-"]').forEach(initVipMagneticSlider);
+    // Statistics titles use background-clip:text with a gradient the SPA sets; capture left the rule empty.
+    $$('[class*="variant-2_title-DZfmV"]').forEach(title=>{
+      if(!getComputedStyle(title).backgroundImage||getComputedStyle(title).backgroundImage==='none'){
+        title.style.backgroundImage='var(--title-gradient,linear-gradient(76.89deg,#000 19.76%,#7b8792 90.86%))';
+      }
+    });
+  }
+  function initGrabScroll(section) {
+    if(!section||section.dataset.localGrab)return;
+    section.dataset.localGrab='1';
+    if(getComputedStyle(section).cursor==='auto')section.style.cursor='grab';
+    const indicator=section.parentElement?.querySelector('[class*="slider-indicator_root"]');
+    const thumb=indicator&&$('[class*="slider-indicator_slider"]',indicator);
+    const suffix=thumb?[...thumb.classList].find(c=>c.startsWith('slider-indicator_slider-'))?.replace('slider-indicator_slider',''):'';
+    const noTrans=suffix?'slider-indicator_noTransition'+suffix:'';
+    const placeThumb=()=>{
+      if(!thumb||!indicator)return;
+      const maxScroll=section.scrollWidth-section.clientWidth;
+      const track=indicator.clientWidth||parseFloat(getComputedStyle(indicator).width)||0;
+      const thumbW=thumb.clientWidth||parseFloat(getComputedStyle(thumb).width)||0;
+      const maxInset=Math.max(0,track-thumbW);
+      const p=maxScroll>0?Math.min(1,Math.max(0,section.scrollLeft/maxScroll)):0;
+      thumb.style.insetInlineStart=(p*maxInset)+'px';
+    };
+    let drag=null,moved=false;
+    section.addEventListener('pointerdown',e=>{
+      if(e.button||e.target.closest('button,a,input'))return;
+      // Touch uses native pan-x so the row sticks to the finger. Mouse has no native drag-scroll.
+      const touch=e.pointerType==='touch';
+      drag=touch?{touch:true,id:e.pointerId}:{x:e.clientX,left:section.scrollLeft,id:e.pointerId};
+      moved=false;
+      if(!touch){try{section.setPointerCapture(e.pointerId);}catch{}section.style.cursor='grabbing';}
+      if(noTrans)thumb?.classList.add(noTrans);
+    });
+    section.addEventListener('pointermove',e=>{
+      if(!drag||drag.touch||drag.id!==e.pointerId)return;
+      const dx=e.clientX-drag.x;
+      if(Math.abs(dx)>4)moved=true;
+      section.scrollLeft=drag.left-dx;
+      placeThumb();
+    });
+    const end=e=>{
+      if(!drag||(e&&drag.id!==e.pointerId))return;
+      drag=null;section.style.cursor='grab';
+      if(noTrans)thumb?.classList.remove(noTrans);
+      placeThumb();
+    };
+    section.addEventListener('pointerup',end);
+    section.addEventListener('pointercancel',end);
+    section.addEventListener('click',e=>{if(moved){e.preventDefault();e.stopPropagation();moved=false;}},true);
+    placeThumb();
+    // Center duplicated card strips like the reference's infinite row.
+    if(section.scrollWidth>section.clientWidth*2.2)section.scrollLeft=Math.max(0,(section.scrollWidth-section.clientWidth)/2);
+    placeThumb();
+    const block=section.closest('[id], [class*="variant-2_block"], [class*="variant-2_root"]')||section.parentElement;
+    const prev=$('[data-testid$="-prev"]',block),next=$('[data-testid$="-next"]',block);
+    const step=()=>{
+      const container=$('[class*="cardsContainer"]',section);
+      const card=container?.firstElementChild||section.firstElementChild;
+      const gap=parseFloat(getComputedStyle(container||section).columnGap)||12;
+      return (card?.getBoundingClientRect().width||section.clientWidth*.7)+gap;
+    };
+    prev?.addEventListener('click',e=>{e.preventDefault();section.scrollBy({left:-step(),behavior:scrollBehavior()});});
+    next?.addEventListener('click',e=>{e.preventDefault();section.scrollBy({left:step(),behavior:scrollBehavior()});});
+    const updateArrows=()=>{
+      if(!prev&&!next)return;
+      const start=section.scrollLeft<=2,end=section.scrollLeft+section.clientWidth>=section.scrollWidth-2;
+      if(prev)prev.disabled=start;if(next)next.disabled=end;
+    };
+    section.addEventListener('scroll',()=>{updateArrows();placeThumb();},{passive:true});
+    updateArrows();
+  }
+  function initVipGiftsSwiper(root) {
+    if(!root||root.dataset.localSwiper)return;
+    const wrappers=$$('[class*="cards-swiper-mobile_cardWrapper"]',root);
+    if(wrappers.length<2)return;
+    root.dataset.localSwiper='1';
+    const cardEl=w=>$('[class*="cards-swiper-mobile_card-"]',w);
+    const suffix=([...cardEl(wrappers[0])?.classList||[]].find(c=>/^cards-swiper-mobile_card-\w+$/.test(c)&&!/Current|Next|Out|Second/.test(c))||'').match(/cards-swiper-mobile_card(-\w+)$/)?.[1];
+    if(!suffix)return;
+    const role=(name)=>`cards-swiper-mobile_${name}${suffix}`;
+    const roles=['cardCurrent','cardNext','cardSecondNext'];
+    let index=Math.max(0,wrappers.findIndex(w=>cardEl(w)?.classList.contains(role('cardCurrent'))));
+    const paint=()=>{
+      wrappers.forEach((w,i)=>{
+        const card=cardEl(w);if(!card)return;
+        roles.concat(['cardOut']).forEach(r=>card.classList.remove(role(r)));
+        const rel=(i-index+wrappers.length)%wrappers.length;
+        if(rel<roles.length)card.classList.add(role(roles[rel]));
+        w.style.zIndex=String(wrappers.length-rel);
+      });
+      const block=root.closest('[id], [class*="variant-2_root"]')||root.parentElement;
+      const thumb=$('[class*="slider-indicator_slider-"]',block);
+      if(thumb){
+        const track=thumb.parentElement,max=Math.max(0,(track?.clientWidth||0)-thumb.clientWidth);
+        thumb.style.insetInlineStart=`${wrappers.length>1?(index/(wrappers.length-1))*max:0}px`;
+      }
+    };
+    const go=dir=>{index=(index+dir+wrappers.length)%wrappers.length;paint();};
+    const block=root.closest('[id], [class*="variant-2_root"]')||root.parentElement;
+    $('[data-testid$="-prev"]',block)?.addEventListener('click',e=>{e.preventDefault();go(-1);});
+    $('[data-testid$="-next"]',block)?.addEventListener('click',e=>{e.preventDefault();go(1);});
+    let drag=null;
+    root.addEventListener('pointerdown',e=>{
+      if(e.button||e.target.closest('button'))return;
+      drag={x:e.clientX,id:e.pointerId};try{root.setPointerCapture(e.pointerId);}catch{}
+    });
+    root.addEventListener('pointerup',e=>{
+      if(!drag||drag.id!==e.pointerId)return;
+      const dx=e.clientX-drag.x;drag=null;
+      if(Math.abs(dx)>40)go(dx<0?1:-1);
+    });
+    paint();
+  }
+  function initVipMagneticSlider(root) {
+    if(!root||root.dataset.localMagnetic)return;
+    const card=$('[data-testid="vipLanding-statisticsBlock"], [class*="variant-2_card-DZfmV"]',root);
+    const items=card&&$$('[class*="variant-2_item-"]',card);
+    if(!items?.length)return;
+    root.dataset.localMagnetic='1';
+    const suffix=([...items[0].classList].find(c=>c.includes('variant-2_item-'))||'').match(/variant-2_item(-\w+)$/)?.[1];
+    if(!suffix)return;
+    const roleNames=['current','next','farNext','hiddenBelow','hiddenAbove','farPrev','prev'];
+    const role=name=>`variant-2_${name}${suffix}`;
+    let index=Math.max(0,items.findIndex(n=>n.classList.contains(role('current'))));
+    let viewport=$('[class*="magnetic-slider_viewport-"]',root);
+    if(viewport&&!$('[class*="magnetic-slider_interaction-"]',viewport)){
+      const layer=document.createElement('div');
+      const vs=[...viewport.classList].find(c=>c.includes('magnetic-slider_viewport-'))?.match(/magnetic-slider_viewport(-\w+)$/)?.[1]||suffix;
+      layer.className=`magnetic-slider_interaction${vs}`;
+      viewport.append(layer);
+    }
+    // Below 576px the reference zeroes --slider-interaction-* so the overlay must not steal swipes.
+    const layer=$('[class*="magnetic-slider_interaction-"]',root);
+    if(layer&&(innerWidth<576||layer.clientWidth<8||layer.clientHeight<8))layer.style.pointerEvents='none';
+    const paint=()=>{
+      items.forEach((el,i)=>{
+        roleNames.forEach(r=>el.classList.remove(role(r)));
+        const rel=(i-index+items.length)%items.length;
+        const name=roleNames[rel]||'hiddenBelow';
+        el.classList.add(role(name));
+        el.setAttribute('aria-hidden',name==='current'?'false':'true');
+      });
+      const thumb=$('[class*="slider-indicator_slider-"]',root);
+      if(thumb){
+        const track=thumb.parentElement,max=Math.max(0,(track?.clientWidth||0)-thumb.clientWidth);
+        thumb.style.insetInlineStart=`${items.length>1?(index/(items.length-1))*max:0}px`;
+      }
+    };
+    const go=dir=>{index=(index+dir+items.length)%items.length;paint();};
+    $('[data-testid="vipLanding-statisticsBlock-prev"]',root)?.addEventListener('click',e=>{e.preventDefault();go(-1);});
+    $('[data-testid="vipLanding-statisticsBlock-next"]',root)?.addEventListener('click',e=>{e.preventDefault();go(1);});
+    // Desktop uses a grab layer (horizontal); below 576px the reference zeroes that layer and stacks slides vertically.
+    const surfaces=[card,$('[class*="magnetic-slider_interaction-"]',root)].filter(Boolean);
+    let drag=null;
+    const onDown=e=>{
+      if(e.button||e.target.closest('button')||drag)return;
+      drag={x:e.clientX,y:e.clientY,id:e.pointerId};try{e.currentTarget.setPointerCapture?.(e.pointerId);}catch{}
+    };
+    const onUp=e=>{
+      if(!drag||drag.id!==e.pointerId)return;
+      const dx=e.clientX-drag.x,dy=e.clientY-drag.y;drag=null;
+      const vertical=innerWidth<576;
+      if(vertical){if(Math.abs(dy)>40&&Math.abs(dy)>Math.abs(dx))go(dy<0?1:-1);}
+      else if(Math.abs(dx)>40)go(dx<0?1:-1);
+    };
+    surfaces.forEach(surface=>{
+      surface.addEventListener('pointerdown',onDown);
+      surface.addEventListener('pointerup',onUp);
+    });
+    paint();
   }
   // Category chips and other arrows-scroll-view rows: the back arrow hides at the start, the forward
   // arrow at the end (reference toggles arrows-scroll-view_hidden-*), and each click pages one width.
@@ -717,13 +924,21 @@
     const socialPopover=$('[data-sidebar-social-popover]');
     if(socialPopover&&!socialPopover.contains(e.target))closeSidebarSocial();
     if(e.target.closest('[data-testid="local-sidebar-social-close"]')){closeSidebarSocial(true);return;}
-    const groupToggle=e.target.closest('[data-testid="casino-group-toggle"]');
+    const groupToggle=e.target.closest('[data-testid="casino-group-toggle"],[data-testid="betting-group-toggle"],[data-testid="markets-toggle"],[data-testid="betwave-toggle"],[data-testid="casino-lobby-toggle"],[data-testid="casino-live-toggle"],[data-testid="casino-fast-toggle"],[data-testid="casino-brand-toggle"]');
     if(groupToggle){
       e.preventDefault();
+      e.stopPropagation();
       const parent=groupToggle.closest('[class*="tooltip_root"]')?.parentElement;
       const content=parent&&$('[class*="expanded-view_expandable"]',parent);
       const base=content?.className.split(' ').find(c=>c.includes('expanded-view_expandable'));
-      if(base){const height=content.getBoundingClientRect().height;const opened=content.classList.toggle(base.replace('_expandable-','_isOpened-'));groupToggle.setAttribute('aria-expanded',String(opened));motion?.accordion(content,opened,height);const icon=$('svg',groupToggle);if(icon)icon.style.transform=opened?'':'rotate(180deg)';}
+      if(base){
+        const opened=content.classList.toggle(base.replace('_expandable-','_isOpened-'));
+        content.toggleAttribute('inert',!opened);
+        groupToggle.setAttribute('aria-expanded',String(opened));
+        // CSS grid-template-rows on expanded-view_expandable owns the open/close motion.
+        const icon=$('svg',groupToggle);
+        if(icon)icon.style.transform=opened?'rotate(180deg)':'';
+      }
       return;
     }
     const el=e.target.closest('button,a,[data-reference-href],[class*="accordion-heading_root"],[class*="common-layout_close"],[class*="common-layout_backdrop"],[class*="desktop-modal_backdrop"],[class*="mobile-modal_backdrop"]');
@@ -761,7 +976,7 @@
     if(footerSection&&el.closest('[class*="accordion-heading_root"]')){
       const content=$('[class*="navigation-section_expandable"]',footerSection);
       const cls=content?.className.split(' ').find(c=>c.includes('navigation-section_expandable'));
-      if(cls){const previousHeight=content.getBoundingClientRect().height;const opened=content.classList.toggle(cls.replace('_expandable-','_isOpened-'));el.setAttribute('aria-expanded',String(opened));motion?.accordion(content,opened,previousHeight);const icon=$('[data-icon="arrow-bottom"]',footerSection);if(icon)icon.style.transform=opened?'rotate(180deg)':'';}
+      if(cls){const opened=content.classList.toggle(cls.replace('_expandable-','_isOpened-'));el.setAttribute('aria-expanded',String(opened));const icon=$('[data-icon="arrow-bottom"]',footerSection);if(icon)icon.style.transform=opened?'rotate(180deg)':'';}
       return;
     }
     if(el.matches('a,[data-reference-href]')){
@@ -951,6 +1166,9 @@
     if(e.key==='Escape'&&$('[data-sidebar-social-popover]')){closeSidebarSocial(true);return;}
     if((e.key==='Enter'||e.key===' ')&&e.target.matches('[class*="FaqSection_accordionContainer"] [class*="accordion-heading_root-"]')){
       e.preventDefault();toggleFaq(e.target);return;
+    }
+    if((e.key==='Enter'||e.key===' ')&&e.target.matches('[data-testid="casino-group-toggle"],[data-testid="betting-group-toggle"],[data-testid="markets-toggle"],[data-testid="betwave-toggle"],[data-testid="casino-lobby-toggle"],[data-testid="casino-live-toggle"],[data-testid="casino-fast-toggle"],[data-testid="casino-brand-toggle"]')){
+      e.preventDefault();e.target.click();return;
     }
     if(e.altKey&&e.key.toLowerCase()==='p'){e.preventDefault();togglePreview();return;}
     if(e.key==='Escape'){closeModal();toggleMenu(false);}

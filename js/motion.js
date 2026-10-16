@@ -28,10 +28,9 @@
       frames[0] = {...frames[0], opacity: current.opacity, transform: current.transform};
       previous.cancel();
     }
-    if (reduce.matches) {
-      frames = frames.map(frame => ({opacity: frame.opacity ?? 1}));
-      duration = 125;
-    }
+    // Prefer shorter motion over stripping transforms so modals/drawers still
+    // match the reference site when OS "MinAnimate" forces prefers-reduced-motion.
+    if (reduce.matches) duration = Math.min(duration, 160);
     const animation = element.animate(frames, {duration, easing: easing(curve), fill: 'none'});
     playing.set(element, animation); active.add(animation);
     document.body.dataset.lastMotion = label;
@@ -75,7 +74,13 @@
     250, 'drawer', opening ? 'drawer-enter' : 'drawer-exit');
   }
   function accordion(element, opened, previousHeight) {
+    // Original expand/FAQ/footer panels animate via CSS grid-template-rows.
+    // Skip WAAPI height/opacity so we do not fight those transitions.
     if (!element || keyboard || reduce.matches || !element.animate) return;
+    if ([...element.classList].some(c =>
+      c.includes('expanded-view_expandable') ||
+      c.includes('navigation-section_expandable') ||
+      c.includes('accordion-body_root'))) return;
     const current = previousHeight ?? element.getBoundingClientRect().height;
     const end = opened ? element.scrollHeight : 0;
     playing.get(element)?.cancel();

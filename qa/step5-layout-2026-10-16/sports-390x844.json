@@ -1,0 +1,175 @@
+{
+  "ref": {
+    "path": "/betting",
+    "w": 390,
+    "h": 844,
+    "scrollH": 1958,
+    "hscroll": false,
+    "title": "1win Online Casino & Sports Betting",
+    "state": null,
+    "signed": false,
+    "sidebar": {
+      "x": 0,
+      "y": 0,
+      "w": 0,
+      "h": 0
+    },
+    "sidebarCompact": false,
+    "header": {
+      "x": 0,
+      "y": 0,
+      "w": 390,
+      "h": 60
+    },
+    "content": {
+      "x": 0,
+      "y": 60,
+      "w": 390,
+      "h": 1118
+    },
+    "banner": null,
+    "footer": {
+      "x": 0,
+      "y": 1178,
+      "w": 390,
+      "h": 720
+    },
+    "footerPresent": true,
+    "navLabels": [
+      "1win Token1win",
+      "Casino",
+      "Sports",
+      "Markets",
+      "Betwave",
+      "Bonuses1",
+      "VIP Loyalty ProgramNew",
+      "VIP Club",
+      "Promotions",
+      "Tournaments12",
+      "Blog",
+      "Forum",
+      "Cockfights",
+      "Trading",
+      "Poker"
+    ],
+    "navCount": 15,
+    "chips": [],
+    "cards": 0,
+    "cardsTotal": 0,
+    "moreHidden": 0,
+    "moreShown": 0,
+    "expands": [
+      {
+        "open": false,
+        "items": 0,
+        "h": 0
+      },
+      {
+        "open": false,
+        "items": 0,
+        "h": 0
+      },
+      {
+        "open": false,
+        "items": 0,
+        "h": 0
+      },
+      {
+        "open": false,
+        "items": 0,
+        "h": 0
+      }
+    ],
+    "expandItems": 0,
+    "skeletons": 0,
+    "brokenImages": [],
+    "hasLogin": true
+  },
+  "local": {
+    "path": "/sports.html",
+    "w": 390,
+    "h": 844,
+    "scrollH": 1958,
+    "hscroll": false,
+    "title": "1win | sports",
+    "state": "sports-390x844",
+    "signed": false,
+    "sidebar": {
+      "x": 0,
+      "y": 0,
+      "w": 0,
+      "h": 0
+    },
+    "sidebarCompact": false,
+    "header": {
+      "x": 0,
+      "y": 0,
+      "w": 390,
+      "h": 60
+    },
+    "content": {
+      "x": 0,
+      "y": 60,
+      "w": 390,
+      "h": 1118
+    },
+    "banner": null,
+    "footer": {
+      "x": 0,
+      "y": 1178,
+      "w": 390,
+      "h": 720
+    },
+    "footerPresent": true,
+    "navLabels": [
+      "1win Token1win",
+      "Casino",
+      "Sports",
+      "Markets",
+      "Betwave",
+      "Bonuses1",
+      "VIP Loyalty ProgramNew",
+      "VIP Club",
+      "Promotions",
+      "Tournaments12",
+      "Blog",
+      "Forum",
+      "Cockfights",
+      "Trading",
+      "Poker"
+    ],
+    "navCount": 15,
+    "chips": [],
+    "cards": 0,
+    "cardsTotal": 0,
+    "moreHidden": 0,
+    "moreShown": 0,
+    "expands": [
+      {
+        "open": false,
+        "items": 4,
+        "h": 0
+      },
+      {
+        "open": false,
+        "items": 6,
+        "h": 0
+      },
+      {
+        "open": false,
+        "items": 2,
+        "h": 0
+      },
+      {
+        "open": false,
+        "items": 7,
+        "h": 0
+      }
+    ],
+    "expandItems": 19,
+    "skeletons": 0,
+    "brokenImages": [],
+    "hasLogin": true
+  },
+  "issues": []
+}

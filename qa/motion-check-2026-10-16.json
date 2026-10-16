@@ -1,0 +1,24 @@
+{
+ "1440x900": {
+  "value": {
+   "hasMotion": true,
+   "reduced": true,
+   "inputMode": null,
+   "instant": false,
+   "expandTransition": "grid-template-rows 0.2s",
+   "expandDisplay": "grid",
+   "layoutTransition": "none",
+   "accordionRan": false,
+   "accordionError": null,
+   "modalOk": {
+    "animCount": 1,
+    "duration": 125
+   },
+   "motionCount": "2",
+   "lastMotion": "backdrop-enter"
+  },
+  "errors": [
+   "Failed to load resource: the server responded with a status of 404 (Not Found) http://127.0.0.1:4174/favicon.ico"
+  ]
+ }
+}

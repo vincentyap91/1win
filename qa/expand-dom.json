@@ -1,0 +1,58 @@
+{
+ "1440x900": {
+  "value": {
+   "btnOk": true,
+   "tooltipClass": "tooltip_root-2Fdac",
+   "parentChildren": [
+    {
+     "tag": "DIV",
+     "class": "tooltip_root-2Fdac",
+     "testid": "sidebar-navigation-casino-group",
+     "htmlLen": 1055
+    },
+    {
+     "tag": "DIV",
+     "class": "expanded-view_expandable-DJsWU",
+     "htmlLen": 0
+    }
+   ],
+   "contentHtmlLen": 0,
+   "contentClasses": "expanded-view_expandable-DJsWU",
+   "mountedSidebarIds": [
+    "header.standard.home-1440x900.8299c65e",
+    "header.standard.home-1440x900.0cb216c5",
+    "sidebar.standard.casino-live-1440x900.fd82742b",
+    "sidebar.standard.home-1440x900.6f3796a7",
+    "footer.standard.home-1440x900.77ebf8e0",
+    "footer.standard.home-1440x900.c3fc309e"
+   ],
+   "allExpand": [
+    {
+     "htmlLen": 0,
+     "prevTestId": "sidebar-navigation-casino-group",
+     "classes": "expanded-view_expandable-DJsWU"
+    },
+    {
+     "htmlLen": 0,
+     "prevTestId": "sidebar-navigation-betting-group",
+     "classes": "expanded-view_expandable-DJsWU"
+    },
+    {
+     "htmlLen": 0,
+     "prevTestId": "sidebar-navigation-markets",
+     "classes": "expanded-view_expandable-DJsWU"
+    },
+    {
+     "htmlLen": 0,
+     "prevTestId": "sidebar-navigation-betwave",
+     "classes": "expanded-view_expandable-DJsWU"
+    }
+   ],
+   "asideOuter": "<div class=\"sidebar_root-AoFIu\" style=\"--v42a78009: 300ms;\"><div class=\"common-layout_root-V7jCK variant-1_root-Qr2MW\" style=\"--v97da0dae: 300ms; --v80d12dc4: var(--spacing-16);\"><div class=\"common-la",
+   "nearbyHTML": "<div class=\"tooltip_root-2Fdac\"><div class=\"tooltip_trigger-2Fdac\"><a href=\"casino.html\" class=\"base_root-ht1p8 base_noEndPadding-ht1p8\" data-testid=\"sidebar-navigation-casino-group\" data-reference-href=\"/casino\"><div class=\"base_icon-ht1p8\"><div style=\"display: contents;\"><div class=\"menu-icon_iconContainer-2Ndwa\"><div class=\"menu-icon_maskedIcon-2Ndwa menu-icon_icon-2Ndwa\" style=\"mask-image: var(--m-bbe7a327eac3);\"></div></div></div></div><div class=\"base_contentWrapper-ht1p8\"><div class=\"base"
+  },
+  "errors": [
+   "Failed to load resource: the server responded with a status of 404 (Not Found) http://127.0.0.1:4174/favicon.ico"
+  ]
+ }
+}

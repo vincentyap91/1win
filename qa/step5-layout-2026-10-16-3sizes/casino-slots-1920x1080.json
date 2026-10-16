@@ -1,0 +1,193 @@
+{
+  "ref": {
+    "path": "/casino/slots",
+    "w": 1920,
+    "h": 1080,
+    "scrollH": 3007,
+    "hscroll": false,
+    "title": "1win: Online Casino & Sport Betting",
+    "state": null,
+    "signed": false,
+    "sidebar": {
+      "x": 0,
+      "y": 0,
+      "w": 280,
+      "h": 0
+    },
+    "sidebarCompact": false,
+    "header": {
+      "x": 280,
+      "y": 0,
+      "w": 1640,
+      "h": 68
+    },
+    "content": {
+      "x": 280,
+      "y": 68,
+      "w": 1640,
+      "h": 2274
+    },
+    "banner": {
+      "x": 328,
+      "y": 160,
+      "w": 1034,
+      "h": 394
+    },
+    "footer": {
+      "x": 280,
+      "y": 2342,
+      "w": 1640,
+      "h": 665
+    },
+    "footerPresent": true,
+    "navLabels": [
+      "1win Token1win",
+      "Casino",
+      "Sports",
+      "Markets",
+      "Betwave",
+      "Bonuses1",
+      "VIP Loyalty ProgramNew",
+      "VIP Club",
+      "Promotions",
+      "Tournaments12",
+      "Blog",
+      "Forum",
+      "Cockfights",
+      "Trading",
+      "Poker"
+    ],
+    "navCount": 15,
+    "chips": [
+      "Lobby",
+      "Live Casino",
+      "Quick games"
+    ],
+    "cards": 18,
+    "cardsTotal": 27,
+    "moreHidden": 0,
+    "moreShown": 0,
+    "expands": [
+      {
+        "open": false,
+        "items": 0,
+        "h": 0
+      },
+      {
+        "open": false,
+        "items": 0,
+        "h": 0
+      },
+      {
+        "open": false,
+        "items": 0,
+        "h": 0
+      },
+      {
+        "open": false,
+        "items": 0,
+        "h": 0
+      }
+    ],
+    "expandItems": 0,
+    "skeletons": 0,
+    "brokenImages": [],
+    "hasLogin": true
+  },
+  "local": {
+    "path": "/casino-slots.html",
+    "w": 1920,
+    "h": 1080,
+    "scrollH": 2229,
+    "hscroll": false,
+    "title": "1win | Casino Slots",
+    "state": "casino-slots-1920x1080",
+    "signed": false,
+    "sidebar": {
+      "x": 0,
+      "y": 0,
+      "w": 280,
+      "h": 0
+    },
+    "sidebarCompact": false,
+    "header": {
+      "x": 280,
+      "y": 0,
+      "w": 1640,
+      "h": 68
+    },
+    "content": {
+      "x": 280,
+      "y": 68,
+      "w": 1640,
+      "h": 1496
+    },
+    "banner": {
+      "x": 328,
+      "y": 160,
+      "w": 1034,
+      "h": 394
+    },
+    "footer": {
+      "x": 280,
+      "y": 1564,
+      "w": 1640,
+      "h": 665
+    },
+    "footerPresent": true,
+    "navLabels": [
+      "1win Token1win",
+      "Casino",
+      "Sports",
+      "Markets",
+      "Betwave",
+      "Bonuses1",
+      "VIP Loyalty ProgramNew",
+      "VIP Club",
+      "Promotions",
+      "Tournaments10",
+      "Blog",
+      "Forum",
+      "Cockfights",
+      "Trading",
+      "Poker"
+    ],
+    "navCount": 15,
+    "chips": [
+      "Lobby",
+      "Live Casino",
+      "Quick games"
+    ],
+    "cards": 18,
+    "cardsTotal": 27,
+    "moreHidden": 79,
+    "moreShown": 0,
+    "expands": [
+      {
+        "open": false,
+        "items": 4,
+        "h": 0
+      },
+      {
+        "open": false,
+        "items": 6,
+        "h": 0
+      },
+      {
+        "open": false,
+        "items": 2,
+        "h": 0
+      },
+      {
+        "open": false,
+        "items": 7,
+        "h": 0
+      }
+    ],
+    "expandItems": 19,
+    "skeletons": 0,
+    "brokenImages": [],
+    "hasLogin": true
+  },
+  "issues": []
+}

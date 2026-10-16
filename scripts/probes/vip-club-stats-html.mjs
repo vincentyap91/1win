@@ -1,0 +1,11 @@
+import fs from 'fs';
+import vm from 'vm';
+const s = fs.readFileSync('js/vip-club.js', 'utf8');
+const ctx = { window: {} };
+vm.runInNewContext(s + '\nthis.PAGE_STATES = window.PAGE_STATES;', ctx);
+const h = ctx.window.PAGE_STATES['vip-club-1440x900'].html;
+const i = h.indexOf('id="statistics"');
+console.log(h.slice(i, i + 4000));
+console.log('\n--- exclusive gifts swiper ---');
+const j = h.indexOf('cards-swiper-mobile_root');
+console.log(h.slice(j - 100, j + 2000));
