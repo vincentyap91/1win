@@ -111,6 +111,7 @@ def rect_attrs(n):
 
 
 image_cache = {}
+IMG_SCALE = 2  # embed images at this multiple of their displayed size (--img-scale)
 
 
 def image_data(src, w, h):
@@ -122,7 +123,7 @@ def image_data(src, w, h):
     if not p.exists() or p.suffix == '.svg':
         image_cache[key] = None; return None
     im = Image.open(p)
-    tw, th = max(1, round(w * 2)), max(1, round(h * 2))
+    tw, th = max(1, round(w * IMG_SCALE)), max(1, round(h * IMG_SCALE))
     if im.width > tw and im.height > th:
         scale = max(tw / im.width, th / im.height)
         im = im.resize((max(1, round(im.width * scale)), max(1, round(im.height * scale))), Image.LANCZOS)
@@ -178,8 +179,13 @@ def icon(n):
 def text(n):
     c, a = color(n.get('c'))
     weight = n.get('fw', 400)
-    style = [f'font-family="Inter"', f'font-size="{n["fs"]}"', f'font-weight="{weight}"', f'fill="{c}"']
-    if a < 1:
+    fill = f'fill="{c}"'
+    if n.get('tg'):
+        gid = gradient(n['tg'], n)
+        if gid:
+            fill = f'fill="url(#{gid})"'
+    style = [f'font-family="Inter"', f'font-size="{n["fs"]}"', f'font-weight="{weight}"', fill]
+    if a < 1 and not n.get('tg'):
         style.append(f'fill-opacity="{a:g}"')
     if n.get('ls'):
         style.append(f'letter-spacing="{n["ls"]}"')
@@ -192,7 +198,8 @@ def text(n):
         out.append(f'<tspan x="{ln["x"]}" y="{base:.2f}">{html.escape(t)}</tspan>')
     # Figma maps SVG weights coarsely (600 → Bold); the weight rides in the layer name and is applied after import.
     ls_tag = f'__ls{round(n["ls"] * 100)}' if n.get('ls') else ''  # hundredths of a px (ids cannot hold '.')
-    return f'<text id="{uid((n.get("n") or "Text") + "__w" + str(weight) + ls_tag)}" {" ".join(style)}>{"".join(out)}</text>'
+    # Keep the name short: uid() cuts ids at 40 characters, which used to drop the __w/__ls tags of long texts.
+    return f'<text id="{uid((n.get("n") or "Text")[:20] + "__w" + str(weight) + ls_tag)}" {" ".join(style)}>{"".join(out)}</text>'
 
 
 def node(n):
@@ -241,7 +248,10 @@ def main():
     ap.add_argument('--size', required=True)
     ap.add_argument('--out', required=True)
     ap.add_argument('--name', default='Content')
+    ap.add_argument('--img-scale', type=float, default=2, help='lower (e.g. 1.5) to stay under the 10MB Figma upload limit')
     args = ap.parse_args()
+    global IMG_SCALE
+    IMG_SCALE = args.img_scale
     d = json.load(open(args.spec, encoding='utf-8'))[args.size]
     body = node(d['tree'])
     w, h = d['contentW'], d['contentH']

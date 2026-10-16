@@ -24,3 +24,11 @@ body[data-page="freemoney"] [class*="chips-section-floating_root"]{position:stic
 
 /* Infinite scroll: cards waiting for the next batch (js/common.js initMoreCards). */
 [data-local-more-card][hidden]{display:none!important}
+
+/* Loyalty level cards: the captured srcset lists the same 270px file as 1x and 2x, so on 2x screens its intrinsic
+   width halves (135px). The reference shows it card-wide (268x199 at -9px) on every size. */
+.level_foreground-thziT{inset-inline-end:0}
+
+/* Tournament detail: the reference loads .players-leaderboard_root{position:relative} before the detail page rule, so the
+   leaderboard column is sticky (top 20px) on >=768px. Our audit.css has them in the opposite order. */
+@media (min-width: 768px){.detail_leaderboard-aqIuT.players-leaderboard_root-wvVW4{position:sticky;top:20px}}

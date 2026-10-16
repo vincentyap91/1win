@@ -1,0 +1,23 @@
+{
+  "browser": "C:/Program Files/Google/Chrome/Application/chrome.exe",
+  "width": 1440,
+  "height": 900,
+  "results": {
+    "vip-club.html": {
+      "state": "vip-club-1440x900",
+      "imgs": 84,
+      "broken": [],
+      "brokenCount": 0,
+      "placeholders": 0,
+      "masks": 19,
+      "externalMasks": [
+        "linear-gradient(90deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.663) 10.2%, rgb(0, 0, 0) 46.88%, rgba(0, 0, 0, 0.663) 92.57%, rgba(0, 0, 0, 0) 100%)"
+      ],
+      "externalUses": [],
+      "templatesLeft": 0,
+      "failed": [],
+      "failedCount": 0,
+      "console": []
+    }
+  }
+}

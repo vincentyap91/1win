@@ -35,7 +35,9 @@ const num = v => Math.round(parseFloat(v) * 100) / 100 || 0;
 function box(el) { const r = el.getBoundingClientRect(); return {x: Math.round((r.left - ox) * 100) / 100, y: Math.round((r.top + scrollY - oy) * 100) / 100, w: Math.round(r.width * 100) / 100, h: Math.round(r.height * 100) / 100}; }
 function visible(el, cs) { return cs.display !== 'none' && cs.visibility !== 'hidden' && parseFloat(cs.opacity) > 0.01; }
 function textProps(cs) {
-  return {c: cs.color, fs: num(cs.fontSize), fw: +cs.fontWeight || 400, lh: cs.lineHeight === 'normal' ? Math.round(num(cs.fontSize) * 1.2) : num(cs.lineHeight),
+  // Gradient text (background-clip: text + transparent colour, e.g. VIP "by the numbers") keeps its gradient.
+  const clipText = (cs.backgroundClip === 'text' || cs.webkitBackgroundClip === 'text') && cs.backgroundImage.includes('gradient');
+  return {tg: clipText ? cs.backgroundImage : undefined, c: clipText ? (cs.backgroundImage.match(/rgba?\([^)]*\)|#[0-9a-f]{3,8}/i) || [cs.color])[0] : cs.color, fs: num(cs.fontSize), fw: +cs.fontWeight || 400, lh: cs.lineHeight === 'normal' ? Math.round(num(cs.fontSize) * 1.2) : num(cs.lineHeight),
     ls: cs.letterSpacing === 'normal' ? 0 : num(cs.letterSpacing), al: cs.textAlign, tt: cs.textTransform === 'uppercase' ? 1 : undefined, ff: cs.fontFamily.split(',')[0].replace(/["']/g, '').trim()};
 }
 async function children(el, cs) {
@@ -64,9 +66,15 @@ async function children(el, cs) {
       if (k) { if (k.k === 'G') kids.push(...k.ch); else kids.push(k); }
     }
   }
-  return kids;
+  // Paint order: positioned children with a higher z-index are drawn later (SVG/Figma stack by order).
+  return kids.map((k, i) => [k, i]).sort((a, b) => ((a[0].z || 0) - (b[0].z || 0)) || a[1] - b[1]).map(x => x[0]);
 }
 async function walk(el, depth) {
+  const r = await walkInner(el, depth);
+  if (r && r.k !== 'G') { const cs = getComputedStyle(el); if (cs.position !== 'static' && cs.zIndex !== 'auto') r.z = parseInt(cs.zIndex) || 0; }
+  return r;
+}
+async function walkInner(el, depth) {
   const cs = getComputedStyle(el);
   if (!visible(el, cs)) return null;
   // Floating overlays (bet slip trigger, chat bubbles) are not part of the page layout.
@@ -113,7 +121,8 @@ async function walk(el, depth) {
   // Background image: raster → image child; gradient kept as CSS for the builder.
   const bgUrl = urlOf(cs.backgroundImage);
   const kids = [];
-  if (cs.backgroundImage.includes('gradient')) node.grad = cs.backgroundImage;
+  // background-clip: text paints the gradient through the text only (handled in textProps), not as a box.
+  if (cs.backgroundImage.includes('gradient') && cs.backgroundClip !== 'text' && cs.webkitBackgroundClip !== 'text') node.grad = cs.backgroundImage;
   if (bgUrl && !bgUrl.startsWith('data:')) { const src = local(bgUrl); if (src && !src.endsWith('.svg')) kids.push({k: 'I', n: 'background', ...b, src, fit: cs.backgroundSize === 'contain' ? 'contain' : 'cover', r: node.r}); else if (src) { const t = await svgText(bgUrl); if (t) kids.push({k: 'V', n: 'background', ...b, svg: t}); } }
   // CSS mask icon: the element's background colour painted through an SVG mask.
   const mask = urlOf(cs.maskImage || cs.webkitMaskImage);

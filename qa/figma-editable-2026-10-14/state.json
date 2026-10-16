@@ -433,12 +433,12 @@
       "desktop": {
         "node_id": "222:90161",
         "width": 1440,
-        "status": "2026-10-15 SVG import from local DOM (scripts/figma); shared header/sidebar/footer instances; editable text/vectors; original final QA pending"
+        "status": "2026-10-16 content replaced from fixed local page (all sections, gradient numbers); original final QA pending"
       },
       "mobile": {
         "node_id": "222:95406",
         "width": 390,
-        "status": "2026-10-15 SVG import from local DOM (scripts/figma); shared header/sidebar/footer instances; editable text/vectors; original final QA pending"
+        "status": "2026-10-16 content replaced from fixed local page (all sections, gradient numbers); original final QA pending"
       }
     },
     {

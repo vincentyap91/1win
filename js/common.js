@@ -153,6 +153,9 @@
     initCountdowns();
     initScrollViews();
     initMoreCards();
+    initReveal();
+    initMagneticSliders();
+    initCardStacks();
     if(window.BETSLIP_TEMPLATES&&$('[class*="_odd_ro0me_"]'))renderBetslip();
   }
   // Category chips and other arrows-scroll-view rows: the back arrow hides at the start, the forward
@@ -274,14 +277,20 @@
     const timers=$$('[class*="countdown_root-"]').map(root=>({root,parts:$$('[class*="countdown_time-"]',root)})).filter(t=>t.parts.length>=3&&t.parts.every(p=>/^\d+$/.test(p.textContent.trim())));
     if(!timers.length||new URLSearchParams(location.search).has('qa'))return;
     const units=[86400,3600,60,1];
-    timers.forEach(t=>{const u=units.slice(-t.parts.length);t.left=t.parts.reduce((sum,p,i)=>sum+Number(p.textContent)*u[i],0);t.units=u;});
-    countdownTimer=setInterval(()=>{
+    // data-local-ends (scripts/add-countdown-ends.py) is the reference end time: count to it like the reference does;
+    // without it, count down from the captured value. The days segment disappears once less than a day is left.
+    timers.forEach(t=>{const u=units.slice(-t.parts.length);t.units=u;const ends=Date.parse(t.root.dataset.localEnds||'');
+      t.ends=Number.isNaN(ends)?Date.now()+t.parts.reduce((sum,p,i)=>sum+Number(p.textContent)*u[i],0)*1000:ends;});
+    const tick=()=>{
       if(!timers[0].root.isConnected){clearInterval(countdownTimer);return;}
       timers.forEach(t=>{
-        if(t.left<=0)return;t.left--;let rest=t.left;
-        t.parts.forEach((p,i)=>{const v=Math.floor(rest/t.units[i]);rest-=v*t.units[i];p.textContent=i===0&&t.units[0]===86400?String(v):String(v).padStart(2,'0');});
+        let rest=Math.max(0,Math.floor((t.ends-Date.now())/1000));
+        t.parts.forEach((p,i)=>{const v=Math.floor(rest/t.units[i]);rest-=v*t.units[i];
+          if(i===0&&t.units[0]===86400){const hide=v===0;p.style.display=hide?'none':'';const sep=p.nextElementSibling;if(sep&&/countdown_separator/.test(sep.className))sep.style.display=hide?'none':'';p.textContent=String(v);}
+          else p.textContent=String(v).padStart(2,'0');});
       });
-    },1000);
+    };
+    tick();countdownTimer=setInterval(tick,1000);
   }
   // Original Last wins feed: every 3s a card enters at the start (translateX(-100%) -> 0), the rest
   // shift with a 1s transform move and the last one leaves. Locally the captured cards rotate.
@@ -325,6 +334,82 @@
     const io=new IntersectionObserver(entries=>{if(entries.some(e=>e.isIntersecting))load();});
     io.observe(marker);
     moreObserver={disconnect:()=>{io.disconnect();cancelAnimationFrame(frame);}};
+  }
+  // VIP Club (and other promo pages) wrap sections in block-wrapper: the reference removes block-wrapper_hidden when a
+  // block scrolls into view and .block-wrapper_reveal fades it in. Captures froze them hidden (opacity 0).
+  let revealObserver=null;
+  function initReveal(){
+    revealObserver?.disconnect();
+    // Cards inside them (VIP "A personal approach") were captured as *_cardHidden-* and get *_cardReveal-* (slide-in).
+    const blocks=$$('[class*="block-wrapper_hidden-"],[class*="_cardHidden-"]');if(!blocks.length)return;
+    const show=el=>{[...el.classList].forEach(c=>{if(c.startsWith('block-wrapper_hidden-'))el.classList.remove(c);else if(/_cardHidden-/.test(c))el.classList.replace(c,c.replace('_cardHidden-','_cardReveal-'));});};
+    if(!('IntersectionObserver' in window)||motion?.reduced?.()){blocks.forEach(show);return;}
+    // A row of cards reveals together (staggered by --card-index), including cards scrolled off to the side.
+    revealObserver=new IntersectionObserver(entries=>entries.forEach(e=>{if(!e.isIntersecting)return;
+      const group=/_cardHidden-/.test(e.target.className)?[...e.target.parentElement.children].filter(c=>/_cardHidden-/.test(c.className)):[e.target];
+      group.forEach(el=>{show(el);revealObserver.unobserve(el);});}),{threshold:0.15});
+    blocks.forEach(b=>revealObserver.observe(b));
+  }
+  // Indicator under a carousel: thumb offset = step × (track − thumb) / (count − 1), like the reference.
+  function setIndicator(root,index,count){
+    const track=root&&$('[class*="slider-indicator_slider-"]',root);if(!track)return;
+    const w=parseFloat(root.style.getPropertyValue('--v36307ce1'))||root.offsetWidth,t=parseFloat(root.style.getPropertyValue('--v2ec3163c'))||track.offsetWidth;
+    track.style.insetInlineStart=(count>1?index*(w-t)/(count-1):0)+'px';
+  }
+  // VIP Club "by the numbers" (magnetic slider): one step every 3s (probed 2026-10-16), arrows step back/forward,
+  // clicking a side item moves to it. Item states by offset from the current one; the CSS animates the change (0.6s).
+  let magneticTimers=[];
+  function initMagneticSliders(){
+    magneticTimers.forEach(clearInterval);magneticTimers=[];
+    $$('[class*="magnetic-slider_root"]').forEach(root=>{
+      const items=$$('[class*="_item-"]',root).filter(e=>/_(current|next|farNext|hiddenBelow|hiddenAbove|farPrev|prev)-/.test(e.className));
+      if(items.length<3)return;
+      const hash=(items[0].className.match(/_item-([A-Za-z0-9]{5})/)||[])[1],base=(items[0].className.match(/(\S+)_item-/)||[])[1];if(!hash)return;
+      const names=['current','next','farNext','hiddenBelow','hiddenAbove','farPrev','prev'].map(n=>`${base}_${n}-${hash}`);
+      let index=items.findIndex(e=>e.classList.contains(`${base}_current-${hash}`));if(index<0)index=0;
+      const n=items.length;
+      const state=off=>off===0?'current':off===1?'next':off===2?'farNext':off===-1?'prev':off===-2?'farPrev':off>0?'hiddenBelow':'hiddenAbove';
+      const show=i=>{index=(i+n)%n;items.forEach((e,k)=>{let off=((k-index)%n+n)%n;if(off>n/2)off-=n;e.classList.remove(...names);e.classList.add(`${base}_${state(off)}-${hash}`);e.setAttribute('aria-hidden',off===0?'false':'true');});
+        setIndicator($('[class*="magnetic-slider_sliderIndicator"]',root),index,n);};
+      show(index);
+      const buttons=$$('[class*="_arrows-"] button',root);
+      const restart=()=>{clearInterval(root._magTimer);if(!motion?.reduced?.()&&!new URLSearchParams(location.search).has('qa'))root._magTimer=setInterval(()=>{if(!root.isConnected){clearInterval(root._magTimer);return;}if(!document.hidden)show(index+1);},3000);magneticTimers.push(root._magTimer);};
+      if(!root.dataset.localMagnetic){root.dataset.localMagnetic='1';
+        buttons[0]?.addEventListener('click',e=>{e.stopPropagation();show(index-1);restart();});
+        buttons[1]?.addEventListener('click',e=>{e.stopPropagation();show(index+1);restart();});
+        items.forEach((e,k)=>e.addEventListener('click',()=>{if(k!==index){show(k);restart();}}));}
+      restart();
+    });
+  }
+  // VIP Club "Exclusive gifts" (cards swiper): a stack — current card on top, the next two peek below (CSS cardNext /
+  // cardSecondNext). Arrows, a click on the card or a swipe move the stack; the leaving card slides away (0.3s).
+  function initCardStacks(){
+    $$('[class*="cards-swiper-mobile_root"]').forEach(root=>{
+      if(root.dataset.localStack)return;root.dataset.localStack='1';
+      const wrappers=$$('[class*="cards-swiper-mobile_cardWrapper"]',root);if(wrappers.length<2)return;
+      const cards=wrappers.map(w=>w.firstElementChild);
+      const hash=(cards[0].className.match(/cards-swiper-mobile_card-([A-Za-z0-9]{5})/)||[])[1];if(!hash)return;
+      const cls=n=>`cards-swiper-mobile_${n}-${hash}`,states=['cardCurrent','cardNext','cardSecondNext','cardOut'].map(cls);
+      const n=cards.length;let index=Math.max(0,cards.findIndex(c=>c.classList.contains(cls('cardCurrent'))));
+      const block=root.closest('[class*="_block-"],[class*="variant-2_root"]')||root.parentElement;
+      const indicator=$('[class*="cards-swiper-mobile_indicator"]',root)||$('[class*="slider-indicator_root"]',block);
+      const show=(i,dir)=>{
+        const old=index;index=(i+n)%n;
+        cards.forEach((c,k)=>{const off=((k-index)%n+n)%n;c.classList.remove(...states);if(off===0)c.classList.add(cls('cardCurrent'));else if(off===1)c.classList.add(cls('cardNext'));else if(off===2)c.classList.add(cls('cardSecondNext'));wrappers[k].style.zIndex=String(n-off);});
+        if(dir&&old!==index&&!motion?.reduced?.()){const w=wrappers[dir>0?old:index],c=cards[dir>0?old:index];
+          if(dir>0){c.classList.add(cls('cardOut'));w.style.zIndex=String(n+1);w.style.transition='transform .3s';w.style.transform='translateX(-110%) rotate(-8deg)';
+            setTimeout(()=>{c.classList.remove(cls('cardOut'));w.style.transform='';w.style.zIndex=String(n-(((dir>0?old:index)-index)%n+n)%n);setTimeout(()=>{w.style.transition='';},300);},300);}
+          else{w.style.transition='none';w.style.transform='translateX(-110%) rotate(-8deg)';requestAnimationFrame(()=>{w.style.transition='transform .3s';w.style.transform='';});}}
+        setIndicator(indicator,index,n);
+      };
+      show(index);
+      const arrows=$$('[class*="_arrows-"] button',block);
+      arrows[0]?.addEventListener('click',()=>show(index-1,-1));
+      arrows[1]?.addEventListener('click',()=>show(index+1,1));
+      root.addEventListener('click',e=>{if(e.target.closest('[class*="cards-swiper-mobile_cardWrapper"]'))show(index+1,1);});
+      let sx=null;root.addEventListener('touchstart',e=>{sx=e.touches[0].clientX;},{passive:true});
+      root.addEventListener('touchend',e=>{if(sx===null)return;const d=e.changedTouches[0].clientX-sx;sx=null;if(Math.abs(d)>40)show(index+(d<0?1:-1),d<0?1:-1);},{passive:true});
+    });
   }
   function initLastWins() {
     clearInterval(lastWinsTimer);

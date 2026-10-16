@@ -1,5 +1,42 @@
 # Progress Workflow — 1win
 
+> 2026-10-16 修复（tournament 详情 + 全站图片尺寸）：
+> - `css/audit.css` 中 `.detail_root-aqIuT` 的 `grid-template` 在 CSSOM 复制时被清空，详情页三栏全挤到右栏；已按原站源码补回 `"card leaderboard" "games leaderboard"`。排行榜改回 sticky（`css/local.css`）。
+> - 原站 1x/2x 两个 URL 下载成同一文件，导致 `srcset="a.png, a.png 2x"`，浏览器按 2x 显示成一半大小（排行榜奖牌、会员奖杯等）。`scripts/fix-duplicate-srcset.py` 已修 185 个文件 2451 处，`capture_clean.py` 以后自动去重。
+> - 对比截图工具：`scripts/shot.mjs`（本地 file:// 或原站，详情页用 `--via`）。
+> - 倒计时：原本从抓取时的剩余时间重新倒数（显示 `1 : 08 : 19 : 53`，与原站不符）。`scripts/add-countdown-ends.py` 给 12 个 tournament 详情页的倒计时写入真实结束时间 `data-local-ends`（抓取时间+剩余），`js/common.js initCountdowns()` 按结束时间计算，剩余不足 1 天时隐藏天数段（同原站）。788262、817472 无正确抓取，仍按旧方式倒数。
+> - 验收：tournament-816330 桌面 1440 与手机 390 全页截图与原站逐段对比一致（卡片、Rules、排行榜奖牌、游戏网格、Show more、页尾、手机底栏）；仅排行榜积分等实时数据不同。
+> - VIP Loyalty Program：奖杯图在手机端只有 135×100（同一原因：srcset 重复），`css/local.css` 固定为卡片宽 268×199；Figma `222:89521` / `222:95125` 的 Hero 与等级卡图层顺序、奖杯尺寸已按原站修正。
+> - 下一步：用 `scripts/shot.mjs` 逐页对比其余页面（桌面+手机），重点检查 casino / live casino 在 srcset 修复后的图片尺寸。
+>
+> 2026-10-16 VIP Club 对比（https://one-vv3591.com/en/vip-club，桌面 1440 + 手机 390）：
+> - 中段整块空白（A personal approach、Exclusive gifts、VIP Club by the numbers、Choose how to get access）：抓取时停在“未显示”状态 `block-wrapper_hidden`。`js/common.js initReveal()` 进入视口后移除，并把 `*_cardHidden-*` 换成 `*_cardReveal-*`（同一排卡片一起出现，含手机横向滚出去的卡片）。
+> - 全站 CSS：浏览器复制 CSS 时含 `var()` 的简写被清空（如 `background: var(--title-gradient)`、`grid-template`、`padding`）。新增 `scripts/fix-empty-shorthands.py`，用原站源码 CSS 恢复 46 条（`audit.css`/`styles.css`）；剩余未恢复的是 Betwave 骨架/关键帧等，不影响显示。数字滑块的渐变大字因此恢复。
+> - HTML 解析：原站 `<p><div>` 是 JS 生成的，本地按 HTML 解析会把 `<p>` 提前关闭，文字掉出样式（数字说明文字看不见、Hero 副标题变细）。`scripts/fix-p-div-nesting.py` 把这类 `<p>` 改成 `<div>`（vip-club 3 个文件 150 处）。
+> - 数字滑块初始状态与原站对齐：中间 $2.5M、左 $15M、右 10,000（`vip-club.html`、`js/vip-club*.js`）。
+> - 验收：两种尺寸逐段截图对比，Hero、VIP manager、Concierge、A personal approach、Exclusive gifts、Numbers、Choose access、FAQ、页尾一致；桌面数字滑块两侧文字差几像素（原站滑块会自动轮播，截图时机不同）。
+> - 2026-10-16 补：数字滑块与 Exclusive gifts 交互（`js/common.js initMagneticSliders()` / `initCardStacks()`），按原站实测：
+>   - 数字滑块：每 3 秒前进一格（原站同），左右箭头前后一格并重新计时，点击两侧数字跳过去；状态类 current/next/farNext/hiddenBelow/hiddenAbove/farPrev/prev 由 CSS 做 0.6s 过渡；指示条位置 = 步数×(72−26)/(数量−1)。
+>   - Exclusive gifts：原站不自动轮播；箭头 / 点击卡片 / 手机左右滑动切换叠卡（cardCurrent、cardNext 下沉 16px、cardSecondNext 28px），离开的卡片 0.3s 滑出，指示条同步，7 张循环。
+>   - 动画核对：用 `document.getAnimations()` 对比原站与本地，标题模糊淡入、区块 2s 渐显、卡片逐张滑入、奖项无限滚动、数字滑块过渡与指示条，本地均已出现。
+>   - 浏览器面板实测 1440 与 390：滚动后 4 个区块与 15 张卡片全部渐显；箭头、指示条、手机滑动正常。若看到“滚动不出现”，请 Ctrl+F5 强制刷新（旧 common.js 缓存）。
+> - 2026-10-16 Figma VIP Club 补全：桌面 `222:90161`、手机 `222:95406` 原位替换内容（未新增 Frame）。之前抓取时中段区块未显示、数字是透明渐变字，现在 A personal approach、Exclusive gifts（叠卡）、VIP Club by the numbers（$15M / $2.5M / 10,000，黑→灰渐变字）、Choose how to get access 全部补齐。
+>   - 管线改进：`scripts/figma/serialize.js` 支持渐变文字（background-clip:text），不再把渐变画成方块；`spec-to-svg.py` 新增 `--img-scale`（图片超过 Figma 10MB 上限时降到 1.25）；修复长文字层名被截断导致字重/字距丢失（之前所有页面中超过约 40 字的文字都会变成 Bold、字距 0）。
+>   - Figma 的 Inter 没有可变光学尺寸，大字号比浏览器宽：手机标题 “Choose how to get access to” 字距调到 −1.4px 以对齐浏览器宽度 355px。
+>   - 待办：其他已导入页面（Bonuses、Sports、Blog、Free money、Loyalty、Promotions、Tournaments、TOP Bets、Markets 等）也受“长文字字重丢失”影响，需要用修复后的管线重新导入替换。
+
+## 最新操作：2026-10-16 — 按用户新指令清理重复 Figma 布局
+
+本次用户明确要求移除重复设计 Frame，因此仅针对核实相同的 Casino 分类网格执行清理；本条取代下方历史中“所有已完成 Frame 都保留、不删除”的旧限制。其余页面、Filters 和 Figma 补全仍暂停，没有恢复上一轮实施。
+
+- [x] 移除 7 个重复整页：桌面 1win games `65:3586`、JILI `65:5372`、New `65:15495`、Bonus wagering `82:6719`、Fishing `105:9103`；手机 Bonus wagering `94:421`、Fishing `107:805`。
+- [x] 分类布局统一复用原有 Slots：桌面 `51:943`（1440×3190）、手机 `174:463`（390×1830）。不同分类的 tab 高亮、图片、人数、卡片数据和行数作为内容差异，不再生成重复整页。HTML 页面与素材不删除。
+- [x] 清理后 Desktop 页保留 25 个整页，Mobile 页保留 22 个整页。所有 15 个 Betwave Frame、组件库、Menus & Modals、独立 Casino lobby／Live Casino／Quick games 均保留。
+- [x] 删除前已核实目标内没有主组件；删除结果逐项返回原节点 ID，保留 Slots 原节点 ID 与尺寸。名称同为 `1win | Betwave` 的六个 Frame 实际内容不同，未删除。
+- 机器记录仅存于 Documents 工作副本 `C:\Users\vince\OneDrive\Documents\ChatGPT\1win\qa\figma-dedupe-2026-10-16\report.json`。下方历史表格中的上述 7 个节点已被本次复用映射取代，勿据旧表重新导入。
+- 本次只完成重复布局清理及进度记录；其余页面／状态补全和原站最终视觉验收仍未完成。没有新执行 Git commit 或 push。
+
+
 ## 当前停止点：2026-10-15（用户要求停止全部工作）
 
 **现在暂停所有页面、Filters 和 Figma 实施。仅完成本次进度记录、Git commit 和 push；下次用户在本聊天发出继续指令后再恢复。不要自动继续。全站及 Betwave 最终视觉验收均未完成，不能报告 100%。**

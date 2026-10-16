@@ -162,6 +162,10 @@ def clean(n, media):
                 if not parts:
                     continue
                 mapped = media.map(parts[0])
+                # 1x and 2x URLs that download to the same local file would make browsers show the image at half
+                # size (they take the 2x candidate); keep only the first one (scripts/fix-duplicate-srcset.py).
+                if any(c.split()[0] == mapped for c in candidates):
+                    continue
                 if mapped != 'data:,':
                     candidates.append(mapped + (' ' + parts[1] if len(parts) > 1 else ''))
             n.attrs.pop('srcset', None)
