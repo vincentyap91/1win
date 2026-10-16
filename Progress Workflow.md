@@ -1,5 +1,12 @@
 # Progress Workflow — 1win
 
+> 2026-10-16 Figma 整理与补页（未改网站代码）：
+> - 删除重复布局：Live Casino 桌面 `65:6749`、Quick games 桌面 `65:13437`（与 Casino lobby `65:2` 同一结构：横幅+本周游戏、分类按钮、多行游戏轮播、锦标赛行、SEO；直播卡已有组件 `Game card / Live desktop`）。
+> - 6 个未命名 Betwave Frame 补名并归位（非重复）：桌面 Top predictors `269:22848`、Predictor profile `272:24416`、Rules `275:24416`；手机 Prediction detail `268:7078`、Top predictors `271:7078`、Predictor profile `276:7945`。
+> - 补齐缺失页面设计（桌面 1440 页 `7:4` / 手机 390 页 `7:5`，共用 header/sidebar/footer/底栏组件）：Tournament detail `304:16137` / `304:26781`，Promotion landing（Halloween）`304:16777` / `304:27062`，Blog article `304:17417` / `304:27343`，Rules `304:18057` / `304:27624`，Poker app `304:18697` / `304:27905`；Betwave Rules 手机 `304:28186`（Betwave 组件）。
+> - 弹窗页 `7:6` 新增 Authorization required（游客打开 Betwave 创建预测、Trading 时出现）桌面 `303:29238`、手机 `303:29281`。
+> - 判定为同一布局、不另出 Frame：Blog 分类页（同 Blog）、Casino 100000 jackpot / Virtual sports（同分类网格）、Crash games / Game shows / Popular / Tournaments categories（同 Casino lobby / Slots）、运动筛选页（同 Sports live）、Betwave create / Trading / Casino trading（游客只看到 Authorization 弹窗）。
+
 > 2026-10-16 修复（tournament 详情 + 全站图片尺寸）：
 > - `css/audit.css` 中 `.detail_root-aqIuT` 的 `grid-template` 在 CSSOM 复制时被清空，详情页三栏全挤到右栏；已按原站源码补回 `"card leaderboard" "games leaderboard"`。排行榜改回 sticky（`css/local.css`）。
 > - 原站 1x/2x 两个 URL 下载成同一文件，导致 `srcset="a.png, a.png 2x"`，浏览器按 2x 显示成一半大小（排行榜奖牌、会员奖杯等）。`scripts/fix-duplicate-srcset.py` 已修 185 个文件 2451 处，`capture_clean.py` 以后自动去重。

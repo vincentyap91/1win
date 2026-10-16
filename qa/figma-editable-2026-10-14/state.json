@@ -839,5 +839,58 @@
   "skipped": {
     "betwave.html": "skipped on user request 2026-10-15"
   },
-  "pipeline_2026_10_15": "scripts/figma/serialize.js -> spec-to-svg.py -> upload_assets (image/svg+xml) -> compose (scripts/figma/compose.js); long repeated lists trimmed with FIGMA_MAXY"
+  "pipeline_2026_10_15": "scripts/figma/serialize.js -> spec-to-svg.py -> upload_assets (image/svg+xml) -> compose (scripts/figma/compose.js); long repeated lists trimmed with FIGMA_MAXY",
+  "figma_cleanup_2026_10_16": {
+    "removed_duplicate_layouts": {
+      "65:6749": "Live Casino desktop = Casino lobby layout",
+      "65:13437": "Quick games desktop = Casino lobby layout"
+    },
+    "renamed_betwave": {
+      "269:22848": "Betwave Top predictors desktop",
+      "272:24416": "Betwave Predictor profile desktop",
+      "275:24416": "Betwave Rules desktop",
+      "268:7078": "Betwave Prediction detail mobile",
+      "271:7078": "Betwave Top predictors mobile",
+      "276:7945": "Betwave Predictor profile mobile"
+    },
+    "added": {
+      "tournament-816330.html": [
+        "304:16137",
+        "304:26781"
+      ],
+      "promotion-halloween-2026.html": [
+        "304:16777",
+        "304:27062"
+      ],
+      "blog-crypto-bestchange.html": [
+        "304:17417",
+        "304:27343"
+      ],
+      "rules.html": [
+        "304:18057",
+        "304:27624"
+      ],
+      "poker-app.html": [
+        "304:18697",
+        "304:27905"
+      ],
+      "betwave-rules.html (mobile)": [
+        "304:28186"
+      ],
+      "authorization-required dialog": [
+        "303:29238",
+        "303:29281"
+      ]
+    },
+    "same_layout_no_frame": [
+      "blog category pages",
+      "casino-category-*",
+      "casino-crash-games",
+      "casino-game-shows",
+      "casino-popular",
+      "casino-tournaments-categories",
+      "sports filter pages",
+      "betwave-create / trading / casino-trading (auth dialog only)"
+    ]
+  }
 }
