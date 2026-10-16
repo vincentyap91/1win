@@ -54,7 +54,7 @@
   }
   function applySidebar() {
     const desktop=innerWidth>=1024;let root=$('[class*="sidebar_root"]');if(!root)return;
-    if(!desktop){document.body.classList.remove('local-sidebar-collapsed');return;}
+    if(!desktop){document.body.classList.remove('local-sidebar-collapsed');initSidebarSocial();return;}
     if(currentPage==='casino'&&!root.dataset.localSidebarTemplate&&!$('[class*="common-layout_compact"]',root)&&window.SIDEBAR_STATES?.['expanded-casino']){
       root=replaceSidebar(window.SIDEBAR_STATES['expanded-casino'].html,root);root.dataset.localSidebarTemplate='expanded-casino';
     }
@@ -91,8 +91,95 @@
     initSidebarSocial();
   }
   function initSidebarSocial() {
+    // Signed home sidebars keep the more button as a bare icon; only the compact capture has the preview testid.
+    $$('[class*="sidebar-social-and-lang"] button:has([data-icon="more-vertical"]), [class*="sidebar_root"] button:has([data-icon="more-vertical"])').forEach(btn=>{
+      if(!btn.closest('[data-testid="sidebar-social-buttons-with-preview"]')&&!btn.dataset.testid)btn.dataset.testid='sidebar-social-buttons-with-preview';
+    });
     const trigger=test('sidebar-social-buttons-with-preview');
     if(trigger){trigger.setAttribute('role','button');trigger.tabIndex=0;trigger.setAttribute('aria-label','Social media');trigger.setAttribute('aria-haspopup','dialog');trigger.setAttribute('aria-expanded',String(!!$('[data-sidebar-social-popover]')));}
+  }
+  function clearLanguageOpen() {
+    $$('[data-testid="language-picker-button"]').forEach(btn=>{
+      btn.classList.remove('language-picker_open-eiLTD','language-picker_open-p6ZZU');
+      $('[class*="language-picker_arrowIcon"]',btn)?.classList.remove('language-picker_opened-eiLTD','language-picker_opened-p6ZZU');
+    });
+  }
+  function closeLanguagePicker() {
+    $('[data-local-language-popover]')?.remove();
+    $$('[class*="language-picker_tooltip"]').forEach(n=>n.remove());
+    clearLanguageOpen();
+  }
+  function ensurePopoverArrow(wrap) {
+    let arrow=$('[class*="tooltip_arrow"]',wrap);
+    if(!arrow){
+      arrow=document.createElementNS('http://www.w3.org/2000/svg','svg');
+      arrow.setAttribute('class','tooltip_arrow-2Fdac');
+      arrow.setAttribute('viewBox','0 0 10 8');
+      arrow.setAttribute('preserveAspectRatio','none');
+      arrow.setAttribute('aria-hidden','true');
+      arrow.innerHTML='<path d="M5 0C6.5 0 8 4 10 4V6H0V4C2 4 3.5 0 5 0Z" fill="var(--tooltip-color-bg)"></path><path class="tooltip_arrowBorder-2Fdac" d="M10 4C8 4 6.5 0 5 0C3.5 0 2 4 0 4" fill="none" stroke="var(--tooltip-color-border)" stroke-width="2"></path>';
+    }
+    if(arrow.parentElement!==wrap)wrap.append(arrow);
+    const tip=$('[class*="tooltip_tooltip"]',wrap);
+    if(tip){
+      const cs=getComputedStyle(tip);
+      wrap.style.setProperty('--tooltip-color-bg', cs.getPropertyValue('--tooltip-color-bg'));
+      wrap.style.setProperty('--tooltip-color-border', cs.getPropertyValue('--tooltip-color-border'));
+    }
+    return arrow;
+  }
+  // Desktop: right-end, arrow on the left at the trigger. Mobile sidemenu: above the trigger, arrow down.
+  function positionAnchoredPopover(wrap, anchor) {
+    if(!wrap||!anchor)return;
+    const pop=$('[class*="tooltip_tooltip"]',wrap)||wrap;
+    wrap.style.position='fixed';wrap.style.zIndex='var(--z-index-tooltip)';wrap.style.visibility='hidden';
+    wrap.style.left='0';wrap.style.top='0';
+    const width=pop.offsetWidth||wrap.offsetWidth||308,height=pop.offsetHeight||wrap.offsetHeight||420;
+    const r=anchor.getBoundingClientRect(),margin=8,gap=5;
+    const desktop=innerWidth>=1024;
+    let left,top,placement;
+    if(desktop){
+      placement='right';
+      left=Math.round(r.right+gap);
+      top=Math.round(r.bottom+gap-height);
+      if(left+width>innerWidth-margin){placement='left';left=Math.round(r.left-gap-width);}
+      top=Math.max(margin,Math.min(top,innerHeight-height-margin));
+      left=Math.max(margin,Math.min(left,innerWidth-width-margin));
+    }else{
+      placement='top';
+      left=Math.round(r.left+r.width/2-width/2);
+      top=Math.round(r.top-gap-height);
+      left=Math.max(margin,Math.min(left,innerWidth-width-margin));
+      if(top<margin){placement='bottom';top=Math.round(r.bottom+gap);}
+      top=Math.max(margin,Math.min(top,innerHeight-height-margin));
+    }
+    wrap.style.left=left+'px';wrap.style.top=top+'px';wrap.style.visibility='visible';
+    const arrow=ensurePopoverArrow(wrap);
+    arrow.style.position='absolute';arrow.style.width='10px';arrow.style.height='8px';
+    arrow.style.right='auto';arrow.style.bottom='auto';
+    if(placement==='right'||placement==='left'){
+      const ay=Math.max(12,Math.min(r.top+r.height/2-top-4,height-20));
+      arrow.style.top=ay+'px';
+      if(placement==='right'){arrow.style.left='-5px';arrow.style.transform='rotateZ(270deg)';}
+      else{arrow.style.left=(width-5)+'px';arrow.style.transform='rotateZ(90deg)';}
+    }else{
+      const ax=Math.max(12,Math.min(r.left+r.width/2-left-5,width-22));
+      arrow.style.left=ax+'px';
+      if(placement==='top'){arrow.style.top=(height-4)+'px';arrow.style.transform='rotate(180deg)';}
+      else{arrow.style.top='-4px';arrow.style.transform='none';}
+    }
+  }
+  function openLanguagePicker(el) {
+    closeLanguagePicker();
+    const raw=window.DIALOG_STATES?.['language-1440x900']?.html;if(!raw)return;
+    const wrap=document.createElement('div');
+    wrap.className='tooltip_wrapper-2Fdac';
+    wrap.dataset.localLanguagePopover='';
+    wrap.innerHTML='<div class="color-scheme_root-jGMem colorScheme-light">'+markup(raw)+'</div>';
+    document.body.append(wrap);
+    positionAnchoredPopover(wrap,el);
+    el.classList.add('language-picker_open-eiLTD');
+    $('[class*="language-picker_arrowIcon"]',el)?.classList.add('language-picker_opened-eiLTD');
   }
   function toggleSidebar() {
     if(innerWidth<1024)return;
@@ -110,10 +197,7 @@
   function positionSidebarSocial() {
     const popover=$('[data-sidebar-social-popover]'),trigger=test('sidebar-social-buttons-with-preview');
     if(!popover||!trigger)return;
-    const anchor=trigger.getBoundingClientRect(),sidebar=trigger.closest('[class*="sidebar_root"]').getBoundingClientRect();
-    // The observed right-end tooltip includes a 5px vertical offset from the trigger's bottom edge.
-    popover.style.left=sidebar.right+'px';
-    popover.style.top=Math.max(8,Math.min(anchor.bottom+5-popover.offsetHeight,innerHeight-popover.offsetHeight-8))+'px';
+    positionAnchoredPopover(popover,trigger);
   }
   function toggleSidebarSocial(trigger) {
     if($('[data-sidebar-social-popover]'))return closeSidebarSocial(true);
@@ -676,6 +760,7 @@
   function focusSearch(){if(innerWidth>=768)test('casino-search-input')?.focus({preventScroll:true});}
   function closeModal(immediate=false) {
     closeSidebarSocial();
+    closeLanguagePicker();
     const nodes=$$('[data-local-modal], [data-testid="modal-layout"], [class*="language-picker_tooltip"]').filter(n=>n.dataset.localModal||n.firstElementChild||!n.matches('[data-testid="modal-layout"]'));
     modal=null;
     const finish=()=>{
@@ -702,8 +787,16 @@
   const payTabs=()=>'<div class="local-seg"><button type="button" data-testid="local-deposit-fiat"'+(depositRail==='fiat'?' class="is-on"':'')+'><i class="local-ico local-ico-fiat"></i>Fiat</button><button type="button" data-testid="local-deposit-crypto"'+(depositRail==='crypto'?' class="is-on"':'')+'><i class="local-ico local-ico-crypto"></i>Crypto</button></div>';
   const fiatMethod=id=>FIAT.find(m=>m.id===id)||FIAT[0];
   const CLOSE_SVG='<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="16" height="16" aria-hidden="true"><path fill="currentColor" fill-rule="evenodd" d="M3.364 3.364a.9.9 0 0 1 1.272 0L8 6.727l3.364-3.363a.9.9 0 0 1 1.272 1.272L9.274 8l3.364 3.364a.9.9 0 1 1-1.273 1.272L8 9.274l-3.364 3.364a.9.9 0 1 1-1.272-1.273L6.727 8 3.364 4.636a.9.9 0 0 1 0-1.272"/></svg>';
-  const COINS=[['Bitcoin','BTC','#f7931a'],['Ethereum','ETH','#627eea'],['Litecoin','LTC','#345d9d'],['Tether USD','USDT','#26a17b'],['TRON','TRX','#ef0027'],['Toncoin','TON','#0098ea']];
+  const COINS=[
+    ['Bitcoin','BTC','assets/pay/balance-btc.png'],
+    ['Ethereum','ETH','assets/pay/balance-eth.svg'],
+    ['Litecoin','LTC','assets/pay/balance-ltc.svg'],
+    ['Tether USD','USDT','assets/pay/balance-usdt.png'],
+    ['TRON','TRX','assets/pay/balance-trx.svg'],
+    ['Toncoin','TON','assets/pay/balance-ton.png']
+  ];
   const wideBtn=(id,label,accent)=>'<button class="base_root-ZOkD4 base_size-m-ZOkD4 '+(accent?'base_variant-accent-ZOkD4':'base_variant-neutral-ZOkD4')+' local-wide" data-testid="'+id+'" type="button"><div class="base_view-ZOkD4"><div class="base_content-ZOkD4">'+label+'</div></div></button>';
+  const depositBtn='<button class="base_root-ZOkD4 base_size-m-ZOkD4 base_variant-accent-ZOkD4 local-wide local-deposit-btn" data-testid="local-open-deposit" type="button"><div class="base_view-ZOkD4"><div class="base_content-ZOkD4"><span class="local-plus">+</span>Deposit</div></div></button>';
   function accountSheet(title, body, back, headless) {
     const closeBtn='<button class="base_root-AENvm base_size-m-semibold-AENvm base_variant-tertiary-AENvm modal-header_button-9Ka9l" data-testid="modal-header-button-close" type="button"><div class="base_view-AENvm"><div class="base_content-AENvm">'+CLOSE_SVG+'</div></div></button>';
     const backBtn=back&&!headless?'<button class="base_root-AENvm base_size-m-semibold-AENvm base_variant-tertiary-AENvm modal-header_button-9Ka9l" data-testid="modal-back-button" type="button"><div class="base_view-AENvm"><div class="base_content-AENvm">‹</div></div></button>':'';
@@ -729,7 +822,7 @@
       const m=fiatMethod(depositMethod);
       return accountSheet('','<div class="local-pay-title"><img src="'+m.icon+'" alt=""><b>'+m.name+'</b></div>'+payTabs()+'<label class="local-amount"><span>Amount</span><b>RM</b><input data-testid="local-amount" inputmode="decimal" aria-label="Amount" value="'+depositAmount+'"><button type="button" data-testid="local-bonus"'+(depositBonus?' class="is-on"':'')+'>Bonus 100</button></label><p class="local-range">from RM '+m.min+' to RM '+m.max+'</p><div class="local-chips">'+[80,150,400,600].map(n=>'<button type="button" data-testid="local-amount-chip" data-amount="'+n+'">RM '+n+'</button>').join('')+'</div>'+wideBtn('local-pay','Deposit',true)+'<button type="button" class="local-instructions" data-testid="local-instructions">Detailed instructions</button>'+(showInstructions?'<p class="local-hint">Pay the amount in your bank or wallet app. This preview does not create a payment.</p>':'')+'<h3 class="local-sub">Bonuses</h3><button type="button" class="local-bonus" data-testid="local-bonus-card"><span><b>100% casino bonus</b><small>'+(depositBonus?'Selected':'Tap to select')+'</small></span><span class="local-chevron">›</span></button>',false,true);
     }
-    if(kind==='account-balance')return accountSheet('Balance','<p class="local-hint">Account · Malaysian ringgit</p><p class="local-sum">RM 0.00</p>'+wideBtn('local-open-deposit','Deposit',true)+'<div class="local-points"><span>1win Points</span><span>0</span></div><div class="local-split"><b>Other accounts</b><button type="button" data-testid="local-add-account">Add +</button></div><div class="local-rows">'+COINS.map(([name,code,color])=>'<div class="local-row"><span class="local-mark" style="background:'+color+'">'+code.slice(0,1)+'</span><span><b>'+name+'</b><small>'+code+'</small></span><span class="local-zero">0.00000000</span></div>').join('')+'</div><label class="local-switch"><input type="checkbox" data-testid="local-balance-currency"> Balance in currency</label>');
+    if(kind==='account-balance')return accountSheet('Balance','<p class="local-hint">Account • Malaysian ringgit</p><p class="local-sum">RM 0.00</p>'+depositBtn+'<button type="button" class="local-points" data-testid="local-points"><img src="assets/pay/balance-points.png" alt=""><span>1win Points</span><em>0</em><img class="local-info" src="assets/pay/balance-info.svg" alt=""></button><div class="local-split"><b>Other accounts</b><button type="button" data-testid="local-add-account"><i class="local-add">+</i>Add</button></div><div class="local-rows">'+COINS.map(([name,code,icon])=>'<div class="local-row"><img class="local-coin" src="'+icon+'" alt=""><span><b>'+name+'</b><small>'+code+'</small></span><span class="local-zero">0.00000000</span></div>').join('')+'</div><label class="local-switch"><span class="local-toggle" aria-hidden="true"></span><input type="checkbox" data-testid="local-balance-currency" hidden> Balance in currency <span class="local-chevron">▾</span></label>');
     if(kind==='account-withdraw'){
       if(withdrawStep==='warn')return accountSheet('Withdrawal','<p class="local-forfeit">The following bonuses will be forfeited when you exchange currency:</p><ul class="local-forfeit-list"><li>all active bonuses</li><li>all available no-deposit bonuses</li></ul>'+wideBtn('local-withdraw-save','Save bonuses',true)+'<button type="button" class="local-funds" data-testid="local-withdraw-go">Withdraw funds</button>');
       if(withdrawStep==='methods')return accountSheet('Withdrawal','<div class="local-methods"><button type="button" class="local-method" data-testid="local-withdraw-method" data-method="banks"><img src="assets/pay/malaysia.svg" alt=""><b>Malaysian banks</b></button><button type="button" class="local-method" data-testid="local-withdraw-method" data-method="tng"><img src="assets/pay/tng-clear.png" alt=""><b>Touch n Go</b></button></div>');
@@ -1028,6 +1121,8 @@
     const socialPopover=$('[data-sidebar-social-popover]');
     if(socialPopover&&!socialPopover.contains(e.target))closeSidebarSocial();
     if(e.target.closest('[data-testid="local-sidebar-social-close"]')){closeSidebarSocial(true);return;}
+    const langPopover=$('[data-local-language-popover]');
+    if(langPopover&&!langPopover.contains(e.target)&&!e.target.closest('[data-testid="language-picker-button"]'))closeLanguagePicker();
     const groupToggle=e.target.closest('[data-testid="casino-group-toggle"],[data-testid="betting-group-toggle"],[data-testid="markets-toggle"],[data-testid="betwave-toggle"],[data-testid="casino-lobby-toggle"],[data-testid="casino-live-toggle"],[data-testid="casino-fast-toggle"],[data-testid="casino-brand-toggle"]');
     if(groupToggle){
       e.preventDefault();
@@ -1176,14 +1271,12 @@
     if(id==='tabbar-navigation-menu'||el.className.includes('common-layout_close')||el.className.includes('common-layout_backdrop'))return toggleMenu();
     if(id==='sidebar-expand-button')return toggleSidebar();
     if(id==='language-picker-button'){
-      const existing=$('[class*="language-picker_tooltip"]');if(existing){existing.remove();return;}
-      const t=document.createElement('template');t.innerHTML=markup(states['language-1440x900'].html);document.body.append(t.content.cloneNode(true));
-      const pop=$('[class*="language-picker_tooltip"]');if(mobile())pop.classList.add('local-language-mobile');
-      return;
+      if($('[data-local-language-popover], [class*="language-picker_tooltip"]')){closeLanguagePicker();return;}
+      openLanguagePicker(el);return;
     }
-    if(el.closest('[class*="language-picker_tooltip"]')){
+    if(el.closest('[data-local-language-popover], [class*="language-picker_tooltip"]')){
       if(el.className.includes('base_control'))notice('The captured language is English (International).');
-      $('[class*="language-picker_tooltip"]')?.remove();return;
+      closeLanguagePicker();return;
     }
     if(id.startsWith('freemoneyNavigation-')){
       const section=document.getElementById(id.replace('freemoneyNavigation-',''));
@@ -1331,6 +1424,7 @@
       e.preventDefault();toggleSidebarSocial(e.target);return;
     }
     if(e.key==='Escape'&&$('[data-sidebar-social-popover]')){closeSidebarSocial(true);return;}
+    if(e.key==='Escape'&&$('[data-local-language-popover]')){closeLanguagePicker();return;}
     if((e.key==='Enter'||e.key===' ')&&pageAccordionHeading(e.target)){
       e.preventDefault();toggleFaq(e.target);return;
     }
@@ -1346,7 +1440,7 @@
   document.addEventListener('touchend',e=>{if(swipeX!==null){const d=e.changedTouches[0].clientX-swipeX;if(Math.abs(d)>45)slide(d<0?1:-1);swipeX=null;}},{passive:true});
   function adaptToViewport() {
     const key=keyFor(currentPage);
-    if(key===currentKey){fitBanners();positionSidebarSocial();return;}
+    if(key===currentKey){fitBanners();positionSidebarSocial();const langBtn=test('language-picker-button');if($('[data-local-language-popover]')&&langBtn)positionAnchoredPopover($('[data-local-language-popover]'),langBtn);return;}
     const kind=modal,dialog=openLayout();
     const fields=dialog?$$('input',dialog).map((input,index)=>({id:input.dataset.testid,index,type:input.type,value:input.value,checked:input.checked})):[];
     const focusedId=document.activeElement?.dataset.testid;
