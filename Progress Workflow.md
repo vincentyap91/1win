@@ -1,5 +1,25 @@
 # Progress Workflow — 1win
 
+> 2026-10-16 Figma：1win 主站首页 After login 桌面＋手机已补齐：
+> - Desktop 1440 页 7:4：355:20858，1440×2501，放在原游客首页下方 x100/y15921；Mobile 390 页 7:5：355:32871，390×2479，x1202/y2779。每尺寸只新增一份登录后状态；游客首页24:2/37:2保留。
+> - 顶栏替换为币种 MYR、余额0.00、Deposit和带未读圆点的通知按钮；桌面侧栏显示 Demo user、ID 00000000 和头像未读标记。只使用既有脱敏本地展示，没有访问或导入真实账户资料。
+> - Components 页7:3：Header / Signed in 变体集354:695（桌面354:588、手机354:664）；Sidebar / Desktop signed in 354:696。Currency、Balance、Deposit label、Unread notification、User name、User ID可通过组件属性修改，沿用原站Inter和已有设计变量。
+> - 首页主体集中为 Home / Shared content / Desktop 354:1593、Mobile 354:2541；游客和登录后各使用同一主体组件的实例，游戏卡、Footer和底栏继续复用既有组件。后续改首页内容只需修改主组件。
+> - 同步修复手机旧导入的推广卡片：两张各173.2px、间距12px、高92px，Free money标题合为单行；通知和头像的未读圆点保留完整圆形。修复会同步到游客与登录后实例。
+> - 两尺寸全页及顶栏/资料区截图验收：277/215个可编辑文字，缺失字体0、零高度文字0、画板重叠0，无重复登录后画板，无整页UI位图。
+> - Banner、游戏人数及锦标赛复用既有首页快照，非实时个性化数据；本轮没有声称当前原站登录后全页100%验收。余额菜单、通知列表、充值弹窗和账户页不在本次首页请求范围。
+> - 机器记录在 Documents 工作副本 qa/home-auth-figma-2026-10-16/state.json。未改交付HTML，未加入gtag/GTM/广告追踪，未执行commit/push。
+
+> 2026-10-16 Figma：Forum 首页桌面＋手机设计已完成（仅本次首页请求范围）：
+> - 独立社区来源 https://forum.one-vv3591.com/；使用 Forum 自己的导航、灰色主题和页尾。
+> - Desktop 1440 页 7:4：334:19302，1440×3408.96；Mobile 390 页 7:5：334:28361，390×4434.69。两尺寸各一份首页，无重复整页，两份临时捕获画板已移除。
+> - 包含 Last Activity、Challenges & Promotions、1win、Off-topic、Local、Latest topics、完整页尾。桌面另含 Owner blog 与两张推广素材；手机隐藏推广右栏，最新主题移到分类下方。
+> - 修复导入时表格被排成纵向、分类高度错误、右栏图片被零高度轮播裁掉、主题头像错行和 data-SVG 字母头像丢失。保留原图素材；文字、布局、矢量和字母头像可编辑，非整页截图。
+> - Components 页 7:3：Forum Header 344:587、Footer 344:588、Latest topic 344:589 各含 Desktop/Mobile 变体，Avatar initial 343:802。条目公开 Title/Metadata/Replies；共享文字样式和独立 1win Forum 颜色、间距、圆角变量已绑定。
+> - 两尺寸截图及局部检查通过：可编辑文字 194/136，实例 19/12，缺失字体 0、零高度文字 0、整页 UI 位图 0；背景图片仅为原站装饰背景。
+> - 标题、人数、头像和时间是公共页面参考快照，非实时同步。Forum 分类详情、主题内容、个人页与登录状态不属于本次首页范围，未标记完成；全站最终视觉验收仍未完成。
+> - 机器记录在 Documents 工作副本 qa/forum-figma-2026-10-16/state.json。未修改交付 HTML，未引入 gtag/GTM/广告追踪，未执行 commit/push。
+
 > 2026-10-16 Figma：修复 Bet slip logo 与内容排版（只改 Figma）：
 > - 保留桌面 `230:98116`、手机 `230:98344` 原 Frame ID 与位置，仍在 `30 · Menus & Modals`。没有新增重复整页。
 > - 原站 `en/betting` 核实赛事卡片 1win 标志是居中的 `76×30px` 淡水印，opacity=0.04；原 SVG 导入丢失透明度及 CSS mask-size，变成约 232×91／191×76px 的黑标，已修复四处水印。

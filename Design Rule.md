@@ -187,3 +187,18 @@ Figma 文件：OmnjmGzEsH8UcsGk8uJJkk。页面分为 Overview、Design System、
 素材映射以原始地址／文件为键；同名 Mines、Plinko 等可能属于不同游戏或供应商，不能只按标题合并。复制实例后仍需逐项核查图片填充；克隆可能保留文字却丢失封面。空的 transform／图片 wrapper 若内部已有真实图片，不算缺图，末端图片图层为空才需要修复。
 
 手机分类页的无限追加／自动加载使用一份基础页面和可重复的网格表达，不为每批游戏复制整页。390×844 固定底部导航在长页面参考中位于 y=784；保留独立图层，后续原型设置固定滚动位置。源浏览器可测得 390.4px 的内部容器，根 Frame 仍为 390px 并按真实参考裁切，不为了凑整数任意改动所有内部宽度。
+
+
+## Forum 独立社区设计（2026-10-16）
+
+Forum 原站依据为 https://forum.one-vv3591.com/。它使用独立 Header、Footer 和灰色卡片。桌面 1440px 容器宽 1370px，左列 1016px、右侧区域 324px（含 15px 左间距），独立 Owner blog 图片 300×300px。手机 Frame 宽 390px，推广右栏隐藏，Latest topics 在分类下方；页尾 Menu/Other 收起、About 展开。
+
+使用原 Inter；背景 #2E3035、卡片约 #3A3D43、主文字 #F0F2F5、次文字 #9AA1B1，弱化控件背景 rgba(163,171,187,0.12)。Figma 颜色变量必须保留 alpha，避免半透明背景变成浅灰实色。字母头像保留原色圆底和可编辑字母。
+
+Components 页复用 Forum / Header、Forum / Footer、Forum / Latest topic 的 Device 变体，以及 Forum / Avatar initial。主题条目通过 Title/Metadata/Replies 属性编辑；图片素材独立可替换，颜色、间距和圆角绑定 1win Forum 变量。首页只保留 Desktop 1440、Mobile 390 两份可编辑画板，避免重复同布局整页。完成范围及节点 ID 见 Progress Workflow.md。
+
+## 主站首页登录后状态（2026-10-16）
+
+Figma 首页主体由 Home / Shared content / Desktop、Mobile 主组件维护；游客与 After login 状态均使用实例，避免重复修改Banner、游戏行和锦标赛布局。登录后顶栏复用 Header / Signed in 的 Device 变体；桌面资料栏复用 Sidebar / Desktop signed in。Footer与手机底栏沿用原有组件。
+
+登录后账户字段使用可编辑匿名示例：Demo user、ID 00000000、MYR、0.00；不用真实账户或财务信息作为设计内容。币种12px/16px半粗、余额14px/20px半粗；Desktop顶栏高68px，Deposit/通知按钮高44px；Mobile顶栏高60px，按钮高32px，余额区高40px。通知标记为8px橙色#FF5D26，外层不能裁切圆点。现有颜色、间距、圆角与文字样式统一复用，具体节点和完成范围见Progress Workflow.md。
