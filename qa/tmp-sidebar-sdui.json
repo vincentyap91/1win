@@ -1,0 +1,1399 @@
+[
+  {
+    "name": "Layout_Sidebar",
+    "params": {
+      "test": "test_s",
+      "gap": "var(--spacing-16)",
+      "closeButtonVariant": "staticSecondary"
+    },
+    "slots": {
+      "header": [
+        {
+          "name": "Layout_SidebarSlot",
+          "slots": {
+            "default": [
+              {
+                "name": "Layout_SidebarSlot",
+                "slots": {
+                  "default": [
+                    {
+                      "name": "Layout_SidebarSlot",
+                      "slots": {
+                        "default": [
+                          {
+                            "name": "Layout_SidebarProfileCell",
+                            "params": {
+                              "vipBadgeProps": {
+                                "variant": 1,
+                                "withBorder": false
+                              }
+                            }
+                          }
+                        ]
+                      },
+                      "params": {
+                        "paddingInline": {
+                          "full": "var(--spacing-16)",
+                          "compact": "10px"
+                        }
+                      }
+                    },
+                    {
+                      "name": "Layout_SidebarSlot",
+                      "slots": {
+                        "default": [
+                          {
+                            "name": "Freemoney_SidebarBanner",
+                            "params": {
+                              "kind": "default",
+                              "assets": {
+                                "fg": {
+                                  "full": [
+                                    {
+                                      "value": {
+                                        "image": "/b02632/plain/freemoney-sidebar-banner.1/full-v1.png",
+                                        "imgproxy": {
+                                          "srcset": [
+                                            {
+                                              "size": "1x",
+                                              "preset": "quality_2to1"
+                                            },
+                                            {
+                                              "size": "2x",
+                                              "preset": "quality"
+                                            }
+                                          ]
+                                        }
+                                      }
+                                    },
+                                    {
+                                      "value": {
+                                        "image": "/b02632/plain/freemoney-sidebar-banner.1/full-v1-rtl.png",
+                                        "imgproxy": {
+                                          "srcset": [
+                                            {
+                                              "size": "1x",
+                                              "preset": "quality_2to1"
+                                            },
+                                            {
+                                              "size": "2x",
+                                              "preset": "quality"
+                                            }
+                                          ]
+                                        }
+                                      },
+                                      "traits": {
+                                        "dir": "rtl"
+                                      }
+                                    }
+                                  ],
+                                  "compact": [
+                                    {
+                                      "value": {
+                                        "image": "/b02632/plain/freemoney-sidebar-banner.1/compact-v1.png",
+                                        "imgproxy": {
+                                          "srcset": [
+                                            {
+                                              "size": "1x",
+                                              "preset": "quality_2to1"
+                                            },
+                                            {
+                                              "size": "2x",
+                                              "preset": "quality"
+                                            }
+                                          ]
+                                        }
+                                      }
+                                    },
+                                    {
+                                      "value": {
+                                        "image": "/b02632/plain/freemoney-sidebar-banner.1/compact-rtl.png",
+                                        "imgproxy": {
+                                          "srcset": [
+                                            {
+                                              "size": "1x",
+                                              "preset": "quality_2to1"
+                                            },
+                                            {
+                                              "size": "2x",
+                                              "preset": "quality"
+                                            }
+                                          ]
+                                        }
+                                      },
+                                      "traits": {
+                                        "dir": "rtl"
+                                      }
+                                    }
+                                  ]
+                                },
+                                "v2": {
+                                  "fg": {
+                                    "full": [
+                                      {
+                                        "value": {
+                                          "image": "/b02632/plain/freemoney-sidebar-banner.1/full-v2.png",
+                                          "imgproxy": {
+                                            "srcset": [
+                                              {
+                                                "size": "1x",
+                                                "preset": "quality_2to1"
+                                              },
+                                              {
+                                                "size": "2x",
+                                                "preset": "quality"
+                                              }
+                                            ]
+                                          }
+                                        }
+                                      },
+                                      {
+                                        "value": {
+                                          "image": "/b02632/plain/freemoney-sidebar-banner.1/full-v2-rtl.png",
+                                          "imgproxy": {
+                                            "srcset": [
+                                              {
+                                                "size": "1x",
+                                                "preset": "quality_2to1"
+                                              },
+                                              {
+                                                "size": "2x",
+                                                "preset": "quality"
+                                              }
+                                            ]
+                                          }
+                                        },
+                                        "traits": {
+                                          "dir": "rtl"
+                                        }
+                                      }
+                                    ],
+                                    "compact": [
+                                      {
+                                        "value": {
+                                          "image": "/b02632/plain/freemoney-sidebar-banner.1/compact-v2.png",
+                                          "imgproxy": {
+                                            "srcset": [
+                                              {
+                                                "size": "1x",
+                                                "preset": "quality_2to1"
+                                              },
+                                              {
+                                                "size": "2x",
+                                                "preset": "quality"
+                                              }
+                                            ]
+                                          }
+                                        }
+                                      },
+                                      {
+                                        "value": {
+                                          "image": "/b02632/plain/freemoney-sidebar-banner.1/compact-v2-rtl.png",
+                                          "imgproxy": {
+                                            "srcset": [
+                                              {
+                                                "size": "1x",
+                                                "preset": "quality_2to1"
+                                              },
+                                              {
+                                                "size": "2x",
+                                                "preset": "quality"
+                                              }
+                                            ]
+                                          }
+                                        },
+                                        "traits": {
+                                          "dir": "rtl"
+                                        }
+                                      }
+                                    ]
+                                  }
+                                },
+                                "v3": {
+                                  "fg": {
+                                    "full": [
+                                      {
+                                        "value": {
+                                          "image": "/b02632/plain/freemoney-sidebar-banner.1/full-worldcup.png",
+                                          "imgproxy": {
+                                            "srcset": [
+                                              {
+                                                "size": "1x",
+                                                "preset": "quality_2to1"
+                                              },
+                                              {
+                                                "size": "2x",
+                                                "preset": "quality"
+                                              }
+                                            ]
+                                          }
+                                        }
+                                      }
+                                    ],
+                                    "compact": [
+                                      {
+                                        "value": {
+                                          "image": "/b02632/plain/freemoney-sidebar-banner.1/compact-worldcup.png",
+                                          "imgproxy": {
+                                            "srcset": [
+                                              {
+                                                "size": "1x",
+                                                "preset": "quality_2to1"
+                                              },
+                                              {
+                                                "size": "2x",
+                                                "preset": "quality"
+                                              }
+                                            ]
+                                          }
+                                        }
+                                      }
+                                    ]
+                                  },
+                                  "amount": "5 000 000 USDT"
+                                }
+                              },
+                              "variant": 2
+                            }
+                          }
+                        ]
+                      },
+                      "params": {
+                        "paddingInline": {
+                          "full": "var(--spacing-16)",
+                          "compact": "var(--spacing-8)"
+                        }
+                      }
+                    }
+                  ]
+                },
+                "params": {
+                  "gap": {
+                    "full": "var(--spacing-8)",
+                    "compact": "var(--spacing-16)"
+                  }
+                }
+              },
+              {
+                "name": "Layout_SidebarSlot",
+                "slots": {
+                  "default": [
+                    {
+                      "name": "Layout_SidebarExpandButton"
+                    }
+                  ]
+                }
+              }
+            ]
+          },
+          "params": {
+            "gap": "var(--spacing-16)"
+          }
+        }
+      ],
+      "content": [
+        {
+          "name": "Layout_SidebarSlot",
+          "slots": {
+            "default": [
+              {
+                "name": "Layout_SidebarSlot",
+                "slots": {
+                  "default": [
+                    {
+                      "name": "CryptoToken_SidebarDynamicSection"
+                    },
+                    {
+                      "name": "Casino_SidebarDynamicSection",
+                      "params": {
+                        "menu": [
+                          {
+                            "id": "casino-section",
+                            "type": "plain-section",
+                            "items": [
+                              {
+                                "id": "casino-group",
+                                "type": "group",
+                                "title": "sidebarMenu_casino",
+                                "link": {
+                                  "name": "casino-catalog"
+                                },
+                                "icon": [
+                                  {
+                                    "value": {
+                                      "image": "/b02632/plain/route/sidebar/casino-v2.svg",
+                                      "imgproxy": {
+                                        "srcset": [
+                                          {
+                                            "preset": "quality",
+                                            "size": "1x"
+                                          }
+                                        ]
+                                      }
+                                    }
+                                  }
+                                ],
+                                "dontPaintSelectedIcon": true,
+                                "items": [
+                                  {
+                                    "id": "casino-lobby",
+                                    "icon": [
+                                      {
+                                        "value": {
+                                          "image": "/b02632/plain/route/sidebar/casino-lobby-v2.svg",
+                                          "imgproxy": {
+                                            "srcset": [
+                                              {
+                                                "preset": "quality",
+                                                "size": "1x"
+                                              }
+                                            ]
+                                          }
+                                        }
+                                      }
+                                    ],
+                                    "type": "group",
+                                    "subtype": "dynamic-preset",
+                                    "title": "sidebarMenu_casinoLobby",
+                                    "link": {
+                                      "name": "casino-catalog"
+                                    },
+                                    "preset": "casino",
+                                    "items": []
+                                  },
+                                  {
+                                    "id": "casino-live",
+                                    "icon": [
+                                      {
+                                        "value": {
+                                          "image": "/b02632/plain/route/sidebar/casino-live.svg",
+                                          "imgproxy": {
+                                            "srcset": [
+                                              {
+                                                "preset": "quality",
+                                                "size": "1x"
+                                              }
+                                            ]
+                                          }
+                                        }
+                                      }
+                                    ],
+                                    "type": "group",
+                                    "subtype": "dynamic-preset",
+                                    "title": "sidebarMenu_liveGames",
+                                    "link": {
+                                      "name": "casino-live-games"
+                                    },
+                                    "preset": "live-games",
+                                    "items": []
+                                  },
+                                  {
+                                    "id": "casino-fast",
+                                    "icon": [
+                                      {
+                                        "value": {
+                                          "image": "/b02632/plain/route/sidebar/casino-fast.svg",
+                                          "imgproxy": {
+                                            "srcset": [
+                                              {
+                                                "preset": "quality",
+                                                "size": "1x"
+                                              }
+                                            ]
+                                          }
+                                        }
+                                      }
+                                    ],
+                                    "type": "group",
+                                    "subtype": "dynamic-preset",
+                                    "title": "sidebarMenu_fastGames",
+                                    "link": {
+                                      "name": "casino-quick-games"
+                                    },
+                                    "preset": "quick-games",
+                                    "items": []
+                                  },
+                                  {
+                                    "id": "casino-brand",
+                                    "icon": [
+                                      {
+                                        "value": {
+                                          "image": "/b02632/plain/route/sidebar/casino-brand-inline.svg",
+                                          "imgproxy": {
+                                            "srcset": [
+                                              {
+                                                "preset": "quality",
+                                                "size": "1x"
+                                              }
+                                            ]
+                                          }
+                                        }
+                                      }
+                                    ],
+                                    "type": "group",
+                                    "subtype": "dynamic-category",
+                                    "title": "1win games",
+                                    "category": "1win-games",
+                                    "popover": true,
+                                    "link": {
+                                      "name": "casino-catalog",
+                                      "params": {
+                                        "slug": "1win-games"
+                                      }
+                                    },
+                                    "items": []
+                                  }
+                                ]
+                              }
+                            ]
+                          }
+                        ]
+                      }
+                    },
+                    {
+                      "name": "Layout_SidebarMenuSection",
+                      "params": {
+                        "items": [
+                          {
+                            "id": "betting-group",
+                            "type": "group",
+                            "title": "sidebarMenu_betting",
+                            "link": {
+                              "name": "betting-frame"
+                            },
+                            "icon": [
+                              {
+                                "value": {
+                                  "image": "/b02632/plain/route/sidebar/betting-v2.svg",
+                                  "imgproxy": {
+                                    "srcset": [
+                                      {
+                                        "preset": "quality",
+                                        "size": "1x"
+                                      }
+                                    ]
+                                  }
+                                }
+                              }
+                            ],
+                            "dontPaintSelectedIcon": true,
+                            "items": [
+                              {
+                                "id": "betting-main",
+                                "icon": [
+                                  {
+                                    "value": {
+                                      "image": "/b02632/plain/route/sidebar/betting-main.svg",
+                                      "imgproxy": {
+                                        "srcset": [
+                                          {
+                                            "preset": "quality",
+                                            "size": "1x"
+                                          }
+                                        ]
+                                      }
+                                    }
+                                  }
+                                ],
+                                "type": "link",
+                                "title": "sidebarMenu_bettingMain",
+                                "link": {
+                                  "name": "betting-frame"
+                                },
+                                "exactActiveMatch": true
+                              },
+                              {
+                                "id": "betting-live",
+                                "icon": [
+                                  {
+                                    "value": {
+                                      "image": "/b02632/plain/route/sidebar/betting-live.svg",
+                                      "imgproxy": {
+                                        "srcset": [
+                                          {
+                                            "preset": "quality",
+                                            "size": "1x"
+                                          }
+                                        ]
+                                      }
+                                    }
+                                  }
+                                ],
+                                "type": "link",
+                                "title": "sidebarMenu_live",
+                                "link": "/betting/live"
+                              },
+                              {
+                                "id": "betting-prematch",
+                                "icon": [
+                                  {
+                                    "value": {
+                                      "image": "/b02632/plain/route/sidebar/betting-prematch.svg",
+                                      "imgproxy": {
+                                        "srcset": [
+                                          {
+                                            "preset": "quality",
+                                            "size": "1x"
+                                          }
+                                        ]
+                                      }
+                                    }
+                                  }
+                                ],
+                                "type": "link",
+                                "title": "sidebarMenu_prematch",
+                                "link": "/betting/prematch"
+                              },
+                              {
+                                "id": "betting-topbets",
+                                "icon": [
+                                  {
+                                    "value": {
+                                      "image": "/b02632/plain/route/sidebar/betting-topbets.svg",
+                                      "imgproxy": {
+                                        "srcset": [
+                                          {
+                                            "preset": "quality",
+                                            "size": "1x"
+                                          }
+                                        ]
+                                      }
+                                    }
+                                  }
+                                ],
+                                "type": "link",
+                                "title": "sidebarMenu_topBets",
+                                "link": "/betting/topbets?service=live"
+                              },
+                              {
+                                "id": "betting-cybersport",
+                                "icon": [
+                                  {
+                                    "value": {
+                                      "image": "/b02632/plain/route/sidebar/betting-cybersport.svg",
+                                      "imgproxy": {
+                                        "srcset": [
+                                          {
+                                            "preset": "quality",
+                                            "size": "1x"
+                                          }
+                                        ]
+                                      }
+                                    }
+                                  }
+                                ],
+                                "type": "link",
+                                "title": "sidebarMenu_cybersport",
+                                "link": "/betting/esport"
+                              },
+                              {
+                                "id": "betting-bets-history",
+                                "icon": [
+                                  {
+                                    "value": {
+                                      "image": "/b02632/plain/route/sidebar/betting-bets-history.svg",
+                                      "imgproxy": {
+                                        "srcset": [
+                                          {
+                                            "preset": "quality",
+                                            "size": "1x"
+                                          }
+                                        ]
+                                      }
+                                    }
+                                  }
+                                ],
+                                "type": "link",
+                                "title": "sidebarMenu_betsHistory",
+                                "link": "/betting/bets-history",
+                                "unauthAction": "signup"
+                              }
+                            ]
+                          },
+                          {
+                            "id": "markets",
+                            "type": "group",
+                            "title": "sidebarMenu_markets",
+                            "link": "/betting/markets",
+                            "icon": [
+                              {
+                                "value": {
+                                  "image": "/b02632/plain/route/sidebar/markets-v2.svg",
+                                  "imgproxy": {
+                                    "srcset": [
+                                      {
+                                        "preset": "quality",
+                                        "size": "1x"
+                                      }
+                                    ]
+                                  }
+                                }
+                              }
+                            ],
+                            "dontPaintSelectedIcon": true,
+                            "items": [
+                              {
+                                "id": "markets-crypto-live",
+                                "type": "link",
+                                "title": "sidebarMenu_marketsCryptoLive",
+                                "link": "/betting/markets/crypto-live-2072",
+                                "icon": [
+                                  {
+                                    "value": {
+                                      "image": "/b02632/plain/route/sidebar/crypto-live.svg",
+                                      "imgproxy": {
+                                        "srcset": [
+                                          {
+                                            "preset": "quality",
+                                            "size": "1x"
+                                          }
+                                        ]
+                                      }
+                                    }
+                                  }
+                                ]
+                              },
+                              {
+                                "id": "markets-politics",
+                                "type": "link",
+                                "title": "sidebarMenu_marketsPolitics",
+                                "link": "/betting/markets/politics-1032",
+                                "icon": [
+                                  {
+                                    "value": {
+                                      "image": "/b02632/plain/route/sidebar/politics.svg",
+                                      "imgproxy": {
+                                        "srcset": [
+                                          {
+                                            "preset": "quality",
+                                            "size": "1x"
+                                          }
+                                        ]
+                                      }
+                                    }
+                                  }
+                                ]
+                              }
+                            ]
+                          },
+                          {
+                            "id": "betwave",
+                            "icon": [
+                              {
+                                "value": {
+                                  "image": "/b02632/plain/route/sidebar/betwave-logo.svg",
+                                  "imgproxy": {
+                                    "srcset": [
+                                      {
+                                        "size": "1x",
+                                        "preset": "quality"
+                                      }
+                                    ]
+                                  }
+                                }
+                              }
+                            ],
+                            "link": "/betwave",
+                            "type": "group",
+                            "items": [
+                              {
+                                "id": "betwave-all-predictions",
+                                "icon": [
+                                  {
+                                    "value": {
+                                      "image": "/b02632/plain/route/sidebar/betwave-all-forecasts.svg",
+                                      "imgproxy": {
+                                        "srcset": [
+                                          {
+                                            "size": "1x",
+                                            "preset": "quality"
+                                          }
+                                        ]
+                                      }
+                                    }
+                                  }
+                                ],
+                                "link": "/betwave/predictions/all?period=week",
+                                "type": "externalSelfLink",
+                                "title": "sidebarMenu_betwaveMain"
+                              },
+                              {
+                                "id": "betwave-express",
+                                "icon": [
+                                  {
+                                    "value": {
+                                      "image": "/b02632/plain/route/sidebar/betwave-forecasts-express.svg",
+                                      "imgproxy": {
+                                        "srcset": [
+                                          {
+                                            "size": "1x",
+                                            "preset": "quality"
+                                          }
+                                        ]
+                                      }
+                                    }
+                                  }
+                                ],
+                                "link": "/betwave/predictions/express",
+                                "type": "externalSelfLink",
+                                "title": "sidebarMenu_betwavePredictionsExpress"
+                              },
+                              {
+                                "id": "betwave-today",
+                                "icon": [
+                                  {
+                                    "value": {
+                                      "image": "/b02632/plain/route/sidebar/betwave-forecasts-today.svg",
+                                      "imgproxy": {
+                                        "srcset": [
+                                          {
+                                            "size": "1x",
+                                            "preset": "quality"
+                                          }
+                                        ]
+                                      }
+                                    }
+                                  }
+                                ],
+                                "link": "/betwave/predictions/all?period=today",
+                                "type": "externalSelfLink",
+                                "title": "sidebarMenu_betwavePredictionsToday"
+                              },
+                              {
+                                "id": "betwave-tomorrow",
+                                "icon": [
+                                  {
+                                    "value": {
+                                      "image": "/b02632/plain/route/sidebar/betwave-forecasts-tomorrow.svg",
+                                      "imgproxy": {
+                                        "srcset": [
+                                          {
+                                            "size": "1x",
+                                            "preset": "quality"
+                                          }
+                                        ]
+                                      }
+                                    }
+                                  }
+                                ],
+                                "link": "/betwave/predictions/all?period=tomorrow",
+                                "type": "externalSelfLink",
+                                "title": "sidebarMenu_betwavePredictionsTomorrow"
+                              },
+                              {
+                                "id": "betwave-top-events",
+                                "icon": [
+                                  {
+                                    "value": {
+                                      "image": "/b02632/plain/route/sidebar/betwave-top.svg",
+                                      "imgproxy": {
+                                        "srcset": [
+                                          {
+                                            "size": "1x",
+                                            "preset": "quality"
+                                          }
+                                        ]
+                                      }
+                                    }
+                                  }
+                                ],
+                                "link": "/betwave/events",
+                                "type": "externalSelfLink",
+                                "title": "sidebarMenu_betwaveEvents"
+                              },
+                              {
+                                "id": "betwave-top-predictors",
+                                "icon": [
+                                  {
+                                    "value": {
+                                      "image": "/b02632/plain/route/sidebar/betwave-statistics.svg",
+                                      "imgproxy": {
+                                        "srcset": [
+                                          {
+                                            "size": "1x",
+                                            "preset": "quality"
+                                          }
+                                        ]
+                                      }
+                                    }
+                                  }
+                                ],
+                                "link": "/betwave/predictors",
+                                "type": "externalSelfLink",
+                                "title": "sidebarMenu_betwavePredictors"
+                              },
+                              {
+                                "id": "betwave-create",
+                                "icon": [
+                                  {
+                                    "value": {
+                                      "image": "/b02632/plain/route/sidebar/betwave-create-forecast.svg",
+                                      "imgproxy": {
+                                        "srcset": [
+                                          {
+                                            "size": "1x",
+                                            "preset": "quality"
+                                          }
+                                        ]
+                                      }
+                                    }
+                                  }
+                                ],
+                                "link": "/betwave/create",
+                                "type": "externalSelfLink",
+                                "title": "sidebarMenu_betwaveCreateForecast",
+                                "isIconColored": true
+                              }
+                            ],
+                            "title": "sidebarMenu_betwave",
+                            "dontPaintSelectedIcon": true
+                          },
+                          {
+                            "id": "bonuses",
+                            "icon": [
+                              {
+                                "value": {
+                                  "image": "/b02632/plain/route/sidebar/bonuses-v2.svg",
+                                  "imgproxy": {
+                                    "srcset": [
+                                      {
+                                        "preset": "quality",
+                                        "size": "1x"
+                                      }
+                                    ]
+                                  }
+                                }
+                              }
+                            ],
+                            "dontPaintSelectedIcon": true,
+                            "type": "link",
+                            "title": "sidebarMenu_bonuses",
+                            "link": {
+                              "name": "bonus-promotions-bonuses"
+                            },
+                            "badgeType": "bonuses"
+                          },
+                          {
+                            "id": "loyalty-program",
+                            "icon": [
+                              {
+                                "value": {
+                                  "image": "/b02632/plain/route/sidebar/loyalty-program.svg",
+                                  "imgproxy": {
+                                    "srcset": [
+                                      {
+                                        "preset": "quality",
+                                        "size": "1x"
+                                      }
+                                    ]
+                                  }
+                                }
+                              }
+                            ],
+                            "dontPaintSelectedIcon": true,
+                            "type": "link",
+                            "title": "sidebarMenu_loyaltyProgram",
+                            "link": "/loyalty-program",
+                            "badgeType": "new"
+                          },
+                          {
+                            "id": "vip-landing",
+                            "icon": [
+                              {
+                                "value": {
+                                  "image": "/b02632/plain/route/sidebar/vip-landing.svg",
+                                  "imgproxy": {
+                                    "srcset": [
+                                      {
+                                        "preset": "quality",
+                                        "size": "1x"
+                                      }
+                                    ]
+                                  }
+                                }
+                              }
+                            ],
+                            "dontPaintSelectedIcon": true,
+                            "type": "link",
+                            "title": "sidebarMenu_vipLanding",
+                            "link": "/vip-club"
+                          },
+                          {
+                            "icon": [
+                              {
+                                "value": {
+                                  "image": "/b02632/plain/route/sidebar/referral-program.svg",
+                                  "imgproxy": {
+                                    "srcset": [
+                                      {
+                                        "preset": "quality",
+                                        "size": "1x"
+                                      }
+                                    ]
+                                  }
+                                }
+                              }
+                            ],
+                            "id": "referral-program",
+                            "link": {
+                              "name": "referral-program"
+                            },
+                            "title": "sidebarMenu_referral",
+                            "type": "link",
+                            "badgeType": "new"
+                          }
+                        ]
+                      }
+                    }
+                  ]
+                },
+                "params": {
+                  "gap": "var(--spacing-4)"
+                }
+              },
+              {
+                "name": "Layout_SidebarSeparator"
+              },
+              {
+                "name": "Layout_SidebarMenuSection",
+                "params": {
+                  "items": [
+                    {
+                      "id": "promotions",
+                      "icon": [
+                        {
+                          "value": {
+                            "image": "/b02632/plain/route/sidebar/promotions.svg",
+                            "imgproxy": {
+                              "srcset": [
+                                {
+                                  "preset": "quality",
+                                  "size": "1x"
+                                }
+                              ]
+                            }
+                          }
+                        }
+                      ],
+                      "type": "link",
+                      "title": "sidebarMenu_promotions",
+                      "link": {
+                        "name": "bonus-promotions-promotions"
+                      }
+                    },
+                    {
+                      "id": "tournaments",
+                      "icon": [
+                        {
+                          "value": {
+                            "image": "/b02632/plain/route/sidebar/shield.svg",
+                            "imgproxy": {
+                              "srcset": [
+                                {
+                                  "preset": "quality",
+                                  "size": "1x"
+                                }
+                              ]
+                            }
+                          }
+                        }
+                      ],
+                      "type": "link",
+                      "title": "sidebarMenu_tournaments",
+                      "badgeType": "tournaments",
+                      "link": {
+                        "name": "tournaments-list"
+                      }
+                    },
+                    {
+                      "id": "blog",
+                      "icon": [
+                        {
+                          "value": {
+                            "image": "/b02632/plain/route/sidebar/blog.svg",
+                            "imgproxy": {
+                              "srcset": [
+                                {
+                                  "preset": "quality",
+                                  "size": "1x"
+                                }
+                              ]
+                            }
+                          }
+                        }
+                      ],
+                      "type": "link",
+                      "title": "sidebarMenu_blog",
+                      "link": "/blog"
+                    },
+                    {
+                      "id": "forum",
+                      "icon": [
+                        {
+                          "value": {
+                            "image": "/b02632/plain/route/sidebar/forum-v4.svg",
+                            "imgproxy": {
+                              "srcset": [
+                                {
+                                  "preset": "quality",
+                                  "size": "1x"
+                                }
+                              ]
+                            }
+                          }
+                        }
+                      ],
+                      "type": "link",
+                      "title": "sidebarMenu_forum",
+                      "link": {
+                        "name": "forum"
+                      }
+                    },
+                    {
+                      "id": "cockfight",
+                      "icon": [
+                        {
+                          "value": {
+                            "image": "/b02632/plain/route/sidebar/cockfighting.svg",
+                            "imgproxy": {
+                              "srcset": [
+                                {
+                                  "preset": "quality",
+                                  "size": "1x"
+                                }
+                              ]
+                            }
+                          }
+                        }
+                      ],
+                      "type": "link",
+                      "title": "sidebarMenu_cockfight",
+                      "link": {
+                        "name": "casino-game",
+                        "params": {
+                          "id": "v_ws168:ws168"
+                        }
+                      },
+                      "guards": {
+                        "country": {
+                          "args": [
+                            "ID",
+                            "MY",
+                            "VN",
+                            "KH",
+                            "TH",
+                            "PH"
+                          ],
+                          "type": "show"
+                        }
+                      }
+                    },
+                    {
+                      "id": "trading",
+                      "icon": [
+                        {
+                          "value": {
+                            "image": "/b02632/plain/route/sidebar/trading.svg",
+                            "imgproxy": {
+                              "srcset": [
+                                {
+                                  "preset": "quality",
+                                  "size": "1x"
+                                }
+                              ]
+                            }
+                          }
+                        }
+                      ],
+                      "type": "link",
+                      "title": "sidebarMenu_trading",
+                      "link": {
+                        "name": "casino-trading"
+                      },
+                      "guards": {
+                        "country": {
+                          "args": [
+                            "AE",
+                            "AM",
+                            "AO",
+                            "AR",
+                            "AZ",
+                            "BD",
+                            "BF",
+                            "BH",
+                            "BR",
+                            "BY",
+                            "CF",
+                            "CI",
+                            "CL",
+                            "CM",
+                            "CN",
+                            "CO",
+                            "CR",
+                            "DZ",
+                            "EC",
+                            "EG",
+                            "ER",
+                            "ET",
+                            "GE",
+                            "GH",
+                            "ID",
+                            "IN",
+                            "KE",
+                            "KG",
+                            "KH",
+                            "KR",
+                            "KZ",
+                            "LA",
+                            "LB",
+                            "LK",
+                            "MA",
+                            "MD",
+                            "ML",
+                            "MO",
+                            "MX",
+                            "MY",
+                            "NG",
+                            "PE",
+                            "PH",
+                            "PK",
+                            "QA",
+                            "RU",
+                            "SA",
+                            "SG",
+                            "SN",
+                            "SV",
+                            "TH",
+                            "TJ",
+                            "TM",
+                            "TN",
+                            "TR",
+                            "TW",
+                            "TZ",
+                            "UY",
+                            "UZ",
+                            "VE",
+                            "VN",
+                            "ZA",
+                            "ZM",
+                            "ZW"
+                          ],
+                          "type": "show"
+                        }
+                      }
+                    },
+                    {
+                      "id": "pachinko",
+                      "icon": [
+                        {
+                          "value": {
+                            "image": "/b02632/plain/route/sidebar/pachinko.svg",
+                            "imgproxy": {
+                              "srcset": [
+                                {
+                                  "size": "1x",
+                                  "preset": "quality"
+                                }
+                              ]
+                            }
+                          }
+                        }
+                      ],
+                      "link": {
+                        "name": "casino-game",
+                        "params": {
+                          "id": "v_gekipachi:pachinkobatongya"
+                        }
+                      },
+                      "type": "link",
+                      "title": "sidebarMenu_pachinko",
+                      "guards": {
+                        "country": {
+                          "args": [
+                            "JP"
+                          ],
+                          "type": "show"
+                        }
+                      }
+                    },
+                    {
+                      "id": "poker",
+                      "icon": [
+                        {
+                          "value": {
+                            "image": "/b02632/plain/route/sidebar/poker.svg",
+                            "imgproxy": {
+                              "srcset": [
+                                {
+                                  "preset": "quality",
+                                  "size": "1x"
+                                }
+                              ]
+                            }
+                          }
+                        }
+                      ],
+                      "type": "link",
+                      "title": "sidebarMenu_poker",
+                      "link": {
+                        "name": "casino-poker-pre-lobby"
+                      }
+                    },
+                    {
+                      "id": "poker-inhouse",
+                      "icon": [
+                        {
+                          "value": {
+                            "image": "/b02632/plain/route/sidebar/poker.svg",
+                            "imgproxy": {
+                              "srcset": [
+                                {
+                                  "preset": "quality",
+                                  "size": "1x"
+                                }
+                              ]
+                            }
+                          }
+                        }
+                      ],
+                      "type": "link",
+                      "title": "sidebarMenu_poker",
+                      "link": {
+                        "name": "casino-game",
+                        "params": {
+                          "id": "v_poker:poker"
+                        }
+                      },
+                      "featureFlag": {
+                        "key": "wlpan_4780_ab_poker_launch",
+                        "expectedValue": "treatment"
+                      }
+                    },
+                    {
+                      "id": "backgammon",
+                      "icon": [
+                        {
+                          "value": {
+                            "image": "/b02632/plain/route/sidebar/backgammon.svg",
+                            "imgproxy": {
+                              "srcset": [
+                                {
+                                  "preset": "quality",
+                                  "size": "1x"
+                                }
+                              ]
+                            }
+                          }
+                        }
+                      ],
+                      "type": "link",
+                      "title": "sidebarMenu_backgammon",
+                      "link": {
+                        "name": "casino-game",
+                        "params": {
+                          "id": "v_nards:Nards36"
+                        }
+                      },
+                      "guards": {
+                        "country": {
+                          "args": [
+                            "AZ",
+                            "TR"
+                          ],
+                          "type": "show"
+                        }
+                      }
+                    }
+                  ]
+                }
+              }
+            ]
+          },
+          "params": {
+            "gap": "var(--spacing-16)",
+            "fullHeight": true,
+            "paddingInline": {
+              "full": "var(--spacing-16)",
+              "compact": "var(--spacing-8)"
+            }
+          }
+        }
+      ],
+      "fixed:footer": [
+        {
+          "name": "Layout_SidebarSlot",
+          "slots": {
+            "default": [
+              {
+                "name": "Layout_SidebarSlot",
+                "slots": {
+                  "default": [
+                    {
+                      "name": "Layout_SidebarBannerApp",
+                      "params": {
+                        "assets": {
+                          "icons": {}
+                        }
+                      }
+                    },
+                    {
+                      "name": "Layout_SidebarSocialAndLang",
+                      "params": {
+                        "buttonsVariant": "neutral"
+                      }
+                    }
+                  ]
+                },
+                "params": {
+                  "gap": "var(--spacing-8)",
+                  "paddingInline": {
+                    "full": "var(--spacing-16)",
+                    "compact": "var(--spacing-8)"
+                  }
+                }
+              },
+              {
+                "name": "Layout_SidebarSlot",
+                "slots": {
+                  "supportSection": [
+                    {
+                      "name": "Layout_SidebarSlot",
+                      "slots": {
+                        "supportButton": [
+                          {
+                            "name": "Layout_SidebarSupportButton",
+                            "params": {
+                              "buttonsVariant": "neutral"
+                            }
+                          }
+                        ]
+                      },
+                      "params": {
+                        "paddingBlock": {
+                          "full": "var(--spacing-12) 0",
+                          "compact": "var(--spacing-16) 0"
+                        },
+                        "paddingInline": {
+                          "full": "var(--spacing-16)",
+                          "compact": "var(--spacing-8)"
+                        }
+                      }
+                    }
+                  ]
+                },
+                "params": {
+                  "separator": {
+                    "prepend": true
+                  }
+                }
+              }
+            ]
+          },
+          "params": {
+            "gap": "var(--spacing-16)"
+          }
+        }
+      ]
+    }
+  }
+]

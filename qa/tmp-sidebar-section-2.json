@@ -1,0 +1,495 @@
+{
+  "name": "Layout_SidebarMenuSection",
+  "params": {
+    "items": [
+      {
+        "id": "betting-group",
+        "type": "group",
+        "title": "sidebarMenu_betting",
+        "link": {
+          "name": "betting-frame"
+        },
+        "icon": [
+          {
+            "value": {
+              "image": "/b02632/plain/route/sidebar/betting-v2.svg",
+              "imgproxy": {
+                "srcset": [
+                  {
+                    "preset": "quality",
+                    "size": "1x"
+                  }
+                ]
+              }
+            }
+          }
+        ],
+        "dontPaintSelectedIcon": true,
+        "items": [
+          {
+            "id": "betting-main",
+            "icon": [
+              {
+                "value": {
+                  "image": "/b02632/plain/route/sidebar/betting-main.svg",
+                  "imgproxy": {
+                    "srcset": [
+                      {
+                        "preset": "quality",
+                        "size": "1x"
+                      }
+                    ]
+                  }
+                }
+              }
+            ],
+            "type": "link",
+            "title": "sidebarMenu_bettingMain",
+            "link": {
+              "name": "betting-frame"
+            },
+            "exactActiveMatch": true
+          },
+          {
+            "id": "betting-live",
+            "icon": [
+              {
+                "value": {
+                  "image": "/b02632/plain/route/sidebar/betting-live.svg",
+                  "imgproxy": {
+                    "srcset": [
+                      {
+                        "preset": "quality",
+                        "size": "1x"
+                      }
+                    ]
+                  }
+                }
+              }
+            ],
+            "type": "link",
+            "title": "sidebarMenu_live",
+            "link": "/betting/live"
+          },
+          {
+            "id": "betting-prematch",
+            "icon": [
+              {
+                "value": {
+                  "image": "/b02632/plain/route/sidebar/betting-prematch.svg",
+                  "imgproxy": {
+                    "srcset": [
+                      {
+                        "preset": "quality",
+                        "size": "1x"
+                      }
+                    ]
+                  }
+                }
+              }
+            ],
+            "type": "link",
+            "title": "sidebarMenu_prematch",
+            "link": "/betting/prematch"
+          },
+          {
+            "id": "betting-topbets",
+            "icon": [
+              {
+                "value": {
+                  "image": "/b02632/plain/route/sidebar/betting-topbets.svg",
+                  "imgproxy": {
+                    "srcset": [
+                      {
+                        "preset": "quality",
+                        "size": "1x"
+                      }
+                    ]
+                  }
+                }
+              }
+            ],
+            "type": "link",
+            "title": "sidebarMenu_topBets",
+            "link": "/betting/topbets?service=live"
+          },
+          {
+            "id": "betting-cybersport",
+            "icon": [
+              {
+                "value": {
+                  "image": "/b02632/plain/route/sidebar/betting-cybersport.svg",
+                  "imgproxy": {
+                    "srcset": [
+                      {
+                        "preset": "quality",
+                        "size": "1x"
+                      }
+                    ]
+                  }
+                }
+              }
+            ],
+            "type": "link",
+            "title": "sidebarMenu_cybersport",
+            "link": "/betting/esport"
+          },
+          {
+            "id": "betting-bets-history",
+            "icon": [
+              {
+                "value": {
+                  "image": "/b02632/plain/route/sidebar/betting-bets-history.svg",
+                  "imgproxy": {
+                    "srcset": [
+                      {
+                        "preset": "quality",
+                        "size": "1x"
+                      }
+                    ]
+                  }
+                }
+              }
+            ],
+            "type": "link",
+            "title": "sidebarMenu_betsHistory",
+            "link": "/betting/bets-history",
+            "unauthAction": "signup"
+          }
+        ]
+      },
+      {
+        "id": "markets",
+        "type": "group",
+        "title": "sidebarMenu_markets",
+        "link": "/betting/markets",
+        "icon": [
+          {
+            "value": {
+              "image": "/b02632/plain/route/sidebar/markets-v2.svg",
+              "imgproxy": {
+                "srcset": [
+                  {
+                    "preset": "quality",
+                    "size": "1x"
+                  }
+                ]
+              }
+            }
+          }
+        ],
+        "dontPaintSelectedIcon": true,
+        "items": [
+          {
+            "id": "markets-crypto-live",
+            "type": "link",
+            "title": "sidebarMenu_marketsCryptoLive",
+            "link": "/betting/markets/crypto-live-2072",
+            "icon": [
+              {
+                "value": {
+                  "image": "/b02632/plain/route/sidebar/crypto-live.svg",
+                  "imgproxy": {
+                    "srcset": [
+                      {
+                        "preset": "quality",
+                        "size": "1x"
+                      }
+                    ]
+                  }
+                }
+              }
+            ]
+          },
+          {
+            "id": "markets-politics",
+            "type": "link",
+            "title": "sidebarMenu_marketsPolitics",
+            "link": "/betting/markets/politics-1032",
+            "icon": [
+              {
+                "value": {
+                  "image": "/b02632/plain/route/sidebar/politics.svg",
+                  "imgproxy": {
+                    "srcset": [
+                      {
+                        "preset": "quality",
+                        "size": "1x"
+                      }
+                    ]
+                  }
+                }
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "betwave",
+        "icon": [
+          {
+            "value": {
+              "image": "/b02632/plain/route/sidebar/betwave-logo.svg",
+              "imgproxy": {
+                "srcset": [
+                  {
+                    "size": "1x",
+                    "preset": "quality"
+                  }
+                ]
+              }
+            }
+          }
+        ],
+        "link": "/betwave",
+        "type": "group",
+        "items": [
+          {
+            "id": "betwave-all-predictions",
+            "icon": [
+              {
+                "value": {
+                  "image": "/b02632/plain/route/sidebar/betwave-all-forecasts.svg",
+                  "imgproxy": {
+                    "srcset": [
+                      {
+                        "size": "1x",
+                        "preset": "quality"
+                      }
+                    ]
+                  }
+                }
+              }
+            ],
+            "link": "/betwave/predictions/all?period=week",
+            "type": "externalSelfLink",
+            "title": "sidebarMenu_betwaveMain"
+          },
+          {
+            "id": "betwave-express",
+            "icon": [
+              {
+                "value": {
+                  "image": "/b02632/plain/route/sidebar/betwave-forecasts-express.svg",
+                  "imgproxy": {
+                    "srcset": [
+                      {
+                        "size": "1x",
+                        "preset": "quality"
+                      }
+                    ]
+                  }
+                }
+              }
+            ],
+            "link": "/betwave/predictions/express",
+            "type": "externalSelfLink",
+            "title": "sidebarMenu_betwavePredictionsExpress"
+          },
+          {
+            "id": "betwave-today",
+            "icon": [
+              {
+                "value": {
+                  "image": "/b02632/plain/route/sidebar/betwave-forecasts-today.svg",
+                  "imgproxy": {
+                    "srcset": [
+                      {
+                        "size": "1x",
+                        "preset": "quality"
+                      }
+                    ]
+                  }
+                }
+              }
+            ],
+            "link": "/betwave/predictions/all?period=today",
+            "type": "externalSelfLink",
+            "title": "sidebarMenu_betwavePredictionsToday"
+          },
+          {
+            "id": "betwave-tomorrow",
+            "icon": [
+              {
+                "value": {
+                  "image": "/b02632/plain/route/sidebar/betwave-forecasts-tomorrow.svg",
+                  "imgproxy": {
+                    "srcset": [
+                      {
+                        "size": "1x",
+                        "preset": "quality"
+                      }
+                    ]
+                  }
+                }
+              }
+            ],
+            "link": "/betwave/predictions/all?period=tomorrow",
+            "type": "externalSelfLink",
+            "title": "sidebarMenu_betwavePredictionsTomorrow"
+          },
+          {
+            "id": "betwave-top-events",
+            "icon": [
+              {
+                "value": {
+                  "image": "/b02632/plain/route/sidebar/betwave-top.svg",
+                  "imgproxy": {
+                    "srcset": [
+                      {
+                        "size": "1x",
+                        "preset": "quality"
+                      }
+                    ]
+                  }
+                }
+              }
+            ],
+            "link": "/betwave/events",
+            "type": "externalSelfLink",
+            "title": "sidebarMenu_betwaveEvents"
+          },
+          {
+            "id": "betwave-top-predictors",
+            "icon": [
+              {
+                "value": {
+                  "image": "/b02632/plain/route/sidebar/betwave-statistics.svg",
+                  "imgproxy": {
+                    "srcset": [
+                      {
+                        "size": "1x",
+                        "preset": "quality"
+                      }
+                    ]
+                  }
+                }
+              }
+            ],
+            "link": "/betwave/predictors",
+            "type": "externalSelfLink",
+            "title": "sidebarMenu_betwavePredictors"
+          },
+          {
+            "id": "betwave-create",
+            "icon": [
+              {
+                "value": {
+                  "image": "/b02632/plain/route/sidebar/betwave-create-forecast.svg",
+                  "imgproxy": {
+                    "srcset": [
+                      {
+                        "size": "1x",
+                        "preset": "quality"
+                      }
+                    ]
+                  }
+                }
+              }
+            ],
+            "link": "/betwave/create",
+            "type": "externalSelfLink",
+            "title": "sidebarMenu_betwaveCreateForecast",
+            "isIconColored": true
+          }
+        ],
+        "title": "sidebarMenu_betwave",
+        "dontPaintSelectedIcon": true
+      },
+      {
+        "id": "bonuses",
+        "icon": [
+          {
+            "value": {
+              "image": "/b02632/plain/route/sidebar/bonuses-v2.svg",
+              "imgproxy": {
+                "srcset": [
+                  {
+                    "preset": "quality",
+                    "size": "1x"
+                  }
+                ]
+              }
+            }
+          }
+        ],
+        "dontPaintSelectedIcon": true,
+        "type": "link",
+        "title": "sidebarMenu_bonuses",
+        "link": {
+          "name": "bonus-promotions-bonuses"
+        },
+        "badgeType": "bonuses"
+      },
+      {
+        "id": "loyalty-program",
+        "icon": [
+          {
+            "value": {
+              "image": "/b02632/plain/route/sidebar/loyalty-program.svg",
+              "imgproxy": {
+                "srcset": [
+                  {
+                    "preset": "quality",
+                    "size": "1x"
+                  }
+                ]
+              }
+            }
+          }
+        ],
+        "dontPaintSelectedIcon": true,
+        "type": "link",
+        "title": "sidebarMenu_loyaltyProgram",
+        "link": "/loyalty-program",
+        "badgeType": "new"
+      },
+      {
+        "id": "vip-landing",
+        "icon": [
+          {
+            "value": {
+              "image": "/b02632/plain/route/sidebar/vip-landing.svg",
+              "imgproxy": {
+                "srcset": [
+                  {
+                    "preset": "quality",
+                    "size": "1x"
+                  }
+                ]
+              }
+            }
+          }
+        ],
+        "dontPaintSelectedIcon": true,
+        "type": "link",
+        "title": "sidebarMenu_vipLanding",
+        "link": "/vip-club"
+      },
+      {
+        "icon": [
+          {
+            "value": {
+              "image": "/b02632/plain/route/sidebar/referral-program.svg",
+              "imgproxy": {
+                "srcset": [
+                  {
+                    "preset": "quality",
+                    "size": "1x"
+                  }
+                ]
+              }
+            }
+          }
+        ],
+        "id": "referral-program",
+        "link": {
+          "name": "referral-program"
+        },
+        "title": "sidebarMenu_referral",
+        "type": "link",
+        "badgeType": "new"
+      }
+    ]
+  }
+}
