@@ -56,7 +56,19 @@ body[data-page="freemoney"] [class*="chips-section-floating_root"]{position:stic
   padding-left: var(--padding);
 }
 
+/* Free money wide Demo capture left a Lucky Drive skeleton (214px of empty padding)
+   beside the real promotion card. Hide that placeholder. */
+#luckyDrive:has(.lucky-drive-skeleton_root-HYTsV),
+.lucky-drive-skeleton_root-HYTsV { display: none; }
+
 /* Loyalty level trophies: the captured srcset lists the same file as 1x and 2x, so on 2x screens
    the slot shrinks to ~135px. Keep it card-wide. */
 .level_foreground-thziT { width: 100%; inset-inline-end: 0; }
 .level_foreground-thziT img { width: 100%; height: auto; }
+
+/* VIP Club award ticker. Below 1024px the live site has no sidebar and --edge-offset is 0.
+   The 390 and 768 captures baked in the 280px sidebar width, and the mobile rule
+   translates the strip by that amount, so the awards sit off the left edge. */
+@media (max-width: 1023px) {
+  .variant-2_wideShell-dxo92 { --edge-offset: 0px !important; }
+}

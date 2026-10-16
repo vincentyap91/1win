@@ -5,6 +5,7 @@ window.PROJECT_ROUTES={
     "/freemoney": "freemoney.html",
     "/about-token": "freemoney.html",
     "/poker": "index.html",
+    "/forum": "forum/index.html",
     "/casino/live-casino": "casino-live.html",
     "/casino/quick-games": "casino-quick.html",
     "/casino/level-up": "casino.html",

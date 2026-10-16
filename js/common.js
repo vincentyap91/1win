@@ -738,8 +738,7 @@
     if(u.hostname!=='one-vv3591.com')return;
     if(u.searchParams.get('x')?.includes('sign-up')){openModal('registration');return;}
     if(u.pathname.startsWith('/casino/play/')){let stored={};try{stored=JSON.parse(sessionStorage.getItem(GAME_KEY)||'{}');}catch{}if(stored.href!==u.pathname)rememberGame(null,u.pathname);go('casino-play.html');return;}
-    // /forum leaves the app for forum.one-vv3591.com (user posts), which is not part of this preview.
-    if(u.pathname==='/forum'){notice('The 1win forum is a separate website and is not part of this preview.');return;}
+    // /forum is the local copy of the public forum (forum/index.html), including ?preview=auth via go().
     // League listings (/betting/<section>/<sport>/<league>) change with the live schedule; only sport filters were captured.
     if(/^\/betting\/[^/]+\/[^/]+\/[^/]+$/.test(u.pathname)&&!routeFile(u.pathname)){notice('League pages follow the live schedule and are not part of this preview.');return;}
     const file=routeFile(u.pathname);
@@ -821,8 +820,16 @@
       a.hidden=!label.toLowerCase().includes(query.trim().toLowerCase());
     });
   }
+  function pageAccordionHeading(el){
+    if(!el?.matches?.('[class*="accordion-heading_root-"]'))return null;
+    if(el.closest('[class*="navigation-section_root"]'))return null;
+    const root=el.closest('[class*="accordion_root-"]');
+    if(!root||!$('[class*="accordion-body_root-"]',root))return null;
+    return el;
+  }
   function initFaqAccordions() {
-    $$('[class*="FaqSection_accordionContainer"] [class*="accordion_root-"]').forEach((root,index)=>{
+    $$('[class*="accordion_root-"]').forEach((root,index)=>{
+      if(root.closest('[class*="navigation-section_root"]'))return;
       const heading=$('[class*="accordion-heading_root-"]',root),body=$('[class*="accordion-body_root-"]',root);
       if(!heading||!body)return;
       body.id='local-faq-answer-'+index;
@@ -969,7 +976,7 @@
     if(!el)return;
     const id=el.dataset.testid||'', text=el.textContent.trim();
     if(el.matches('[class*="seo_button-"]')&&el.closest('[class*="seo_root-"]')){toggleSeo(el);return;}
-    if(el.matches('[class*="accordion-heading_root-"]')&&el.closest('[class*="FaqSection_accordionContainer"]')){
+    if(pageAccordionHeading(el)){
       toggleFaq(el);return;
     }
     const footerSection=el.closest('[class*="navigation-section_root"]');
@@ -1164,7 +1171,7 @@
       e.preventDefault();toggleSidebarSocial(e.target);return;
     }
     if(e.key==='Escape'&&$('[data-sidebar-social-popover]')){closeSidebarSocial(true);return;}
-    if((e.key==='Enter'||e.key===' ')&&e.target.matches('[class*="FaqSection_accordionContainer"] [class*="accordion-heading_root-"]')){
+    if((e.key==='Enter'||e.key===' ')&&pageAccordionHeading(e.target)){
       e.preventDefault();toggleFaq(e.target);return;
     }
     if((e.key==='Enter'||e.key===' ')&&e.target.matches('[data-testid="casino-group-toggle"],[data-testid="betting-group-toggle"],[data-testid="markets-toggle"],[data-testid="betwave-toggle"],[data-testid="casino-lobby-toggle"],[data-testid="casino-live-toggle"],[data-testid="casino-fast-toggle"],[data-testid="casino-brand-toggle"]')){
@@ -1183,8 +1190,8 @@
     const kind=modal,dialog=openLayout();
     const fields=dialog?$$('input',dialog).map((input,index)=>({id:input.dataset.testid,index,type:input.type,value:input.value,checked:input.checked})):[];
     const focusedId=document.activeElement?.dataset.testid;
-    const faqOpen=$$('[class*="FaqSection_accordionContainer"] [class*="accordion-heading_root-"][aria-expanded="true"]').map(n=>n.textContent.trim());
-    const faqFocused=document.activeElement?.closest('[class*="FaqSection_accordionContainer"]')?document.activeElement.textContent.trim():null;
+    const faqOpen=$$('[class*="accordion-heading_root-"][aria-expanded="true"]').filter(pageAccordionHeading).map(n=>n.textContent.trim());
+    const faqFocused=pageAccordionHeading(document.activeElement)?document.activeElement.textContent.trim():null;
     const seoOpen=$$('[class*="seo_root-"]').map(root=>root.className.includes('seo_expanded-'));
     const seoFocused=document.activeElement?.matches('[class*="seo_button-"]')?$$('[class*="seo_button-"]').indexOf(document.activeElement):-1;
     const bet=$('[data-local-bet-form]'),betOpen=bet&&{question:bet.dataset.question,side:bet.dataset.side,amount:+bet.dataset.amount||0};
@@ -1197,7 +1204,7 @@
       if(seoOpen[index]&&button.getAttribute('aria-expanded')!=='true')toggleSeo(button);
       if(seoFocused===index)button.focus({preventScroll:true});
     });
-    $$('[class*="FaqSection_accordionContainer"] [class*="accordion-heading_root-"]').forEach(heading=>{
+    $$('[class*="accordion-heading_root-"]').filter(pageAccordionHeading).forEach(heading=>{
       if(faqOpen.includes(heading.textContent.trim())&&heading.getAttribute('aria-expanded')!=='true')toggleFaq(heading);
       if(faqFocused===heading.textContent.trim())heading.focus({preventScroll:true});
     });

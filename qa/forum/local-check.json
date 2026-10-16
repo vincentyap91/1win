@@ -1,0 +1,146 @@
+{
+  "mainForumLink": {
+    "found": true,
+    "href": "forum/index.html?preview=auth",
+    "text": "Forum",
+    "routes": true,
+    "ready": "complete",
+    "waited": 1
+  },
+  "fileForum": {
+    "title": "1win Forum | Discuss Betting, Sports, and Casino Games",
+    "href": "file:///C:/Users/Vincent/OneDrive/Desktop/1win/forum/index.html?preview=auth",
+    "bg": "rgb(46, 48, 53)",
+    "font": "Inter, \"Helvetica Neue\", Helvetica, Arial, sans-serif",
+    "overflow": false,
+    "scrollW": 1440,
+    "inner": 1440,
+    "imgs": 43,
+    "broken": [],
+    "brokenCount": 0,
+    "h1": [
+      "Forums",
+      "Challenges & Promotions",
+      "1win",
+      "Off-topic",
+      "Local"
+    ],
+    "sheets": 14,
+    "inter": true,
+    "awesome": true
+  },
+  "signIn": {
+    "hidden": false,
+    "w": 200,
+    "h": 291,
+    "text": "Sign In Remember me Forgot your password? Sign In"
+  },
+  "fileCategory": {
+    "title": "Casino Promotions - 1win Forum",
+    "href": "file:///C:/Users/Vincent/OneDrive/Desktop/1win/forum/2-casino-promotions.html?preview=auth",
+    "bg": "rgb(46, 48, 53)",
+    "font": "Inter, \"Helvetica Neue\", Helvetica, Arial, sans-serif",
+    "overflow": false,
+    "scrollW": 1440,
+    "inner": 1440,
+    "imgs": 37,
+    "broken": [],
+    "brokenCount": 0,
+    "h1": [
+      "Forums",
+      "Casino Promotions",
+      "97 topics in this forum",
+      "97 topics in this forum"
+    ],
+    "sheets": 14,
+    "inter": true,
+    "awesome": true
+  },
+  "fileTopic": {
+    "title": "🎰 Slot Royale: €1M Tournament From Galaxsys ​ - Casino Promotions - 1win Forum",
+    "href": "file:///C:/Users/Vincent/OneDrive/Desktop/1win/forum/topic-2200.html?preview=auth",
+    "bg": "rgb(46, 48, 53)",
+    "font": "Inter, \"Helvetica Neue\", Helvetica, Arial, sans-serif",
+    "overflow": false,
+    "scrollW": 1440,
+    "inner": 1440,
+    "imgs": 6,
+    "broken": [],
+    "brokenCount": 0,
+    "h1": [
+      "Forums",
+      "🎰 Slot Royale: €1M Tournament From Galaxsys  ​",
+      "Recommended Posts",
+      "Create an account or sign in to comment"
+    ],
+    "sheets": 16,
+    "inter": true,
+    "awesome": true,
+    "sample": "Alex 1win Posted 14 hours ago Administrators 62 Slot Royale: €1M Tournament From Galaxsys €1M TOURNAMENT Slot Royale from Galaxsys is already underway. It start"
+  },
+  "fileRegister": {
+    "title": "Registration - 1win Forum",
+    "action": "#",
+    "fields": 18
+  },
+  "fileMobile": {
+    "title": "1win Forum | Discuss Betting, Sports, and Casino Games",
+    "href": "file:///C:/Users/Vincent/OneDrive/Desktop/1win/forum/index.html",
+    "bg": "rgb(46, 48, 53)",
+    "font": "Inter, \"Helvetica Neue\", Helvetica, Arial, sans-serif",
+    "overflow": false,
+    "scrollW": 390,
+    "inner": 390,
+    "imgs": 43,
+    "broken": [],
+    "brokenCount": 0,
+    "h1": [
+      "Forums",
+      "Challenges & Promotions",
+      "1win",
+      "Off-topic",
+      "Local"
+    ],
+    "sheets": 14,
+    "inter": true,
+    "awesome": true
+  },
+  "drawer": {
+    "open": true,
+    "w": 390,
+    "h": 844,
+    "text": "× Forum Casino Betting Free Money"
+  },
+  "drawerClosed": false,
+  "httpForum": {
+    "title": "1win Forum | Discuss Betting, Sports, and Casino Games",
+    "href": "http://127.0.0.1:4175/forum/index.html?preview=auth",
+    "bg": "rgb(46, 48, 53)",
+    "font": "Inter, \"Helvetica Neue\", Helvetica, Arial, sans-serif",
+    "overflow": false,
+    "scrollW": 1440,
+    "inner": 1440,
+    "imgs": 43,
+    "broken": [],
+    "brokenCount": 0,
+    "h1": [
+      "Forums",
+      "Challenges & Promotions",
+      "1win",
+      "Off-topic",
+      "Local"
+    ],
+    "sheets": 14,
+    "inter": true,
+    "awesome": true
+  },
+  "errors": {
+    "desk": [
+      "Failed to load resource: net::ERR_FILE_NOT_FOUND"
+    ],
+    "phone": [],
+    "http": [
+      "Failed to load resource: the server responded with a status of 404 (Not Found)"
+    ]
+  }
+}

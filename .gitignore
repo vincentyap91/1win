@@ -9,3 +9,6 @@ qa/*/migration-backup/
 # Scratch captures. qa/tmp-sdui.json contained a Google API key that GitHub secret scanning flagged.
 qa/tmp-*
 scripts/tmp-*
+
+scripts/probes/tmp-*
+

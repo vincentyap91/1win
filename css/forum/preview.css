@@ -1,0 +1,70 @@
+/* Local preview behavior for the saved Invision forum. Does not restyle the main site. */
+
+#elMobileDrawer.forum-open {
+  display: block;
+  z-index: 30000;
+  background: rgba(20, 20, 21, 0.55);
+}
+
+#elSignInLink {
+  position: relative;
+}
+
+#elUserSignIn_menu.forum-open {
+  display: block;
+  top: calc(100% + 6px);
+  right: 0;
+  left: auto;
+}
+
+#elNavigationMore {
+  position: relative;
+}
+
+#elNavigationMore .ipsNavBar_secondary.forum-open,
+#elNavigationMore_more_dropdown_menu.forum-open {
+  display: block;
+}
+
+#elNavigationMore_more_dropdown_menu.forum-open {
+  position: absolute;
+  top: 100%;
+  right: 0;
+  left: auto;
+  min-width: 200px;
+  z-index: 10000;
+}
+
+.cForumRow.forum-collapsed > .ipsDataList,
+.cForumRow.forum-collapsed > ol[data-role="forums"] {
+  display: none;
+}
+
+.ipsCarousel.forum-ready .ipsCarousel_item {
+  display: none;
+}
+
+.ipsCarousel.forum-ready .ipsCarousel_item.forum-active {
+  display: block;
+}
+
+body.forum-drawer-open {
+  overflow: hidden;
+}
+
+.forum-preview-note {
+  position: fixed;
+  z-index: 40000;
+  left: 50%;
+  bottom: 24px;
+  transform: translateX(-50%);
+  max-width: min(440px, calc(100vw - 32px));
+  margin: 0;
+  padding: 12px 16px;
+  border-radius: 10px;
+  background: #1c1e22;
+  color: #f0f2f5;
+  border: 1px solid rgba(255, 255, 255, 0.14);
+  box-shadow: 0 8px 28px rgba(0, 0, 0, 0.35);
+  font: 500 14px/1.4 Inter, "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
