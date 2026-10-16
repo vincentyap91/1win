@@ -892,5 +892,11 @@
       "sports filter pages",
       "betwave-create / trading / casino-trading (auth dialog only)"
     ]
+  },
+  "promotion_popups_2026_10_16": {
+    "section": "308:33997",
+    "source": "original site (local popups miss CSS)",
+    "frames": 18,
+    "top_bets_desktop": "222:92721 content replaced (betslip top, no cut card)"
   }
 }

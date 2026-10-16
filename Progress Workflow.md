@@ -1,5 +1,11 @@
 # Progress Workflow — 1win
 
+> 2026-10-16 Figma：Promotion 弹窗 + TOP Bets（只改 Figma，未改网站代码）：
+> - `30 · Menus & Modals` 新增 Section「Promotion details · all popups」`308:33997`：9 个活动弹窗（Welcome Bonus、Lucky Drive、Multiple bet bonus、Popular bets in TOP Bets、1:0 Early Payout、Up to 200,000 USDT crypto tournaments、Evoplay Crystal Rush、Rakeback poker、$20,000 GTD）× 桌面 1440 / 手机 390，共 18 个；弹窗内容完整展开（不截断滚动）。Halloween 弹窗原有 Frame 保留。
+> - 这 18 个弹窗直接从原站抓取（本地弹窗缺 CSS：Multiple bet 的投注列表、Example 区块等排版不对），标题字距按原站宽度对齐，避免被截断。注意原站 Lucky Drive 内容已更新为 Lamborghini Urus SE。
+> - TOP Bets 桌面 `222:92721` 原位更新：Betslip 回到顶部、去掉底部被截一半的卡片、长文字字重修正。
+> - 网站待办（未处理，因本次只做 Figma）：本地 promotions 弹窗缺少部分 CSS（betting-list_*、express-bonus-modal_* 等），Multiple bet bonus 弹窗排版与原站不同。
+
 > 2026-10-16 Figma 整理与补页（未改网站代码）：
 > - 删除重复布局：Live Casino 桌面 `65:6749`、Quick games 桌面 `65:13437`（与 Casino lobby `65:2` 同一结构：横幅+本周游戏、分类按钮、多行游戏轮播、锦标赛行、SEO；直播卡已有组件 `Game card / Live desktop`）。
 > - 6 个未命名 Betwave Frame 补名并归位（非重复）：桌面 Top predictors `269:22848`、Predictor profile `272:24416`、Rules `275:24416`；手机 Prediction detail `268:7078`、Top predictors `271:7078`、Predictor profile `276:7945`。
