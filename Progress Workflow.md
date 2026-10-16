@@ -1,5 +1,29 @@
 # Progress Workflow — 1win
 
+> 2026-10-16 Figma：修复 Bet slip logo 与内容排版（只改 Figma）：
+> - 保留桌面 `230:98116`、手机 `230:98344` 原 Frame ID 与位置，仍在 `30 · Menus & Modals`。没有新增重复整页。
+> - 原站 `en/betting` 核实赛事卡片 1win 标志是居中的 `76×30px` 淡水印，opacity=0.04；原 SVG 导入丢失透明度及 CSS mask-size，变成约 232×91／191×76px 的黑标，已修复四处水印。
+> - 两尺寸内部改为可编辑 Auto Layout：header、Single/Multiple/Series、赛事／选项／赔率、奖金进度／汇总、金额／Possible win／按钮。复用原有矢量图标与实际样式，修正文字省略和字重，奖金说明使用原站当前文案。
+> - 桌面移除面板下方多余空画布：360×624；手机保留 390×844，底层面板 390×617、y=227，卡片 x=17、宽356，底部操作区 y=688、高156。奖金区与操作区重叠=0，不再贴边或遮挡 Bonus 汇总。
+> - 截图核验通过：每尺寸 29 个可编辑文字、62 个 Auto Layout 容器；缺失字体=0、零高度文字=0、整页／UI 位图=0，水印均76×30、4%。原两条篮球赛事、比分和赔率保留为参考快照，原站当前赛事不同，不声称动态内容逐像素相同。
+> - 机器记录保存在 Documents 工作副本 `qa/figma-betslip-fix-2026-10-16/report.json`；未改本地 HTML，未执行 Git commit／push。
+
+
+> 2026-10-16 Figma 位置调整（按用户要求在 Desktop／Mobile 页面直接看到）：
+> - Halloween 活动 item 弹窗移动原 Frame，不复制：桌面 `230:96125` → `10 · Desktop 1440`（页 `7:4`），位于 Promotion landing `304:16777` 右侧，坐标 33896 / 13220。
+> - 手机 `230:96197` → `20 · Mobile 390`（页 `7:5`），位于 Promotion landing `304:27062` 下方，坐标 10000 / 2497.8。
+> - 原节点 ID、尺寸、可编辑内容及修复效果均保留；移动前后内容指纹相同，无 Frame 重叠，新增 Frame 为 0。Menus & Modals 中不保留这两个副本，其余 18 个活动弹窗保留。此条取代下方先前记录的 Halloween 位于 all popups Section 的位置说明。
+
+
+> 2026-10-16 Figma：修复用户指向 Promotion landing `304:16777` 所对应的 Halloween 活动 item 弹窗（不改网站代码）：
+> - 用户链接是活动落地页，原节点保留；对应已有弹窗 `230:96125`（桌面 1440×900）／`230:96197`（手机 390×844）原位修复，不重复生成 Frame。
+> - 对照原站 promotions 中的 Halloween & 500K USDT 弹窗，修正标题字距／裁切、关闭与复制按钮层级、白色正文区向封面重叠 24px 的圆角，以及手机底边遮罩。新增的两个矩形仅为可编辑内容区背景，不是整页图片。
+> - 两个 Frame 保留原 ID，改名为「Promotion item popup · Halloween & 500K USDT · Desktop 1440 / Mobile 390 · Editable」，归入 `30 · Menus & Modals` 的 Section `308:33997`「Promotion details · all popups」。Section 现在包含 Halloween 及其余 9 个活动的桌面／手机版本，共 20 个 Frame。
+> - 修复后已检查两尺寸截图：标题完整、两枚按钮可见、正文保留；桌面 9／手机 12 个可编辑文字，分别 2 张独立素材，缺失字体 0。未声称全站最终像素验收完成。
+> - VIP Loyalty Program `222:89521`／`222:95125` 最新画布已含此前 Hero 层级与奖杯尺寸修复，本轮再次核实并保留，无重复覆盖。
+> - 本轮机器记录位于 Documents 工作副本 `qa/figma-promotion-fix-2026-10-16/report.json`；未执行新的 Git commit／push。
+
+
 > 2026-10-16 Figma：Promotion 弹窗 + TOP Bets（只改 Figma，未改网站代码）：
 > - `30 · Menus & Modals` 新增 Section「Promotion details · all popups」`308:33997`：9 个活动弹窗（Welcome Bonus、Lucky Drive、Multiple bet bonus、Popular bets in TOP Bets、1:0 Early Payout、Up to 200,000 USDT crypto tournaments、Evoplay Crystal Rush、Rakeback poker、$20,000 GTD）× 桌面 1440 / 手机 390，共 18 个；弹窗内容完整展开（不截断滚动）。Halloween 弹窗原有 Frame 保留。
 > - 这 18 个弹窗直接从原站抓取（本地弹窗缺 CSS：Multiple bet 的投注列表、Example 区块等排版不对），标题字距按原站宽度对齐，避免被截断。注意原站 Lucky Drive 内容已更新为 Lamborghini Urus SE。
