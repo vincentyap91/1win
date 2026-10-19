@@ -1,7 +1,0 @@
-{
-  "date": "2026-10-14",
-  "html_pages": 31,
-  "missing_local_files": [],
-  "active_external_references": [],
-  "note": "Checks HTML, captured states, dialogs, sidebar icons and stylesheet URLs; data:, denotes separately tracked uncaptured media, not a missing local file."
-}

@@ -2,12 +2,8 @@
 # Raw reference captures (large, regenerable with scripts/reference-capture-cdp.mjs)
 captures/
 
-# Pre-migration copies written by scripts/migrate-shared-components.py; the migration report proves the
-# current files plus components/ restore them byte-for-byte. (The 2026-10-14 copy was committed earlier.)
-qa/*/migration-backup/
-
-# Scratch captures. qa/tmp-sdui.json contained a Google API key that GitHub secret scanning flagged.
-qa/tmp-*
+# QA evidence, screenshots, and one-off capture backups. Not used by the site.
+qa/
 scripts/tmp-*
 
 scripts/probes/tmp-*
