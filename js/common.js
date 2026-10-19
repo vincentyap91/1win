@@ -866,6 +866,94 @@
     pop.style.top=Math.round(r.bottom+8)+'px';
     pop.style.left=Math.max(8, Math.min(r.right-width, innerWidth-width-8))+'px';
   }
+  const SIGNUP_CURRENCIES=[
+    {name:'Bitcoin Cash',code:'BCH',icon:'assets/pay/signup-bch.svg'},
+    {name:'Binance coin',code:'BNB',icon:'assets/pay/signup-bnb.svg'},
+    {name:'Bitcoin',code:'BTC',icon:'assets/pay/balance-btc.png'},
+    {name:'Dash',code:'DASH',icon:'assets/pay/signup-dash.svg'},
+    {name:'Dogecoin',code:'DOGE',icon:'assets/pay/signup-doge.svg'},
+    {name:'Ethereum',code:'ETH',icon:'assets/pay/balance-eth.svg'},
+    {name:'Litecoin',code:'LTC',icon:'assets/pay/signup-ltc.svg'},
+    {name:'Solana',code:'SOL',icon:'assets/pay/solana-clear.png'},
+    {name:'Toncoin',code:'TON',icon:'assets/pay/toncoin.png'},
+    {name:'TRON',code:'TRX',icon:'assets/pay/balance-trx.svg'},
+    {name:'USD Coin',code:'USDC',icon:'assets/pay/signup-usdc.svg'},
+    {name:'Tether',code:'USDT',icon:'assets/pay/usdt-2.png'}
+  ];
+  let signupCurrencyCode='';
+  const SEARCH_ICON='<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="16" height="16" aria-hidden="true"><circle cx="7" cy="7" r="4.25" fill="none" stroke="currentColor" stroke-width="1.6"/><path d="M10.2 10.2 13.2 13.2" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg>';
+  function signupCurrencyBody(){
+    const rows=SIGNUP_CURRENCIES.map(c=>'<button type="button" class="local-ccy-row" data-testid="local-signup-currency" data-code="'+c.code+'"><img src="'+c.icon+'" alt=""><span><b>'+c.name+'</b><small>'+c.code+'</small></span></button>').join('');
+    return '<div class="local-ccy"><label class="local-ccy-search">'+SEARCH_ICON+'<input data-testid="local-signup-currency-search" placeholder="Search" aria-label="Search" autocomplete="off"></label><div class="local-ccy-list">'+rows+'</div><p class="local-ccy-empty" data-testid="local-signup-currency-empty" hidden>No results</p></div>';
+  }
+  function registrationCurrencyButton(){
+    return $$('[data-testid="signUpFast-form-currency"]').find(n=>n.closest('[data-local-modal="registration"]'))||null;
+  }
+  function paintSignupCurrency(){
+    if(!signupCurrencyCode)return;
+    const coin=SIGNUP_CURRENCIES.find(c=>c.code===signupCurrencyCode);
+    const reg=registrationCurrencyButton();
+    if(!coin||!reg)return;
+    const label=$('[class*="currency-dropdown_content"]',reg);
+    const img=$('img',reg);
+    if(label)label.textContent=coin.name;
+    if(img)img.src=new URL((assetPrefix||'')+coin.icon,document.baseURI).href;
+  }
+  function closeSignupCurrency(){
+    const node=$('[data-local-modal="signup-currency"]');
+    if(!node)return;
+    node.style.pointerEvents='none';
+    const finish=()=>node.remove();
+    if(motion?.instant())finish();
+    else Promise.resolve(motion?.modal(node,true)).then(finish);
+    registrationCurrencyButton()?.focus({preventScroll:true});
+  }
+  function openSignupCurrency(){
+    if($('[data-local-modal="signup-currency"]')||modal!=='registration')return;
+    const key=mobile()?'registration-390x844':'registration-1440x900';
+    const html=states[key]?.html;
+    if(!html)return;
+    const template=document.createElement('template');
+    template.innerHTML=markup(html);
+    const root=template.content.firstElementChild;
+    if(!root)return;
+    root.dataset.localModal='signup-currency';
+    root.style.zIndex='1002';
+    root.setAttribute('role','dialog');
+    root.setAttribute('aria-modal','true');
+    root.setAttribute('aria-label','Choose currency');
+    $$('[class*="modal-header_title"]',root).forEach(n=>{if(n.textContent.trim()==='Registration')n.textContent='Choose currency';});
+    const content=$('[data-testid="recoveryPassword-content-sign-up"]',root);
+    if(!content)return;
+    content.innerHTML=markup(signupCurrencyBody());
+    document.body.append(root);
+    motion?.modal(root);
+    $('[data-testid="local-signup-currency-search"]',root)?.focus({preventScroll:true});
+  }
+  function chooseSignupCurrency(button){
+    signupCurrencyCode=button.dataset.code||'';
+    const reg=registrationCurrencyButton();
+    const label=reg&&$('[class*="currency-dropdown_content"]',reg);
+    const img=reg&&$('img',reg);
+    const picked=$('img',button);
+    if(label)label.textContent=$('b',button)?.textContent||label.textContent;
+    if(img&&picked)img.src=picked.currentSrc||picked.src;
+    closeSignupCurrency();
+  }
+  function filterSignupCurrencies(input){
+    const root=input.closest('[data-local-modal="signup-currency"]');
+    if(!root)return;
+    const q=input.value.trim().toLowerCase();
+    let shown=0;
+    $$('[data-testid="local-signup-currency"]',root).forEach(btn=>{
+      const name=$('b',btn).textContent.toLowerCase();
+      const hit=!q||btn.dataset.code.toLowerCase().startsWith(q)||name.split(/\s+/).some(word=>word.startsWith(q));
+      btn.hidden=!hit;
+      if(hit)shown++;
+    });
+    const empty=$('[data-testid="local-signup-currency-empty"]',root);
+    if(empty)empty.hidden=shown>0;
+  }
   function openModal(kind, source=null) {
     const focus=source||document.activeElement;
     closeModal(true);$('[data-local-notes]')?.remove();returnFocus=focus;
@@ -1256,6 +1344,7 @@
     if(id==='header-auth-button'||id==='sidebar-profile-button'||id==='game-play-card-auth-button'||id.endsWith('form-signInButton'))return openModal('login',el);
     if(id==='header-registration-button'||id.endsWith('form-signUpButton'))return openModal('registration',el);
     if(id==='modal-header-button-close'||el.className.includes('modal_backdrop')){
+      if(el.closest('[data-local-modal="signup-currency"]'))return closeSignupCurrency();
       const note=el.closest('[data-local-notes]');
       if(note){note.remove();return;}
       return closeModal();
@@ -1390,6 +1479,8 @@
     if(el.className.includes('game-slider-see-more')){go(rowCategory(el)||'casino.html');return;}
     if(text==='All'&&el.closest('[class*="games-section"]')){go('tournaments.html');return;}
     if(id==='footer-partners-links-commercial-copy'){const contact=$$('[class*="footer-partners"] a').find(a=>a.textContent.includes('@'))?.textContent.trim()||'business@1win.social';navigator.clipboard?.writeText(contact).then(()=>notice('Copied')).catch(()=>{});return;}
+    if(id==='signUpFast-form-currency')return openSignupCurrency();
+    if(id==='local-signup-currency')return chooseSignupCurrency(el);
     if(id.includes('datePickerButton')){const input=$('input[type="date"]',el.closest('form'));if(input?.showPicker)input.showPicker();return;}
     if(id.includes('socialButton')||id.includes('chooseRegion')||id.includes('currency')||id.includes('app-')||id.includes('support')||text==='Install'||text==='Contact support')notice('Available in the original service.');
   });
@@ -1408,7 +1499,7 @@
     submit.disabled=!valid;
   }
   const betInput=n=>n.matches?.('[data-local-bet-form] input');
-  document.addEventListener('input',e=>{if(e.target.dataset.testid==='casino-search-input')searchResults(e.target.value);if(betInput(e.target))typeBetAmount(e.target);updateForm(e.target);});
+  document.addEventListener('input',e=>{if(e.target.dataset.testid==='local-signup-currency-search')filterSignupCurrencies(e.target);if(e.target.dataset.testid==='casino-search-input')searchResults(e.target.value);if(betInput(e.target))typeBetAmount(e.target);updateForm(e.target);});
   document.addEventListener('change',e=>updateForm(e.target));
   document.addEventListener('focusin',e=>{if(betInput(e.target)&&!+e.target.closest('[data-local-bet-form]').dataset.amount)e.target.value='';if(e.target.matches('input'))updateFieldAppearance(e.target,true);});
   document.addEventListener('focusout',e=>{if(betInput(e.target)){const form=e.target.closest('[data-local-bet-form]');setBetAmount(form,+form.dataset.amount||0);}if(e.target.matches('input'))updateFieldAppearance(e.target,false);});
@@ -1432,8 +1523,9 @@
       e.preventDefault();e.target.click();return;
     }
     if(e.altKey&&e.key.toLowerCase()==='p'){e.preventDefault();togglePreview();return;}
+    if(e.key==='Escape'&&$('[data-local-modal="signup-currency"]')){closeSignupCurrency();return;}
     if(e.key==='Escape'){closeModal();toggleMenu(false);}
-    if(e.key==='Tab'&&modal){const root=openLayout();const items=root&&$$('button:not(:disabled),input:not([type="hidden"]),a',root).filter(n=>n.getClientRects().length);if(items?.length){const first=items[0],last=items.at(-1);if(e.shiftKey&&document.activeElement===first){e.preventDefault();last.focus();}else if(!e.shiftKey&&document.activeElement===last){e.preventDefault();first.focus();}}}
+    if(e.key==='Tab'&&(modal||$('[data-local-modal="signup-currency"]'))){const root=$('[data-local-modal="signup-currency"]')||openLayout();const items=root&&$$('button:not(:disabled),input:not([type="hidden"]),a',root).filter(n=>n.getClientRects().length);if(items?.length){const first=items[0],last=items.at(-1);if(e.shiftKey&&document.activeElement===first){e.preventDefault();last.focus();}else if(!e.shiftKey&&document.activeElement===last){e.preventDefault();first.focus();}}}
   });
   let swipeX=null;
   document.addEventListener('touchstart',e=>{if(e.target.closest('[data-testid="banner-main-container"]'))swipeX=e.touches[0].clientX;},{passive:true});
@@ -1441,7 +1533,7 @@
   function adaptToViewport() {
     const key=keyFor(currentPage);
     if(key===currentKey){fitBanners();positionSidebarSocial();const langBtn=test('language-picker-button');if($('[data-local-language-popover]')&&langBtn)positionAnchoredPopover($('[data-local-language-popover]'),langBtn);return;}
-    const kind=modal,dialog=openLayout();
+    const kind=modal,dialog=openLayout(),currencyOpen=!!$('[data-local-modal="signup-currency"]');
     const fields=dialog?$$('input',dialog).map((input,index)=>({id:input.dataset.testid,index,type:input.type,value:input.value,checked:input.checked})):[];
     const focusedId=document.activeElement?.dataset.testid;
     const faqOpen=$$('[class*="accordion-heading_root-"][aria-expanded="true"]').filter(pageAccordionHeading).map(n=>n.textContent.trim());
@@ -1471,6 +1563,8 @@
         if(input){input.value=field.value;input.checked=field.checked;updateForm(input);}
       });
       inputs.find(i=>focusedId&&i.dataset.testid===focusedId)?.focus({preventScroll:true});
+      paintSignupCurrency();
+      if(currencyOpen)openSignupCurrency();
     }
   }
   addEventListener('resize',()=>{clearTimeout(resizeTimer);resizeTimer=setTimeout(adaptToViewport,150);});

@@ -205,6 +205,21 @@ body[data-page="freemoney"] [class*="chips-section-floating_root"]{position:stic
 .local-note h3 { margin: 6px 0 4px; font-size: 16px; }
 .local-note p { margin: 0 0 10px; color: #3c4043; }
 .local-note button { width: 100%; border: 0; border-radius: 10px; padding: 10px; background: #1a73e8; color: #fff; font: 700 14px/1 Inter, Arial, sans-serif; cursor: pointer; }
+/* Registration → Choose currency. Same card shell as the captured sign-up modal. */
+.local-ccy { display: flex; flex-direction: column; min-height: 0; }
+.local-ccy-search { display: flex; align-items: center; gap: 8px; height: 44px; margin: 2px 0 6px; padding: 0 14px; border: 1px solid transparent; border-radius: 12px; background: #f2f4f7; color: #9aa1ab; }
+.local-ccy-search:focus-within { border-color: #0075ff; background: #fff; }
+.local-ccy-search input { flex: 1; min-width: 0; border: 0; outline: 0; background: transparent; color: #141415; font: 500 16px/1.2 Inter, Arial, sans-serif; }
+.local-ccy-search input::placeholder { color: #9aa1ab; }
+.local-ccy-list { display: flex; flex-direction: column; }
+.local-ccy-row { display: flex; align-items: center; gap: 12px; width: 100%; margin: 0; padding: 12px 2px; border: 0; border-bottom: 1px solid #eceef2; background: transparent; color: #141415; text-align: left; cursor: pointer; font: inherit; }
+.local-ccy-row:last-child { border-bottom: 0; }
+.local-ccy-row img { width: 32px; height: 32px; border-radius: 50%; object-fit: cover; flex: none; background: #fff; }
+.local-ccy-row span { display: flex; flex-direction: column; min-width: 0; }
+.local-ccy-row b { font-size: 16px; font-weight: 600; line-height: 1.25; }
+.local-ccy-row small { color: #8b919a; font-size: 13px; font-weight: 500; line-height: 1.3; }
+.local-ccy-row:hover, .local-ccy-row:focus-visible { background: #f7f8fa; }
+.local-ccy-empty { margin: 18px 0; color: #6b7280; text-align: center; font: 500 14px/1.4 Inter, Arial, sans-serif; }
 @media (max-width: 639px) {
   .local-notes { left: 8px !important; right: 8px; width: auto !important; }
 }
