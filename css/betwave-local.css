@@ -7,3 +7,11 @@
 .bw-overlay [class*="dropdown_tooltip-"]{display:block;min-width:152px}
 .bw-menu-overlay{display:block;background:transparent}
 main article[hidden]{display:none!important}
+/* Social popover icons are the standard sidebar capture. Without these rules the monochrome layer inherits currentColor and paints a solid black tile. */
+.base_theme-color-HuD6g [class*="monochrome"],
+.base_theme-monochrome-HuD6g [class*="color"]{display:none}
+.base_theme-monochrome-HuD6g.base_default-HuD6g{color:var(--button-social-color-icon,var(--color-content-base-primary));fill:var(--button-social-color-bg,var(--color-background-base-alfa-neutral-12))}
+.base_theme-monochrome-HuD6g.base_white-HuD6g{color:var(--color-content-base-static-white);fill:var(--color-background-base-alfa-static-white-20)}
+.base_size-s-HuD6g{--button-radius:var(--button-rounding-s);--button-width:var(--size-control-s);--button-height:var(--size-control-s)}
+.base_view-HuD6g{display:flex;align-items:center;justify-content:center;position:relative;overflow:hidden;width:var(--button-width);height:var(--button-height);border-radius:var(--button-radius)}
+.base_icon-HuD6g{width:100%;height:100%}
