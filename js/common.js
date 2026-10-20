@@ -1,8 +1,23 @@
-/* Local presentation of observed one-vv3591.com states. No network or account APIs. */
+/* Local presentation of observed one-vv3591.com states. No network APIs; accounts live in this browser (localStorage). */
 (() => {
   'use strict';
   const guestStates=window.PAGE_STATES||{},authStates=window.AUTH_PAGE_STATES||{};
-  let signedPreview=new URLSearchParams(location.search).get('preview')==='auth';
+  // Local accounts (no server): Registration stores the account in this browser's localStorage with a salted SHA-256
+  // password hash, Log in checks it, and a session switches every page to its signed-in view (the captured Demo
+  // states, shown with the account's own name and ID). Log out ends the session.
+  const ACCOUNTS_KEY='1win-local-accounts',SESSION_KEY='1win-local-session';
+  const readAccounts=()=>{try{return JSON.parse(localStorage.getItem(ACCOUNTS_KEY)||'[]');}catch{return [];}};
+  const writeAccounts=list=>{try{localStorage.setItem(ACCOUNTS_KEY,JSON.stringify(list));return true;}catch{return false;}};
+  const sessionAccount=()=>{try{const id=localStorage.getItem(SESSION_KEY);return id?readAccounts().find(a=>a.id===id)||null:null;}catch{return null;}};
+  const setSession=id=>{try{if(id)localStorage.setItem(SESSION_KEY,id);else localStorage.removeItem(SESSION_KEY);}catch{}};
+  async function hashPassword(password,salt){
+    const text=salt+':'+password;
+    if(window.crypto?.subtle){const buf=await crypto.subtle.digest('SHA-256',new TextEncoder().encode(text));return [...new Uint8Array(buf)].map(b=>b.toString(16).padStart(2,'0')).join('');}
+    let h=2166136261;for(let i=0;i<text.length;i++)h=Math.imul(h^text.charCodeAt(i),16777619);return 'fnv-'+(h>>>0).toString(16);
+  }
+  const escapeHtml=t=>String(t).replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
+  const accountName=a=>a.email||('+'+a.phone);
+  let signedPreview=new URLSearchParams(location.search).get('preview')==='auth'||Boolean(sessionAccount());
   const states={...window.DIALOG_STATES,...guestStates,...(signedPreview?authStates:{})};
   const pageName = document.body.dataset.page;
   const assetPrefix = document.body.dataset.assetPrefix || '';
@@ -10,7 +25,8 @@
   // Firefox/Safari against the page (one folder too high on file://), so they are made absolute before use.
   const assetBase=new URL(assetPrefix+'assets/',document.baseURI).href;
   const absoluteAssets = html => html.replace(/url\((&quot;|"|')?\.\.\/assets\//g,(m,q)=>'url('+(q||'')+assetBase);
-  const markup = value => {const expanded=window.SHARED_UI?window.SHARED_UI.expand(value):value;return absoluteAssets(assetPrefix?expanded.replaceAll('assets/',assetPrefix+'assets/'):expanded);};
+  const personalize = html => {const a=signedPreview&&sessionAccount();if(!a)return html;return html.replaceAll('Demo user',escapeHtml(accountName(a))).replaceAll('ID 00000000','ID '+a.id).replaceAll('demo@example.com',escapeHtml(a.email||''));};
+  const markup = value => {const expanded=window.SHARED_UI?window.SHARED_UI.expand(value):value;return personalize(absoluteAssets(assetPrefix?expanded.replaceAll('assets/',assetPrefix+'assets/'):expanded));};
   function absoluteAssetVars(root=document){root.querySelectorAll('[style*="../assets/"]').forEach(n=>n.setAttribute('style',absoluteAssets(n.getAttribute('style'))));}
   const go = filename => { location.href = filename+(signedPreview?'?preview=auth':''); };
   const pages = window.PROJECT_ROUTES?.pages||{};
@@ -222,6 +238,7 @@
     $$('input[type="tel"][data-testid$="form-phone"]').forEach(i=>{if(!i.value)i.value='+60';});
     $$('input').forEach(input=>updateFieldAppearance(input));
     const consent=test('signUpFast-form-agree');if(consent)consent.checked=true;
+    initPhoneFields();
     $$('[data-testid="modal-layout"]').forEach(n=>{n.setAttribute('role','dialog');n.setAttribute('aria-modal','true');});
     $$('[class*="games-grid_carousel"]').forEach(n=>{n.style.scrollBehavior=scrollBehavior();});
     $$('a[data-testid^="sidebar-navigation"]').forEach(a=>{
@@ -749,6 +766,7 @@
   function togglePreview(){
     const next=!signedPreview;
     if(next&&!Object.keys(authStates).length)return notice('This view does not have a signed-in capture.');
+    if(!next)setSession(null);
     signedPreview=next;Object.assign(states,guestStates,signedPreview?authStates:{});
     const u=new URL(location.href);signedPreview?u.searchParams.set('preview','auth'):u.searchParams.delete('preview');
     // Some browsers refuse history changes on file:// pages (SecurityError); the view still switches.
@@ -1304,8 +1322,8 @@
       if(modal.startsWith('account-settings-'))return openModal('account-settings',el);
       return openModal('account-profile',el);
     }
-    if(id==='userSettings-logoutButton'){closeModal(true);if(signedPreview)togglePreview();return;}
-    if(id==='profile-copyIdButton'){navigator.clipboard?.writeText('00000000').then(()=>notice('Copied demo ID')).catch(()=>notice('Demo ID: 00000000'));return;}
+    if(id==='userSettings-logoutButton'){closeModal(true);if(signedPreview)togglePreview();else setSession(null);notice('You are logged out.');return;}
+    if(id==='profile-copyIdButton'){const accId=sessionAccount()?.id||'00000000';navigator.clipboard?.writeText(accId).then(()=>notice('ID copied')).catch(()=>notice('ID: '+accId));return;}
     if(id==='local-deposit-fiat'||id==='local-deposit-crypto'){depositRail=id.endsWith('crypto')?'crypto':'fiat';coinOpen=false;netOpen=false;depositMethod='';return openModal('account-deposit',el);}
     if(id==='local-pay-method'){depositMethod=el.dataset.method||'fpx';depositAmount='';return openModal('account-deposit-method',el);}
     if(id==='local-amount-chip'){depositAmount=el.dataset.amount||'';return openModal('account-deposit-method',el);}
@@ -1490,25 +1508,137 @@
     root.classList.toggle(rootClass.replace('_root-','_filled-'),Boolean(input.value));
     root.classList.toggle(rootClass.replace('_root-','_focused-'),focused);
   }
+  // Phone fields work like the reference mask: the value starts as "+60", digits are grouped as typed
+  // ("+60 12 345 6789") and the placeholder only shows the zeros still missing (typed part kept invisible).
+  const isPhone=n=>n?.matches?.('input.mask-input_input-GDetI[type="tel"]');
+  function phoneMask(input){
+    if(input.dataset.localMask)return input.dataset.localMask;
+    const ph=input.parentElement?.querySelector('[class*="control_placeholder"]');
+    const mask=(ph?.textContent||'+60 00 000 0000').replace(/\u00a0/g,' ').trim();
+    input.dataset.localMask=mask;return mask;
+  }
+  const phoneCode=input=>(phoneMask(input).match(/^\+\d+/)||['+60'])[0];
+  const phoneSlots=input=>(phoneMask(input).replace(/^\+\d+/,'').match(/0/g)||[]).length;
+  const phoneNational=input=>{const code=phoneCode(input).slice(1);let d=input.value.replace(/\D/g,'');
+    if(input.value.trim().startsWith('+')&&d.startsWith(code))d=d.slice(code.length);
+    // Typing or pasting the country code again ("+60 12…" into "+60") would push the number past the mask.
+    if(d.length>phoneSlots(input)&&d.startsWith(code))d=d.slice(code.length);
+    return d;};
+  const phoneComplete=input=>phoneNational(input).length>=phoneSlots(input);
+  // A "+" typed after the prefix starts the number again: the country code digits that follow are held back
+  // (dataset.localRetype) instead of landing in the number, so "+60123…" typed into "+60" gives "+60 12 3…".
+  function retypePhone(input,code){
+    const raw=input.value,digitsOf=t=>t.replace(/\D/g,''),cd=code.slice(1);
+    const plus=raw.indexOf('+',1);
+    if(plus>0){
+      const seg=raw.slice(raw.lastIndexOf('+')),sd=digitsOf(seg);
+      if(sd.length<cd.length&&cd.startsWith(sd)){input.dataset.localRetype=sd;input.value=code;return;}
+      delete input.dataset.localRetype;input.value=seg;return;
+    }
+    if(input.dataset.localRetype===undefined)return;
+    const typed=digitsOf(raw.startsWith(code)?raw.slice(code.length):raw),all=input.dataset.localRetype+typed;
+    if(all.length<cd.length&&cd.startsWith(all)){input.dataset.localRetype=all;input.value=code;return;}
+    delete input.dataset.localRetype;
+    input.value=all.startsWith(cd)?code+all.slice(cd.length):code+typed;
+  }
+  function formatPhone(input){
+    const mask=phoneMask(input),code=phoneCode(input);
+    retypePhone(input,code);
+    const digits=phoneNational(input).slice(0,phoneSlots(input));
+    let out=code,k=0;
+    for(const ch of mask.slice(code.length)){if(k>=digits.length)break;out+=ch==='0'?digits[k++]:ch;}
+    input.value=out;
+    const ph=input.parentElement?.querySelector('[class*="control_placeholder"]');
+    if(ph){const hidden=document.createElement('span');hidden.className=[...(ph.querySelector('span')?.classList||['control_hiddenPlaceholder-5SZBQ'])].join(' ');hidden.textContent=out.replace(/ /g,'\u00a0');ph.replaceChildren(hidden,document.createTextNode(mask.slice(out.length).replace(/ /g,'\u00a0')));}
+    try{input.setSelectionRange(out.length,out.length);}catch{}
+  }
+  function initPhoneFields(root=document){$$('input.mask-input_input-GDetI[type="tel"]',root).forEach(input=>{phoneMask(input);if(!input.value)formatPhone(input);});}
+  // Field errors as on the reference: shown when the field is left with an invalid value, cleared once it is valid.
+  const FIELD_ERRORS={tel:'Make sure your phone number is correct',email:'Make sure your email is correct'};
+  const fieldValid=input=>input.type==='tel'?phoneComplete(input):input.type==='email'?/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(input.value.trim()):input.type==='password'?input.value.length>=8:true;
+  function showFieldState(input,showError){
+    const wrap=input.closest('[class*="field-wrapper_root"]');if(!wrap)return;
+    const rootCls=[...wrap.classList].find(c=>c.startsWith('field-wrapper_root-'));if(!rootCls)return;
+    const errCls=rootCls.replace('_root-','_status-error-');
+    const empty=input.type==='tel'?!phoneNational(input):!input.value;
+    const bad=showError&&!empty&&!fieldValid(input);
+    wrap.classList.toggle(errCls,bad);
+    if(input.type==='password'){
+      const req=$('[class*="password-requirements_item"]',wrap);
+      if(req){const base=[...req.classList].find(c=>c.startsWith('password-requirements_item-'));const hash=base?.split('-').pop();
+        ['default','error','validated'].forEach(st=>req.classList.remove('password-requirements_status-'+st+'-'+hash));
+        req.classList.add('password-requirements_status-'+(fieldValid(input)?'validated':bad?'error':'default')+'-'+hash);}
+      return;
+    }
+    const id=(input.dataset.testid||'field')+'-error';let hint=wrap.querySelector('[data-testid="'+id+'"]');
+    if(bad&&!hint&&FIELD_ERRORS[input.type]){hint=document.createElement('div');hint.className='hint_root-SEpY1 hint_variant-error-SEpY1';hint.dataset.testid=id;hint.innerHTML='<div class="custom-html_root-jGMem">'+FIELD_ERRORS[input.type]+'</div>';wrap.append(hint);}
+    if(!bad)hint?.remove();
+  }
   function updateForm(input) {
     updateFieldAppearance(input);
     const form=input.closest('form');if(!form)return;
     const submit=$('[data-testid$="form-submit"]',form);if(!submit)return;
     const email=$('input[type="email"]',form),phone=$('input[type="tel"]',form),password=$('input[type="password"]',form),agree=$('[data-testid$="form-agree"]',form);
-    const valid=(!email||/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email.value))&&(!phone||phone.value.replace(/\D/g,'').length>=8)&&(!password||password.value.length>=8)&&(!agree||agree.checked);
+    const valid=(!email||/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email.value.trim()))&&(!phone||phoneComplete(phone))&&(!password||password.value.length>=8)&&(!agree||agree.checked);
     submit.disabled=!valid;
   }
   const betInput=n=>n.matches?.('[data-local-bet-form] input');
+  document.addEventListener('input',e=>{if(isPhone(e.target))formatPhone(e.target);if(e.target.closest?.('form')&&e.target.matches('input[type="tel"],input[type="email"],input[type="password"]'))showFieldState(e.target,e.target.closest('[class*="field-wrapper_root"]')?.className.includes('_status-error-'));});
+  document.addEventListener('focusout',e=>{if(e.target.closest?.('form')&&e.target.matches('input[type="tel"],input[type="email"],input[type="password"]'))showFieldState(e.target,true);});
+  document.addEventListener('keydown',e=>{if(isPhone(e.target)&&e.key==='Backspace'&&e.target.value.length<=phoneCode(e.target).length)e.preventDefault();});
   document.addEventListener('input',e=>{if(e.target.dataset.testid==='local-signup-currency-search')filterSignupCurrencies(e.target);if(e.target.dataset.testid==='casino-search-input')searchResults(e.target.value);if(betInput(e.target))typeBetAmount(e.target);updateForm(e.target);});
   document.addEventListener('change',e=>updateForm(e.target));
   document.addEventListener('focusin',e=>{if(betInput(e.target)&&!+e.target.closest('[data-local-bet-form]').dataset.amount)e.target.value='';if(e.target.matches('input'))updateFieldAppearance(e.target,true);});
   document.addEventListener('focusout',e=>{if(betInput(e.target)){const form=e.target.closest('[data-local-bet-form]');setBetAmount(form,+form.dataset.amount||0);}if(e.target.matches('input'))updateFieldAppearance(e.target,false);});
+  function fieldError(input,message){
+    if(!input){notice(message);return;}
+    input.setCustomValidity(message);input.reportValidity();input.focus({preventScroll:true});
+    input.addEventListener('input',()=>input.setCustomValidity(''),{once:true});
+    if(input.type==='checkbox')input.addEventListener('change',()=>input.setCustomValidity(''),{once:true});
+  }
+  const regionCode=form=>(($('[data-testid$="chooseRegionButton"]',form)?.textContent||'').match(/\+\d+/)||['+60'])[0].slice(1);
+  function startSession(account,message){
+    setSession(account.id);closeModal(true);
+    if(!signedPreview)togglePreview();else render(currentPage,null,true);
+    notice(message);
+  }
+  async function registerAccount(form){
+    const phoneIn=$('input[type="tel"]',form),emailIn=$('input[type="email"]',form),passIn=$('input[type="password"]',form),agree=$('[data-testid$="form-agree"]',form);
+    const digits=phoneIn?phoneNational(phoneIn):'',email=(emailIn?.value||'').trim().toLowerCase(),password=passIn?.value||'';
+    if(phoneIn&&!phoneComplete(phoneIn))return fieldError(phoneIn,'Make sure your phone number is correct');
+    if(emailIn&&!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email))return fieldError(emailIn,'Enter a valid email.');
+    if(password.length<8)return fieldError(passIn,'At least 8 characters.');
+    if(agree&&!agree.checked)return fieldError(agree,'Accept the User Agreement to continue.');
+    const phone=digits?regionCode(form)+digits:'',list=readAccounts();
+    if(email&&list.some(a=>a.email===email))return fieldError(emailIn,'An account with this email already exists. Log in instead.');
+    if(phone&&list.some(a=>a.phone===phone))return fieldError(phoneIn,'An account with this phone number already exists. Log in instead.');
+    let id;do{id=String(10000000+Math.floor(Math.random()*90000000));}while(list.some(a=>a.id===id));
+    const salt=[...crypto.getRandomValues(new Uint8Array(12))].map(b=>b.toString(16).padStart(2,'0')).join('');
+    const promo=$('[data-testid="signUpFast-form-promocode"]',form)?.value.trim()||'';
+    const currency=(registrationCurrencyButton()?.textContent||'Malaysian ringgit').trim();
+    const account={id,phone,email,currency,promo,salt,hash:await hashPassword(password,salt),createdAt:new Date().toISOString()};
+    list.push(account);
+    if(!writeAccounts(list))return notice('This browser blocked saving the account (site storage is turned off).');
+    startSession(account,'Account created. You are logged in.');
+  }
+  async function loginAccount(form){
+    const phoneIn=$('input[type="tel"]',form),emailIn=$('input[type="email"]',form),passIn=$('input[type="password"]',form);
+    const list=readAccounts(),login=emailIn||phoneIn;let account=null;
+    if(emailIn){const email=emailIn.value.trim().toLowerCase();account=list.find(a=>a.email===email);}
+    else if(phoneIn){const digits=phoneNational(phoneIn),full=regionCode(form)+digits;account=list.find(a=>a.phone===full)||(digits.length>=8?list.find(a=>a.phone.endsWith(digits)):null);}
+    if(!account)return fieldError(login,'No account found. Register first.');
+    if(account.hash!==await hashPassword(passIn?.value||'',account.salt))return fieldError(passIn,'Incorrect password.');
+    startSession(account,'You are logged in.');
+  }
   document.addEventListener('submit',e=>{
     e.preventDefault();
-    const inputs=$$('input',e.target).filter(n=>!['checkbox','radio','hidden','date'].includes(n.type));
+    const inputs=$$('input',e.target).filter(n=>!['checkbox','radio','hidden','date'].includes(n.type)&&n.getClientRects().length&&n.dataset.testid!=='signUpFast-form-promocode');
     const first=inputs.find(n=>!n.value.trim());
     if(first){first.setCustomValidity('Please complete this field.');first.reportValidity();first.addEventListener('input',()=>first.setCustomValidity(''),{once:true});return;}
-    notice('This local design preview does not submit account details.');
+    const kind=($('[data-testid$="form-submit"]',e.target)?.dataset.testid||'');
+    if(kind.startsWith('signUpFast'))return void registerAccount(e.target);
+    if(kind.startsWith('signIn'))return void loginAccount(e.target);
+    notice('Password recovery is not available in this local copy.');
   });
   document.addEventListener('keydown',e=>{
     if((e.key==='Enter'||e.key===' ')&&e.target.matches('[data-testid="sidebar-social-buttons-with-preview"]')){

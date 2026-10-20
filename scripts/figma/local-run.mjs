@@ -51,6 +51,8 @@ for (const [w, h] of sizes) {
   const value = res.result?.result?.value;
   result[`${w}x${h}`] = typeof value === 'string' ? JSON.parse(value) : value ? value : {error: JSON.stringify(res.result?.exceptionDetails || res.error).slice(0, 300)};
   console.log(`${w}x${h}`, typeof value === 'string' ? value.length : JSON.stringify(value).slice(0, 200));
+  // --shot <prefix>: also save the viewport as it is after the script ran (<prefix>-WxH.png).
+  if (arg('shot')) { const png = await s.send('Page.captureScreenshot', {format: 'png'}); fs.writeFileSync(`${arg('shot')}-${w}x${h}.png`, Buffer.from(png.result.data, 'base64')); }
   s.close(); await fetch(`http://127.0.0.1:${port}/json/close/${target.id}`);
 }
 fs.writeFileSync(outFile, JSON.stringify(result));
