@@ -1,5 +1,27 @@
 # Progress Workflow — 1win
 
+> 2026-10-21 betwave.html 按 Login / Registration 看不到弹窗（真正原因）：
+> - 弹窗其实已打开，但 betwave.html 只载入 `css/betwave.css`，没有主站的 `styles.css` / `audit.css` / `local.css` / `components.css`，对话框没有样式：高度 0、在视窗下方，所以看起来「没反应」。之前的自动测试只检查 DOM 里有没有表单，没有检查是否看得见；这次用真实鼠标点击 + 截图确认。
+> - 新增 `scripts/build-dialog-css.py` → 生成 `css/dialogs.css`（约 125 KB、547 条规则）：从主站样式中只取对话框（登录、注册、账户面板、提示）用到的类 / `data-local-*` 规则、相关 @media（含 `@media(max-width:639px)` 无空格写法）、@keyframes，以及 betwave.css 缺少的设计变量（如 `--input-rounding`、`--modal-padding-modal-gap-stack-form`，只作用在对话框容器内）。`betwave.html` 在 `betwave.css` 之前载入它。改了对话框标记或主站 CSS 后重新运行：`python scripts/build-dialog-css.py`。
+> - 验收：betwave.html 1440 / 1920 / 390 与加入前逐像素相同（1920 只有一张头像载入时间差异）；登录、注册、Profile、Balance 弹窗与 index.html 截图并排对照一致（Phone/Email 切换、分开的圆角输入框、底部按钮）。真实鼠标点击 1280–1920、768、390 八种宽度的 Login / Registration 都能打开并看得见。
+> - 同时修正：Betwave 登录后视图是抓到一半的状态——betwave.html 侧栏仍显示 "Log in"，betwave-*.html 子页面侧栏名称 / ID、顶栏余额是灰色骨架、铃铛图标空白。`js/common.js` 的 `signSidebarProfile()` 在登录时换成账户名称和 ID、余额 0.00、主站铃铛图标（侧栏收合 / 展开后仍保留）。
+
+> 2026-10-21 Betwave（betwave.html 和 56 个 betwave-*.html 子页面）登录 / 注册修复：
+> - 原因 1：betwave.html 里 Betwave 自己的弹窗（Become author / Bet / Subscribe / 赔率 / 手机菜单打开的 authorization 面板）中的 "Log in" / "Register" 只关闭弹窗，没有打开登录 / 注册表单。现在会打开共用的登录 / 注册对话框（`js/common.js` 新增 `window.LOCAL_AUTH`：`open` / `signed` / `notice` / `profile`）。
+> - 原因 2：betwave-*.html 子页面上的 Bet、赔率、比赛结果（MatchOutcomeBlock）、Subscribe、Become author、Create prediction 点了没有反应。现在：未登录 → 打开登录对话框；已登录 → 提示 "Betwave bets and predictions are not available in this local copy."（不下注）。betwave.html 已登录时也不再弹 "请登录" 面板。
+> - 原因 3：手机 / 平板（390 / 430 / 768）子页面的状态没有侧栏抽屉（原站点 Menu 才挂载），所以 Menu 没反应，登录后无法进入 Profile / Log out。现在这些状态载入时自动插入共用 1win 抽屉模板（游客 `sidebar.standard.casino-providers-390x844.907d6800`，登录后 `sidebar.standard.casino-768x1024.c815cd79`），Menu 打开后显示 Log in 或 Demo user / 账户、可登出。
+> - 原因 4：betwave.html 在 768 的 Menu 没反应（Betwave 菜单只抓了 390 版本，768 找 1440 版本找不到）→ 回退用 390 版本。登录后 Betwave 菜单的 "Log in" 改成账户名称和 ID（用 betwave.css 已有的 `view_name` / `view_id` 样式）。
+> - 验收（file://，headless Chrome）：betwave.html?view=feed 用面板 Register 注册成功并登录；view=event 用面板 Log in 登录；predictors / prediction / authors=ai / rules / profile 用邮箱登录；betwave-rules / events-soccer / predictions-all / predictors / event-sample / prediction-sample / profile-sample / create 八种子页面登录后刷新仍是登录状态；未登录时各操作按钮都打开登录表单，登录后都显示提示；390 / 768 的 index、betwave、betwave-rules、betwave-events-soccer 都能 Menu → Profile → Settings → Log out。0 个页面错误。
+> - 注意：子页面手机抽屉用的是主站深色 1win 抽屉（Betwave 组折叠），betwave.html 用的是原站抓到的浅色 Betwave 抽屉，外观略不同。
+
+> 2026-10-21 去掉 `?preview=auth`：登录 / 注册对所有 HTML 页面生效：
+> - 登录状态只看本浏览器的会话 `1win-local-session`（本地账户 ID，或 Alt+P 的 `demo`）。每个页面载入时读取，所以在任何页面注册 / 登录后，直接打开其他 HTML 文件也是登录后视图；登出后所有页面回到游客。
+> - 链接和跳转不再加 `?preview=auth`（`js/common.js` 的 `go()`、侧栏和页面 `data-reference-href` 链接；`js/betwave-runtime.js`；`js/forum.js` 删除了给论坛链接补参数的代码）。旧书签带 `?preview=auth` 会被自动去掉该参数，不会因此登录。
+> - 其他标签页登录 / 登出（`storage` 事件）或按返回键回到缓存页面（`pageshow`）时，页面会自动同步状态。Betwave 的登录后顶栏在载入时生成，所以它登录 / 登出后会重新载入页面。
+> - QA 脚本 `scripts/compare-auth-all.mjs` 改为先写入 Demo 会话再打开页面；`scripts/verify-forum.mjs`、`scripts/local-run-cdp.mjs` 说明同步去掉该参数。`Design Rule.md` 已更新规则。
+> - 验收（file://，headless Chrome 1440 + 390）：index 注册后，casino / sports / promotions / vip-club / loyalty-program / betwave / tournaments 直接打开都是登录后并显示账户邮箱；页面内 0 条带 preview 的链接；旧书签 `casino.html?preview=auth` 正常；在 sports 登出后 index / betwave / casino 都是游客；在 betwave 登录后 casino 也是登录后。全部 271 个 HTML 页面在有会话时都显示登录后顶栏，0 条 preview 链接。论坛（forum/）是独立站点样式，保持原本的论坛 Sign In，不跟主站账户。
+> - 限制：会话存在 localStorage。Chrome / Edge 的 file:// 页面共用同一存储（已验证）；若浏览器禁用网站数据或把每个 file:// 文件当独立来源，跨页面登录不会保留。
+
 > 2026-10-21 注册手机号重叠修复 + 输入验证（`js/common.js`）：
 > - 问题：手机号输入框的文字和灰色 "+60 00 000 0000" 占位叠在一起；邮箱 "vincent" 等无效输入没有提示，Register 一直是灰色却不知道原因。
 > - 手机号按原站掩码处理：输入框一开始就是 "+60"，输入数字自动分组为 "+60 12 345 6789"；占位只显示还没输入的 0（已输入部分用 `control_hiddenPlaceholder` 隐藏），所以不再重叠。Backspace 删不掉 "+60"。
@@ -372,7 +394,7 @@
 |---|---|
 | `<page>.html` | 页面入口：head + 1440 初始状态 + 脚本 |
 | `js/<page>.js` | `window.PAGE_STATES={"<page>-<WxH>":{html,attrs}}`，游客五尺寸状态 |
-| `js/<page>-auth.js` | `window.AUTH_PAGE_STATES`，Demo 状态（URL 加 `?preview=auth`） |
+| `js/<page>-auth.js` | `window.AUTH_PAGE_STATES`，Demo 状态（有登录会话 `1win-local-session` 时使用） |
 | `components/header.html`、`sidebar.html`、`footer.html` | 共享组件；状态里用 `<template data-shared-component="…">` 引用，`node scripts/build-components.mjs` 构建 |
 | `js/common.js` | 全站唯一交互脚本：按窗口宽度切状态、侧栏、弹窗、轮播、投注单、筛选、Show more、游戏页、无限滚动等 |
 | `js/routes.js` | `window.PROJECT_ROUTES`：原站路径 → 本地文件；另有 `sportFilters`、`categories` |
@@ -395,7 +417,7 @@
 5. **收尾检查**（每完成一步都跑）：
    `python scripts/migrate-shared-components.py` → `node scripts/build-components.mjs` → `python scripts/apply-footers.py` → `python scripts/verify-local-references.py --date …` → `python scripts/dedupe-inline-masks.py` → `node scripts/file-protocol-check.mjs` → `node scripts/sidebar-toggle-check.mjs`
 6. **本地预览**：`node scripts/serve.mjs`（或 `start-preview.cmd`）默认端口 4173；验收用 4174：PowerShell `$env:PORT='4174'; node scripts/serve.mjs`。
-7. **在本地页面跑探测脚本**：`node --experimental-websocket scripts/local-run-cdp.mjs --page a.html,b.html --script scripts/probes/<probe>.js --sizes … [--query preview=auth] [--http] [--resize WxH --then-script p.js] [--out x.json]`（默认 file://，`--http` 用 4174）。结果会附带 console 异常。
+7. **在本地页面跑探测脚本**：`node --experimental-websocket scripts/local-run-cdp.mjs --page a.html,b.html --script scripts/probes/<probe>.js --sizes … [--query …] [--http] [--resize WxH --then-script p.js] [--out x.json]`（默认 file://，`--http` 用 4174）。结果会附带 console 异常。
 
 ## 3. 页面清单（271 个 HTML）
 
@@ -517,7 +539,7 @@ Markets（+13）、TOP Bets、Bet history、61 个运动筛选页（`routes.js` 
 
 ## 6. 每完成一项的检查清单
 1. §2 第 5 条全部通过（无缺失本地文件、无主动远程引用、file:// 0 失败）。
-2. 新页面五尺寸、游客与 `?preview=auth` 都能打开，console 无错误，无横向滚动。
+2. 新页面五尺寸、游客与登录后（会话）都能打开，console 无错误，无横向滚动。
 3. 新交互实际点击、键盘、resize 测过。
 4. 更新本文 §3、§4（完成项改 ✅，写清证据和剩余项）。
 5. `captures/`（约 217MB 原始采集，可重新生成）已加入 `.gitignore`，提交前确认没有提交它。`qa/*/migration-backup/`（迁移前副本，2026-10-15 那份 322MB；`migration-report.json` 证明可逐字节还原）也已忽略，不提交。

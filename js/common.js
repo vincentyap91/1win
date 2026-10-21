@@ -10,6 +10,9 @@
   const writeAccounts=list=>{try{localStorage.setItem(ACCOUNTS_KEY,JSON.stringify(list));return true;}catch{return false;}};
   const sessionAccount=()=>{try{const id=localStorage.getItem(SESSION_KEY);return id?readAccounts().find(a=>a.id===id)||null:null;}catch{return null;}};
   const setSession=id=>{try{if(id)localStorage.setItem(SESSION_KEY,id);else localStorage.removeItem(SESSION_KEY);}catch{}};
+  // Signed in = a stored session that is either the sample Demo state or an existing account. Every page reads it on
+  // load, so logging in or out applies to all HTML pages (no ?preview=auth in links).
+  const hasSession=()=>{try{const id=localStorage.getItem(SESSION_KEY);return id==='demo'||Boolean(id&&sessionAccount());}catch{return false;}};
   async function hashPassword(password,salt){
     const text=salt+':'+password;
     if(window.crypto?.subtle){const buf=await crypto.subtle.digest('SHA-256',new TextEncoder().encode(text));return [...new Uint8Array(buf)].map(b=>b.toString(16).padStart(2,'0')).join('');}
@@ -17,7 +20,18 @@
   }
   const escapeHtml=t=>String(t).replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
   const accountName=a=>a.email||('+'+a.phone);
-  let signedPreview=new URLSearchParams(location.search).get('preview')==='auth'||Boolean(sessionAccount());
+  let signedPreview=hasSession();
+  // Old bookmarks may still carry ?preview=auth; the session decides now, so the parameter is dropped from the address.
+  if(new URLSearchParams(location.search).has('preview')){const u=new URL(location.href);u.searchParams.delete('preview');try{history.replaceState(null,'',u);}catch{}}
+  // Betwave page files were captured without the phone/tablet drawer (the reference mounts it when Menu is tapped), so
+  // Menu did nothing there. Those states get the shared 1win drawer (guest / signed in), which opens like on other pages
+  // with Log in or the account profile and Log out.
+  const BW_DRAWER={guest:'sidebar.standard.casino-providers-390x844.907d6800',auth:'sidebar.standard.casino-768x1024.c815cd79'};
+  const BW_ROOT='class="default_root-4jzbX" id="root">';
+  if((document.body.dataset.page||'').startsWith('betwave-'))[[guestStates,'guest'],[authStates,'auth']].forEach(([set,kind])=>Object.values(set).forEach(st=>{
+    if(st?.html&&st.html.includes(BW_ROOT)&&!st.html.includes('data-shared-component="sidebar.')&&!st.html.includes('common-layout_root'))
+      st.html=st.html.replace(BW_ROOT,BW_ROOT+'<template data-shared-component="'+BW_DRAWER[kind]+'"></template>');
+  }));
   const states={...window.DIALOG_STATES,...guestStates,...(signedPreview?authStates:{})};
   const pageName = document.body.dataset.page;
   const assetPrefix = document.body.dataset.assetPrefix || '';
@@ -28,7 +42,7 @@
   const personalize = html => {const a=signedPreview&&sessionAccount();if(!a)return html;return html.replaceAll('Demo user',escapeHtml(accountName(a))).replaceAll('ID 00000000','ID '+a.id).replaceAll('demo@example.com',escapeHtml(a.email||''));};
   const markup = value => {const expanded=window.SHARED_UI?window.SHARED_UI.expand(value):value;return personalize(absoluteAssets(assetPrefix?expanded.replaceAll('assets/',assetPrefix+'assets/'):expanded));};
   function absoluteAssetVars(root=document){root.querySelectorAll('[style*="../assets/"]').forEach(n=>n.setAttribute('style',absoluteAssets(n.getAttribute('style'))));}
-  const go = filename => { location.href = filename+(signedPreview?'?preview=auth':''); };
+  const go = filename => { location.href = filename; };
   const pages = window.PROJECT_ROUTES?.pages||{};
   // Betwave events, predictions and profiles have per-record IDs; one of each was captured, the rest open that sample.
   const routeFile = path => {
@@ -57,7 +71,7 @@
   function sidebarLinks(root,labels={}) {
     $$('a[data-reference-href]',root).forEach(a=>{
       const route=new URL(a.dataset.referenceHref,'https://one-vv3591.com/').pathname,file=routeFile(route);
-      if(file)a.href=file+(signedPreview?'?preview=auth':'');
+      if(file)a.href=file;
       const label=labels[a.dataset.testid];if(label){a.setAttribute('aria-label',label);a.title=label;}
     });
   }
@@ -202,7 +216,7 @@
     closeSidebarSocial();
     sidebarCollapsed=!sidebarCollapsed;
     try{localStorage.setItem('1win-preview-sidebar',sidebarCollapsed?'compact':'expanded');}catch{}
-    applySidebar();fitBanners();test('sidebar-expand-button')?.focus({preventScroll:true});
+    applySidebar();signSidebarProfile();fitBanners();test('sidebar-expand-button')?.focus({preventScroll:true});
   }
   function closeSidebarSocial(restoreFocus=false) {
     $('[data-sidebar-social-popover]')?.remove();
@@ -224,15 +238,42 @@
     const close=$('button:has([data-icon="close"])',popover);if(close){close.dataset.testid='local-sidebar-social-close';close.setAttribute('aria-label','Close social media');}
     document.body.append(popover);trigger.setAttribute('aria-expanded','true');positionSidebarSocial();close?.focus({preventScroll:true});
   }
+  // Betwave's signed-in views were captured part-loaded: its own sidebar says "Log in" (betwave.html) or shows grey
+  // placeholders for name / ID (betwave-*.html), the header balance is a placeholder and the bell icon is missing.
+  // Signed in, they show the account like the other pages (balance 0.00 as everywhere in this copy).
+  let bellIcon=null;
+  const findBellIcon=()=>{
+    if(bellIcon!==null)return bellIcon;bellIcon='';
+    for(const id of window.SHARED_UI?.ids()||[]){if(!id.startsWith('header.standard.'))continue;
+      const box=document.createElement('div');box.innerHTML=window.SHARED_UI.expand('<template data-shared-component="'+id+'"></template>');
+      const svg=box.querySelector('[data-testid="header-notification-button"] svg[data-icon="notification"][width="24"]');if(svg){bellIcon=svg.outerHTML;break;}}
+    return bellIcon;
+  };
+  function signSidebarProfile(root=document){
+    if(!signedPreview)return;
+    const acc=sessionAccount(),name=acc?accountName(acc):'Demo user',id=acc?acc.id:'00000000';
+    const line=(cls,text)=>{const d=document.createElement('div');d.className=cls;d.textContent=text;return d;};
+    $$('[data-testid="sidebar-profile-button"] [class*="view_login-"]',root).forEach(login=>{
+      const hash=(login.className.match(/view_login-(\w+)/)||[])[1];if(!hash)return;
+      login.replaceWith(line('view_name-'+hash,name),line('view_id-'+hash,'ID '+id));
+    });
+    $$('[data-testid="sidebar-profile-button"] [class*="view_nameSkeleton-"],[data-testid="sidebar-profile-button"] [class*="view_idSkeleton-"]',root).forEach(sk=>{
+      const m=sk.className.match(/view_(name|id)Skeleton-(\w+)/);if(!m)return;
+      sk.replaceWith(line('view_'+m[1]+'-'+m[2],m[1]==='name'?name:'ID '+id));
+    });
+    $$('[class*="balance-sum-skeleton_root"]',root).forEach(sk=>{const d=line('variant-1_sum-qboqn','0.00');d.dataset.testid='header-balance-sum';sk.replaceWith(d);});
+    $$('[data-testid="header-notification-button"] [class*="base_content-"] > span:empty',root).forEach(sp=>{const svg=findBellIcon();if(svg)sp.outerHTML=svg;});
+  }
   function hydrate() {
     absoluteAssetVars();
     window.SHARED_UI?.mount(document.body);
+    signSidebarProfile();
     applySidebar();
     // Both hrefs and media are local. Third-party destinations have no navigation handler.
     $$('a[data-reference-href]').forEach(a => {
       const u = new URL(a.dataset.referenceHref,'https://one-vv3591.com/');
       const file=u.searchParams.get('x')?.includes('sign-up')?'register.html':routeFile(u.pathname);
-      if(file)a.setAttribute('href',file+(signedPreview?'?preview=auth':''));
+      if(file)a.setAttribute('href',file);
     });
     $$('input[type="password"]').forEach(i=>{ i.setAttribute('autocomplete','new-password'); });
     $$('input[type="tel"][data-testid$="form-phone"]').forEach(i=>{if(!i.value)i.value='+60';});
@@ -753,7 +794,7 @@
     return true;
   }
   // Not part of the reference UI: it changed every footer's height, so it only renders with ?controls=1.
-  // Alt+P and ?preview=auth switch the Demo state without it.
+  // Alt+P switches the Demo state without it.
   function addPreviewControl(){
     if($('[data-preview-controls]')||!new URLSearchParams(location.search).has('controls'))return;
     const container=$('[class*="footer-container_root"]')||test('layout-content');
@@ -765,13 +806,35 @@
   }
   function togglePreview(){
     const next=!signedPreview;
-    if(next&&!Object.keys(authStates).length)return notice('This view does not have a signed-in capture.');
-    if(!next)setSession(null);
-    signedPreview=next;Object.assign(states,guestStates,signedPreview?authStates:{});
-    const u=new URL(location.href);signedPreview?u.searchParams.set('preview','auth'):u.searchParams.delete('preview');
-    // Some browsers refuse history changes on file:// pages (SecurityError); the view still switches.
-    try{history.replaceState(null,'',u);}catch{}render(currentPage,null,true);
+    if(next&&!Object.keys(authStates).length&&document.body.dataset.page!=='betwave')return notice('This view does not have a signed-in capture.');
+    if(!next)setSession(null);else if(!hasSession())setSession('demo');
+    applySession(next);
   }
+  function applySession(next){
+    // Betwave builds its signed-in header itself while loading (js/betwave-runtime.js), so it reloads instead.
+    if(!Object.keys(authStates).length&&document.body.dataset.page==='betwave'){signedPreview=next;location.reload();return;}
+    signedPreview=next;Object.assign(states,guestStates,signedPreview?authStates:{});
+    render(currentPage,null,true);
+  }
+  // Another tab logged in/out, or this page came back from the back/forward cache after a change on another page.
+  const syncSession=()=>{if(hasSession()!==signedPreview){closeModal(true);applySession(hasSession());}};
+  addEventListener('storage',e=>{if(e.key===SESSION_KEY||e.key===null)syncSession();});
+  addEventListener('pageshow',e=>{if(e.persisted)syncSession();});
+  // Page scripts with their own panels (Betwave) open the shared login / registration dialog through this.
+  window.LOCAL_AUTH={open:(kind,source)=>openModal(kind==='registration'?'registration':'login',source||null),signed:()=>signedPreview,notice:text=>notice(text),
+    // Name and ID shown for the signed-in session (Demo state: the sanitized sample values).
+    profile:()=>{const acc=signedPreview&&sessionAccount();return acc?{name:accountName(acc),id:acc.id}:{name:'Demo user',id:'00000000'};}};
+  // Betwave actions that need an account (Bet, odds, Subscribe, Become author, Create prediction). On the Betwave page
+  // files without js/betwave-runtime.js, guests get the login dialog (the reference asks them to authorize first);
+  // signed-in visitors get a note, since predictions and bets are not part of this local copy.
+  const BW_ACCOUNT_ACTION=/^(Bet|Subscribe|Become author|Create prediction)$/;
+  document.addEventListener('click',e=>{
+    if(window.BETWAVE_UI||!(document.body.dataset.page||'').startsWith('betwave'))return;
+    const b=e.target.closest('button');if(!b||b.closest('[data-local-modal],[data-testid="modal-layout"]'))return;
+    if(!BW_ACCOUNT_ACTION.test(b.textContent.replace(/\s+/g,' ').trim())&&!/TopMatchCard_oddButton|MatchOutcomeBlock_root/.test(b.className))return;
+    e.preventDefault();e.stopImmediatePropagation();
+    if(signedPreview)notice('Betwave bets and predictions are not available in this local copy.');else openModal('login',b);
+  },true);
   // The app shell always holds an empty modal-layout wrapper; only a wrapper with content is an open dialog.
   function openLayout(){return $$('[data-testid="modal-layout"]').find(n=>n.firstElementChild)||null;}
   // The reference focuses the Casino search field when the layer opens from 768px up, not on phones.
@@ -1032,7 +1095,7 @@
     if(u.hostname!=='one-vv3591.com')return;
     if(u.searchParams.get('x')?.includes('sign-up')){openModal('registration');return;}
     if(u.pathname.startsWith('/casino/play/')){let stored={};try{stored=JSON.parse(sessionStorage.getItem(GAME_KEY)||'{}');}catch{}if(stored.href!==u.pathname)rememberGame(null,u.pathname);go('casino-play.html');return;}
-    // /forum is the local copy of the public forum (forum/index.html), including ?preview=auth via go().
+    // /forum is the local copy of the public forum (forum/index.html).
     // League listings (/betting/<section>/<sport>/<league>) change with the live schedule; only sport filters were captured.
     if(/^\/betting\/[^/]+\/[^/]+\/[^/]+$/.test(u.pathname)&&!routeFile(u.pathname)){notice('League pages follow the live schedule and are not part of this preview.');return;}
     const file=routeFile(u.pathname);
@@ -1599,8 +1662,8 @@
   const regionCode=form=>(($('[data-testid$="chooseRegionButton"]',form)?.textContent||'').match(/\+\d+/)||['+60'])[0].slice(1);
   function startSession(account,message){
     setSession(account.id);closeModal(true);
-    if(!signedPreview)togglePreview();else render(currentPage,null,true);
     notice(message);
+    if(!signedPreview)togglePreview();else render(currentPage,null,true);
   }
   async function registerAccount(form){
     const phoneIn=$('input[type="tel"]',form),emailIn=$('input[type="email"]',form),passIn=$('input[type="password"]',form),agree=$('[data-testid$="form-agree"]',form);

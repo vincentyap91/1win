@@ -114,12 +114,14 @@ try {
   for (const [w, h] of sizes) {
     const ref = await openBrowser(refPort);
     const local = await openBrowser(localPort);
+    // Signed-in view comes from the stored login session (Demo state), not the URL.
+    await local.send('Page.addScriptToEvaluateOnNewDocument', {source: "try{localStorage.setItem('1win-local-session','demo')}catch{}"});
     await prepare(ref, w, h);
     await prepare(local, w, h);
     for (const p of pages) {
       const [r, l] = await Promise.all([
         measure(ref, origin + p.route),
-        measure(local, `${localBase}/${p.page}?preview=auth`),
+        measure(local, `${localBase}/${p.page}`),
       ]);
       const f = flags(r, l);
       if (!r.signed) summary.refGuest++;

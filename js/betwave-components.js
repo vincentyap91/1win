@@ -48,7 +48,8 @@ window.BETWAVE_SHARED_DATA={"rewards":{"desktop":"<div class=\"TopAuthorsBanner_
     const button=event.target.closest('[data-betwave-shared-reward] button');
     if(!button||button.textContent.trim()!=='Become author')return;
     event.preventDefault();event.stopImmediatePropagation();
-    if(window.BETWAVE_UI)window.BETWAVE_UI.openPanel('authorization',button);
+    if(window.BETWAVE_UI&&window.LOCAL_AUTH?.signed())window.LOCAL_AUTH.notice('Betwave bets and predictions are not available in this local copy.');
+    else if(window.BETWAVE_UI)window.BETWAVE_UI.openPanel('authorization',button);
     else location.href='betwave-create.html';
   },true);
 })();

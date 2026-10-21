@@ -2,7 +2,6 @@
 (() => {
   'use strict';
 
-  const keepAuth = new URLSearchParams(location.search).get('preview') === 'auth';
   let noteTimer = 0;
 
   function note(text) {
@@ -17,17 +16,6 @@
     el.textContent = text;
     clearTimeout(noteTimer);
     noteTimer = setTimeout(() => el.remove(), 3200);
-  }
-
-  if (keepAuth) {
-    document.querySelectorAll('a[href]').forEach(a => {
-      const href = a.getAttribute('href');
-      if (!href || href.startsWith('#') || /^[a-z]+:/i.test(href) || href.includes('preview=')) return;
-      const hashAt = href.indexOf('#');
-      const hash = hashAt >= 0 ? href.slice(hashAt) : '';
-      const base = hashAt >= 0 ? href.slice(0, hashAt) : href;
-      a.setAttribute('href', base + (base.includes('?') ? '&' : '?') + 'preview=auth' + hash);
-    });
   }
 
   function closeMenus(except) {

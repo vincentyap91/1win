@@ -92,7 +92,7 @@ node scripts/build-components.mjs
 - Windows：双击 start-preview.cmd；访问 http://127.0.0.1:4173/。关闭预览窗口停止服务。
 - 通用：安装可运行本项目原生脚本的 Node.js，运行 `node scripts/serve.mjs`。不需要 npm 安装或框架。
 - Python 仅用于重新采集整合／迁移／静态 QA；图片差异脚本需要 Pillow，属于验收工具，不是页面运行依赖。
-- 默认游客。Alt+P 或现有本地预览开关切换 Demo；`?preview=auth` 指定 Demo。`?qa=1` 停止自动轮播便于截图，它不等同隐藏全部开发附加界面。
+- 默认游客。登录 / 注册（本地账户）或 Alt+P（Demo）建立会话 `1win-local-session`（localStorage），全部 HTML 页面载入时读取它决定登录后视图；网址不再用 `?preview=auth`（旧书签会被自动去掉此参数）。`?qa=1` 停止自动轮播便于截图，它不等同隐藏全部开发附加界面。
 - 登录后预览只显示 Demo user、ID 00000000、余额 0.00；真实账户、支付、投注、游戏服务不连接。不能收集真实密码或支付信息。
 
 ## 6. 验收与维护约束

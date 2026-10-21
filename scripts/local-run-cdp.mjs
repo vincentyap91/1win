@@ -1,5 +1,5 @@
 // Run an in-page script on a LOCAL page in headless Chrome/Edge and save what it returns (local twin of reference-run-cdp.mjs).
-// node --experimental-websocket scripts/local-run-cdp.mjs --page casino-slots.html --script probe.js [--out result.json] [--sizes 1440x900,390x844] [--query preview=auth] [--http]
+// node --experimental-websocket scripts/local-run-cdp.mjs --page casino-slots.html --script probe.js [--out result.json] [--sizes 1440x900,390x844] [--query view=x] [--http]
 // probe.js is the BODY of an async function; it may use sleep(ms) and must `return` a JSON-serialisable value.
 // The page is opened over file:// unless --http is given (then http://127.0.0.1:4174, start scripts/serve.mjs first).
 // --resize WxH [--then-script p.js]: afterwards resize the same tab and run a second probe (default: the same one).

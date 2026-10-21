@@ -85,7 +85,7 @@ const metrics = `(() => {
 
 const report = {};
 const desk = await open(1440, 900);
-const fileHome = pathToFileURL(path.join(root, 'index.html')).href + '?preview=auth';
+const fileHome = pathToFileURL(path.join(root, 'index.html')).href;
 await go(desk, fileHome, 2000);
 report.mainForumLink = await evalJson(desk, `new Promise(resolve => {
   const start = Date.now();
@@ -141,7 +141,7 @@ await evalJson(phone, `document.querySelector('#elMobileDrawer [data-action="clo
 report.drawerClosed = await evalJson(phone, `document.getElementById('elMobileDrawer').classList.contains('forum-open')`);
 
 const httpTab = await open(1440, 900);
-await go(httpTab, 'http://127.0.0.1:4175/index.html?preview=auth', 2000);
+await go(httpTab, 'http://127.0.0.1:4175/index.html', 2000);
 await evalJson(httpTab, `new Promise(resolve => {
   const start = Date.now();
   const tick = () => {

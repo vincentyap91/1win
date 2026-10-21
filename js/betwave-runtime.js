@@ -9,7 +9,8 @@
   if (!data.views[view+'-1440'] && !data.views[view+'-390']) view = 'home';
   const expand = html => html.replace(/<!--BW:([^>]+)-->/g, (_, key) => data.parts[key] || '');
   const select = width => data.views[view+'-'+width] || data.views[view+(width<1024?'-390':'-1440')] || data.views[view+'-1440'] || data.views[view+'-390'];
-  const authPreview = query.get('preview') === 'auth';
+  // Signed-in header when this browser has a login session (js/common.js: Demo state or a local account).
+  const authPreview = (() => { try { const id = localStorage.getItem('1win-local-session'); return id === 'demo' || Boolean(id && JSON.parse(localStorage.getItem('1win-local-accounts') || '[]').some(a => a.id === id)); } catch { return false; } })();
   const sign = html => {
     if (!authPreview || !window.SHARED_UI) return html;
     const signed = window.SHARED_UI.expand('<template data-shared-component="header.betwave.betwave-1440x900.2de49e42"></template>');
@@ -37,7 +38,7 @@
   document.body.dataset.state='';
   const $=(s,root=document)=>root.querySelector(s);
   const $$=(s,root=document)=>[...root.querySelectorAll(s)];
-  const go=(params={})=>{const q=new URLSearchParams(params);if(authPreview)q.set('preview','auth');location.href='betwave.html'+(q.size?'?'+q:'');};
+  const go=(params={})=>{const q=new URLSearchParams(params);location.href='betwave.html'+(q.size?'?'+q:'');};
   let returnFocus=null;
   function closePanel(){
     $('[data-bw-overlay]')?.remove();
@@ -47,7 +48,8 @@
   function panel(kind,trigger){
     closePanel();returnFocus=trigger;
     const mobile=innerWidth<640;
-    const record=data.panels[kind+(mobile?'-390':'-1440')] || data.panels[kind+'-1440'];
+    // The menu drawer was only captured at phone width; tablets (Menu in the tab bar up to 1023px) use the same one.
+    const record=data.panels[kind+(mobile?'-390':'-1440')] || data.panels[kind+'-1440'] || data.panels[kind+'-390'];
     if(!record)return;
     const overlay=document.createElement('div');overlay.dataset.bwOverlay=kind;
     overlay.className='bw-overlay colorScheme-light';
@@ -64,6 +66,12 @@
       document.body.style.overflow='hidden';
     }
     document.body.append(overlay);
+    // The captured menu is the guest one; signed in, its "Log in" row becomes the account profile (opens Profile / Log out).
+    if(kind==='menu'&&window.LOCAL_AUTH?.signed()){
+      const login=$('[data-testid="sidebar-profile-button"] [class*="view_login-"]',overlay);
+      if(login){const hash=login.className.match(/view_login-(\w+)/)[1],acc=window.LOCAL_AUTH.profile(),name=document.createElement('div'),id=document.createElement('div');
+        name.className='view_name-'+hash;name.textContent=acc.name;id.className='view_id-'+hash;id.textContent='ID '+acc.id;login.replaceWith(name,id);}
+    }
     if(kind==='share'){
       const input=$('input',card);if(input)input.value=trigger.closest('article')?.querySelector('[data-bw-route*="/prediction/"]')?.dataset.bwRoute || rootState.source;
     }
@@ -113,14 +121,24 @@
         stop();const input=$('input',overlay);if(input){input.disabled=false;input.readOnly=true;input.select();document.execCommand('copy');}return;
       }
       if(kind==='share'&&button.tagName==='A'){stop();return;}
-      if((kind==='authorization'||kind==='menu')&&/^(Login|Log in|Register|Registration)$/.test(text))closePanel();
+      // Log in / Register in Betwave's own panels open the shared login / registration dialog (js/common.js),
+      // which creates or checks the local account like on every other page.
+      if(kind==='menu'&&button.dataset.testid==='sidebar-profile-button'&&window.LOCAL_AUTH?.signed()){closePanel();return;}
+      if((kind==='authorization'||kind==='menu')&&/^(Login|Log in|Register|Registration)$/.test(text)){
+        stop();closePanel();
+        const kindOpen=/^Log/.test(text)?'login':'registration';
+        setTimeout(()=>window.LOCAL_AUTH?.open(kindOpen),0);
+        return;
+      }
     }
     if(button.dataset.bwRoute){stop();location.href=button.getAttribute('href');return;}
     if(button.dataset.bwExternal){stop();return;}
     if(button.dataset.testid==='tabbar-navigation-menu'){stop();panel('menu',button);return;}
     if(/^(To home page|Back)$/.test(text)){stop();go();return;}
+    // Signed in (local account or Demo): no "please log in" panel; bets and predictions stay outside this copy.
+    const needsAccount=()=>{if(window.LOCAL_AUTH?.signed()){window.LOCAL_AUTH.notice('Betwave bets and predictions are not available in this local copy.');return true;}return false;};
     if(text==='Become author'||text==='Create prediction'||text==='Subscribe'||text==='Bet'){
-      stop();panel('authorization',button);return;
+      stop();if(!needsAccount())panel('authorization',button);return;
     }
     if(text==='Share'){stop();panel('share',button);return;}
     if(text==='Filters'){stop();panel('filters',button);return;}
@@ -143,7 +161,7 @@
       stop();const card=button.closest('article');const link=card?.querySelector('[data-bw-route*="/prediction/"]');if(link)location.href=link.href;return;
     }
     if(button.className.includes('TopMatchCard_forecastButton')){stop();go({view:'event',event:'sl-benfica-fc-vs-celtic-40200295'});return;}
-    if(button.className.includes('TopMatchCard_oddButton')){stop();panel('authorization',button);return;}
+    if(button.className.includes('TopMatchCard_oddButton')||button.className.includes('MatchOutcomeBlock_root')){stop();if(!needsAccount())panel('authorization',button);return;}
   },true);
   window.BETWAVE_UI={view,openPanel:panel,closePanel,expand};
 })();
